@@ -1,0 +1,132 @@
+Release 10.1.03 - xst K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> 
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3498 - No primary, secondary unit in the file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/UDP_MR/dist_mem_64x8.vhd. Ignore this file from project file "M:/MASTER/COMPET/Compet_readout/COMPET_Readout/top_vhdl.prj".
+WARNING:HDLParsers:3498 - No primary, secondary unit in the file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/UDP_MR/comp_11b_equal.vhd. Ignore this file from project file "M:/MASTER/COMPET/Compet_readout/COMPET_Readout/top_vhdl.prj".
+WARNING:HDLParsers:3498 - No primary, secondary unit in the file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/UDP_MR/comp_6b_equal.vhd. Ignore this file from project file "M:/MASTER/COMPET/Compet_readout/COMPET_Readout/top_vhdl.prj".
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/shared/constants.vhd" in Library work.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/UDP_MR/COUNTER_6B_LUT_FIFO_MODE.vhd" in Library work.
+Architecture behavioral of Entity counter_6b_lut_fifo_mode is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/UDP_MR/COUNTER_11B_EN_TRANS.vhd" in Library work.
+Architecture behavioral of Entity counter_11b_en_trans is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/shared/types.vhd" in Library work.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/UDP_MR/PACKET_RECEIVER_FSM.vhd" in Library work.
+Architecture behavioral of Entity packet_receiver_fsm is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/UDP_MR/REG_8b_wren.vhd" in Library work.
+Architecture behavioral of Entity reg_8b_wren is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/UDP_MR/COUNTER_11B_EN_RECEIV.vhd" in Library work.
+Architecture behavioral of Entity counter_11b_en_receiv is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/UDP_MR/TARGET_EOF.vhd" in Library work.
+Architecture behavioral of Entity target_eof is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/UDP_MR/REG_16B_WREN.vhd" in Library work.
+Architecture behavioral of Entity reg_16b_wren is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/UDP_MR/IPV4_LUT_INDEXER.vhd" in Library work.
+Architecture behavioral of Entity ipv4_lut_indexer is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/UDP_MR/OVERRIDE_LUT_CONTROL.vhd" in Library work.
+Architecture behavioral of Entity override_lut_control is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/UDP_MR/ALLOW_ZERO_UDP_CHECKSUM.vhd" in Library work.
+Architecture behavioral of Entity allow_zero_udp_checksum is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/UDP_MR/ENABLE_USER_DATA_TRANSMISSION.vhd" in Library work.
+Architecture behavioral of Entity enable_user_data_transmission is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/COMPET_Readout/tx_client_fifo_8.vhd" in Library work.
+Architecture rtl of Entity tx_client_fifo_8 is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/COMPET_Readout/rx_client_fifo_8.vhd" in Library work.
+Architecture rtl of Entity rx_client_fifo_8 is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/COMPET_Readout/gmii_if.vhd" in Library work.
+Architecture phy_if of Entity gmii_if is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/COMPET_Readout/v5_emac_v1_5.vhd" in Library work.
+Architecture wrapper of Entity v5_emac_v1_5 is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/shared/functions.vhd" in Library work.
+Architecture functions of Entity functions is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/front-end/fe_ch_fifo.vhd" in Library work.
+Architecture fe_ch_fifo_a of Entity fe_ch_fifo is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/shared/shift.vhd" in Library work.
+Architecture rtl of Entity shift is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/UDP_MR/IPV4_PACKET_TRANSMITTER.vhd" in Library work.
+Architecture behavioral of Entity ipv4_packet_transmitter is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/UDP_MR/IPv4_PACKET_RECEIVER.vhd" in Library work.
+Architecture behavioral of Entity ipv4_packet_receiver is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/COMPET_Readout/v5_emac_v1_5_block.vhd" in Library work.
+Architecture top_level of Entity v5_emac_v1_5_block is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/COMPET_Readout/eth_fifo_8.vhd" in Library work.
+Architecture rtl of Entity eth_fifo_8 is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/front-end/fe_eb_submux.vhd" in Library work.
+Architecture rtl of Entity fe_ch_submux is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/front-end/fe_ch_iserdes.vhd" in Library work.
+Architecture rtl of Entity fe_ch_iserdes is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/front-end/fe_ch_pargen.vhd" in Library work.
+Architecture rtl of Entity fe_ch_pargen is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/front-end/fe_ch_buf.vhd" in Library work.
+Architecture rtl of Entity fe_ch_buf is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/front-end/BuildEventsFifo.vhd" in Library work.
+Architecture buildeventsfifo_a of Entity buildeventsfifo is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/COMPET_Readout/v5_emac_v1_5_locallink.vhd" in Library work.
+Architecture top_level of Entity v5_emac_v1_5_locallink is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/UDP_MR/UDP_IP_Core.vhd" in Library work.
+Architecture behavioral of Entity udp_ip_core is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/COMPET_Readout/fe_FIFO_toUDP.vhd" in Library work.
+Architecture fe_fifo_toudp_a of Entity fe_fifo_toudp is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/COMPET_Readout/GlobalEventTrigger_FIFO.vhd" in Library work.
+Architecture globaleventtrigger_fifo_a of Entity globaleventtrigger_fifo is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/COMPET_Readout/BuildEventsToShipOut.vhd" in Library work.
+Architecture behavioral of Entity buildeventstoshipout is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/front-end/fe_input_stimuli.vhd" in Library work.
+Architecture rtl of Entity fe_input_stimuli is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/front-end/fe_cotrg_processing.vhd" in Library work.
+Architecture rtl of Entity fe_cotrg_proc is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/front-end/fe_ch.vhd" in Library work.
+Architecture rtl of Entity fe_ch is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/front-end/fe_eb.vhd" in Library work.
+Architecture rtl of Entity fe_eb is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/shared/components.vhd" in Library work.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/COMPET_Readout/pll_all.vhd" in Library work.
+Architecture behavioral of Entity pll_all is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/COMPET_Readout/DCM2PLL.vhd" in Library work.
+Architecture behavioral of Entity dcm2pll is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/shared/a2s.vhd" in Library work.
+Architecture rtl of Entity a2s is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/ClkRst/cru.vhd" in Library work.
+Architecture rtl of Entity cru is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/front-end/fe.vhd" in Library work.
+Architecture rtl of Entity fe is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/chipscope/core_sim.vhd" in Library work.
+Architecture rtl of Entity chipscope is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/COMPET_Readout/v5_emac_v1_5_example_design.vhd" in Library work.
+Architecture top_level of Entity v5_emac_v1_5_example_design is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Compet_readout/COMPET_Readout/top.vhd" in Library work.
+Entity <top> compiled.
+ERROR:HDLParsers:3312 - "//aristoteles/kimei/MASTER/COMPET/Compet_readout/COMPET_Readout/top.vhd" Line 150. Undefined symbol 'FPGA_conf_type'.
+ERROR:HDLParsers:1209 - "//aristoteles/kimei/MASTER/COMPET/Compet_readout/COMPET_Readout/top.vhd" Line 150. FPGA_conf_type: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "//aristoteles/kimei/MASTER/COMPET/Compet_readout/COMPET_Readout/top.vhd" Line 178. Undefined symbol 'FPGA_conf_type'.
+ERROR:HDLParsers:1209 - "//aristoteles/kimei/MASTER/COMPET/Compet_readout/COMPET_Readout/top.vhd" Line 178. FPGA_conf_type: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "//aristoteles/kimei/MASTER/COMPET/Compet_readout/COMPET_Readout/top.vhd" Line 179. Undefined symbol 'FPGA_CONF_SIZE'.
+ERROR:HDLParsers:1209 - "//aristoteles/kimei/MASTER/COMPET/Compet_readout/COMPET_Readout/top.vhd" Line 179. FPGA_CONF_SIZE: Undefined symbol (last report in this block)
+ERROR:HDLParsers:850 - "//aristoteles/kimei/MASTER/COMPET/Compet_readout/COMPET_Readout/top.vhd" Line 228. Formal port cru_reset does not exist in Entity 'cru'.
+ERROR:HDLParsers:850 - "//aristoteles/kimei/MASTER/COMPET/Compet_readout/COMPET_Readout/top.vhd" Line 238. Formal port REFCLK_125MHz does not exist in Entity 'cru'.
+ERROR:HDLParsers:3312 - "//aristoteles/kimei/MASTER/COMPET/Compet_readout/COMPET_Readout/top.vhd" Line 292. Undefined symbol 'FPGA_conf'.
+ERROR:HDLParsers:1209 - "//aristoteles/kimei/MASTER/COMPET/Compet_readout/COMPET_Readout/top.vhd" Line 292. FPGA_conf: Undefined symbol (last report in this block)
+ERROR:HDLParsers:850 - "//aristoteles/kimei/MASTER/COMPET/Compet_readout/COMPET_Readout/top.vhd" Line 273. Formal port mclk0 does not exist in Entity 'fe'.
+ERROR:HDLParsers:3312 - "//aristoteles/kimei/MASTER/COMPET/Compet_readout/COMPET_Readout/top.vhd" Line 408. Undefined symbol 'FPGA_conf'.
+ERROR:HDLParsers:1209 - "//aristoteles/kimei/MASTER/COMPET/Compet_readout/COMPET_Readout/top.vhd" Line 408. FPGA_conf: Undefined symbol (last report in this block)
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.28 secs
+ 
+--> 
+
+Total memory usage is 118024 kilobytes
+
+Number of errors   :   13 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

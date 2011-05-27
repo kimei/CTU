@@ -1,0 +1,12 @@
+# Output products list for <comp_11b_equal>
+comp_11b_equal.asy
+comp_11b_equal.ngc
+comp_11b_equal.sym
+comp_11b_equal.v
+comp_11b_equal.veo
+comp_11b_equal.vhd
+comp_11b_equal.vho
+comp_11b_equal.xco
+comp_11b_equal_c_compare_v9_0_xst_1.ngc_xst.xrpt
+comp_11b_equal_flist.txt
+comp_11b_equal_xmdf.tcl

@@ -1,0 +1,48 @@
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/rx_pckt_valid is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   RS232/RS232/XUART_I_1/UART16550_I_1/lsr2_rst_or0000 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal
+   <xps_bram_if_cntlr_1_port_BRAM_Addr<31>> is incomplete. The signal does not
+   drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <xps_bram_if_cntlr_1_port_BRAM_Addr<30>> is incomplete. The signal does not
+   drive any load pins in the design.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/
+   u_phy_io/gen_dqs[1].u_iob_dqs/u_iddr_dq_ce>:<ILOGIC_IFF>.  The Q1 output pin
+   of IFF is not used.
+WARNING:PhysDesignRules:1273 - Dangling pins on
+   block:<DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/
+   u_phy_io/gen_dqs[1].u_iob_dqs/u_iddr_dq_ce>:<ILOGIC_IFF>.  The SR pin is used
+   for the IFF Flip-flop but the SRVAL_Q1 set/reset value is not configured.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/
+   u_phy_io/gen_dqs[2].u_iob_dqs/u_iddr_dq_ce>:<ILOGIC_IFF>.  The Q1 output pin
+   of IFF is not used.
+WARNING:PhysDesignRules:1273 - Dangling pins on
+   block:<DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/
+   u_phy_io/gen_dqs[2].u_iob_dqs/u_iddr_dq_ce>:<ILOGIC_IFF>.  The SR pin is used
+   for the IFF Flip-flop but the SRVAL_Q1 set/reset value is not configured.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/
+   u_phy_io/gen_dqs[0].u_iob_dqs/u_iddr_dq_ce>:<ILOGIC_IFF>.  The Q1 output pin
+   of IFF is not used.
+WARNING:PhysDesignRules:1273 - Dangling pins on
+   block:<DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/
+   u_phy_io/gen_dqs[0].u_iob_dqs/u_iddr_dq_ce>:<ILOGIC_IFF>.  The SR pin is used
+   for the IFF Flip-flop but the SRVAL_Q1 set/reset value is not configured.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/
+   u_phy_io/gen_dqs[3].u_iob_dqs/u_iddr_dq_ce>:<ILOGIC_IFF>.  The Q1 output pin
+   of IFF is not used.
+WARNING:PhysDesignRules:1273 - Dangling pins on
+   block:<DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/
+   u_phy_io/gen_dqs[3].u_iob_dqs/u_iddr_dq_ce>:<ILOGIC_IFF>.  The SR pin is used
+   for the IFF Flip-flop but the SRVAL_Q1 set/reset value is not configured.
+DRC detected 0 errors and 12 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

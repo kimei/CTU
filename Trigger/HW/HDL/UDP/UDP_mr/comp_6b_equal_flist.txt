@@ -1,0 +1,12 @@
+# Output products list for <comp_6b_equal>
+comp_6b_equal.asy
+comp_6b_equal.ngc
+comp_6b_equal.sym
+comp_6b_equal.v
+comp_6b_equal.veo
+comp_6b_equal.vhd
+comp_6b_equal.vho
+comp_6b_equal.xco
+comp_6b_equal_c_compare_v9_0_xst_1.ngc_xst.xrpt
+comp_6b_equal_flist.txt
+comp_6b_equal_xmdf.tcl

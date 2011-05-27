@@ -1,0 +1,5 @@
+WARNING:PhysDesignRules:1412 - Dangling pins on
+   block:<EMAC_1/gmii_rxc0_delay>:<IODELAY_IODELAY>.  When DELAY_SRC is not
+   DATAIN programming the DATAIN input pin is not used and will be ignored.
+DRC detected 0 errors and 1 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

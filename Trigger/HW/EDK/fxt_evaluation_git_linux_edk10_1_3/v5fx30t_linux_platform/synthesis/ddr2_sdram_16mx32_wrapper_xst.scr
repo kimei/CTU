@@ -1,0 +1,13 @@
+run
+-opt_mode speed
+-netlist_hierarchy as_optimized
+-opt_level 1
+-p xc5vfx30tff665-1
+-top ddr2_sdram_16mx32_wrapper
+-ifmt MIXED
+-ifn ddr2_sdram_16mx32_wrapper_xst.prj
+-ofn ../implementation/ddr2_sdram_16mx32_wrapper.ngc
+-hierarchy_separator /
+-iobuf NO
+-sd {../implementation/ddr2_sdram_16mx32_wrapper}
+-vlgincdir {"M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_linux_platform\pcores\" "C:\Xilinx\10.1\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\" "C:\Xilinx\10.1\EDK\hw\XilinxReferenceDesigns\pcores\" }

@@ -1,0 +1,26 @@
+M:/MASTER/COMPET/Trigger/HW/HDL/Shared/components.vhd {1 {vcom -work work -2002 -explicit -vopt M:/MASTER/COMPET/Trigger/HW/HDL/Shared/components.vhd
+Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package constants
+-- Compiling package components
+
+} {} {}} M:/MASTER/COMPET/Trigger/HW/HDL/UART/com_tb.vhd {1 {vcom -work work -2002 -explicit -vopt M:/MASTER/COMPET/Trigger/HW/HDL/UART/com_tb.vhd
+Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity com_tb
+-- Compiling architecture tb of com_tb
+-- Compiling configuration com_tb_tb_cfg
+-- Loading entity com_tb
+-- Loading architecture tb of com_tb
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Loading package vcomponents
+-- Loading package numeric_std
+-- Loading package constants
+-- Loading package components
+-- Loading entity com
+
+} {} {}}

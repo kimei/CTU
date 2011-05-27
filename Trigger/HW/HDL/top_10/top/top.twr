@@ -1,0 +1,423 @@
+--------------------------------------------------------------------------------
+Release 10.1.03 Trace  (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\trce.exe -ise
+M:/MASTER/COMPET/Trigger/HW/HDL/top_10/top/top.ise -intstyle ise -v 3 -s 1 -xml
+top top.ncd -o top.twr top.pcf -ucf
+M:/MASTER/COMPET/Trigger/HW/HDL/top/emac.ucf
+
+Design file:              top.ncd
+Physical constraint file: top.pcf
+Device,package,speed:     xc5vfx30t,ff665,-1 (PRODUCTION 1.64 2008-12-19, STEPPING level 0)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3377 - Intersecting Constraints found and resolved.  For more 
+   information see the TSI report.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_v5_emac_v1_5_clk_phy_rx0 = PERIOD TIMEGRP 
+"v5_emac_v1_5_clk_phy_rx0" 7.5 ns         HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: ts_tx_meta_protect_0 = MAXDELAY FROM TIMEGRP 
+"tx_metastable_0" 5 ns         DATAPATHONLY;
+
+ 40 paths analyzed, 40 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Maximum delay is   4.165ns.
+--------------------------------------------------------------------------------
+Slack:                  0.835ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo (FF)
+  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_11 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      4.165ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
+  Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_11
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X57Y59.AQ      Tcko                  0.450   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
+    SLICE_X59Y57.D1      net (fanout=3)        0.994   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
+    SLICE_X59Y57.D       Tilo                  0.094   N102
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_reload_or0000_SW0
+    SLICE_X64Y57.A1      net (fanout=2)        1.183   N102
+    SLICE_X64Y57.A       Tilo                  0.094   N74
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_reload_or0000
+    SLICE_X67Y66.A4      net (fanout=13)       1.324   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_reload
+    SLICE_X67Y66.CLK     Tas                   0.026   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr<11>
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_mux0000<11>1
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_11
+    -------------------------------------------------  ---------------------------
+    Total                                      4.165ns (0.664ns logic, 3.501ns route)
+                                                       (15.9% logic, 84.1% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.848ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo (FF)
+  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_7 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      4.152ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
+  Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X57Y59.AQ      Tcko                  0.450   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
+    SLICE_X59Y57.D1      net (fanout=3)        0.994   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
+    SLICE_X59Y57.D       Tilo                  0.094   N102
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_reload_or0000_SW0
+    SLICE_X64Y57.A1      net (fanout=2)        1.183   N102
+    SLICE_X64Y57.A       Tilo                  0.094   N74
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_reload_or0000
+    SLICE_X67Y64.D2      net (fanout=13)       1.309   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_reload
+    SLICE_X67Y64.CLK     Tas                   0.028   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr<7>
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_mux0000<7>1
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_7
+    -------------------------------------------------  ---------------------------
+    Total                                      4.152ns (0.666ns logic, 3.486ns route)
+                                                       (16.0% logic, 84.0% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.851ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo (FF)
+  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_6 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      4.149ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
+  Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X57Y59.AQ      Tcko                  0.450   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
+    SLICE_X59Y57.D1      net (fanout=3)        0.994   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
+    SLICE_X59Y57.D       Tilo                  0.094   N102
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_reload_or0000_SW0
+    SLICE_X64Y57.A1      net (fanout=2)        1.183   N102
+    SLICE_X64Y57.A       Tilo                  0.094   N74
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_reload_or0000
+    SLICE_X67Y64.C2      net (fanout=13)       1.305   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_reload
+    SLICE_X67Y64.CLK     Tas                   0.029   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr<7>
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_mux0000<6>1
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_6
+    -------------------------------------------------  ---------------------------
+    Total                                      4.149ns (0.667ns logic, 3.482ns route)
+                                                       (16.1% logic, 83.9% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_fe_TEMAC_tx_clk0 = PERIOD TIMEGRP "fe_TEMAC_tx_clk0" 7.7 
+ns HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_fe_TEMAC_clk_phy_rx0 = PERIOD TIMEGRP 
+"fe_TEMAC_clk_phy_rx0" 7.5 ns HIGH         50%;
+
+ 10 paths analyzed, 10 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum period is   7.416ns.
+--------------------------------------------------------------------------------
+Slack:                  0.084ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_1 (FF)
+  Destination:          EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac (CPU)
+  Requirement:          7.500ns
+  Data Path Delay:      7.335ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.046ns (1.532 - 1.578)
+  Source Clock:         EMAC_1/rx_clk_0_i rising at 0.000ns
+  Destination Clock:    EMAC_1/rx_clk_0_i rising at 7.500ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_1 to EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
+    Location                 Delay type         Delay(ns)  Physical Resource
+                                                           Logical Resource(s)
+    -----------------------------------------------------  -------------------
+    ILOGIC_X0Y135.Q1         Tickq                 0.517   EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC<1>
+                                                           EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_1
+    TEMAC_X0Y0.PHYEMAC0RXD1  net (fanout=1)        6.568   EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC<1>
+    TEMAC_X0Y0.PHYEMAC0RXCLK Tmacdck_RXD           0.250   EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
+                                                           EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
+    -----------------------------------------------------  ---------------------------
+    Total                                          7.335ns (0.767ns logic, 6.568ns route)
+                                                           (10.5% logic, 89.5% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.159ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_3 (FF)
+  Destination:          EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac (CPU)
+  Requirement:          7.500ns
+  Data Path Delay:      7.249ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.057ns (1.532 - 1.589)
+  Source Clock:         EMAC_1/rx_clk_0_i rising at 0.000ns
+  Destination Clock:    EMAC_1/rx_clk_0_i rising at 7.500ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_3 to EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
+    Location                 Delay type         Delay(ns)  Physical Resource
+                                                           Logical Resource(s)
+    -----------------------------------------------------  -------------------
+    ILOGIC_X0Y122.Q1         Tickq                 0.517   EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC<3>
+                                                           EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_3
+    TEMAC_X0Y0.PHYEMAC0RXD3  net (fanout=1)        6.482   EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC<3>
+    TEMAC_X0Y0.PHYEMAC0RXCLK Tmacdck_RXD           0.250   EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
+                                                           EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
+    -----------------------------------------------------  ---------------------------
+    Total                                          7.249ns (0.767ns logic, 6.482ns route)
+                                                           (10.6% logic, 89.4% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.248ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RX_DV_TO_MAC (FF)
+  Destination:          EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac (CPU)
+  Requirement:          7.500ns
+  Data Path Delay:      7.174ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.043ns (1.532 - 1.575)
+  Source Clock:         EMAC_1/rx_clk_0_i rising at 0.000ns
+  Destination Clock:    EMAC_1/rx_clk_0_i rising at 7.500ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RX_DV_TO_MAC to EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
+    Location                 Delay type         Delay(ns)  Physical Resource
+                                                           Logical Resource(s)
+    -----------------------------------------------------  -------------------
+    ILOGIC_X0Y136.Q1         Tickq                 0.517   EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RX_DV_TO_MAC
+                                                           EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RX_DV_TO_MAC
+    TEMAC_X0Y0.PHYEMAC0RXDV  net (fanout=1)        6.407   EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RX_DV_TO_MAC
+    TEMAC_X0Y0.PHYEMAC0RXCLK Tmacdck_VALID         0.250   EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
+                                                           EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
+    -----------------------------------------------------  ---------------------------
+    Total                                          7.174ns (0.767ns logic, 6.407ns route)
+                                                           (10.7% logic, 89.3% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_fe_TEMAC_gtx_clk0 = PERIOD TIMEGRP "fe_TEMAC_gtx_clk0" 8 
+ns HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_v5_emac_v1_5_gtp_clk = PERIOD TIMEGRP 
+"v5_emac_v1_5_gtp_clk" 7.7 ns HIGH         50%;
+
+ 2315 paths analyzed, 589 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum period is   7.658ns.
+--------------------------------------------------------------------------------
+Slack:                  0.042ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac (CPU)
+  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_11 (FF)
+  Requirement:          7.700ns
+  Data Path Delay:      7.324ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.299ns (1.366 - 1.665)
+  Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
+  Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_11
+    Location                    Delay type         Delay(ns)  Physical Resource
+                                                              Logical Resource(s)
+    --------------------------------------------------------  -------------------
+    TEMAC_X0Y0.EMAC0CLIENTTXACK Tmaccko_ACK           1.550   EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
+                                                              EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
+    SLICE_X65Y45.D6             net (fanout=6)        1.213   EMAC_1/v5_emac_ll/tx_ack_0_i
+    SLICE_X65Y45.D              Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_drop_frame
+                                                              EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_load_and0000_SW0
+    SLICE_X61Y35.A5             net (fanout=2)        0.899   N113
+    SLICE_X61Y35.A              Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_load
+                                                              EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_load_and0000
+    SLICE_X61Y35.B6             net (fanout=2)        0.143   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_transmit_frame
+    SLICE_X61Y35.B              Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_load
+                                                              EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_load1
+    SLICE_X69Y65.CE             net (fanout=4)        3.008   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_load
+    SLICE_X69Y65.CLK            Tceck                 0.229   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr<11>
+                                                              EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_11
+    --------------------------------------------------------  ---------------------------
+    Total                                             7.324ns (2.061ns logic, 5.263ns route)
+                                                              (28.1% logic, 71.9% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.042ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac (CPU)
+  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_10 (FF)
+  Requirement:          7.700ns
+  Data Path Delay:      7.324ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.299ns (1.366 - 1.665)
+  Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
+  Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_10
+    Location                    Delay type         Delay(ns)  Physical Resource
+                                                              Logical Resource(s)
+    --------------------------------------------------------  -------------------
+    TEMAC_X0Y0.EMAC0CLIENTTXACK Tmaccko_ACK           1.550   EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
+                                                              EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
+    SLICE_X65Y45.D6             net (fanout=6)        1.213   EMAC_1/v5_emac_ll/tx_ack_0_i
+    SLICE_X65Y45.D              Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_drop_frame
+                                                              EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_load_and0000_SW0
+    SLICE_X61Y35.A5             net (fanout=2)        0.899   N113
+    SLICE_X61Y35.A              Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_load
+                                                              EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_load_and0000
+    SLICE_X61Y35.B6             net (fanout=2)        0.143   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_transmit_frame
+    SLICE_X61Y35.B              Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_load
+                                                              EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_load1
+    SLICE_X69Y65.CE             net (fanout=4)        3.008   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_load
+    SLICE_X69Y65.CLK            Tceck                 0.229   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr<11>
+                                                              EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_10
+    --------------------------------------------------------  ---------------------------
+    Total                                             7.324ns (2.061ns logic, 5.263ns route)
+                                                              (28.1% logic, 71.9% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.182ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac (CPU)
+  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_9 (FF)
+  Requirement:          7.700ns
+  Data Path Delay:      7.190ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.293ns (1.372 - 1.665)
+  Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
+  Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_9
+    Location                    Delay type         Delay(ns)  Physical Resource
+                                                              Logical Resource(s)
+    --------------------------------------------------------  -------------------
+    TEMAC_X0Y0.EMAC0CLIENTTXACK Tmaccko_ACK           1.550   EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
+                                                              EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
+    SLICE_X65Y45.D6             net (fanout=6)        1.213   EMAC_1/v5_emac_ll/tx_ack_0_i
+    SLICE_X65Y45.D              Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_drop_frame
+                                                              EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_load_and0000_SW0
+    SLICE_X61Y35.A5             net (fanout=2)        0.899   N113
+    SLICE_X61Y35.A              Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_load
+                                                              EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_load_and0000
+    SLICE_X61Y35.B6             net (fanout=2)        0.143   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_transmit_frame
+    SLICE_X61Y35.B              Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_load
+                                                              EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_load1
+    SLICE_X68Y63.CE             net (fanout=4)        2.877   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_load
+    SLICE_X68Y63.CLK            Tceck                 0.226   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr<9>
+                                                              EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_9
+    --------------------------------------------------------  ---------------------------
+    Total                                             7.190ns (2.058ns logic, 5.132ns route)
+                                                              (28.6% logic, 71.4% route)
+
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock GMII_RX_CLK_0
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+GMII_RX_CLK_0  |    7.416|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover 2365 paths, 0 nets, and 653 connections
+
+Design statistics:
+   Minimum period:   7.658ns{1}   (Maximum frequency: 130.582MHz)
+   Maximum path delay from/to any node:   4.165ns
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Tue May 24 15:31:10 2011 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 223 MB
+
+
+

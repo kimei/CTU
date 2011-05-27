@@ -1,0 +1,2 @@
+vhdl jtagppc_cntlr_v2_01_c "C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\jtagppc_cntlr_v2_01_c\synhdl\vhdl\jtagppc_cntlr.vhd"
+vhdl work "\\aristoteles\kimei\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_linux_platform\hdl\jtagppc_cntlr_0_wrapper.vhd"

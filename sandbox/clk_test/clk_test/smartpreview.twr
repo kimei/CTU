@@ -1,0 +1,45 @@
+Number of Timing Constraints that were not applied: 3
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+------------------------------------------------------------------------------------------------------
+  Constraint                                |  Check  | Worst Case |  Best Case | Timing |   Timing   
+                                            |         |    Slack   | Achievable | Errors |    Score   
+------------------------------------------------------------------------------------------------------
+* TS_v5_emac_v1_5_gtp_clk = PERIOD TIMEGRP  | SETUP   |     0.290ns|     7.410ns|       0|           0
+  "v5_emac_v1_5_gtp_clk" 7.7 ns HIGH        | HOLD    |    -1.850ns|            |      14|       21462
+    50%                                     |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  ts_tx_meta_protect_0 = MAXDELAY FROM TIME | SETUP   |     0.904ns|     4.096ns|       0|           0
+  GRP "tx_metastable_0" 5 ns         DATAPA | HOLD    |     0.604ns|            |       0|           0
+  THONLY                                    |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_fe_TEMAC_clk_phy_rx0 = PERIOD TIMEGRP  | SETUP   |     1.046ns|     6.454ns|       0|           0
+  "fe_TEMAC_clk_phy_rx0" 7.5 ns HIGH        | HOLD    |     3.839ns|            |       0|           0
+    50%                                     |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  ts_rx_meta_protect_0 = MAXDELAY FROM TIME | SETUP   |     3.570ns|     1.430ns|       0|           0
+  GRP "rx_metastable_0" 5 ns                | HOLD    |     0.330ns|            |       0|           0
+------------------------------------------------------------------------------------------------------
+  TS_tx_fifo_addr_0 = MAXDELAY FROM TIMEGRP | SETUP   |     8.921ns|     1.079ns|       0|           0
+   "tx_addr_rd_0" TO TIMEGRP         "tx_ad | HOLD    |     0.346ns|            |       0|           0
+  dr_wr_0" 10 ns                            |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_v5_emac_v1_5_clk_phy_rx0 = PERIOD TIME | N/A     |         N/A|         N/A|     N/A|         N/A
+  GRP "v5_emac_v1_5_clk_phy_rx0" 7.5 ns     |         |            |            |        |            
+       HIGH 50%                             |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_fe_TEMAC_tx_clk0 = PERIOD TIMEGRP "fe_ | N/A     |         N/A|         N/A|     N/A|         N/A
+  TEMAC_tx_clk0" 7.7 ns HIGH 50%            |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_fe_TEMAC_gtx_clk0 = PERIOD TIMEGRP "fe | N/A     |         N/A|         N/A|     N/A|         N/A
+  _TEMAC_gtx_clk0" 8 ns HIGH 50%            |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+
+
+1 constraint not met.
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the 
+   constraint does not cover any paths or that it has no requested value.
+
+

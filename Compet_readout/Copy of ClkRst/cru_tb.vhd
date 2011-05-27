@@ -1,0 +1,134 @@
+-------------------------------------------------------------------------------
+-- Title      : Testbench for design "cru"
+-- Project    : 
+-------------------------------------------------------------------------------
+-- File       : cru_tb.vhd
+-- Author     :   <kimei@fyspc-epf02>
+-- Company    : 
+-- Created    : 2011-02-10
+-- Last update: 2011-02-11
+-- Platform   : 
+-- Standard   : VHDL'87
+-------------------------------------------------------------------------------
+-- Description: 
+-------------------------------------------------------------------------------
+-- Copyright (c) 2011 
+-------------------------------------------------------------------------------
+-- Revisions  :
+-- Date        Version  Author  Description
+-- 2011-02-10  1.0      kimei	Created
+-------------------------------------------------------------------------------
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+-------------------------------------------------------------------------------
+
+entity cru_tb is
+
+end cru_tb;
+
+-------------------------------------------------------------------------------
+
+architecture tb_cru of cru_tb is
+
+  component cru
+    port (
+      fpga_100m_clk    : in  std_logic;
+      clk100m_ctu      : in  std_logic;
+      clk100m_ctu_b    : in  std_logic;
+      cru_reset        : in  std_logic;
+      fpga_cpu_reset_b : in  std_logic;
+      up_clk           : out std_logic;
+      fe_clk           : out std_logic;
+      mclk             : out std_logic;
+      REFCLK_200MHz    : out std_logic;
+      REFCLK_125MHz    : out std_logic;
+      up_rst_b         : out std_logic;
+      fe_rst_b         : out std_logic;
+      mrst_b           : out std_logic;
+      UDPRst_200_b     : out std_logic;
+      UDPRst_125_b     : out std_logic);
+  end component;
+
+  -- component ports
+  signal fpga_100m_clk    : std_logic;
+  signal clk100m_ctu      : std_logic := '0';
+  signal clk100m_ctu_b    : std_logic;
+  signal cru_reset        : std_logic;
+  signal fpga_cpu_reset_b : std_logic := '1';
+  signal up_clk           : std_logic;
+  signal fe_clk           : std_logic;
+  signal mclk             : std_logic;
+  signal REFCLK_200MHz    : std_logic;
+  signal REFCLK_125MHz    : std_logic;
+  signal up_rst_b         : std_logic;
+  signal fe_rst_b         : std_logic;
+  signal mrst_b           : std_logic;
+  signal UDPRst_200_b     : std_logic;
+  signal UDPRst_125_b     : std_logic;
+
+  -- clock
+  signal Clk : std_logic := '0';
+
+begin  -- tb_cru
+
+clk100m_ctu <= not clk100m_ctu after 5 ns when Clk = '1' else '0';
+								
+clk100m_ctu_b <= not clk100m_ctu;
+Clk <= '1' after 53 ns;
+  -- component instantiation
+  DUT: cru
+    port map (
+      fpga_100m_clk    => fpga_100m_clk,
+      clk100m_ctu      => clk100m_ctu,
+      clk100m_ctu_b    => clk100m_ctu_b,
+      cru_reset        => cru_reset,
+      fpga_cpu_reset_b => fpga_cpu_reset_b,
+      up_clk           => up_clk,
+      fe_clk           => fe_clk,
+      mclk             => mclk,
+      REFCLK_200MHz    => REFCLK_200MHz,
+      REFCLK_125MHz    => REFCLK_125MHz,
+      up_rst_b         => up_rst_b,
+      fe_rst_b         => fe_rst_b,
+      mrst_b           => mrst_b,
+      UDPRst_200_b     => UDPRst_200_b,
+      UDPRst_125_b     => UDPRst_125_b);
+
+  -- clock generation
+klokke0: process
+begin  -- process klokke0
+  fpga_100m_clk <= '0', '1' after 5 ns;
+  wait for 10 ns;
+end process klokke0;
+
+reset_prc2 : process
+begin
+cru_reset <= '0';
+wait for 100 ns;
+cru_reset <= '1';
+wait for 50 ns;
+cru_reset <= '0';
+wait for 120 us;
+cru_reset <= '1';
+wait for 50 ns;
+cru_reset <= '0';
+wait for 50 us;
+cru_reset <= '1';
+wait for 20 ns;
+cru_reset <= '0';
+wait;
+
+
+wait;
+end process reset_prc2;
+
+
+reset_prc : process
+begin
+
+wait;
+end process reset_prc;
+end tb_cru;
+

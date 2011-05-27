@@ -1,0 +1,120 @@
+Release 10.1.03 ngcbuild K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\10.1\ISE\bin\nt\unwrapped\ngcbuild.exe -p
+xc5vfx30tff665-1 -intstyle silent -uc hard_ethernet_mac_wrapper.ucf -sd ..
+hard_ethernet_mac_wrapper.ngc ../hard_ethernet_mac_wrapper.ngc
+
+Reading NGO file
+"M:/MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linu
+x_platform/implementation/hard_ethernet_mac_wrapper/hard_ethernet_mac_wrapper.ng
+c" ...
+Executing edif2ngd -noa
+"M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_linu
+x_platform\implementation\hard_ethernet_mac_wrapper_sync_fifo_v5_0_3.edn"
+"hard_ethernet_mac_wrapper_sync_fifo_v5_0_3.ngo"
+Release 10.1.03 - edif2ngd K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 10.1.03 edif2ngd K.39 (nt)
+INFO:NgdBuild - Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file <C:/Xilinx/10.1/EDK/data/edif2ngd.pfd> with
+local file <C:/Xilinx/10.1/ISE/data/edif2ngd.pfd>
+Writing module to "hard_ethernet_mac_wrapper_sync_fifo_v5_0_3.ngo"...
+Loading design module
+"M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_linu
+x_platform\implementation\hard_ethernet_mac_wrapper\hard_ethernet_mac_wrapper_sy
+nc_fifo_v5_0_3.ngo"...
+Executing edif2ngd -noa
+"M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_linu
+x_platform\implementation\hard_ethernet_mac_wrapper_sync_fifo_v5_0_4.edn"
+"hard_ethernet_mac_wrapper_sync_fifo_v5_0_4.ngo"
+Release 10.1.03 - edif2ngd K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 10.1.03 edif2ngd K.39 (nt)
+INFO:NgdBuild - Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file <C:/Xilinx/10.1/EDK/data/edif2ngd.pfd> with
+local file <C:/Xilinx/10.1/ISE/data/edif2ngd.pfd>
+Writing module to "hard_ethernet_mac_wrapper_sync_fifo_v5_0_4.ngo"...
+Loading design module
+"M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_linu
+x_platform\implementation\hard_ethernet_mac_wrapper\hard_ethernet_mac_wrapper_sy
+nc_fifo_v5_0_4.ngo"...
+Executing edif2ngd -noa
+"M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_linu
+x_platform\implementation\hard_ethernet_mac_wrapper_async_fifo_v6_1_2.edn"
+"hard_ethernet_mac_wrapper_async_fifo_v6_1_2.ngo"
+Release 10.1.03 - edif2ngd K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 10.1.03 edif2ngd K.39 (nt)
+INFO:NgdBuild - Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file <C:/Xilinx/10.1/EDK/data/edif2ngd.pfd> with
+local file <C:/Xilinx/10.1/ISE/data/edif2ngd.pfd>
+Writing module to "hard_ethernet_mac_wrapper_async_fifo_v6_1_2.ngo"...
+Loading design module
+"M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_linu
+x_platform\implementation\hard_ethernet_mac_wrapper\hard_ethernet_mac_wrapper_as
+ync_fifo_v6_1_2.ngo"...
+Executing edif2ngd -noa
+"M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_linu
+x_platform\implementation\hard_ethernet_mac_wrapper_async_fifo_v6_1_1.edn"
+"hard_ethernet_mac_wrapper_async_fifo_v6_1_1.ngo"
+Release 10.1.03 - edif2ngd K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 10.1.03 edif2ngd K.39 (nt)
+INFO:NgdBuild - Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file <C:/Xilinx/10.1/EDK/data/edif2ngd.pfd> with
+local file <C:/Xilinx/10.1/ISE/data/edif2ngd.pfd>
+Writing module to "hard_ethernet_mac_wrapper_async_fifo_v6_1_1.ngo"...
+Loading design module
+"M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_linu
+x_platform\implementation\hard_ethernet_mac_wrapper\hard_ethernet_mac_wrapper_as
+ync_fifo_v6_1_1.ngo"...
+Executing edif2ngd -noa
+"M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_linu
+x_platform\implementation\hard_ethernet_mac_wrapper_sync_fifo_v5_0_1.edn"
+"hard_ethernet_mac_wrapper_sync_fifo_v5_0_1.ngo"
+Release 10.1.03 - edif2ngd K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 10.1.03 edif2ngd K.39 (nt)
+INFO:NgdBuild - Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file <C:/Xilinx/10.1/EDK/data/edif2ngd.pfd> with
+local file <C:/Xilinx/10.1/ISE/data/edif2ngd.pfd>
+Writing module to "hard_ethernet_mac_wrapper_sync_fifo_v5_0_1.ngo"...
+Loading design module
+"M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_linu
+x_platform\implementation\hard_ethernet_mac_wrapper\hard_ethernet_mac_wrapper_sy
+nc_fifo_v5_0_1.ngo"...
+Executing edif2ngd -noa
+"M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_linu
+x_platform\implementation\hard_ethernet_mac_wrapper_sync_fifo_v5_0_2.edn"
+"hard_ethernet_mac_wrapper_sync_fifo_v5_0_2.ngo"
+Release 10.1.03 - edif2ngd K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 10.1.03 edif2ngd K.39 (nt)
+INFO:NgdBuild - Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file <C:/Xilinx/10.1/EDK/data/edif2ngd.pfd> with
+local file <C:/Xilinx/10.1/ISE/data/edif2ngd.pfd>
+Writing module to "hard_ethernet_mac_wrapper_sync_fifo_v5_0_2.ngo"...
+Loading design module
+"M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_linu
+x_platform\implementation\hard_ethernet_mac_wrapper\hard_ethernet_mac_wrapper_sy
+nc_fifo_v5_0_2.ngo"...
+
+Applying constraints in "hard_ethernet_mac_wrapper.ucf" to the design...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 80828 kilobytes
+
+Writing NGC file "../hard_ethernet_mac_wrapper.ngc" ...
+
+Writing NGCBUILD log file "../hard_ethernet_mac_wrapper.blc"...

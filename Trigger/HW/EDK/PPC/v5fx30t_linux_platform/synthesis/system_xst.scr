@@ -1,0 +1,14 @@
+run
+-opt_mode speed
+-netlist_hierarchy as_optimized
+-opt_level 1
+-p xc5vfx30tff665-1
+-top system
+-ifmt MIXED
+-ifn system_xst.prj
+-ofn ../implementation/system.ngc
+-hierarchy_separator /
+-iobuf YES
+-max_fanout 10000
+-sd {../implementation}
+-vlgincdir {"M:\MASTER\COMPET\Trigger\HW\EDK\PPC\v5fx30t_linux_platform\pcores\" "C:\Xilinx\10.1\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\" "C:\Xilinx\10.1\EDK\hw\XilinxReferenceDesigns\pcores\" }

@@ -1,0 +1,17 @@
+###################################################################
+
+BEGIN input_buf 
+
+## Peripheral Options
+OPTION IPTYPE = PERIPHERAL
+OPTION IMP_NETLIST = TRUE
+OPTION HDL = VHDL
+
+## Generics for VHDL or Parameters for Verilog
+PARAMETER DWIDTH = 4, DT = INTEGER
+
+## Ports
+PORT I = "", DIR = I, VEC = [(DWIDTH-1):0], ENDIAN = LITTLE, IOB_STATE=BUF
+PORT O = "", DIR = O, VEC = [(DWIDTH-1):0], ENDIAN = LITTLE
+
+END

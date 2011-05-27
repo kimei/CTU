@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator O.40d
+# Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION O.40d
+DATE            04/06/2011 - 14:26
+SOURCE          \\aristoteles\kimei\MASTER\COMPET\Trigger\HW\HDL\top\ctu.mcs
+DEVICE          XCF32P
+DATA_WIDTH      8
+FILL_DATA       0xFF
+SIGNATURE       0x2617BF7E
+START_ADDRESS   0x00000000 END_ADDRESS 0x0019C81F DIRECTION_UP   "M:/MASTER/COMPET/Trigger/HW/HDL/top/top/top.bit" 5vfx30tff665

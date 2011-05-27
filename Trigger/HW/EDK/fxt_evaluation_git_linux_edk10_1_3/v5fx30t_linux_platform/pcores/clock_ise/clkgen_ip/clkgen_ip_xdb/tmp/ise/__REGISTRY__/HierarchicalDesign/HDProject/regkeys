@@ -1,0 +1,24 @@
+CommandLine-Map
+
+s
+CommandLine-Ngdbuild
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\ngdbuild.exe -ise M:/MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linux_platform/pcores/clock_ise/clkgen_ip/clkgen_ip.ise -intstyle ise -dd _ngo -nt timestamp -i -p xc5vfx30t-ff665-1 clkgen.ngc clkgen.ngd
+s
+CommandLine-Par
+
+s
+CommandLine-Xst
+
+s
+Previous-NGD
+clkgen_prev_built.ngd
+s
+Previous-NGM
+
+s
+Previous-Packed-NCD
+
+s
+Previous-Routed-NCD
+
+s

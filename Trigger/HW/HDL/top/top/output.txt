@@ -1,0 +1,11 @@
+Storage Target: Xilinx Flash/PROM
+Storage Family: Platform Flash
+xcf32p          [32 M]
+xcf16p          [16 M]
+FF
+Untitled
+M:\MASTER\COMPET\Trigger\HW\HDL\top\top/
+
+MCS
+No
+No

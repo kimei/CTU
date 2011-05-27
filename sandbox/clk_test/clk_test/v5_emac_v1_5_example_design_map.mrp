@@ -1,0 +1,1359 @@
+Release 10.1.03 Map K.39 (nt)
+Xilinx Mapping Report File for Design 'v5_emac_v1_5_example_design'
+
+Design Information
+------------------
+Command Line   : map -ise
+M:/MASTER/COMPET/sandbox/clk_test/clk_test/clk_test.ise -intstyle ise -p
+xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -cm area -pr off -k 6 -lc off
+-power off -o v5_emac_v1_5_example_design_map.ncd
+v5_emac_v1_5_example_design.ngd v5_emac_v1_5_example_design.pcf 
+Target Device  : xc5vfx30t
+Target Package : ff665
+Target Speed   : -1
+Mapper Version : virtex5 -- $Revision: 1.46.12.2 $
+Mapped Date    : Fri Apr 29 16:51:34 2011
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    4
+Slice Logic Utilization:
+  Number of Slice Registers:                   324 out of  20,480    1%
+    Number used as Flip Flops:                 324
+  Number of Slice LUTs:                        279 out of  20,480    1%
+    Number used as logic:                      263 out of  20,480    1%
+      Number using O6 output only:             217
+      Number using O5 output only:              19
+      Number using O5 and O6:                   27
+    Number used as Memory:                      12 out of   6,080    1%
+      Number used as Shift Register:            12
+        Number using O6 output only:            12
+    Number used as exclusive route-thru:         4
+  Number of route-thrus:                        25 out of  40,960    1%
+    Number using O6 output only:                22
+    Number using O5 output only:                 2
+    Number using O5 and O6:                      1
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   180 out of   5,120    3%
+  Number of LUT Flip Flop pairs used:          425
+    Number with an unused Flip Flop:           101 out of     425   23%
+    Number with an unused LUT:                 146 out of     425   34%
+    Number of fully used LUT-FF pairs:         178 out of     425   41%
+    Number of unique control sets:              35
+    Number of slice register sites lost
+      to control set restrictions:              76 out of  20,480    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        72 out of     360   20%
+    IOB Flip Flops:                             21
+
+Specific Feature Utilization:
+  Number of BlockRAM/FIFO:                       2 out of      68    2%
+    Number using BlockRAM only:                  2
+    Total primitives used:
+      Number of 18k BlockRAM used:               4
+    Total Memory used (KB):                     72 out of   2,448    2%
+  Number of BUFG/BUFGCTRLs:                      7 out of      32   21%
+    Number used as BUFGs:                        7
+  Number of PLL_ADVs:                            1 out of       2   50%
+  Number of TEMACs:                              1 out of       2   50%
+
+Peak Memory Usage:  323 MB
+Total REAL time to MAP completion:  54 secs 
+Total CPU time to MAP completion:   47 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Modular Design Summary
+Section 11 - Timing Report
+Section 12 - Configuration String Information
+Section 13 - Control Set Information
+Section 14 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:LIT:243 - Logical network
+   v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_col_window_pipe<1> has no
+   load.
+WARNING:LIT:395 - The above warning message base_net_load_rule is repeated 22
+   more times for the following (max. 5 shown):
+   UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/Comp_11b_equal_port_map/BU2/a_ge_
+   b,
+   UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/IPV4_LUT_INDEXER_port_map/LUT_
+   END_CHECK/qa_eq_b,
+   UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/IPV4_LUT_INDEXER_port_map/LUT_
+   END_CHECK/BU2/a_ge_b,
+   UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COMP_TO_TA
+   RGET_LAST_BYTE/qa_eq_b,
+   UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COMP_TO_TA
+   RGET_LAST_BYTE/BU2/a_ge_b
+   To see the details of these warning messages, please use the -detail switch.
+WARNING:PhysDesignRules:1412 - Dangling pins on
+   block:<gmii_rxc0_delay>:<IODELAY_IODELAY>.  When DELAY_SRC is not DATAIN
+   programming the DATAIN input pin is not used and will be ignored.
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:MapLib:856 - PLL_ADV Inst_pll/PLL_ADV_INST CLKIN2 pin was disconnected
+   because a constant 1 is driving the CLKINSEL pin.
+INFO:MapLib:841 - Changing COMPENSATION attribute from SYSTEM_SYNCHRONOUS to
+   INTERNAL for PLL_ADV Inst_pll/PLL_ADV_INST.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 0.950 Volts. (default - Range: 0.950 to
+   1.050 Volts)
+INFO:Timing:3377 - Intersecting Constraints found and resolved.  For more
+   information see the TSI report.
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Place:834 - Only a subset of IOs are locked. Out of 72 IOs, 33 are locked
+   and 39 are not locked. If you would like to print the names of these IOs,
+   please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 187 block(s) removed
+   2 block(s) optimized away
+ 187 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_col_window_pipe<1>"
+is loadless and has been removed.
+ Loadless block
+"v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_col_window_pipe_1" (SFF)
+removed.
+  The signal "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_col_window_pipe<0>"
+is loadless and has been removed.
+   Loadless block
+"v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_col_window_pipe_0" (SFF)
+removed.
+    The signal "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_pipe<1>"
+is loadless and has been removed.
+     Loadless block
+"v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_pipe_1" (FF) removed.
+      The signal "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_pipe<0>"
+is loadless and has been removed.
+       Loadless block
+"v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_pipe_0" (SFF)
+removed.
+        The signal
+"v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_pipe_0_and00001" is
+loadless and has been removed.
+         Loadless block
+"v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_pipe_0_and000011"
+(ROM) removed.
+Loadless block "Inst_pll/CLKOUT0_BUFG_INST" (CKBUF) removed.
+ The signal "Inst_pll/CLKOUT0_BUF" is loadless and has been removed.
+Loadless block "Inst_pll/CLKOUT2_BUFG_INST" (CKBUF) removed.
+ The signal "Inst_pll/CLKOUT2_BUF" is loadless and has been removed.
+The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/Comp_11b_equal_port_map/BU2/a_ge_b"
+is sourceless and has been removed.
+The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/Comp_11b_equal_port_map/BU2/U0/gen_
+structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/temp_result" is
+sourceless and has been removed.
+ Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/Comp_11b_equal_port_map/BU2/U0/gen_
+structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/gen_output_reg.o
+utput_reg/fd/output_1" (FF) removed.
+  The signal "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/comp_eq" is sourceless
+and has been removed.
+   Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/PACKET_RECEIVER_FSM_port_map/rst_co
+unt1" (ROM) removed.
+    The signal "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/rst_count" is sourceless
+and has been removed.
+     Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O_0"
+(FF) removed.
+      The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O<0>"
+is sourceless and has been removed.
+       Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_lut<0>_INV_0" (BUF) removed.
+        The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_lut<0>" is sourceless and has been removed.
+         Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<0>" (MUX) removed.
+          The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<0>" is sourceless and has been removed.
+           Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<1>" (MUX) removed.
+            The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<1>" is sourceless and has been removed.
+             Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<2>" (MUX) removed.
+              The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<2>" is sourceless and has been removed.
+               Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<3>" (MUX) removed.
+                The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<3>" is sourceless and has been removed.
+                 Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<4>" (MUX) removed.
+                  The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<4>" is sourceless and has been removed.
+                   Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<5>" (MUX) removed.
+                    The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<5>" is sourceless and has been removed.
+                     Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<6>" (MUX) removed.
+                      The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<6>" is sourceless and has been removed.
+                       Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<7>" (MUX) removed.
+                        The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<7>" is sourceless and has been removed.
+                         Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<8>" (MUX) removed.
+                          The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<8>" is sourceless and has been removed.
+                           Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<9>" (MUX) removed.
+                            The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<9>" is sourceless and has been removed.
+                             Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_xor<10>" (XOR) removed.
+                              The signal "Result<10>" is sourceless and has been removed.
+                               Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O_10"
+(FF) removed.
+                                The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O<10>
+" is sourceless and has been removed.
+                                 Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_xor<10>_rt" (ROM) removed.
+                                  The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_xor<10>_rt" is sourceless and has been removed.
+                                 Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/Comp_11b_equal_port_map/BU2/U0/gen_
+structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/i_use_carry_plus
+_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[0].i_tile/o139" (ROM)
+removed.
+                                  The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/Comp_11b_equal_port_map/BU2/U0/gen_
+structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/i_use_carry_plus
+_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[0].i_tile/o139" is
+sourceless and has been removed.
+                                   Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/Comp_11b_equal_port_map/BU2/U0/gen_
+structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/i_use_carry_plus
+_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[0].i_tile/o206" (ROM)
+removed.
+                           Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_xor<9>" (XOR) removed.
+                            The signal "Result<9>" is sourceless and has been removed.
+                             Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O_9"
+(FF) removed.
+                              The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O<9>"
+is sourceless and has been removed.
+                               Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<9>_rt" (ROM) removed.
+                                The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<9>_rt" is sourceless and has been removed.
+                         Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_xor<8>" (XOR) removed.
+                          The signal "Result<8>" is sourceless and has been removed.
+                           Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O_8"
+(FF) removed.
+                            The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O<8>"
+is sourceless and has been removed.
+                             Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<8>_rt" (ROM) removed.
+                              The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<8>_rt" is sourceless and has been removed.
+                       Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_xor<7>" (XOR) removed.
+                        The signal "Result<7>" is sourceless and has been removed.
+                         Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O_7"
+(FF) removed.
+                          The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O<7>"
+is sourceless and has been removed.
+                           Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<7>_rt" (ROM) removed.
+                            The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<7>_rt" is sourceless and has been removed.
+                           Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/Comp_11b_equal_port_map/BU2/U0/gen_
+structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/i_use_carry_plus
+_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[0].i_tile/o189" (ROM)
+removed.
+                            The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/Comp_11b_equal_port_map/BU2/U0/gen_
+structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/i_use_carry_plus
+_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[0].i_tile/o189" is
+sourceless and has been removed.
+                     Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_xor<6>" (XOR) removed.
+                      The signal "Result<6>" is sourceless and has been removed.
+                       Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O_6"
+(FF) removed.
+                        The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O<6>"
+is sourceless and has been removed.
+                         Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<6>_rt" (ROM) removed.
+                          The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<6>_rt" is sourceless and has been removed.
+                   Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_xor<5>" (XOR) removed.
+                    The signal "Result<5>" is sourceless and has been removed.
+                     Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O_5"
+(FF) removed.
+                      The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O<5>"
+is sourceless and has been removed.
+                       Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<5>_rt" (ROM) removed.
+                        The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<5>_rt" is sourceless and has been removed.
+                 Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_xor<4>" (XOR) removed.
+                  The signal "Result<4>" is sourceless and has been removed.
+                   Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O_4"
+(FF) removed.
+                    The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O<4>"
+is sourceless and has been removed.
+                     Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<4>_rt" (ROM) removed.
+                      The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<4>_rt" is sourceless and has been removed.
+                     Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/Comp_11b_equal_port_map/BU2/U0/gen_
+structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/i_use_carry_plus
+_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[0].i_tile/o62" (ROM)
+removed.
+                      The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/Comp_11b_equal_port_map/BU2/U0/gen_
+structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/i_use_carry_plus
+_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[0].i_tile/o62" is
+sourceless and has been removed.
+               Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_xor<3>" (XOR) removed.
+                The signal "Result<3>" is sourceless and has been removed.
+                 Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O_3"
+(FF) removed.
+                  The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O<3>"
+is sourceless and has been removed.
+                   Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<3>_rt" (ROM) removed.
+                    The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<3>_rt" is sourceless and has been removed.
+             Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_xor<2>" (XOR) removed.
+              The signal "Result<2>" is sourceless and has been removed.
+               Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O_2"
+(FF) removed.
+                The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O<2>"
+is sourceless and has been removed.
+                 Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<2>_rt" (ROM) removed.
+                  The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<2>_rt" is sourceless and has been removed.
+           Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_xor<1>" (XOR) removed.
+            The signal "Result<1>" is sourceless and has been removed.
+             Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O_1"
+(FF) removed.
+              The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O<1>"
+is sourceless and has been removed.
+               Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<1>_rt" (ROM) removed.
+                The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_cy<1>_rt" is sourceless and has been removed.
+               Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/Comp_11b_equal_port_map/BU2/U0/gen_
+structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/i_use_carry_plus
+_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[0].i_tile/o26" (ROM)
+removed.
+                The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/Comp_11b_equal_port_map/BU2/U0/gen_
+structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/i_use_carry_plus
+_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[0].i_tile/o26" is
+sourceless and has been removed.
+         Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/Mcount_valu
+e_O_xor<0>" (XOR) removed.
+          The signal "Result<0>" is sourceless and has been removed.
+   Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/PACKET_RECEIVER_FSM_port_map/curren
+t_st_FSM_FFd3-In1" (ROM) removed.
+    The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/PACKET_RECEIVER_FSM_port_map/curren
+t_st_FSM_FFd3-In" is sourceless and has been removed.
+     Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/PACKET_RECEIVER_FSM_port_map/curren
+t_st_FSM_FFd3" (FF) removed.
+      The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/PACKET_RECEIVER_FSM_port_map/curren
+t_st_FSM_FFd3" is sourceless and has been removed.
+       Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/PACKET_RECEIVER_FSM_port_map/curren
+t_st_FSM_FFd1-In1" (ROM) removed.
+        The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/PACKET_RECEIVER_FSM_port_map/curren
+t_st_FSM_FFd1-In" is sourceless and has been removed.
+         Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/PACKET_RECEIVER_FSM_port_map/curren
+t_st_FSM_FFd1" (FF) removed.
+          The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/PACKET_RECEIVER_FSM_port_map/curren
+t_st_FSM_FFd1" is sourceless and has been removed.
+           Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/PACKET_RECEIVER_FSM_port_map/curren
+t_st_FSM_FFd2-In1" (ROM) removed.
+            The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/PACKET_RECEIVER_FSM_port_map/curren
+t_st_FSM_FFd2-In" is sourceless and has been removed.
+             Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/PACKET_RECEIVER_FSM_port_map/curren
+t_st_FSM_FFd2" (FF) removed.
+              The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/PACKET_RECEIVER_FSM_port_map/curren
+t_st_FSM_FFd2" is sourceless and has been removed.
+               Sourceless block "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<0>1"
+(ROM) removed.
+                The signal "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<0>" is
+sourceless and has been removed.
+               Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/PACKET_RECEIVER_FSM_port_map/curren
+t_st_FSM_Out31" (ROM) removed.
+                The signal "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/wren_LSbyte" is
+sourceless and has been removed.
+                 Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/LSbyte_REG/output_val_0" (FF)
+removed.
+                  The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/LSbyte_REG/output_val<0>" is
+sourceless and has been removed.
+                 Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/LSbyte_REG/output_val_1" (FF)
+removed.
+                  The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/LSbyte_REG/output_val<1>" is
+sourceless and has been removed.
+                   Sourceless block "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<5>31"
+(ROM) removed.
+                    The signal "N4" is sourceless and has been removed.
+                     Sourceless block "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<6>1"
+(ROM) removed.
+                      The signal "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<6>" is
+sourceless and has been removed.
+                     Sourceless block "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<5>"
+(ROM) removed.
+                      The signal "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<5>" is
+sourceless and has been removed.
+                     Sourceless block "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<3>2"
+(ROM) removed.
+                      The signal "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<3>" is
+sourceless and has been removed.
+                     Sourceless block "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<7>1"
+(ROM) removed.
+                      The signal "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<7>1" is
+sourceless and has been removed.
+                       Sourceless block "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<7>_f7"
+(MUX) removed.
+                        The signal "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<7>" is
+sourceless and has been removed.
+                     Sourceless block "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<7>2"
+(ROM) removed.
+                      The signal "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<7>2" is
+sourceless and has been removed.
+                   Sourceless block "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<1>1"
+(ROM) removed.
+                    The signal "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<1>" is
+sourceless and has been removed.
+                   Sourceless block "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<4>1"
+(ROM) removed.
+                    The signal "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<4>" is
+sourceless and has been removed.
+                   Sourceless block "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<2>_G"
+(ROM) removed.
+                    The signal "N107" is sourceless and has been removed.
+                     Sourceless block "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<2>"
+(MUX) removed.
+                      The signal "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<2>" is
+sourceless and has been removed.
+                 Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/LSbyte_REG/output_val_2" (FF)
+removed.
+                  The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/LSbyte_REG/output_val<2>" is
+sourceless and has been removed.
+                 Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/LSbyte_REG/output_val_3" (FF)
+removed.
+                  The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/LSbyte_REG/output_val<3>" is
+sourceless and has been removed.
+                 Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/LSbyte_REG/output_val_4" (FF)
+removed.
+                  The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/LSbyte_REG/output_val<4>" is
+sourceless and has been removed.
+                 Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/LSbyte_REG/output_val_5" (FF)
+removed.
+                  The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/LSbyte_REG/output_val<5>" is
+sourceless and has been removed.
+                 Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/LSbyte_REG/output_val_6" (FF)
+removed.
+                  The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/LSbyte_REG/output_val<6>" is
+sourceless and has been removed.
+                 Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/LSbyte_REG/output_val_7" (FF)
+removed.
+                  The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/LSbyte_REG/output_val<7>" is
+sourceless and has been removed.
+               Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/PACKET_RECEIVER_FSM_port_map/wren_M
+Sbyte1" (ROM) removed.
+                The signal "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/wren_MSbyte" is
+sourceless and has been removed.
+                 Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/MSbyte_REG/output_val_0" (FF)
+removed.
+                  The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/MSbyte_REG/output_val<0>" is
+sourceless and has been removed.
+                   Sourceless block "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<8>1"
+(ROM) removed.
+                    The signal "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<8>" is
+sourceless and has been removed.
+                 Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/MSbyte_REG/output_val_1" (FF)
+removed.
+                  The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/MSbyte_REG/output_val<1>" is
+sourceless and has been removed.
+                   Sourceless block "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<9>1"
+(ROM) removed.
+                    The signal "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<9>" is
+sourceless and has been removed.
+                 Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/MSbyte_REG/output_val_2" (FF)
+removed.
+                  The signal
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/MSbyte_REG/output_val<2>" is
+sourceless and has been removed.
+                   Sourceless block "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<10>1"
+(ROM) removed.
+                    The signal "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<10>" is
+sourceless and has been removed.
+               Sourceless block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/PACKET_RECEIVER_FSM_port_map/en_cou
+nt1" (ROM) removed.
+                The signal "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/en_count" is sourceless
+and has been removed.
+               Sourceless block "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<5>_SW0"
+(ROM) removed.
+                The signal "N42" is sourceless and has been removed.
+               Sourceless block "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<5>_SW1"
+(ROM) removed.
+                The signal "N43" is sourceless and has been removed.
+               Sourceless block "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<2>_F"
+(ROM) removed.
+                The signal "N106" is sourceless and has been removed.
+           Sourceless block "UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<3>11"
+(ROM) removed.
+            The signal "N9" is sourceless and has been removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/IPV4_LUT_INDEXER_port_map/LUT_EN
+D_CHECK/qa_eq_b" is sourceless and has been removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/IPV4_LUT_INDEXER_port_map/LUT_EN
+D_CHECK/BU2/a_ge_b" is sourceless and has been removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/IPV4_LUT_INDEXER_port_map/LUT_EN
+D_CHECK/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne
+_b/temp_result" is sourceless and has been removed.
+ Sourceless block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/IPV4_LUT_INDEXER_port_map/LUT_EN
+D_CHECK/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne
+_b/gen_output_reg.output_reg/fd/output_1" (FF) removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/IPV4_LUT_INDEXER_port_map/LUT_EN
+D_CHECK/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne
+_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[0].i_t
+ile/o85" is sourceless and has been removed.
+ Sourceless block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/IPV4_LUT_INDEXER_port_map/LUT_EN
+D_CHECK/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne
+_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[0].i_t
+ile/o107" (ROM) removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/IPV4_LUT_INDEXER_port_map/LUT_EN
+D_CHECK/BU2/N01" is sourceless and has been removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COMP_TO_TARG
+ET_LAST_BYTE/qa_eq_b" is sourceless and has been removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COMP_TO_TARG
+ET_LAST_BYTE/BU2/a_ge_b" is sourceless and has been removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COMP_TO_TARG
+ET_LAST_BYTE/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_
+eq_ne_b/temp_result" is sourceless and has been removed.
+ Sourceless block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COMP_TO_TARG
+ET_LAST_BYTE/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_
+eq_ne_b/gen_output_reg.output_reg/fd/output_1" (FF) removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COMP_TO_TARG
+ET_LAST_BYTE/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_
+eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[0
+].i_tile/o26" is sourceless and has been removed.
+ Sourceless block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COMP_TO_TARG
+ET_LAST_BYTE/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_
+eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[0
+].i_tile/o206" (ROM) removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COMP_TO_TARG
+ET_LAST_BYTE/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_
+eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[0
+].i_tile/o62" is sourceless and has been removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COMP_TO_TARG
+ET_LAST_BYTE/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_
+eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[0
+].i_tile/o139" is sourceless and has been removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COMP_TO_TARG
+ET_LAST_BYTE/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_
+eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[0
+].i_tile/o189" is sourceless and has been removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_TOTAL_LENGTH_1/qa_eq_b" is sourceless and has been removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_TOTAL_LENGTH_1/BU2/a_ge_b" is sourceless and has been removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_TOTAL_LENGTH_1/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal
+_b.i_a_eq_ne_b/temp_result" is sourceless and has been removed.
+ Sourceless block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_TOTAL_LENGTH_1/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal
+_b.i_a_eq_ne_b/gen_output_reg.output_reg/fd/output_1" (FF) removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_TOTAL_LENGTH_1/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal
+_b.i_a_eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_
+tiles[0].i_tile/o85" is sourceless and has been removed.
+ Sourceless block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_TOTAL_LENGTH_1/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal
+_b.i_a_eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_
+tiles[0].i_tile/o107" (ROM) removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_TOTAL_LENGTH_1/BU2/N01" is sourceless and has been removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_HEADER_CHECKSUM_1/qa_eq_b" is sourceless and has been removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_HEADER_CHECKSUM_1/BU2/a_ge_b" is sourceless and has been removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_HEADER_CHECKSUM_1/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_noteq
+ual_b.i_a_eq_ne_b/temp_result" is sourceless and has been removed.
+ Sourceless block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_HEADER_CHECKSUM_1/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_noteq
+ual_b.i_a_eq_ne_b/gen_output_reg.output_reg/fd/output_1" (FF) removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_HEADER_CHECKSUM_1/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_noteq
+ual_b.i_a_eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/lo
+op_tiles[0].i_tile/o85" is sourceless and has been removed.
+ Sourceless block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_HEADER_CHECKSUM_1/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_noteq
+ual_b.i_a_eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/lo
+op_tiles[0].i_tile/o107" (ROM) removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_HEADER_CHECKSUM_1/BU2/N01" is sourceless and has been removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_LENGTH_1/qa_eq_b" is sourceless and has been removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_LENGTH_1/BU2/a_ge_b" is sourceless and has been removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_LENGTH_1/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a
+_eq_ne_b/temp_result" is sourceless and has been removed.
+ Sourceless block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_LENGTH_1/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a
+_eq_ne_b/gen_output_reg.output_reg/fd/output_1" (FF) removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_LENGTH_1/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a
+_eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[
+0].i_tile/o85" is sourceless and has been removed.
+ Sourceless block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_LENGTH_1/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a
+_eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[
+0].i_tile/o107" (ROM) removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_LENGTH_1/BU2/N01" is sourceless and has been removed.
+The signal "UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/qspo<7>" is
+sourceless and has been removed.
+The signal "UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/qspo<6>" is
+sourceless and has been removed.
+The signal "UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/qspo<5>" is
+sourceless and has been removed.
+The signal "UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/qspo<4>" is
+sourceless and has been removed.
+The signal "UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/qspo<3>" is
+sourceless and has been removed.
+The signal "UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/qspo<2>" is
+sourceless and has been removed.
+The signal "UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/qspo<1>" is
+sourceless and has been removed.
+The signal "UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/qspo<0>" is
+sourceless and has been removed.
+The signal "UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/N1" is
+sourceless and has been removed.
+The signal "UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/N0" is
+sourceless and has been removed.
+The signal "UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/qdpo<0>"
+is sourceless and has been removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_rom.rom_inst/
+spo_int<0>" is sourceless and has been removed.
+ Sourceless block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_rom.rom_inst/
+qspo_int_0" (FF) removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_rom.rom_inst/
+spo_int<1>" is sourceless and has been removed.
+ Sourceless block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_rom.rom_inst/
+qspo_int_1" (FF) removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_rom.rom_inst/
+spo_int<2>" is sourceless and has been removed.
+ Sourceless block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_rom.rom_inst/
+qspo_int_2" (FF) removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_rom.rom_inst/
+spo_int<3>" is sourceless and has been removed.
+ Sourceless block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_rom.rom_inst/
+qspo_int_3" (FF) removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_rom.rom_inst/
+spo_int<4>" is sourceless and has been removed.
+ Sourceless block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_rom.rom_inst/
+qspo_int_4" (FF) removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_rom.rom_inst/
+spo_int<5>" is sourceless and has been removed.
+ Sourceless block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_rom.rom_inst/
+qspo_int_5" (FF) removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_rom.rom_inst/
+spo_int<6>" is sourceless and has been removed.
+ Sourceless block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_rom.rom_inst/
+qspo_int_6" (FF) removed.
+The signal
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_rom.rom_inst/
+spo_int<7>" is sourceless and has been removed.
+ Sourceless block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_rom.rom_inst/
+qspo_int_7" (FF) removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_bram_l<2>" is
+unused and has been removed.
+The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_bram_l<3>" is
+unused and has been removed.
+The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_bram_l<4>" is
+unused and has been removed.
+The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_bram_l<5>" is
+unused and has been removed.
+The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_bram_l<6>" is
+unused and has been removed.
+The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_bram_l<7>" is
+unused and has been removed.
+The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_bram_u<2>" is
+unused and has been removed.
+The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_bram_u<3>" is
+unused and has been removed.
+The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_bram_u<4>" is
+unused and has been removed.
+The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_bram_u<5>" is
+unused and has been removed.
+The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_bram_u<6>" is
+unused and has been removed.
+The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_bram_u<7>" is
+unused and has been removed.
+The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out<2>" is
+unused and has been removed.
+ Unused block "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out_2" (FF)
+removed.
+  The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe<2>" is
+unused and has been removed.
+   Unused block "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_2" (FF)
+removed.
+    The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_mux0001<2>"
+is unused and has been removed.
+     Unused block
+"v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_mux0001<2>1" (ROM)
+removed.
+      The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_l<2>" is
+unused and has been removed.
+       Unused block "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_l_2" (FF)
+removed.
+      The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_u<2>" is
+unused and has been removed.
+       Unused block "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_u_2" (FF)
+removed.
+The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out<3>" is
+unused and has been removed.
+ Unused block "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out_3" (FF)
+removed.
+  The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe<3>" is
+unused and has been removed.
+   Unused block "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_3" (FF)
+removed.
+    The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_mux0001<3>"
+is unused and has been removed.
+     Unused block
+"v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_mux0001<3>1" (ROM)
+removed.
+      The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_l<3>" is
+unused and has been removed.
+       Unused block "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_l_3" (FF)
+removed.
+      The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_u<3>" is
+unused and has been removed.
+       Unused block "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_u_3" (FF)
+removed.
+The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out<4>" is
+unused and has been removed.
+ Unused block "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out_4" (FF)
+removed.
+  The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe<4>" is
+unused and has been removed.
+   Unused block "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_4" (FF)
+removed.
+    The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_mux0001<4>"
+is unused and has been removed.
+     Unused block
+"v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_mux0001<4>1" (ROM)
+removed.
+      The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_l<4>" is
+unused and has been removed.
+       Unused block "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_l_4" (FF)
+removed.
+      The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_u<4>" is
+unused and has been removed.
+       Unused block "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_u_4" (FF)
+removed.
+The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out<5>" is
+unused and has been removed.
+ Unused block "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out_5" (FF)
+removed.
+  The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe<5>" is
+unused and has been removed.
+   Unused block "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_5" (FF)
+removed.
+    The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_mux0001<5>"
+is unused and has been removed.
+     Unused block
+"v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_mux0001<5>1" (ROM)
+removed.
+      The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_l<5>" is
+unused and has been removed.
+       Unused block "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_l_5" (FF)
+removed.
+      The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_u<5>" is
+unused and has been removed.
+       Unused block "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_u_5" (FF)
+removed.
+The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out<6>" is
+unused and has been removed.
+ Unused block "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out_6" (FF)
+removed.
+  The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe<6>" is
+unused and has been removed.
+   Unused block "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_6" (FF)
+removed.
+    The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_mux0001<6>"
+is unused and has been removed.
+     Unused block
+"v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_mux0001<6>1" (ROM)
+removed.
+      The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_l<6>" is
+unused and has been removed.
+       Unused block "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_l_6" (FF)
+removed.
+      The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_u<6>" is
+unused and has been removed.
+       Unused block "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_u_6" (FF)
+removed.
+The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out<7>" is
+unused and has been removed.
+ Unused block "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out_7" (FF)
+removed.
+  The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe<7>" is
+unused and has been removed.
+   Unused block "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_7" (FF)
+removed.
+    The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_mux0001<7>"
+is unused and has been removed.
+     Unused block
+"v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_mux0001<7>1" (ROM)
+removed.
+      The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_l<7>" is
+unused and has been removed.
+       Unused block "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_l_7" (FF)
+removed.
+      The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_u<7>" is
+unused and has been removed.
+       Unused block "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_u_7" (FF)
+removed.
+The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_sof_n" is unused and
+has been removed.
+ Unused block "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_sof_n" (SFF)
+removed.
+  The signal "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_sof_n_mux0000" is
+unused and has been removed.
+   Unused block "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_sof_n_mux00001"
+(ROM) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/IPV4_LUT_INDEXER_port_map/LUT_EN
+D_CHECK/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne
+_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[0].i_t
+ile/o107_SW0" (ROM) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/IPV4_LUT_INDEXER_port_map/LUT_EN
+D_CHECK/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne
+_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[0].i_t
+ile/o85" (ROM) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/IPV4_LUT_INDEXER_port_map/LUT_EN
+D_CHECK/BU2/XST_GND" (ZERO) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/IPV4_LUT_INDEXER_port_map/LUT_EN
+D_CHECK/GND" (ZERO) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/IPV4_LUT_INDEXER_port_map/LUT_EN
+D_CHECK/VCC" (ONE) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_rom.rom_inst/
+Mrom_spo_int_rom000011" (ROM) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_rom.rom_inst/
+Mrom_spo_int_rom0000111" (ROM) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_rom.rom_inst/
+Mrom_spo_int_rom000021" (ROM) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_rom.rom_inst/
+Mrom_spo_int_rom000031" (ROM) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_rom.rom_inst/
+Mrom_spo_int_rom000041" (ROM) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_rom.rom_inst/
+Mrom_spo_int_rom000051" (ROM) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_rom.rom_inst/
+Mrom_spo_int_rom000061" (ROM) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_rom.rom_inst/
+Mrom_spo_int_rom000071" (ROM) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/XST_GND" (ZERO)
+removed.
+Unused block "UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/GND" (ZERO)
+removed.
+Unused block "UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/VCC" (ONE)
+removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_HEADER_CHECKSUM_1/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_noteq
+ual_b.i_a_eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/lo
+op_tiles[0].i_tile/o107_SW0" (ROM) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_HEADER_CHECKSUM_1/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_noteq
+ual_b.i_a_eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/lo
+op_tiles[0].i_tile/o85" (ROM) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_HEADER_CHECKSUM_1/BU2/XST_GND" (ZERO) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_HEADER_CHECKSUM_1/GND" (ZERO) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_HEADER_CHECKSUM_1/VCC" (ONE) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_LENGTH_1/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a
+_eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[
+0].i_tile/o107_SW0" (ROM) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_LENGTH_1/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a
+_eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[
+0].i_tile/o85" (ROM) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_LENGTH_1/BU2/XST_GND" (ZERO) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_LENGTH_1/GND" (ZERO) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_LENGTH_1/VCC" (ONE) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_TOTAL_LENGTH_1/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal
+_b.i_a_eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_
+tiles[0].i_tile/o107_SW0" (ROM) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_TOTAL_LENGTH_1/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal
+_b.i_a_eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_
+tiles[0].i_tile/o85" (ROM) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_TOTAL_LENGTH_1/BU2/XST_GND" (ZERO) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_TOTAL_LENGTH_1/GND" (ZERO) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TA
+RGET_TOTAL_LENGTH_1/VCC" (ONE) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COMP_TO_TARG
+ET_LAST_BYTE/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_
+eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[0
+].i_tile/o139" (ROM) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COMP_TO_TARG
+ET_LAST_BYTE/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_
+eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[0
+].i_tile/o189" (ROM) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COMP_TO_TARG
+ET_LAST_BYTE/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_
+eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[0
+].i_tile/o26" (ROM) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COMP_TO_TARG
+ET_LAST_BYTE/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_
+eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[0
+].i_tile/o62" (ROM) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COMP_TO_TARG
+ET_LAST_BYTE/BU2/XST_GND" (ZERO) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COMP_TO_TARG
+ET_LAST_BYTE/GND" (ZERO) removed.
+Unused block
+"UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COMP_TO_TARG
+ET_LAST_BYTE/VCC" (ONE) removed.
+Unused block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/Comp_11b_equal_port_map/BU2/XST_GND
+" (ZERO) removed.
+Unused block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/Comp_11b_equal_port_map/GND" (ZERO)
+removed.
+Unused block
+"UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/Comp_11b_equal_port_map/VCC" (ONE)
+removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Strength | Rate |              |          | Delay    |
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+| CLIENTEMAC0PAUSEREQ                | IOB              | INPUT     | LVCMOS25             |          |      |              |          |          |
+| CLIENTEMAC0PAUSEVAL<0>             | IOB              | INPUT     | LVCMOS25             |          |      |              |          |          |
+| CLIENTEMAC0PAUSEVAL<1>             | IOB              | INPUT     | LVCMOS25             |          |      |              |          |          |
+| CLIENTEMAC0PAUSEVAL<2>             | IOB              | INPUT     | LVCMOS25             |          |      |              |          |          |
+| CLIENTEMAC0PAUSEVAL<3>             | IOB              | INPUT     | LVCMOS25             |          |      |              |          |          |
+| CLIENTEMAC0PAUSEVAL<4>             | IOB              | INPUT     | LVCMOS25             |          |      |              |          |          |
+| CLIENTEMAC0PAUSEVAL<5>             | IOB              | INPUT     | LVCMOS25             |          |      |              |          |          |
+| CLIENTEMAC0PAUSEVAL<6>             | IOB              | INPUT     | LVCMOS25             |          |      |              |          |          |
+| CLIENTEMAC0PAUSEVAL<7>             | IOB              | INPUT     | LVCMOS25             |          |      |              |          |          |
+| CLIENTEMAC0PAUSEVAL<8>             | IOB              | INPUT     | LVCMOS25             |          |      |              |          |          |
+| CLIENTEMAC0PAUSEVAL<9>             | IOB              | INPUT     | LVCMOS25             |          |      |              |          |          |
+| CLIENTEMAC0PAUSEVAL<10>            | IOB              | INPUT     | LVCMOS25             |          |      |              |          |          |
+| CLIENTEMAC0PAUSEVAL<11>            | IOB              | INPUT     | LVCMOS25             |          |      |              |          |          |
+| CLIENTEMAC0PAUSEVAL<12>            | IOB              | INPUT     | LVCMOS25             |          |      |              |          |          |
+| CLIENTEMAC0PAUSEVAL<13>            | IOB              | INPUT     | LVCMOS25             |          |      |              |          |          |
+| CLIENTEMAC0PAUSEVAL<14>            | IOB              | INPUT     | LVCMOS25             |          |      |              |          |          |
+| CLIENTEMAC0PAUSEVAL<15>            | IOB              | INPUT     | LVCMOS25             |          |      |              |          |          |
+| CLIENTEMAC0TXIFGDELAY<0>           | IOB              | INPUT     | LVCMOS25             |          |      |              |          |          |
+| CLIENTEMAC0TXIFGDELAY<1>           | IOB              | INPUT     | LVCMOS25             |          |      |              |          |          |
+| CLIENTEMAC0TXIFGDELAY<2>           | IOB              | INPUT     | LVCMOS25             |          |      |              |          |          |
+| CLIENTEMAC0TXIFGDELAY<3>           | IOB              | INPUT     | LVCMOS25             |          |      |              |          |          |
+| CLIENTEMAC0TXIFGDELAY<4>           | IOB              | INPUT     | LVCMOS25             |          |      |              |          |          |
+| CLIENTEMAC0TXIFGDELAY<5>           | IOB              | INPUT     | LVCMOS25             |          |      |              |          |          |
+| CLIENTEMAC0TXIFGDELAY<6>           | IOB              | INPUT     | LVCMOS25             |          |      |              |          |          |
+| CLIENTEMAC0TXIFGDELAY<7>           | IOB              | INPUT     | LVCMOS25             |          |      |              |          |          |
+| EMAC0CLIENTRXDVLD                  | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW |              |          |          |
+| EMAC0CLIENTRXFRAMEDROP             | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW |              |          |          |
+| EMAC0CLIENTRXSTATS<0>              | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW |              |          |          |
+| EMAC0CLIENTRXSTATS<1>              | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW |              |          |          |
+| EMAC0CLIENTRXSTATS<2>              | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW |              |          |          |
+| EMAC0CLIENTRXSTATS<3>              | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW |              |          |          |
+| EMAC0CLIENTRXSTATS<4>              | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW |              |          |          |
+| EMAC0CLIENTRXSTATS<5>              | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW |              |          |          |
+| EMAC0CLIENTRXSTATS<6>              | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW |              |          |          |
+| EMAC0CLIENTRXSTATSBYTEVLD          | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW |              |          |          |
+| EMAC0CLIENTRXSTATSVLD              | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW |              |          |          |
+| EMAC0CLIENTTXSTATS                 | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW |              |          |          |
+| EMAC0CLIENTTXSTATSBYTEVLD          | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW |              |          |          |
+| EMAC0CLIENTTXSTATSVLD              | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW |              |          |          |
+| FPGA100M                           | IOB              | INPUT     | LVCMOS25             |          |      |              |          |          |
+| GMII_COL_0                         | IOB              | INPUT     | LVCMOS25             |          |      |              |          |          |
+| GMII_CRS_0                         | IOB              | INPUT     | LVCMOS25             |          |      |              |          |          |
+| GMII_RXD_0<0>                      | IOB              | INPUT     | LVCMOS25             |          |      | IFF          |          | FIXED    |
+| GMII_RXD_0<1>                      | IOB              | INPUT     | LVCMOS25             |          |      | IFF          |          | FIXED    |
+| GMII_RXD_0<2>                      | IOB              | INPUT     | LVCMOS25             |          |      | IFF          |          | FIXED    |
+| GMII_RXD_0<3>                      | IOB              | INPUT     | LVCMOS25             |          |      | IFF          |          | FIXED    |
+| GMII_RXD_0<4>                      | IOB              | INPUT     | LVCMOS25             |          |      | IFF          |          | FIXED    |
+| GMII_RXD_0<5>                      | IOB              | INPUT     | LVCMOS25             |          |      | IFF          |          | FIXED    |
+| GMII_RXD_0<6>                      | IOB              | INPUT     | LVCMOS25             |          |      | IFF          |          | FIXED    |
+| GMII_RXD_0<7>                      | IOB              | INPUT     | LVCMOS25             |          |      | IFF          |          | FIXED    |
+| GMII_RX_CLK_0                      | IOB              | INPUT     | LVCMOS25             |          |      |              |          | FIXED    |
+| GMII_RX_DV_0                       | IOB              | INPUT     | LVCMOS25             |          |      | IFF          |          | FIXED    |
+| GMII_RX_ER_0                       | IOB              | INPUT     | LVCMOS25             |          |      | IFF          |          | FIXED    |
+| GMII_TXD_0<0>                      | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW | OFF          |          |          |
+| GMII_TXD_0<1>                      | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW | OFF          |          |          |
+| GMII_TXD_0<2>                      | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW | OFF          |          |          |
+| GMII_TXD_0<3>                      | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW | OFF          |          |          |
+| GMII_TXD_0<4>                      | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW | OFF          |          |          |
+| GMII_TXD_0<5>                      | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW | OFF          |          |          |
+| GMII_TXD_0<6>                      | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW | OFF          |          |          |
+| GMII_TXD_0<7>                      | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW | OFF          |          |          |
+| GMII_TX_CLK_0                      | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW | ODDR         |          |          |
+| GMII_TX_EN_0                       | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW | OFF          |          |          |
+| GMII_TX_ER_0                       | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW | OFF          |          |          |
+| GTX_CLK_0                          | IOB              | INPUT     | LVCMOS25             |          |      |              |          |          |
+| MII_TX_CLK_0                       | IOB              | INPUT     | LVCMOS25             |          |      |              |          |          |
+| PHY_RESET_0                        | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW |              |          |          |
+| button                             | IOB              | INPUT     | LVCMOS25             |          |      |              |          |          |
+| light<0>                           | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW |              |          |          |
+| light<1>                           | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW |              |          |          |
+| light<2>                           | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW |              |          |          |
+| light<3>                           | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW |              |          |          |
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Modular Design Summary
+-----------------------------------
+Modular Design not used for this design.
+
+Section 11 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Development System Reference Guide "TRACE" chapter.
+
+Section 12 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 13 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 14 - Utilization by Hierarchy
+-------------------------------------
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Module                      | Partition | Slices*       | Slice Reg     | LUTs          | LUTRAM        | BRAM/FIFO | DSP48E  | BUFG  | BUFIO | BUFR  | DCM   | PLL   | Full Hierarchical Name                                                  |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| v5_emac_v1_5_example_design |           | 36/204        | 20/324        | 26/279        | 1/12          | 0/2       | 0/0     | 6/7   | 0/0   | 0/0   | 0/0   | 0/1   | v5_emac_v1_5_example_design                                             |
+| +Inst_pll                   |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0     | 1/1   | 0/0   | 0/0   | 0/0   | 1/1   | v5_emac_v1_5_example_design/Inst_pll                                    |
+| +v5_emac_ll                 |           | 7/168         | 18/304        | 0/253         | 0/11          | 0/2       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0   | v5_emac_v1_5_example_design/v5_emac_ll                                  |
+| ++client_side_FIFO_emac0    |           | 0/161         | 0/286         | 0/253         | 0/11          | 0/2       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0   | v5_emac_v1_5_example_design/v5_emac_ll/client_side_FIFO_emac0           |
+| +++rx_fifo_i                |           | 74/74         | 130/130       | 113/113       | 11/11         | 1/1       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0   | v5_emac_v1_5_example_design/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i |
+| +++tx_fifo_i                |           | 87/87         | 156/156       | 140/140       | 0/0           | 1/1       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0   | v5_emac_v1_5_example_design/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i |
+| ++v5_emac_block             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0   | v5_emac_v1_5_example_design/v5_emac_ll/v5_emac_block                    |
+| +++gmii0                    |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0   | v5_emac_v1_5_example_design/v5_emac_ll/v5_emac_block/gmii0              |
+| +++v5_emac_wrapper          |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0   | v5_emac_v1_5_example_design/v5_emac_ll/v5_emac_block/v5_emac_wrapper    |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+* Slices can be packed with basic elements from multiple hierarchies.
+  Therefore, a slice will be counted in every hierarchical module
+  that each of its packed basic elements belong to.
+** For each column, there are two numbers reported <A>/<B>.
+   <A> is the number of elements that belong to that specific hierarchical module.
+   <B> is the total number of elements from that hierarchical module and any lower level
+   hierarchical modules below.
+*** The LUTRAM column counts all LUTs used as memory including RAM, ROM, and shift registers.

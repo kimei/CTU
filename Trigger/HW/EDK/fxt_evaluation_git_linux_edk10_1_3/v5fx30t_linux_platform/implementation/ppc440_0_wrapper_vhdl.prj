@@ -1,0 +1,2 @@
+vhdl ppc440_virtex5_v1_01_a "C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\ppc440_virtex5_v1_01_a\hdl\vhdl\ppc440_virtex5.vhd"
+vhdl work "\\aristoteles\kimei\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_linux_platform\hdl\ppc440_0_wrapper.vhd"

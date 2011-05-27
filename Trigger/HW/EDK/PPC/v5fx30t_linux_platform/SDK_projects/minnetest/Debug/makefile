@@ -1,0 +1,46 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+ROOT := ..
+
+-include $(ROOT)/makefile.init
+-include ../../ppc440_0_sw_platform/ppc440_0/libgen.mk
+
+RM := rm -rf
+
+# All of the sources participating in the build are defined here
+-include sources.mk
+-include $(SUBDIRS:%=%/subdir.mk)
+-include objects.mk
+-include $(DEPS)
+-include $(ROOT)/makefile.defs
+
+# All Target
+all: minnetest.elf
+
+dependents:
+	-cd M:/MASTER/COMPET/Trigger/HW/EDK/PPC/v5fx30t_linux_platform/SDK_projects/ppc440_0_sw_platform && $(MAKE) all
+
+minnetest.elf:   $(LIBRARIES) $(LIBDEP) $(OBJS)
+	@echo 'Building target: $@'
+	powerpc-eabi-gcc -o $@ $(OBJS) $(USER_OBJS) $(LIBS) -mcpu=440  -L../../ppc440_0_sw_platform/ppc440_0/lib   
+	@echo 'Finished building: $@'
+	@echo
+	@echo "**************" Validating ELF File "**************"
+	@echo
+	@echo 'Validating ELF Section Addresses with Hardware Address Map...'
+	elfcheck -noheader -mhs //aristoteles/kimei/MASTER/COMPET/Trigger/HW/EDK/PPC/v5fx30t_linux_platform/system.mhs -p xc5vfx30tff665-1 -xmpdir M:/MASTER/COMPET/Trigger/HW/EDK/PPC/v5fx30t_linux_platform -pe ppc440_0 $@
+	@echo
+	@echo "**************" Determining Size of ELF File "**************"
+	@echo
+	powerpc-eabi-size $@
+	@echo
+
+clean:
+	-$(RM) $(OBJS) $(DEPS) minnetest.elf
+
+.PHONY: all clean dependents
+.SECONDARY:
+
+-include $(ROOT)/makefile.targets

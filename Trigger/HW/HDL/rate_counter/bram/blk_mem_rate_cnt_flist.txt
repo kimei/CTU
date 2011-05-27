@@ -1,0 +1,8 @@
+# Output products list for <blk_mem_rate_cnt>
+blk_mem_rate_cnt.ngc
+blk_mem_rate_cnt.vhd
+blk_mem_rate_cnt.vho
+blk_mem_rate_cnt.xco
+blk_mem_rate_cnt_blk_mem_gen_v2_8_xst_1.ngc_xst.xrpt
+blk_mem_rate_cnt_flist.txt
+blk_mem_rate_cnt_xmdf.tcl

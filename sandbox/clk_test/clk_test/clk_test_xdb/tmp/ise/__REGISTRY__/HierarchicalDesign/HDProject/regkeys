@@ -1,0 +1,24 @@
+CommandLine-Map
+
+s
+CommandLine-Ngdbuild
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\ngdbuild.exe -ise M:/MASTER/COMPET/sandbox/clk_test/clk_test/clk_test.ise -intstyle ise -dd _ngo -sd M:/MASTER/COMPET/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5 -sd M:/MASTER/COMPET/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5 -sd M:/MASTER/COMPET/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5 -nt timestamp -i -p xc5vfx30t-ff665-1 v5_emac_v1_5_example_design.ngc v5_emac_v1_5_example_design.ngd
+s
+CommandLine-Par
+
+s
+CommandLine-Xst
+
+s
+Previous-NGD
+v5_emac_v1_5_example_design_prev_built.ngd
+s
+Previous-NGM
+
+s
+Previous-Packed-NCD
+
+s
+Previous-Routed-NCD
+
+s

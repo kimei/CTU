@@ -1,0 +1,24 @@
+CommandLine-Map
+
+s
+CommandLine-Ngdbuild
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\ngdbuild.exe -ise M:/MASTER/COMPET/Trigger/HW/HDL/top_10/top/top.ise -intstyle ise -dd _ngo -sd M:/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr -sd M:/MASTER/COMPET/Trigger/HW/HDL/rate_counter/fifo -sd M:/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr -sd M:/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr -nt timestamp -i -p xc5vfx30t-ff665-1 top.ngc top.ngd
+s
+CommandLine-Par
+
+s
+CommandLine-Xst
+
+s
+Previous-NGD
+top_prev_built.ngd
+s
+Previous-NGM
+
+s
+Previous-Packed-NCD
+
+s
+Previous-Routed-NCD
+
+s

@@ -1,0 +1,20 @@
+ppc440_0
+TESTAPP_PERIPHERAL_SOURCES = /cygdrive/m/MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linux_platform/TestApp_Peripheral/src/TestApp_Peripheral.c /cygdrive/m/MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linux_platform/TestApp_Peripheral/src/xintc_tapp_example.c /cygdrive/m/MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linux_platform/TestApp_Peripheral/src/xgpio_tapp_example.c /cygdrive/m/MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linux_platform/TestApp_Peripheral/src/xgpio_intr_tapp_example.c /cygdrive/m/MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linux_platform/TestApp_Peripheral/src/xlltemac_example_polled.c /cygdrive/m/MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linux_platform/TestApp_Peripheral/src/xlltemac_example_util.c /cygdrive/m/MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linux_platform/TestApp_Peripheral/src/xlltemac_example_intr_sgdma.c /cygdrive/m/MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linux_platform/TestApp_Peripheral/src/xtmrctr_selftest_example.c /cygdrive/m/MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linux_platform/TestApp_Peripheral/src/xtmrctr_intr_example.c /cygdrive/m/MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linux_platform/TestApp_Peripheral/src/xwdttb_selftest_example.c /cygdrive/m/MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linux_platform/TestApp_Peripheral/src/xwdttb_intr_example.c 
+TESTAPP_PERIPHERAL_HEADERS = /cygdrive/m//MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linux_platform/TestApp_Peripheral/src/intc_header.h /cygdrive/m//MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linux_platform/TestApp_Peripheral/src/gpio_header.h /cygdrive/m//MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linux_platform/TestApp_Peripheral/src/gpio_intr_header.h /cygdrive/m//MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linux_platform/TestApp_Peripheral/src/xlltemac_example.h /cygdrive/m//MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linux_platform/TestApp_Peripheral/src/lltemac_header.h /cygdrive/m//MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linux_platform/TestApp_Peripheral/src/lltemac_intr_header.h /cygdrive/m//MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linux_platform/TestApp_Peripheral/src/tmrctr_header.h /cygdrive/m//MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linux_platform/TestApp_Peripheral/src/tmrctr_intr_header.h /cygdrive/m//MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linux_platform/TestApp_Peripheral/src/wdttb_header.h /cygdrive/m//MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linux_platform/TestApp_Peripheral/src/wdttb_intr_header.h 
+TESTAPP_PERIPHERAL_CC = powerpc-eabi-gcc
+TESTAPP_PERIPHERAL_CC_SIZE = powerpc-eabi-size
+TESTAPP_PERIPHERAL_CC_OPT = -O2
+TESTAPP_PERIPHERAL_CFLAGS = 
+TESTAPP_PERIPHERAL_CC_SEARCH = # -B
+TESTAPP_PERIPHERAL_LIBPATH = -L./ppc440_0/lib/ # -L
+TESTAPP_PERIPHERAL_INCLUDES = -I./ppc440_0/include/  -ITestApp_Peripheral/src/ # -I
+TESTAPP_PERIPHERAL_LFLAGS = # -l
+TESTAPP_PERIPHERAL_LINKER_SCRIPT = 
+TESTAPP_PERIPHERAL_CC_DEBUG_FLAG =  -g 
+TESTAPP_PERIPHERAL_CC_PROFILE_FLAG = # -pg
+TESTAPP_PERIPHERAL_CC_GLOBPTR_FLAG= # -msdata=eabi
+TESTAPP_PERIPHERAL_CC_INFERRED_FLAGS= -mcpu=440 
+TESTAPP_PERIPHERAL_CC_START_ADDR_FLAG= -Wl,-defsym -Wl,_START_ADDR=0x00000000
+TESTAPP_PERIPHERAL_CC_STACK_SIZE_FLAG=  # -Wl,-defsym -Wl,_STACK_SIZE=
+TESTAPP_PERIPHERAL_CC_HEAP_SIZE_FLAG=  # -Wl,-defsym -Wl,_HEAP_SIZE=
+                  $(TESTAPP_PERIPHERAL_CC_INFERRED_FLAGS)  \

@@ -1,0 +1,388 @@
+Release 10.1.03 - libgen Xilinx EDK 10.1.03
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -mhs system.mhs -p xc5vfx30tff665-1 system.mss 
+
+Output Directory (-od)		:
+M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_linux
+_platform\
+Part (-p)			: virtex5
+
+Software Specification file	: system.mss
+
+Overriding IP level properties ...
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor ppc440_0
+  (0b0000000000-0b0011111111) ppc440_0	
+  (0000000000-0x03ffffff) DDR2_SDRAM_16Mx32	ppc440_0_PPC440MC
+  (0x81400000-0x8140ffff) LEDs_8Bit	plb_v46_0
+  (0x81420000-0x8142ffff) DIP_Switches_8Bit	plb_v46_0
+  (0x81440000-0x8144ffff) Push_Buttons_3Bit	plb_v46_0
+  (0x81800000-0x8180ffff) xps_intc_0	plb_v46_0
+  (0x81c00000-0x81c0ffff) Hard_Ethernet_MAC	plb_v46_0
+  (0x83a00000-0x83a0ffff) xps_timebase_wdt_1	plb_v46_0
+  (0x83c00000-0x83c0ffff) xps_timer_1	plb_v46_0
+  (0x83e00000-0x83e0ffff) RS232	plb_v46_0
+  (0x86000000-0x87ffffff) FLASH_8Mx16	plb_v46_0
+  (0xffff0000-0xffffffff) xps_bram_if_cntlr_1	plb_v46_0
+
+Check platform address map ...
+
+Computing clock values...
+INFO:MDT - Cannot determine the input clock associated with port :
+   clkgen_0:CLKOUT0. Clock DRCs will not be performed on this core and cores
+   connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   clkgen_0:CLKOUT1. Clock DRCs will not be performed on this core and cores
+   connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   clkgen_0:CLKOUT2. Clock DRCs will not be performed on this core and cores
+   connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   clkgen_0:CLKOUT2. Clock DRCs will not be performed on this core and cores
+   connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   clkgen_0:CLKOUT2. Clock DRCs will not be performed on this core and cores
+   connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   clkgen_0:CLKOUT2. Clock DRCs will not be performed on this core and cores
+   connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   clkgen_0:CLKOUT4. Clock DRCs will not be performed on this core and cores
+   connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   clkgen_0:CLKOUT2. Clock DRCs will not be performed on this core and cores
+   connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   clkgen_0:CLKOUT2. Clock DRCs will not be performed on this core and cores
+   connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   clkgen_0:CLKOUT2. Clock DRCs will not be performed on this core and cores
+   connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   clkgen_0:CLKOUT2. Clock DRCs will not be performed on this core and cores
+   connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   clkgen_0:CLKOUT2. Clock DRCs will not be performed on this core and cores
+   connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   clkgen_0:CLKOUT2. Clock DRCs will not be performed on this core and cores
+   connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   clkgen_0:CLKOUT2. Clock DRCs will not be performed on this core and cores
+   connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   clkgen_0:CLKOUT2. Clock DRCs will not be performed on this core and cores
+   connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   clkgen_0:CLKOUT2. Clock DRCs will not be performed on this core and cores
+   connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   clkgen_0:CLKOUT5. Clock DRCs will not be performed on this core and cores
+   connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   clkgen_0:CLKOUT2. Clock DRCs will not be performed on this core and cores
+   connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   clkgen_0:CLKOUT2. Clock DRCs will not be performed on this core and cores
+   connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   clkgen_0:CLKOUT2. Clock DRCs will not be performed on this core and cores
+   connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   clkgen_0:CLKOUT2. Clock DRCs will not be performed on this core and cores
+   connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   clkgen_0:CLKOUT2. Clock DRCs will not be performed on this core and cores
+   connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   clkgen_0:CLKOUT2. Clock DRCs will not be performed on this core and cores
+   connected to it. 
+
+Overriding system level properties ...
+INFO:MDT - IPNAME:ppc440_0 INSTANCE:ppc440_virtex5 -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\ppc440_virtex5_v1_01_a\data
+   \ppc440_virtex5_v2_1_0.mpd line 91 - tcl is overriding PARAMETER
+   C_PPC440MC_ADDR_BASE value to 0x00000000
+INFO:MDT - IPNAME:ppc440_0 INSTANCE:ppc440_virtex5 -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\ppc440_virtex5_v1_01_a\data
+   \ppc440_virtex5_v2_1_0.mpd line 92 - tcl is overriding PARAMETER
+   C_PPC440MC_ADDR_HIGH value to 0x03FFFFFF
+INFO:MDT - IPNAME:plb_v46_0 INSTANCE:plb_v46 -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_03_a\data\plb_v4
+   6_v2_1_0.mpd line 34 - tool is overriding PARAMETER C_PLBV46_NUM_MASTERS
+   value to 1
+INFO:MDT - IPNAME:plb_v46_0 INSTANCE:plb_v46 -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_03_a\data\plb_v4
+   6_v2_1_0.mpd line 35 - tool is overriding PARAMETER C_PLBV46_NUM_SLAVES value
+   to 10
+INFO:MDT - IPNAME:plb_v46_0 INSTANCE:plb_v46 -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_03_a\data\plb_v4
+   6_v2_1_0.mpd line 36 - tool is overriding PARAMETER C_PLBV46_MID_WIDTH value
+   to 1
+INFO:MDT - IPNAME:plb_v46_0 INSTANCE:plb_v46 -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_03_a\data\plb_v4
+   6_v2_1_0.mpd line 38 - tool is overriding PARAMETER C_PLBV46_DWIDTH value to
+   128
+INFO:MDT - IPNAME:xps_bram_if_cntlr_1 INSTANCE:xps_bram_if_cntlr -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_bram_if_cntlr_v1_00_a\d
+   ata\xps_bram_if_cntlr_v2_1_0.mpd line 41 - tool is overriding PARAMETER
+   C_SPLB_DWIDTH value to 128
+INFO:MDT - IPNAME:xps_bram_if_cntlr_1 INSTANCE:xps_bram_if_cntlr -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_bram_if_cntlr_v1_00_a\d
+   ata\xps_bram_if_cntlr_v2_1_0.mpd line 42 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 1
+INFO:MDT - IPNAME:xps_bram_if_cntlr_1 INSTANCE:xps_bram_if_cntlr -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_bram_if_cntlr_v1_00_a\d
+   ata\xps_bram_if_cntlr_v2_1_0.mpd line 46 - tool is overriding PARAMETER
+   C_SPLB_SMALLEST_MASTER value to 128
+INFO:MDT - IPNAME:xps_bram_if_cntlr_1_bram INSTANCE:bram_block -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bra
+   m_block_v2_1_0.mpd line 36 - tool is overriding PARAMETER C_MEMSIZE value to
+   0x10000
+INFO:MDT - IPNAME:xps_bram_if_cntlr_1_bram INSTANCE:bram_block -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bra
+   m_block_v2_1_0.mpd line 37 - tool is overriding PARAMETER C_PORT_DWIDTH value
+   to 64
+INFO:MDT - IPNAME:xps_bram_if_cntlr_1_bram INSTANCE:bram_block -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bra
+   m_block_v2_1_0.mpd line 39 - tool is overriding PARAMETER C_NUM_WE value to 8
+INFO:MDT - IPNAME:RS232 INSTANCE:xps_uart16550 -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_uart16550_v2_00_b\data\
+   xps_uart16550_v2_1_0.mpd line 43 - tool is overriding PARAMETER C_SPLB_DWIDTH
+   value to 128
+INFO:MDT - IPNAME:RS232 INSTANCE:xps_uart16550 -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_uart16550_v2_00_b\data\
+   xps_uart16550_v2_1_0.mpd line 45 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1
+INFO:MDT - IPNAME:RS232 INSTANCE:xps_uart16550 -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_uart16550_v2_00_b\data\
+   xps_uart16550_v2_1_0.mpd line 46 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 1
+INFO:MDT - IPNAME:LEDs_8Bit INSTANCE:xps_gpio -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v1_00_a\data\xps_g
+   pio_v2_1_0.mpd line 38 - tool is overriding PARAMETER C_SPLB_DWIDTH value to
+   128
+INFO:MDT - IPNAME:DIP_Switches_8Bit INSTANCE:xps_gpio -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v1_00_a\data\xps_g
+   pio_v2_1_0.mpd line 38 - tool is overriding PARAMETER C_SPLB_DWIDTH value to
+   128
+INFO:MDT - IPNAME:Push_Buttons_3Bit INSTANCE:xps_gpio -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_gpio_v1_00_a\data\xps_g
+   pio_v2_1_0.mpd line 38 - tool is overriding PARAMETER C_SPLB_DWIDTH value to
+   128
+INFO:MDT - IPNAME:FLASH_8Mx16 INSTANCE:xps_mch_emc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_mch_emc_v2_00_a\data\xp
+   s_mch_emc_v2_1_0.mpd line 49 - tool is overriding PARAMETER C_SPLB_DWIDTH
+   value to 128
+INFO:MDT - IPNAME:FLASH_8Mx16 INSTANCE:xps_mch_emc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_mch_emc_v2_00_a\data\xp
+   s_mch_emc_v2_1_0.mpd line 51 - tool is overriding PARAMETER
+   C_SPLB_SMALLEST_MASTER value to 128
+INFO:MDT - IPNAME:Hard_Ethernet_MAC INSTANCE:xps_ll_temac -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_ll_temac_v1_01_b\data\x
+   ps_ll_temac_v2_1_0.mpd line 50 - tool is overriding PARAMETER C_SPLB_DWIDTH
+   value to 128
+INFO:MDT - IPNAME:Hard_Ethernet_MAC INSTANCE:xps_ll_temac -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_ll_temac_v1_01_b\data\x
+   ps_ll_temac_v2_1_0.mpd line 52 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 1
+INFO:MDT - IPNAME:Hard_Ethernet_MAC INSTANCE:xps_ll_temac -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_ll_temac_v1_01_b\data\x
+   ps_ll_temac_v2_1_0.mpd line 53 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1
+INFO:MDT - IPNAME:xps_timer_1 INSTANCE:xps_timer -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_timer_v1_00_a\data\xps_
+   timer_v2_1_0.mpd line 44 - tool is overriding PARAMETER C_SPLB_DWIDTH value
+   to 128
+INFO:MDT - IPNAME:xps_timer_1 INSTANCE:xps_timer -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_timer_v1_00_a\data\xps_
+   timer_v2_1_0.mpd line 46 - tool is overriding PARAMETER C_SPLB_MID_WIDTH
+   value to 1
+INFO:MDT - IPNAME:xps_timer_1 INSTANCE:xps_timer -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_timer_v1_00_a\data\xps_
+   timer_v2_1_0.mpd line 47 - tool is overriding PARAMETER C_SPLB_NUM_MASTERS
+   value to 1
+INFO:MDT - IPNAME:xps_timebase_wdt_1 INSTANCE:xps_timebase_wdt -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_timebase_wdt_v1_00_b\da
+   ta\xps_timebase_wdt_v2_1_0.mpd line 41 - tool is overriding PARAMETER
+   C_SPLB_DWIDTH value to 128
+INFO:MDT - IPNAME:jtagppc_cntlr_0 INSTANCE:jtagppc_cntlr -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\jtagppc_cntlr_v2_01_c\data\
+   jtagppc_cntlr_v2_1_0.mpd line 36 - tcl is overriding PARAMETER C_NUM_PPC_USED
+   value to 1
+INFO:MDT - IPNAME:xps_intc_0 INSTANCE:xps_intc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v1_00_a\data\xps_i
+   ntc_v2_1_0.mpd line 42 - tool is overriding PARAMETER C_SPLB_DWIDTH value to
+   128
+INFO:MDT - IPNAME:xps_intc_0 INSTANCE:xps_intc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v1_00_a\data\xps_i
+   ntc_v2_1_0.mpd line 48 - tcl is overriding PARAMETER C_NUM_INTR_INPUTS value
+   to 9
+INFO:MDT - IPNAME:xps_intc_0 INSTANCE:xps_intc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v1_00_a\data\xps_i
+   ntc_v2_1_0.mpd line 49 - tcl is overriding PARAMETER C_KIND_OF_INTR value to
+   0b00000000000000000000000000000010
+INFO:MDT - IPNAME:xps_intc_0 INSTANCE:xps_intc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v1_00_a\data\xps_i
+   ntc_v2_1_0.mpd line 50 - tcl is overriding PARAMETER C_KIND_OF_EDGE value to
+   0b00000000000000000000000000000010
+INFO:MDT - IPNAME:xps_intc_0 INSTANCE:xps_intc -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_intc_v1_00_a\data\xps_i
+   ntc_v2_1_0.mpd line 51 - tcl is overriding PARAMETER C_KIND_OF_LVL value to
+   0b00000000000000000000000111111101
+
+Running system level Update ...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Check platform configuration ...
+IPNAME:plb_v46 INSTANCE:plb_v46_0 -
+M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_linux
+_platform\system.mhs line 92 - 1 master(s) : 10 slave(s)
+
+Check port drivers...
+WARNING:MDT - PORT:CPMMCCLK CONNECTOR:clk_200mhz_s -
+   M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_li
+   nux_platform\system.mhs line 85 - No driver found. Port will be driven to
+   VCC!
+WARNING:MDT - PORT:mc_mibclk CONNECTOR:clk_200mhz_s -
+   M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_li
+   nux_platform\system.mhs line 152 - No driver found. Port will be driven to
+   GND!
+WARNING:MDT - PORT:mi_mcclk_200 CONNECTOR:clk_200mhz_s -
+   M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_li
+   nux_platform\system.mhs line 154 - No driver found. Port will be driven to
+   GND!
+WARNING:MDT - PORT:REFCLK CONNECTOR:clk_200mhz_s -
+   M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_li
+   nux_platform\system.mhs line 283 - No driver found. Port will be driven to
+   GND!
+WARNING:MDT - PORT:HostMiimRdy CONNECTOR:host_mii_rdy -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_ll_temac_v1_01_b\data\x
+   ps_ll_temac_v2_1_0.mpd line 216 - No driver found. Port will be driven to
+   GND!
+WARNING:MDT - PORT:HostRdData CONNECTOR:host_rd_data -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_ll_temac_v1_01_b\data\x
+   ps_ll_temac_v2_1_0.mpd line 217 - No driver found. Port will be driven to
+   GND!
+WARNING:MDT - PORT:HostMiimSel CONNECTOR:host_mii_sel -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_ll_temac_v1_01_b\data\x
+   ps_ll_temac_v2_1_0.mpd line 218 - floating connection!
+WARNING:MDT - PORT:HostReq CONNECTOR:host_req -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_ll_temac_v1_01_b\data\x
+   ps_ll_temac_v2_1_0.mpd line 219 - floating connection!
+WARNING:MDT - PORT:HostAddr CONNECTOR:host_addr -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_ll_temac_v1_01_b\data\x
+   ps_ll_temac_v2_1_0.mpd line 220 - floating connection!
+WARNING:MDT - PORT:HostEmac1Sel CONNECTOR:host_emac1_sel -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\xps_ll_temac_v1_01_b\data\x
+   ps_ll_temac_v2_1_0.mpd line 221 - floating connection!
+WARNING:MDT - PORT:Peripheral_Reset CONNECTOR:sys_periph_reset -
+   M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_li
+   nux_platform\system.mhs line 336 - floating connection!
+WARNING:MDT - PORT:CLKOUT3 CONNECTOR:clk_100mhz_s -
+   M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_li
+   nux_platform\system.mhs line 365 - floating connection!
+
+Performing Clock DRCs...
+
+INFO:MDT - Clock frequency could not be propagated to the port:
+   CPMINTERCONNECTCLK in IP: ppc440_0 - Clock Ratio DRC will not be performed. 
+INFO:MDT - Clock frequency could not be propagated to the port: CPMPPCMPLBCLK in
+   IP: ppc440_0 - Clock Ratio DRC will not be performed. 
+INFO:MDT - Clock frequency could not be propagated to the port: CPMPPCS0PLBCLK
+   in IP: ppc440_0 - Clock Ratio DRC will not be performed. 
+INFO:MDT - Clock frequency could not be propagated to the port: CPMMCCLK in IP:
+   ppc440_0 - Clock Ratio DRC will not be performed. 
+INFO:MDT - List of peripherals addressable from processor instance ppc440_0 : 
+  - xps_bram_if_cntlr_1
+  - RS232
+  - LEDs_8Bit
+  - DIP_Switches_8Bit
+  - Push_Buttons_3Bit
+  - FLASH_8Mx16
+  - Hard_Ethernet_MAC
+  - xps_timer_1
+  - xps_timebase_wdt_1
+  - xps_intc_0
+  - DDR2_SDRAM_16Mx32
+
+Building Directory Structure for ppc440_0
+
+Generating platform libraries and device drivers ...
+
+Running CopyFiles ...
+
+Copying files for os standalone_v2_00_a from
+C:\Xilinx\10.1\EDK\sw\lib\bsp\standalone_v2_00_a\src\ to
+M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_linux
+_platform\ppc440_0\libsrc\standalone_v2_00_a\ ...
+
+Copying files for driver uartns550_v1_11_a from
+C:\Xilinx\10.1\EDK\sw\XilinxProcessorIPLib\drivers\uartns550_v1_11_a\src\ to
+M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_linux
+_platform\ppc440_0\libsrc\uartns550_v1_11_a\ ...
+
+Copying files for driver gpio_v2_12_a from
+C:\Xilinx\10.1\EDK\sw\XilinxProcessorIPLib\drivers\gpio_v2_12_a\src\ to
+M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_linux
+_platform\ppc440_0\libsrc\gpio_v2_12_a\ ...
+
+Copying files for driver lltemac_v1_00_b from
+C:\Xilinx\10.1\EDK\sw\XilinxProcessorIPLib\drivers\lltemac_v1_00_b\src\ to
+M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_linux
+_platform\ppc440_0\libsrc\lltemac_v1_00_b\ ...
+
+Copying files for driver tmrctr_v1_10_b from
+C:\Xilinx\10.1\EDK\sw\XilinxProcessorIPLib\drivers\tmrctr_v1_10_b\src\ to
+M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_linux
+_platform\ppc440_0\libsrc\tmrctr_v1_10_b\ ...
+
+Copying files for driver wdttb_v1_10_b from
+C:\Xilinx\10.1\EDK\sw\XilinxProcessorIPLib\drivers\wdttb_v1_10_b\src\ to
+M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_linux
+_platform\ppc440_0\libsrc\wdttb_v1_10_b\ ...
+
+Copying files for driver intc_v1_11_a from
+C:\Xilinx\10.1\EDK\sw\XilinxProcessorIPLib\drivers\intc_v1_11_a\src\ to
+M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_linux
+_platform\ppc440_0\libsrc\intc_v1_11_a\ ...
+
+Copying files for driver cpu_ppc440_v1_00_b from
+C:\Xilinx\10.1\EDK\sw\XilinxProcessorIPLib\drivers\cpu_ppc440_v1_00_b\src\ to
+M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_linux
+_platform\ppc440_0\libsrc\cpu_ppc440_v1_00_b\ ...
+
+Running DRCs for OSes, Drivers and Libraries ... 
+
+Running generate for OS'es, Drivers and Libraries ... 
+
+Running post_generate for OS'es, Drivers and Libraries ... 
+
+Running make for Drivers and Libraries ... 
+
+Configuring make for target include using:
+
+make -s include "COMPILER=powerpc-eabi-gcc" "ARCHIVER=powerpc-eabi-ar"
+"COMPILER_FLAGS=-mcpu=440  -O2 -c" "EXTRA_COMPILER_FLAGS=-g" 
+
+Configuring make for target libs using:
+
+make -s libs "COMPILER=powerpc-eabi-gcc" "ARCHIVER=powerpc-eabi-ar"
+"COMPILER_FLAGS=-mcpu=440  -O2 -c" "EXTRA_COMPILER_FLAGS=-g" 
+
+Libraries generated in
+\\aristoteles\kimei\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_
+1_3\v5fx30t_linux_platform\ppc440_0\lib\ directory
+
+Running execs_generate for OS'es, Drivers and Libraries ... 
+
+LibGen Done. 

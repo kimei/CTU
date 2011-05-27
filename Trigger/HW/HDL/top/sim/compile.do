@@ -1,0 +1,10 @@
+vcom -work work -93 -explicit ../../shared/constants.vhd
+vcom -work work -93 -explicit ../../shared/a2s.vhd
+vcom -work work -93 -explicit ../../shared/components.vhd
+vcom -work work -93 -explicit ../../shared/functions.vhd
+vcom -work work -93 -explicit ../../CRU/CRU.vhd
+vcom -work work -93 -explicit ../../CRU/PLL_ALL.vhd
+vcom -work work -93 -explicit ../../Sync_Trigger/trigger_hold.vhd
+vcom -work work -93 -explicit ../../Sync_Trigger/edge_detector.vhd
+vcom -work work -93 -explicit ../../Sync_Trigger/Sync_trigger.vhd
+vcom -work work -93 -explicit ../top.vhd

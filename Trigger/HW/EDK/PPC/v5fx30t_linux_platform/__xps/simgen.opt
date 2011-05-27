@@ -1,0 +1,1 @@
+ -p virtex5 -lang vhdl   TestApp_Memory/executable.elf -s mti -X M:/MASTER/COMPET/Trigger/HW/EDK/PPC/v5fx30t_linux_platform/ -E M:/MASTER/COMPET/Trigger/HW/EDK/PPC/v5fx30t_linux_platform/

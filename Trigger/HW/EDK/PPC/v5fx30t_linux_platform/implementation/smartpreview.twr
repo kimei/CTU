@@ -1,0 +1,153 @@
+Number of Timing Constraints that were not applied: 6
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+------------------------------------------------------------------------------------------------------
+  Constraint                                |  Check  | Worst Case |  Best Case | Timing |   Timing   
+                                            |         |    Slack   | Achievable | Errors |    Score   
+------------------------------------------------------------------------------------------------------
+* TS_v5_emac_v1_3_single_gmii_client_clk_tx | SETUP   |     0.410ns|     7.290ns|       0|           0
+  0 = PERIOD TIMEGRP         "v5_emac_v1_3_ | HOLD    |    -0.129ns|            |       1|         129
+  single_gmii_client_clk_tx0" 7.7 ns HIGH 5 |         |            |            |        |            
+  0%                                        |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+* TS_pll_module_0_pll_module_0_CLKOUT2_BUF  | SETUP   |     0.387ns|     9.613ns|       0|           0
+  = PERIOD TIMEGRP         "pll_module_0_pl | HOLD    |    -0.040ns|            |       1|          40
+  l_module_0_CLKOUT2_BUF" TS_sys_clk_pin HI |         |            |            |        |            
+  GH 50%                                    |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_pll_module_0_pll_module_0_CLKOUT3_BUF  | SETUP   |     0.079ns|     4.921ns|       0|           0
+  = PERIOD TIMEGRP         "pll_module_0_pl | HOLD    |     0.072ns|            |       0|           0
+  l_module_0_CLKOUT3_BUF" TS_sys_clk_pin /  |         |            |            |        |            
+  2 HIGH 50%                                |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_DQ_CE = MAXDELAY FROM TIMEGRP "TNM_DQ_ | SETUP   |     0.703ns|     2.697ns|       0|           0
+  CE_IDDR" TO TIMEGRP "TNM_DQS_FLOPS"       | HOLD    |     1.071ns|            |       0|           0
+     3.4 ns                                 |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_pll_module_0_pll_module_0_CLKOUT4_BUF  | SETUP   |     0.860ns|     3.710ns|       0|           0
+  = PERIOD TIMEGRP         "pll_module_0_pl | HOLD    |     0.198ns|            |       0|           0
+  l_module_0_CLKOUT4_BUF" TS_sys_clk_pin /  |         |            |            |        |            
+  2 PHASE 1.25         ns HIGH 50%          |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_LL_CLK_2_TX_CLIENT_CLK = MAXDELAY FROM | SETUP   |     0.890ns|     7.110ns|       0|           0
+   TIMEGRP "LLCLK" TO TIMEGRP         "clk_ | HOLD    |     0.144ns|            |       0|           0
+  client_tx0" 8 ns DATAPATHONLY             |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_v5_emac_v1_3_single_gmii_client_clk_rx | SETUP   |     1.057ns|     6.643ns|       0|           0
+  0 = PERIOD TIMEGRP         "v5_emac_v1_3_ | HOLD    |     0.283ns|            |       0|           0
+  single_gmii_client_clk_rx0" 7.7 ns HIGH 5 |         |            |            |        |            
+  0%                                        |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_v5_emac_v1_3_single_gmii_clk_phy_rx0 = | SETUP   |     1.246ns|     6.454ns|       0|           0
+   PERIOD TIMEGRP         "v5_emac_v1_3_sin | HOLD    |     3.698ns|            |       0|           0
+  gle_gmii_clk_phy_rx0" 7.7 ns HIGH 50%     |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_LL_CLK_2_RX_CLIENT_CLK = MAXDELAY FROM | SETUP   |     1.483ns|     6.517ns|       0|           0
+   TIMEGRP "LLCLK" TO TIMEGRP         "clk_ | HOLD    |     0.332ns|            |       0|           0
+  client_rx0" 8 ns DATAPATHONLY             |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_pll_module_0_pll_module_0_CLKOUT5_BUF  | SETUP   |     1.624ns|     6.376ns|       0|           0
+  = PERIOD TIMEGRP         "pll_module_0_pl | HOLD    |     1.962ns|            |       0|           0
+  l_module_0_CLKOUT5_BUF" TS_sys_clk_pin /  |         |            |            |        |            
+  1.25 HIGH         50%                     |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_TX_CLIENT_CLK_2_LL_CLK = MAXDELAY FROM | SETUP   |     5.626ns|     4.374ns|       0|           0
+   TIMEGRP "clk_client_tx0" TO TIMEGRP      | HOLD    |     0.486ns|            |       0|           0
+      "LLCLK" 10 ns DATAPATHONLY            |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_RX_CLIENT_CLK_2_LL_CLK = MAXDELAY FROM | SETUP   |     7.766ns|     2.234ns|       0|           0
+   TIMEGRP "clk_client_rx0" TO TIMEGRP      | HOLD    |     0.487ns|            |       0|           0
+      "LLCLK" 10 ns DATAPATHONLY            |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_MC_PHY_INIT_DATA_SEL_0 = MAXDELAY FROM | SETUP   |    26.320ns|     3.680ns|       0|           0
+   TIMEGRP "TNM_PHY_INIT_DATA_SEL" TO       | HOLD    |     0.664ns|            |       0|           0
+     TIMEGRP "TNM_CLK0" TS_MC_CLK * 4       |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_MC_PHY_INIT_DATA_SEL_90 = MAXDELAY FRO | SETUP   |    26.770ns|     3.230ns|       0|           0
+  M TIMEGRP "TNM_PHY_INIT_DATA_SEL" TO      | HOLD    |     0.085ns|            |       0|           0
+      TIMEGRP "TNM_CLK90" TS_MC_CLK * 4     |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_MC_GATE_DLY = MAXDELAY FROM TIMEGRP "T | SETUP   |    27.941ns|     2.059ns|       0|           0
+  NM_GATE_DLY" TO TIMEGRP "TNM_CLK0"        | HOLD    |     0.046ns|            |       0|           0
+    TS_MC_CLK * 4                           |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_MC_CAL_RDEN_DLY = MAXDELAY FROM TIMEGR | SETUP   |    28.122ns|     1.878ns|       0|           0
+  P "TNM_CAL_RDEN_DLY" TO TIMEGRP         " | HOLD    |     0.297ns|            |       0|           0
+  TNM_CLK0" TS_MC_CLK * 4                   |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_MC_RDEN_DLY = MAXDELAY FROM TIMEGRP "T | SETUP   |    28.135ns|     1.865ns|       0|           0
+  NM_RDEN_DLY" TO TIMEGRP "TNM_CLK0"        | HOLD    |     0.197ns|            |       0|           0
+    TS_MC_CLK * 4                           |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_MC_RDEN_SEL_MUX = MAXDELAY FROM TIMEGR | N/A     |         N/A|         N/A|     N/A|         N/A
+  P "TNM_RDEN_SEL_MUX" TO TIMEGRP         " |         |            |            |        |            
+  TNM_CLK0" TS_MC_CLK * 4                   |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_v5_emac_v1_3_single_gmii_phy_clk_tx0 = | N/A     |         N/A|         N/A|     N/A|         N/A
+   PERIOD TIMEGRP         "v5_emac_v1_3_sin |         |            |            |        |            
+  gle_gmii_phy_clk_tx0" 7.7 ns HIGH 50%     |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  PATH "TS_SYS_2_TXPHY_path" TIG            | MAXDELAY|         N/A|     8.139ns|     N/A|           0
+------------------------------------------------------------------------------------------------------
+  TS_pll_module_0_pll_module_0_CLKOUT0_BUF  | N/A     |         N/A|         N/A|     N/A|         N/A
+  = PERIOD TIMEGRP         "pll_module_0_pl |         |            |            |        |            
+  l_module_0_CLKOUT0_BUF" TS_sys_clk_pin /  |         |            |            |        |            
+  2.5 HIGH 50%                              |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_pll_module_0_pll_module_0_CLKOUT1_BUF  | N/A     |         N/A|         N/A|     N/A|         N/A
+  = PERIOD TIMEGRP         "pll_module_0_pl |         |            |            |        |            
+  l_module_0_CLKOUT1_BUF" TS_sys_clk_pin /  |         |            |            |        |            
+  2 HIGH 50%                                |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_MC_CLK = PERIOD TIMEGRP "mc_clk" 7.5 n | N/A     |         N/A|         N/A|     N/A|         N/A
+  s HIGH 50%                                |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_ | N/A     |         N/A|         N/A|     N/A|         N/A
+  pin" 10 ns HIGH 50%                       |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for TS_sys_clk_pin
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_sys_clk_pin                 |     10.000ns|          N/A|      9.842ns|            0|            1|            0|       104722|
+| TS_pll_module_0_pll_module_0_C|      4.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| LKOUT0_BUF                    |             |             |             |             |             |             |             |
+| TS_pll_module_0_pll_module_0_C|      5.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| LKOUT1_BUF                    |             |             |             |             |             |             |             |
+| TS_pll_module_0_pll_module_0_C|     10.000ns|      9.613ns|          N/A|            1|            0|       100424|            0|
+| LKOUT2_BUF                    |             |             |             |             |             |             |             |
+| TS_pll_module_0_pll_module_0_C|      5.000ns|      4.921ns|          N/A|            0|            0|         3939|            0|
+| LKOUT3_BUF                    |             |             |             |             |             |             |             |
+| TS_pll_module_0_pll_module_0_C|      5.000ns|      3.710ns|          N/A|            0|            0|          339|            0|
+| LKOUT4_BUF                    |             |             |             |             |             |             |             |
+| TS_pll_module_0_pll_module_0_C|      8.000ns|      6.376ns|          N/A|            0|            0|           20|            0|
+| LKOUT5_BUF                    |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+Derived Constraints for TS_MC_CLK
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_MC_CLK                      |      7.500ns|          N/A|      0.920ns|            0|            0|            0|          173|
+| TS_MC_PHY_INIT_DATA_SEL_0     |     30.000ns|      3.680ns|          N/A|            0|            0|           21|            0|
+| TS_MC_PHY_INIT_DATA_SEL_90    |     30.000ns|      3.230ns|          N/A|            0|            0|          122|            0|
+| TS_MC_GATE_DLY                |     30.000ns|      2.059ns|          N/A|            0|            0|           20|            0|
+| TS_MC_RDEN_DLY                |     30.000ns|      1.865ns|          N/A|            0|            0|            5|            0|
+| TS_MC_CAL_RDEN_DLY            |     30.000ns|      1.878ns|          N/A|            0|            0|            5|            0|
+| TS_MC_RDEN_SEL_MUX            |     30.000ns|          N/A|          N/A|            0|            0|            0|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+2 constraints not met.
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the 
+   constraint does not cover any paths or that it has no requested value.
+
+

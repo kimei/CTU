@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config version="3.0" date="1302529688207" transient="false">
+<site url="platform:/base/" enabled="true" updateable="true" policy="USER-EXCLUDE">
+<feature id="org.eclipse.platform" version="3.1.2" url="features/org.eclipse.platform_3.1.2/">
+</feature>
+<feature id="org.eclipse.sdk" version="3.1.2" url="features/org.eclipse.sdk_3.1.2/">
+</feature>
+<feature id="org.eclipse.cdt" version="3.0.2" url="features/org.eclipse.cdt_3.0.2/">
+</feature>
+</site>
+</config>

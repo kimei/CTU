@@ -1,0 +1,7 @@
+################################################################################ 
+# IDELAYCTRL LOC Constraints                                                     
+################################################################################ 
+#
+INST "ddr2_sdram_16mx32/*u_idelay_ctrl/gen_idelayctrl[0].u_idelayctrl"   LOC = "IDELAYCTRL_X0Y1";
+INST "ddr2_sdram_16mx32/*u_idelay_ctrl/gen_idelayctrl[1].u_idelayctrl"   LOC = "IDELAYCTRL_X0Y2";
+#

@@ -1,0 +1,562 @@
+Release 10.1.03 par K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+fyspc-epf02::  Mon Apr 11 11:52:39 2011
+
+par -w -ol high system_map.ncd system.ncd system.pcf 
+
+
+Constraints file: system.pcf.
+Loading device for application Rf_Device from file '5vfx30t.nph' in environment c:\Xilinx\10.1\ISE;C:\Xilinx\10.1\EDK.
+   "system" is an NCD, version 3.2, device xc5vfx30t, package ff665, speed -1
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 0.950 Volts. (default - Range: 0.950 to 1.050 Volts)
+
+WARNING:Timing:3223 - Timing constraint TS_MC_RDEN_SEL_MUX = MAXDELAY FROM TIMEGRP "TNM_RDEN_SEL_MUX" TO TIMEGRP
+           "TNM_CLK0" TS_MC_CLK * 4; ignored during timing analysis.
+INFO:Timing:3377 - Intersecting Constraints found and resolved.  For more information see the TSI report.
+
+Device speed data version:  "PRODUCTION 1.64 2008-12-19".
+
+
+
+Device Utilization Summary:
+
+   Number of BUFGs                          11 out of 32     34%
+   Number of BUFIOs                          4 out of 40     10%
+   Number of FIFO36_72_EXPs                  1 out of 68      1%
+   Number of IDELAYCTRLs                     4 out of 12     33%
+      Number of LOCed IDELAYCTRLs            4 out of 4     100%
+
+   Number of ILOGICs                        62 out of 400    15%
+   Number of External IOBs                 168 out of 360    46%
+      Number of LOCed IOBs                 168 out of 168   100%
+
+   Number of IODELAYs                       51 out of 400    12%
+   Number of JTAGPPCs                        1 out of 1     100%
+   Number of OLOGICs                       131 out of 400    32%
+   Number of PLL_ADVs                        1 out of 2      50%
+   Number of PPC440s                         1 out of 1     100%
+   Number of RAMB18X2s                       3 out of 68      4%
+   Number of RAMB18X2SDPs                    2 out of 68      2%
+   Number of RAMB36_EXPs                    18 out of 68     26%
+   Number of TEMACs                          1 out of 2      50%
+   Number of Slice Registers              4843 out of 20480  23%
+      Number used as Flip Flops           4839
+      Number used as Latches                 3
+      Number used as LatchThrus              1
+
+   Number of Slice LUTS                   4512 out of 20480  22%
+   Number of Slice LUT-Flip Flop pairs    6693 out of 20480  32%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 22 secs 
+Finished initial Timing Analysis.  REAL time: 22 secs 
+
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_port_BRAM_Addr<31> has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_port_BRAM_Addr<30> has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<0> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<1> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<2> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<3> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<4> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<5> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<6> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<7> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<8> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<9> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<10> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<11> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<12> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<13> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<14> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<15> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<16> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<17> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<18> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<19> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<20> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<21> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<22> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<23> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<24> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<25> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<26> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<27> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<28> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<29> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<30> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<31> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<32> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<33> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<34> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<35> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<36> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<37> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<38> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<39> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<40> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<41> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<42> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<43> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<44> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<45> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<46> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<47> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<48> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<49> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<50> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<51> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<52> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<53> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<54> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<55> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<56> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<57> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<58> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<59> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<60> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<61> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<62> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal xps_bram_if_cntlr_1_bram/xps_bram_if_cntlr_1_bram/BRAM_Din_B<63> has no load.  PAR will not
+   attempt to route this signal.
+Starting Router
+
+INFO:Route - One or more directed routing (DIRT) constraints generated for a specific device have been found. Note that
+   DIRT strings are guaranteed to work only on the same device they were created for. If the DIRT constraints fail,
+   verify that the same connectivity is available in the target device for this implementation. 
+
+# of EXACT MODE DIRECTED ROUTING found:64, SUCCESS:0, FAILED:64
+
+Phase 1: 32870 unrouted;       REAL time: 33 secs 
+
+Phase 2: 27786 unrouted;       REAL time: 36 secs 
+
+Phase 3: 9768 unrouted;       REAL time: 49 secs 
+
+Phase 4: 9768 unrouted; (2081)      REAL time: 52 secs 
+
+Phase 5: 9776 unrouted; (217)      REAL time: 54 secs 
+
+Phase 6: 9776 unrouted; (217)      REAL time: 54 secs 
+
+Phase 7: 0 unrouted; (169)      REAL time: 1 mins 17 secs 
+
+Updating file: system.ncd with current fully routed design.
+
+Phase 8: 0 unrouted; (169)      REAL time: 1 mins 20 secs 
+
+Phase 9: 0 unrouted; (169)      REAL time: 1 mins 21 secs 
+
+Phase 10: 0 unrouted; (0)      REAL time: 1 mins 37 secs 
+
+Total REAL time to Router completion: 1 mins 38 secs 
+Total CPU time to Router completion: 1 mins 30 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|           sys_clk_s |BUFGCTRL_X0Y13| No   | 1940 |  0.489     |  2.023      |
++---------------------+--------------+------+------+------------+-------------+
+|        clk_200mhz_s | BUFGCTRL_X0Y8| No   |  345 |  0.473     |  2.035      |
++---------------------+--------------+------+------+------------+-------------+
+|      clk_200mhz_s90 |BUFGCTRL_X0Y10| No   |   89 |  0.174     |  1.914      |
++---------------------+--------------+------+------+------------+-------------+
+|Hard_Ethernet_MAC/Rx |              |      |      |            |             |
+|         ClientClk_0 | BUFGCTRL_X0Y5| No   |   36 |  0.392     |  2.018      |
++---------------------+--------------+------+------+------------+-------------+
+|Hard_Ethernet_MAC/Tx |              |      |      |            |             |
+|         ClientClk_0 |BUFGCTRL_X0Y16| No   |   13 |  0.364     |  2.014      |
++---------------------+--------------+------+------+------------+-------------+
+|Hard_Ethernet_MAC/Ha |              |      |      |            |             |
+|rd_Ethernet_MAC/V5HA |              |      |      |            |             |
+|RD_SYS.I_TEMAC/tx_ph |              |      |      |            |             |
+|             y_clk_0 |BUFGCTRL_X0Y28| No   |   16 |  0.362     |  2.015      |
++---------------------+--------------+------+------+------------+-------------+
+|DDR2_SDRAM_16Mx32/DD |              |      |      |            |             |
+|R2_SDRAM_16Mx32/u_dd |              |      |      |            |             |
+|r2_top/u_mem_if_top/ |              |      |      |            |             |
+|u_phy_top/u_phy_io/d |              |      |      |            |             |
+|       elayed_dqs<1> |        IO Clk| No   |   18 |  0.080     |  0.404      |
++---------------------+--------------+------+------+------------+-------------+
+|DDR2_SDRAM_16Mx32/DD |              |      |      |            |             |
+|R2_SDRAM_16Mx32/u_dd |              |      |      |            |             |
+|r2_top/u_mem_if_top/ |              |      |      |            |             |
+|u_phy_top/u_phy_io/d |              |      |      |            |             |
+|       elayed_dqs<2> |        IO Clk| No   |   18 |  0.069     |  0.393      |
++---------------------+--------------+------+------+------------+-------------+
+|DDR2_SDRAM_16Mx32/DD |              |      |      |            |             |
+|R2_SDRAM_16Mx32/u_dd |              |      |      |            |             |
+|r2_top/u_mem_if_top/ |              |      |      |            |             |
+|u_phy_top/u_phy_io/d |              |      |      |            |             |
+|       elayed_dqs<3> |        IO Clk| No   |   18 |  0.021     |  0.425      |
++---------------------+--------------+------+------+------------+-------------+
+|DDR2_SDRAM_16Mx32/DD |              |      |      |            |             |
+|R2_SDRAM_16Mx32/u_dd |              |      |      |            |             |
+|r2_top/u_mem_if_top/ |              |      |      |            |             |
+|u_phy_top/u_phy_io/d |              |      |      |            |             |
+|       elayed_dqs<0> |        IO Clk| No   |   18 |  0.079     |  0.425      |
++---------------------+--------------+------+------+------------+-------------+
+|         temac_clk_s |BUFGCTRL_X0Y15| No   |    2 |  0.000     |  2.009      |
++---------------------+--------------+------+------+------------+-------------+
+|Hard_Ethernet_MAC/Ha |              |      |      |            |             |
+|rd_Ethernet_MAC/V5HA |              |      |      |            |             |
+|RD_SYS.I_TEMAC/rx_cl |              |      |      |            |             |
+|               k_0_i |BUFGCTRL_X0Y29| No   |   11 |  0.075     |  2.003      |
++---------------------+--------------+------+------+------------+-------------+
+|ppc440_0_CPMINTERCON |              |      |      |            |             |
+|             NECTCLK | BUFGCTRL_X0Y0| No   |    1 |  0.000     |  1.736      |
++---------------------+--------------+------+------+------------+-------------+
+|          proc_clk_s | BUFGCTRL_X0Y1| No   |    1 |  0.000     |  1.736      |
++---------------------+--------------+------+------+------------+-------------+
+|Hard_Ethernet_MAC/Ha |              |      |      |            |             |
+|rd_Ethernet_MAC/I_RX |              |      |      |            |             |
+|0/I_RX_TEMAC_IF/rx_p |              |      |      |            |             |
+|           ckt_valid |         Local|      |   51 |  0.000     |  1.282      |
++---------------------+--------------+------+------+------------+-------------+
+|RS232/RS232/XUART_I_ |              |      |      |            |             |
+|1/UART16550_I_1/lsr2 |              |      |      |            |             |
+|         _rst_or0000 |         Local|      |    1 |  0.000     |  0.599      |
++---------------------+--------------+------+------+------------+-------------+
+|jtagppc_cntlr_0_0_JT |              |      |      |            |             |
+|            GC405TCK |         Local|      |    1 |  0.000     |  1.526      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+Timing Score: 0
+
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the constraint does not cover any paths or that it has no
+   requested value.
+Number of Timing Constraints that were not applied: 6
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+------------------------------------------------------------------------------------------------------
+  Constraint                                |  Check  | Worst Case |  Best Case | Timing |   Timing   
+                                            |         |    Slack   | Achievable | Errors |    Score   
+------------------------------------------------------------------------------------------------------
+  TS_v5_emac_v1_3_single_gmii_client_clk_tx | SETUP   |     0.035ns|     7.665ns|       0|           0
+  0 = PERIOD TIMEGRP         "v5_emac_v1_3_ | HOLD    |     0.420ns|            |       0|           0
+  single_gmii_client_clk_tx0" 7.7 ns HIGH 5 |         |            |            |        |            
+  0%                                        |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_pll_module_0_pll_module_0_CLKOUT3_BUF  | SETUP   |     0.039ns|     4.961ns|       0|           0
+  = PERIOD TIMEGRP         "pll_module_0_pl | HOLD    |     0.072ns|            |       0|           0
+  l_module_0_CLKOUT3_BUF" TS_sys_clk_pin /  |         |            |            |        |            
+  2 HIGH 50%                                |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_v5_emac_v1_3_single_gmii_clk_phy_rx0 = | SETUP   |     0.359ns|     7.341ns|       0|           0
+   PERIOD TIMEGRP         "v5_emac_v1_3_sin | HOLD    |     4.562ns|            |       0|           0
+  gle_gmii_clk_phy_rx0" 7.7 ns HIGH 50%     |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_pll_module_0_pll_module_0_CLKOUT2_BUF  | SETUP   |     0.412ns|     9.588ns|       0|           0
+  = PERIOD TIMEGRP         "pll_module_0_pl | HOLD    |     0.040ns|            |       0|           0
+  l_module_0_CLKOUT2_BUF" TS_sys_clk_pin HI |         |            |            |        |            
+  GH 50%                                    |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_DQ_CE = MAXDELAY FROM TIMEGRP "TNM_DQ_ | SETUP   |     0.710ns|     2.690ns|       0|           0
+  CE_IDDR" TO TIMEGRP "TNM_DQS_FLOPS"       | HOLD    |     1.078ns|            |       0|           0
+     3.4 ns                                 |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_pll_module_0_pll_module_0_CLKOUT4_BUF  | SETUP   |     0.885ns|     3.710ns|       0|           0
+  = PERIOD TIMEGRP         "pll_module_0_pl | HOLD    |     0.313ns|            |       0|           0
+  l_module_0_CLKOUT4_BUF" TS_sys_clk_pin /  |         |            |            |        |            
+  2 PHASE 1.25         ns HIGH 50%          |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_LL_CLK_2_TX_CLIENT_CLK = MAXDELAY FROM | SETUP   |     0.890ns|     7.110ns|       0|           0
+   TIMEGRP "LLCLK" TO TIMEGRP         "clk_ | HOLD    |     0.456ns|            |       0|           0
+  client_tx0" 8 ns DATAPATHONLY             |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_v5_emac_v1_3_single_gmii_client_clk_rx | SETUP   |     1.082ns|     6.618ns|       0|           0
+  0 = PERIOD TIMEGRP         "v5_emac_v1_3_ | HOLD    |     0.367ns|            |       0|           0
+  single_gmii_client_clk_rx0" 7.7 ns HIGH 5 |         |            |            |        |            
+  0%                                        |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_LL_CLK_2_RX_CLIENT_CLK = MAXDELAY FROM | SETUP   |     1.483ns|     6.517ns|       0|           0
+   TIMEGRP "LLCLK" TO TIMEGRP         "clk_ | HOLD    |     0.332ns|            |       0|           0
+  client_rx0" 8 ns DATAPATHONLY             |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_pll_module_0_pll_module_0_CLKOUT5_BUF  | SETUP   |     1.649ns|     6.351ns|       0|           0
+  = PERIOD TIMEGRP         "pll_module_0_pl | HOLD    |     2.045ns|            |       0|           0
+  l_module_0_CLKOUT5_BUF" TS_sys_clk_pin /  |         |            |            |        |            
+  1.25 HIGH         50%                     |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_TX_CLIENT_CLK_2_LL_CLK = MAXDELAY FROM | SETUP   |     5.626ns|     4.374ns|       0|           0
+   TIMEGRP "clk_client_tx0" TO TIMEGRP      | HOLD    |     0.486ns|            |       0|           0
+      "LLCLK" 10 ns DATAPATHONLY            |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_RX_CLIENT_CLK_2_LL_CLK = MAXDELAY FROM | SETUP   |     7.766ns|     2.234ns|       0|           0
+   TIMEGRP "clk_client_rx0" TO TIMEGRP      | HOLD    |     0.487ns|            |       0|           0
+      "LLCLK" 10 ns DATAPATHONLY            |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_MC_PHY_INIT_DATA_SEL_0 = MAXDELAY FROM | SETUP   |    26.320ns|     3.680ns|       0|           0
+   TIMEGRP "TNM_PHY_INIT_DATA_SEL" TO       | HOLD    |     0.664ns|            |       0|           0
+     TIMEGRP "TNM_CLK0" TS_MC_CLK * 4       |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_MC_PHY_INIT_DATA_SEL_90 = MAXDELAY FRO | SETUP   |    26.770ns|     3.230ns|       0|           0
+  M TIMEGRP "TNM_PHY_INIT_DATA_SEL" TO      | HOLD    |     0.085ns|            |       0|           0
+      TIMEGRP "TNM_CLK90" TS_MC_CLK * 4     |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_MC_GATE_DLY = MAXDELAY FROM TIMEGRP "T | SETUP   |    27.941ns|     2.059ns|       0|           0
+  NM_GATE_DLY" TO TIMEGRP "TNM_CLK0"        | HOLD    |     0.046ns|            |       0|           0
+    TS_MC_CLK * 4                           |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_MC_CAL_RDEN_DLY = MAXDELAY FROM TIMEGR | SETUP   |    28.122ns|     1.878ns|       0|           0
+  P "TNM_CAL_RDEN_DLY" TO TIMEGRP         " | HOLD    |     0.297ns|            |       0|           0
+  TNM_CLK0" TS_MC_CLK * 4                   |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_MC_RDEN_DLY = MAXDELAY FROM TIMEGRP "T | SETUP   |    28.135ns|     1.865ns|       0|           0
+  NM_RDEN_DLY" TO TIMEGRP "TNM_CLK0"        | HOLD    |     0.197ns|            |       0|           0
+    TS_MC_CLK * 4                           |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_MC_RDEN_SEL_MUX = MAXDELAY FROM TIMEGR | N/A     |         N/A|         N/A|     N/A|         N/A
+  P "TNM_RDEN_SEL_MUX" TO TIMEGRP         " |         |            |            |        |            
+  TNM_CLK0" TS_MC_CLK * 4                   |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_v5_emac_v1_3_single_gmii_phy_clk_tx0 = | N/A     |         N/A|         N/A|     N/A|         N/A
+   PERIOD TIMEGRP         "v5_emac_v1_3_sin |         |            |            |        |            
+  gle_gmii_phy_clk_tx0" 7.7 ns HIGH 50%     |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  PATH "TS_SYS_2_TXPHY_path" TIG            | MAXDELAY|         N/A|     8.139ns|     N/A|           0
+------------------------------------------------------------------------------------------------------
+  TS_pll_module_0_pll_module_0_CLKOUT0_BUF  | N/A     |         N/A|         N/A|     N/A|         N/A
+  = PERIOD TIMEGRP         "pll_module_0_pl |         |            |            |        |            
+  l_module_0_CLKOUT0_BUF" TS_sys_clk_pin /  |         |            |            |        |            
+  2.5 HIGH 50%                              |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_pll_module_0_pll_module_0_CLKOUT1_BUF  | N/A     |         N/A|         N/A|     N/A|         N/A
+  = PERIOD TIMEGRP         "pll_module_0_pl |         |            |            |        |            
+  l_module_0_CLKOUT1_BUF" TS_sys_clk_pin /  |         |            |            |        |            
+  2 HIGH 50%                                |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_MC_CLK = PERIOD TIMEGRP "mc_clk" 7.5 n | N/A     |         N/A|         N/A|     N/A|         N/A
+  s HIGH 50%                                |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_ | N/A     |         N/A|         N/A|     N/A|         N/A
+  pin" 10 ns HIGH 50%                       |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for TS_sys_clk_pin
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_sys_clk_pin                 |     10.000ns|          N/A|      9.922ns|            0|            0|            0|       104722|
+| TS_pll_module_0_pll_module_0_C|      4.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| LKOUT0_BUF                    |             |             |             |             |             |             |             |
+| TS_pll_module_0_pll_module_0_C|      5.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| LKOUT1_BUF                    |             |             |             |             |             |             |             |
+| TS_pll_module_0_pll_module_0_C|     10.000ns|      9.588ns|          N/A|            0|            0|       100424|            0|
+| LKOUT2_BUF                    |             |             |             |             |             |             |             |
+| TS_pll_module_0_pll_module_0_C|      5.000ns|      4.961ns|          N/A|            0|            0|         3939|            0|
+| LKOUT3_BUF                    |             |             |             |             |             |             |             |
+| TS_pll_module_0_pll_module_0_C|      5.000ns|      3.710ns|          N/A|            0|            0|          339|            0|
+| LKOUT4_BUF                    |             |             |             |             |             |             |             |
+| TS_pll_module_0_pll_module_0_C|      8.000ns|      6.351ns|          N/A|            0|            0|           20|            0|
+| LKOUT5_BUF                    |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+Derived Constraints for TS_MC_CLK
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_MC_CLK                      |      7.500ns|          N/A|      0.920ns|            0|            0|            0|          173|
+| TS_MC_PHY_INIT_DATA_SEL_0     |     30.000ns|      3.680ns|          N/A|            0|            0|           21|            0|
+| TS_MC_PHY_INIT_DATA_SEL_90    |     30.000ns|      3.230ns|          N/A|            0|            0|          122|            0|
+| TS_MC_GATE_DLY                |     30.000ns|      2.059ns|          N/A|            0|            0|           20|            0|
+| TS_MC_RDEN_DLY                |     30.000ns|      1.865ns|          N/A|            0|            0|            5|            0|
+| TS_MC_CAL_RDEN_DLY            |     30.000ns|      1.878ns|          N/A|            0|            0|            5|            0|
+| TS_MC_RDEN_SEL_MUX            |     30.000ns|          N/A|          N/A|            0|            0|            0|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the 
+   constraint does not cover any paths or that it has no requested value.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 66 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+Loading device for application Rf_Device from file '5vlx50t.nph' in environment c:\Xilinx\10.1\ISE;C:\Xilinx\10.1\EDK.
+INFO:ParHelpers:197 - Number of "Exact" mode Directed Routing Constraints: 64
+WARNING:ParHelpers:198 - One or more "EXACT" mode Directed Routing constrained net(s) were not successfully routed
+   according to the constraint(s). The router attempted to route the net(s) without regard to the constraint. The number
+   of nets found with Directed Routing Constraints: 64, number successfully routed using the constraints: 0, number
+   failed: 64. The failed nets are listed below. Please use FPGA Editor to determine the cause of the failure.
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[1].u_iob_dq/stg1_out_rise_0m
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[1].u_iob_dq/stg1_out_fall_0m
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[28].u_iob_dq/stg1_out_fall_0s
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[28].u_iob_dq/stg1_out_rise_0s
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[8].u_iob_dq/stg1_out_fall_0s
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[8].u_iob_dq/stg1_out_rise_0s
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[26].u_iob_dq/stg1_out_fall_0s
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[26].u_iob_dq/stg1_out_rise_0s
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[18].u_iob_dq/stg1_out_rise_0m
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[18].u_iob_dq/stg1_out_fall_0m
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[6].u_iob_dq/stg1_out_fall_0s
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[6].u_iob_dq/stg1_out_rise_0s
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[24].u_iob_dq/stg1_out_fall_0s
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[24].u_iob_dq/stg1_out_rise_0s
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[16].u_iob_dq/stg1_out_rise_0m
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[16].u_iob_dq/stg1_out_fall_0m
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[21].u_iob_dq/stg1_out_fall_0s
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[21].u_iob_dq/stg1_out_rise_0s
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[13].u_iob_dq/stg1_out_fall_0s
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[13].u_iob_dq/stg1_out_rise_0s
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[4].u_iob_dq/stg1_out_fall_0s
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[4].u_iob_dq/stg1_out_rise_0s
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[11].u_iob_dq/stg1_out_rise_0m
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[11].u_iob_dq/stg1_out_fall_0m
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[2].u_iob_dq/stg1_out_fall_0s
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[2].u_iob_dq/stg1_out_rise_0s
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[29].u_iob_dq/stg1_out_rise_0m
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[29].u_iob_dq/stg1_out_fall_0m
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[0].u_iob_dq/stg1_out_fall_0s
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[0].u_iob_dq/stg1_out_rise_0s
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[9].u_iob_dq/stg1_out_rise_0m
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[9].u_iob_dq/stg1_out_fall_0m
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[19].u_iob_dq/stg1_out_fall_0s
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[19].u_iob_dq/stg1_out_rise_0s
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[27].u_iob_dq/stg1_out_rise_0m
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[27].u_iob_dq/stg1_out_fall_0m
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[7].u_iob_dq/stg1_out_rise_0m
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[7].u_iob_dq/stg1_out_fall_0m
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[17].u_iob_dq/stg1_out_fall_0s
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[17].u_iob_dq/stg1_out_rise_0s
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[25].u_iob_dq/stg1_out_rise_0m
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[25].u_iob_dq/stg1_out_fall_0m
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[30].u_iob_dq/stg1_out_fall_0s
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[30].u_iob_dq/stg1_out_rise_0s
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[22].u_iob_dq/stg1_out_rise_0m
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[22].u_iob_dq/stg1_out_fall_0m
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[14].u_iob_dq/stg1_out_rise_0m
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[14].u_iob_dq/stg1_out_fall_0m
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[5].u_iob_dq/stg1_out_rise_0m
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[5].u_iob_dq/stg1_out_fall_0m
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[15].u_iob_dq/stg1_out_fall_0s
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[15].u_iob_dq/stg1_out_rise_0s
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[31].u_iob_dq/stg1_out_rise_0m
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[31].u_iob_dq/stg1_out_fall_0m
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[23].u_iob_dq/stg1_out_rise_0m
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[23].u_iob_dq/stg1_out_fall_0m
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[20].u_iob_dq/stg1_out_rise_0m
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[20].u_iob_dq/stg1_out_fall_0m
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[12].u_iob_dq/stg1_out_rise_0m
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[12].u_iob_dq/stg1_out_fall_0m
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[3].u_iob_dq/stg1_out_rise_0m
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[3].u_iob_dq/stg1_out_fall_0m
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[10].u_iob_dq/stg1_out_fall_0s
+	Net DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[10].u_iob_dq/stg1_out_rise_0s
+Total REAL time to PAR completion: 2 mins 13 secs 
+Total CPU time to PAR completion: 1 mins 41 secs 
+
+Peak Memory Usage:  453 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 70
+Number of info messages: 4
+
+Writing design to file system.ncd
+
+
+
+PAR done!

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RootFolder label="COREGEN" treetype="folder" language="COREGEN">
+	<Folder label="VERILOG Component Instantiation" treetype="folder">
+		<Template label="comp_6b_equal" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+comp_6b_equal YourInstanceName (
+    .a(a), // Bus [5 : 0] 
+    .b(b), // Bus [5 : 0] 
+    .clk(clk),
+    .qa_eq_b(qa_eq_b));
+
+ 
+		</Template>
+		<Template label="comp_11b_equal" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+comp_11b_equal YourInstanceName (
+    .a(a), // Bus [10 : 0] 
+    .b(b), // Bus [10 : 0] 
+    .clk(clk),
+    .qa_eq_b(qa_eq_b));
+
+ 
+		</Template>
+		<Template label="dist_mem_64x8" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+dist_mem_64x8 YourInstanceName (
+    .a(a), // Bus [5 : 0] 
+    .d(d), // Bus [7 : 0] 
+    .clk(clk),
+    .we(we),
+    .qspo(qspo)); // Bus [7 : 0] 
+
+ 
+		</Template>
+		<Template label="fifo_generator_v4_4" treetype="template">
+		</Template>
+	</Folder>
+	<Folder label="VHDL Component Instantiation" treetype="folder">
+		<Template label="comp_6b_equal" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component comp_6b_equal
+    port (
+    a: IN std_logic_VECTOR(5 downto 0);
+    b: IN std_logic_VECTOR(5 downto 0);
+    clk: IN std_logic;
+    qa_eq_b: OUT std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : comp_6b_equal
+        port map (
+            a =&gt; a,
+            b =&gt; b,
+            clk =&gt; clk,
+            qa_eq_b =&gt; qa_eq_b);
+ 
+		</Template>
+		<Template label="comp_11b_equal" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component comp_11b_equal
+    port (
+    a: IN std_logic_VECTOR(10 downto 0);
+    b: IN std_logic_VECTOR(10 downto 0);
+    clk: IN std_logic;
+    qa_eq_b: OUT std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : comp_11b_equal
+        port map (
+            a =&gt; a,
+            b =&gt; b,
+            clk =&gt; clk,
+            qa_eq_b =&gt; qa_eq_b);
+ 
+		</Template>
+		<Template label="dist_mem_64x8" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component dist_mem_64x8
+    port (
+    a: IN std_logic_VECTOR(5 downto 0);
+    d: IN std_logic_VECTOR(7 downto 0);
+    clk: IN std_logic;
+    we: IN std_logic;
+    qspo: OUT std_logic_VECTOR(7 downto 0));
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : dist_mem_64x8
+        port map (
+            a =&gt; a,
+            d =&gt; d,
+            clk =&gt; clk,
+            we =&gt; we,
+            qspo =&gt; qspo);
+ 
+		</Template>
+		<Template label="fifo_generator_v4_4" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component fifo_generator_v4_4
+    port (
+    clk: IN std_logic;
+    din: IN std_logic_VECTOR(7 downto 0);
+    rd_en: IN std_logic;
+    rst: IN std_logic;
+    wr_en: IN std_logic;
+    data_count: OUT std_logic_VECTOR(7 downto 0);
+    dout: OUT std_logic_VECTOR(7 downto 0);
+    empty: OUT std_logic;
+    full: OUT std_logic);
+end component;
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : fifo_generator_v4_4
+        port map (
+            clk =&gt; clk,
+            din =&gt; din,
+            rd_en =&gt; rd_en,
+            rst =&gt; rst,
+            wr_en =&gt; wr_en,
+            data_count =&gt; data_count,
+            dout =&gt; dout,
+            empty =&gt; empty,
+            full =&gt; full);
+ 
+		</Template>
+	</Folder>
+</RootFolder>

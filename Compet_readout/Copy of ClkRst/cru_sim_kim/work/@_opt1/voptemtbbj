@@ -1,0 +1,551 @@
+m255
+K3
+13
+cModel Technology
+Z0 dM:\MASTER\COMPET\Trigger\HW\HDL\CRU\sim
+T_opt
+Z1 V]6AjQ5me@`chRmB1ATihA3
+Z2 04 6 6 work cru_tb tb_cru 1
+Z3 =1-001aa0e92aad-4d554292-13b-4b0
+Z4 o-quiet -auto_acc_if_foreign -work work +acc
+Z5 n@_opt
+Z6 OE;O;6.6d;45
+Z7 dM:\MASTER\COMPET\Trigger\HW\HDL\CRU\sim
+T_opt1
+Z8 VL;Kb8D]OKGWl;LMRnPKRY1
+Z9 04 6 2 work com_tb tb 1
+Z10 =1-001aa0e92aad-4d78c3bc-16-cac
+R4
+Z11 n@_opt1
+R6
+R7
+Ea2s
+Z12 w1296816977
+Z13 DPx4 work 5 types 0 22 f;_H5kV]cF?RQF;Lm^?190
+Z14 DPx4 work 9 constants 0 22 GnNod6eR^]I:;F=V0@:=Q0
+Z15 DPx4 ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+Z16 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z17 dM:\MASTER\COMPET\compet_readout\ClkRst\cru_sim_kim
+Z18 8M:/MASTER/COMPET/compet_readout/shared/a2s.vhd
+Z19 FM:/MASTER/COMPET/compet_readout/shared/a2s.vhd
+l0
+L26
+Z20 VCYD=3<XUP2d;D:3^07m^E3
+Z21 OE;C;6.6d;45
+32
+Z22 o-work work -2002 -explicit
+Z23 tExplicit 1
+Z24 !s100 Hk8H2>zWA6WE=L=cHh@Df1
+Artl
+R13
+R14
+R15
+R16
+Z25 DEx4 work 3 a2s 0 22 CYD=3<XUP2d;D:3^07m^E3
+l46
+L40
+Z26 VK?Qz`YAdPU1>]J0@jKMaj3
+R21
+32
+Z27 Mx4 4 ieee 14 std_logic_1164
+Z28 Mx3 4 ieee 11 numeric_std
+Z29 Mx2 4 work 9 constants
+Z30 Mx1 4 work 5 types
+R22
+R23
+Z31 !s100 ae2;85>ETN`EG::EQ^nce3
+Ecom
+Z32 w1299758984
+Z33 DPx4 work 9 constants 0 22 LdjMa@dg;aML[Kfda_=in2
+R15
+Z34 DPx4 work 10 components 0 22 _@HnAHJBahO18dnIg@Q6^0
+Z35 DPx6 unisim 11 vcomponents 0 22 ^aPg^g8R`383Ij9LHKGf]3
+Z36 DPx4 ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
+Z37 DPx4 ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
+R16
+Z38 dM:\MASTER\COMPET\Compet_readout\ClkRst\cru_sim_kim
+Z39 8M:\MASTER\COMPET\Trigger\HW\HDL\UART\com.vhd
+Z40 FM:\MASTER\COMPET\Trigger\HW\HDL\UART\com.vhd
+l0
+L13
+Z41 V>_]dJCZ7T5]SX2dFk^@^d0
+R21
+32
+R22
+R23
+Z42 !s100 2PSUddJ3:B]^`1mU=zWYm0
+Abehavioral
+Z43 DEx55 M:\MASTER\COMPET\Compet_readout\ClkRst\cru_sim_kim\work 4 uart 0 22 jMIP]naUO>Ak^QF6@<G_61
+Z44 DPx55 M:\MASTER\COMPET\Compet_readout\ClkRst\cru_sim_kim\work 9 constants 0 22 LdjMa@dg;aML[Kfda_=in2
+Z45 DPx22 C:\modeltech_6.6d\ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+Z46 DPx55 M:\MASTER\COMPET\Compet_readout\ClkRst\cru_sim_kim\work 10 components 0 22 _@HnAHJBahO18dnIg@Q6^0
+Z47 DPx37 C:\Xilinx\10.1\ISE\vhdl\mti_se\unisim 11 vcomponents 0 22 ^aPg^g8R`383Ij9LHKGf]3
+Z48 DPx22 C:\modeltech_6.6d\ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
+Z49 DPx22 C:\modeltech_6.6d\ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
+Z50 DPx22 C:\modeltech_6.6d\ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z51 DEx55 M:\MASTER\COMPET\Compet_readout\ClkRst\cru_sim_kim\work 3 com 0 22 >_]dJCZ7T5]SX2dFk^@^d0
+32
+Z52 Mx7 22 C:\modeltech_6.6d\ieee 14 std_logic_1164
+Z53 Mx6 22 C:\modeltech_6.6d\ieee 15 std_logic_arith
+Z54 Mx5 22 C:\modeltech_6.6d\ieee 18 std_logic_unsigned
+Z55 Mx4 37 C:\Xilinx\10.1\ISE\vhdl\mti_se\unisim 11 vcomponents
+Z56 Mx3 55 M:\MASTER\COMPET\Compet_readout\ClkRst\cru_sim_kim\work 10 components
+Z57 Mx2 22 C:\modeltech_6.6d\ieee 11 numeric_std
+Z58 Mx1 55 M:\MASTER\COMPET\Compet_readout\ClkRst\cru_sim_kim\work 9 constants
+l31
+L22
+Z59 VXm>^CT3VVmTo5ca`_Ej5X1
+R21
+R22
+R23
+Z60 !s100 j5?n^J?S:e7^4ehYD6;M@3
+Ecom_tb
+Z61 w1299759992
+R50
+32
+R38
+Z62 8M:/MASTER/COMPET/Trigger/HW/HDL/UART/com_tb.vhd
+Z63 FM:/MASTER/COMPET/Trigger/HW/HDL/UART/com_tb.vhd
+l0
+L27
+Z64 VXDT<_1F;o2Yfbd[ZGX=[80
+R21
+R22
+R23
+Z65 !s100 0B`:2bj[5mMFj0K09A]UD2
+Atb
+R51
+R50
+Z66 DEx55 M:\MASTER\COMPET\Compet_readout\ClkRst\cru_sim_kim\work 6 com_tb 0 22 XDT<_1F;o2Yfbd[ZGX=[80
+32
+Z67 Mx1 22 C:\modeltech_6.6d\ieee 14 std_logic_1164
+l52
+L33
+Z68 VSWdoa`Kbe`53]ZJYlgAZH3
+R21
+R22
+R23
+Z69 !s100 NhLhGb8kY37Z1[iB_ZaX11
+Ccom_tb_tb_cfg
+atb
+Z70 ecom_tb
+R37
+R36
+R35
+R34
+R15
+R33
+Z71 DEx4 work 3 com 0 22 >_]dJCZ7T5]SX2dFk^@^d0
+Z72 DAx4 work 6 com_tb 2 tb 22 SWdoa`Kbe`53]ZJYlgAZH3
+R16
+Z73 DEx4 work 6 com_tb 0 22 XDT<_1F;o2Yfbd[ZGX=[80
+R61
+R38
+R62
+R63
+l0
+L83
+Z74 V7iYzL5g2?6oMkRBDNY0X<2
+R21
+32
+Z75 Mx7 4 ieee 14 std_logic_1164
+Z76 Mx6 4 work 9 constants
+Z77 Mx5 4 ieee 11 numeric_std
+Z78 Mx4 4 work 10 components
+Z79 Mx3 6 unisim 11 vcomponents
+Z80 Mx2 4 ieee 18 std_logic_unsigned
+Z81 Mx1 4 ieee 15 std_logic_arith
+R22
+R23
+Z82 !s100 fPilND<0EFCb4iN`=;JP^3
+Pcomponents
+R44
+R45
+R50
+32
+Z83 Mx3 22 C:\modeltech_6.6d\ieee 14 std_logic_1164
+R57
+R58
+Z84 w1299759190
+R38
+Z85 8M:/MASTER/COMPET/Trigger/HW/HDL/Shared/components.vhd
+Z86 FM:/MASTER/COMPET/Trigger/HW/HDL/Shared/components.vhd
+l0
+L12
+Z87 V_@HnAHJBahO18dnIg@Q6^0
+R21
+R22
+R23
+Z88 !s100 l1gjAIFMKCkHFOFoK737m2
+Pconstants
+R45
+R50
+32
+Z89 Mx2 22 C:\modeltech_6.6d\ieee 14 std_logic_1164
+Z90 Mx1 22 C:\modeltech_6.6d\ieee 11 numeric_std
+Z91 w1299575186
+R38
+Z92 8M:/MASTER/COMPET/Trigger/HW/HDL/Shared/constants.vhd
+Z93 FM:/MASTER/COMPET/Trigger/HW/HDL/Shared/constants.vhd
+l0
+L11
+Z94 VLdjMa@dg;aML[Kfda_=in2
+R21
+R22
+R23
+Z95 !s100 JMFO45R0o>Y5Yj@3IIQ8R3
+Ecru
+Z96 w1297681960
+Z97 DPx4 work 10 components 0 22 8g]2`m[BoNTb;d5]kzf2k2
+R13
+R15
+R14
+R35
+R16
+R17
+Z98 8M:/MASTER/COMPET/compet_readout/ClkRst/cru.vhd
+Z99 FM:/MASTER/COMPET/compet_readout/ClkRst/cru.vhd
+l0
+L22
+Z100 Vd1W]iDH^LL@:D^RXzc>cE3
+R21
+32
+R22
+R23
+Z101 !s100 9j>SiOaA1818<]YNS1Ib02
+Artl
+R25
+R97
+R13
+R15
+R14
+R35
+R16
+Z102 DEx4 work 3 cru 0 22 d1W]iDH^LL@:D^RXzc>cE3
+l134
+L56
+Z103 V1j8Ba;VGd6nLRi?BNF=HF3
+R21
+32
+Z104 Mx6 4 ieee 14 std_logic_1164
+Z105 Mx5 6 unisim 11 vcomponents
+Z106 Mx4 4 work 9 constants
+R28
+Z107 Mx2 4 work 5 types
+Z108 Mx1 4 work 10 components
+R22
+R23
+Z109 !s100 >L>i3he?dgZajf=]<M_DX1
+Ecru_tb
+Z110 w1297433209
+R16
+R17
+Z111 8M:\MASTER\COMPET\compet_readout\ClkRst\cru_tb.vhd
+Z112 FM:\MASTER\COMPET\compet_readout\ClkRst\cru_tb.vhd
+l0
+L27
+Z113 ViS_=cmanQ`C35OHBnUdVV3
+R21
+32
+R22
+R23
+Z114 !s100 1XB0E]YW@8]:2F=b4kMJi1
+Atb_cru
+R16
+Z115 DEx4 work 6 cru_tb 0 22 iS_=cmanQ`C35OHBnUdVV3
+l74
+L33
+Z116 V`BQo>BMC?mAhKfcL8XI6T2
+R21
+32
+Z117 Mx1 4 ieee 14 std_logic_1164
+R22
+R23
+Z118 !s100 R28Fo;FUQ_Y03dBfX@dK13
+Edcm2pll
+Z119 w1297682070
+R35
+R15
+R16
+R17
+Z120 8M:/MASTER/COMPET/compet_readout/COMPET_Readout/DCM2PLL.vhd
+Z121 FM:/MASTER/COMPET/compet_readout/COMPET_Readout/DCM2PLL.vhd
+l0
+L33
+Z122 V1>8M_aWznXeDZnR<[>bWB1
+R21
+32
+R22
+R23
+Z123 !s100 `2fU2adUO^FUgm:DLUFmF0
+Abehavioral
+R35
+R15
+R16
+Z124 DEx4 work 7 dcm2pll 0 22 1>8M_aWznXeDZnR<[>bWB1
+l69
+L46
+Z125 VT<cAJEnPdM3SAdnDLV6Y_2
+R21
+32
+Z126 Mx3 4 ieee 14 std_logic_1164
+Z127 Mx2 4 ieee 11 numeric_std
+Z128 Mx1 6 unisim 11 vcomponents
+R22
+R23
+Z129 !s100 g2onK4J0eb1bU@3H7AF?Q3
+Edcm_phase_adjust
+Z130 w1297255721
+R35
+R15
+R16
+R17
+Z131 8M:/MASTER/COMPET/compet_readout/COMPET_Readout/DCM_phase_adjust.vhd
+Z132 FM:/MASTER/COMPET/compet_readout/COMPET_Readout/DCM_phase_adjust.vhd
+l0
+L28
+Z133 VS8Yi`SEbC5TmRiJd9M7f:1
+R21
+32
+R22
+R23
+Z134 !s100 eJh_9DacA8@oFZQMM6^zK2
+Abehavioral
+R35
+R15
+R16
+Z135 DEx4 work 16 dcm_phase_adjust 0 22 S8Yi`SEbC5TmRiJd9M7f:1
+l44
+L37
+Z136 V^S6dW?Z_lJg;l6?UV[7>A3
+R21
+32
+R126
+R127
+R128
+R22
+R23
+Z137 !s100 0[[ZX5;Yelh:C>Wf>C>GP3
+Pfunctions
+R13
+R14
+R15
+R16
+R12
+R17
+Z138 8M:/MASTER/COMPET/compet_readout/shared/functions.vhd
+Z139 FM:/MASTER/COMPET/compet_readout/shared/functions.vhd
+l0
+L14
+Z140 VZQLj9JSjXON[HgiY=NSZX3
+R21
+32
+b1
+R27
+R28
+R29
+R30
+R22
+R23
+Z141 !s100 SHn?jBTf<;6^]27VhSKjk1
+Bbody
+Z142 DBx4 work 9 functions 0 22 ZQLj9JSjXON[HgiY=NSZX3
+R13
+R14
+R15
+R16
+l0
+L30
+Z143 V^C:nUSc?af9CCLC0HLnb:3
+R21
+32
+R27
+R28
+R29
+R30
+R22
+R23
+nbody
+Z144 !s100 b>EV450W:4]18J^KR??U72
+Epll_all
+Z145 w1296817379
+R35
+R15
+R16
+R17
+Z146 8M:/MASTER/COMPET/compet_readout/COMPET_Readout/pll_all.vhd
+Z147 FM:/MASTER/COMPET/compet_readout/COMPET_Readout/pll_all.vhd
+l0
+L33
+Z148 V_c70cZn@61R4:JWBbR8H<0
+R21
+32
+R22
+R23
+Z149 !s100 G6PGLzk?aH2_BSHW;Mo@11
+Abehavioral
+R35
+R15
+R16
+Z150 DEx4 work 7 pll_all 0 22 _c70cZn@61R4:JWBbR8H<0
+l56
+L44
+Z151 VaWil;JcKkDc^0`f?G[JaH0
+R21
+32
+R126
+R127
+R128
+R22
+R23
+Z152 !s100 QVc;l[JMBiKAWoJFKl@>b1
+Epll_ctu
+Z153 w1297255918
+R35
+R15
+R16
+R17
+Z154 8M:\MASTER\COMPET\compet_readout\COMPET_Readout\PLL_CTU.vhd
+Z155 FM:\MASTER\COMPET\compet_readout\COMPET_Readout\PLL_CTU.vhd
+l0
+L33
+Z156 VBL7[;eUYiY3I^?KlJWo?^0
+R21
+32
+R22
+R23
+Z157 !s100 ^nJ9gmFoi@9b6PX[QVA`P3
+Abehavioral
+R35
+R15
+R16
+Z158 DEx4 work 7 pll_ctu 0 22 BL7[;eUYiY3I^?KlJWo?^0
+l58
+L46
+Z159 VSn>U1XZ>337zoATBX7L<U0
+R21
+32
+R126
+R127
+R128
+R22
+R23
+Z160 !s100 Pf<llzAX3oRZ4`Af6a1gc2
+Eshift
+R12
+R13
+R14
+R15
+R16
+R17
+Z161 8M:/MASTER/COMPET/compet_readout/shared/shift.vhd
+Z162 FM:/MASTER/COMPET/compet_readout/shared/shift.vhd
+l0
+L23
+Z163 VOR=b0WSznZPOPC<[9e4nb1
+R21
+32
+R22
+R23
+Z164 !s100 j;Q;PojJ6[gZjoN20h8Te1
+Artl
+R13
+R14
+R15
+R16
+Z165 DEx4 work 5 shift 0 22 OR=b0WSznZPOPC<[9e4nb1
+l42
+L35
+Z166 V=kIBhLGEii9lhO3iAg7o40
+R21
+32
+R27
+R28
+R29
+R30
+R22
+R23
+Z167 !s100 =W`YbBogo;Vha7WVzez5E2
+Ptypes
+R14
+R15
+R16
+R12
+R17
+Z168 8M:/MASTER/COMPET/compet_readout/shared/types.vhd
+Z169 FM:/MASTER/COMPET/compet_readout/shared/types.vhd
+l0
+L15
+Z170 Vf;_H5kV]cF?RQF;Lm^?190
+R21
+32
+R126
+R127
+Z171 Mx1 4 work 9 constants
+R22
+R23
+Z172 !s100 9adjzgAo2b`Sh9UjXm[kc3
+Euart
+Z173 w1299753242
+R36
+R37
+R16
+R38
+Z174 8M:/MASTER/COMPET/Trigger/HW/HDL/UART/uart.vhd
+Z175 FM:/MASTER/COMPET/Trigger/HW/HDL/UART/uart.vhd
+l0
+L11
+Z176 VjMIP]naUO>Ak^QF6@<G_61
+R21
+32
+R22
+R23
+Z177 !s100 6SA8X```WYX9TOjZlhC`X0
+Abehavioral
+R48
+R49
+R50
+R43
+32
+R83
+Z178 Mx2 22 C:\modeltech_6.6d\ieee 15 std_logic_arith
+Z179 Mx1 22 C:\modeltech_6.6d\ieee 18 std_logic_unsigned
+l61
+L34
+Z180 VQj84Q_^;j4X[=S_4;;0AR2
+R21
+R22
+R23
+Z181 !s100 KaDe>@Pg`J=M:g1j14jIg0
+Eudp_dcm
+Z182 w1296816969
+R35
+R15
+R16
+R17
+Z183 8M:/MASTER/COMPET/compet_readout/COMPET_Readout/UDP_dcm.vhd
+Z184 FM:/MASTER/COMPET/compet_readout/COMPET_Readout/UDP_dcm.vhd
+l0
+L30
+Z185 Vo2BVImYC9?oYcnG_nB:2P1
+R21
+32
+R22
+R23
+Z186 !s100 UJEk1dmLRLa<GYm10@b4c2
+Abehavioral
+R35
+R15
+R16
+Z187 DEx4 work 7 udp_dcm 0 22 o2BVImYC9?oYcnG_nB:2P1
+l49
+L40
+Z188 VA4<kDe9CH3MS9GH3o[TzQ0
+R21
+32
+R126
+R127
+R128
+R22
+R23
+Z189 !s100 O?hhX]dHP<`T]5g43_Ob;3

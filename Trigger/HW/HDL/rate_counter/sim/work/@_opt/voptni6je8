@@ -1,0 +1,196 @@
+m255
+K3
+13
+cModel Technology
+Z0 dM:\MASTER\COMPET\Trigger\HW\HDL\Sync_Trigger\sim
+T_opt
+Z1 VdW@fYLNB?9OATo5[bP3>c3
+Z2 04 15 7 work rate_counter_tb stimuli 1
+Z3 =1-001aa0e92aad-4dd62111-fd-ebc
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 n@_opt
+Z6 OE;O;6.6d;45
+Z7 dM:\MASTER\COMPET\Trigger\HW\HDL\Sync_Trigger\sim
+Ea2s
+Z8 w1295360630
+Z9 DPx4 work 9 constants 0 22 ^[db_Zdmg4Y[>[nLEZ4j]1
+Z10 DPx4 ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+Z11 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z12 dM:\MASTER\COMPET\Trigger\HW\HDL\rate_counter\sim
+Z13 8M:\MASTER\COMPET\Trigger\HW\HDL\Shared\a2s.vhd
+Z14 FM:\MASTER\COMPET\Trigger\HW\HDL\Shared\a2s.vhd
+l0
+L26
+Z15 Vfffk21eVS8f5a3jR@i3_T0
+Z16 OE;C;6.6d;45
+32
+Z17 o-work work -2002 -explicit
+Z18 tExplicit 1
+Z19 !s100 n9JSGA_ROj^XS02a57CVz2
+Artl
+R9
+R10
+R11
+Z20 DEx4 work 3 a2s 0 22 fffk21eVS8f5a3jR@i3_T0
+l46
+L40
+Z21 VK?Qz`YAdPU1>]J0@jKMaj3
+R16
+32
+Z22 Mx3 4 ieee 14 std_logic_1164
+Z23 Mx2 4 ieee 11 numeric_std
+Z24 Mx1 4 work 9 constants
+R17
+R18
+Z25 !s100 ae2;85>ETN`EG::EQ^nce3
+Pcomponents
+Z26 DPx53 M:\MASTER\COMPET\Trigger\HW\HDL\rate_counter\sim\work 9 constants 0 22 ^[db_Zdmg4Y[>[nLEZ4j]1
+Z27 DPx22 C:\modeltech_6.6d\ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+Z28 DPx22 C:\modeltech_6.6d\ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+32
+Mx3 22 C:\modeltech_6.6d\ieee 14 std_logic_1164
+Mx2 22 C:\modeltech_6.6d\ieee 11 numeric_std
+Mx1 53 M:\MASTER\COMPET\Trigger\HW\HDL\rate_counter\sim\work 9 constants
+Z29 w1305540442
+R12
+Z30 8M:/MASTER/COMPET/Trigger/HW/HDL/Shared/components.vhd
+Z31 FM:/MASTER/COMPET/Trigger/HW/HDL/Shared/components.vhd
+l0
+L12
+Z32 Vm3z52FigD7UM:2BOX1LZz1
+R16
+R17
+R18
+Z33 !s100 jVeDmAUYdY4^kIEc@@_F81
+Pconstants
+R27
+R28
+32
+Mx2 22 C:\modeltech_6.6d\ieee 14 std_logic_1164
+Mx1 22 C:\modeltech_6.6d\ieee 11 numeric_std
+Z34 w1301644234
+R12
+Z35 8M:/MASTER/COMPET/Trigger/HW/HDL/Shared/constants.vhd
+Z36 FM:/MASTER/COMPET/Trigger/HW/HDL/Shared/constants.vhd
+l0
+L11
+Z37 V^[db_Zdmg4Y[>[nLEZ4j]1
+R16
+R17
+R18
+Z38 !s100 8hJIh1gdZE865;hGS]jEk2
+Pfunctions
+R11
+Z39 w1300371647
+R12
+Z40 8M:/MASTER/COMPET/Trigger/HW/HDL/Shared/functions.vhd
+Z41 FM:/MASTER/COMPET/Trigger/HW/HDL/Shared/functions.vhd
+l0
+L6
+Z42 V;So@=nmoF^Lh<K51oAPHo1
+R16
+32
+b1
+Z43 Mx1 4 ieee 14 std_logic_1164
+R17
+R18
+Z44 !s100 gHGX1K;KN3IQzeSnZ0I7H3
+Bbody
+Z45 DBx4 work 9 functions 0 22 ;So@=nmoF^Lh<K51oAPHo1
+R11
+l0
+L20
+Z46 VMlLFB5TU4hHe95EEF83>V0
+R16
+32
+R43
+R17
+R18
+nbody
+Z47 !s100 QmUhP]:RG7i0KPjOKJPLh2
+Erate_counter
+Z48 w1305878612
+R9
+R10
+Z49 DPx4 work 10 components 0 22 m3z52FigD7UM:2BOX1LZz1
+Z50 DPx6 unisim 11 vcomponents 0 22 ^aPg^g8R`383Ij9LHKGf]3
+Z51 DPx4 ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
+Z52 DPx4 ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
+R11
+R12
+Z53 8M:\MASTER\COMPET\Trigger\HW\HDL\rate_counter\rate_counter.vhd
+Z54 FM:\MASTER\COMPET\Trigger\HW\HDL\rate_counter\rate_counter.vhd
+l0
+L17
+Z55 VfS43?f04?6kD:9;gBdMh=3
+R16
+32
+R17
+R18
+Z56 !s100 gDAXd5K5PnWaM8ZJiATIg3
+Abehave
+R9
+R10
+R49
+R50
+R51
+R52
+R11
+Z57 DEx4 work 12 rate_counter 0 22 fS43?f04?6kD:9;gBdMh=3
+l52
+L33
+Z58 V<iZWhJKJ=Xa22en[cE1Vg3
+R16
+32
+Z59 Mx7 4 ieee 14 std_logic_1164
+Z60 Mx6 4 ieee 15 std_logic_arith
+Z61 Mx5 4 ieee 18 std_logic_unsigned
+Z62 Mx4 6 unisim 11 vcomponents
+Z63 Mx3 4 work 10 components
+R23
+R24
+R17
+R18
+Z64 !s100 j1e5@^P6nODg40A`6mD761
+Erate_counter_tb
+Z65 w1305878766
+R26
+R27
+Z66 DPx53 M:\MASTER\COMPET\Trigger\HW\HDL\rate_counter\sim\work 10 components 0 22 m3z52FigD7UM:2BOX1LZz1
+R28
+32
+R12
+Z67 8M:/MASTER/COMPET/Trigger/HW/HDL/rate_counter/sim/rate_counter_tb.vhd
+Z68 FM:/MASTER/COMPET/Trigger/HW/HDL/rate_counter/sim/rate_counter_tb.vhd
+l0
+L31
+Z69 Vm@NZegI3YhSD]^jZT^CI90
+R16
+R17
+R18
+Z70 !s100 KOmZXjBgG5U]mXAXY=KCJ2
+Astimuli
+DPx37 C:\Xilinx\10.1\ISE\vhdl\mti_se\unisim 11 vcomponents 0 22 ^aPg^g8R`383Ij9LHKGf]3
+DPx22 C:\modeltech_6.6d\ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
+DPx22 C:\modeltech_6.6d\ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
+DEx53 M:\MASTER\COMPET\Trigger\HW\HDL\rate_counter\sim\work 12 rate_counter 0 22 fS43?f04?6kD:9;gBdMh=3
+R26
+R27
+R66
+R28
+DEx53 M:\MASTER\COMPET\Trigger\HW\HDL\rate_counter\sim\work 15 rate_counter_tb 0 22 m@NZegI3YhSD]^jZT^CI90
+32
+Mx7 22 C:\modeltech_6.6d\ieee 14 std_logic_1164
+Mx6 53 M:\MASTER\COMPET\Trigger\HW\HDL\rate_counter\sim\work 10 components
+Mx5 22 C:\modeltech_6.6d\ieee 11 numeric_std
+Mx4 53 M:\MASTER\COMPET\Trigger\HW\HDL\rate_counter\sim\work 9 constants
+Mx3 22 C:\modeltech_6.6d\ieee 15 std_logic_arith
+Mx2 22 C:\modeltech_6.6d\ieee 18 std_logic_unsigned
+Mx1 37 C:\Xilinx\10.1\ISE\vhdl\mti_se\unisim 11 vcomponents
+l62
+L37
+Z71 VJ[WO0>JQco<ceP6>omb:60
+R16
+R17
+R18
+Z72 !s100 ]^ck>ER<zoG[oh:o1GDfW1

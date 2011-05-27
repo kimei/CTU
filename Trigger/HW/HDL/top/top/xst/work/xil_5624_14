@@ -1,0 +1,88 @@
+V3 55
+FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/CRU/CRU.vhd 2011/03/25.12:17:24 O.40d
+EN work/CRU 1301578590 \
+      FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/CRU/CRU.vhd \
+      PB ieee/std_logic_1164 1296775758 PB ieee/std_logic_arith 1296775759 \
+      PB ieee/STD_LOGIC_UNSIGNED 1296775760 LB UNISIM PH unisim/VCOMPONENTS 1296775759 \
+      PH work/components 1301578579 PH work/constants 1301578578
+AR work/CRU/Behavioral 1301578591 \
+      FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/CRU/CRU.vhd EN work/CRU 1301578590 \
+      CP PLL_ALL CP OBUFDS CP ODDR CP IBUFG CP work/a2s
+FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Shared/a2s.vhd 2011/01/18.15:23:50 O.40d
+EN work/a2s 1301578588 \
+      FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Shared/a2s.vhd \
+      PB ieee/std_logic_1164 1296775758 PB ieee/NUMERIC_STD 1296775759 \
+      PH work/constants 1301578578
+AR work/a2s/rtl 1301578589 \
+      FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Shared/a2s.vhd \
+      EN work/a2s 1301578588
+FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Shared/components.vhd 2011/03/31.13:34:12 O.40d
+PH work/components 1301578579 \
+      FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Shared/components.vhd \
+      PB ieee/std_logic_1164 1296775758 PB ieee/NUMERIC_STD 1296775759 \
+      PH work/constants 1301578578 CD PLL_ALL CD edge_detector CD CRU CD a2s \
+      CD sync_trigger CD uart CD com CD st_fsm CD OBUFDS CD IBUFDS
+FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Shared/constants.vhd 2011/03/29.13:29:21 O.40d
+PH work/constants 1301578578 \
+      FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Shared/constants.vhd \
+      PB ieee/std_logic_1164 1296775758 PB ieee/NUMERIC_STD 1296775759
+FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Shared/functions.vhd 2011/03/17.15:20:47 O.40d
+PH work/functions 1301578580 \
+      FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Shared/functions.vhd \
+      PB ieee/std_logic_1164 1296775758
+PB work/functions 1301578581 \
+      FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Shared/functions.vhd \
+      PH work/functions 1301578580
+FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Sync_Trigger/edge_detector.vhd 2011/03/23.14:36:20 O.40d
+EN work/edge_detector 1301578584 \
+      FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Sync_Trigger/edge_detector.vhd \
+      PB ieee/std_logic_1164 1296775758 PB ieee/std_logic_arith 1296775759 \
+      PB ieee/STD_LOGIC_UNSIGNED 1296775760 LB UNISIM PH unisim/VCOMPONENTS 1296775759 \
+      PH work/components 1301578579 PH work/constants 1301578578 PB work/functions 1301578581
+AR work/edge_detector/behave 1301578585 \
+      FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Sync_Trigger/edge_detector.vhd \
+      EN work/edge_detector 1301578584
+FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd 2011/03/31.13:34:06 O.40d
+EN work/sync_trigger 1301571271 \
+      FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd \
+      PB ieee/std_logic_1164 1296775758 PB ieee/std_logic_arith 1296775759 \
+      PB ieee/STD_LOGIC_UNSIGNED 1296775760 PB ieee/NUMERIC_STD 1296775759 \
+      LB UNISIM PH unisim/VCOMPONENTS 1296775759 PH work/components 1301578579 \
+      PH work/constants 1301578578 PB work/functions 1301578581
+AR work/sync_trigger/Behavioral 1301571272 \
+      FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd \
+      EN work/sync_trigger 1301571271 CP edge_detector
+FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/top/top.vhd 2011/03/31.13:33:25 O.40d
+EN work/top 1301571275 \
+      FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/top/top.vhd \
+      PB ieee/std_logic_1164 1296775758 PB ieee/std_logic_arith 1296775759 \
+      PB ieee/STD_LOGIC_UNSIGNED 1296775760 LB UNISIM PH unisim/VCOMPONENTS 1296775759 \
+      PH work/components 1301578579 PH work/constants 1301578578
+AR work/top/Behavioral 1301571276 \
+      FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/top/top.vhd EN work/top 1301571275 \
+      CP CRU CP sync_trigger CP IBUFDS CP OBUFDS CP com
+FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/top/top/PLL_ALL.vhd 2011/03/31.13:18:50 O.40d
+EN work/PLL_ALL 1301578586 \
+      FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/top/top/PLL_ALL.vhd \
+      PB ieee/std_logic_1164 1296775758 PB ieee/NUMERIC_STD 1296775759 LB UNISIM \
+      PH unisim/VCOMPONENTS 1296775759
+AR work/PLL_ALL/BEHAVIORAL 1301578587 \
+      FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/top/top/PLL_ALL.vhd \
+      EN work/PLL_ALL 1301578586 CP BUFG CP PLL_ADV
+FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UART/com.vhd 2011/03/11.11:18:17 O.40d
+EN work/com 1301571273 \
+      FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UART/com.vhd \
+      PB ieee/std_logic_1164 1296775758 PB ieee/std_logic_arith 1296775759 \
+      PB ieee/STD_LOGIC_UNSIGNED 1296775760 LB UNISIM PH unisim/VCOMPONENTS 1296775759 \
+      PH work/components 1301578579 PH work/constants 1301578578
+AR work/com/Behavioral 1301571274 \
+      FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UART/com.vhd \
+      EN work/com 1301571273 CP uart
+FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UART/uart.vhd 2011/03/11.11:29:12 O.40d
+EN work/uart 1301578582 \
+      FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UART/uart.vhd \
+      PB ieee/std_logic_1164 1296775758 PB ieee/std_logic_arith 1296775759 \
+      PB ieee/STD_LOGIC_UNSIGNED 1296775760
+AR work/uart/Behavioral 1301578583 \
+      FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UART/uart.vhd \
+      EN work/uart 1301578582

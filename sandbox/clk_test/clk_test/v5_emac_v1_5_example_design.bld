@@ -1,0 +1,199 @@
+Release 10.1.03 ngdbuild K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\10.1\ISE\bin\nt\unwrapped\ngdbuild.exe -ise
+M:/MASTER/COMPET/sandbox/clk_test/clk_test/clk_test.ise -intstyle ise -dd _ngo
+-sd
+M:/MASTER/COMPET/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_
+CORE__Virtex5 -sd
+M:/MASTER/COMPET/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_
+CORE__Virtex5 -sd
+M:/MASTER/COMPET/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_
+CORE__Virtex5 -nt timestamp -i -p xc5vfx30t-ff665-1
+v5_emac_v1_5_example_design.ngc v5_emac_v1_5_example_design.ngd
+
+Reading NGO file
+"M:/MASTER/COMPET/sandbox/clk_test/clk_test/v5_emac_v1_5_example_design.ngc" ...
+Loading design module
+"M:/MASTER/COMPET/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP
+_CORE__Virtex5/comp_11b_equal.ngc"...
+Loading design module
+"M:/MASTER/COMPET/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP
+_CORE__Virtex5/comp_6b_equal.ngc"...
+Loading design module
+"M:/MASTER/COMPET/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP
+_CORE__Virtex5/dist_mem_64x8.ngc"...
+Reading in constraint information from
+'M:/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac
+_v1_5_example_design.ucf'...
+Gathering constraint information from source properties...
+Done.
+
+Resolving constraint associations...
+Checking Constraint Associations...
+ERROR:ConstraintSystem:59 - Constraint <net "button" loc = AF20;>
+   [M:/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_e
+   mac_v1_5_example_design.ucf(8)]: NET "button" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <net "light<0>" loc = AF22;>
+   [M:/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_e
+   mac_v1_5_example_design.ucf(10)]: NET "light<0>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <net "light<1>" loc = AF23;>
+   [M:/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_e
+   mac_v1_5_example_design.ucf(11)]: NET "light<1>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <net "light<2>" loc = AF25;>
+   [M:/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_e
+   mac_v1_5_example_design.ucf(12)]: NET "light<2>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <net "light<3>" loc = AE25;>
+   [M:/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_e
+   mac_v1_5_example_design.ucf(13)]: NET "light<3>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "FPGA100M" LOC = E18;>
+   [M:/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_e
+   mac_v1_5_example_design.ucf(15)]: NET "FPGA100M" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_tx_fifo_rd_to_wr_0" =
+   FROM "tx_fifo_rd_to_wr_0" TO "v5_emac_v1_5_client_clk_tx0" 8000 ps
+   DATAPATHONLY;>
+   [M:/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_e
+   mac_v1_5_example_design.ucf(197)]: Unable to find an active 'TimeGrp' or
+   'TNM' or 'TPSync' or 'TPThru' constraint named 'v5_emac_v1_5_client_clk_tx0'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_tx_fifo_wr_to_rd_0" =
+   FROM "tx_fifo_wr_to_rd_0" TO "v5_emac_v1_5_client_clk_tx0" 8000 ps
+   DATAPATHONLY;>
+   [M:/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_e
+   mac_v1_5_example_design.ucf(198)]: Unable to find an active 'TimeGrp' or
+   'TNM' or 'TPSync' or 'TPThru' constraint named 'v5_emac_v1_5_client_clk_tx0'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_rx_fifo_wr_to_rd_0" =
+   FROM "rx_fifo_wr_to_rd_0" TO "v5_emac_v1_5_client_clk_tx0" 8000 ps
+   DATAPATHONLY;>
+   [M:/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_e
+   mac_v1_5_example_design.ucf(220)]: Unable to find an active 'TimeGrp' or
+   'TNM' or 'TPSync' or 'TPThru' constraint named 'v5_emac_v1_5_client_clk_tx0'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_rx_fifo_rd_to_wr_0" =
+   FROM "rx_fifo_rd_to_wr_0" TO "v5_emac_v1_5_client_clk_rx0" 8000 ps
+   DATAPATHONLY;>
+   [M:/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_e
+   mac_v1_5_example_design.ucf(221)]: Unable to find an active 'TimeGrp' or
+   'TNM' or 'TPSync' or 'TPThru' constraint named 'v5_emac_v1_5_client_clk_rx0'.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "light<0>" S>: NET "light<0>" not
+   found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:NgdBuild:1012 - The constraint <INST: UniqueName:
+   /v5_emac_v1_5_example_design/EXPANDED/v5_emac_v1_5_example_design/v5_emac_ll\
+   /v5_emac_block\/gmii0\/GMII_TX_ER IOB = true> is overridden on the design
+   object v5_emac_ll/v5_emac_block/gmii0/GMII_TX_ER by the constraint <INST
+   "*gmii0?GMII_TX_ER"     IOB = true;>
+   [M:/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_e
+   mac_v1_5_example_design.ucf(176)].
+WARNING:NgdBuild:1012 - The constraint <INST: UniqueName:
+   /v5_emac_v1_5_example_design/EXPANDED/v5_emac_v1_5_example_design/v5_emac_ll\
+   /v5_emac_block\/gmii0\/GMII_TX_EN IOB = true> is overridden on the design
+   object v5_emac_ll/v5_emac_block/gmii0/GMII_TX_EN by the constraint <INST
+   "*gmii0?GMII_TX_EN"     IOB = true;>
+   [M:/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_e
+   mac_v1_5_example_design.ucf(175)].
+WARNING:NgdBuild:1012 - The constraint <INST: UniqueName:
+   /v5_emac_v1_5_example_design/EXPANDED/v5_emac_v1_5_example_design/v5_emac_ll\
+   /v5_emac_block\/gmii0\/GMII_TXD_7 IOB = true> is overridden on the design
+   object v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_7 by the constraint <INST
+   "*gmii0?GMII_TXD_?"     IOB = true;>
+   [M:/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_e
+   mac_v1_5_example_design.ucf(174)].
+WARNING:NgdBuild:1012 - The constraint <INST: UniqueName:
+   /v5_emac_v1_5_example_design/EXPANDED/v5_emac_v1_5_example_design/v5_emac_ll\
+   /v5_emac_block\/gmii0\/GMII_TXD_6 IOB = true> is overridden on the design
+   object v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_6 by the constraint <INST
+   "*gmii0?GMII_TXD_?"     IOB = true;>
+   [M:/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_e
+   mac_v1_5_example_design.ucf(174)].
+WARNING:NgdBuild:1012 - The constraint <INST: UniqueName:
+   /v5_emac_v1_5_example_design/EXPANDED/v5_emac_v1_5_example_design/v5_emac_ll\
+   /v5_emac_block\/gmii0\/GMII_TXD_5 IOB = true> is overridden on the design
+   object v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_5 by the constraint <INST
+   "*gmii0?GMII_TXD_?"     IOB = true;>
+   [M:/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_e
+   mac_v1_5_example_design.ucf(174)].
+WARNING:NgdBuild:1012 - The constraint <INST: UniqueName:
+   /v5_emac_v1_5_example_design/EXPANDED/v5_emac_v1_5_example_design/v5_emac_ll\
+   /v5_emac_block\/gmii0\/GMII_TXD_4 IOB = true> is overridden on the design
+   object v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_4 by the constraint <INST
+   "*gmii0?GMII_TXD_?"     IOB = true;>
+   [M:/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_e
+   mac_v1_5_example_design.ucf(174)].
+WARNING:NgdBuild:1012 - The constraint <INST: UniqueName:
+   /v5_emac_v1_5_example_design/EXPANDED/v5_emac_v1_5_example_design/v5_emac_ll\
+   /v5_emac_block\/gmii0\/GMII_TXD_3 IOB = true> is overridden on the design
+   object v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_3 by the constraint <INST
+   "*gmii0?GMII_TXD_?"     IOB = true;>
+   [M:/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_e
+   mac_v1_5_example_design.ucf(174)].
+WARNING:NgdBuild:1012 - The constraint <INST: UniqueName:
+   /v5_emac_v1_5_example_design/EXPANDED/v5_emac_v1_5_example_design/v5_emac_ll\
+   /v5_emac_block\/gmii0\/GMII_TXD_2 IOB = true> is overridden on the design
+   object v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_2 by the constraint <INST
+   "*gmii0?GMII_TXD_?"     IOB = true;>
+   [M:/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_e
+   mac_v1_5_example_design.ucf(174)].
+WARNING:NgdBuild:1012 - The constraint <INST: UniqueName:
+   /v5_emac_v1_5_example_design/EXPANDED/v5_emac_v1_5_example_design/v5_emac_ll\
+   /v5_emac_block\/gmii0\/GMII_TXD_1 IOB = true> is overridden on the design
+   object v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_1 by the constraint <INST
+   "*gmii0?GMII_TXD_?"     IOB = true;>
+   [M:/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_e
+   mac_v1_5_example_design.ucf(174)].
+WARNING:NgdBuild:1012 - The constraint <INST: UniqueName:
+   /v5_emac_v1_5_example_design/EXPANDED/v5_emac_v1_5_example_design/v5_emac_ll\
+   /v5_emac_block\/gmii0\/GMII_TXD_0 IOB = true> is overridden on the design
+   object v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_0 by the constraint <INST
+   "*gmii0?GMII_TXD_?"     IOB = true;>
+   [M:/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_e
+   mac_v1_5_example_design.ucf(174)].
+Done...
+Checking Partitions ...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     7
+  Number of warnings:  14
+
+Total memory usage is 80832 kilobytes
+
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
+
+Writing NGDBUILD log file "v5_emac_v1_5_example_design.bld"...

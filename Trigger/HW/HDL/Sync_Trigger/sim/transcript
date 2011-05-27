@@ -1,0 +1,97 @@
+# //  ModelSim SE 6.6d Nov  1 2010 
+# //
+# //  Copyright 1991-2010 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim {{M:\MASTER\COMPET\Trigger\HW\HDL\Sync_Trigger\sim\st.do}} 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: Failed to find design unit work.work.M:\MASTER\COMPET\Trigger\HW\HDL\Sync_Trigger\sim\st.do.
+# Optimization failed
+# Error loading design
+project open M:/MASTER/COMPET/Trigger/HW/HDL/Sync_Trigger/sim/sync_trigger
+# Loading project sync_trigger
+do st.do
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling package constants
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Compiling entity a2s
+# -- Compiling architecture rtl of a2s
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Compiling package components
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling package functions
+# -- Compiling package body functions
+# -- Loading package functions
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package vcomponents
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Loading package components
+# -- Loading package functions
+# -- Compiling entity edge_detector
+# -- Compiling architecture behave of edge_detector
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Loading package vcomponents
+# -- Loading package constants
+# -- Loading package components
+# -- Loading package functions
+# -- Compiling entity sync_trigger
+# -- Compiling architecture behavioral of sync_trigger
+# ** Warning: [3] ../Sync_trigger.vhd(97): (vcom-1246) Range 1 downto 2 is null.
+# ** Warning: [3] ../Sync_trigger.vhd(101): (vcom-1246) Range 1 downto 2 is null.
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package textio
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Loading package components
+# -- Compiling entity sync_trigger_tb
+# -- Compiling architecture tb of sync_trigger_tb
+# ** Warning: [10] sync_trigger_tb.vhd(61): (vcom-1135) Subprogram parameter f is declared using VHDL 1987 syntax.
+# vsim -voptargs=+acc -t 1ps sync_trigger_tb 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading std.textio(body)
+# Loading ieee.numeric_std(body)
+# Loading work.constants
+# Loading work.components
+# Loading work.sync_trigger_tb(tb)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading unisim.vcomponents
+# Loading work.functions(body)
+# Loading work.sync_trigger(behavioral)#1
+# Loading work.edge_detector(behave)#1
+# Updating msgviewer database...
+# .main_pane.wave.interior.cs.body.pw.wf
+# Break key hit 
+# Break in Process wavegen_proc at sync_trigger_tb.vhd line 120

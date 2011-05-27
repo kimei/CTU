@@ -1,0 +1,35 @@
+
+bitinit version Xilinx EDK 10.1.03 Build EDK_K_SP3.6
+Copyright (c) Xilinx Inc. 2002.
+
+Parsing MHS File system.mhs...
+
+Overriding IP level properties ...
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor ppc440_0
+  (0b0000000000-0b0011111111) ppc440_0	
+  (0000000000-0x03ffffff) DDR2_SDRAM_16Mx32	ppc440_0_PPC440MC
+  (0x81400000-0x8140ffff) LEDs_8Bit	plb_v46_0
+  (0x81420000-0x8142ffff) DIP_Switches_8Bit	plb_v46_0
+  (0x81440000-0x8144ffff) Push_Buttons_3Bit	plb_v46_0
+  (0x81800000-0x8180ffff) xps_intc_0	plb_v46_0
+  (0x81c00000-0x81c0ffff) Hard_Ethernet_MAC	plb_v46_0
+  (0x83a00000-0x83a0ffff) xps_timebase_wdt_1	plb_v46_0
+  (0x83c00000-0x83c0ffff) xps_timer_1	plb_v46_0
+  (0x83e00000-0x83e0ffff) RS232	plb_v46_0
+  (0x86000000-0x87ffffff) FLASH_8Mx16	plb_v46_0
+  (0xffff0000-0xffffffff) xps_bram_if_cntlr_1	plb_v46_0
+
+Initializing Memory...
+Checking ELFs associated with PPC440 instance ppc440_0 for overlap...
+
+
+Analyzing file TestApp_Memory/executable.elf...
+Running Data2Mem with the following command:
+data2mem -bm "implementation/system_bd" -bt "implementation/system.bit"  -bd
+"TestApp_Memory/executable.elf" tag ppc440_0  -o b implementation/download.bit 
+Memory Initialization completed successfully.
+

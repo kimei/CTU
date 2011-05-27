@@ -1,0 +1,71 @@
+Mapping logical library work (line 1) to current logical library clkgen_v1_00_a
+...
+Mapping logical library work (line 2) to current logical library clkgen_v1_00_a
+...
+Parsing XST project file successfully ...
+Analyzing HDL source files ...
+Analyzing HDL source files successfully ...
+HDL language for the peripheral (top level) design unit clkgen is vhdl ...
+WARNING:MDT - Project file
+   M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_li
+   nux_platform\pcores/clkgen.prj already exists, will be overwrite and removed
+   afterward ...
+INFO:MDT - Create temparary xst project file:
+   M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_li
+   nux_platform\pcores/clkgen.prj
+Compiling vhdl file
+"M:/MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linu
+x_platform/pcores/clock_ise/clkgen_ip/pll.vhd" in Library clkgen_v1_00_a.
+Entity <pll> compiled.
+Entity <pll> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file
+"M:/MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linu
+x_platform/pcores/clock_ise/clkgen_ip/clkgen.vhd" in Library clkgen_v1_00_a.
+Entity <clkgen> compiled.
+Entity <clkgen> (Architecture <Behavioral>) compiled.
+
+
+Analyzing HDL attributes ...
+INFO:MDT - IPTYPE set to value : PERIPHERAL
+INFO:MDT - IMP_NETLIST set to value : TRUE
+INFO:MDT - HDL set to value : VHDL
+WARNING:MDT - Unable to delete temparary project file
+   M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_li
+   nux_platform\pcores\clkgen.prj : 13
+Copying file pll.vhd to
+M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_linux
+_platform\pcores/clkgen_v1_00_a/hdl/vhdl/ ...
+Copying file clkgen.vhd to
+M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_linux
+_platform\pcores/clkgen_v1_00_a/hdl/vhdl/ ...
+
+Thank you for using Create and Import Peripheral Wizard! Please find your
+imported peripheral under
+M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_linux
+_platform\pcores\clkgen_v1_00_a.
+
+Summary:
+
+  Logical library     : clkgen_v1_00_a
+  Version             : 1.00.a
+  Bus interface(s)    : None
+
+The following sub-directories will be created:
+
+  - clkgen_v1_00_a\data
+  - clkgen_v1_00_a\hdl
+  - clkgen_v1_00_a\hdl\vhdl
+
+
+The following HDL source files will be copied into the clkgen_v1_00_a\hdl\vhdl
+directory:
+
+  - pll.vhd
+  - clkgen.vhd
+
+The following files will be created under the clkgen_v1_00_a\data directory:
+
+  - clkgen_v2_1_0.mpd
+  - clkgen_v2_1_0.pao
+
+

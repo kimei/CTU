@@ -1,0 +1,10 @@
+NEWPROJECT "M:/MASTER/COMPET/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/"
+SETPROJECT "M:/MASTER/COMPET/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/"
+SET BusFormat = BusFormatAngleBracketNotRipped
+SET devicefamily = virtex5
+SET device = xc5vfx30t
+SET package = ff665
+SET speedgrade = -1
+SET FlowVendor = Foundation_iSE
+SET VerilogSim = True
+SET VHDLSim = True

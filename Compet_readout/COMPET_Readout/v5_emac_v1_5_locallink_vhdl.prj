@@ -1,7 +1,0 @@
-vhdl work "D:\avnet_50LXT\COMPET_readout\COMPET_Readout\COMPET_Readout\v5_emac_v1_5.vhd"
-vhdl work "D:\avnet_50LXT\COMPET_readout\COMPET_Readout\COMPET_Readout\tx_client_fifo_8.vhd"
-vhdl work "D:\avnet_50LXT\COMPET_readout\COMPET_Readout\COMPET_Readout\rx_client_fifo_8.vhd"
-vhdl work "D:\avnet_50LXT\COMPET_readout\COMPET_Readout\COMPET_Readout\gmii_if.vhd"
-vhdl work "D:\avnet_50LXT\COMPET_readout\COMPET_Readout\COMPET_Readout\v5_emac_v1_5_block.vhd"
-vhdl work "D:\avnet_50LXT\COMPET_readout\COMPET_Readout\COMPET_Readout\eth_fifo_8.vhd"
-vhdl work "D:\avnet_50LXT\COMPET_readout\COMPET_Readout\COMPET_Readout\v5_emac_v1_5_locallink.vhd"

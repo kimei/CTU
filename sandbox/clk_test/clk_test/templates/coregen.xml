@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RootFolder label="COREGEN" treetype="folder" language="COREGEN">
+	<Folder label="VERILOG Component Instantiation" treetype="folder">
+		<Template label="comp_6b_equal" treetype="template">
+		</Template>
+		<Template label="comp_11b_equal" treetype="template">
+		</Template>
+		<Template label="dist_mem_64x8" treetype="template">
+		</Template>
+	</Folder>
+	<Folder label="VHDL Component Instantiation" treetype="folder">
+		<Template label="comp_6b_equal" treetype="template">
+		</Template>
+		<Template label="comp_11b_equal" treetype="template">
+		</Template>
+		<Template label="dist_mem_64x8" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component dist_mem_64x8
+    port (
+    a: IN std_logic_VECTOR(5 downto 0);
+    clk: IN std_logic;
+    qspo: OUT std_logic_VECTOR(7 downto 0));
+end component;
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : dist_mem_64x8
+        port map (
+            a =&gt; a,
+            clk =&gt; clk,
+            qspo =&gt; qspo);
+ 
+		</Template>
+	</Folder>
+</RootFolder>

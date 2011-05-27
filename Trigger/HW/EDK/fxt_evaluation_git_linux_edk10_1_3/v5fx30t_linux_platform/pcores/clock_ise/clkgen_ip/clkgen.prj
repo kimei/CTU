@@ -1,0 +1,2 @@
+vhdl work "pll.vhd"
+vhdl work "clkgen.vhd"

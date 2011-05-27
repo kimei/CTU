@@ -1,6 +1,0 @@
-CommandLine
-/media/disk2/Xilinx/10.1/ISE/bin/lin/unwrapped/ngcbuild -intstyle ise -dd /media/disk2/COMPET_readout/compet_readout/UDP_MR/tmp/_cg /media/disk2/COMPET_readout/compet_readout/UDP_MR/tmp/_cg/dist_mem_64x8.edn /media/disk2/COMPET_readout/compet_readout/UDP_MR/tmp/_cg/dist_mem_64x8_unobf.ngc
-s
-FormatString
-ngcbuild [-p <partname>] {-sd <source_dir>} [-ur <rules_file[.urf]>] [-dd <output_dir>] [-r] [-nt timestamp|on|off] [-uc <ucf_file[.ucf]>] [-aul] [-i] [-intstyle ise|xflow|silent] [-quiet] [-verbose] [-active <active_module_name>] [-insert_keep_hierarchy] [-insert_secure_netlist prohibit|encrypt|noinit|enable_unisim_hdl|off] [-insert_secure_config off|protect] [-insert_secure_bitstream <bitstream_value>] [-insert_check_license <license_value> ] [--forcengd] [--script <tcl_file>] <design_name> <ngc_file[.ngc]>
-s

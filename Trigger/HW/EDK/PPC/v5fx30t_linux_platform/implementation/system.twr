@@ -1,0 +1,406 @@
+--------------------------------------------------------------------------------
+Release 10.1.03 Trace  (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+trce -e 3 -xml system.twx system.ncd system.pcf
+
+Design file:              system.ncd
+Physical constraint file: system.pcf
+Device,package,speed:     xc5vfx30t,ff665,-1 (PRODUCTION 1.64 2008-12-19, STEPPING level 0)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+WARNING:Timing:3223 - Timing constraint TS_MC_RDEN_SEL_MUX = MAXDELAY FROM 
+   TIMEGRP "TNM_RDEN_SEL_MUX" TO TIMEGRP
+           "TNM_CLK0" TS_MC_CLK * 4; 
+   ignored during timing analysis.
+INFO:Timing:3377 - Intersecting Constraints found and resolved.  For more 
+   information see the TSI report.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 10 ns HIGH 
+50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_MC_CLK = PERIOD TIMEGRP "mc_clk" 7.5 ns HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_MC_PHY_INIT_DATA_SEL_0 = MAXDELAY FROM TIMEGRP 
+"TNM_PHY_INIT_DATA_SEL" TO         TIMEGRP "TNM_CLK0" TS_MC_CLK * 4;
+
+ 21 paths analyzed, 21 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Maximum delay is   3.680ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_MC_PHY_INIT_DATA_SEL_90 = MAXDELAY FROM TIMEGRP 
+"TNM_PHY_INIT_DATA_SEL" TO         TIMEGRP "TNM_CLK90" TS_MC_CLK * 4;
+
+ 122 paths analyzed, 122 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Maximum delay is   3.230ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_MC_GATE_DLY = MAXDELAY FROM TIMEGRP "TNM_GATE_DLY" TO 
+TIMEGRP "TNM_CLK0"         TS_MC_CLK * 4;
+
+ 20 paths analyzed, 20 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Maximum delay is   2.059ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_MC_RDEN_DLY = MAXDELAY FROM TIMEGRP "TNM_RDEN_DLY" TO 
+TIMEGRP "TNM_CLK0"         TS_MC_CLK * 4;
+
+ 5 paths analyzed, 5 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Maximum delay is   1.865ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_MC_CAL_RDEN_DLY = MAXDELAY FROM TIMEGRP 
+"TNM_CAL_RDEN_DLY" TO TIMEGRP         "TNM_CLK0" TS_MC_CLK * 4;
+
+ 5 paths analyzed, 5 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Maximum delay is   1.878ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_MC_RDEN_SEL_MUX = MAXDELAY FROM TIMEGRP 
+"TNM_RDEN_SEL_MUX" TO TIMEGRP         "TNM_CLK0" TS_MC_CLK * 4;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_DQ_CE = MAXDELAY FROM TIMEGRP "TNM_DQ_CE_IDDR" TO TIMEGRP 
+"TNM_DQS_FLOPS"         3.4 ns;
+
+ 64 paths analyzed, 32 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Maximum delay is   2.690ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_v5_emac_v1_3_single_gmii_client_clk_tx0 = PERIOD TIMEGRP  
+       "v5_emac_v1_3_single_gmii_client_clk_tx0" 7.7 ns HIGH 50%;
+
+ 188 paths analyzed, 80 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum period is   7.665ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_v5_emac_v1_3_single_gmii_client_clk_rx0 = PERIOD TIMEGRP  
+       "v5_emac_v1_3_single_gmii_client_clk_rx0" 7.7 ns HIGH 50%;
+
+ 365 paths analyzed, 198 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum period is   6.618ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_v5_emac_v1_3_single_gmii_phy_clk_tx0 = PERIOD TIMEGRP     
+    "v5_emac_v1_3_single_gmii_phy_clk_tx0" 7.7 ns HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_v5_emac_v1_3_single_gmii_clk_phy_rx0 = PERIOD TIMEGRP     
+    "v5_emac_v1_3_single_gmii_clk_phy_rx0" 7.7 ns HIGH 50%;
+
+ 10 paths analyzed, 10 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum period is   7.341ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_SYS_2_TXPHY_path" TIG;
+
+ 25 paths analyzed, 22 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_LL_CLK_2_RX_CLIENT_CLK = MAXDELAY FROM TIMEGRP "LLCLK" TO 
+TIMEGRP         "clk_client_rx0" 8 ns DATAPATHONLY;
+
+ 41 paths analyzed, 18 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Maximum delay is   6.517ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_LL_CLK_2_TX_CLIENT_CLK = MAXDELAY FROM TIMEGRP "LLCLK" TO 
+TIMEGRP         "clk_client_tx0" 8 ns DATAPATHONLY;
+
+ 37 paths analyzed, 36 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Maximum delay is   7.110ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_RX_CLIENT_CLK_2_LL_CLK = MAXDELAY FROM TIMEGRP 
+"clk_client_rx0" TO TIMEGRP         "LLCLK" 10 ns DATAPATHONLY;
+
+ 19 paths analyzed, 19 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Maximum delay is   2.234ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_TX_CLIENT_CLK_2_LL_CLK = MAXDELAY FROM TIMEGRP 
+"clk_client_tx0" TO TIMEGRP         "LLCLK" 10 ns DATAPATHONLY;
+
+ 19 paths analyzed, 15 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Maximum delay is   4.374ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_pll_module_0_pll_module_0_CLKOUT0_BUF = PERIOD TIMEGRP    
+     "pll_module_0_pll_module_0_CLKOUT0_BUF" TS_sys_clk_pin / 2.5 HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_pll_module_0_pll_module_0_CLKOUT1_BUF = PERIOD TIMEGRP    
+     "pll_module_0_pll_module_0_CLKOUT1_BUF" TS_sys_clk_pin / 2 HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_pll_module_0_pll_module_0_CLKOUT2_BUF = PERIOD TIMEGRP    
+     "pll_module_0_pll_module_0_CLKOUT2_BUF" TS_sys_clk_pin HIGH 50%;
+
+ 100424 paths analyzed, 18598 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum period is   9.588ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_pll_module_0_pll_module_0_CLKOUT3_BUF = PERIOD TIMEGRP    
+     "pll_module_0_pll_module_0_CLKOUT3_BUF" TS_sys_clk_pin / 2 HIGH 50%;
+
+ 3939 paths analyzed, 1650 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum period is   4.961ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_pll_module_0_pll_module_0_CLKOUT4_BUF = PERIOD TIMEGRP    
+     "pll_module_0_pll_module_0_CLKOUT4_BUF" TS_sys_clk_pin / 2 PHASE 1.25      
+   ns HIGH 50%;
+
+ 339 paths analyzed, 335 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum period is   3.710ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_pll_module_0_pll_module_0_CLKOUT5_BUF = PERIOD TIMEGRP    
+     "pll_module_0_pll_module_0_CLKOUT5_BUF" TS_sys_clk_pin / 1.25 HIGH         
+50%;
+
+ 20 paths analyzed, 20 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum period is   6.351ns.
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for TS_sys_clk_pin
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_sys_clk_pin                 |     10.000ns|          N/A|      9.922ns|            0|            0|            0|       104722|
+| TS_pll_module_0_pll_module_0_C|      4.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| LKOUT0_BUF                    |             |             |             |             |             |             |             |
+| TS_pll_module_0_pll_module_0_C|      5.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| LKOUT1_BUF                    |             |             |             |             |             |             |             |
+| TS_pll_module_0_pll_module_0_C|     10.000ns|      9.588ns|          N/A|            0|            0|       100424|            0|
+| LKOUT2_BUF                    |             |             |             |             |             |             |             |
+| TS_pll_module_0_pll_module_0_C|      5.000ns|      4.961ns|          N/A|            0|            0|         3939|            0|
+| LKOUT3_BUF                    |             |             |             |             |             |             |             |
+| TS_pll_module_0_pll_module_0_C|      5.000ns|      3.710ns|          N/A|            0|            0|          339|            0|
+| LKOUT4_BUF                    |             |             |             |             |             |             |             |
+| TS_pll_module_0_pll_module_0_C|      8.000ns|      6.351ns|          N/A|            0|            0|           20|            0|
+| LKOUT5_BUF                    |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+Derived Constraints for TS_MC_CLK
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_MC_CLK                      |      7.500ns|          N/A|      0.920ns|            0|            0|            0|          173|
+| TS_MC_PHY_INIT_DATA_SEL_0     |     30.000ns|      3.680ns|          N/A|            0|            0|           21|            0|
+| TS_MC_PHY_INIT_DATA_SEL_90    |     30.000ns|      3.230ns|          N/A|            0|            0|          122|            0|
+| TS_MC_GATE_DLY                |     30.000ns|      2.059ns|          N/A|            0|            0|           20|            0|
+| TS_MC_RDEN_DLY                |     30.000ns|      1.865ns|          N/A|            0|            0|            5|            0|
+| TS_MC_CAL_RDEN_DLY            |     30.000ns|      1.878ns|          N/A|            0|            0|            5|            0|
+| TS_MC_RDEN_SEL_MUX            |     30.000ns|          N/A|          N/A|            0|            0|            0|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQS<0>
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQS<0>  |         |    2.408|         |    2.432|
+fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQS_N<0>|         |    2.408|         |    2.432|
+--------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQS<1>
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQS<1>  |         |    1.944|         |    1.968|
+fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQS_N<1>|         |    1.944|         |    1.968|
+--------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQS<2>
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQS<2>  |         |    2.057|         |    2.081|
+fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQS_N<2>|         |    2.057|         |    2.081|
+--------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQS<3>
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQS<3>  |         |    2.666|         |    2.690|
+fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQS_N<3>|         |    2.666|         |    2.690|
+--------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQS_N<0>
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQS<0>  |         |    2.408|         |    2.432|
+fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQS_N<0>|         |    2.408|         |    2.432|
+--------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQS_N<1>
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQS<1>  |         |    1.944|         |    1.968|
+fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQS_N<1>|         |    1.944|         |    1.968|
+--------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQS_N<2>
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQS<2>  |         |    2.057|         |    2.081|
+fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQS_N<2>|         |    2.057|         |    2.081|
+--------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQS_N<3>
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQS<3>  |         |    2.666|         |    2.690|
+fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQS_N<3>|         |    2.666|         |    2.690|
+--------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock fpga_0_Hard_Ethernet_MAC_GMII_RX_CLK_0_pin
+------------------------------------------+---------+---------+---------+---------+
+                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------+---------+---------+---------+---------+
+fpga_0_Hard_Ethernet_MAC_GMII_RX_CLK_0_pin|    7.341|         |         |         |
+------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock fpga_0_Hard_Ethernet_MAC_MII_TX_CLK_0_pin
+-----------------------------------------+---------+---------+---------+---------+
+                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------------------+---------+---------+---------+---------+
+fpga_0_Hard_Ethernet_MAC_MII_TX_CLK_0_pin|    6.351|         |         |         |
+sys_clk_pin                              |    6.351|         |    4.164|         |
+-----------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sys_clk_pin
+-----------------------------------------+---------+---------+---------+---------+
+                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------------------+---------+---------+---------+---------+
+fpga_0_Hard_Ethernet_MAC_MII_TX_CLK_0_pin|    6.351|         |         |         |
+sys_clk_pin                              |    9.588|    1.615|    4.164|    2.495|
+-----------------------------------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover 105663 paths, 0 nets, and 28292 connections
+
+Design statistics:
+   Minimum period:   9.588ns   (Maximum frequency: 104.297MHz)
+   Maximum path delay from/to any node:   7.110ns
+
+
+Analysis completed Mon Apr 11 11:55:22 2011 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 331 MB
+
+
+

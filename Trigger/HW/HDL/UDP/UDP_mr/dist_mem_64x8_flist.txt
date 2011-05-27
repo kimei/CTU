@@ -1,0 +1,13 @@
+# Output products list for <dist_mem_64x8>
+dist_mem_64x8.asy
+dist_mem_64x8.mif
+dist_mem_64x8.ngc
+dist_mem_64x8.sym
+dist_mem_64x8.v
+dist_mem_64x8.veo
+dist_mem_64x8.vhd
+dist_mem_64x8.vho
+dist_mem_64x8.xco
+dist_mem_64x8_dist_mem_gen_v3_4_xst_1.ngc_xst.xrpt
+dist_mem_64x8_flist.txt
+dist_mem_64x8_xmdf.tcl

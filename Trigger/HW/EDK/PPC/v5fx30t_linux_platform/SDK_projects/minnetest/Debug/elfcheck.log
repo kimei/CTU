@@ -1,0 +1,11 @@
+Release 10.1.03 - elfcheck Xilinx EDK 10.1.03
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -noheader -mhs
+//aristoteles/kimei/MASTER/COMPET/Trigger/HW/EDK/PPC/v5fx30t_linux_platform/syst
+em.mhs -p xc5vfx30tff665-1 -xmpdir
+M:/MASTER/COMPET/Trigger/HW/EDK/PPC/v5fx30t_linux_platform -pe ppc440_0
+minnetest.elf 
+
+ELF file	: minnetest.elf
+elfcheck passed!

@@ -1,0 +1,184 @@
+Release 10.1.03 par K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+fyspc-epf02::  Thu May 12 10:14:23 2011
+
+par -w -intstyle ise -ol std -t 1 v5_emac_v1_5_example_design_map.ncd
+v5_emac_v1_5_example_design.ncd v5_emac_v1_5_example_design.pcf 
+
+
+Constraints file: v5_emac_v1_5_example_design.pcf.
+Loading device for application Rf_Device from file '5vfx30t.nph' in environment C:\Xilinx\10.1\ISE.
+   "v5_emac_v1_5_example_design" is an NCD, version 3.2, device xc5vfx30t, package ff665, speed -1
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 0.950 Volts. (default - Range: 0.950 to 1.050 Volts)
+
+INFO:Timing:3377 - Intersecting Constraints found and resolved.  For more information see the TSI report.
+
+Device speed data version:  "PRODUCTION 1.64 2008-12-19".
+
+
+
+Device Utilization Summary:
+
+   Number of BUFGs                           7 out of 32     21%
+   Number of IDELAYCTRLs                     2 out of 12     16%
+   Number of ILOGICs                        10 out of 400     2%
+   Number of External IOBs                  72 out of 360    20%
+      Number of LOCed IOBs                  33 out of 72     45%
+
+   Number of IODELAYs                       11 out of 400     2%
+   Number of OLOGICs                        12 out of 400     3%
+   Number of PLL_ADVs                        1 out of 2      50%
+   Number of RAMB18X2s                       2 out of 68      2%
+   Number of TEMACs                          1 out of 2      50%
+   Number of Slice Registers               324 out of 20480   1%
+      Number used as Flip Flops            324
+      Number used as Latches                 0
+      Number used as LatchThrus              0
+
+   Number of Slice LUTS                    279 out of 20480   1%
+   Number of Slice LUT-Flip Flop pairs     425 out of 20480   2%
+
+
+Overall effort level (-ol):   Standard 
+Router effort level (-rl):    Standard 
+
+Starting initial Timing Analysis.  REAL time: 21 secs 
+Finished initial Timing Analysis.  REAL time: 21 secs 
+
+Starting Router
+
+Phase 1: 2295 unrouted;       REAL time: 22 secs 
+
+Phase 2: 1797 unrouted;       REAL time: 22 secs 
+
+Phase 3: 521 unrouted;       REAL time: 23 secs 
+
+Phase 4: 521 unrouted; (21435)      REAL time: 26 secs 
+
+Phase 5: 521 unrouted; (21435)      REAL time: 26 secs 
+
+Phase 6: 521 unrouted; (21435)      REAL time: 26 secs 
+
+Phase 7: 0 unrouted; (21462)      REAL time: 27 secs 
+
+Updating file: v5_emac_v1_5_example_design.ncd with current fully routed design.
+
+Phase 8: 0 unrouted; (21462)      REAL time: 27 secs 
+
+Phase 9: 0 unrouted; (21462)      REAL time: 27 secs 
+
+Phase 10: 0 unrouted; (0)      REAL time: 47 secs 
+
+Total REAL time to Router completion: 47 secs 
+Total CPU time to Router completion: 34 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|     tx_client_clk_0 |BUFGCTRL_X0Y29| No   |  106 |  0.473     |  2.014      |
++---------------------+--------------+------+------+------------+-------------+
+|     rx_client_clk_0 |BUFGCTRL_X0Y18| No   |   39 |  0.444     |  2.018      |
++---------------------+--------------+------+------+------------+-------------+
+|        tx_phy_clk_0 |BUFGCTRL_X0Y24| No   |   12 |  0.086     |  2.014      |
++---------------------+--------------+------+------+------------+-------------+
+|          rx_clk_0_i |BUFGCTRL_X0Y14| No   |   11 |  0.075     |  2.003      |
++---------------------+--------------+------+------+------------+-------------+
+|  MII_TX_CLK_0_BUFGP |BUFGCTRL_X0Y30| No   |    1 |  0.000     |  2.003      |
++---------------------+--------------+------+------+------------+-------------+
+|       refclk_bufg_i |BUFGCTRL_X0Y20| No   |    7 |  0.267     |  1.829      |
++---------------------+--------------+------+------+------------+-------------+
+|         gtx_clk_0_i |         Local|      |    1 |  0.000     |  3.384      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+Timing Score: 0
+
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the constraint does not cover any paths or that it has no
+   requested value.
+Number of Timing Constraints that were not applied: 3
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+------------------------------------------------------------------------------------------------------
+  Constraint                                |  Check  | Worst Case |  Best Case | Timing |   Timing   
+                                            |         |    Slack   | Achievable | Errors |    Score   
+------------------------------------------------------------------------------------------------------
+  TS_fe_TEMAC_clk_phy_rx0 = PERIOD TIMEGRP  | SETUP   |     0.159ns|     7.341ns|       0|           0
+  "fe_TEMAC_clk_phy_rx0" 7.5 ns HIGH        | HOLD    |     4.703ns|            |       0|           0
+    50%                                     |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_v5_emac_v1_5_gtp_clk = PERIOD TIMEGRP  | SETUP   |     0.366ns|     7.334ns|       0|           0
+  "v5_emac_v1_5_gtp_clk" 7.7 ns HIGH        | HOLD    |     0.240ns|            |       0|           0
+    50%                                     |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  ts_tx_meta_protect_0 = MAXDELAY FROM TIME | SETUP   |     0.904ns|     4.096ns|       0|           0
+  GRP "tx_metastable_0" 5 ns         DATAPA | HOLD    |     0.604ns|            |       0|           0
+  THONLY                                    |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  ts_rx_meta_protect_0 = MAXDELAY FROM TIME | SETUP   |     3.646ns|     1.354ns|       0|           0
+  GRP "rx_metastable_0" 5 ns                | HOLD    |     0.414ns|            |       0|           0
+------------------------------------------------------------------------------------------------------
+  TS_tx_fifo_addr_0 = MAXDELAY FROM TIMEGRP | SETUP   |     9.023ns|     0.977ns|       0|           0
+   "tx_addr_rd_0" TO TIMEGRP         "tx_ad | HOLD    |     0.446ns|            |       0|           0
+  dr_wr_0" 10 ns                            |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_v5_emac_v1_5_clk_phy_rx0 = PERIOD TIME | N/A     |         N/A|         N/A|     N/A|         N/A
+  GRP "v5_emac_v1_5_clk_phy_rx0" 7.5 ns     |         |            |            |        |            
+       HIGH 50%                             |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_fe_TEMAC_tx_clk0 = PERIOD TIMEGRP "fe_ | N/A     |         N/A|         N/A|     N/A|         N/A
+  TEMAC_tx_clk0" 7.7 ns HIGH 50%            |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_fe_TEMAC_gtx_clk0 = PERIOD TIMEGRP "fe | N/A     |         N/A|         N/A|     N/A|         N/A
+  _TEMAC_gtx_clk0" 8 ns HIGH 50%            |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the 
+   constraint does not cover any paths or that it has no requested value.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 1 mins 5 secs 
+Total CPU time to PAR completion: 38 secs 
+
+Peak Memory Usage:  257 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 2
+
+Writing design to file v5_emac_v1_5_example_design.ncd
+
+
+
+PAR done!

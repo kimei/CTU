@@ -1,0 +1,145 @@
+Release 10.1.03 Map K.39 (nt)
+Xilinx Map Application Log File for Design 'v5_emac_v1_5_example_design'
+
+Design Information
+------------------
+Command Line   : map -ise
+M:/MASTER/COMPET/sandbox/clk_test/clk_test/clk_test.ise -intstyle ise -p
+xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -cm area -pr off -k 6 -lc off
+-power off -o v5_emac_v1_5_example_design_map.ncd
+v5_emac_v1_5_example_design.ngd v5_emac_v1_5_example_design.pcf 
+Target Device  : xc5vfx30t
+Target Package : ff665
+Target Speed   : -1
+Mapper Version : virtex5 -- $Revision: 1.46.12.2 $
+Mapped Date    : Fri Apr 29 16:51:34 2011
+
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven packing...
+
+Phase 1.1
+Phase 1.1 (Checksum:a3ea6) REAL time: 5 secs 
+
+Phase 2.7
+INFO:Place:834 - Only a subset of IOs are locked. Out of 72 IOs, 33 are locked
+   and 39 are not locked. If you would like to print the names of these IOs,
+   please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
+Phase 2.7 (Checksum:a3ea6) REAL time: 7 secs 
+
+Phase 3.31
+Phase 3.31 (Checksum:f977e) REAL time: 7 secs 
+
+Phase 4.33
+Phase 4.33 (Checksum:f977e) REAL time: 15 secs 
+
+Phase 5.32
+Phase 5.32 (Checksum:f977e) REAL time: 15 secs 
+
+Phase 6.2
+....
+.
+Phase 6.2 (Checksum:133222) REAL time: 16 secs 
+
+Phase 7.30
+Phase 7.30 (Checksum:133222) REAL time: 16 secs 
+
+Phase 8.3
+....
+Phase 8.3 (Checksum:1440c0) REAL time: 16 secs 
+
+Phase 9.5
+Phase 9.5 (Checksum:1440c0) REAL time: 16 secs 
+
+Phase 10.8
+........................................
+......
+...................
+...
+.......................
+...............
+...............
+...............
+Phase 10.8 (Checksum:26cc4d3) REAL time: 17 secs 
+
+Phase 11.29
+Phase 11.29 (Checksum:26cc4d3) REAL time: 17 secs 
+
+Phase 12.5
+Phase 12.5 (Checksum:26cc4d3) REAL time: 17 secs 
+
+Phase 13.18
+Phase 13.18 (Checksum:289ceae) REAL time: 37 secs 
+
+Phase 14.5
+Phase 14.5 (Checksum:289ceae) REAL time: 37 secs 
+
+Phase 15.34
+Phase 15.34 (Checksum:289ceae) REAL time: 37 secs 
+
+REAL time consumed by placer: 37 secs 
+CPU  time consumed by placer: 35 secs 
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    4
+Slice Logic Utilization:
+  Number of Slice Registers:                   324 out of  20,480    1%
+    Number used as Flip Flops:                 324
+  Number of Slice LUTs:                        279 out of  20,480    1%
+    Number used as logic:                      263 out of  20,480    1%
+      Number using O6 output only:             217
+      Number using O5 output only:              19
+      Number using O5 and O6:                   27
+    Number used as Memory:                      12 out of   6,080    1%
+      Number used as Shift Register:            12
+        Number using O6 output only:            12
+    Number used as exclusive route-thru:         4
+  Number of route-thrus:                        25 out of  40,960    1%
+    Number using O6 output only:                22
+    Number using O5 output only:                 2
+    Number using O5 and O6:                      1
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   180 out of   5,120    3%
+  Number of LUT Flip Flop pairs used:          425
+    Number with an unused Flip Flop:           101 out of     425   23%
+    Number with an unused LUT:                 146 out of     425   34%
+    Number of fully used LUT-FF pairs:         178 out of     425   41%
+    Number of unique control sets:              35
+    Number of slice register sites lost
+      to control set restrictions:              76 out of  20,480    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        72 out of     360   20%
+    IOB Flip Flops:                             21
+
+Specific Feature Utilization:
+  Number of BlockRAM/FIFO:                       2 out of      68    2%
+    Number using BlockRAM only:                  2
+    Total primitives used:
+      Number of 18k BlockRAM used:               4
+    Total Memory used (KB):                     72 out of   2,448    2%
+  Number of BUFG/BUFGCTRLs:                      7 out of      32   21%
+    Number used as BUFGs:                        7
+  Number of PLL_ADVs:                            1 out of       2   50%
+  Number of TEMACs:                              1 out of       2   50%
+
+Peak Memory Usage:  323 MB
+Total REAL time to MAP completion:  54 secs 
+Total CPU time to MAP completion:   47 secs 
+
+Mapping completed.
+See MAP report file "v5_emac_v1_5_example_design_map.mrp" for details.

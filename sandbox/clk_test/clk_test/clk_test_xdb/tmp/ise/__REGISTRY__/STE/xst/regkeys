@@ -1,0 +1,6 @@
+CommandLine
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\xst.exe -ise M:/MASTER/COMPET/sandbox/clk_test/clk_test/clk_test.ise -intstyle ise -ifn M:/MASTER/COMPET/sandbox/clk_test/clk_test/v5_emac_v1_5_example_design.xst -ofn M:/MASTER/COMPET/sandbox/clk_test/clk_test/v5_emac_v1_5_example_design.syr -finalclean 1
+s
+FormatString
+xst [-ifn <InputFile>] [-ofn <OutputFile>] [-ise <iseProjectFile>] [--quiet] [-intstyle <Style>] [--deb <DebugLevel>] [--finalclean <Clean>] [--PcubeFlow] [--globOptFlow] [--XstNtrc]
+s

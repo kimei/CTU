@@ -1,0 +1,989 @@
+Release 10.1.03 - xst K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> PMSPEC -- Overriding Xilinx file <C:/Xilinx/10.1/EDK/virtex5/data/virtex5.acd> with local file <c:/Xilinx/10.1/ISE/virtex5/data/virtex5.acd>
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_xst.prj"
+Verilog Include Directory          : {"M:\MASTER\COMPET\Trigger\HW\EDK\PPC\v5fx30t_linux_platform\pcores\" "C:\Xilinx\10.1\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\" "C:\Xilinx\10.1\EDK\hw\XilinxReferenceDesigns\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc5vfx30tff665-1
+Output File Name                   : "../implementation/system.ngc"
+
+---- Source Options
+Top Module Name                    : system
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 10000
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/EDK/PPC/v5fx30t_linux_platform/hdl/system.vhd" in Library work.
+Entity <system> compiled.
+Entity <system> (Architecture <STRUCTURE>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <system> in library <work> (architecture <STRUCTURE>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <system> in library <work> (Architecture <STRUCTURE>).
+WARNING:Xst:2211 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/EDK/PPC/v5fx30t_linux_platform/hdl/system.vhd" line 2888: Instantiating black box module <IOBUF>.
+WARNING:Xst:2211 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/EDK/PPC/v5fx30t_linux_platform/hdl/system.vhd" line 2896: Instantiating black box module <IOBUF>.
+WARNING:Xst:2211 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/EDK/PPC/v5fx30t_linux_platform/hdl/system.vhd" line 2904: Instantiating black box module <IOBUF>.
+WARNING:Xst:2211 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/EDK/PPC/v5fx30t_linux_platform/hdl/system.vhd" line 2912: Instantiating black box module <IOBUF>.
+WARNING:Xst:2211 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/EDK/PPC/v5fx30t_linux_platform/hdl/system.vhd" line 2920: Instantiating black box module <IOBUF>.
+WARNING:Xst:2211 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/EDK/PPC/v5fx30t_linux_platform/hdl/system.vhd" line 2928: Instantiating black box module <IOBUF>.
+WARNING:Xst:2211 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/EDK/PPC/v5fx30t_linux_platform/hdl/system.vhd" line 2936: Instantiating black box module <IOBUF>.
+WARNING:Xst:2211 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/EDK/PPC/v5fx30t_linux_platform/hdl/system.vhd" line 2944: Instantiating black box module <IOBUF>.
+WARNING:Xst:2211 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/EDK/PPC/v5fx30t_linux_platform/hdl/system.vhd" line 2952: Instantiating black box module <IOBUF>.
+WARNING:Xst:2211 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/EDK/PPC/v5fx30t_linux_platform/hdl/system.vhd" line 2960: Instantiating black box module <IOBUF>.
+WARNING:Xst:2211 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/EDK/PPC/v5fx30t_linux_platform/hdl/system.vhd" line 2968: Instantiating black box module <IOBUF>.
+WARNING:Xst:2211 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/EDK/PPC/v5fx30t_linux_platform/hdl/system.vhd" line 2976: Instantiating black box module <IOBUF>.
+WARNING:Xst:2211 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/EDK/PPC/v5fx30t_linux_platform/hdl/system.vhd" line 2984: Instantiating black box module <IOBUF>.
+WARNING:Xst:2211 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/EDK/PPC/v5fx30t_linux_platform/hdl/system.vhd" line 2992: Instantiating black box module <IOBUF>.
+WARNING:Xst:2211 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/EDK/PPC/v5fx30t_linux_platform/hdl/system.vhd" line 3000: Instantiating black box module <IOBUF>.
+WARNING:Xst:2211 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/EDK/PPC/v5fx30t_linux_platform/hdl/system.vhd" line 3008: Instantiating black box module <IOBUF>.
+WARNING:Xst:2211 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/EDK/PPC/v5fx30t_linux_platform/hdl/system.vhd" line 3016: Instantiating black box module <IOBUF>.
+Entity <system> analyzed. Unit <system> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <system>.
+    Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/EDK/PPC/v5fx30t_linux_platform/hdl/system.vhd".
+Unit <system> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <../implementation/ppc440_0_wrapper.ngc>.
+Reading core <../implementation/plb_v46_0_wrapper.ngc>.
+Reading core <../implementation/ddr2_sdram_16mx32_wrapper.ngc>.
+Reading core <../implementation/xps_bram_if_cntlr_1_wrapper.ngc>.
+Reading core <../implementation/xps_bram_if_cntlr_1_bram_wrapper.ngc>.
+Reading core <../implementation/rs232_wrapper.ngc>.
+Reading core <../implementation/leds_8bit_wrapper.ngc>.
+Reading core <../implementation/dip_switches_8bit_wrapper.ngc>.
+Reading core <../implementation/push_buttons_3bit_wrapper.ngc>.
+Reading core <../implementation/flash_8mx16_wrapper.ngc>.
+Reading core <../implementation/hard_ethernet_mac_wrapper.ngc>.
+INFO:coreutil - Hardware Evaluation license for component <xps_ll_temac_v1> found. The generated design will cease to function in the programmed device after operating for some period of time. This allows you to evaluate the component in hardware. You are encouraged to license this component.
+   For ordering information, please refer to the product page for this component on: www.xilinx.com
+Reading core <../implementation/xps_timer_1_wrapper.ngc>.
+Reading core <../implementation/xps_timebase_wdt_1_wrapper.ngc>.
+Reading core <../implementation/flash_8mx16_util_bus_split_0_wrapper.ngc>.
+Reading core <../implementation/jtagppc_cntlr_0_wrapper.ngc>.
+Reading core <../implementation/proc_sys_reset_0_wrapper.ngc>.
+Reading core <../implementation/xps_intc_0_wrapper.ngc>.
+Reading core <../implementation/input_bufg_0_wrapper.ngc>.
+Reading core <../implementation/pll_module_0_wrapper.ngc>.
+Loading core <ppc440_0_wrapper> for timing and area information for instance <ppc440_0>.
+Loading core <plb_v46_0_wrapper> for timing and area information for instance <plb_v46_0>.
+Loading core <ddr2_sdram_16mx32_wrapper> for timing and area information for instance <DDR2_SDRAM_16Mx32>.
+Loading core <xps_bram_if_cntlr_1_wrapper> for timing and area information for instance <xps_bram_if_cntlr_1>.
+Loading core <xps_bram_if_cntlr_1_bram_wrapper> for timing and area information for instance <xps_bram_if_cntlr_1_bram>.
+Loading core <rs232_wrapper> for timing and area information for instance <RS232>.
+Loading core <leds_8bit_wrapper> for timing and area information for instance <LEDs_8Bit>.
+Loading core <dip_switches_8bit_wrapper> for timing and area information for instance <DIP_Switches_8Bit>.
+Loading core <push_buttons_3bit_wrapper> for timing and area information for instance <Push_Buttons_3Bit>.
+Loading core <flash_8mx16_wrapper> for timing and area information for instance <FLASH_8Mx16>.
+Loading core <hard_ethernet_mac_wrapper> for timing and area information for instance <Hard_Ethernet_MAC>.
+Loading core <xps_timer_1_wrapper> for timing and area information for instance <xps_timer_1>.
+Loading core <xps_timebase_wdt_1_wrapper> for timing and area information for instance <xps_timebase_wdt_1>.
+Loading core <flash_8mx16_util_bus_split_0_wrapper> for timing and area information for instance <FLASH_8Mx16_util_bus_split_0>.
+Loading core <jtagppc_cntlr_0_wrapper> for timing and area information for instance <jtagppc_cntlr_0>.
+Loading core <proc_sys_reset_0_wrapper> for timing and area information for instance <proc_sys_reset_0>.
+Loading core <xps_intc_0_wrapper> for timing and area information for instance <xps_intc_0>.
+Loading core <input_bufg_0_wrapper> for timing and area information for instance <input_bufg_0>.
+Loading core <pll_module_0_wrapper> for timing and area information for instance <pll_module_0>.
+Loading device for application Rf_Device from file '5vfx30t.nph' in environment c:\Xilinx\10.1\ISE;C:\Xilinx\10.1\EDK.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <system> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_MPLB_RST[0].I_MPLB_RST> in Unit <plb_v46_0> is equivalent to the following 11 FFs/Latches : <plb_v46_0/GEN_SPLB_RST[9].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[8].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[7].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[6].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[5].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[4].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[3].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[2].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[1].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[0].I_SPLB_RST> <plb_v46_0/I_PLB_RST> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_39> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_39_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_39_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_44> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_44_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_44_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_5> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_5_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_10> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_10_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_32> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_32_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_32_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_27> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_27_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_27_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_20> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_20_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_20_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_15> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_15_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_15_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_59> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_59_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_0> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_0_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_hit_r_2> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_hit_r_2_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_43> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_43_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_43_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_38> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_38_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_38_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_hit_r_1> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_hit_r_1_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_8> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_8_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_13> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_13_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_58> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_58_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_26> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_26_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_26_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_31> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_31_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_31_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_3> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_3_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_42> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_42_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_42_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_37> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_37_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_37_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_usr_top/usr_rd/gen_rden_sel_mux[0].u_ff_rden_sel_mux> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_usr_top/usr_rd/rden_sel_r_0> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_25> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_25_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_25_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_30> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_30_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_30_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_6> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_6_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_11> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_11_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_36> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_36_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_36_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_41> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_41_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_41_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal2_rd_data_sel_r_0> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rd_data_sel[0].u_ff_rd_data_sel> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal2_rd_data_sel_r_1> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rd_data_sel[1].u_ff_rd_data_sel> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal2_rd_data_sel_r_2> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rd_data_sel[2].u_ff_rd_data_sel> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal2_rd_data_sel_r_3> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rd_data_sel[3].u_ff_rd_data_sel> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_19> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_19_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_19_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_24> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_24_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_24_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_1> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_1_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_14> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_14_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[0].u_iob_dqs/dqs_rst_n_r> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 3 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[1].u_iob_dqs/dqs_rst_n_r> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[2].u_iob_dqs/dqs_rst_n_r> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[3].u_iob_dqs/dqs_rst_n_r> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_35> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_35_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_35_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_40> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_40_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_40_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_18> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_18_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_18_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_23> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_23_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_23_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dm[0].u_iob_dm/u_dm_ce> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 3 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dm[1].u_iob_dm/u_dm_ce> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dm[2].u_iob_dm/u_dm_ce> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dm[3].u_iob_dm/u_dm_ce> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_4> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_4_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_9> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_9_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rst90_sync_r_2> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 3 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rst90_sync_r_2_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rst90_sync_r_2_2> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rst90_sync_r_2_3> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_29> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_29_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_29_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_34> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_34_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_34_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_7> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_7_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_12> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_12_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_22> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_22_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_22_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_17> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_17_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_17_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_2> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_2_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_28> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_28_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_28_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_33> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_33_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_33_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 25 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_2> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_3> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_4> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_5> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_6> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_7> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_8> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_9> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_10> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_11> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_12> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_13> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_14>
+   <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_15> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_16> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_17> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_18> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_19> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_20> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_21> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_22> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_23> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_24> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_25> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_16> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_16_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_16_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_21> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_21_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_21_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rst0_sync_r_2> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rst0_sync_r_2_1> 
+INFO:Xst:2260 - The FF/Latch <xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_SET_SLBUSY> in Unit <xps_bram_if_cntlr_1> is equivalent to the following FF/Latch : <xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_ADDRACK> 
+INFO:Xst:2260 - The FF/Latch <xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_WRACK> in Unit <xps_bram_if_cntlr_1> is equivalent to the following FF/Latch : <xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_WRACK_2BUS> 
+INFO:Xst:2260 - The FF/Latch <xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_sl_busy> in Unit <xps_bram_if_cntlr_1> is equivalent to the following FF/Latch : <xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_sl_busy_1> 
+INFO:Xst:2260 - The FF/Latch <RS232/XUART_I_1/UART16550_I_1/chipSelect> in Unit <RS232> is equivalent to the following FF/Latch : <RS232/XUART_I_1/UART16550_I_1/chipSelect_1> 
+INFO:Xst:2260 - The FF/Latch <FLASH_8Mx16/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/GEN_FOR_SHARED.I_SNGL_S_H_REG> in Unit <FLASH_8Mx16> is equivalent to the following FF/Latch : <FLASH_8Mx16/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_STEER_ADDRESS_COUNTER/GEN_FOR_SHARED.I_SNGL_S_H_REG> 
+INFO:Xst:2260 - The FF/Latch <FLASH_8Mx16/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/GEN_FOR_SHARED.I_BURST_S_H_REG> in Unit <FLASH_8Mx16> is equivalent to the following FF/Latch : <FLASH_8Mx16/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_STEER_ADDRESS_COUNTER/GEN_FOR_SHARED.I_BURST_S_H_REG> 
+INFO:Xst:2260 - The FF/Latch <FLASH_8Mx16/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/sl_wrdack_i> in Unit <FLASH_8Mx16> is equivalent to the following 2 FFs/Latches : <FLASH_8Mx16/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/GEN_WRITE_BUFFER.GEN_WRBUF_WREN1> <FLASH_8Mx16/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/GEN_WRITE_BUFFER.GEN_WRBUF_WREN2> 
+INFO:Xst:2260 - The FF/Latch <FLASH_8Mx16/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[1].I_SIZE_S_H_REG> in Unit <FLASH_8Mx16> is equivalent to the following FF/Latch : <FLASH_8Mx16/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_STEER_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[1].I_SIZE_S_H_REG> 
+INFO:Xst:2260 - The FF/Latch <FLASH_8Mx16/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[3].I_SIZE_S_H_REG> in Unit <FLASH_8Mx16> is equivalent to the following FF/Latch : <FLASH_8Mx16/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_STEER_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[3].I_SIZE_S_H_REG> 
+INFO:Xst:2260 - The FF/Latch <FLASH_8Mx16/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[2].I_SIZE_S_H_REG> in Unit <FLASH_8Mx16> is equivalent to the following FF/Latch : <FLASH_8Mx16/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_STEER_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[2].I_SIZE_S_H_REG> 
+INFO:Xst:2260 - The FF/Latch <FLASH_8Mx16/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/GEN_FOR_SHARED.I_CACHLN_S_H_REG> in Unit <FLASH_8Mx16> is equivalent to the following FF/Latch : <FLASH_8Mx16/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_STEER_ADDRESS_COUNTER/GEN_FOR_SHARED.I_CACHLN_S_H_REG> 
+INFO:Xst:2260 - The FF/Latch <Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/eop_1i> in Unit <Hard_Ethernet_MAC> is equivalent to the following FF/Latch : <Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/eop_1i_1> 
+INFO:Xst:2260 - The FF/Latch <xps_timer_1/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[21].TCSR1_FF_I> in Unit <xps_timer_1> is equivalent to the following FF/Latch : <xps_timer_1/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[21].TCSR0_FF_I> 
+INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_MPLB_RST[0].I_MPLB_RST> in Unit <plb_v46_0> is equivalent to the following 11 FFs/Latches : <plb_v46_0/GEN_SPLB_RST[9].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[8].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[7].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[6].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[5].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[4].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[3].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[2].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[1].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[0].I_SPLB_RST> <plb_v46_0/I_PLB_RST> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_39> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_39_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_39_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_44> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_44_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_44_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_5> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_5_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_10> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_10_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_32> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_32_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_32_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_27> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_27_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_27_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_20> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_20_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_20_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_15> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_15_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_15_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_59> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_59_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_0> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_0_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_hit_r_2> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_hit_r_2_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_43> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_43_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_43_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_38> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_38_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_38_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_hit_r_1> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_hit_r_1_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_8> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_8_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_13> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_13_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_58> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_58_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_26> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_26_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_26_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_31> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_31_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_31_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_3> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_3_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_42> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_42_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_42_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_37> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_37_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_37_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_usr_top/usr_rd/gen_rden_sel_mux[0].u_ff_rden_sel_mux> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_usr_top/usr_rd/rden_sel_r_0> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_25> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_25_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_25_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_30> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_30_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_30_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_6> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_6_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_11> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_11_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_36> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_36_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_36_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_41> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_41_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_41_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal2_rd_data_sel_r_0> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rd_data_sel[0].u_ff_rd_data_sel> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal2_rd_data_sel_r_1> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rd_data_sel[1].u_ff_rd_data_sel> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal2_rd_data_sel_r_2> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rd_data_sel[2].u_ff_rd_data_sel> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal2_rd_data_sel_r_3> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/gen_rd_data_sel[3].u_ff_rd_data_sel> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_19> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_19_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_19_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_24> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_24_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_24_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_1> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_1_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_14> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_14_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[0].u_iob_dqs/dqs_rst_n_r> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 3 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[1].u_iob_dqs/dqs_rst_n_r> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[2].u_iob_dqs/dqs_rst_n_r> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[3].u_iob_dqs/dqs_rst_n_r> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_35> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_35_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_35_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_40> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_40_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_40_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_18> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_18_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_18_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_23> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_23_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_23_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dm[0].u_iob_dm/u_dm_ce> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 3 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dm[1].u_iob_dm/u_dm_ce> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dm[2].u_iob_dm/u_dm_ce> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dm[3].u_iob_dm/u_dm_ce> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_4> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_4_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_9> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_9_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rst90_sync_r_2> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 3 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rst90_sync_r_2_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rst90_sync_r_2_2> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rst90_sync_r_2_3> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_29> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_29_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_29_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_34> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_34_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_34_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_7> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_7_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_12> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_12_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_22> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_22_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_22_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_17> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_17_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_17_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_2> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_2_1> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_28> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_28_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_28_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_33> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_33_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_33_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 25 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_2> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_3> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_4> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_5> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_6> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_7> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_8> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_9> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_10> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_11> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_12> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_13> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_14>
+   <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_15> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_16> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_17> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_18> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_19> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_20> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_21> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_22> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_23> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_24> <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_25> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_16> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_16_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_16_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_21> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following 2 FFs/Latches : <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_21_1> <DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_cmp_addr_r_21_2> 
+INFO:Xst:2260 - The FF/Latch <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rst0_sync_r_2> in Unit <DDR2_SDRAM_16Mx32> is equivalent to the following FF/Latch : <DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rst0_sync_r_2_1> 
+INFO:Xst:2260 - The FF/Latch <xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_SET_SLBUSY> in Unit <xps_bram_if_cntlr_1> is equivalent to the following FF/Latch : <xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_ADDRACK> 
+INFO:Xst:2260 - The FF/Latch <xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_WRACK> in Unit <xps_bram_if_cntlr_1> is equivalent to the following FF/Latch : <xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_WRACK_2BUS> 
+INFO:Xst:2260 - The FF/Latch <xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_sl_busy> in Unit <xps_bram_if_cntlr_1> is equivalent to the following FF/Latch : <xps_bram_if_cntlr_1/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_sl_busy_1> 
+INFO:Xst:2260 - The FF/Latch <RS232/XUART_I_1/UART16550_I_1/chipSelect> in Unit <RS232> is equivalent to the following FF/Latch : <RS232/XUART_I_1/UART16550_I_1/chipSelect_1> 
+INFO:Xst:2260 - The FF/Latch <FLASH_8Mx16/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/GEN_FOR_SHARED.I_BURST_S_H_REG> in Unit <FLASH_8Mx16> is equivalent to the following FF/Latch : <FLASH_8Mx16/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_STEER_ADDRESS_COUNTER/GEN_FOR_SHARED.I_BURST_S_H_REG> 
+INFO:Xst:2260 - The FF/Latch <FLASH_8Mx16/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[3].I_SIZE_S_H_REG> in Unit <FLASH_8Mx16> is equivalent to the following FF/Latch : <FLASH_8Mx16/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_STEER_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[3].I_SIZE_S_H_REG> 
+INFO:Xst:2260 - The FF/Latch <FLASH_8Mx16/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/GEN_FOR_SHARED.I_SNGL_S_H_REG> in Unit <FLASH_8Mx16> is equivalent to the following FF/Latch : <FLASH_8Mx16/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_STEER_ADDRESS_COUNTER/GEN_FOR_SHARED.I_SNGL_S_H_REG> 
+INFO:Xst:2260 - The FF/Latch <FLASH_8Mx16/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/GEN_FOR_SHARED.I_CACHLN_S_H_REG> in Unit <FLASH_8Mx16> is equivalent to the following FF/Latch : <FLASH_8Mx16/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_STEER_ADDRESS_COUNTER/GEN_FOR_SHARED.I_CACHLN_S_H_REG> 
+INFO:Xst:2260 - The FF/Latch <FLASH_8Mx16/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/sl_wrdack_i> in Unit <FLASH_8Mx16> is equivalent to the following 2 FFs/Latches : <FLASH_8Mx16/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/GEN_WRITE_BUFFER.GEN_WRBUF_WREN1> <FLASH_8Mx16/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/GEN_WRITE_BUFFER.GEN_WRBUF_WREN2> 
+INFO:Xst:2260 - The FF/Latch <FLASH_8Mx16/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[1].I_SIZE_S_H_REG> in Unit <FLASH_8Mx16> is equivalent to the following FF/Latch : <FLASH_8Mx16/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_STEER_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[1].I_SIZE_S_H_REG> 
+INFO:Xst:2260 - The FF/Latch <FLASH_8Mx16/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[2].I_SIZE_S_H_REG> in Unit <FLASH_8Mx16> is equivalent to the following FF/Latch : <FLASH_8Mx16/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_STEER_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[2].I_SIZE_S_H_REG> 
+INFO:Xst:2260 - The FF/Latch <Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/eop_1i> in Unit <Hard_Ethernet_MAC> is equivalent to the following FF/Latch : <Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/eop_1i_1> 
+INFO:Xst:2260 - The FF/Latch <xps_timer_1/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[21].TCSR1_FF_I> in Unit <xps_timer_1> is equivalent to the following FF/Latch : <xps_timer_1/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[21].TCSR0_FF_I> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ../implementation/system.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 168
+
+Cell Usage :
+# BELS                             : 6149
+#      GND                         : 24
+#      INV                         : 138
+#      LUT1                        : 112
+#      LUT2                        : 608
+#      LUT3                        : 603
+#      LUT4                        : 956
+#      LUT5                        : 779
+#      LUT6                        : 1489
+#      MULT_AND                    : 51
+#      MUXCY                       : 640
+#      MUXCY_D                     : 4
+#      MUXCY_L                     : 98
+#      MUXF7                       : 62
+#      MUXF8                       : 1
+#      VCC                         : 23
+#      XORCY                       : 561
+# FlipFlops/Latches                : 5347
+#      FD                          : 552
+#      FD_1                        : 4
+#      FDC                         : 273
+#      FDC_1                       : 64
+#      FDCE                        : 151
+#      FDCPE                       : 21
+#      FDE                         : 105
+#      FDP                         : 57
+#      FDPE                        : 75
+#      FDPE_1                      : 4
+#      FDR                         : 1643
+#      FDR_1                       : 3
+#      FDRE                        : 1766
+#      FDRS                        : 89
+#      FDRSE                       : 132
+#      FDS                         : 226
+#      FDS_1                       : 3
+#      FDSE                        : 65
+#      IDDR_2CLK                   : 36
+#      LDC                         : 2
+#      LDP                         : 1
+#      ODDR                        : 75
+# RAMS                             : 26
+#      RAMB16                      : 8
+#      RAMB36_EXP                  : 18
+# Shift Registers                  : 238
+#      SRL16                       : 1
+#      SRL16E                      : 43
+#      SRLC16E                     : 184
+#      SRLC32E                     : 10
+# Clock Buffers                    : 11
+#      BUFG                        : 11
+# IO Buffers                       : 162
+#      IBUF                        : 24
+#      IBUFG                       : 2
+#      IOBUF                       : 49
+#      IOBUFDS                     : 4
+#      OBUF                        : 81
+#      OBUFDS                      : 2
+# Others                           : 64
+#      BUFIO                       : 4
+#      FIFO36_72_EXP               : 1
+#      IDELAYCTRL                  : 4
+#      IODELAY                     : 51
+#      JTAGPPC440                  : 1
+#      PLL_ADV                     : 1
+#      PPC440                      : 1
+#      TEMAC                       : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vfx30tff665-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            5290  out of  20480    25%  
+ Number of Slice LUTs:                 4923  out of  20480    24%  
+    Number used as Logic:              4685  out of  20480    22%  
+    Number used as Memory:              238  out of   6080     3%  
+       Number used as SRL:              238
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   7905
+   Number with an unused Flip Flop:    2615  out of   7905    33%  
+   Number with an unused LUT:          2982  out of   7905    37%  
+   Number of fully used LUT-FF pairs:  2308  out of   7905    29%  
+   Number of unique control sets:       803
+
+IO Utilization: 
+ Number of IOs:                         168
+ Number of bonded IOBs:                 119  out of    360    33%  
+    IOB Flip Flops/Latches:              57
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               22  out of     68    32%  
+    Number using Block RAM only:         22
+ Number of BUFG/BUFGCTRLs:               11  out of     32    34%  
+ Number of PLL_ADVs:                      1  out of      2    50%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                                                                                                                                                 | Clock buffer(FF name)                                                                                | Load  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+-------+
+pll_module_0/pll_module_0/CLKOUT2_BUF                                                                                                                        | BUFG                                                                                                 | 4512  |
+fpga_0_FLASH_8Mx16_clk_dummy_pin_OBUF                                                                                                                        | NONE(ppc440_0/ppc440_0/PPCS1PLBMBUSY_reg_0)                                                          | 1     |
+pll_module_0/pll_module_0/CLKOUT3_BUF                                                                                                                        | BUFG                                                                                                 | 726   |
+pll_module_0/pll_module_0/CLKOUT4_BUF                                                                                                                        | BUFG                                                                                                 | 174   |
+RS232/RS232/XUART_I_1/UART16550_I_1/lsr2_rst_or0000(RS232/RS232/XUART_I_1/UART16550_I_1/lsr2_rst_or00001:O)                                                  | NONE(*)(RS232/RS232/XUART_I_1/UART16550_I_1/lsr2_rst)                                                | 1     |
+Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/tx_gmii_mii_clk0_temp(Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/tx_gmii_mii_clk0_temp1:O)| BUFG(*)(Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/gmii_txd_0_i_7)| 21    |
+fpga_0_Hard_Ethernet_MAC_GMII_RX_CLK_0_pin                                                                                                                   | IBUF+IODELAY+BUFG                                                                                    | 10    |
+Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/rx_client_clk_0_o                                                                                     | BUFG                                                                                                 | 80    |
+Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/I_RX_CL_IF/I_RX_CLIENT_FIFO/N0                                                                       | NONE(Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/I_RX_CL_IF/I_RX_CLIENT_FIFO/BU132)      | 3     |
+Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/rx_pckt_valid(Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/rx_pckt_valid1:O)              | NONE(*)(Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/rem_enc_1)                           | 2     |
+Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/tx_client_clk_0_o                                                                                     | BUFG                                                                                                 | 31    |
+Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_TX0/I_TX_TEMAC_IF/I_TX_CL_IF/I_TX_CLIENT_FIFO/N0                                                                       | NONE(Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_TX0/I_TX_TEMAC_IF/I_TX_CL_IF/I_TX_CLIENT_FIFO/BU98)       | 2     |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+-------+
+(*) These 3 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                                                                                 | Buffer(FF name)                                                                                             | Load  |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+-------+
+DDR2_SDRAM_16Mx32/mc_mireaddata<127>(DDR2_SDRAM_16Mx32/XST_GND:G)                                                                                                                                              | NONE(DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_ctl_io/gen_cke[0].u_ff_cke)| 240   |
+Hard_Ethernet_MAC/Hard_Ethernet_MAC/lLinkTemac0_RST_i(Hard_Ethernet_MAC/Hard_Ethernet_MAC/lLinkTemac0_RST_i1:O)                                                                                                | NONE(Hard_Ethernet_MAC/Hard_Ethernet_MAC/llinkTemac0_Data_i_28)                                             | 172   |
+Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/I_RX_CL_IF/combo_rset(Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/I_RX_CL_IF/combo_rset1:O)                                                | NONE(Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/I_RX_CL_IF/I_RX_CLIENT_FIFO/BU143)             | 89    |
+Hard_Ethernet_MAC/Hard_Ethernet_MAC/sPLB_Rst_d72(Hard_Ethernet_MAC/Hard_Ethernet_MAC/sPLB_Rst_d72:Q)                                                                                                           | NONE(Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_REGISTERS/DCRTemac_DBus_24)                                      | 45    |
+DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rst_tmp(DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rst_tmp1:O)                                                                          | NONE(DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rstdiv0_sync_r_0_1)                           | 36    |
+Hard_Ethernet_MAC/Hard_Ethernet_MAC/hRst(Hard_Ethernet_MAC/Hard_Ethernet_MAC/hRst1:O)                                                                                                                          | NONE(Hard_Ethernet_MAC/Hard_Ethernet_MAC/hRst_shift8)                                                       | 32    |
+plb_v46_0/SPLB_Rst<2>(plb_v46_0/plb_v46_0/GEN_SPLB_RST[2].I_SPLB_RST:Q)                                                                                                                                        | NONE(LEDs_8Bit/LEDs_8Bit/gpio_core_1/gpio_Data_Out_6)                                                       | 18    |
+Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/LLTemac_Rst_qual2(Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/LLTemac_Rst_qual21:O)                                                        | NONE(Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/emacClientRxStats_d_3)                         | 10    |
+Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/I_RX_CL_IF/I_RX_CLIENT_FIFO/N0(Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/I_RX_CL_IF/I_RX_CLIENT_FIFO/GND:G)                              | NONE(Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/I_RX_CL_IF/I_RX_CLIENT_FIFO/BU8)               | 7     |
+plb_v46_0/SPLB_Rst<6>(plb_v46_0/plb_v46_0/GEN_SPLB_RST[6].I_SPLB_RST:Q)                                                                                                                                        | NONE(Hard_Ethernet_MAC/Hard_Ethernet_MAC/sPLB_Rst_d72)                                                      | 7     |
+DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rst0_sync_r_2_1(DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rst0_sync_r_2_1:Q)                                                           | NONE(DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_ctl_io/u_ff_we_n)          | 6     |
+Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_TX0/I_TX_TEMAC_IF/I_TX_CL_IF/I_TX_CLIENT_FIFO/N0(Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_TX0/I_TX_TEMAC_IF/I_TX_CL_IF/I_TX_CLIENT_FIFO/GND:G)                              | NONE(Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_TX0/I_TX_TEMAC_IF/I_TX_CL_IF/I_TX_CLIENT_FIFO/BU8)               | 6     |
+DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rst0_sync_r<2>(DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rst0_sync_r_2:Q)                                                              | NONE(DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_ctl_io/gen_cke[0].u_ff_cke)| 4     |
+Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_RX0/I_RX_FIFO/N0(Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_RX0/I_RX_FIFO/GND:G)                                                                                              | NONE(Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_RX0/I_RX_FIFO/BU394)                                             | 4     |
+Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_TX0/I_TX_FIFO/N0(Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_TX0/I_TX_FIFO/GND:G)                                                                                              | NONE(Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_TX0/I_TX_FIFO/BU378)                                             | 4     |
+Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/I_RX_TEMAC_IF_SM/cl_If2Rx_GoodFrame_d1_or0000(Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/I_RX_TEMAC_IF_SM/cl_If2Rx_GoodFrame_d1_or00001:O)| NONE(Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/I_RX_TEMAC_IF_SM/llTakeRxStatsNow_d2)          | 3     |
+proc_sys_reset_0/Bus_Struct_Reset<0>(proc_sys_reset_0/proc_sys_reset_0/Bus_Struct_Reset_0:Q)                                                                                                                   | NONE(DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/clk_reset/rst200_sync_r_2)                              | 3     |
+Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_RX0/I_RX_STATUS_FIFO/N0(Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_RX0/I_RX_STATUS_FIFO/GND:G)                                                                                | NONE(Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_RX0/I_RX_STATUS_FIFO/BU283)                                      | 2     |
+Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/I_RX_CL_IF/emacClientRxStatsVld_d_or0000(Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/I_RX_CL_IF/emacClientRxStatsVld_d_or00001:O)          | NONE(Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/I_RX_CL_IF/emacClientRxStats_d_3)              | 2     |
+Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_TX0/I_TX_CSUM_FIFO/N0(Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_TX0/I_TX_CSUM_FIFO/GND:G)                                                                                    | NONE(Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_TX0/I_TX_CSUM_FIFO/BU275)                                        | 2     |
+plb_v46_0/SPLB_Rst<3>(plb_v46_0/plb_v46_0/GEN_SPLB_RST[3].I_SPLB_RST:Q)                                                                                                                                        | NONE(DIP_Switches_8Bit/DIP_Switches_8Bit/gpio_core_1/gpio_xferAck_Reg)                                      | 2     |
+plb_v46_0/SPLB_Rst<4>(plb_v46_0/plb_v46_0/GEN_SPLB_RST[4].I_SPLB_RST:Q)                                                                                                                                        | NONE(Push_Buttons_3Bit/Push_Buttons_3Bit/gpio_core_1/gpio_xferAck_Reg)                                      | 2     |
+RS232/RS232/XUART_I_1/UART16550_I_1/lsr2_rst_and0000(RS232/RS232/XUART_I_1/UART16550_I_1/lsr2_rst_and00001:O)                                                                                                  | NONE(RS232/RS232/XUART_I_1/UART16550_I_1/lsr2_rst)                                                          | 1     |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 6.033ns (Maximum Frequency: 165.755MHz)
+   Minimum input arrival time before clock: 5.116ns
+   Maximum output required time after clock: 4.185ns
+   Maximum combinational path delay: 2.788ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'pll_module_0/pll_module_0/CLKOUT2_BUF'
+  Clock period: 6.033ns (frequency: 165.755MHz)
+  Total number of paths / destination ports: 99710 / 10345
+-------------------------------------------------------------------------
+Delay:               6.033ns (Levels of Logic = 4)
+  Source:            Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_TX0/I_TX_FIFO/BU375 (RAM)
+  Destination:       Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_TX0/I_TX_TEMAC_IF/I_TX_CL_IF/I_TX_CLIENT_FIFO/BU8 (RAM)
+  Source Clock:      pll_module_0/pll_module_0/CLKOUT2_BUF rising
+  Destination Clock: pll_module_0/pll_module_0/CLKOUT2_BUF rising
+
+  Data Path: Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_TX0/I_TX_FIFO/BU375 to Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_TX0/I_TX_TEMAC_IF/I_TX_CL_IF/I_TX_CLIENT_FIFO/BU8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16:CLKB->DOB3     4   2.180   1.085  BU375 (DOUT<3>)
+     end scope: 'Hard_Ethernet_MAC/I_TX0/I_TX_FIFO'
+     LUT6:I0->O            1   0.094   0.710  Hard_Ethernet_MAC/I_TX0/I_TX_TEMAC_IF/I_TX_TEMAC_IF_SM/cl_Fifo_WrEn_i_SW0 (N37)
+     LUT6:I3->O            3   0.094   0.800  Hard_Ethernet_MAC/I_TX0/I_TX_TEMAC_IF/I_TX_TEMAC_IF_SM/cl_Fifo_WrEn_i (Hard_Ethernet_MAC/I_TX0/I_TX_TEMAC_IF/cl_Fifo_WrEn)
+     begin scope: 'Hard_Ethernet_MAC/I_TX0/I_TX_TEMAC_IF/I_TX_CL_IF/I_TX_CLIENT_FIFO'
+     LUT4:I0->O            4   0.094   0.352  BU128 (N11)
+     RAMB16:WEA0               0.624          BU8
+    ----------------------------------------
+    Total                      6.033ns (3.086ns logic, 2.947ns route)
+                                       (51.2% logic, 48.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'pll_module_0/pll_module_0/CLKOUT3_BUF'
+  Clock period: 3.758ns (frequency: 266.099MHz)
+  Total number of paths / destination ports: 3608 / 1109
+-------------------------------------------------------------------------
+Delay:               3.758ns (Levels of Logic = 4)
+  Source:            DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/row_miss_r_0 (FF)
+  Destination:       DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/mc_mi_addr_rdy_accpt_r (FF)
+  Source Clock:      pll_module_0/pll_module_0/CLKOUT3_BUF rising
+  Destination Clock: pll_module_0/pll_module_0/CLKOUT3_BUF rising
+
+  Data Path: DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/row_miss_r_0 to DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/mc_mi_addr_rdy_accpt_r
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.471   1.069  DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/row_miss_r_0 (DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/row_miss_r<0>)
+     LUT6:I0->O            1   0.094   0.480  DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_conf_SW3 (N219)
+     LUT6:I5->O           13   0.094   0.546  DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_conf (DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/bank_conf)
+     LUT4:I3->O            1   0.094   0.336  DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/next_state<12>140 (DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/next_state<12>140)
+     FDRS:S                    0.573          DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/state_r_12
+    ----------------------------------------
+    Total                      3.757ns (1.326ns logic, 2.431ns route)
+                                       (35.3% logic, 64.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'pll_module_0/pll_module_0/CLKOUT4_BUF'
+  Clock period: 2.762ns (frequency: 362.056MHz)
+  Total number of paths / destination ports: 287 / 274
+-------------------------------------------------------------------------
+Delay:               1.381ns (Levels of Logic = 0)
+  Source:            DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_write/dq_oe_270_1 (FF)
+  Destination:       DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_write/dq_oe_n_90_r1_1 (FF)
+  Source Clock:      pll_module_0/pll_module_0/CLKOUT4_BUF falling
+  Destination Clock: pll_module_0/pll_module_0/CLKOUT4_BUF rising
+
+  Data Path: DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_write/dq_oe_270_1 to DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_write/dq_oe_n_90_r1_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS_1:C->Q            2   0.467   0.341  DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_write/dq_oe_270_1 (DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_write/dq_oe_270<1>)
+     FDR:R                     0.573          DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_write/dq_oe_n_90_r1_1
+    ----------------------------------------
+    Total                      1.381ns (1.040ns logic, 0.341ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/tx_gmii_mii_clk0_temp'
+  Clock period: 0.807ns (frequency: 1239.157MHz)
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Delay:               0.807ns (Levels of Logic = 0)
+  Source:            Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/gmii_tx_er_0_i (FF)
+  Destination:       Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/gmii0/GMII_TX_ER (FF)
+  Source Clock:      Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/tx_gmii_mii_clk0_temp rising
+  Destination Clock: Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/tx_gmii_mii_clk0_temp rising
+
+  Data Path: Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/gmii_tx_er_0_i to Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/gmii0/GMII_TX_ER
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.471   0.336  Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/gmii_tx_er_0_i (Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/gmii_tx_er_0_i)
+     FDC:D                    -0.018          Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/gmii0/GMII_TX_ER
+    ----------------------------------------
+    Total                      0.807ns (0.471ns logic, 0.336ns route)
+                                       (58.4% logic, 41.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/rx_client_clk_0_o'
+  Clock period: 3.431ns (frequency: 291.460MHz)
+  Total number of paths / destination ports: 333 / 106
+-------------------------------------------------------------------------
+Delay:               3.431ns (Levels of Logic = 5)
+  Source:            Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/I_RX_CL_IF/rxClSm_Cs_FSM_FFd2 (FF)
+  Destination:       Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/I_RX_CL_IF/I_RX_CLIENT_FIFO/BU299 (FF)
+  Source Clock:      Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/rx_client_clk_0_o rising
+  Destination Clock: Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/rx_client_clk_0_o rising
+
+  Data Path: Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/I_RX_CL_IF/rxClSm_Cs_FSM_FFd2 to Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/I_RX_CL_IF/I_RX_CLIENT_FIFO/BU299
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             13   0.471   0.776  Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/I_RX_CL_IF/rxClSm_Cs_FSM_FFd2 (Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/I_RX_CL_IF/rxClSm_Cs_FSM_FFd2)
+     LUT3:I0->O            4   0.094   0.592  Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/I_RX_CL_IF/rxClSm_Cs_FSM_FFd3-In411 (Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/I_RX_CL_IF/wr_en)
+     begin scope: 'Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/I_RX_CL_IF/I_RX_CLIENT_FIFO'
+     LUT4:I2->O            1   0.094   0.000  BU295 (N3933)
+     MUXCY:S->O            1   0.600   0.710  BU296 (N3940)
+     LUT4:I1->O            1   0.094   0.000  BU298 (N3948)
+     FDPE:D                   -0.018          BU299
+    ----------------------------------------
+    Total                      3.431ns (1.353ns logic, 2.078ns route)
+                                       (39.4% logic, 60.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/tx_client_clk_0_o'
+  Clock period: 2.990ns (frequency: 334.448MHz)
+  Total number of paths / destination ports: 140 / 43
+-------------------------------------------------------------------------
+Delay:               2.990ns (Levels of Logic = 3)
+  Source:            Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_TX0/I_TX_TEMAC_IF/I_TX_CL_IF/txClSm_Cs_FSM_FFd1 (FF)
+  Destination:       Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_TX0/I_TX_TEMAC_IF/I_TX_CL_IF/I_TX_CLIENT_FIFO/BU8 (RAM)
+  Source Clock:      Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/tx_client_clk_0_o rising
+  Destination Clock: Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/tx_client_clk_0_o rising
+
+  Data Path: Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_TX0/I_TX_TEMAC_IF/I_TX_CL_IF/txClSm_Cs_FSM_FFd1 to Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_TX0/I_TX_TEMAC_IF/I_TX_CL_IF/I_TX_CLIENT_FIFO/BU8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             13   0.471   0.776  Hard_Ethernet_MAC/I_TX0/I_TX_TEMAC_IF/I_TX_CL_IF/txClSm_Cs_FSM_FFd1 (Hard_Ethernet_MAC/I_TX0/I_TX_TEMAC_IF/I_TX_CL_IF/txClSm_Cs_FSM_FFd1)
+     LUT3:I0->O            3   0.094   0.800  Hard_Ethernet_MAC/I_TX0/I_TX_TEMAC_IF/I_TX_CL_IF/txClSm_Cs_FSM_Out41 (Hard_Ethernet_MAC/I_TX0/I_TX_TEMAC_IF/I_TX_CL_IF/rd_en)
+     begin scope: 'Hard_Ethernet_MAC/I_TX0/I_TX_TEMAC_IF/I_TX_CL_IF/I_TX_CLIENT_FIFO'
+     LUT4:I0->O            2   0.094   0.341  BU23 (N10)
+     RAMB16:ENB                0.414          BU8
+    ----------------------------------------
+    Total                      2.990ns (1.073ns logic, 1.917ns route)
+                                       (35.9% logic, 64.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'pll_module_0/pll_module_0/CLKOUT2_BUF'
+  Total number of paths / destination ports: 2104 / 1351
+-------------------------------------------------------------------------
+Offset:              5.116ns (Levels of Logic = 22)
+  Source:            ppc440_0/ppc440_0/PPC440_i:DMA0LLRSTENGINEACK (PAD)
+  Destination:       Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/checksum_a_15 (FF)
+  Destination Clock: pll_module_0/pll_module_0/CLKOUT2_BUF rising
+
+  Data Path: ppc440_0/ppc440_0/PPC440_i:DMA0LLRSTENGINEACK to Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/checksum_a_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    PPC440:DMA0LLRSTENGINEACK   50   0.000   0.000  ppc440_0/PPC440_i (DMA0LLRSTENGINEACK)
+     end scope: 'ppc440_0'
+     begin scope: 'Hard_Ethernet_MAC'
+     LUT2:I1->O          413   0.094   1.267  Hard_Ethernet_MAC/lLinkTemac0_RST_i1 (Hard_Ethernet_MAC/lLinkTemac0_RST_i)
+     LUT6:I0->O            2   0.094   0.485  Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/lLTemac_Data_i<15>1 (Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/lLTemac_Data_i<15>)
+     LUT3:I2->O            1   0.094   0.710  Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/checksum_a_mux0001<0>1 (Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/checksum_a_mux0001<0>)
+     LUT5:I2->O            1   0.094   0.000  Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/Madd_checksum_a_share0000_lut<0> (Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/Madd_checksum_a_share0000_lut<0>)
+     MUXCY:S->O            1   0.372   0.000  Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/Madd_checksum_a_share0000_cy<0> (Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/Madd_checksum_a_share0000_cy<0>)
+     MUXCY:CI->O           1   0.026   0.000  Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/Madd_checksum_a_share0000_cy<1> (Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/Madd_checksum_a_share0000_cy<1>)
+     MUXCY:CI->O           1   0.026   0.000  Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/Madd_checksum_a_share0000_cy<2> (Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/Madd_checksum_a_share0000_cy<2>)
+     MUXCY:CI->O           1   0.026   0.000  Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/Madd_checksum_a_share0000_cy<3> (Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/Madd_checksum_a_share0000_cy<3>)
+     MUXCY:CI->O           1   0.026   0.000  Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/Madd_checksum_a_share0000_cy<4> (Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/Madd_checksum_a_share0000_cy<4>)
+     MUXCY:CI->O           1   0.026   0.000  Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/Madd_checksum_a_share0000_cy<5> (Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/Madd_checksum_a_share0000_cy<5>)
+     MUXCY:CI->O           1   0.026   0.000  Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/Madd_checksum_a_share0000_cy<6> (Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/Madd_checksum_a_share0000_cy<6>)
+     MUXCY:CI->O           1   0.026   0.000  Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/Madd_checksum_a_share0000_cy<7> (Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/Madd_checksum_a_share0000_cy<7>)
+     MUXCY:CI->O           1   0.026   0.000  Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/Madd_checksum_a_share0000_cy<8> (Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/Madd_checksum_a_share0000_cy<8>)
+     MUXCY:CI->O           1   0.026   0.000  Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/Madd_checksum_a_share0000_cy<9> (Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/Madd_checksum_a_share0000_cy<9>)
+     MUXCY:CI->O           1   0.026   0.000  Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/Madd_checksum_a_share0000_cy<10> (Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/Madd_checksum_a_share0000_cy<10>)
+     MUXCY:CI->O           1   0.026   0.000  Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/Madd_checksum_a_share0000_cy<11> (Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/Madd_checksum_a_share0000_cy<11>)
+     MUXCY:CI->O           1   0.026   0.000  Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/Madd_checksum_a_share0000_cy<12> (Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/Madd_checksum_a_share0000_cy<12>)
+     MUXCY:CI->O           1   0.026   0.000  Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/Madd_checksum_a_share0000_cy<13> (Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/Madd_checksum_a_share0000_cy<13>)
+     MUXCY:CI->O           1   0.026   0.000  Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/Madd_checksum_a_share0000_cy<14> (Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/Madd_checksum_a_share0000_cy<14>)
+     XORCY:CI->O           1   0.357   0.480  Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/Madd_checksum_a_share0000_xor<15> (Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/checksum_a_share0000<15>)
+     LUT6:I5->O            1   0.094   0.000  Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/checksum_a_mux0000<15>1 (Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/checksum_a_mux0000<15>)
+     FDR:D                    -0.018          Hard_Ethernet_MAC/I_TX0/I_TX_LL_IF/GEN_TXCSUM.I_TXCSUM/I_TXCSUM_CALC/checksum_a_15
+    ----------------------------------------
+    Total                      5.116ns (2.174ns logic, 2.942ns route)
+                                       (42.5% logic, 57.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'fpga_0_FLASH_8Mx16_clk_dummy_pin_OBUF'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.341ns (Levels of Logic = 0)
+  Source:            ppc440_0/ppc440_0/PPC440_i:PPCS1PLBMBUSY0 (PAD)
+  Destination:       ppc440_0/ppc440_0/PPCS1PLBMBUSY_reg_0 (FF)
+  Destination Clock: fpga_0_FLASH_8Mx16_clk_dummy_pin_OBUF rising
+
+  Data Path: ppc440_0/ppc440_0/PPC440_i:PPCS1PLBMBUSY0 to ppc440_0/ppc440_0/PPCS1PLBMBUSY_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    PPC440:PPCS1PLBMBUSY0    2   0.000   0.341  ppc440_0/PPC440_i (ppc440_0/PPCS1PLBMBUSY_i<0>)
+     FD:D                     -0.018          ppc440_0/PPCS1PLBMBUSY_reg_0
+    ----------------------------------------
+    Total                      0.341ns (0.000ns logic, 0.341ns route)
+                                       (0.0% logic, 100.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'pll_module_0/pll_module_0/CLKOUT3_BUF'
+  Total number of paths / destination ports: 235 / 233
+-------------------------------------------------------------------------
+Offset:              0.820ns (Levels of Logic = 2)
+  Source:            ppc440_0/ppc440_0/PPC440_i:MIMCADDRESSVALID (PAD)
+  Destination:       DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/mi_mc_conflict_r (FF)
+  Destination Clock: pll_module_0/pll_module_0/CLKOUT3_BUF rising
+
+  Data Path: ppc440_0/ppc440_0/PPC440_i:MIMCADDRESSVALID to DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/mi_mc_conflict_r
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    PPC440:MIMCADDRESSVALID    4   0.000   0.000  ppc440_0/PPC440_i (MIMCADDRESSVALID)
+     end scope: 'ppc440_0'
+     begin scope: 'DDR2_SDRAM_16Mx32'
+     LUT3:I0->O            1   0.094   0.000  DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/mi_mc_conflict_r_and00001 (DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/mi_mc_conflict_r_and0000)
+     FDR:D                    -0.018          DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_u_ctrl/mi_mc_conflict_r
+    ----------------------------------------
+    Total                      0.820ns (0.820ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/tx_gmii_mii_clk0_temp'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              0.336ns (Levels of Logic = 0)
+  Source:            Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/v5_emac_wrapper/v5_emac:EMAC0PHYTXD7 (PAD)
+  Destination:       Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/gmii_txd_0_i_7 (FF)
+  Destination Clock: Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/tx_gmii_mii_clk0_temp rising
+
+  Data Path: Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/v5_emac_wrapper/v5_emac:EMAC0PHYTXD7 to Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/gmii_txd_0_i_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    TEMAC:EMAC0PHYTXD7     1   0.000   0.336  Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/v5_emac_wrapper/v5_emac (Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/gmii_txd_0_i_tk<7>)
+     FD:D                     -0.018          Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/gmii_txd_0_i_7
+    ----------------------------------------
+    Total                      0.336ns (0.000ns logic, 0.336ns route)
+                                       (0.0% logic, 100.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'fpga_0_Hard_Ethernet_MAC_GMII_RX_CLK_0_pin'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              0.336ns (Levels of Logic = 0)
+  Source:            Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/gmii0/YES_IO_1.ideldv:DATAOUT (PAD)
+  Destination:       Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/gmii0/RX_DV_TO_MAC (FF)
+  Destination Clock: fpga_0_Hard_Ethernet_MAC_GMII_RX_CLK_0_pin rising
+
+  Data Path: Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/gmii0/YES_IO_1.ideldv:DATAOUT to Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/gmii0/RX_DV_TO_MAC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    IODELAY:DATAOUT        1   0.000   0.336  Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/gmii0/YES_IO_1.ideldv (Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/gmii0/GMII_RX_DV_DLY)
+     FDC:D                    -0.018          Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/gmii0/RX_DV_TO_MAC
+    ----------------------------------------
+    Total                      0.336ns (0.000ns logic, 0.336ns route)
+                                       (0.0% logic, 100.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/rx_client_clk_0_o'
+  Total number of paths / destination ports: 17 / 17
+-------------------------------------------------------------------------
+Offset:              1.848ns (Levels of Logic = 2)
+  Source:            ppc440_0/ppc440_0/PPC440_i:DMA0LLRSTENGINEACK (PAD)
+  Destination:       Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/I_RX_CL_IF/rx_Cmplt_i (FF)
+  Destination Clock: Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/rx_client_clk_0_o rising
+
+  Data Path: ppc440_0/ppc440_0/PPC440_i:DMA0LLRSTENGINEACK to Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/I_RX_CL_IF/rx_Cmplt_i
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    PPC440:DMA0LLRSTENGINEACK   50   0.000   0.000  ppc440_0/PPC440_i (DMA0LLRSTENGINEACK)
+     end scope: 'ppc440_0'
+     begin scope: 'Hard_Ethernet_MAC'
+     LUT4:I2->O           93   0.094   0.475  Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/I_RX_CL_IF/combo_rset1 (Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/I_RX_CL_IF/combo_rset)
+     FDRS:R                    0.573          Hard_Ethernet_MAC/I_RX0/I_RX_TEMAC_IF/I_RX_CL_IF/rx_Cmplt_i
+    ----------------------------------------
+    Total                      1.848ns (1.374ns logic, 0.475ns route)
+                                       (74.3% logic, 25.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/tx_client_clk_0_o'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              1.812ns (Levels of Logic = 2)
+  Source:            ppc440_0/ppc440_0/PPC440_i:DMA0LLRSTENGINEACK (PAD)
+  Destination:       Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_TX0/I_TX_TEMAC_IF/I_TX_CL_IF/pipeIt2 (FF)
+  Destination Clock: Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/tx_client_clk_0_o rising
+
+  Data Path: ppc440_0/ppc440_0/PPC440_i:DMA0LLRSTENGINEACK to Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_TX0/I_TX_TEMAC_IF/I_TX_CL_IF/pipeIt2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    PPC440:DMA0LLRSTENGINEACK   50   0.000   0.000  ppc440_0/PPC440_i (DMA0LLRSTENGINEACK)
+     end scope: 'ppc440_0'
+     begin scope: 'Hard_Ethernet_MAC'
+     LUT2:I1->O          413   0.094   0.534  Hard_Ethernet_MAC/lLinkTemac0_RST_i1 (Hard_Ethernet_MAC/lLinkTemac0_RST_i)
+     FDR:R                     0.573          Hard_Ethernet_MAC/I_TX0/I_TX_TEMAC_IF/I_TX_CL_IF/pipeIt2
+    ----------------------------------------
+    Total                      1.812ns (1.278ns logic, 0.534ns route)
+                                       (70.5% logic, 29.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'pll_module_0/pll_module_0/CLKOUT3_BUF'
+  Total number of paths / destination ports: 119 / 107
+-------------------------------------------------------------------------
+Offset:              3.395ns (Levels of Logic = 2)
+  Source:            DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[3].u_iob_dqs/u_oddr_dqs (FF)
+  Destination:       fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQS_N<3> (PAD)
+  Source Clock:      pll_module_0/pll_module_0/CLKOUT3_BUF falling
+
+  Data Path: DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[3].u_iob_dqs/u_oddr_dqs to fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQS_N<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     ODDR:C->Q             1   0.607   0.336  DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[3].u_iob_dqs/u_oddr_dqs (DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[3].u_iob_dqs/dqs_out)
+     IOBUFDS:I->IOB        0   2.452   0.000  DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[3].u_iob_dqs/gen_dqs_iob_ddr2.u_iobuf_dqs (DDR2_DQS_N<3>)
+     end scope: 'DDR2_SDRAM_16Mx32'
+    ----------------------------------------
+    Total                      3.395ns (3.059ns logic, 0.336ns route)
+                                       (90.1% logic, 9.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'pll_module_0/pll_module_0/CLKOUT2_BUF'
+  Total number of paths / destination ports: 1293 / 429
+-------------------------------------------------------------------------
+Offset:              4.185ns (Levels of Logic = 3)
+  Source:            RS232/RS232/XUART_I_1/UART16550_I_1/mcr_4 (FF)
+  Destination:       fpga_0_RS232_sout_pin (PAD)
+  Source Clock:      pll_module_0/pll_module_0/CLKOUT2_BUF rising
+
+  Data Path: RS232/RS232/XUART_I_1/UART16550_I_1/mcr_4 to fpga_0_RS232_sout_pin
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            24   0.471   0.832  RS232/XUART_I_1/UART16550_I_1/mcr_4 (RS232/XUART_I_1/UART16550_I_1/mcr<4>)
+     LUT3:I0->O            1   0.094   0.336  RS232/XUART_I_1/UART16550_I_1/sout1 (sout)
+     end scope: 'RS232'
+     OBUF:I->O                 2.452          fpga_0_RS232_sout_pin_OBUF (fpga_0_RS232_sout_pin)
+    ----------------------------------------
+    Total                      4.185ns (3.017ns logic, 1.168ns route)
+                                       (72.1% logic, 27.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/tx_gmii_mii_clk0_temp'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              3.395ns (Levels of Logic = 2)
+  Source:            Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/gmii0/YES_IO.gmii_tx_clk_oddr (FF)
+  Destination:       fpga_0_Hard_Ethernet_MAC_GMII_TX_CLK_0_pin (PAD)
+  Source Clock:      Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/tx_gmii_mii_clk0_temp rising
+
+  Data Path: Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/gmii0/YES_IO.gmii_tx_clk_oddr to fpga_0_Hard_Ethernet_MAC_GMII_TX_CLK_0_pin
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     ODDR:C->Q             1   0.607   0.336  Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/gmii0/YES_IO.gmii_tx_clk_oddr (GMII_TX_CLK_0)
+     end scope: 'Hard_Ethernet_MAC'
+     OBUF:I->O                 2.452          fpga_0_Hard_Ethernet_MAC_GMII_TX_CLK_0_pin_OBUF (fpga_0_Hard_Ethernet_MAC_GMII_TX_CLK_0_pin)
+    ----------------------------------------
+    Total                      3.395ns (3.059ns logic, 0.336ns route)
+                                       (90.1% logic, 9.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'pll_module_0/pll_module_0/CLKOUT4_BUF'
+  Total number of paths / destination ports: 68 / 36
+-------------------------------------------------------------------------
+Offset:              3.395ns (Levels of Logic = 2)
+  Source:            DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[31].u_iob_dq/u_oddr_dq (FF)
+  Destination:       fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQ<31> (PAD)
+  Source Clock:      pll_module_0/pll_module_0/CLKOUT4_BUF rising
+
+  Data Path: DDR2_SDRAM_16Mx32/DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[31].u_iob_dq/u_oddr_dq to fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQ<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     ODDR:C->Q             1   0.607   0.336  DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[31].u_iob_dq/u_oddr_dq (DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[31].u_iob_dq/dq_out)
+     IOBUF:I->IO               2.452          DDR2_SDRAM_16Mx32/u_ddr2_top/u_mem_if_top/u_phy_top/u_phy_io/gen_dq[31].u_iob_dq/u_iobuf_dq (DDR2_DQ<31>)
+     end scope: 'DDR2_SDRAM_16Mx32'
+    ----------------------------------------
+    Total                      3.395ns (3.059ns logic, 0.336ns route)
+                                       (90.1% logic, 9.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/tx_client_clk_0_o'
+  Total number of paths / destination ports: 46 / 10
+-------------------------------------------------------------------------
+Offset:              3.583ns (Levels of Logic = 2)
+  Source:            Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_TX0/I_TX_TEMAC_IF/I_TX_CL_IF/I_TX_CLIENT_FIFO/BU8 (RAM)
+  Destination:       Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/v5_emac_wrapper/v5_emac:CLIENTEMAC0TXD7 (PAD)
+  Source Clock:      Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/tx_client_clk_0_o rising
+
+  Data Path: Hard_Ethernet_MAC/Hard_Ethernet_MAC/I_TX0/I_TX_TEMAC_IF/I_TX_CL_IF/I_TX_CLIENT_FIFO/BU8 to Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/v5_emac_wrapper/v5_emac:CLIENTEMAC0TXD7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16:CLKB->DOB7     1   2.180   0.973  BU8 (Dout<7>)
+     end scope: 'Hard_Ethernet_MAC/I_TX0/I_TX_TEMAC_IF/I_TX_CL_IF/I_TX_CLIENT_FIFO'
+     LUT5:I0->O            1   0.094   0.336  Hard_Ethernet_MAC/I_TX0/I_TX_TEMAC_IF/I_TX_CL_IF/clientEmacTxd_int<7>1 (Hard_Ethernet_MAC/cLIENTEMAC0TXD<7>)
+    TEMAC:CLIENTEMAC0TXD7        0.000          Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/v5_emac_wrapper/v5_emac
+    ----------------------------------------
+    Total                      3.583ns (2.274ns logic, 1.309ns route)
+                                       (63.5% logic, 36.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'fpga_0_Hard_Ethernet_MAC_GMII_RX_CLK_0_pin'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              0.807ns (Levels of Logic = 0)
+  Source:            Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/gmii0/RX_DV_TO_MAC (FF)
+  Destination:       Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/v5_emac_wrapper/v5_emac:PHYEMAC0RXDV (PAD)
+  Source Clock:      fpga_0_Hard_Ethernet_MAC_GMII_RX_CLK_0_pin rising
+
+  Data Path: Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/gmii0/RX_DV_TO_MAC to Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/v5_emac_wrapper/v5_emac:PHYEMAC0RXDV
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.471   0.336  Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/gmii0/RX_DV_TO_MAC (Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/gmii0/RX_DV_TO_MAC)
+    TEMAC:PHYEMAC0RXDV         0.000          Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/v5_emac_wrapper/v5_emac
+    ----------------------------------------
+    Total                      0.807ns (0.471ns logic, 0.336ns route)
+                                       (58.4% logic, 41.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 214 / 175
+-------------------------------------------------------------------------
+Delay:               2.788ns (Levels of Logic = 2)
+  Source:            Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/v5_emac_wrapper/v5_emac:EMAC0PHYMDOUT (PAD)
+  Destination:       fpga_0_Hard_Ethernet_MAC_MDIO_0_pin (PAD)
+
+  Data Path: Hard_Ethernet_MAC/Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/v5_emac_wrapper/v5_emac:EMAC0PHYMDOUT to fpga_0_Hard_Ethernet_MAC_MDIO_0_pin
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    TEMAC:EMAC0PHYMDOUT    1   0.000   0.000  Hard_Ethernet_MAC/V5HARD_SYS.I_TEMAC/SINGLE_GMII.I_EMAC_TOP/v5_emac_wrapper/v5_emac (MDIO_0_O)
+     end scope: 'Hard_Ethernet_MAC'
+     IOBUF:I->IO               2.452          iobuf_16 (fpga_0_Hard_Ethernet_MAC_MDIO_0_pin)
+    ----------------------------------------
+    Total                      2.788ns (2.788ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 109.00 secs
+Total CPU time to Xst completion: 108.72 secs
+ 
+--> 
+
+Total memory usage is 382400 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   17 (   0 filtered)
+Number of infos    :  148 (   0 filtered)
+

@@ -1,0 +1,20 @@
+# //  ModelSim SE 6.6d Nov  1 2010 
+# //
+# //  Copyright 1991-2010 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim {{M:\MASTER\COMPET\Trigger\HW\HDL\CRU\sim\wave.do}} 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by:   Hostname:   ProcessID: 2
+#           Attempting to use alternate WLF file "./wlftb9stk0".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftb9stk0
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: Failed to find design unit work.work.M:\MASTER\COMPET\Trigger\HW\HDL\CRU\sim\wave.do.
+# Optimization failed
+# Error loading design

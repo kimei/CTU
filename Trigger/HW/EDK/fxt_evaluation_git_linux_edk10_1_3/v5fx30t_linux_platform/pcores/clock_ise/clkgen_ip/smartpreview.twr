@@ -1,0 +1,12 @@
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+------------------------------------------------------------------------------------------------------
+  Constraint                                | Requested  | Actual     | Logic  | Absolute   |Number of
+                                            |            |            | Levels | Slack      |errors   
+------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+

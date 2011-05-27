@@ -1,8 +1,0 @@
-vhdl work "D:\avnet_50LXT\COMPET_readout\COMPET_Readout\shared\constants.vhd"
-vhdl work "D:\avnet_50LXT\COMPET_readout\COMPET_Readout\shared\types.vhd"
-vhdl work "D:\avnet_50LXT\COMPET_readout\COMPET_Readout\shared\functions.vhd"
-vhdl work "D:\avnet_50LXT\COMPET_readout\COMPET_Readout\chipscope\vio.vhd"
-vhdl work "D:\avnet_50LXT\COMPET_readout\COMPET_Readout\chipscope\ila.vhd"
-vhdl work "D:\avnet_50LXT\COMPET_readout\COMPET_Readout\chipscope\icon.vhd"
-vhdl work "D:\avnet_50LXT\COMPET_readout\COMPET_Readout\chipscope\core_sim.vhd"
-vhdl work "D:\avnet_50LXT\COMPET_readout\COMPET_Readout\chipscope\core.vhd"

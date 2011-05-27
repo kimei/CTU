@@ -1,4 +1,0 @@
-work	../shared/constants.vhd
-work	../shared/functions.vhd
-work	../shared/types.vhd
-work	BuildEventsToShipOut.vhd

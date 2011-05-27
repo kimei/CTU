@@ -1,5 +1,0 @@
-vhdl work "D:\avnet_50LXT\COMPET_readout\COMPET_Readout\shared\constants.vhd"
-vhdl work "D:\avnet_50LXT\COMPET_readout\COMPET_Readout\shared\types.vhd"
-vhdl work "D:\avnet_50LXT\COMPET_readout\COMPET_Readout\shared\functions.vhd"
-vhdl work "D:\avnet_50LXT\COMPET_readout\COMPET_Readout\front-end\fe_ch_fifo.vhd"
-vhdl work "D:\avnet_50LXT\COMPET_readout\COMPET_Readout\front-end\fe_ch_buf.vhd"

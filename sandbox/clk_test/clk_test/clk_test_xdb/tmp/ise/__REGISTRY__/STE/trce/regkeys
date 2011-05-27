@@ -1,0 +1,6 @@
+CommandLine
+C:/Xilinx/10.1/ISE/bin/nt/unwrapped/trce.exe -ise M:/MASTER/COMPET/sandbox/clk_test/clk_test/clk_test.ise -intstyle ise -v 3 -s 1 -xml v5_emac_v1_5_example_design v5_emac_v1_5_example_design.ncd -o v5_emac_v1_5_example_design.twr v5_emac_v1_5_example_design.pcf -ucf M:/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_example_design.ucf
+s
+FormatString
+trce.exe ([-e|-v [<limit:0,2000000000>]] [-l <limit:0,2000000000>] [-n [<limit:0,2000000000>]] [-u [<limit:0,2000000000>]] [-skew] [-a] [--p] [-s <speed>] [-o <report[.twr]>] [--m] [-stamp <stampfile>] [-tsi <tsifile[.tsi]>] [-xml <report[.twx]>] [-nodatasheet] [-timegroups] [-fastpaths] [-intstyle ise|xflow|silent] [-ise <projectfile>] [--ucf <constraint[.ucf]>] <design[.ncd]> [<constraint[.pcf]>]) | ([-run <macro[.xtm]> [<design[.ncd]> [<constraint[.pcf]>]]] [-intstyle ise|xflow|silent] [-ise <projectfile>])
+s

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?fileVersion 3.0.0?>
+
+<ManagedProjectBuildInfo>
+<project id="minnetest.xygwin.ppc.exec.1102511646" name="Xilinx PowerPC Executable" projectType="xygwin.ppc.exec">
+<configuration id="ppc.xygwin.exec.debug.209406268" name="Debug" description="" parent="ppc.xygwin.exec.debug" artifactName="minnetest" artifactExtension="elf" cleanCommand="rm -rf">
+<toolChain superClass="ppc.xygwin.exec.debug.toolchain" id="ppc.xygwin.exec.debug.toolchain.436980362" name="Debug.toolchain">
+<tool superClass="ppc.xygwin.exec.debug.com.xilinx.mdt.edk.build.tool.xygwin.ppc.c.compiler" id="ppc.xygwin.exec.debug.com.xilinx.mdt.edk.build.tool.xygwin.ppc.c.compiler.1670269073" name="PowerPC C Compiler"/>
+<tool superClass="ppc.xygwin.exec.debug.com.xilinx.mdt.edk.build.tool.xygwin.ppc.cpp.compiler" id="ppc.xygwin.exec.debug.com.xilinx.mdt.edk.build.tool.xygwin.ppc.cpp.compiler.937207826" name="PowerPC C++ Compiler"/>
+<tool superClass="com.xilinx.mdt.edk.build.tool.xygwin.ppc.c.link" id="com.xilinx.mdt.edk.build.tool.xygwin.ppc.c.link.1688819486" name="PowerPC C Linker"/>
+<tool superClass="com.xilinx.mdt.edk.build.tool.xygwin.ppc.cpp.link" id="com.xilinx.mdt.edk.build.tool.xygwin.ppc.cpp.link.1662851389" name="PowerPC C++ Linker"/>
+</toolChain>
+</configuration>
+<configuration id="ppc.xygwin.exec.release.791578130" name="Release" description="" parent="ppc.xygwin.exec.release" artifactName="minnetest" artifactExtension="elf" cleanCommand="rm -rf">
+<toolChain superClass="ppc.xygwin.exec.release.toolchain" id="ppc.xygwin.exec.release.toolchain.109190692" name="Release.toolchain">
+<tool superClass="ppc.xygwin.exec.release.com.xilinx.mdt.edk.build.tool.xygwin.ppc.c.compiler" id="ppc.xygwin.exec.release.com.xilinx.mdt.edk.build.tool.xygwin.ppc.c.compiler.1914407113" name="PowerPC C Compiler"/>
+<tool superClass="ppc.xygwin.exec.release.com.xilinx.mdt.edk.build.tool.xygwin.ppc.cpp.compiler" id="ppc.xygwin.exec.release.com.xilinx.mdt.edk.build.tool.xygwin.ppc.cpp.compiler.50675237" name="PowerPC C++ Compiler"/>
+<tool superClass="com.xilinx.mdt.edk.build.tool.xygwin.ppc.c.link" id="com.xilinx.mdt.edk.build.tool.xygwin.ppc.c.link.886426706" name="PowerPC C Linker"/>
+<tool superClass="com.xilinx.mdt.edk.build.tool.xygwin.ppc.cpp.link" id="com.xilinx.mdt.edk.build.tool.xygwin.ppc.cpp.link.678946355" name="PowerPC C++ Linker"/>
+</toolChain>
+</configuration>
+<configuration id="ppc.xygwin.exec.profile.727975981" name="Profile" description="" parent="ppc.xygwin.exec.profile" artifactName="minnetest" artifactExtension="elf" cleanCommand="rm -rf">
+<toolChain superClass="ppc.xygwin.exec.profile.toolchain" id="ppc.xygwin.exec.profile.toolchain.1167697815" name="Profile.toolchain">
+<tool superClass="ppc.xygwin.exec.profile.com.xilinx.mdt.edk.build.tool.xygwin.ppc.c.compiler" id="ppc.xygwin.exec.profile.com.xilinx.mdt.edk.build.tool.xygwin.ppc.c.compiler.507014689" name="PowerPC C Compiler"/>
+<tool superClass="ppc.xygwin.exec.profile.com.xilinx.mdt.edk.build.tool.xygwin.ppc.cpp.compiler" id="ppc.xygwin.exec.profile.com.xilinx.mdt.edk.build.tool.xygwin.ppc.cpp.compiler.365012619" name="PowerPC C++ Compiler"/>
+<tool superClass="com.xilinx.mdt.edk.build.tool.xygwin.ppc.c.link" id="com.xilinx.mdt.edk.build.tool.xygwin.ppc.c.link.1595688415" name="PowerPC C Linker"/>
+<tool superClass="com.xilinx.mdt.edk.build.tool.xygwin.ppc.cpp.link" id="com.xilinx.mdt.edk.build.tool.xygwin.ppc.cpp.link.633837468" name="PowerPC C++ Linker"/>
+</toolChain>
+</configuration>
+</project>
+</ManagedProjectBuildInfo>

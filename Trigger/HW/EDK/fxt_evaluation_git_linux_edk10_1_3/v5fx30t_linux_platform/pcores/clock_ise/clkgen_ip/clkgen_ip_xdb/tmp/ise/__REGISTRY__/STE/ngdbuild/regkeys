@@ -1,0 +1,6 @@
+CommandLine
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\ngdbuild.exe -ise M:/MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linux_platform/pcores/clock_ise/clkgen_ip/clkgen_ip.ise -intstyle ise -dd _ngo -nt timestamp -i -p xc5vfx30t-ff665-1 clkgen.ngc clkgen.ngd
+s
+FormatString
+ngdbuild [-p <partname>] {-sd <source_dir>} {-l <library>} [-ur <rules_file[.urf]>] [-dd <output_dir>] [-r] [-a] [-u] [-nt timestamp|on|off] [-uc <ucf_file[.ucf]>] [-aul] [-bm <bmm_file[.bmm]>] [-i] [-modular initial|module|assemble] [-intstyle ise|xflow|silent] [-quiet] [-verbose] [-active <active_module_name>] [-pimpath <pimpath>] {-use_pim <pim_module_name>} [-insert_keep_hierarchy] [--forcengd] {--n <ngl_file>} {--sl <library>} [--global_opt] [--script <tcl_file>] [--incremental] [--csttrans] <design_name> [<ngd_file[.ngd]>]
+s

@@ -1,0 +1,2 @@
+vhdl clkgen_v1_00_a "M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_linux_platform\pcores\clock_ise\clkgen_ip\pll.vhd"
+vhdl clkgen_v1_00_a "M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_linux_platform\pcores\clock_ise\clkgen_ip\clkgen.vhd"

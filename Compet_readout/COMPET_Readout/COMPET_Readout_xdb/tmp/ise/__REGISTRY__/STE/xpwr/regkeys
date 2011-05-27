@@ -1,6 +1,0 @@
-CommandLine
-C:\Xilinx\10.1\ISE\bin\nt\unwrapped\xpwr.exe -ise D:/avnet_50LXT/COMPET_readout/COMPET_Readout/COMPET_Readout/COMPET_Readout.ise -intstyle ise top.ncd top.pcf -wx top_xpwr.xml -o top.pwr
-s
-FormatString
-xpwr                        (<fpgadesign[.ncd]> [<constraints[.pcf]>] [-v [-a]] [-l <limit>] [-x [<userdata[.xml]>]] [-wx [<settings[.xml]>]] [-s [<simdata[.vcd]>]] [-o <report[.pwr]>] [-tcl [<tclscript[.tcl]>]] [-intstyle <type>] [-ise <projectfile>] [-p <xmlReportFile>])                      | (<fpgadesign[.ncd]> [<constraints[.pcf]>] [-v [-a]] [-l <limit>] [-x [<userdata[.xml]>]] [-wx [<settings[.xml]>]] [-s [<simdata[.saif]>]] [-o <report[.pwr]>] [-tcl [<tclscript[.tcl]>]] [-intstyle <type>] [-ise <projectfile>] [-p <xmlReportFile>])                      | (<cplddesign[.cxt]> [-v [-a]] [-l <limit>] [-x [<userdata[.xml]>]] [-wx [<settings[.xml]>]] [-s [<simdata[.vcd]>]] [-o <report[.pwr]>] [-tcl [<tclscript[.tcl]>]] [-intstyle <type>] [-ise <projectfile>] [-p <xmlReportFile>])                      | (<cplddesign[.cxt]> [-v [-a]] [-l <limit>] [-x [<userdata[.xml]>]] [-wx [<settings[.xml]>]] [-s [<simdata[.saif]>]] [-o <report[.pwr]>] [-tcl [<tclscript[.tcl]>]] [-intstyle <type>] [-ise <projectfile>] [-p <xmlReportFile>])                      | ([-ls [-arch <architecture>]] )
-s

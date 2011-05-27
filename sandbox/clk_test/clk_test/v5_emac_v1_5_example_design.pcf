@@ -1,0 +1,574 @@
+//! **************************************************************************
+// Written by: Map K.39 on Fri Apr 29 16:52:24 2011
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "GMII_RXD_0<0>" LOCATE = SITE "D24" LEVEL 1;
+COMP "GMII_RXD_0<1>" LOCATE = SITE "D23" LEVEL 1;
+COMP "GMII_RXD_0<2>" LOCATE = SITE "D21" LEVEL 1;
+COMP "GMII_RXD_0<3>" LOCATE = SITE "C26" LEVEL 1;
+COMP "GMII_RXD_0<4>" LOCATE = SITE "D20" LEVEL 1;
+COMP "GMII_RXD_0<5>" LOCATE = SITE "C23" LEVEL 1;
+COMP "GMII_RXD_0<6>" LOCATE = SITE "B25" LEVEL 1;
+COMP "PHY_RESET_0" LOCATE = SITE "B26" LEVEL 1;
+COMP "GMII_RXD_0<7>" LOCATE = SITE "C22" LEVEL 1;
+COMP "GMII_TX_CLK_0" LOCATE = SITE "A19" LEVEL 1;
+COMP "GMII_TXD_0<0>" LOCATE = SITE "D19" LEVEL 1;
+COMP "GMII_TXD_0<1>" LOCATE = SITE "C19" LEVEL 1;
+COMP "GMII_TXD_0<2>" LOCATE = SITE "A20" LEVEL 1;
+COMP "GMII_TXD_0<3>" LOCATE = SITE "B20" LEVEL 1;
+COMP "GMII_TXD_0<4>" LOCATE = SITE "B19" LEVEL 1;
+COMP "GMII_TXD_0<5>" LOCATE = SITE "A15" LEVEL 1;
+COMP "GMII_TXD_0<6>" LOCATE = SITE "B22" LEVEL 1;
+COMP "GMII_TXD_0<7>" LOCATE = SITE "B21" LEVEL 1;
+COMP "GTX_CLK_0" LOCATE = SITE "F20" LEVEL 1;
+COMP "GMII_RX_ER_0" LOCATE = SITE "B24" LEVEL 1;
+COMP "GMII_RX_DV_0" LOCATE = SITE "C21" LEVEL 1;
+COMP "GMII_TX_EN_0" LOCATE = SITE "A23" LEVEL 1;
+COMP "light<0>" LOCATE = SITE "AF22" LEVEL 1;
+COMP "light<1>" LOCATE = SITE "AF23" LEVEL 1;
+COMP "light<2>" LOCATE = SITE "AF25" LEVEL 1;
+COMP "light<3>" LOCATE = SITE "AE25" LEVEL 1;
+COMP "GMII_TX_ER_0" LOCATE = SITE "A22" LEVEL 1;
+COMP "button" LOCATE = SITE "AF20" LEVEL 1;
+COMP "GMII_COL_0" LOCATE = SITE "A24" LEVEL 1;
+COMP "GMII_CRS_0" LOCATE = SITE "A25" LEVEL 1;
+COMP "GMII_RX_CLK_0" LOCATE = SITE "E20" LEVEL 1;
+COMP "MII_TX_CLK_0" LOCATE = SITE "E17" LEVEL 1;
+COMP "FPGA100M" LOCATE = SITE "E18" LEVEL 1;
+PIN v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac_pins<18> = BEL
+        "v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac" PINNAME
+        CLIENTEMAC0RXCLIENTCLKIN;
+PIN v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac_pins<19> = BEL
+        "v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac" PINNAME
+        CLIENTEMAC0TXCLIENTCLKIN;
+PIN v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<32> = BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l" PINNAME CLKAL;
+PIN v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<110> = BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l" PINNAME
+        REGCLKAL;
+PIN v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<33> = BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l" PINNAME CLKBL;
+PIN v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<111> = BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l" PINNAME
+        REGCLKBL;
+PIN v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<30> = BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u" PINNAME CLKAU;
+PIN v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<108> = BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u" PINNAME
+        REGCLKAU;
+PIN v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<31> = BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u" PINNAME CLKBU;
+PIN v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<109> = BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u" PINNAME
+        REGCLKBU;
+PIN v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<32> = BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l" PINNAME CLKAL;
+PIN v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<33> = BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l" PINNAME CLKBL;
+PIN v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<110> = BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l" PINNAME
+        REGCLKAL;
+PIN v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<111> = BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l" PINNAME
+        REGCLKBL;
+PIN v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<30> = BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u" PINNAME CLKAU;
+PIN v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<31> = BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u" PINNAME CLKBU;
+PIN v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<108> = BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u" PINNAME
+        REGCLKAU;
+PIN v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<109> = BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u" PINNAME
+        REGCLKBU;
+TIMEGRP clk_gtp = BEL "ll_pre_reset_0_i_0" BEL "ll_pre_reset_0_i_1" BEL
+        "ll_pre_reset_0_i_2" BEL "ll_pre_reset_0_i_3" BEL "ll_pre_reset_0_i_4"
+        BEL "ll_pre_reset_0_i_5" BEL "ll_reset_0_i" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_fifo_full" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/frame_in_fifo" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_eof" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_store_frame" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_eof_n_int" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_dv_pipe_0" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_0" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out_0" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out_1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_bram_u" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_dv_pipe_1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_bram_u_reg" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_0" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_2" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_3" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_4" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_5" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_6" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_7" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_8" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_9" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_10" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_11" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_store_frame_tog" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_start_addr_0" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_start_addr_1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_start_addr_2" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_start_addr_3" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_start_addr_4" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_start_addr_5" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_start_addr_6" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_start_addr_7" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_start_addr_8" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_start_addr_9" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_start_addr_10" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_start_addr_11" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_0"
+        BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_1"
+        BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_2"
+        BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_3"
+        BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_4"
+        BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_5"
+        BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_6"
+        BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_7"
+        BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_8"
+        BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_9"
+        BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_10"
+        BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_11"
+        BEL "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_0"
+        BEL "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_1"
+        BEL "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_2"
+        BEL "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_3"
+        BEL "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_4"
+        BEL "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_5"
+        BEL "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_6"
+        BEL "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_7"
+        BEL "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_8"
+        BEL "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_9"
+        BEL "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_10"
+        BEL "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_11"
+        BEL "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_store_frame_tog"
+        BEL "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_store_frame_sync"
+        BEL "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_l_0" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_l_1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_u_0" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_u_1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_store_frame_delay" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_diff_2" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_diff_3" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_diff_4" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_diff_5" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_diff_6" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_diff_7" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_diff_8" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_diff_9" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_diff_10" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_diff_11" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_frames_0" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_frames_1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_frames_2" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_frames_3" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_frames_4" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_frames_5" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_frames_6" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_frames_7" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_frames_8" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_0" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_2" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_3" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_4" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_5" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_6" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_7" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_8" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_9" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_10" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_11" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_0" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_2" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_3" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_4" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_5" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_6" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_7" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_8" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_9" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_10" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_11" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_state_FSM_FFd3" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_state_FSM_FFd1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_state_FSM_FFd2" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_state_FSM_FFd3" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_state_FSM_FFd1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_state_FSM_FFd2" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_retransmit" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_2" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_3" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_4" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_5" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_6" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_7" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_8" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_9" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_10" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_11" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_retransmit_frame" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_fifo_full" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_eof_pipe" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_tran_frame_tog" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/tx_data_valid" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_transmit_frame" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/tx_data_0" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/tx_data_1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/tx_data_2" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/tx_data_3" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/tx_data_4" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/tx_data_5" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/tx_data_6" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/tx_data_7" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_eof_reg" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frame_in_fifo" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_txfer_tog" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_data_pipe_0" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_data_pipe_1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_data_pipe_2" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_data_pipe_3" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_data_pipe_4" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_data_pipe_5" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_data_pipe_6" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_data_pipe_7" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_tran_frame_tog" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo_sync" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_bram_u" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_txfer_tog" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_eof" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_txfer_tog_sync" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_bram_u_reg" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_dec_addr_0" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_dec_addr_1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_dec_addr_2" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_dec_addr_3" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_dec_addr_4" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_dec_addr_5" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_dec_addr_6" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_dec_addr_7" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_dec_addr_8" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_dec_addr_9" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_dec_addr_10" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_dec_addr_11" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_tran_frame_sync" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_txfer_tog_delay" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_0" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_2" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_3" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_4" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_5" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_6" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_7" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_8" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_9" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_10" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_11" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_tran_frame_delay" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_retran_frame_tog" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_retran_frame_tog" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_0" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_2" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_3" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_4" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_5" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_6" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_7" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_8" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_9" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_10" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_11" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_retran_frame_sync" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_data_pipe_l_0" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_data_pipe_l_1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_data_pipe_l_2" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_data_pipe_l_3" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_data_pipe_l_4" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_data_pipe_l_5" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_data_pipe_l_6" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_data_pipe_l_7" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_data_pipe_u_0" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_data_pipe_u_1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_data_pipe_u_2" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_data_pipe_u_3" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_data_pipe_u_4" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_data_pipe_u_5" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_data_pipe_u_6" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_data_pipe_u_7" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_retran_frame_delay"
+        BEL "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_diff_2" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_diff_3" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_diff_4" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_diff_5" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_diff_6" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_diff_7" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_diff_8" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_diff_9" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_diff_10" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_diff_11" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_16_count_0" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_16_count_1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_16_count_2" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_16_count_3" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frames_0" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frames_1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frames_2" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frames_3" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frames_4" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frames_5" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frames_6" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frames_7" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frames_8" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd2" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd3" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd4" PIN
+        "v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac_pins<18>" PIN
+        "v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac_pins<19>" BEL
+        "v5_emac_ll/rx_reset_0_i" BEL "v5_emac_ll/rx_pre_reset_0_i_5" BEL
+        "v5_emac_ll/rx_pre_reset_0_i_4" BEL "v5_emac_ll/rx_pre_reset_0_i_3"
+        BEL "v5_emac_ll/rx_pre_reset_0_i_2" BEL
+        "v5_emac_ll/rx_pre_reset_0_i_1" BEL "v5_emac_ll/rx_data_0_r_7" BEL
+        "v5_emac_ll/rx_data_0_r_6" BEL "v5_emac_ll/rx_data_0_r_5" BEL
+        "v5_emac_ll/rx_data_0_r_4" BEL "v5_emac_ll/rx_data_0_r_3" BEL
+        "v5_emac_ll/rx_data_0_r_2" BEL "v5_emac_ll/rx_data_0_r_1" BEL
+        "v5_emac_ll/rx_data_0_r_0" BEL "v5_emac_ll/rx_pre_reset_0_i_0" BEL
+        "v5_emac_ll/rx_bad_frame_0_r" BEL "v5_emac_ll/rx_data_valid_0_r" BEL
+        "v5_emac_ll/rx_good_frame_0_r" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_eof_bram_0" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_drop_frame" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer_0" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer_1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer_2" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer_3" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer_4" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer_5" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer_6" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer_7" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer_8" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer_9" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_2" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_3" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_4" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_6" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_7" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_10" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_11" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_0" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_5" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_8" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_9" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_0" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Mshreg_wr_bf_pipe_1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_bf_pipe_1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Mshreg_rd_valid_pipe_1"
+        BEL "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_valid_pipe_1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Mshreg_wr_data_bram_1"
+        BEL "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_data_bram_1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Mshreg_wr_gf_pipe_1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_gf_pipe_1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Mshreg_wr_data_bram_0"
+        BEL "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_data_bram_0" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Mshreg_wr_data_bram_4"
+        BEL "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_data_bram_4" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Mshreg_wr_data_bram_2"
+        BEL "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_data_bram_2" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Mshreg_wr_data_bram_3"
+        BEL "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_data_bram_3" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Mshreg_wr_data_bram_7"
+        BEL "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_data_bram_7" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Mshreg_wr_data_bram_5"
+        BEL "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_data_bram_5" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Mshreg_wr_data_bram_6"
+        BEL "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_data_bram_6" PIN
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<32>" PIN
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<110>" PIN
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<33>" PIN
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<111>" PIN
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<30>" PIN
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<108>" PIN
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<31>" PIN
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<109>" PIN
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<32>" PIN
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<33>" PIN
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<110>" PIN
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<111>" PIN
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<32>" PIN
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<33>" PIN
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<110>" PIN
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<111>" PIN
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<30>" PIN
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<31>" PIN
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<108>" PIN
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<109>" PIN
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<30>" PIN
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<31>" PIN
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<108>" PIN
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<109>";
+TIMEGRP rx_fifo_rd_to_wr_0 = BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_0" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_2" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_3" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_4" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_5" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_6" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_7" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_8" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_9" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_10" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_11";
+TIMEGRP rx_fifo_wr_to_rd_0 = BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_store_frame_tog";
+TIMEGRP rx_metastable_0 = BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_0"
+        BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_1"
+        BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_2"
+        BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_3"
+        BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_4"
+        BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_5"
+        BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_6"
+        BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_7"
+        BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_8"
+        BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_9"
+        BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_10"
+        BEL
+        "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_11"
+        BEL "v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_store_frame_tog";
+TIMEGRP tx_fifo_rd_to_wr_0 = BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_tran_frame_tog" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_txfer_tog" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_0" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_2" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_3" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_4" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_5" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_6" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_7" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_8" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_9" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_10" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_11" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_retran_frame_tog";
+TIMEGRP tx_fifo_wr_to_rd_0 = BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frame_in_fifo";
+TIMEGRP tx_metastable_0 = BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_tran_frame_tog" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_txfer_tog" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_retran_frame_tog" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_0" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_2" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_3" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_4" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_5" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_6" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_7" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_8" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_9" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_10" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_11";
+TIMEGRP tx_addr_rd_0 = BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_0" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_2" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_3" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_4" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_5" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_6" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_7" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_8" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_9" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_10" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_11";
+TIMEGRP tx_addr_wr_0 = BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_0" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_1" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_2" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_3" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_4" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_5" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_6" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_7" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_8" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_9" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_10" BEL
+        "v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_11";
+PIN v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac_pins<424> = BEL
+        "v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac" PINNAME
+        PHYEMAC0RXCLK;
+TIMEGRP phy_clk_rx0 = BEL "v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_0" BEL
+        "v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_1" BEL
+        "v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_2" BEL
+        "v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_3" BEL
+        "v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_4" BEL
+        "v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_5" BEL
+        "v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_6" BEL
+        "v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_7" BEL
+        "v5_emac_ll/v5_emac_block/gmii0/RX_ER_TO_MAC" BEL
+        "v5_emac_ll/v5_emac_block/gmii0/RX_DV_TO_MAC" PIN
+        "v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac_pins<424>";
+PIN v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac_pins<409> = BEL
+        "v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac" PINNAME
+        PHYEMAC0GTXCLK;
+TIMEGRP clk_gtx0 = PIN
+        "v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac_pins<409>";
+TIMEGRP clk_tx0 = BEL "GMII_TX_CLK_0";
+TIMEGRP v5_emac_v1_5_clk_phy_rx0 = TIMEGRP "phy_clk_rx0";
+TIMEGRP fe_TEMAC_tx_clk0 = TIMEGRP "clk_tx0";
+TIMEGRP fe_TEMAC_clk_phy_rx0 = TIMEGRP "phy_clk_rx0";
+TIMEGRP fe_TEMAC_gtx_clk0 = TIMEGRP "clk_gtx0";
+TIMEGRP v5_emac_v1_5_gtp_clk = TIMEGRP "clk_gtp";
+TS_v5_emac_v1_5_clk_phy_rx0 = PERIOD TIMEGRP "v5_emac_v1_5_clk_phy_rx0" 7.5 ns
+        HIGH 50%;
+ts_tx_meta_protect_0 = MAXDELAY FROM TIMEGRP "tx_metastable_0" 5 ns
+        DATAPATHONLY;
+TS_tx_fifo_addr_0 = MAXDELAY FROM TIMEGRP "tx_addr_rd_0" TO TIMEGRP
+        "tx_addr_wr_0" 10 ns;
+ts_rx_meta_protect_0 = MAXDELAY FROM TIMEGRP "rx_metastable_0" 5 ns;
+TS_fe_TEMAC_tx_clk0 = PERIOD TIMEGRP "fe_TEMAC_tx_clk0" 7.7 ns HIGH 50%;
+TS_fe_TEMAC_clk_phy_rx0 = PERIOD TIMEGRP "fe_TEMAC_clk_phy_rx0" 7.5 ns HIGH
+        50%;
+TS_fe_TEMAC_gtx_clk0 = PERIOD TIMEGRP "fe_TEMAC_gtx_clk0" 8 ns HIGH 50%;
+TS_v5_emac_v1_5_gtp_clk = PERIOD TIMEGRP "v5_emac_v1_5_gtp_clk" 7.7 ns HIGH
+        50%;
+PIN PHY_RESET_0_OBUF_pins<1> = BEL "PHY_RESET_0_OBUF" PINNAME OUT;
+PIN "PHY_RESET_0_OBUF_pins<1>" TIG;
+SCHEMATIC END;
+

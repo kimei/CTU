@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<document OS="nt" product="ISE" version="10.1.03">
+
+  <!--The data in this file is primarily intended for consumption by Xilinx tools.
+    The structure and the elements are likely to change over the next few releases.
+    This means code written to parse this file will need to be revisited each subsequent release.-->
+
+  <application stringID="NgdBuild" timeStamp="Thu May 12 15:19:35 2011">
+    <task stringID="NGDBUILD_REPORT">
+      <section stringID="NGDBUILD_DESIGN_SUMMARY">
+        <item dataType="int" stringID="NGDBUILD_NUM_ERRORS" value="7"/>
+        <item dataType="int" stringID="NGDBUILD_FILTERED_WARNINGS" value="0"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_WARNINGS" value="14"/>
+        <item dataType="int" stringID="NGDBUILD_FILTERED_INFOS" value="0"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_INFOS" value="0"/>
+      </section>
+      <section stringID="NGDBUILD_CORE_SUMMARY">
+        <item COUNT="1" stringID="NGDBUILD_CORE" value="v5_emac_v1_5, Coregen 10.1i_ip3"/>
+        <section stringID="NGDBUILD_CORE_GENERATION_SUMMARY">
+          <section stringID="NGDBUILD_CORE_INSTANCES">
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="comp_11b_equal">
+              <item stringID="NGDBUILD_CORE_INFO" type="c_compare_v9_0" value="comp_11b_equal"/>
+              <item c_ainit_val="0" c_b_constant="0" c_b_value="0000000000000000" c_data_type="1" c_has_a_eq_b="0" c_has_a_ge_b="0" c_has_a_gt_b="0" c_has_a_le_b="0" c_has_a_lt_b="0" c_has_a_ne_b="0" c_has_aclr="0" c_has_aset="0" c_has_ce="0" c_has_qa_eq_b="1" c_has_qa_ge_b="0" c_has_qa_gt_b="0" c_has_qa_le_b="0" c_has_qa_lt_b="0" c_has_qa_ne_b="0" c_has_sclr="0" c_has_sset="0" c_pipe_stages="0" c_sync_enable="0" c_sync_priority="1" c_width="11" component_name="comp_11b_equal" stringID="NGDBUILD_CORE_PARAMETERS" value="comp_11b_equal"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="comp_6b_equal">
+              <item stringID="NGDBUILD_CORE_INFO" type="c_compare_v9_0" value="comp_6b_equal"/>
+              <item c_ainit_val="0" c_b_constant="0" c_b_value="0000000000000000" c_data_type="1" c_has_a_eq_b="0" c_has_a_ge_b="0" c_has_a_gt_b="0" c_has_a_le_b="0" c_has_a_lt_b="0" c_has_a_ne_b="0" c_has_aclr="0" c_has_aset="0" c_has_ce="0" c_has_qa_eq_b="1" c_has_qa_ge_b="0" c_has_qa_gt_b="0" c_has_qa_le_b="0" c_has_qa_lt_b="0" c_has_qa_ne_b="0" c_has_sclr="0" c_has_sset="0" c_pipe_stages="0" c_sync_enable="0" c_sync_priority="1" c_width="6" component_name="comp_6b_equal" stringID="NGDBUILD_CORE_PARAMETERS" value="comp_6b_equal"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="dist_mem_64x8">
+              <item stringID="NGDBUILD_CORE_INFO" type="dist_mem_gen_v3_4" value="dist_mem_64x8"/>
+              <item c_addr_width="6" c_default_data="0" c_depth="64" c_has_clk="1" c_has_d="0" c_has_dpo="0" c_has_dpra="0" c_has_i_ce="0" c_has_qdpo="0" c_has_qdpo_ce="0" c_has_qdpo_clk="0" c_has_qdpo_rst="0" c_has_qdpo_srst="0" c_has_qspo="1" c_has_qspo_ce="0" c_has_qspo_rst="0" c_has_qspo_srst="0" c_has_spo="0" c_has_spra="0" c_has_we="0" c_mem_init_file="dist_mem_64x8.mif" c_mem_type="0" c_pipeline_stages="0" c_qce_joined="0" c_qualify_we="0" c_read_mif="1" c_reg_a_d_inputs="0" c_reg_dpra_input="0" c_sync_enable="1" c_width="8" stringID="NGDBUILD_CORE_PARAMETERS" value="dist_mem_64x8"/>
+            </scope>
+          </section>
+        </section>
+      </section>
+    </task>
+  </application>
+
+</document>

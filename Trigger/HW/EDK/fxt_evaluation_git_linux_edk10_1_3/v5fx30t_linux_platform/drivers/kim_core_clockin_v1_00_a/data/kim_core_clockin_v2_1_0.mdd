@@ -1,0 +1,15 @@
+##############################################################################
+## Filename:          M:\MASTER\COMPET\Trigger\HW\EDK\fxt_evaluation_git_linux_edk10_1_3\v5fx30t_linux_platform/drivers/kim_core_clockin_v1_00_a/data/kim_core_clockin_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Fri Apr 08 12:07:27 2011 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER kim_core_clockin
+
+  OPTION supported_peripherals = (kim_core_clockin);
+  OPTION depends = (common_v1_00_a);
+  OPTION copyfiles = all;
+
+END DRIVER

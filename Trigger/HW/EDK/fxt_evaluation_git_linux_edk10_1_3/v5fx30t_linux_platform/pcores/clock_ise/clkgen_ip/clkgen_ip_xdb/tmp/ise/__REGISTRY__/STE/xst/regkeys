@@ -1,0 +1,6 @@
+CommandLine
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\xst.exe -ise M:/MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linux_platform/pcores/clock_ise/clkgen_ip/clkgen_ip.ise -intstyle ise -ifn M:/MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linux_platform/pcores/clock_ise/clkgen_ip/clkgen.xst -ofn M:/MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linux_platform/pcores/clock_ise/clkgen_ip/clkgen.syr -finalclean 1
+s
+FormatString
+xst [-ifn <InputFile>] [-ofn <OutputFile>] [-ise <iseProjectFile>] [--quiet] [-intstyle <Style>] [--deb <DebugLevel>] [--finalclean <Clean>] [--PcubeFlow] [--globOptFlow] [--XstNtrc]
+s

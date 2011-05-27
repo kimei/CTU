@@ -1,0 +1,17 @@
+V3 11
+FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linux_platform/pcores/clock_ise/clkgen_ip/clkgen.vhd 2011/04/08.13:32:31 K.39
+EN work/clkgen 1302262385 \
+      FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linux_platform/pcores/clock_ise/clkgen_ip/clkgen.vhd \
+      PB ieee/std_logic_1164 1217055545 PB ieee/std_logic_arith 1217055546 \
+      PB ieee/STD_LOGIC_UNSIGNED 1217055547
+AR work/clkgen/Behavioral 1302262386 \
+      FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linux_platform/pcores/clock_ise/clkgen_ip/clkgen.vhd \
+      EN work/clkgen 1302262385 CP pll
+FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linux_platform/pcores/clock_ise/clkgen_ip/pll.vhd 2011/04/08.13:31:07 K.39
+EN work/pll 1302262383 \
+      FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linux_platform/pcores/clock_ise/clkgen_ip/pll.vhd \
+      PB ieee/std_logic_1164 1217055545 PH ieee/NUMERIC_STD 1217055545 LB UNISIM \
+      PH unisim/VCOMPONENTS 1217055545
+AR work/pll/BEHAVIORAL 1302262384 \
+      FL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/EDK/fxt_evaluation_git_linux_edk10_1_3/v5fx30t_linux_platform/pcores/clock_ise/clkgen_ip/pll.vhd \
+      EN work/pll 1302262383 CP IBUFG CP BUFG CP PLL_ADV

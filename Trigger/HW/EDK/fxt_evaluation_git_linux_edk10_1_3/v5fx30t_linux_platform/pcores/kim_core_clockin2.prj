@@ -1,0 +1,4 @@
+vhdl kim_core_clockin2 "M:\MASTER\COMPET\Trigger\HW\HDL\Shared\constants.vhd"
+vhdl kim_core_clockin2 "M:\MASTER\COMPET\Trigger\HW\HDL\Shared\components.vhd"
+vhdl kim_core_clockin2 "M:\MASTER\COMPET\Trigger\HW\HDL\CRU\PLL_ALL.vhd"
+vhdl kim_core_clockin2 "M:\MASTER\COMPET\Trigger\HW\HDL\CRU\CRU.vhd"
