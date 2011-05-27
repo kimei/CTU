@@ -1,6 +1,6 @@
 iMPACT Version: 10.1.03
 
-iMPACT log file Started on Fri Mar 11 10:07:24 2011
+iMPACT log file Started on Fri Mar 25 14:47:40 2011
 
 // *** BATCH CMD : setMode -bs
 // *** BATCH CMD : setMode -bs
@@ -47,6 +47,12 @@ PLD file version = 0012h.
 PROGRESS_END - End Operation.
 Elapsed time =      2 sec.
 Attempting to identify devices in the boundary-scan chain configuration...// *** BATCH CMD : Identify 
+ERROR:iMPACT:2246 - A reference voltage has not been detected on the ribbon   cable
+   	interface to the target system ( pin 2 ).  Check that power is applied
+   	 to the target system and that the ribbon cable is properly seated at
+   	 both ends.  The status LED on Platform Cable USB will be GREEN if target
+   	 voltage is in the proper range and applied to the correct pin.
+Attempting to identify devices in the boundary-scan chain configuration...// *** BATCH CMD : Identify 
 PROGRESS_START - Starting Operation.
 Identifying chain contents ....'1': : Manufacturer's ID =Xilinx xc5vfx30t, Version : 6
 INFO:iMPACT:1777 - 
@@ -56,7 +62,7 @@ INFO:iMPACT:501 - '1': Added Device xc5vfx30t successfully.
 ----------------------------------------------------------------------
 done.
 PROGRESS_END - End Operation.
-Elapsed time =      1 sec.
+Elapsed time =      0 sec.
 // *** BATCH CMD : identifyMPM 
 // *** BATCH CMD : assignFile -p 1 -file"M:/MASTER/COMPET/Trigger/HW/HDL/top/top/top.bit"
 '1': Loading file 'M:/MASTER/COMPET/Trigger/HW/HDL/top/top/top.bit' ...
@@ -87,9 +93,9 @@ End of startup signal from Startup block          :         1
 status of GTS_CFG_B                               :         1
 status of GWE                                     :         1
 status of GHIGH                                   :         1
-value of MODE pin M0                              :         0
-value of MODE pin M1                              :         1
-Value of MODE pin M2                              :         0
+value of MODE pin M0                              :         1
+value of MODE pin M1                              :         0
+Value of MODE pin M2                              :         1
 Internal signal indicates when housecleaning is completed:         1
 Value driver in from INIT pad                     :         1
 Internal signal indicates that chip is configured :         1
@@ -104,7 +110,7 @@ E-fuse program voltage available                  :         0
 SPI Flash Type[22] Select                         :         0
 SPI Flash Type[23] Select                         :         0
 SPI Flash Type[24] Select                         :         0
-CFG bus width auto detection result               :         1
+CFG bus width auto detection result               :         0
 CFG bus width auto detection result               :         0
 Reserved                                          :         0
 BPI address wrap around error                     :         0
@@ -112,7 +118,7 @@ IPROG pulsed                                      :         0
 read back crc error                               :         0
 Indicates that efuse logic is busy                :         0
 INFO:iMPACT:2219 - Status register values:
-INFO:iMPACT - 0011 1111 0101 1110 0000 1000 0100 0000 
+INFO:iMPACT - 0011 1111 1011 1110 0000 1000 0000 0000 
 INFO:iMPACT:579 - '1': Completed downloading bit file to device.
  Match_cycle = NoWait.
 Match cycle: NoWait
@@ -120,284 +126,7 @@ INFO:iMPACT - '1': Checking done pin....done.
 '1': Programmed successfully.
 PROGRESS_END - End Operation.
 Elapsed time =      4 sec.
-// *** BATCH CMD : Program -p 1 
-Maximum TCK operating frequency for this device chain: 33000000.
-Validating chain...
-Boundary-scan chain validated successfully.
-PROGRESS_START - Starting Operation.
-1: Device Temperature: Current Reading: -273.00 C
-1: VCCINT Supply: Current Reading:   0.000 V
-1: VCCAUX Supply: Current Reading:   0.000 V
-'1': Programming device...
- Match_cycle = NoWait.
-Match cycle: NoWait
-done.
-'1': Reading status register contents...
-CRC error                                         :         0
-Decryptor security set                            :         0
-DCM locked                                        :         1
-DCI matched                                       :         1
-End of startup signal from Startup block          :         1
-status of GTS_CFG_B                               :         1
-status of GWE                                     :         1
-status of GHIGH                                   :         1
-value of MODE pin M0                              :         0
-value of MODE pin M1                              :         1
-Value of MODE pin M2                              :         0
-Internal signal indicates when housecleaning is completed:         1
-Value driver in from INIT pad                     :         1
-Internal signal indicates that chip is configured :         1
-Value of DONE pin                                 :         1
-Indicates when ID value written does not match chip ID:         0
-Decryptor error Signal                            :         0
-System Monitor Over-Temperature Alarm             :         0
-startup_state[18] CFG startup state machine       :         0
-startup_state[19] CFG startup state machine       :         0
-startup_state[20] CFG startup state machine       :         1
-E-fuse program voltage available                  :         0
-SPI Flash Type[22] Select                         :         0
-SPI Flash Type[23] Select                         :         0
-SPI Flash Type[24] Select                         :         0
-CFG bus width auto detection result               :         1
-CFG bus width auto detection result               :         0
-Reserved                                          :         0
-BPI address wrap around error                     :         0
-IPROG pulsed                                      :         0
-read back crc error                               :         0
-Indicates that efuse logic is busy                :         0
-INFO:iMPACT:2219 - Status register values:
-INFO:iMPACT - 0011 1111 0101 1110 0000 1000 0100 0000 
-INFO:iMPACT:579 - '1': Completed downloading bit file to device.
- Match_cycle = NoWait.
-Match cycle: NoWait
-INFO:iMPACT - '1': Checking done pin....done.
-'1': Programmed successfully.
-PROGRESS_END - End Operation.
-Elapsed time =      4 sec.
-Updating config file M:/MASTER/COMPET/Trigger/HW/HDL/top/top/top.bit...
-// *** BATCH CMD : Program -p 1 
-Maximum TCK operating frequency for this device chain: 33000000.
-Validating chain...
-Boundary-scan chain validated successfully.
-1: Device Temperature: Current Reading: -273.00 C
-1: VCCINT Supply: Current Reading:   0.000 V
-1: VCCAUX Supply: Current Reading:   0.000 V
-PROGRESS_START - Starting Operation.
-'1': Programming device...
- Match_cycle = NoWait.
-Match cycle: NoWait
-done.
-'1': Reading status register contents...
-CRC error                                         :         0
-Decryptor security set                            :         0
-DCM locked                                        :         1
-DCI matched                                       :         1
-End of startup signal from Startup block          :         1
-status of GTS_CFG_B                               :         1
-status of GWE                                     :         1
-status of GHIGH                                   :         1
-value of MODE pin M0                              :         0
-value of MODE pin M1                              :         1
-Value of MODE pin M2                              :         0
-Internal signal indicates when housecleaning is completed:         1
-Value driver in from INIT pad                     :         1
-Internal signal indicates that chip is configured :         1
-Value of DONE pin                                 :         1
-Indicates when ID value written does not match chip ID:         0
-Decryptor error Signal                            :         0
-System Monitor Over-Temperature Alarm             :         0
-startup_state[18] CFG startup state machine       :         0
-startup_state[19] CFG startup state machine       :         0
-startup_state[20] CFG startup state machine       :         1
-E-fuse program voltage available                  :         0
-SPI Flash Type[22] Select                         :         0
-SPI Flash Type[23] Select                         :         0
-SPI Flash Type[24] Select                         :         0
-CFG bus width auto detection result               :         1
-CFG bus width auto detection result               :         0
-Reserved                                          :         0
-BPI address wrap around error                     :         0
-IPROG pulsed                                      :         0
-read back crc error                               :         0
-Indicates that efuse logic is busy                :         0
-INFO:iMPACT:2219 - Status register values:
-INFO:iMPACT - 0011 1111 0101 1110 0000 1000 0100 0000 
-INFO:iMPACT:579 - '1': Completed downloading bit file to device.
- Match_cycle = NoWait.
-Match cycle: NoWait
-INFO:iMPACT - '1': Checking done pin....done.
-'1': Programmed successfully.
-PROGRESS_END - End Operation.
-Elapsed time =      4 sec.
-Updating config file M:/MASTER/COMPET/Trigger/HW/HDL/top/top/top.bit...
-// *** BATCH CMD : Program -p 1 
-Maximum TCK operating frequency for this device chain: 33000000.
-Validating chain...
-Boundary-scan chain validated successfully.
-PROGRESS_START - Starting Operation.
-1: Device Temperature: Current Reading: -273.00 C
-1: VCCINT Supply: Current Reading:   0.000 V
-1: VCCAUX Supply: Current Reading:   0.000 V
-'1': Programming device...
- Match_cycle = NoWait.
-Match cycle: NoWait
-done.
-'1': Reading status register contents...
-CRC error                                         :         0
-Decryptor security set                            :         0
-DCM locked                                        :         1
-DCI matched                                       :         1
-End of startup signal from Startup block          :         1
-status of GTS_CFG_B                               :         1
-status of GWE                                     :         1
-status of GHIGH                                   :         1
-value of MODE pin M0                              :         0
-value of MODE pin M1                              :         1
-Value of MODE pin M2                              :         0
-Internal signal indicates when housecleaning is completed:         1
-Value driver in from INIT pad                     :         1
-Internal signal indicates that chip is configured :         1
-Value of DONE pin                                 :         1
-Indicates when ID value written does not match chip ID:         0
-Decryptor error Signal                            :         0
-System Monitor Over-Temperature Alarm             :         0
-startup_state[18] CFG startup state machine       :         0
-startup_state[19] CFG startup state machine       :         0
-startup_state[20] CFG startup state machine       :         1
-E-fuse program voltage available                  :         0
-SPI Flash Type[22] Select                         :         0
-SPI Flash Type[23] Select                         :         0
-SPI Flash Type[24] Select                         :         0
-CFG bus width auto detection result               :         1
-CFG bus width auto detection result               :         0
-Reserved                                          :         0
-BPI address wrap around error                     :         0
-IPROG pulsed                                      :         0
-read back crc error                               :         0
-Indicates that efuse logic is busy                :         0
-INFO:iMPACT:2219 - Status register values:
-INFO:iMPACT - 0011 1111 0101 1110 0000 1000 0100 0000 
-INFO:iMPACT:579 - '1': Completed downloading bit file to device.
- Match_cycle = NoWait.
-Match cycle: NoWait
-INFO:iMPACT - '1': Checking done pin....done.
-'1': Programmed successfully.
-PROGRESS_END - End Operation.
-Elapsed time =      4 sec.
-// *** BATCH CMD : Program -p 1 
-Maximum TCK operating frequency for this device chain: 33000000.
-Validating chain...
-Boundary-scan chain validated successfully.
-1: Device Temperature: Current Reading: -273.00 C
-1: VCCINT Supply: Current Reading:   0.000 V
-1: VCCAUX Supply: Current Reading:   0.000 V
-PROGRESS_START - Starting Operation.
-'1': Programming device...
- Match_cycle = NoWait.
-Match cycle: NoWait
-done.
-'1': Reading status register contents...
-CRC error                                         :         0
-Decryptor security set                            :         0
-DCM locked                                        :         1
-DCI matched                                       :         1
-End of startup signal from Startup block          :         1
-status of GTS_CFG_B                               :         1
-status of GWE                                     :         1
-status of GHIGH                                   :         1
-value of MODE pin M0                              :         0
-value of MODE pin M1                              :         1
-Value of MODE pin M2                              :         0
-Internal signal indicates when housecleaning is completed:         1
-Value driver in from INIT pad                     :         1
-Internal signal indicates that chip is configured :         1
-Value of DONE pin                                 :         1
-Indicates when ID value written does not match chip ID:         0
-Decryptor error Signal                            :         0
-System Monitor Over-Temperature Alarm             :         0
-startup_state[18] CFG startup state machine       :         0
-startup_state[19] CFG startup state machine       :         0
-startup_state[20] CFG startup state machine       :         1
-E-fuse program voltage available                  :         0
-SPI Flash Type[22] Select                         :         0
-SPI Flash Type[23] Select                         :         0
-SPI Flash Type[24] Select                         :         0
-CFG bus width auto detection result               :         1
-CFG bus width auto detection result               :         0
-Reserved                                          :         0
-BPI address wrap around error                     :         0
-IPROG pulsed                                      :         0
-read back crc error                               :         0
-Indicates that efuse logic is busy                :         0
-INFO:iMPACT:2219 - Status register values:
-INFO:iMPACT - 0011 1111 0101 1110 0000 1000 0100 0000 
-INFO:iMPACT:579 - '1': Completed downloading bit file to device.
- Match_cycle = NoWait.
-Match cycle: NoWait
-INFO:iMPACT - '1': Checking done pin....done.
-'1': Programmed successfully.
-PROGRESS_END - End Operation.
-Elapsed time =      4 sec.
-// *** BATCH CMD : Program -p 1 
-Maximum TCK operating frequency for this device chain: 33000000.
-Validating chain...
-Boundary-scan chain validated successfully.
-1: Device Temperature: Current Reading: -273.00 C
-1: VCCINT Supply: Current Reading:   0.000 V
-1: VCCAUX Supply: Current Reading:   0.000 V
-'1': Programming device...
-PROGRESS_START - Starting Operation.
- Match_cycle = NoWait.
-Match cycle: NoWait
-done.
-'1': Reading status register contents...
-CRC error                                         :         0
-Decryptor security set                            :         0
-DCM locked                                        :         1
-DCI matched                                       :         1
-End of startup signal from Startup block          :         1
-status of GTS_CFG_B                               :         1
-status of GWE                                     :         1
-status of GHIGH                                   :         1
-value of MODE pin M0                              :         0
-value of MODE pin M1                              :         1
-Value of MODE pin M2                              :         0
-Internal signal indicates when housecleaning is completed:         1
-Value driver in from INIT pad                     :         1
-Internal signal indicates that chip is configured :         1
-Value of DONE pin                                 :         1
-Indicates when ID value written does not match chip ID:         0
-Decryptor error Signal                            :         0
-System Monitor Over-Temperature Alarm             :         0
-startup_state[18] CFG startup state machine       :         0
-startup_state[19] CFG startup state machine       :         0
-startup_state[20] CFG startup state machine       :         1
-E-fuse program voltage available                  :         0
-SPI Flash Type[22] Select                         :         0
-SPI Flash Type[23] Select                         :         0
-SPI Flash Type[24] Select                         :         0
-CFG bus width auto detection result               :         1
-CFG bus width auto detection result               :         0
-Reserved                                          :         0
-BPI address wrap around error                     :         0
-IPROG pulsed                                      :         0
-read back crc error                               :         0
-Indicates that efuse logic is busy                :         0
-INFO:iMPACT:2219 - Status register values:
-INFO:iMPACT - 0011 1111 0101 1110 0000 1000 0100 0000 
-INFO:iMPACT:579 - '1': Completed downloading bit file to device.
- Match_cycle = NoWait.
-Match cycle: NoWait
-INFO:iMPACT - '1': Checking done pin....done.
-'1': Programmed successfully.
-PROGRESS_END - End Operation.
-Elapsed time =      4 sec.
-WARNING:ProjectMgmt:137 - Could not remove the file   <M:/MASTER/COMPET/Trigger/HW/HDL/top/top/_impact.cmd> - cleanup failed.
-WARNING:ProjectMgmt:137 - Could not remove the file   <M:/MASTER/COMPET/Trigger/HW/HDL/top/top/_impact.log> - cleanup failed.
-// *** BATCH CMD : setMode -bs
-// *** BATCH CMD : deleteDevice -position 1
-// *** BATCH CMD : setMode -bs
-// *** BATCH CMD : setMode -bs
+Cable is not connected.
 GUI --- Auto connect to cable...
 // *** BATCH CMD : setCable -port auto
 AutoDetecting cable. Please wait.
@@ -431,33 +160,15 @@ Type = 0x0004.
  Cable Type = 3, Revision = 0.
  Setting cable speed to 6 MHz.
 Cable connection established.
-Firmware version = 1303.
+Firmware version = 1029.
 File version of C:/Xilinx/10.1/ISE/data/xusb_xlp.hex = 1303.
 Firmware hex file version = 1303.
+Downloading C:/Xilinx/10.1/ISE/data/xusb_xlp.hex.
+Downloaded firmware version = 1303.
 PLD file version = 0012h.
  PLD version = 0012h.
 PROGRESS_END - End Operation.
 Elapsed time =      2 sec.
-Attempting to identify devices in the boundary-scan chain configuration...// *** BATCH CMD : Identify 
-PROGRESS_START - Starting Operation.
-Identifying chain contents ....'1': : Manufacturer's ID =Xilinx xc5vfx30t, Version : 6
-INFO:iMPACT:1777 - 
-   Reading C:/Xilinx/10.1/ISE/virtex5/data/xc5vfx30t.bsd...
-INFO:iMPACT:501 - '1': Added Device xc5vfx30t successfully.
-----------------------------------------------------------------------
-----------------------------------------------------------------------
-done.
-PROGRESS_END - End Operation.
-Elapsed time =      0 sec.
-// *** BATCH CMD : identifyMPM 
-// *** BATCH CMD : assignFile -p 1 -file"M:/MASTER/COMPET/Trigger/HW/HDL/top/top/top.bit"
-'1': Loading file 'M:/MASTER/COMPET/Trigger/HW/HDL/top/top/top.bit' ...
-done.
-INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
-   but the original bitstream file remains unchanged.
-INFO:iMPACT:501 - '1': Added Device xc5vfx30t successfully.
-----------------------------------------------------------------------
-----------------------------------------------------------------------
 // *** BATCH CMD : Program -p 1 
 Maximum TCK operating frequency for this device chain: 33000000.
 Validating chain...
@@ -479,9 +190,9 @@ End of startup signal from Startup block          :         1
 status of GTS_CFG_B                               :         1
 status of GWE                                     :         1
 status of GHIGH                                   :         1
-value of MODE pin M0                              :         0
-value of MODE pin M1                              :         1
-Value of MODE pin M2                              :         0
+value of MODE pin M0                              :         1
+value of MODE pin M1                              :         0
+Value of MODE pin M2                              :         1
 Internal signal indicates when housecleaning is completed:         1
 Value driver in from INIT pad                     :         1
 Internal signal indicates that chip is configured :         1
@@ -496,7 +207,7 @@ E-fuse program voltage available                  :         0
 SPI Flash Type[22] Select                         :         0
 SPI Flash Type[23] Select                         :         0
 SPI Flash Type[24] Select                         :         0
-CFG bus width auto detection result               :         1
+CFG bus width auto detection result               :         0
 CFG bus width auto detection result               :         0
 Reserved                                          :         0
 BPI address wrap around error                     :         0
@@ -504,15 +215,16 @@ IPROG pulsed                                      :         0
 read back crc error                               :         0
 Indicates that efuse logic is busy                :         0
 INFO:iMPACT:2219 - Status register values:
-INFO:iMPACT - 0011 1111 0101 1110 0000 1000 0100 0000 
+INFO:iMPACT - 0011 1111 1011 1110 0000 1000 0000 0000 
 INFO:iMPACT:579 - '1': Completed downloading bit file to device.
  Match_cycle = NoWait.
 Match cycle: NoWait
 INFO:iMPACT - '1': Checking done pin....done.
 '1': Programmed successfully.
 PROGRESS_END - End Operation.
-Elapsed time =      5 sec.
+Elapsed time =      4 sec.
 Cable is not connected.
+// *** BATCH CMD : cutDevice -p 1
 GUI --- Auto connect to cable...
 // *** BATCH CMD : setCable -port auto
 AutoDetecting cable. Please wait.
@@ -654,25 +366,25 @@ Downloaded firmware version = 1303.
 PLD file version = 0012h.
  PLD version = 0012h.
 PROGRESS_END - End Operation.
-Elapsed time =      2 sec.
+Elapsed time =      3 sec.
 Attempting to identify devices in the boundary-scan chain configuration...// *** BATCH CMD : Identify 
 PROGRESS_START - Starting Operation.
-Identifying chain contents ....'1': : Manufacturer's ID =Xilinx xc5vfx30t, Version : 6
+Identifying chain contents ....'1': : Manufacturer's ID =Xilinx xc5vlx50t, Version : 12
 INFO:iMPACT:1777 - 
-   Reading C:/Xilinx/10.1/ISE/virtex5/data/xc5vfx30t.bsd...
-INFO:iMPACT:501 - '1': Added Device xc5vfx30t successfully.
+   Reading C:/Xilinx/10.1/ISE/virtex5/data/xc5vlx50t.bsd...
+INFO:iMPACT:501 - '1': Added Device xc5vlx50t successfully.
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 done.
 PROGRESS_END - End Operation.
-Elapsed time =      0 sec.
+Elapsed time =      1 sec.
 // *** BATCH CMD : identifyMPM 
-// *** BATCH CMD : assignFile -p 1 -file"M:/MASTER/COMPET/Trigger/HW/HDL/top/top/top.bit"
-'1': Loading file 'M:/MASTER/COMPET/Trigger/HW/HDL/top/top/top.bit' ...
+// *** BATCH CMD : assignFile -p 1 -file "Y:/bitfile/xilinx_v5_50.bit"
+'1': Loading file 'Y:/bitfile/xilinx_v5_50.bit' ...
 done.
 INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
    but the original bitstream file remains unchanged.
-INFO:iMPACT:501 - '1': Added Device xc5vfx30t successfully.
+INFO:iMPACT:501 - '1': Added Device xc5vlx50t successfully.
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 // *** BATCH CMD : Program -p 1 
@@ -680,157 +392,6 @@ Maximum TCK operating frequency for this device chain: 33000000.
 Validating chain...
 Boundary-scan chain validated successfully.
 1: Device Temperature: Current Reading: -273.00 C
-PROGRESS_START - Starting Operation.
-1: VCCINT Supply: Current Reading:   0.000 V
-1: VCCAUX Supply: Current Reading:   0.000 V
-'1': Programming device...
- Match_cycle = NoWait.
-Match cycle: NoWait
-done.
-'1': Reading status register contents...
-CRC error                                         :         0
-Decryptor security set                            :         0
-DCM locked                                        :         1
-DCI matched                                       :         1
-End of startup signal from Startup block          :         1
-status of GTS_CFG_B                               :         1
-status of GWE                                     :         1
-status of GHIGH                                   :         1
-value of MODE pin M0                              :         0
-value of MODE pin M1                              :         1
-Value of MODE pin M2                              :         0
-Internal signal indicates when housecleaning is completed:         1
-Value driver in from INIT pad                     :         1
-Internal signal indicates that chip is configured :         1
-Value of DONE pin                                 :         1
-Indicates when ID value written does not match chip ID:         0
-Decryptor error Signal                            :         0
-System Monitor Over-Temperature Alarm             :         0
-startup_state[18] CFG startup state machine       :         0
-startup_state[19] CFG startup state machine       :         0
-startup_state[20] CFG startup state machine       :         1
-E-fuse program voltage available                  :         0
-SPI Flash Type[22] Select                         :         0
-SPI Flash Type[23] Select                         :         0
-SPI Flash Type[24] Select                         :         0
-CFG bus width auto detection result               :         1
-CFG bus width auto detection result               :         0
-Reserved                                          :         0
-BPI address wrap around error                     :         0
-IPROG pulsed                                      :         0
-read back crc error                               :         0
-Indicates that efuse logic is busy                :         0
-INFO:iMPACT:2219 - Status register values:
-INFO:iMPACT - 0011 1111 0101 1110 0000 1000 0100 0000 
-INFO:iMPACT:579 - '1': Completed downloading bit file to device.
- Match_cycle = NoWait.
-Match cycle: NoWait
-INFO:iMPACT - '1': Checking done pin....done.
-'1': Programmed successfully.
-PROGRESS_END - End Operation.
-Elapsed time =      4 sec.
-Cable is not connected.
-GUI --- Auto connect to cable...
-// *** BATCH CMD : setCable -port auto
-AutoDetecting cable. Please wait.
-PROGRESS_START - Starting Operation.
-Connecting to cable (Parallel Port - LPT1).
-Checking cable driver.
- Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
- LPT base address = 0378h.
- ECP base address = 0778h.
-Cable connection failed.
-Connecting to cable (Parallel Port - LPT2).
-Checking cable driver.
- Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
-Cable connection failed.
-Connecting to cable (Parallel Port - LPT3).
-Checking cable driver.
- Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
-Cable connection failed.
-Connecting to cable (Parallel Port - LPT4).
-Checking cable driver.
- Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
-Cable connection failed.
-Connecting to cable (Usb Port - USB21).
-Checking cable driver.
- Driver file xusb_xlp.sys found.
- Driver version: src=1029, dest=1029.
- Driver windrvr6.sys version = 8.1.1.0. WinDriver v8.11 Jungo (c) 1997 - 2006 Build Date: Oct 16 2006 X86 32bit SYS12:35:07, version = 811.
- Cable PID = 0008.
- Max current requested during enumeration is 74 mA.
-Type = 0x0004.
- Cable Type = 3, Revision = 0.
- Setting cable speed to 6 MHz.
-Cable connection established.
-Firmware version = 1029.
-File version of C:/Xilinx/10.1/ISE/data/xusb_xlp.hex = 1303.
-Firmware hex file version = 1303.
-Downloading C:/Xilinx/10.1/ISE/data/xusb_xlp.hex.
-Downloaded firmware version = 1303.
-PLD file version = 0012h.
- PLD version = 0012h.
-PROGRESS_END - End Operation.
-Elapsed time =      2 sec.
-// *** BATCH CMD : Program -p 1 
-Maximum TCK operating frequency for this device chain: 33000000.
-Validating chain...
-Boundary-scan chain validated successfully.
-PROGRESS_START - Starting Operation.
-1: Device Temperature: Current Reading: -273.00 C
-1: VCCINT Supply: Current Reading:   0.000 V
-1: VCCAUX Supply: Current Reading:   0.000 V
-'1': Programming device...
- Match_cycle = NoWait.
-Match cycle: NoWait
-done.
-'1': Reading status register contents...
-CRC error                                         :         0
-Decryptor security set                            :         0
-DCM locked                                        :         1
-DCI matched                                       :         1
-End of startup signal from Startup block          :         1
-status of GTS_CFG_B                               :         1
-status of GWE                                     :         1
-status of GHIGH                                   :         1
-value of MODE pin M0                              :         0
-value of MODE pin M1                              :         1
-Value of MODE pin M2                              :         0
-Internal signal indicates when housecleaning is completed:         1
-Value driver in from INIT pad                     :         1
-Internal signal indicates that chip is configured :         1
-Value of DONE pin                                 :         1
-Indicates when ID value written does not match chip ID:         0
-Decryptor error Signal                            :         0
-System Monitor Over-Temperature Alarm             :         0
-startup_state[18] CFG startup state machine       :         0
-startup_state[19] CFG startup state machine       :         0
-startup_state[20] CFG startup state machine       :         1
-E-fuse program voltage available                  :         0
-SPI Flash Type[22] Select                         :         0
-SPI Flash Type[23] Select                         :         0
-SPI Flash Type[24] Select                         :         0
-CFG bus width auto detection result               :         1
-CFG bus width auto detection result               :         0
-Reserved                                          :         0
-BPI address wrap around error                     :         0
-IPROG pulsed                                      :         0
-read back crc error                               :         0
-Indicates that efuse logic is busy                :         0
-INFO:iMPACT:2219 - Status register values:
-INFO:iMPACT - 0011 1111 0101 1110 0000 1000 0100 0000 
-INFO:iMPACT:579 - '1': Completed downloading bit file to device.
- Match_cycle = NoWait.
-Match cycle: NoWait
-INFO:iMPACT - '1': Checking done pin....done.
-'1': Programmed successfully.
-PROGRESS_END - End Operation.
-Elapsed time =      4 sec.
-// *** BATCH CMD : Program -p 1 
-Maximum TCK operating frequency for this device chain: 33000000.
-Validating chain...
-Boundary-scan chain validated successfully.
-1: Device Temperature: Current Reading: -273.00 C
 1: VCCINT Supply: Current Reading:   0.000 V
 1: VCCAUX Supply: Current Reading:   0.000 V
 PROGRESS_START - Starting Operation.
@@ -880,659 +441,14 @@ INFO:iMPACT - '1': Checking done pin....done.
 '1': Programmed successfully.
 PROGRESS_END - End Operation.
 Elapsed time =      4 sec.
-Updating config file M:/MASTER/COMPET/Trigger/HW/HDL/top/top/top.bit...
-// *** BATCH CMD : Program -p 1 
-Maximum TCK operating frequency for this device chain: 33000000.
-Validating chain...
-Boundary-scan chain validated successfully.
-1: Device Temperature: Current Reading: -273.00 C
-1: VCCINT Supply: Current Reading:   0.000 V
-1: VCCAUX Supply: Current Reading:   0.000 V
-PROGRESS_START - Starting Operation.
-'1': Programming device...
- Match_cycle = NoWait.
-Match cycle: NoWait
-done.
-'1': Reading status register contents...
-CRC error                                         :         0
-Decryptor security set                            :         0
-DCM locked                                        :         1
-DCI matched                                       :         1
-End of startup signal from Startup block          :         1
-status of GTS_CFG_B                               :         1
-status of GWE                                     :         1
-status of GHIGH                                   :         1
-value of MODE pin M0                              :         0
-value of MODE pin M1                              :         1
-Value of MODE pin M2                              :         0
-Internal signal indicates when housecleaning is completed:         1
-Value driver in from INIT pad                     :         1
-Internal signal indicates that chip is configured :         1
-Value of DONE pin                                 :         1
-Indicates when ID value written does not match chip ID:         0
-Decryptor error Signal                            :         0
-System Monitor Over-Temperature Alarm             :         0
-startup_state[18] CFG startup state machine       :         0
-startup_state[19] CFG startup state machine       :         0
-startup_state[20] CFG startup state machine       :         1
-E-fuse program voltage available                  :         0
-SPI Flash Type[22] Select                         :         0
-SPI Flash Type[23] Select                         :         0
-SPI Flash Type[24] Select                         :         0
-CFG bus width auto detection result               :         1
-CFG bus width auto detection result               :         0
-Reserved                                          :         0
-BPI address wrap around error                     :         0
-IPROG pulsed                                      :         0
-read back crc error                               :         0
-Indicates that efuse logic is busy                :         0
-INFO:iMPACT:2219 - Status register values:
-INFO:iMPACT - 0011 1111 0101 1110 0000 1000 0100 0000 
-INFO:iMPACT:579 - '1': Completed downloading bit file to device.
- Match_cycle = NoWait.
-Match cycle: NoWait
-INFO:iMPACT - '1': Checking done pin....done.
-'1': Programmed successfully.
-PROGRESS_END - End Operation.
-Elapsed time =      4 sec.
-// *** BATCH CMD : Program -p 1 
-Maximum TCK operating frequency for this device chain: 33000000.
-Validating chain...
-Boundary-scan chain validated successfully.
-PROGRESS_START - Starting Operation.
-1: Device Temperature: Current Reading: -273.00 C
-1: VCCINT Supply: Current Reading:   0.000 V
-1: VCCAUX Supply: Current Reading:   0.000 V
-'1': Programming device...
- Match_cycle = NoWait.
-Match cycle: NoWait
-done.
-'1': Reading status register contents...
-CRC error                                         :         0
-Decryptor security set                            :         0
-DCM locked                                        :         1
-DCI matched                                       :         1
-End of startup signal from Startup block          :         1
-status of GTS_CFG_B                               :         1
-status of GWE                                     :         1
-status of GHIGH                                   :         1
-value of MODE pin M0                              :         0
-value of MODE pin M1                              :         1
-Value of MODE pin M2                              :         0
-Internal signal indicates when housecleaning is completed:         1
-Value driver in from INIT pad                     :         1
-Internal signal indicates that chip is configured :         1
-Value of DONE pin                                 :         1
-Indicates when ID value written does not match chip ID:         0
-Decryptor error Signal                            :         0
-System Monitor Over-Temperature Alarm             :         0
-startup_state[18] CFG startup state machine       :         0
-startup_state[19] CFG startup state machine       :         0
-startup_state[20] CFG startup state machine       :         1
-E-fuse program voltage available                  :         0
-SPI Flash Type[22] Select                         :         0
-SPI Flash Type[23] Select                         :         0
-SPI Flash Type[24] Select                         :         0
-CFG bus width auto detection result               :         1
-CFG bus width auto detection result               :         0
-Reserved                                          :         0
-BPI address wrap around error                     :         0
-IPROG pulsed                                      :         0
-read back crc error                               :         0
-Indicates that efuse logic is busy                :         0
-INFO:iMPACT:2219 - Status register values:
-INFO:iMPACT - 0011 1111 0101 1110 0000 1000 0100 0000 
-INFO:iMPACT:579 - '1': Completed downloading bit file to device.
- Match_cycle = NoWait.
-Match cycle: NoWait
-INFO:iMPACT - '1': Checking done pin....done.
-'1': Programmed successfully.
-PROGRESS_END - End Operation.
-Elapsed time =      4 sec.
-// *** BATCH CMD : Program -p 1 
-Maximum TCK operating frequency for this device chain: 33000000.
-Validating chain...
-Boundary-scan chain validated successfully.
-1: Device Temperature: Current Reading: -273.00 C
-1: VCCINT Supply: Current Reading:   0.000 V
-1: VCCAUX Supply: Current Reading:   0.000 V
-PROGRESS_START - Starting Operation.
-'1': Programming device...
- Match_cycle = NoWait.
-Match cycle: NoWait
-done.
-'1': Reading status register contents...
-CRC error                                         :         0
-Decryptor security set                            :         0
-DCM locked                                        :         1
-DCI matched                                       :         1
-End of startup signal from Startup block          :         1
-status of GTS_CFG_B                               :         1
-status of GWE                                     :         1
-status of GHIGH                                   :         1
-value of MODE pin M0                              :         0
-value of MODE pin M1                              :         1
-Value of MODE pin M2                              :         0
-Internal signal indicates when housecleaning is completed:         1
-Value driver in from INIT pad                     :         1
-Internal signal indicates that chip is configured :         1
-Value of DONE pin                                 :         1
-Indicates when ID value written does not match chip ID:         0
-Decryptor error Signal                            :         0
-System Monitor Over-Temperature Alarm             :         0
-startup_state[18] CFG startup state machine       :         0
-startup_state[19] CFG startup state machine       :         0
-startup_state[20] CFG startup state machine       :         1
-E-fuse program voltage available                  :         0
-SPI Flash Type[22] Select                         :         0
-SPI Flash Type[23] Select                         :         0
-SPI Flash Type[24] Select                         :         0
-CFG bus width auto detection result               :         1
-CFG bus width auto detection result               :         0
-Reserved                                          :         0
-BPI address wrap around error                     :         0
-IPROG pulsed                                      :         0
-read back crc error                               :         0
-Indicates that efuse logic is busy                :         0
-INFO:iMPACT:2219 - Status register values:
-INFO:iMPACT - 0011 1111 0101 1110 0000 1000 0100 0000 
-INFO:iMPACT:579 - '1': Completed downloading bit file to device.
- Match_cycle = NoWait.
-Match cycle: NoWait
-INFO:iMPACT - '1': Checking done pin....done.
-'1': Programmed successfully.
-PROGRESS_END - End Operation.
-Elapsed time =      4 sec.
-// *** BATCH CMD : Program -p 1 
-Maximum TCK operating frequency for this device chain: 33000000.
-Validating chain...
-Boundary-scan chain validated successfully.
-1: Device Temperature: Current Reading: -273.00 C
-1: VCCINT Supply: Current Reading:   0.000 V
-1: VCCAUX Supply: Current Reading:   0.000 V
-PROGRESS_START - Starting Operation.
-'1': Programming device...
- Match_cycle = NoWait.
-Match cycle: NoWait
-done.
-'1': Reading status register contents...
-CRC error                                         :         0
-Decryptor security set                            :         0
-DCM locked                                        :         1
-DCI matched                                       :         1
-End of startup signal from Startup block          :         1
-status of GTS_CFG_B                               :         1
-status of GWE                                     :         1
-status of GHIGH                                   :         1
-value of MODE pin M0                              :         0
-value of MODE pin M1                              :         1
-Value of MODE pin M2                              :         0
-Internal signal indicates when housecleaning is completed:         1
-Value driver in from INIT pad                     :         1
-Internal signal indicates that chip is configured :         1
-Value of DONE pin                                 :         1
-Indicates when ID value written does not match chip ID:         0
-Decryptor error Signal                            :         0
-System Monitor Over-Temperature Alarm             :         0
-startup_state[18] CFG startup state machine       :         0
-startup_state[19] CFG startup state machine       :         0
-startup_state[20] CFG startup state machine       :         1
-E-fuse program voltage available                  :         0
-SPI Flash Type[22] Select                         :         0
-SPI Flash Type[23] Select                         :         0
-SPI Flash Type[24] Select                         :         0
-CFG bus width auto detection result               :         1
-CFG bus width auto detection result               :         0
-Reserved                                          :         0
-BPI address wrap around error                     :         0
-IPROG pulsed                                      :         0
-read back crc error                               :         0
-Indicates that efuse logic is busy                :         0
-INFO:iMPACT:2219 - Status register values:
-INFO:iMPACT - 0011 1111 0101 1110 0000 1000 0100 0000 
-INFO:iMPACT:579 - '1': Completed downloading bit file to device.
- Match_cycle = NoWait.
-Match cycle: NoWait
-INFO:iMPACT - '1': Checking done pin....done.
-'1': Programmed successfully.
-PROGRESS_END - End Operation.
-Elapsed time =      4 sec.
-// *** BATCH CMD : Program -p 1 
-Maximum TCK operating frequency for this device chain: 33000000.
-Validating chain...
-Boundary-scan chain validated successfully.
-1: Device Temperature: Current Reading: -273.00 C
-PROGRESS_START - Starting Operation.
-1: VCCINT Supply: Current Reading:   0.000 V
-1: VCCAUX Supply: Current Reading:   0.000 V
-'1': Programming device...
- Match_cycle = NoWait.
-Match cycle: NoWait
-done.
-'1': Reading status register contents...
-CRC error                                         :         0
-Decryptor security set                            :         0
-DCM locked                                        :         1
-DCI matched                                       :         1
-End of startup signal from Startup block          :         1
-status of GTS_CFG_B                               :         1
-status of GWE                                     :         1
-status of GHIGH                                   :         1
-value of MODE pin M0                              :         0
-value of MODE pin M1                              :         1
-Value of MODE pin M2                              :         0
-Internal signal indicates when housecleaning is completed:         1
-Value driver in from INIT pad                     :         1
-Internal signal indicates that chip is configured :         1
-Value of DONE pin                                 :         1
-Indicates when ID value written does not match chip ID:         0
-Decryptor error Signal                            :         0
-System Monitor Over-Temperature Alarm             :         0
-startup_state[18] CFG startup state machine       :         0
-startup_state[19] CFG startup state machine       :         0
-startup_state[20] CFG startup state machine       :         1
-E-fuse program voltage available                  :         0
-SPI Flash Type[22] Select                         :         0
-SPI Flash Type[23] Select                         :         0
-SPI Flash Type[24] Select                         :         0
-CFG bus width auto detection result               :         1
-CFG bus width auto detection result               :         0
-Reserved                                          :         0
-BPI address wrap around error                     :         0
-IPROG pulsed                                      :         0
-read back crc error                               :         0
-Indicates that efuse logic is busy                :         0
-INFO:iMPACT:2219 - Status register values:
-INFO:iMPACT - 0011 1111 0101 1110 0000 1000 0100 0000 
-INFO:iMPACT:579 - '1': Completed downloading bit file to device.
- Match_cycle = NoWait.
-Match cycle: NoWait
-INFO:iMPACT - '1': Checking done pin....done.
-'1': Programmed successfully.
-PROGRESS_END - End Operation.
-Elapsed time =      4 sec.
-// *** BATCH CMD : Program -p 1 
-Maximum TCK operating frequency for this device chain: 33000000.
-Validating chain...
-Boundary-scan chain validated successfully.
-PROGRESS_START - Starting Operation.
-1: Device Temperature: Current Reading: -273.00 C
-1: VCCINT Supply: Current Reading:   0.000 V
-1: VCCAUX Supply: Current Reading:   0.000 V
-'1': Programming device...
- Match_cycle = NoWait.
-Match cycle: NoWait
-done.
-'1': Reading status register contents...
-CRC error                                         :         0
-Decryptor security set                            :         0
-DCM locked                                        :         1
-DCI matched                                       :         1
-End of startup signal from Startup block          :         1
-status of GTS_CFG_B                               :         1
-status of GWE                                     :         1
-status of GHIGH                                   :         1
-value of MODE pin M0                              :         0
-value of MODE pin M1                              :         1
-Value of MODE pin M2                              :         0
-Internal signal indicates when housecleaning is completed:         1
-Value driver in from INIT pad                     :         1
-Internal signal indicates that chip is configured :         1
-Value of DONE pin                                 :         1
-Indicates when ID value written does not match chip ID:         0
-Decryptor error Signal                            :         0
-System Monitor Over-Temperature Alarm             :         0
-startup_state[18] CFG startup state machine       :         0
-startup_state[19] CFG startup state machine       :         0
-startup_state[20] CFG startup state machine       :         1
-E-fuse program voltage available                  :         0
-SPI Flash Type[22] Select                         :         0
-SPI Flash Type[23] Select                         :         0
-SPI Flash Type[24] Select                         :         0
-CFG bus width auto detection result               :         1
-CFG bus width auto detection result               :         0
-Reserved                                          :         0
-BPI address wrap around error                     :         0
-IPROG pulsed                                      :         0
-read back crc error                               :         0
-Indicates that efuse logic is busy                :         0
-INFO:iMPACT:2219 - Status register values:
-INFO:iMPACT - 0011 1111 0101 1110 0000 1000 0100 0000 
-INFO:iMPACT:579 - '1': Completed downloading bit file to device.
- Match_cycle = NoWait.
-Match cycle: NoWait
-INFO:iMPACT - '1': Checking done pin....done.
-'1': Programmed successfully.
-PROGRESS_END - End Operation.
-Elapsed time =      4 sec.
-Updating config file M:/MASTER/COMPET/Trigger/HW/HDL/top/top/top.bit...
-// *** BATCH CMD : Program -p 1 
-Maximum TCK operating frequency for this device chain: 33000000.
-Validating chain...
-Boundary-scan chain validated successfully.
-PROGRESS_START - Starting Operation.
-1: Device Temperature: Current Reading: -273.00 C
-1: VCCINT Supply: Current Reading:   0.000 V
-1: VCCAUX Supply: Current Reading:   0.000 V
-'1': Programming device...
- Match_cycle = NoWait.
-Match cycle: NoWait
-done.
-'1': Reading status register contents...
-CRC error                                         :         0
-Decryptor security set                            :         0
-DCM locked                                        :         1
-DCI matched                                       :         1
-End of startup signal from Startup block          :         1
-status of GTS_CFG_B                               :         1
-status of GWE                                     :         1
-status of GHIGH                                   :         1
-value of MODE pin M0                              :         0
-value of MODE pin M1                              :         1
-Value of MODE pin M2                              :         0
-Internal signal indicates when housecleaning is completed:         1
-Value driver in from INIT pad                     :         1
-Internal signal indicates that chip is configured :         1
-Value of DONE pin                                 :         1
-Indicates when ID value written does not match chip ID:         0
-Decryptor error Signal                            :         0
-System Monitor Over-Temperature Alarm             :         0
-startup_state[18] CFG startup state machine       :         0
-startup_state[19] CFG startup state machine       :         0
-startup_state[20] CFG startup state machine       :         1
-E-fuse program voltage available                  :         0
-SPI Flash Type[22] Select                         :         0
-SPI Flash Type[23] Select                         :         0
-SPI Flash Type[24] Select                         :         0
-CFG bus width auto detection result               :         1
-CFG bus width auto detection result               :         0
-Reserved                                          :         0
-BPI address wrap around error                     :         0
-IPROG pulsed                                      :         0
-read back crc error                               :         0
-Indicates that efuse logic is busy                :         0
-INFO:iMPACT:2219 - Status register values:
-INFO:iMPACT - 0011 1111 0101 1110 0000 1000 0100 0000 
-INFO:iMPACT:579 - '1': Completed downloading bit file to device.
- Match_cycle = NoWait.
-Match cycle: NoWait
-INFO:iMPACT - '1': Checking done pin....done.
-'1': Programmed successfully.
-PROGRESS_END - End Operation.
-Elapsed time =      4 sec.
-// *** BATCH CMD : Program -p 1 
-Maximum TCK operating frequency for this device chain: 33000000.
-Validating chain...
-Boundary-scan chain validated successfully.
-1: Device Temperature: Current Reading: -273.00 C
-1: VCCINT Supply: Current Reading:   0.000 V
-1: VCCAUX Supply: Current Reading:   0.000 V
-PROGRESS_START - Starting Operation.
-'1': Programming device...
- Match_cycle = NoWait.
-Match cycle: NoWait
-done.
-'1': Reading status register contents...
-CRC error                                         :         0
-Decryptor security set                            :         0
-DCM locked                                        :         1
-DCI matched                                       :         1
-End of startup signal from Startup block          :         1
-status of GTS_CFG_B                               :         1
-status of GWE                                     :         1
-status of GHIGH                                   :         1
-value of MODE pin M0                              :         0
-value of MODE pin M1                              :         1
-Value of MODE pin M2                              :         0
-Internal signal indicates when housecleaning is completed:         1
-Value driver in from INIT pad                     :         1
-Internal signal indicates that chip is configured :         1
-Value of DONE pin                                 :         1
-Indicates when ID value written does not match chip ID:         0
-Decryptor error Signal                            :         0
-System Monitor Over-Temperature Alarm             :         0
-startup_state[18] CFG startup state machine       :         0
-startup_state[19] CFG startup state machine       :         0
-startup_state[20] CFG startup state machine       :         1
-E-fuse program voltage available                  :         0
-SPI Flash Type[22] Select                         :         0
-SPI Flash Type[23] Select                         :         0
-SPI Flash Type[24] Select                         :         0
-CFG bus width auto detection result               :         1
-CFG bus width auto detection result               :         0
-Reserved                                          :         0
-BPI address wrap around error                     :         0
-IPROG pulsed                                      :         0
-read back crc error                               :         0
-Indicates that efuse logic is busy                :         0
-INFO:iMPACT:2219 - Status register values:
-INFO:iMPACT - 0011 1111 0101 1110 0000 1000 0100 0000 
-INFO:iMPACT:579 - '1': Completed downloading bit file to device.
- Match_cycle = NoWait.
-Match cycle: NoWait
-INFO:iMPACT - '1': Checking done pin....done.
-'1': Programmed successfully.
-PROGRESS_END - End Operation.
-Elapsed time =      4 sec.
-// *** BATCH CMD : Program -p 1 
-Maximum TCK operating frequency for this device chain: 33000000.
-Validating chain...
-Boundary-scan chain validated successfully.
-1: Device Temperature: Current Reading: -273.00 C
-1: VCCINT Supply: Current Reading:   0.000 V
-1: VCCAUX Supply: Current Reading:   0.000 V
-PROGRESS_START - Starting Operation.
-'1': Programming device...
- Match_cycle = NoWait.
-Match cycle: NoWait
-done.
-'1': Reading status register contents...
-CRC error                                         :         0
-Decryptor security set                            :         0
-DCM locked                                        :         1
-DCI matched                                       :         1
-End of startup signal from Startup block          :         1
-status of GTS_CFG_B                               :         1
-status of GWE                                     :         1
-status of GHIGH                                   :         1
-value of MODE pin M0                              :         0
-value of MODE pin M1                              :         1
-Value of MODE pin M2                              :         0
-Internal signal indicates when housecleaning is completed:         1
-Value driver in from INIT pad                     :         1
-Internal signal indicates that chip is configured :         1
-Value of DONE pin                                 :         1
-Indicates when ID value written does not match chip ID:         0
-Decryptor error Signal                            :         0
-System Monitor Over-Temperature Alarm             :         0
-startup_state[18] CFG startup state machine       :         0
-startup_state[19] CFG startup state machine       :         0
-startup_state[20] CFG startup state machine       :         1
-E-fuse program voltage available                  :         0
-SPI Flash Type[22] Select                         :         0
-SPI Flash Type[23] Select                         :         0
-SPI Flash Type[24] Select                         :         0
-CFG bus width auto detection result               :         1
-CFG bus width auto detection result               :         0
-Reserved                                          :         0
-BPI address wrap around error                     :         0
-IPROG pulsed                                      :         0
-read back crc error                               :         0
-Indicates that efuse logic is busy                :         0
-INFO:iMPACT:2219 - Status register values:
-INFO:iMPACT - 0011 1111 0101 1110 0000 1000 0100 0000 
-INFO:iMPACT:579 - '1': Completed downloading bit file to device.
- Match_cycle = NoWait.
-Match cycle: NoWait
-INFO:iMPACT - '1': Checking done pin....done.
-'1': Programmed successfully.
-PROGRESS_END - End Operation.
-Elapsed time =      4 sec.
-Updating config file M:/MASTER/COMPET/Trigger/HW/HDL/top/top/top.bit...
-// *** BATCH CMD : Program -p 1 
-Maximum TCK operating frequency for this device chain: 33000000.
-Validating chain...
-Boundary-scan chain validated successfully.
-1: Device Temperature: Current Reading: -273.00 C
-1: VCCINT Supply: Current Reading:   0.000 V
-1: VCCAUX Supply: Current Reading:   0.000 V
-PROGRESS_START - Starting Operation.
-'1': Programming device...
- Match_cycle = NoWait.
-Match cycle: NoWait
-done.
-'1': Reading status register contents...
-CRC error                                         :         0
-Decryptor security set                            :         0
-DCM locked                                        :         1
-DCI matched                                       :         1
-End of startup signal from Startup block          :         1
-status of GTS_CFG_B                               :         1
-status of GWE                                     :         1
-status of GHIGH                                   :         1
-value of MODE pin M0                              :         0
-value of MODE pin M1                              :         1
-Value of MODE pin M2                              :         0
-Internal signal indicates when housecleaning is completed:         1
-Value driver in from INIT pad                     :         1
-Internal signal indicates that chip is configured :         1
-Value of DONE pin                                 :         1
-Indicates when ID value written does not match chip ID:         0
-Decryptor error Signal                            :         0
-System Monitor Over-Temperature Alarm             :         0
-startup_state[18] CFG startup state machine       :         0
-startup_state[19] CFG startup state machine       :         0
-startup_state[20] CFG startup state machine       :         1
-E-fuse program voltage available                  :         0
-SPI Flash Type[22] Select                         :         0
-SPI Flash Type[23] Select                         :         0
-SPI Flash Type[24] Select                         :         0
-CFG bus width auto detection result               :         1
-CFG bus width auto detection result               :         0
-Reserved                                          :         0
-BPI address wrap around error                     :         0
-IPROG pulsed                                      :         0
-read back crc error                               :         0
-Indicates that efuse logic is busy                :         0
-INFO:iMPACT:2219 - Status register values:
-INFO:iMPACT - 0011 1111 0101 1110 0000 1000 0100 0000 
-INFO:iMPACT:579 - '1': Completed downloading bit file to device.
- Match_cycle = NoWait.
-Match cycle: NoWait
-INFO:iMPACT - '1': Checking done pin....done.
-'1': Programmed successfully.
-PROGRESS_END - End Operation.
-Elapsed time =      4 sec.
-Updating config file M:/MASTER/COMPET/Trigger/HW/HDL/top/top/top.bit...
-// *** BATCH CMD : Program -p 1 
-Maximum TCK operating frequency for this device chain: 33000000.
-Validating chain...
-Boundary-scan chain validated successfully.
-PROGRESS_START - Starting Operation.
-1: Device Temperature: Current Reading: -273.00 C
-1: VCCINT Supply: Current Reading:   0.000 V
-1: VCCAUX Supply: Current Reading:   0.000 V
-'1': Programming device...
- Match_cycle = NoWait.
-Match cycle: NoWait
-done.
-'1': Reading status register contents...
-CRC error                                         :         0
-Decryptor security set                            :         0
-DCM locked                                        :         1
-DCI matched                                       :         1
-End of startup signal from Startup block          :         1
-status of GTS_CFG_B                               :         1
-status of GWE                                     :         1
-status of GHIGH                                   :         1
-value of MODE pin M0                              :         0
-value of MODE pin M1                              :         1
-Value of MODE pin M2                              :         0
-Internal signal indicates when housecleaning is completed:         1
-Value driver in from INIT pad                     :         1
-Internal signal indicates that chip is configured :         1
-Value of DONE pin                                 :         1
-Indicates when ID value written does not match chip ID:         0
-Decryptor error Signal                            :         0
-System Monitor Over-Temperature Alarm             :         0
-startup_state[18] CFG startup state machine       :         0
-startup_state[19] CFG startup state machine       :         0
-startup_state[20] CFG startup state machine       :         1
-E-fuse program voltage available                  :         0
-SPI Flash Type[22] Select                         :         0
-SPI Flash Type[23] Select                         :         0
-SPI Flash Type[24] Select                         :         0
-CFG bus width auto detection result               :         1
-CFG bus width auto detection result               :         0
-Reserved                                          :         0
-BPI address wrap around error                     :         0
-IPROG pulsed                                      :         0
-read back crc error                               :         0
-Indicates that efuse logic is busy                :         0
-INFO:iMPACT:2219 - Status register values:
-INFO:iMPACT - 0011 1111 0101 1110 0000 1000 0100 0000 
-INFO:iMPACT:579 - '1': Completed downloading bit file to device.
- Match_cycle = NoWait.
-Match cycle: NoWait
-INFO:iMPACT - '1': Checking done pin....done.
-'1': Programmed successfully.
-PROGRESS_END - End Operation.
-Elapsed time =      4 sec.
-Updating config file M:/MASTER/COMPET/Trigger/HW/HDL/top/top/top.bit...
-// *** BATCH CMD : Program -p 1 
-Maximum TCK operating frequency for this device chain: 33000000.
-Validating chain...
-Boundary-scan chain validated successfully.
-1: Device Temperature: Current Reading: -273.00 C
-1: VCCINT Supply: Current Reading:   0.000 V
-1: VCCAUX Supply: Current Reading:   0.000 V
-PROGRESS_START - Starting Operation.
-'1': Programming device...
- Match_cycle = NoWait.
-Match cycle: NoWait
-done.
-'1': Reading status register contents...
-CRC error                                         :         0
-Decryptor security set                            :         0
-DCM locked                                        :         1
-DCI matched                                       :         1
-End of startup signal from Startup block          :         1
-status of GTS_CFG_B                               :         1
-status of GWE                                     :         1
-status of GHIGH                                   :         1
-value of MODE pin M0                              :         0
-value of MODE pin M1                              :         1
-Value of MODE pin M2                              :         0
-Internal signal indicates when housecleaning is completed:         1
-Value driver in from INIT pad                     :         1
-Internal signal indicates that chip is configured :         1
-Value of DONE pin                                 :         1
-Indicates when ID value written does not match chip ID:         0
-Decryptor error Signal                            :         0
-System Monitor Over-Temperature Alarm             :         0
-startup_state[18] CFG startup state machine       :         0
-startup_state[19] CFG startup state machine       :         0
-startup_state[20] CFG startup state machine       :         1
-E-fuse program voltage available                  :         0
-SPI Flash Type[22] Select                         :         0
-SPI Flash Type[23] Select                         :         0
-SPI Flash Type[24] Select                         :         0
-CFG bus width auto detection result               :         1
-CFG bus width auto detection result               :         0
-Reserved                                          :         0
-BPI address wrap around error                     :         0
-IPROG pulsed                                      :         0
-read back crc error                               :         0
-Indicates that efuse logic is busy                :         0
-INFO:iMPACT:2219 - Status register values:
-INFO:iMPACT - 0011 1111 0101 1110 0000 1000 0100 0000 
-INFO:iMPACT:579 - '1': Completed downloading bit file to device.
- Match_cycle = NoWait.
-Match cycle: NoWait
-INFO:iMPACT - '1': Checking done pin....done.
-'1': Programmed successfully.
-PROGRESS_END - End Operation.
-Elapsed time =      4 sec.
-Cable is not connected.
+// *** BATCH CMD : saveProjectFile -file"M:/MASTER/COMPET/Trigger/HW/HDL/top/top/top.ipf"
 // *** BATCH CMD : setMode -bs
 // *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -bs

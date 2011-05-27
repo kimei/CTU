@@ -843,6 +843,7 @@ proc restore { { project_dir "" } } {
       "../../Shared/constants.vhd" 
       "../../Shared/functions.vhd" 
       "../../Sync_Trigger/Sync_trigger.vhd" 
+      "../../Sync_Trigger/edge_detector.vhd" 
       "../../UART/com.vhd" 
       "../../UART/uart.vhd" 
       "../top.vhd" 

@@ -6,7 +6,7 @@
 -- Author     :   <kimei@fyspc-epf02>
 -- Company    : 
 -- Created    : 2011-03-11
--- Last update: 2011-03-21
+-- Last update: 2011-03-31
 -- Platform   : 
 -- Standard   : VHDL'87
 -------------------------------------------------------------------------------
@@ -21,6 +21,8 @@
 
 library ieee;
 use ieee.std_logic_1164.all;
+use std.textio.all;
+
 
 
 library work;
@@ -41,212 +43,82 @@ architecture tb of sync_trigger_tb is
       rst_b         : in  std_logic;
       mclk          : in  std_logic;
       trigger_in    : in  std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
-      trigger_in_b  : in  std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
-      trigger_out   : out std_logic_vector(NUMBER_OF_MODULES-1 downto 0);
-      trigger_out_b : out std_logic_vector(NUMBER_OF_MODULES-1 downto 0));
+      trigger_out   : out std_logic_vector(NUMBER_OF_ROCS-1 downto 0));
   end component;
 
   -- component ports
   signal rst_b         : std_logic;
   signal mclk          : std_logic;
   signal trigger_in    : std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
-  signal trigger_in_b  : std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
-  signal trigger_out   : std_logic_vector(NUMBER_OF_MODULES-1 downto 0);
-  signal trigger_out_b : std_logic_vector(NUMBER_OF_MODULES-1 downto 0);
+
+  signal trigger_out   : std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
+
 
   -- clock
   signal Clk : std_logic := '1';
-
-begin  -- tb
-
-  -- component instantiation
-  DUT : sync_trigger
-    port map (
-      rst_b         => rst_b,
-      mclk          => mclk,
-      trigger_in    => trigger_in,
-      trigger_in_b  => trigger_in_b,
-      trigger_out   => trigger_out,
-      trigger_out_b => trigger_out_b);
-
-  -- clock generation
-  Clk  <= not Clk after 5 ns;
-  mclk <= Clk;
-
-  WaveGen_Proc : process
-  begin
-    rst_b        <= '0';
-    trigger_in   <= (others => '0');
-    trigger_in_b <= (others => '1');
-
-
-    wait for 20 ns;
-    rst_b <= '1';
-    wait for 113 ns;
-
-    trigger_in(1)   <= '1';
-    trigger_in_b(1) <= '0';
-
-    wait for 15 ns;
-    trigger_in(0)   <= '1';
-    trigger_in_b(0) <= '0';
-    wait for 30 ns;
-    trigger_in(1)   <= '0';
-    trigger_in_b(1) <= '1';
-
-
-    wait for 20 ns;
-    trigger_in(0)   <= '0';
-    trigger_in_b(0) <= '1';
-    wait for 27 ns;
-
-    wait for 23 ns;
-    trigger_in(0)   <= '1';
-    trigger_in_b(0) <= '0';
-    wait for 30 ns;
-    trigger_in(0)   <= '0';
-    trigger_in_b(0) <= '1';
-
-    wait for 24 ns;
-    trigger_in(1)   <= '1';
-    trigger_in_b(1) <= '0';
-    wait for 23 ns;
-     trigger_in(0)   <= '1';
-    trigger_in_b(0) <= '0';
-
-    wait for 20 ns;
-    trigger_in(1)   <= '0';
-    trigger_in_b(1) <= '1';
-    wait for 20 ns;
-     trigger_in(0)   <= '0';
-    trigger_in_b(0) <= '1';
-    wait for 20 ns;
-    rst_b <= '1';
-    wait for 113 ns;
-
-    trigger_in(1)   <= '1';
-    trigger_in_b(1) <= '0';
-
-    wait for 15 ns;
-    trigger_in(0)   <= '1';
-    trigger_in_b(0) <= '0';
-    wait for 30 ns;
-    trigger_in(1)   <= '0';
-    trigger_in_b(1) <= '1';
-
-
-    wait for 20 ns;
-    trigger_in(0)   <= '0';
-    trigger_in_b(0) <= '1';
-    wait for 27 ns;
-
-    wait for 32 ns;
-    trigger_in(0)   <= '1';
-    trigger_in_b(0) <= '0';
-    wait for 30 ns;
-    trigger_in(0)   <= '0';
-    trigger_in_b(0) <= '1';
-
---    wait for 18 ns;
---    trigger_in(9)   <= '1';
---    trigger_in_b(9) <= '0';
---    wait for 10 ns;
---     trigger_in(0)   <= '1';
---    trigger_in_b(0) <= '0';
-
---    wait for 22 ns;
---    trigger_in(9)   <= '0';
---    trigger_in_b(9) <= '1';
---    wait for 20 ns;
---     trigger_in(0)   <= '0';
---    trigger_in_b(0) <= '1';
-
---        wait for 15 ns;
---    trigger_in(0)   <= '1';
---    trigger_in_b(0) <= '0';
---    wait for 30 ns;
---    trigger_in(2)   <= '0';
---    trigger_in_b(2) <= '1';
-
-
---    wait for 20 ns;
---    trigger_in(0)   <= '0';
---    trigger_in_b(0) <= '1';
---    wait for 27 ns;
-
---    wait for 23 ns;
---    trigger_in(6)   <= '1';
---    trigger_in_b(6) <= '0';
---    wait for 30 ns;
---    trigger_in(6)   <= '0';
---    trigger_in_b(6) <= '1';
-
---    wait for 24 ns;
---    trigger_in(9)   <= '1';
---    trigger_in_b(9) <= '0';
---    wait for 23 ns;
---     trigger_in(0)   <= '1';
---    trigger_in_b(0) <= '0';
-
---    wait for 20 ns;
---    trigger_in(9)   <= '0';
---    trigger_in_b(9) <= '1';
---    wait for 20 ns;
---     trigger_in(0)   <= '0';
---    trigger_in_b(0) <= '1';
---    wait for 20 ns;
---    rst_b <= '1';
---    wait for 113 ns;
-
---    trigger_in(2)   <= '1';
---    trigger_in_b(2) <= '0';
-
---    wait for 15 ns;
---    trigger_in(0)   <= '1';
---    trigger_in_b(0) <= '0';
---    wait for 30 ns;
---    trigger_in(2)   <= '0';
---    trigger_in_b(2) <= '1';
-
-
---    wait for 20 ns;
---    trigger_in(0)   <= '0';
---    trigger_in_b(0) <= '1';
---    wait for 27 ns;
-
---    wait for 32 ns;
---    trigger_in(6)   <= '1';
---    trigger_in_b(6) <= '0';
---    wait for 30 ns;
---    trigger_in(6)   <= '0';
---    trigger_in_b(6) <= '1';
-
---    wait for 18 ns;
---    trigger_in(9)   <= '1';
---    trigger_in_b(9) <= '0';
---    wait for 10 ns;
---     trigger_in(3)   <= '1';
---    trigger_in_b(3) <= '0';
-
---    wait for 22 ns;
---    trigger_in(9)   <= '0';
---    trigger_in_b(9) <= '1';
---    wait for 20 ns;
---     trigger_in(3)   <= '0';
---    trigger_in_b(3) <= '1';
-    
-    wait;
-  end process WaveGen_Proc;
-
   
+  procedure read_v1d (
+    variable f : in text; v : out std_logic_vector) is
+    variable buf : line;
+    variable c   : character;
+  begin
+    readline(f,buf);
+    for i in v'range loop
+      read(buf, c);
+      case c is
+        when 'X'    => v(i) := 'X';
+        when 'U'    => v(i) := 'U';
+        when 'Z'    => v(i) := 'Z';
+        when '0'    => v(i) := '0';
+        when '1'    => v(i) := '1';
+        when '-'    => v(i) := '-';
+        when 'W'    => v(i) := 'W';
+        when 'L'    => v(i) := 'L';
+        when 'H'    => v(i) := 'H';
+        when others => null;
+      end case;
+    end loop;  -- i
+  end procedure read_v1d;
 
-end tb;
 
--------------------------------------------------------------------------------
+    begin  -- tb
 
-configuration sync_trigger_tb_tb_cfg of sync_trigger_tb is
-  for tb
-  end for;
-end sync_trigger_tb_tb_cfg;
+      -- component instantiation
+      DUT : sync_trigger
+        port map (
+          rst_b         => rst_b,
+          mclk          => mclk,
+          trigger_in    => trigger_in,
+          trigger_out   => trigger_out);
 
--------------------------------------------------------------------------------
+      -- clock generation
+      Clk  <= not Clk after 5 ns;
+      mclk <= Clk;
+
+      reset_Proc : process
+      begin
+        rst_b <= '0';
+        wait for 50 ns;
+        rst_b <= '1';
+        wait;
+      end process reset_Proc;
+
+
+
+      WaveGen_Proc : process
+        file infile       : text open read_mode is "vectors.dat";
+        variable buf      : line;
+        variable stimulus : std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
+      begin
+        while not(endfile(infile)) loop
+          read_v1d(infile, stimulus);
+          trigger_in <= stimulus;
+          wait for 10 ns;
+          
+        end loop;
+        
+      end process WaveGen_Proc;
+
+    end tb;
+
+

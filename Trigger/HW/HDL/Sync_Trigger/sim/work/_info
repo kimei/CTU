@@ -4,16 +4,16 @@ K3
 cModel Technology
 Z0 dM:\MASTER\COMPET\Compet_readout\ClkRst\cru_sim_kim
 T_opt
-V]jSQ169b?CU0PElOQ0kiQ0
+Vj@_[e;deD<z>Qc@>jIAzG1
 Z1 04 15 2 work sync_trigger_tb tb 1
-Z2 =1-001aa0e92aad-4d871a1a-2c-1780
+Z2 =1-001aa0e92aad-4ddbb2a2-27e-70c
 Z3 o-quiet -auto_acc_if_foreign -work work +acc
 Z4 n@_opt
 Z5 OE;O;6.6d;45
 Z6 dM:\MASTER\COMPET\Compet_readout\ClkRst\cru_sim_kim
 Ea2s
 Z7 w1295360630
-Z8 DPx4 work 9 constants 0 22 ZWJ8=b41OeFk@JSJX:4oB0
+Z8 DPx4 work 9 constants 0 22 kJKf@HfMVbR:FCJ51VPOF0
 Z9 DPx4 ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
 Z10 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
 Z11 dM:\MASTER\COMPET\Trigger\HW\HDL\Sync_Trigger\sim
@@ -47,13 +47,13 @@ Pcomponents
 R8
 R9
 R10
-Z25 w1300352264
+Z25 w1306148617
 R11
 Z26 8../../shared/components.vhd
 Z27 F../../shared/components.vhd
 l0
 L12
-Z28 V6@Nb2a5EE>eCPTPAWI=Y>3
+Z28 VWCTb9R^7ob6Uc<?N2LF^H1
 R15
 31
 R21
@@ -61,24 +61,24 @@ R22
 R23
 R16
 R17
-Z29 !s100 Onm1[M1zP`aDNIUS2VQ;E2
+Z29 !s100 1cB;IgK:j2U^]PCMIgneD0
 Pconstants
 R9
 R10
-Z30 w1300699577
+Z30 w1305890510
 R11
 Z31 8../../shared/constants.vhd
 Z32 F../../shared/constants.vhd
 l0
 L11
-Z33 VZWJ8=b41OeFk@JSJX:4oB0
+Z33 VkJKf@HfMVbR:FCJ51VPOF0
 R15
 31
 Z34 Mx2 4 ieee 14 std_logic_1164
 Z35 Mx1 4 ieee 11 numeric_std
 R16
 R17
-Z36 !s100 8hJIh1gdZE865;hGS]jEk2
+Z36 !s100 Yl1eDUP_^IdAc8I:Ik<K80
 Eedge_detect
 Z37 w1300455127
 Z38 DPx6 unisim 11 vcomponents 0 22 ^aPg^g8R`383Ij9LHKGf]3
@@ -114,224 +114,274 @@ Z50 Mx1 6 unisim 11 vcomponents
 R16
 R17
 Z51 !s100 aX>;g4D@]AE0<3RO1YDib0
+Eedge_detector
+Z52 w1300887380
+Z53 DPx4 work 9 functions 0 22 h3h[J0A^k]GS1YnWY[AcI0
+R8
+R9
+Z54 DPx4 work 10 components 0 22 WCTb9R^7ob6Uc<?N2LF^H1
+R38
+R39
+R40
+R10
+R11
+Z55 8../edge_detector.vhd
+Z56 F../edge_detector.vhd
+l0
+L39
+Z57 VNm?:A4nH<j<;NWo;M;fTB3
+R15
+31
+R16
+R17
+Z58 !s100 Qg0aKWg47lnl?W`eCg`321
+Abehave
+R53
+R8
+R9
+R54
+R38
+R39
+R40
+R10
+Z59 DEx4 work 13 edge_detector 0 22 Nm?:A4nH<j<;NWo;M;fTB3
+l50
+L48
+Z60 V@P1ZO=Z3QB^OYH>Qf]cil2
+R15
+31
+Z61 Mx8 4 ieee 14 std_logic_1164
+Z62 Mx7 4 ieee 15 std_logic_arith
+Z63 Mx6 4 ieee 18 std_logic_unsigned
+Z64 Mx5 6 unisim 11 vcomponents
+Z65 Mx4 4 work 10 components
+Z66 Mx3 4 ieee 11 numeric_std
+Z67 Mx2 4 work 9 constants
+Z68 Mx1 4 work 9 functions
+R16
+R17
+Z69 !s100 @^KIJ`1=SEJGFh7g=fIWd2
 Pfun_pkg
 R10
-Z52 w1300184340
+Z70 w1300184340
 R11
-Z53 8M:/MASTER/COMPET/Trigger/HW/HDL/Shared/functions.vhd
-Z54 FM:/MASTER/COMPET/Trigger/HW/HDL/Shared/functions.vhd
+Z71 8M:/MASTER/COMPET/Trigger/HW/HDL/Shared/functions.vhd
+Z72 FM:/MASTER/COMPET/Trigger/HW/HDL/Shared/functions.vhd
 l0
 L6
-Z55 Vm2XG<SG7c^=Fm>6V9EKIg2
+Z73 Vm2XG<SG7c^=Fm>6V9EKIg2
 R15
 32
 b1
-Z56 Mx1 4 ieee 14 std_logic_1164
-Z57 o-work work -2002 -explicit
+Z74 Mx1 4 ieee 14 std_logic_1164
+Z75 o-work work -2002 -explicit
 R17
-Z58 !s100 N1NiKE]5WR^@aLbeVSD0c3
+Z76 !s100 N1NiKE]5WR^@aLbeVSD0c3
 Bbody
-Z59 DBx4 work 7 fun_pkg 0 22 m2XG<SG7c^=Fm>6V9EKIg2
+Z77 DBx4 work 7 fun_pkg 0 22 m2XG<SG7c^=Fm>6V9EKIg2
 R10
 l0
 L16
-Z60 V>8L<ZiXmCid[::QDQ=V5b0
+Z78 V>8L<ZiXmCid[::QDQ=V5b0
 R15
 32
-R56
-R57
+R74
+R75
 R17
 nbody
-Z61 !s100 C<DXBW694[3CKfn]PW13>0
+Z79 !s100 C<DXBW694[3CKfn]PW13>0
 Pfunctions
 R10
-Z62 w1300371647
+Z80 w1300371647
 R11
-Z63 8../../shared/functions.vhd
-Z64 F../../shared/functions.vhd
+Z81 8../../shared/functions.vhd
+Z82 F../../shared/functions.vhd
 l0
 L6
-Z65 Vh3h[J0A^k]GS1YnWY[AcI0
+Z83 Vh3h[J0A^k]GS1YnWY[AcI0
 R15
 31
 b1
-R56
+R74
 R16
 R17
-Z66 !s100 gHGX1K;KN3IQzeSnZ0I7H3
+Z84 !s100 gHGX1K;KN3IQzeSnZ0I7H3
 Bbody
-Z67 DBx4 work 9 functions 0 22 h3h[J0A^k]GS1YnWY[AcI0
+Z85 DBx4 work 9 functions 0 22 h3h[J0A^k]GS1YnWY[AcI0
 R10
 l0
 L20
-Z68 Vo[b0BaQ1iB4Zl@@7zJkN_3
+Z86 Vo[b0BaQ1iB4Zl@@7zJkN_3
 R15
 31
-R56
+R74
 R16
 R17
 nbody
-Z69 !s100 QmUhP]:RG7i0KPjOKJPLh2
+Z87 !s100 QmUhP]:RG7i0KPjOKJPLh2
 Est_fsm
-Z70 w1300353741
-Z71 DPx4 work 9 functions 0 22 ]`kzh2ZmaLT:OH]=A0`FD0
-Z72 DPx4 work 9 constants 0 22 fF?G=dU?`olZ`bP[5cHEo0
+Z88 w1300353741
+Z89 DPx4 work 9 functions 0 22 ]`kzh2ZmaLT:OH]=A0`FD0
+Z90 DPx4 work 9 constants 0 22 fF?G=dU?`olZ`bP[5cHEo0
 R9
-Z73 DPx4 work 10 components 0 22 6@Nb2a5EE>eCPTPAWI=Y>3
+Z91 DPx4 work 10 components 0 22 6@Nb2a5EE>eCPTPAWI=Y>3
 R38
 R39
 R40
 R10
 R11
-Z74 8../st_fsm.vhd
-Z75 F../st_fsm.vhd
+Z92 8../st_fsm.vhd
+Z93 F../st_fsm.vhd
 l0
 L37
-Z76 V9K=]W5En7nOCmb4Z2^`7>3
+Z94 V9K=]W5En7nOCmb4Z2^`7>3
 R15
 31
 R16
 R17
-Z77 !s100 4aJzf:1QXa7JJa94O^UI23
+Z95 !s100 4aJzf:1QXa7JJa94O^UI23
 Afsm
-R71
-R72
+R89
+R90
 R9
-R73
+R91
 R38
 R39
 R40
 R10
-Z78 DEx4 work 6 st_fsm 0 22 9K=]W5En7nOCmb4Z2^`7>3
+Z96 DEx4 work 6 st_fsm 0 22 9K=]W5En7nOCmb4Z2^`7>3
 l54
 L48
-Z79 VZeRS9JjYGNimzY>IWen1A3
+Z97 VZeRS9JjYGNimzY>IWen1A3
 R15
 31
-Z80 Mx8 4 ieee 14 std_logic_1164
-Z81 Mx7 4 ieee 15 std_logic_arith
-Z82 Mx6 4 ieee 18 std_logic_unsigned
-Z83 Mx5 6 unisim 11 vcomponents
-Z84 Mx4 4 work 10 components
-Z85 Mx3 4 ieee 11 numeric_std
-Z86 Mx2 4 work 9 constants
-Z87 Mx1 4 work 9 functions
+R61
+R62
+R63
+R64
+R65
+R66
+R67
+R68
 R16
 R17
-Z88 !s100 hf1<Yz12EP2BYhHS^0=741
+Z98 !s100 hf1<Yz12EP2BYhHS^0=741
 Esync_trigger
-Z89 w1300461521
-Z90 DPx4 work 9 functions 0 22 h3h[J0A^k]GS1YnWY[AcI0
+Z99 w1306243572
+R53
 R8
-R73
+R54
 R38
 R9
 R39
 R40
 R10
 R11
-Z91 8../Sync_trigger.vhd
-Z92 F../Sync_trigger.vhd
+Z100 8../Sync_trigger.vhd
+Z101 F../Sync_trigger.vhd
 l0
-L38
-Z93 VcTEm?4524bZFzMfK0HVe31
+L44
+Z102 VC9iU`904k9hGzOg5F3_Lj2
 R15
 31
 R16
 R17
-Z94 !s100 fU_ZiYO8ZWWd4ZEkKkZgE3
+Z103 !s100 @Hl2<`;mOoe3GXa:Fh9QK1
 Abehavioral
-R90
+R53
 R8
-R73
+R54
 R38
 R9
 R39
 R40
 R10
-Z95 DEx4 work 12 sync_trigger 0 22 cTEm?4524bZFzMfK0HVe31
-l79
-L51
-Z96 V0g]=g;E_b?8cGbDCfNW7K0
+Z104 DEx4 work 12 sync_trigger 0 22 C9iU`904k9hGzOg5F3_Lj2
+l77
+L54
+Z105 V7GAm<Bgjzz:PYWek=IML^0
 R15
 31
-R80
-R81
-R82
-Z97 Mx5 4 ieee 11 numeric_std
-Z98 Mx4 6 unisim 11 vcomponents
-Z99 Mx3 4 work 10 components
-R86
-R87
+R61
+R62
+R63
+Z106 Mx5 4 ieee 11 numeric_std
+Z107 Mx4 6 unisim 11 vcomponents
+Z108 Mx3 4 work 10 components
+R67
+R68
 R16
 R17
-Z100 !s100 i8mb<N0T2@S2aoK1U`I771
+Z109 !s100 ST910<RVzhY[HQG8YX2ha1
 Esync_trigger_tb
-Z101 w1300699663
+Z110 w1301571483
 R8
 R9
-R73
+R54
+Z111 DPx3 std 6 textio 0 22 m2KQDRRhmF833<<DjYdL70
 R10
 R11
-Z102 8sync_trigger_tb.vhd
-Z103 Fsync_trigger_tb.vhd
+Z112 8sync_trigger_tb.vhd
+Z113 Fsync_trigger_tb.vhd
 l0
-L31
-Z104 V;zg2U5aE<JTfKB=7d5Xal3
+L33
+Z114 VZGRW4GM750TV]oGX@cA<]1
 R15
 31
-Z105 o-93 -explicit
+Z115 o-93 -explicit
 R17
-Z106 !s100 2S2h3WgPDQ<L6BTc=n[j`1
+Z116 !s100 KddLVkBE=Jh7?Z6HAa:z52
 Atb
 R8
 R9
-R73
+R54
+R111
 R10
-Z107 DEx4 work 15 sync_trigger_tb 0 22 ;zg2U5aE<JTfKB=7d5Xal3
-l60
-L37
-Z108 V9R]@;6G20[AF;a_e<AdX<2
+Z117 DEx4 work 15 sync_trigger_tb 0 22 ZGRW4GM750TV]oGX@cA<]1
+l84
+L39
+Z118 Vf_dKf:Dd]EJ4H8HEJD1PU1
 R15
 31
-R47
-R99
+Z119 Mx5 4 ieee 14 std_logic_1164
+Z120 Mx4 3 std 6 textio
+R108
 R22
 R23
-R105
+R115
 R17
-Z109 !s100 3e87TB<5i<jb53Wdi380e1
+Z121 !s100 Ke[n6_4DInd6PNVR1>WDW2
 Csync_trigger_tb_tb_cfg
 atb
-Z110 esync_trigger_tb
+Z122 esync_trigger_tb
 R40
 R39
 R38
-R90
-R95
-Z111 DAx4 work 15 sync_trigger_tb 2 tb 22 9R]@;6G20[AF;a_e<AdX<2
-R8
+R53
+Z123 DEx4 work 12 sync_trigger 0 22 cTEm?4524bZFzMfK0HVe31
+Z124 DAx4 work 15 sync_trigger_tb 2 tb 22 9R]@;6G20[AF;a_e<AdX<2
+Z125 DPx4 work 9 constants 0 22 ZWJ8=b41OeFk@JSJX:4oB0
 R9
-R73
+R91
 R10
-R107
-R101
+Z126 DEx4 work 15 sync_trigger_tb 0 22 ;zg2U5aE<JTfKB=7d5Xal3
+Z127 w1300699663
 R11
-R102
-R103
+R112
+R113
 l0
 L247
-Z112 V@R134nT[b7X0X8EKJf8HP3
+Z128 V@R134nT[b7X0X8EKJf8HP3
 R15
 31
-R80
-Z113 Mx7 4 work 10 components
-Z114 Mx6 4 ieee 11 numeric_std
-Z115 Mx5 4 work 9 constants
-Z116 Mx4 4 work 9 functions
-Z117 Mx3 6 unisim 11 vcomponents
+R61
+Z129 Mx7 4 work 10 components
+Z130 Mx6 4 ieee 11 numeric_std
+Z131 Mx5 4 work 9 constants
+Z132 Mx4 4 work 9 functions
+Z133 Mx3 6 unisim 11 vcomponents
 R49
-Z118 Mx1 4 ieee 15 std_logic_arith
-R105
+Z134 Mx1 4 ieee 15 std_logic_arith
+R115
 R17
-Z119 !s100 P[=EMm`0nn<gfPM;VRMBF2
+Z135 !s100 P[=EMm`0nn<gfPM;VRMBF2

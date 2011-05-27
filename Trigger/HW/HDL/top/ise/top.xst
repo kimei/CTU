@@ -1,5 +1,0 @@
-set -tmpdir "M:/MASTER/COMPET/Trigger/HW/HDL/top/ise/xst/projnav.tmp"
-set -xsthdpdir "M:/MASTER/COMPET/Trigger/HW/HDL/top/ise/xst"
-elaborate
--ifn top.prj
--ifmt mixed

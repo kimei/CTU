@@ -1,14 +1,13 @@
 --------------------------------------------------------------------------------
-Release 10.1.03 Trace  (nt)
-Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+Release 13.1 Trace  (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
-C:\Xilinx\10.1\ISE\bin\nt\unwrapped\trce.exe -ise
-M:/MASTER/COMPET/Trigger/HW/HDL/top/top/top.ise -intstyle ise -v 3 -s 1 -xml
-top top.ncd -o top.twr top.pcf -ucf top.ucf
+C:\Xilinx\13.1\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 1 -n
+3 -xml top.twx top.ncd -o top.twr top.pcf -ucf top.ucf
 
 Design file:              top.ncd
 Physical constraint file: top.pcf
-Device,package,speed:     xc5vfx30t,ff665,-1 (PRODUCTION 1.64 2008-12-19, STEPPING level 0)
+Device,package,speed:     xc5vfx30t,ff665,-1 (PRODUCTION 1.72 2011-02-03, STEPPING level 0)
 Report level:             verbose report
 
 Environment Variable      Effect 
@@ -32,45 +31,67 @@ Data Sheet report:
 All values displayed in nanoseconds (ns)
 
 Setup/Hold to clock FPGA100M
-------------+------------+------------+------------------------+--------+
-            |  Setup to  |  Hold to   |                        | Clock  |
-Source      | clk (edge) | clk (edge) |Internal Clock(s)       | Phase  |
-------------+------------+------------+------------------------+--------+
-RESET       |    1.930(R)|    0.447(R)|Inst_CRU/fpga_100m_clk_s|   0.000|
-------------+------------+------------+------------------------+--------+
+--------------------+------------+------------+------------------------+--------+
+                    |Max Setup to|Max Hold to |                        | Clock  |
+Source              | clk (edge) | clk (edge) |Internal Clock(s)       | Phase  |
+--------------------+------------+------------+------------------------+--------+
+BUTTONS<0>          |    1.814(R)|    0.549(R)|Inst_CRU/fpga_100m_clk_s|   0.000|
+BUTTONS<3>          |    1.125(R)|    3.596(R)|mclk                    |   0.000|
+SYNC_TRIGGER_IN<0>  |   -1.083(R)|    5.109(R)|mclk                    |   0.000|
+SYNC_TRIGGER_IN<1>  |   -1.253(R)|    5.273(R)|mclk                    |   0.000|
+SYNC_TRIGGER_IN_b<0>|   -1.083(R)|    5.109(R)|mclk                    |   0.000|
+SYNC_TRIGGER_IN_b<1>|   -1.253(R)|    5.273(R)|mclk                    |   0.000|
+--------------------+------------+------------+------------------------+--------+
 
 Clock FPGA100M to Pad
-------------+------------+------------------+--------+
-            | clk (edge) |                  | Clock  |
-Destination |   to PAD   |Internal Clock(s) | Phase  |
-------------+------------+------------------+--------+
-MCLK100     |    9.287(R)|Inst_CRU/mclk_s   |   0.000|
-            |    9.287(F)|Inst_CRU/mclk_s   |   0.000|
-MCLK100_b   |    9.287(R)|Inst_CRU/mclk_s   |   0.000|
-            |    9.287(F)|Inst_CRU/mclk_s   |   0.000|
-RESET_ROC   |   12.745(R)|Inst_CRU/mclk_s   |   0.000|
-test_led    |   14.764(R)|mclk              |   0.000|
-test_led2   |   14.409(R)|Inst_CRU/mclk_s   |   0.000|
-tx          |   12.809(R)|mclk              |   0.000|
-------------+------------+------------------+--------+
+---------------------+------------+------------------+--------+
+                     | clk (edge) |                  | Clock  |
+Destination          |   to PAD   |Internal Clock(s) | Phase  |
+---------------------+------------+------------------+--------+
+LEDS<0>              |   13.333(R)|mclk              |   0.000|
+LEDS<1>              |   13.242(R)|mclk              |   0.000|
+MCLK100              |    9.287(R)|Inst_CRU/mclk_s   |   0.000|
+                     |    9.287(F)|Inst_CRU/mclk_s   |   0.000|
+MCLK100_b            |    9.287(R)|Inst_CRU/mclk_s   |   0.000|
+                     |    9.287(F)|Inst_CRU/mclk_s   |   0.000|
+RESET_ROC_B1         |   12.027(R)|Inst_CRU/mclk_s   |   0.000|
+RESET_ROC_B1_b       |   12.027(R)|Inst_CRU/mclk_s   |   0.000|
+RESET_ROC_B2         |   12.397(R)|Inst_CRU/mclk_s   |   0.000|
+RESET_ROC_B2_b       |   12.397(R)|Inst_CRU/mclk_s   |   0.000|
+SYNC_TRIGGER_OUT<0>  |   12.634(R)|mclk              |   0.000|
+SYNC_TRIGGER_OUT<1>  |   13.116(R)|mclk              |   0.000|
+SYNC_TRIGGER_OUT_b<0>|   12.634(R)|mclk              |   0.000|
+SYNC_TRIGGER_OUT_b<1>|   13.116(R)|mclk              |   0.000|
+tx                   |   12.981(R)|mclk              |   0.000|
+---------------------+------------+------------------+--------+
 
 Clock to Setup on destination clock FPGA100M
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-FPGA100M       |    4.006|         |   -0.326|         |
+FPGA100M       |    3.588|         |    0.574|         |
 ---------------+---------+---------+---------+---------+
 
+Pad to Pad
+---------------+---------------------+---------+
+Source Pad     |Destination Pad      |  Delay  |
+---------------+---------------------+---------+
+BUTTONS<3>     |SYNC_TRIGGER_OUT<0>  |    7.988|
+BUTTONS<3>     |SYNC_TRIGGER_OUT<1>  |    8.470|
+BUTTONS<3>     |SYNC_TRIGGER_OUT_b<0>|    7.988|
+BUTTONS<3>     |SYNC_TRIGGER_OUT_b<1>|    8.470|
+---------------+---------------------+---------+
 
-Analysis completed Fri Mar 11 11:31:47 2011 
+
+Analysis completed Thu Apr 07 12:27:41 2011 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 219 MB
+Peak Memory Usage: 210 MB
 
 
 

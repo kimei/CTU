@@ -1,12 +1,12 @@
-Release 10.1.03 - xst K.39 (nt)
-Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to M:/MASTER/COMPET/Trigger/HW/HDL/top/top/xst/projnav.tmp
+Release 13.1 - xst O.40d (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.16 secs
  
---> Parameter xsthdpdir set to M:/MASTER/COMPET/Trigger/HW/HDL/top/top/xst
+--> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
@@ -26,9 +26,9 @@ TABLE OF CONTENTS
   7) Low Level Synthesis
   8) Partition Report
   9) Final Report
-     9.1) Device utilization summary
-     9.2) Partition Resource Summary
-     9.3) TIMING REPORT
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
 
 
 =========================================================================
@@ -49,26 +49,26 @@ Top Module Name                    : top
 Automatic FSM Extraction           : YES
 FSM Encoding Algorithm             : Auto
 Safe Implementation                : No
-FSM Style                          : lut
+FSM Style                          : LUT
 RAM Extraction                     : Yes
 RAM Style                          : Auto
 ROM Extraction                     : Yes
 Mux Style                          : Auto
 Decoder Extraction                 : YES
-Priority Encoder Extraction        : YES
+Priority Encoder Extraction        : Yes
 Shift Register Extraction          : YES
 Logical Shifter Extraction         : YES
 XOR Collapsing                     : YES
 ROM Style                          : Auto
-Mux Extraction                     : YES
+Mux Extraction                     : Yes
 Resource Sharing                   : YES
 Asynchronous To Synchronous        : NO
-Use DSP Block                      : auto
+Use DSP Block                      : Auto
 Automatic Register Balancing       : No
 
 ---- Target Options
-LUT Combining                      : off
-Reduce Control Sets                : off
+LUT Combining                      : Off
+Reduce Control Sets                : Off
 Add IO Buffers                     : YES
 Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 32
@@ -78,16 +78,15 @@ Optimize Instantiated Primitives   : NO
 Use Clock Enable                   : Auto
 Use Synchronous Set                : Auto
 Use Synchronous Reset              : Auto
-Pack IO Registers into IOBs        : auto
+Pack IO Registers into IOBs        : Auto
 Equivalent register Removal        : YES
 
 ---- General Options
 Optimization Goal                  : Speed
 Optimization Effort                : 1
 Power Reduction                    : NO
-Library Search Order               : top.lso
-Keep Hierarchy                     : NO
-Netlist Hierarchy                  : as_optimized
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
 RTL Output                         : Yes
 Global Optimization                : AllClockNets
 Read Cores                         : YES
@@ -95,7 +94,7 @@ Write Timing Constraints           : NO
 Cross Clock Analysis               : NO
 Hierarchy Separator                : /
 Bus Delimiter                      : <>
-Case Specifier                     : maintain
+Case Specifier                     : Maintain
 Slice Utilization Ratio            : 100
 BRAM Utilization Ratio             : 100
 DSP48 Utilization Ratio            : 100
@@ -115,20 +114,23 @@ Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Shared/fun
 Architecture functions of Entity functions is up to date.
 Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UART/uart.vhd" in Library work.
 Architecture behavioral of Entity uart is up to date.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Shared/a2s.vhd" in Library work.
-Architecture rtl of Entity a2s is up to date.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Sync_Trigger/st_fsm.vhd" in Library work.
-Architecture fsm of Entity st_fsm is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Sync_Trigger/edge_detector.vhd" in Library work.
+Architecture behave of Entity edge_detector is up to date.
 Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/top/top/PLL_ALL.vhd" in Library work.
 Architecture behavioral of Entity pll_all is up to date.
+Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Shared/a2s.vhd" in Library work.
+Architecture rtl of Entity a2s is up to date.
 Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/CRU/CRU.vhd" in Library work.
 Architecture behavioral of Entity cru is up to date.
 Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd" in Library work.
+WARNING:HDLParsers:3350 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd" Line 97. Null range: 1 downto 2
+WARNING:HDLParsers:3350 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd" Line 101. Null range: 1 downto 2
 Architecture behavioral of Entity sync_trigger is up to date.
 Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UART/com.vhd" in Library work.
 Architecture behavioral of Entity com is up to date.
 Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/top/top.vhd" in Library work.
-Architecture behavioral of Entity top is up to date.
+Entity <top> compiled.
+Entity <top> (Architecture <behavioral>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -146,8 +148,7 @@ Analyzing hierarchy for entity <PLL_ALL> in library <work> (architecture <behavi
 Analyzing hierarchy for entity <a2s> in library <work> (architecture <rtl>) with generics.
 	depth = 2
 
-Analyzing hierarchy for entity <st_fsm> in library <work> (architecture <fsm>) with generics.
-	NO_OF_MODULES = 4
+Analyzing hierarchy for entity <edge_detector> in library <work> (architecture <behave>).
 
 Analyzing hierarchy for entity <uart> in library <work> (architecture <behavioral>) with generics.
 	CLK_FREQ = 100
@@ -158,6 +159,30 @@ Analyzing hierarchy for entity <uart> in library <work> (architecture <behaviora
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <top> in library <work> (Architecture <behavioral>).
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <G1[0].diff_in> in unit <top>.
+    Set user-defined property "DIFF_TERM =  FALSE" for instance <G1[0].diff_in> in unit <top>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <G1[0].diff_in> in unit <top>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <G1[0].diff_in> in unit <top>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <G1[0].diff_in> in unit <top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <G1[0].diff_in> in unit <top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <G1[1].diff_in> in unit <top>.
+    Set user-defined property "DIFF_TERM =  FALSE" for instance <G1[1].diff_in> in unit <top>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <G1[1].diff_in> in unit <top>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <G1[1].diff_in> in unit <top>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <G1[1].diff_in> in unit <top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <G1[1].diff_in> in unit <top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <G2[0].diff_out> in unit <top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <G2[0].diff_out> in unit <top>.
+    Set user-defined property "SLEW =  SLOW" for instance <G2[0].diff_out> in unit <top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <G2[1].diff_out> in unit <top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <G2[1].diff_out> in unit <top>.
+    Set user-defined property "SLEW =  SLOW" for instance <G2[1].diff_out> in unit <top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <MCLK_DIFF_OUT1> in unit <top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <MCLK_DIFF_OUT1> in unit <top>.
+    Set user-defined property "SLEW =  SLOW" for instance <MCLK_DIFF_OUT1> in unit <top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <MCLK_DIFF_OUT2> in unit <top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <MCLK_DIFF_OUT2> in unit <top>.
+    Set user-defined property "SLEW =  SLOW" for instance <MCLK_DIFF_OUT2> in unit <top>.
 Entity <top> analyzed. Unit <top> generated.
 
 Analyzing Entity <CRU> in library <work> (Architecture <behavioral>).
@@ -200,6 +225,7 @@ Analyzing Entity <PLL_ALL> in library <work> (Architecture <behavioral>).
     Set user-defined property "CLKOUT5_DIVIDE =  1" for instance <PLL_ADV_INST> in unit <PLL_ALL>.
     Set user-defined property "CLKOUT5_DUTY_CYCLE =  0.5000000000000000" for instance <PLL_ADV_INST> in unit <PLL_ALL>.
     Set user-defined property "CLKOUT5_PHASE =  0.0000000000000000" for instance <PLL_ADV_INST> in unit <PLL_ALL>.
+    Set user-defined property "CLK_FEEDBACK =  CLKFBOUT" for instance <PLL_ADV_INST> in unit <PLL_ALL>.
     Set user-defined property "COMPENSATION =  SYSTEM_SYNCHRONOUS" for instance <PLL_ADV_INST> in unit <PLL_ALL>.
     Set user-defined property "DIVCLK_DIVIDE =  1" for instance <PLL_ADV_INST> in unit <PLL_ALL>.
     Set user-defined property "EN_REL =  FALSE" for instance <PLL_ADV_INST> in unit <PLL_ALL>.
@@ -207,6 +233,7 @@ Analyzing Entity <PLL_ALL> in library <work> (Architecture <behavioral>).
     Set user-defined property "REF_JITTER =  0.0000000000000000" for instance <PLL_ADV_INST> in unit <PLL_ALL>.
     Set user-defined property "RESET_ON_LOSS_OF_LOCK =  FALSE" for instance <PLL_ADV_INST> in unit <PLL_ALL>.
     Set user-defined property "RST_DEASSERT_CLK =  CLKIN1" for instance <PLL_ADV_INST> in unit <PLL_ALL>.
+    Set user-defined property "SIM_DEVICE =  VIRTEX5" for instance <PLL_ADV_INST> in unit <PLL_ALL>.
 Entity <PLL_ALL> analyzed. Unit <PLL_ALL> generated.
 
 Analyzing generic Entity <a2s> in library <work> (Architecture <rtl>).
@@ -214,69 +241,13 @@ Analyzing generic Entity <a2s> in library <work> (Architecture <rtl>).
 Entity <a2s> analyzed. Unit <a2s> generated.
 
 Analyzing Entity <sync_trigger> in library <work> (Architecture <behavioral>).
-    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <G1[0].diff_in> in unit <sync_trigger>.
-    Set user-defined property "DIFF_TERM =  FALSE" for instance <G1[0].diff_in> in unit <sync_trigger>.
-    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <G1[0].diff_in> in unit <sync_trigger>.
-    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <G1[0].diff_in> in unit <sync_trigger>.
-    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <G1[0].diff_in> in unit <sync_trigger>.
-    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <G1[1].diff_in> in unit <sync_trigger>.
-    Set user-defined property "DIFF_TERM =  FALSE" for instance <G1[1].diff_in> in unit <sync_trigger>.
-    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <G1[1].diff_in> in unit <sync_trigger>.
-    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <G1[1].diff_in> in unit <sync_trigger>.
-    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <G1[1].diff_in> in unit <sync_trigger>.
-    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <G1[2].diff_in> in unit <sync_trigger>.
-    Set user-defined property "DIFF_TERM =  FALSE" for instance <G1[2].diff_in> in unit <sync_trigger>.
-    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <G1[2].diff_in> in unit <sync_trigger>.
-    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <G1[2].diff_in> in unit <sync_trigger>.
-    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <G1[2].diff_in> in unit <sync_trigger>.
-    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <G1[3].diff_in> in unit <sync_trigger>.
-    Set user-defined property "DIFF_TERM =  FALSE" for instance <G1[3].diff_in> in unit <sync_trigger>.
-    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <G1[3].diff_in> in unit <sync_trigger>.
-    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <G1[3].diff_in> in unit <sync_trigger>.
-    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <G1[3].diff_in> in unit <sync_trigger>.
-    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <G1[4].diff_in> in unit <sync_trigger>.
-    Set user-defined property "DIFF_TERM =  FALSE" for instance <G1[4].diff_in> in unit <sync_trigger>.
-    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <G1[4].diff_in> in unit <sync_trigger>.
-    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <G1[4].diff_in> in unit <sync_trigger>.
-    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <G1[4].diff_in> in unit <sync_trigger>.
-    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <G1[5].diff_in> in unit <sync_trigger>.
-    Set user-defined property "DIFF_TERM =  FALSE" for instance <G1[5].diff_in> in unit <sync_trigger>.
-    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <G1[5].diff_in> in unit <sync_trigger>.
-    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <G1[5].diff_in> in unit <sync_trigger>.
-    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <G1[5].diff_in> in unit <sync_trigger>.
-    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <G1[6].diff_in> in unit <sync_trigger>.
-    Set user-defined property "DIFF_TERM =  FALSE" for instance <G1[6].diff_in> in unit <sync_trigger>.
-    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <G1[6].diff_in> in unit <sync_trigger>.
-    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <G1[6].diff_in> in unit <sync_trigger>.
-    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <G1[6].diff_in> in unit <sync_trigger>.
-    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <G1[7].diff_in> in unit <sync_trigger>.
-    Set user-defined property "DIFF_TERM =  FALSE" for instance <G1[7].diff_in> in unit <sync_trigger>.
-    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <G1[7].diff_in> in unit <sync_trigger>.
-    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <G1[7].diff_in> in unit <sync_trigger>.
-    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <G1[7].diff_in> in unit <sync_trigger>.
-    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <G1[8].diff_in> in unit <sync_trigger>.
-    Set user-defined property "DIFF_TERM =  FALSE" for instance <G1[8].diff_in> in unit <sync_trigger>.
-    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <G1[8].diff_in> in unit <sync_trigger>.
-    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <G1[8].diff_in> in unit <sync_trigger>.
-    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <G1[8].diff_in> in unit <sync_trigger>.
-    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <G1[9].diff_in> in unit <sync_trigger>.
-    Set user-defined property "DIFF_TERM =  FALSE" for instance <G1[9].diff_in> in unit <sync_trigger>.
-    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <G1[9].diff_in> in unit <sync_trigger>.
-    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <G1[9].diff_in> in unit <sync_trigger>.
-    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <G1[9].diff_in> in unit <sync_trigger>.
-    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <G2[0].diff_out> in unit <sync_trigger>.
-    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <G2[0].diff_out> in unit <sync_trigger>.
-    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <G2[1].diff_out> in unit <sync_trigger>.
-    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <G2[1].diff_out> in unit <sync_trigger>.
-    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <G2[2].diff_out> in unit <sync_trigger>.
-    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <G2[2].diff_out> in unit <sync_trigger>.
-    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <G2[3].diff_out> in unit <sync_trigger>.
-    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <G2[3].diff_out> in unit <sync_trigger>.
+INFO:Xst:2679 - Register <trig_out_s_d<4>> in unit <sync_trigger> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <coincidence_array<2>> in unit <sync_trigger> has a constant value of 00 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <coincidence_array<3>> in unit <sync_trigger> has a constant value of 00 during circuit operation. The register is replaced by logic.
 Entity <sync_trigger> analyzed. Unit <sync_trigger> generated.
 
-Analyzing generic Entity <st_fsm> in library <work> (Architecture <fsm>).
-	NO_OF_MODULES = 4
-Entity <st_fsm> analyzed. Unit <st_fsm> generated.
+Analyzing Entity <edge_detector> in library <work> (Architecture <behave>).
+Entity <edge_detector> analyzed. Unit <edge_detector> generated.
 
 Analyzing Entity <com> in library <work> (Architecture <behavioral>).
 INFO:Xst:2679 - Register <tx_data> in unit <com> has a constant value of 00110001 during circuit operation. The register is replaced by logic.
@@ -302,36 +273,12 @@ Synthesizing Unit <a2s>.
 Unit <a2s> synthesized.
 
 
-Synthesizing Unit <st_fsm>.
-    Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Sync_Trigger/st_fsm.vhd".
-INFO:Xst:1799 - State undef6 is never reached in FSM <state>.
-INFO:Xst:1799 - State undef7 is never reached in FSM <state>.
-INFO:Xst:1799 - State undef8 is never reached in FSM <state>.
-    Found finite state machine <FSM_0> for signal <state>.
-    -----------------------------------------------------------------------
-    | States             | 5                                              |
-    | Transitions        | 11                                             |
-    | Inputs             | 5                                              |
-    | Outputs            | 5                                              |
-    | Clock              | mclk (rising_edge)                             |
-    | Reset              | rst_b (negative)                               |
-    | Reset type         | asynchronous                                   |
-    | Reset State        | init                                           |
-    | Power Up State     | init                                           |
-    | Encoding           | automatic                                      |
-    | Implementation     | LUT                                            |
-    -----------------------------------------------------------------------
-    Found 4-bit register for signal <trigger_out>.
-    Found 4-bit register for signal <counter>.
-    Found 4-bit adder for signal <counter$share0000> created at line 67.
-    Found 4-bit register for signal <previous>.
-    Found 4-bit comparator equal for signal <state$cmp_eq0001> created at line 86.
+Synthesizing Unit <edge_detector>.
+    Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Sync_Trigger/edge_detector.vhd".
+    Found 3-bit register for signal <s>.
     Summary:
-	inferred   1 Finite State Machine(s).
-	inferred  12 D-type flip-flop(s).
-	inferred   1 Adder/Subtractor(s).
-	inferred   1 Comparator(s).
-Unit <st_fsm> synthesized.
+	inferred   3 D-type flip-flop(s).
+Unit <edge_detector> synthesized.
 
 
 Synthesizing Unit <uart>.
@@ -341,30 +288,30 @@ INFO:Xst:1799 - State parity is never reached in FSM <tx_fsm>.
 INFO:Xst:1799 - State stop1 is never reached in FSM <rx_fsm>.
 INFO:Xst:1799 - State stop2 is never reached in FSM <rx_fsm>.
 INFO:Xst:1799 - State parity is never reached in FSM <rx_fsm>.
-    Found finite state machine <FSM_1> for signal <tx_fsm>.
+    Found finite state machine <FSM_0> for signal <tx_fsm>.
     -----------------------------------------------------------------------
     | States             | 4                                              |
     | Transitions        | 6                                              |
     | Inputs             | 2                                              |
     | Outputs            | 3                                              |
-    | Clock              | clk (rising_edge)                              |
-    | Clock enable       | tx_clk_en (positive)                           |
-    | Reset              | rst (positive)                                 |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | tx_clk_en                 (positive)           |
+    | Reset              | rst                       (positive)           |
     | Reset type         | asynchronous                                   |
     | Reset State        | idle                                           |
     | Power Up State     | idle                                           |
     | Encoding           | automatic                                      |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found finite state machine <FSM_2> for signal <rx_fsm>.
+    Found finite state machine <FSM_1> for signal <rx_fsm>.
     -----------------------------------------------------------------------
     | States             | 2                                              |
     | Transitions        | 4                                              |
     | Inputs             | 2                                              |
     | Outputs            | 4                                              |
-    | Clock              | clk (rising_edge)                              |
-    | Clock enable       | rx_clk_en (positive)                           |
-    | Reset              | rst (positive)                                 |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | rx_clk_en                 (positive)           |
+    | Reset              | rst                       (positive)           |
     | Reset type         | asynchronous                                   |
     | Reset State        | idle                                           |
     | Power Up State     | idle                                           |
@@ -403,6 +350,15 @@ Unit <uart> synthesized.
 
 Synthesizing Unit <sync_trigger>.
     Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd".
+WARNING:Xst:646 - Signal <coincidence_array<2:3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 31-bit comparator greater for signal <coincidence$cmp_gt0000> created at line 124.
+    Found 1-bit register for signal <coincidence_hold>.
+    Found 31-bit adder for signal <temp$addsub0000> created at line 49.
+    Found 4-bit register for signal <trig_out_s_d<3:0>>.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
 Unit <sync_trigger> synthesized.
 
 
@@ -412,14 +368,14 @@ WARNING:Xst:646 - Signal <rx_ready> is assigned but never used. This unconnected
 WARNING:Xst:646 - Signal <rx_data> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <par_en> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 INFO:Xst:1799 - State wait_sent is never reached in FSM <fsm_state>.
-    Found finite state machine <FSM_3> for signal <fsm_state>.
+    Found finite state machine <FSM_2> for signal <fsm_state>.
     -----------------------------------------------------------------------
     | States             | 3                                              |
     | Transitions        | 3                                              |
     | Inputs             | 1                                              |
     | Outputs            | 2                                              |
-    | Clock              | mclk (rising_edge)                             |
-    | Reset              | rst (positive)                                 |
+    | Clock              | mclk                      (rising_edge)        |
+    | Reset              | rst                       (positive)           |
     | Reset type         | asynchronous                                   |
     | Reset State        | init                                           |
     | Power Up State     | init                                           |
@@ -448,14 +404,14 @@ INFO:Xst:1799 - State ud13 is never reached in FSM <state>.
 INFO:Xst:1799 - State ud14 is never reached in FSM <state>.
 INFO:Xst:1799 - State ud15 is never reached in FSM <state>.
 INFO:Xst:1799 - State ud16 is never reached in FSM <state>.
-    Found finite state machine <FSM_4> for signal <state>.
+    Found finite state machine <FSM_3> for signal <state>.
     -----------------------------------------------------------------------
     | States             | 9                                              |
     | Transitions        | 15                                             |
     | Inputs             | 5                                              |
     | Outputs            | 8                                              |
-    | Clock              | fpga_100m_clk_s (rising_edge)                  |
-    | Reset              | fpga_cpu_reset (positive)                      |
+    | Clock              | fpga_100m_clk_s           (rising_edge)        |
+    | Reset              | fpga_cpu_reset            (positive)           |
     | Reset type         | asynchronous                                   |
     | Reset State        | init                                           |
     | Power Up State     | init                                           |
@@ -465,21 +421,29 @@ INFO:Xst:1799 - State ud16 is never reached in FSM <state>.
     Found 1-bit register for signal <enable_diff_out_b>.
     Found 1-bit register for signal <pll_reset>.
     Found 1-bit register for signal <reset_global_b>.
-    Found 4-bit register for signal <rst_counter>.
-    Found 4-bit adder for signal <rst_counter$addsub0000> created at line 229.
+    Found 3-bit register for signal <rst_counter>.
+    Found 3-bit adder for signal <rst_counter$addsub0000> created at line 229.
     Found 16-bit register for signal <wait_counter>.
     Found 16-bit adder for signal <wait_counter$share0000> created at line 165.
     Found 5-bit register for signal <wait_counter2>.
     Found 5-bit adder for signal <wait_counter2$addsub0000> created at line 223.
     Summary:
 	inferred   1 Finite State Machine(s).
-	inferred  28 D-type flip-flop(s).
+	inferred  27 D-type flip-flop(s).
 	inferred   3 Adder/Subtractor(s).
 Unit <CRU> synthesized.
 
 
 Synthesizing Unit <top>.
     Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/top/top.vhd".
+WARNING:Xst:647 - Input <TRIGGER_BUTTON> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BUTTONS<2:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <trig_out_se<1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <trigled>.
+    Found 1-bit xor2 for signal <trigled$xor0000> created at line 175.
+    Found 1-bit register for signal <trigled1>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
 Unit <top> synthesized.
 
 INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
@@ -490,24 +454,24 @@ HDL Synthesis Report
 Macro Statistics
 # Adders/Subtractors                                   : 6
  16-bit adder                                          : 1
- 3-bit adder                                           : 1
+ 3-bit adder                                           : 2
  3-bit subtractor                                      : 1
- 4-bit adder                                           : 2
+ 31-bit adder                                          : 1
  5-bit adder                                           : 1
 # Counters                                             : 2
  14-bit up counter                                     : 2
-# Registers                                            : 39
- 1-bit register                                        : 23
+# Registers                                            : 49
+ 1-bit register                                        : 40
  16-bit register                                       : 1
- 2-bit register                                        : 5
- 3-bit register                                        : 2
- 4-bit register                                        : 5
+ 2-bit register                                        : 1
+ 3-bit register                                        : 3
+ 4-bit register                                        : 1
  5-bit register                                        : 1
  8-bit register                                        : 2
 # Comparators                                          : 1
- 4-bit comparator equal                                : 1
-# Xors                                                 : 2
- 1-bit xor2                                            : 2
+ 31-bit comparator greater                             : 1
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
 
 =========================================================================
 
@@ -515,20 +479,20 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-Analyzing FSM <FSM_4> for best encoding.
-Optimizing FSM <Inst_CRU/state/FSM> on signal <state[1:4]> with gray encoding.
----------------------------
+Analyzing FSM <FSM_3> for best encoding.
+Optimizing FSM <Inst_CRU/state/FSM> on signal <state[1:9]> with one-hot encoding.
+----------------------------
  State         | Encoding
----------------------------
- init          | 0000
- reset_pll     | 0001
- wait1         | 0011
- det_clockloss | 0101
- wait_clk_lock | 0010
- en_output     | 0110
- reset_rocs    | 0111
- rst5          | 0100
- wait2         | 1100
+----------------------------
+ init          | 000000001
+ reset_pll     | 000000010
+ wait1         | 000000100
+ det_clockloss | 001000000
+ wait_clk_lock | 000001000
+ en_output     | 000010000
+ reset_rocs    | 000100000
+ rst5          | 010000000
+ wait2         | 100000000
  ud10          | unreached
  ud11          | unreached
  ud12          | unreached
@@ -536,19 +500,19 @@ Optimizing FSM <Inst_CRU/state/FSM> on signal <state[1:4]> with gray encoding.
  ud14          | unreached
  ud15          | unreached
  ud16          | unreached
----------------------------
-Analyzing FSM <FSM_3> for best encoding.
-Optimizing FSM <com_1/fsm_state/FSM> on signal <fsm_state[1:2]> with speed1 encoding.
+----------------------------
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <com_1/fsm_state/FSM> on signal <fsm_state[1:2]> with gray encoding.
 -----------------------
  State     | Encoding
 -----------------------
- init      | 10
- load      | 00
- send      | 01
+ init      | 00
+ load      | 01
+ send      | 11
  wait_sent | unreached
 -----------------------
-Analyzing FSM <FSM_2> for best encoding.
-Optimizing FSM <com_1/uart_1/rx_fsm/FSM> on signal <rx_fsm[1:1]> with gray encoding.
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <com_1/uart_1/rx_fsm/FSM> on signal <rx_fsm[1:1]> with sequential encoding.
 --------------------
  State  | Encoding
 --------------------
@@ -558,7 +522,7 @@ Optimizing FSM <com_1/uart_1/rx_fsm/FSM> on signal <rx_fsm[1:1]> with gray encod
  stop1  | unreached
  stop2  | unreached
 --------------------
-Analyzing FSM <FSM_1> for best encoding.
+Analyzing FSM <FSM_0> for best encoding.
 Optimizing FSM <com_1/uart_1/tx_fsm/FSM> on signal <tx_fsm[1:2]> with gray encoding.
 --------------------
  State  | Encoding
@@ -569,74 +533,41 @@ Optimizing FSM <com_1/uart_1/tx_fsm/FSM> on signal <tx_fsm[1:2]> with gray encod
  stop1  | 11
  stop2  | 10
 --------------------
-Analyzing FSM <FSM_0> for best encoding.
-Optimizing FSM <sync_trigger_1/st_fsm_1/state/FSM> on signal <state[1:3]> with sequential encoding.
-------------------------
- State      | Encoding
-------------------------
- init       | 000
- first_edge | 001
- sec_edge   | 010
- trig_delay | 011
- trig_out   | 100
- undef6     | unreached
- undef7     | unreached
- undef8     | unreached
-------------------------
-Loading device for application Rf_Device from file '5vfx30t.nph' in environment C:\Xilinx\10.1\ISE.
-INFO:Xst:2261 - The FF/Latch <trigger_out_0> in Unit <st_fsm> is equivalent to the following 3 FFs/Latches, which will be removed : <trigger_out_1> <trigger_out_2> <trigger_out_3> 
-WARNING:Xst:1710 - FF/Latch <rx_par_bit> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <tx_data_tmp_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <tx_data_tmp_7> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <tx_data_tmp_6> (without init value) has a constant value of 0 in block <uart_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <tx_data_tmp_7> (without init value) has a constant value of 0 in block <uart_1>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <rx_data_tmp_7> of sequential type is unconnected in block <uart>.
-WARNING:Xst:2677 - Node <rx_data_7> of sequential type is unconnected in block <uart_1>.
-WARNING:Xst:2677 - Node <rx_ready> of sequential type is unconnected in block <uart_1>.
-WARNING:Xst:2677 - Node <rx_data_tmp_0> of sequential type is unconnected in block <uart_1>.
-WARNING:Xst:2677 - Node <rx_data_tmp_1> of sequential type is unconnected in block <uart_1>.
-WARNING:Xst:2677 - Node <rx_data_tmp_2> of sequential type is unconnected in block <uart_1>.
-WARNING:Xst:2677 - Node <rx_data_tmp_3> of sequential type is unconnected in block <uart_1>.
-WARNING:Xst:2677 - Node <rx_data_tmp_4> of sequential type is unconnected in block <uart_1>.
-WARNING:Xst:2677 - Node <rx_data_tmp_5> of sequential type is unconnected in block <uart_1>.
-WARNING:Xst:2677 - Node <rx_data_tmp_6> of sequential type is unconnected in block <uart_1>.
-WARNING:Xst:2677 - Node <rx_data_0> of sequential type is unconnected in block <uart_1>.
-WARNING:Xst:2677 - Node <rx_data_1> of sequential type is unconnected in block <uart_1>.
-WARNING:Xst:2677 - Node <tx_par_bit> of sequential type is unconnected in block <uart_1>.
-WARNING:Xst:2677 - Node <rx_data_2> of sequential type is unconnected in block <uart_1>.
-WARNING:Xst:2677 - Node <rx_data_3> of sequential type is unconnected in block <uart_1>.
-WARNING:Xst:2677 - Node <rx_data_4> of sequential type is unconnected in block <uart_1>.
-WARNING:Xst:2677 - Node <rx_data_5> of sequential type is unconnected in block <uart_1>.
-WARNING:Xst:2677 - Node <rx_data_6> of sequential type is unconnected in block <uart_1>.
-WARNING:Xst:2677 - Node <tx_end> of sequential type is unconnected in block <uart_1>.
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
+# FSMs                                                 : 4
 # Adders/Subtractors                                   : 6
  16-bit adder                                          : 1
- 3-bit adder                                           : 1
+ 3-bit adder                                           : 2
  3-bit subtractor                                      : 1
- 4-bit adder                                           : 2
+ 31-bit adder                                          : 1
  5-bit adder                                           : 1
 # Counters                                             : 2
  14-bit up counter                                     : 2
-# Registers                                            : 101
- Flip-Flops                                            : 101
+# Registers                                            : 91
+ Flip-Flops                                            : 91
 # Comparators                                          : 1
- 4-bit comparator equal                                : 1
-# Xors                                                 : 2
- 1-bit xor2                                            : 2
+ 31-bit comparator greater                             : 1
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:1710 - FF/Latch <rx_par_bit> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <tx_data_tmp_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <tx_data_tmp_7> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <tx_par_bit> of sequential type is unconnected in block <uart>.
 
 Optimizing unit <top> ...
-
-Optimizing unit <st_fsm> ...
 
 Optimizing unit <uart> ...
 
@@ -697,13 +628,13 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 85
- Flip-Flops                                            : 85
+# Registers                                            : 86
+ Flip-Flops                                            : 86
 
 =========================================================================
 
 =========================================================================
-*                           Partition Report                             *
+*                           Partition Report                            *
 =========================================================================
 
 Partition Implementation Status
@@ -721,39 +652,39 @@ RTL Top Level Output File Name     : top.ngr
 Top Level Output File Name         : top
 Output Format                      : NGC
 Optimization Goal                  : Speed
-Keep Hierarchy                     : NO
+Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 37
+# IOs                              : 30
 
 Cell Usage :
-# BELS                             : 219
+# BELS                             : 200
 #      GND                         : 1
-#      INV                         : 7
+#      INV                         : 8
 #      LUT1                        : 28
-#      LUT2                        : 9
-#      LUT3                        : 9
-#      LUT4                        : 31
-#      LUT5                        : 19
-#      LUT6                        : 55
-#      MUXCY                       : 28
+#      LUT2                        : 11
+#      LUT3                        : 8
+#      LUT4                        : 27
+#      LUT5                        : 8
+#      LUT6                        : 44
+#      MUXCY                       : 33
 #      MUXF7                       : 1
 #      VCC                         : 1
 #      XORCY                       : 30
-# FlipFlops/Latches                : 86
-#      FDC                         : 64
-#      FDCE                        : 11
-#      FDE                         : 2
+# FlipFlops/Latches                : 87
+#      FDC                         : 67
+#      FDCE                        : 12
+#      FDE                         : 3
 #      FDP                         : 3
-#      FDPE                        : 5
+#      FDPE                        : 1
 #      ODDR                        : 1
 # Clock Buffers                    : 3
 #      BUFG                        : 3
-# IO Buffers                       : 21
-#      IBUF                        : 1
-#      IBUFDS                      : 10
+# IO Buffers                       : 19
+#      IBUF                        : 2
+#      IBUFDS                      : 2
 #      IBUFG                       : 1
-#      OBUF                        : 4
+#      OBUF                        : 9
 #      OBUFDS                      : 5
 # Others                           : 1
 #      PLL_ADV                     : 1
@@ -766,20 +697,20 @@ Selected Device : 5vfx30tff665-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              86  out of  20480     0%  
- Number of Slice LUTs:                  158  out of  20480     0%  
-    Number used as Logic:               158  out of  20480     0%  
+ Number of Slice Registers:              87  out of  20480     0%  
+ Number of Slice LUTs:                  134  out of  20480     0%  
+    Number used as Logic:               134  out of  20480     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    171
-   Number with an unused Flip Flop:      85  out of    171    49%  
-   Number with an unused LUT:            13  out of    171     7%  
-   Number of fully used LUT-FF pairs:    73  out of    171    42%  
-   Number of unique control sets:        12
+ Number of LUT Flip Flop pairs used:    147
+   Number with an unused Flip Flop:      60  out of    147    40%  
+   Number with an unused LUT:            13  out of    147     8%  
+   Number of fully used LUT-FF pairs:    74  out of    147    50%  
+   Number of unique control sets:         9
 
 IO Utilization: 
- Number of IOs:                          37
- Number of bonded IOBs:                  36  out of    360    10%  
+ Number of IOs:                          30
+ Number of bonded IOBs:                  26  out of    360     7%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                3  out of     32     9%  
@@ -806,34 +737,30 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-Inst_CRU/Inst_PLL_ALL/CLKOUT1_BUF  | BUFG                   | 51    |
-FPGA100M                           | IBUFG+BUFG             | 32    |
+Inst_CRU/Inst_PLL_ALL/CLKOUT1_BUF  | BUFG                   | 48    |
+FPGA100M                           | IBUFG+BUFG             | 36    |
 Inst_CRU/Inst_PLL_ALL/CLKOUT0_BUF  | BUFG                   | 3     |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
 ----------------------------------------
----------------------------------------------------------------------------------------------+--------------------------------------------+-------+
-Control Signal                                                                               | Buffer(FF name)                            | Load  |
----------------------------------------------------------------------------------------------+--------------------------------------------+-------+
-RESET                                                                                        | IBUF                                       | 31    |
-com_1/rst_uart(com_1/rst_uart:Q)                                                             | NONE(com_1/uart_1/counter_8)               | 27    |
-sync_trigger_1/st_fsm_1/rst_b_inv(sync_trigger_1/st_fsm_1/rst_b_inv1_INV_0:O)                | NONE(sync_trigger_1/st_fsm_1/counter_0)    | 15    |
-Inst_CRU/fe_rst_sync/arst_b_inv(Inst_CRU/fe_rst_sync/arst_b_inv1_INV_0:O)                    | NONE(Inst_CRU/fe_rst_sync/d_0)             | 2     |
-sync_trigger_1/G3[0].trigger_sync/arst_b_inv(sync_trigger_1/G3[0].trigger_sync/arst_b_inv1:O)| NONE(sync_trigger_1/G3[0].trigger_sync/d_1)| 2     |
-sync_trigger_1/G3[1].trigger_sync/arst_b_inv(sync_trigger_1/G3[1].trigger_sync/arst_b_inv1:O)| NONE(sync_trigger_1/G3[1].trigger_sync/d_0)| 2     |
-sync_trigger_1/G3[2].trigger_sync/arst_b_inv(sync_trigger_1/G3[2].trigger_sync/arst_b_inv1:O)| NONE(sync_trigger_1/G3[2].trigger_sync/d_1)| 2     |
-sync_trigger_1/G3[3].trigger_sync/arst_b_inv(sync_trigger_1/G3[3].trigger_sync/arst_b_inv1:O)| NONE(sync_trigger_1/G3[3].trigger_sync/d_0)| 2     |
----------------------------------------------------------------------------------------------+--------------------------------------------+-------+
+-------------------------------------------------------------------------+-------------------------------+-------+
+Control Signal                                                           | Buffer(FF name)               | Load  |
+-------------------------------------------------------------------------+-------------------------------+-------+
+BUTTONS<0>                                                               | IBUF                          | 35    |
+com_1/rst_uart(com_1/rst_uart:Q)                                         | NONE(com_1/uart_1/counter_0)  | 27    |
+com_1/rst(sync_trigger_1/G3[0].edge_detect_1/rst_b_inv1_INV_0:O)         | NONE(com_1/fsm_state_FSM_FFd1)| 19    |
+Inst_CRU/fe_rst_sync/arst_b_inv(Inst_CRU/fe_rst_sync/arst_b_inv1_INV_0:O)| NONE(Inst_CRU/fe_rst_sync/d_0)| 2     |
+-------------------------------------------------------------------------+-------------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: 3.700ns (Maximum Frequency: 270.270MHz)
-   Minimum input arrival time before clock: 2.068ns
-   Maximum output required time after clock: 3.926ns
-   Maximum combinational path delay: 0.000ns
+   Minimum period: 3.802ns (Maximum Frequency: 263.019MHz)
+   Minimum input arrival time before clock: 2.069ns
+   Maximum output required time after clock: 3.945ns
+   Maximum combinational path delay: 4.196ns
 
 Timing Detail:
 --------------
@@ -841,54 +768,56 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Inst_CRU/Inst_PLL_ALL/CLKOUT1_BUF'
-  Clock period: 2.968ns (frequency: 336.927MHz)
-  Total number of paths / destination ports: 645 / 62
+  Clock period: 3.213ns (frequency: 311.236MHz)
+  Total number of paths / destination ports: 476 / 59
 -------------------------------------------------------------------------
-Delay:               2.968ns (Levels of Logic = 5)
-  Source:            com_1/uart_1/counter_0 (FF)
-  Destination:       com_1/uart_1/counter_2 (FF)
+Delay:               3.213ns (Levels of Logic = 7)
+  Source:            sync_trigger_1/coincidence_array<1>_0 (FF)
+  Destination:       sync_trigger_1/coincidence_hold (FF)
   Source Clock:      Inst_CRU/Inst_PLL_ALL/CLKOUT1_BUF rising
   Destination Clock: Inst_CRU/Inst_PLL_ALL/CLKOUT1_BUF rising
 
-  Data Path: com_1/uart_1/counter_0 to com_1/uart_1/counter_2
+  Data Path: sync_trigger_1/coincidence_array<1>_0 to sync_trigger_1/coincidence_hold
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              2   0.471   0.341  com_1/uart_1/counter_0 (com_1/uart_1/counter_0)
-     INV:I->O              1   0.238   0.000  com_1/uart_1/Mcount_counter_lut<0>_INV_0 (com_1/uart_1/Mcount_counter_lut<0>)
-     MUXCY:S->O            1   0.372   0.000  com_1/uart_1/Mcount_counter_cy<0> (com_1/uart_1/Mcount_counter_cy<0>)
-     MUXCY:CI->O           1   0.026   0.000  com_1/uart_1/Mcount_counter_cy<1> (com_1/uart_1/Mcount_counter_cy<1>)
-     XORCY:CI->O           1   0.357   1.069  com_1/uart_1/Mcount_counter_xor<2> (com_1/uart_1/Result<2>)
-     LUT6:I0->O            1   0.094   0.000  com_1/uart_1/Mcount_counter_eqn_21 (com_1/uart_1/Mcount_counter_eqn_2)
-     FDC:D                    -0.018          com_1/uart_1/counter_2
+     FDC:C->Q              2   0.471   0.794  sync_trigger_1/coincidence_array<1>_0 (sync_trigger_1/coincidence_array<1>_0)
+     LUT4:I0->O            1   0.094   0.000  sync_trigger_1/Mcompar_coincidence_cmp_gt0000_lut<0>1 (sync_trigger_1/Mcompar_coincidence_cmp_gt0000_lut<0>)
+     MUXCY:S->O            1   0.372   0.000  sync_trigger_1/Mcompar_coincidence_cmp_gt0000_cy<0> (sync_trigger_1/Mcompar_coincidence_cmp_gt0000_cy<0>)
+     MUXCY:CI->O           1   0.026   0.000  sync_trigger_1/Mcompar_coincidence_cmp_gt0000_cy<1> (sync_trigger_1/Mcompar_coincidence_cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.026   0.000  sync_trigger_1/Mcompar_coincidence_cmp_gt0000_cy<2> (sync_trigger_1/Mcompar_coincidence_cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.026   0.000  sync_trigger_1/Mcompar_coincidence_cmp_gt0000_cy<3> (sync_trigger_1/Mcompar_coincidence_cmp_gt0000_cy<3>)
+     MUXCY:CI->O           6   0.254   0.507  sync_trigger_1/Mcompar_coincidence_cmp_gt0000_cy<4> (sync_trigger_1/Mcompar_coincidence_cmp_gt0000_cy<4>)
+     LUT2:I1->O            1   0.094   0.336  sync_trigger_1/coincidence_hold_not00011 (sync_trigger_1/coincidence_hold_not0001)
+     FDCE:CE                   0.213          sync_trigger_1/coincidence_hold
     ----------------------------------------
-    Total                      2.968ns (1.558ns logic, 1.410ns route)
-                                       (52.5% logic, 47.5% route)
+    Total                      3.213ns (1.576ns logic, 1.637ns route)
+                                       (49.1% logic, 50.9% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'FPGA100M'
-  Clock period: 3.700ns (frequency: 270.270MHz)
-  Total number of paths / destination ports: 1492 / 32
+  Clock period: 3.802ns (frequency: 263.019MHz)
+  Total number of paths / destination ports: 1385 / 36
 -------------------------------------------------------------------------
-Delay:               3.700ns (Levels of Logic = 4)
-  Source:            Inst_CRU/wait_counter_2 (FF)
+Delay:               3.802ns (Levels of Logic = 4)
+  Source:            Inst_CRU/wait_counter_5 (FF)
   Destination:       Inst_CRU/wait_counter_15 (FF)
   Source Clock:      FPGA100M rising
   Destination Clock: FPGA100M rising
 
-  Data Path: Inst_CRU/wait_counter_2 to Inst_CRU/wait_counter_15
+  Data Path: Inst_CRU/wait_counter_5 to Inst_CRU/wait_counter_15
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              6   0.471   1.000  Inst_CRU/wait_counter_2 (Inst_CRU/wait_counter_2)
-     LUT5:I0->O            1   0.094   0.576  Inst_CRU/state_cmp_eq000226 (Inst_CRU/state_cmp_eq000226)
-     LUT5:I3->O            2   0.094   0.715  Inst_CRU/state_cmp_eq000299 (Inst_CRU/state_cmp_eq0002)
-     LUT6:I3->O           16   0.094   0.562  Inst_CRU/wait_counter_mux0001<0>1 (Inst_CRU/N01)
+     FDC:C->Q              4   0.471   1.085  Inst_CRU/wait_counter_5 (Inst_CRU/wait_counter_5)
+     LUT6:I0->O            3   0.094   0.587  Inst_CRU/state_cmp_eq00002_SW0 (N5)
+     LUT6:I4->O            3   0.094   0.721  Inst_CRU/wait_counter2_cmp_eq00001 (Inst_CRU/wait_counter2_cmp_eq0000)
+     LUT6:I3->O           16   0.094   0.562  Inst_CRU/wait_counter_mux0001<0>11 (Inst_CRU/N01)
      LUT4:I3->O            1   0.094   0.000  Inst_CRU/wait_counter_mux0001<9>1 (Inst_CRU/wait_counter_mux0001<9>)
      FDC:D                    -0.018          Inst_CRU/wait_counter_6
     ----------------------------------------
-    Total                      3.700ns (0.847ns logic, 2.853ns route)
-                                       (22.9% logic, 77.1% route)
+    Total                      3.802ns (0.847ns logic, 2.955ns route)
+                                       (22.3% logic, 77.7% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Inst_CRU/Inst_PLL_ALL/CLKOUT0_BUF'
@@ -912,64 +841,83 @@ Delay:               0.807ns (Levels of Logic = 0)
                                        (58.4% logic, 41.6% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'FPGA100M'
-  Total number of paths / destination ports: 3 / 3
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_CRU/Inst_PLL_ALL/CLKOUT1_BUF'
+  Total number of paths / destination ports: 6 / 4
 -------------------------------------------------------------------------
-Offset:              2.068ns (Levels of Logic = 2)
-  Source:            RESET (PAD)
+Offset:              1.946ns (Levels of Logic = 2)
+  Source:            BUTTONS<3> (PAD)
+  Destination:       trigled (FF)
+  Destination Clock: Inst_CRU/Inst_PLL_ALL/CLKOUT1_BUF rising
+
+  Data Path: BUTTONS<3> to trigled
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.818   0.485  BUTTONS_3_IBUF (BUTTONS_3_IBUF)
+     LUT4:I3->O            1   0.094   0.336  trigled_and00001 (trigled_and0000)
+     FDE:CE                    0.213          trigled
+    ----------------------------------------
+    Total                      1.946ns (1.125ns logic, 0.821ns route)
+                                       (57.8% logic, 42.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'FPGA100M'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              2.069ns (Levels of Logic = 2)
+  Source:            BUTTONS<0> (PAD)
   Destination:       Inst_CRU/pll_reset (FF)
   Destination Clock: FPGA100M rising
 
-  Data Path: RESET to Inst_CRU/pll_reset
+  Data Path: BUTTONS<0> to Inst_CRU/pll_reset
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            32   0.818   0.463  RESET_IBUF (RESET_IBUF)
+     IBUF:I->O            36   0.818   0.464  BUTTONS_0_IBUF (BUTTONS_0_IBUF)
      INV:I->O              1   0.238   0.336  Inst_CRU/fpga_cpu_reset_inv1_INV_0 (Inst_CRU/fpga_cpu_reset_inv)
      FDE:CE                    0.213          Inst_CRU/pll_reset
     ----------------------------------------
-    Total                      2.068ns (1.269ns logic, 0.799ns route)
-                                       (61.4% logic, 38.6% route)
+    Total                      2.069ns (1.269ns logic, 0.800ns route)
+                                       (61.3% logic, 38.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_CRU/Inst_PLL_ALL/CLKOUT0_BUF'
-  Total number of paths / destination ports: 4 / 4
+  Total number of paths / destination ports: 6 / 6
 -------------------------------------------------------------------------
-Offset:              3.926ns (Levels of Logic = 2)
-  Source:            Inst_CRU/fe_rst_sync/d_1 (FF)
-  Destination:       test_led2 (PAD)
+Offset:              3.395ns (Levels of Logic = 1)
+  Source:            Inst_CRU/MCLK_ODDR_OUT (FF)
+  Destination:       MCLK100 (PAD)
   Source Clock:      Inst_CRU/Inst_PLL_ALL/CLKOUT0_BUF rising
 
-  Data Path: Inst_CRU/fe_rst_sync/d_1 to test_led2
+  Data Path: Inst_CRU/MCLK_ODDR_OUT to MCLK100
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              3   0.471   0.347  Inst_CRU/fe_rst_sync/d_1 (Inst_CRU/fe_rst_sync/d_1)
-     INV:I->O             16   0.238   0.418  sync_trigger_1/st_fsm_1/rst_b_inv1_INV_0 (sync_trigger_1/st_fsm_1/rst_b_inv)
-     OBUF:I->O                 2.452          test_led2_OBUF (test_led2)
+     ODDR:C->Q             1   0.607   0.336  Inst_CRU/MCLK_ODDR_OUT (Inst_CRU/mclk_o_ddr)
+     OBUFDS:I->O               2.452          Inst_CRU/MCLK_DIFF_OUT (MCLK100)
     ----------------------------------------
-    Total                      3.926ns (3.161ns logic, 0.765ns route)
-                                       (80.5% logic, 19.5% route)
+    Total                      3.395ns (3.059ns logic, 0.336ns route)
+                                       (90.1% logic, 9.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_CRU/Inst_PLL_ALL/CLKOUT1_BUF'
-  Total number of paths / destination ports: 10 / 10
+  Total number of paths / destination ports: 7 / 7
 -------------------------------------------------------------------------
-Offset:              3.838ns (Levels of Logic = 2)
-  Source:            com_1/uart_1/tx (FF)
-  Destination:       test_led (PAD)
+Offset:              3.945ns (Levels of Logic = 2)
+  Source:            sync_trigger_1/trig_out_s_d_0 (FF)
+  Destination:       SYNC_TRIGGER_OUT_b<1> (PAD)
   Source Clock:      Inst_CRU/Inst_PLL_ALL/CLKOUT1_BUF rising
 
-  Data Path: com_1/uart_1/tx to test_led
+  Data Path: sync_trigger_1/trig_out_s_d_0 to SYNC_TRIGGER_OUT_b<1>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDPE:C->Q             2   0.471   0.341  com_1/uart_1/tx (com_1/uart_1/tx)
-     INV:I->O              1   0.238   0.336  test_led1_INV_0 (test_led_OBUF)
-     OBUF:I->O                 2.452          test_led_OBUF (test_led)
+     FDC:C->Q              2   0.471   0.581  sync_trigger_1/trig_out_s_d_0 (sync_trigger_1/trig_out_s_d_0)
+     LUT2:I0->O            3   0.094   0.347  trig_out_se2_or00001 (trig_out_se2<0>)
+     OBUFDS:I->O               2.452          G2[0].diff_out (SYNC_TRIGGER_OUT<0>)
     ----------------------------------------
-    Total                      3.838ns (3.161ns logic, 0.677ns route)
-                                       (82.4% logic, 17.6% route)
+    Total                      3.945ns (3.017ns logic, 0.928ns route)
+                                       (76.5% logic, 23.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'FPGA100M'
@@ -992,32 +940,34 @@ Offset:              0.471ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 1 / 1
+  Total number of paths / destination ports: 5 / 5
 -------------------------------------------------------------------------
-Delay:               0.000ns (Levels of Logic = 0)
-  Source:            Inst_CRU/Inst_PLL_ALL/PLL_ADV_INST:CLKFBOUT (PAD)
-  Destination:       Inst_CRU/Inst_PLL_ALL/PLL_ADV_INST:CLKFBIN (PAD)
+Delay:               4.196ns (Levels of Logic = 3)
+  Source:            BUTTONS<3> (PAD)
+  Destination:       SYNC_TRIGGER_OUT_b<1> (PAD)
 
-  Data Path: Inst_CRU/Inst_PLL_ALL/PLL_ADV_INST:CLKFBOUT to Inst_CRU/Inst_PLL_ALL/PLL_ADV_INST:CLKFBIN
+  Data Path: BUTTONS<3> to SYNC_TRIGGER_OUT_b<1>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-    PLL_ADV:CLKFBOUT       0   0.000   0.000  Inst_CRU/Inst_PLL_ALL/PLL_ADV_INST (Inst_CRU/Inst_PLL_ALL/CLKFBOUT_CLKFBIN)
-    PLL_ADV:CLKFBIN            0.000          Inst_CRU/Inst_PLL_ALL/PLL_ADV_INST
+     IBUF:I->O             2   0.818   0.485  BUTTONS_3_IBUF (BUTTONS_3_IBUF)
+     LUT2:I1->O            3   0.094   0.347  trig_out_se2_or00001 (trig_out_se2<0>)
+     OBUFDS:I->O               2.452          G2[0].diff_out (SYNC_TRIGGER_OUT<0>)
     ----------------------------------------
-    Total                      0.000ns (0.000ns logic, 0.000ns route)
+    Total                      4.196ns (3.364ns logic, 0.832ns route)
+                                       (80.2% logic, 19.8% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 22.00 secs
-Total CPU time to Xst completion: 22.47 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.78 secs
  
 --> 
 
-Total memory usage is 266268 kilobytes
+Total memory usage is 185644 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   73 (   0 filtered)
-Number of infos    :   18 (   0 filtered)
+Number of warnings :   63 (   0 filtered)
+Number of infos    :   17 (   0 filtered)
 

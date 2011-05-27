@@ -1,9 +1,14 @@
-Release 10.1.03 - par K.39 (nt)
-Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+Release 13.1 - par O.40d (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
-Fri Mar 11 11:31:31 2011
+Thu Apr 07 12:27:27 2011
 
 All signals are completely routed.
 
+WARNING:ParHelpers:361 - There are 2 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   BUTTONS<1>_IBUF
+   BUTTONS<2>_IBUF
 
 

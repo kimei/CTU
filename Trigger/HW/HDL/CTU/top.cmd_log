@@ -1,5 +1,0 @@
-xst -ise "M:/MASTER/COMPET/Trigger/HW/HDL/CTU/CTU.ise" -intstyle ise -ifn "M:/MASTER/COMPET/Trigger/HW/HDL/CTU/top.xst" -ofn "M:/MASTER/COMPET/Trigger/HW/HDL/CTU/top.syr"
-ngdbuild -ise "M:/MASTER/COMPET/Trigger/HW/HDL/CTU/CTU.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc5vlx50t-ff1136-1 "top.ngc" top.ngd
-map -ise "M:/MASTER/COMPET/Trigger/HW/HDL/CTU/CTU.ise" -intstyle ise -p xc5vlx50t-ff1136-1 -w -logic_opt off -ol high -t 1 -cm area -pr off -k 6 -lc off -power off -o top_map.ncd top.ngd top.pcf
-par -ise "M:/MASTER/COMPET/Trigger/HW/HDL/CTU/CTU.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
-trce -ise "M:/MASTER/COMPET/Trigger/HW/HDL/CTU/CTU.ise" -intstyle ise -v 3 -s 1 -xml top top.ncd -o top.twr top.pcf

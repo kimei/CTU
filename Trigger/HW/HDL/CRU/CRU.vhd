@@ -43,7 +43,9 @@ entity CRU is
     -- Clock outputs
     mclk   : out std_logic;
     mclk_b : out std_logic;             -- Master clock
-    gclk   : out std_logic;  -- single ended clock used on 'this fpga.
+    gclk   : out std_logic;  				-- single ended clock used on 'this fpga.
+	 clk200 : out std_logic;
+	 clk125 : out std_logic;
 
     -- Reset outputs
     mrst_b : out std_logic;             -- Global master reset
@@ -74,6 +76,8 @@ architecture Behavioral of CRU is
   signal mclk_s     : std_logic;  -- Master clock, single ended to go into differential port
   signal mclk_o_ddr : std_logic;        -- Out from ODDR
   signal gclk_s     : std_logic;  -- Signal of gclksignal mclk_s : std_logic;
+  signal clk125_s : std_logic;
+  signal clk200_s : std_logic;
 
   component IBUFG
     port (O : out std_ulogic;
@@ -104,11 +108,13 @@ architecture Behavioral of CRU is
   end component;
   
 begin
-  Inst_PLL_ALL : PLL_ALL port map(
+  Inst_PLL_ALL : PLL_core port map(
     CLKIN1_IN   => fpga_100m_clk_s,
     RST_IN      => pll_reset,
     CLKOUT0_OUT => mclk_s,
     CLKOUT1_OUT => gclk_s,
+	 CLKOUT2_OUT => clk125_s,
+	 CLKOUT3_OUT => clk200_s,
     LOCKED_OUT  => clk_lock);
 
   MCLK_DIFF_OUT : OBUFDS port map(
@@ -129,11 +135,9 @@ begin
     port map (O => fpga_100m_clk_s,
               I => fpga_100m_clk);
 
-
-
-
   gclk <= gclk_s;
-
+	clk125 <= clk125_s;
+	clk200 <= clk200_s;
 -- The purpose of this state machine is not to over-complicate things. but:
 -- the start-up procedure has to happen in a few steps. First, the PLL must be reset. And
 -- LOCK_OUT signal can not be trusted until 100 us after reset. Then the output of

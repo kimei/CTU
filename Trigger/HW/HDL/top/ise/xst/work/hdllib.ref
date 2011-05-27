@@ -1,8 +1,0 @@
-AR pll_all behavioral //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/top/ise/PLL_ALL.vhd sub00/vhpl03 1298559474
-PH constants NULL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Shared/constants.vhd sub00/vhpl00 1298559471
-EN pll_all NULL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/top/ise/PLL_ALL.vhd sub00/vhpl02 1298559473
-EN cru NULL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/CRU/CRU.vhd sub00/vhpl04 1298559475
-EN top NULL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/top/top.vhd sub00/vhpl06 1298559477
-PH components NULL //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Shared/components.vhd sub00/vhpl01 1298559472
-AR top behavioral //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/top/top.vhd sub00/vhpl07 1298559478
-AR cru behavioral //aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/CRU/CRU.vhd sub00/vhpl05 1298559476
