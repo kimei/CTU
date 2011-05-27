@@ -1,4 +1,3 @@
-
 --! \file
 --! \brief The Clock Reset Unit
 
@@ -26,22 +25,23 @@ entity cru is
 --     fpga_27m_clk      : in  std_logic; -- 27MHz  single-ended, same as USB controller utilises 
 --     fpga_200m_clk     : in  std_logic; -- 200MHz differential clock
 
-    -- added by
-    clk100m_ctu         : in  std_logic;  -- differential clk input from CTU
-    clk100m_ctu_b       : in  std_logic;
-    cru_reset_b         : in  std_logic;
-    clk100m_ctu_out     : out  std_logic;  -- differential clk input from CTU
-    clk100m_ctu_out_b   : out  std_logic;
-    using_ext_clock_led : out std_logic;
-    -- end added by kim
-
     fpga_cpu_reset_b : in std_logic;  --! Active low system reset (only connected to the IO pad)
+
 
     up_clk        : out std_logic;      --! 100MHz Microblaze clock
     fe_clk        : out std_logic;      --! Front-end clock
-    mclk          : out std_logic;      --! 50 MHz master (global) clock
+    mclk          : out std_logic;      --! 166 MHz master (global) clock
+    mclk0         : out std_logic;      --! 40 MHz master (global) clock0
     REFCLK_200MHz : out std_logic;
-    REFCLK_125MHz : out std_logic;
+--    REFCLK_125MHz     : out std_logic;
+
+    -- added by
+    clk100m_ctu       : in  std_logic;  -- differential clk input from CTU
+    clk100m_ctu_b     : in  std_logic;
+    cru_reset_b       : in  std_logic;
+    clk100m_ctu_out   : out std_logic;  -- differential clk input from CTU
+    clk100m_ctu_out_b : out std_logic;
+    -- end added by kim
 
 
     up_rst_b     : out std_logic;  --! Microblaze reset (synchronous assert/deassert)
@@ -58,8 +58,6 @@ end entity;
 --! \brief Architecture
 architecture rtl of cru is
 ---------------------------------------------------------------------------------------------------
-
-
   component pll_all
     port(
       CLKIN1_IN   : in  std_logic;
@@ -95,7 +93,7 @@ architecture rtl of cru is
       OB : out std_ulogic;
       I  : in  std_ulogic);
   end component;
-  
+
   component BUFGMUX
     port (
       O  : out std_ulogic;
@@ -106,7 +104,7 @@ architecture rtl of cru is
   end component;
 
   signal clk100m_out : std_logic;
-  
+
   signal fpga_cpu_reset : std_logic;
   signal clk_stable     : std_logic;
 
@@ -114,22 +112,22 @@ architecture rtl of cru is
   signal fe_clk_i        : std_logic;
   signal up_clk_i        : std_logic;
   signal REFCLK_200MHz_i : std_logic;
-  signal REFCLK_125MHz_i : std_logic;
- signal  clk100m_out_i : std_logic;
-  
+  signal mclk0_i         : std_logic;
+  signal clk100m_out_i   : std_logic;
+
   signal mclk_i_0          : std_logic;
   signal fe_clk_i_0        : std_logic;
   signal up_clk_i_0        : std_logic;
   signal REFCLK_200MHz_i_0 : std_logic;
-  signal REFCLK_125MHz_i_0 : std_logic;
- 
+  signal mclk0_i_0         : std_logic;
+
 
   signal mclk_i_1          : std_logic;
   signal fe_clk_i_1        : std_logic;
   signal up_clk_i_1        : std_logic;
   signal REFCLK_200MHz_i_1 : std_logic;
-  signal REFCLK_125MHz_i_1 : std_logic;
-  signal clk100m_out_i_1 : std_logic; 
+  signal mclk0_i_1         : std_logic;
+  signal clk100m_out_i_1   : std_logic;
 
   signal mrst_b_i       : std_logic;
   signal fe_rst_b_i     : std_logic;
@@ -153,14 +151,14 @@ begin
 
 --! Use a PLL to create internal clocks based on the same 100MHz board clock source.
 --! This should ease adaption to dynamic switch of source clock..
-  fpga_cpu_reset      <= not fpga_cpu_reset_b;
+  fpga_cpu_reset <= not fpga_cpu_reset_b;
+
+  cru_OR_fpga_rst <= fpga_cpu_reset or (not cru_reset_b);
+
+  rst_DCM2PLL       <= cru_OR_fpga_rst and (not DCM2PLL_lock_uf);
+  cru_OR_fpga_rst_b <= not cru_OR_fpga_rst;
+
   
-  cru_OR_fpga_rst     <= fpga_cpu_reset or (not cru_reset_b);
-  
-  rst_DCM2PLL         <= cru_OR_fpga_rst and (not DCM2PLL_lock_uf);
-  cru_OR_fpga_rst_b   <= not cru_OR_fpga_rst;
-  
-  using_ext_clock_led <= DCM2PLL_lock;
 
   clk_gen_pll : pll_all port map(
     CLKIN1_IN   => fpga_100m_clk ,      --! 100MHz board clock
@@ -168,7 +166,7 @@ begin
     CLKOUT0_OUT => up_clk_i_0 ,         --! Microblaze clock (100 MHz)
     CLKOUT1_OUT => fe_clk_i_0 ,         --! Front-end clock
     CLKOUT2_OUT => mclk_i_0 ,           --! Master clock (50 MHz)
-    CLKOUT3_OUT => REFCLK_125MHz_i_0 ,  --! 125MHz clk for UDP
+    CLKOUT3_OUT => mclk0_i_0 ,          --! 125MHz clk for UDP
     CLKOUT4_OUT => REFCLK_200MHz_i_0 ,  --! 200MHz reference clock for UDP
     LOCKED_OUT  => clk_stable  --! Indicates whether the PLL has a clock lock
     );
@@ -185,17 +183,17 @@ begin
     CLKOUT0_OUT       => up_clk_i_1,
     CLKOUT1_OUT       => fe_clk_i_1,
     CLKOUT2_OUT       => mclk_i_1,
-    CLKOUT3_OUT       => REFCLK_125MHz_i_1,
+    CLKOUT3_OUT       => mclk0_i_1,
     CLKOUT4_OUT       => REFCLK_200MHz_i_1,
     CLKOUT5_OUT       => clk100m_out_i_1,
     LOCKED_OUT        => DCM2PLL_lock_uf
     );
-  clk100m_out_mux  : BUFGMUX
+  clk100m_out_mux : BUFGMUX
     port map (O  => clk100m_out_i,
               I0 => '0',
               I1 => clk100m_out_i_1,
               S  => DCM2PLL_lock);
-  
+
   up_clk_mux : BUFGMUX
     port map (O  => up_clk_i,
               I0 => up_clk_i_0,
@@ -211,10 +209,10 @@ begin
               I0 => mclk_i_0,
               I1 => mclk_i_1,
               S  => DCM2PLL_lock);
-  REFCLK_125MHz_mux : BUFGMUX
-    port map (O  => REFCLK_125MHz_i,
-              I0 => REFCLK_125MHz_i_0,
-              I1 => REFCLK_125MHz_i_1,
+  mclk0_mux : BUFGMUX
+    port map (O  => mclk0_i,
+              I0 => mclk0_i_0,
+              I1 => mclk0_i_1,
               S  => DCM2PLL_lock);
   REFCLK_200MHz_mux : BUFGMUX
     port map (O  => REFCLK_200MHz_i,
@@ -225,7 +223,7 @@ begin
     port map (
       O  => clk100m_ctu_out ,
       OB => clk100m_ctu_out_b,
-      I  => clk100m_out_i );
+      I  => clk100m_out_i);
 
 
 -- purpose: Connect LOCKED_OUT from DCM2PLL to multiplexer 100 us after reset on DCM2PLL is deasserted
@@ -240,7 +238,7 @@ begin
       if locked_counter < 10000 then
         locked_counter <= locked_counter + 1;
       else
-        DCM2PLL_lock <= DCM2PLL_lock_uf;          -- and its filtered..
+        DCM2PLL_lock <= DCM2PLL_lock_uf;              -- and its filtered..
       end if;
     end if;
   end process lock_filter;
@@ -250,7 +248,7 @@ begin
   fe_clk <= fe_clk_i;
   mclk   <= mclk_i;
 
-  REFCLK_125MHz <= REFCLK_125MHz_i;
+  mclk0         <= mclk0_i;
   REFCLK_200MHz <= REFCLK_200MHz_i;
 
 
@@ -289,10 +287,10 @@ begin
 
 
 --UDP / TEMAC etc.
-  UDP_125_Rst_sync : entity work.a2s port map(
+  mrst0_Rst_sync : entity work.a2s port map(
     srst_b => '1' ,                     --! Synchronous  reset
     arst_b => cru_OR_fpga_rst_b ,       --! Asynchronous reset
-    clk    => REFCLK_125MHz_i ,         --! Synchronisation clock
+    clk    => mclk0_i ,                 --! Synchronisation clock
     i      => '1' ,                     --! Asynchronous input
     o      => UDPRst_125_b_i            --! Synchronous  output (metafiltered)
     );

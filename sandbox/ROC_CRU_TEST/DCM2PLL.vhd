@@ -1,17 +1,17 @@
 --------------------------------------------------------------------------------
--- Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+-- Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 --------------------------------------------------------------------------------
 --   ____  ____ 
 --  /   /\/   / 
 -- /___/  \  /    Vendor: Xilinx 
--- \   \   \/     Version : 10.1.03
+-- \   \   \/     Version : 12.4
 --  \   \         Application : xaw2vhdl
 --  /   /         Filename : DCM2PLL.vhd
--- /___/   /\     Timestamp : 02/22/2011 16:35:17
+-- /___/   /\     Timestamp : 03/25/2011 15:27:50
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: xaw2vhdl-intstyle M:/MASTER/COMPET/sandbox/ROC_CRU_TEST/DCM2PLL.xaw -st DCM2PLL.vhd
+--Command: xaw2vhdl-st M:/MASTER/COMPET/sandbox/ROC_CRU_TEST/DCM2PLL.xaw M:/MASTER/COMPET/sandbox/ROC_CRU_TEST/DCM2PLL
 --Design Name: DCM2PLL
 --Device: xc5vlx50t-1ff1136
 --

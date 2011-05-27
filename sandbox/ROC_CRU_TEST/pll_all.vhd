@@ -1,17 +1,17 @@
 --------------------------------------------------------------------------------
--- Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+-- Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 --------------------------------------------------------------------------------
 --   ____  ____ 
 --  /   /\/   / 
 -- /___/  \  /    Vendor: Xilinx 
--- \   \   \/     Version : 10.1.03
+-- \   \   \/     Version : 12.4
 --  \   \         Application : xaw2vhdl
 --  /   /         Filename : pll_all.vhd
--- /___/   /\     Timestamp : 02/17/2011 14:16:46
+-- /___/   /\     Timestamp : 03/25/2011 15:27:43
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: xaw2vhdl-intstyle M:/MASTER/COMPET/sandbox/ROC_CRU_TEST/pll_all.xaw -st pll_all.vhd
+--Command: xaw2vhdl-st M:/MASTER/COMPET/sandbox/ROC_CRU_TEST/pll_all.xaw M:/MASTER/COMPET/sandbox/ROC_CRU_TEST/pll_all
 --Design Name: pll_all
 --Device: xc5vlx50t-1ff1136
 --

@@ -17,10 +17,6 @@
 -- Additional Comments: 
 --
 ----------------------------------------------------------------------------------
--- Changes added by Kim-Eigard 08-02-2011 for implementing clock multiplexing
--- between local clock and clock from the CTU
--- added CLK_100_CTU_p & _n to entity
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.STD_LOGIC_ARITH.all;
@@ -45,12 +41,14 @@ use unisim.vcomponents.all;
 entity top is
   port(
     --switches:
-    Switch     : in  std_logic_vector(3 downto 0);
-    LEDs       : out std_logic_vector(7 downto 0);
+    Switch    : in  std_logic_vector(3 downto 0);
+    LEDs      : out std_logic_vector(7 downto 0);
     --data lines:
-    fe_data_p  : in  std_logic_vector(fe_NUM_DIFF_CHANNELS-1 downto 0);
-    fe_data_n  : in  std_logic_vector(fe_NUM_DIFF_CHANNELS-1 downto 0);
-    fe_data_SE : in  std_logic_vector(fe_NUM_SE_CHANNELS-1 downto 0);
+    fe_data_p : in  std_logic_vector(fe_NUM_DIFF_CHANNELS-1 downto 0);
+    fe_data_n : in  std_logic_vector(fe_NUM_DIFF_CHANNELS-1 downto 0);
+    --fe_data_p          : in  std_logic_vector(8-1 downto 0) ;
+    --fe_data_n          : in  std_logic_vector(8-1 downto 0) ;
+    --fe_data_SE         : in  std_logic_vector(fe_NUM_SE_CHANNELS-1 downto 0);
 
     EMAC0CLIENTRXDVLD         : out std_logic;
     EMAC0CLIENTRXFRAMEDROP    : out std_logic;
@@ -78,7 +76,8 @@ entity top is
 
     MII_TX_CLK_0 : in std_logic;
     GMII_COL_0   : in std_logic;
-    GMII_CRS_0   : in std_logic; 
+    GMII_CRS_0   : in std_logic;
+
 
     -- added by kim
     -- FROM CTU
@@ -87,7 +86,7 @@ entity top is
     clk100m_out    : out std_logic;     -- differential clk input from CTU
     clk100m_out_b  : out std_logic;
     RST_GLOBAL_CTU : in  std_logic
-    -- end added by kim
+    -- end added by kim         
 
     );
 
@@ -95,6 +94,7 @@ end top;
 
 architecture Behavioral of top is
 
+  signal GMII_TXD_0_bf : std_logic_vector(7 downto 0);
 
   component UDP_dcm
     port(
@@ -145,7 +145,8 @@ architecture Behavioral of top is
       GMII_CRS_0                : in  std_logic;
       cs_ila_trig0              : out std_logic_vector(cs_ILA_SIZE-1 downto 0);
       coincidence_trigger       : in  std_logic;
-      temac_clk_out             : out std_logic
+      temac_clk_out             : out std_logic;
+      FPGA_conf                 : out FPGA_conf_type
       );
   end component;
 
@@ -164,7 +165,7 @@ architecture Behavioral of top is
 
 --chipscope:
   signal cs_vio_out : std_logic_vector(cs_VIO_SIZE-1 downto 0);
-  signal cs_vio_fe  : std_logic_vector(31 downto 0);
+--signal cs_vio_fe          : std_logic_vector( 31 downto 0 );
 
 --     cs_clk          : in  std_logic;
   signal cs_ila_trig0  : std_logic_vector(cs_ILA_SIZE-1 downto 0);
@@ -173,6 +174,10 @@ architecture Behavioral of top is
   signal cs_fe         : std_logic_vector(127 downto 0);
   signal cs_vio        : cs_vio_type;
   signal cs_vio_packed : std_logic_vector(cs_VIO_SIZE-1 downto 0);
+
+  signal FPGA_conf        : FPGA_conf_type;
+  signal FPGA_conf_packed : std_logic_vector(FPGA_CONF_SIZE-1 downto 0);
+
 
 
 --trigger signals:
@@ -184,12 +189,12 @@ architecture Behavioral of top is
 
 --clock:
   signal mclk   : std_logic;
+  signal mclk0  : std_logic;            --40MHz
   signal fe_clk : std_logic;
 
   signal mrst_b   : std_logic;
   signal fe_rst_b : std_logic;
 
-  signal CLK100_CTU : std_logic;
 
   signal fe_data              : std_logic_vector(fe_NUM_CHANNELS-1 downto 0);
   signal fe_event_ready_out   : std_logic;
@@ -199,13 +204,13 @@ architecture Behavioral of top is
 
 --signal REFCLK_125MHz: std_logic;
 
-  signal fe_data_empty : std_logic_vector(fe_NUM_EMPTY_CHANNELS-1 downto 0);
+--signal fe_data_empty :std_logic_vector(fe_NUM_EMPTY_CHANNELS-1 downto 0);
 
 
 begin
   RESET_b <= not Switch(0);
 --LEDs(3 downto 0) <= Switch(3 downto 0);
---LEDs <= LEDs_bf;
+  LEDs    <= LEDs_bf;
 --LEDs(2 downto 0) <= fe_event_data_out.ch_no(2 downto 0);
 --LEDs(3) <= fe_event_ready_out;
 --LEDs(7 downto 4) <= (OTHERS => '0');
@@ -218,17 +223,17 @@ begin
     fpga_cpu_reset_b => RESET_b,
 
     -- added by kim
-    clk100m_ctu         => CLK100_CTU_p,
-    clk100m_ctu_b       => CLK100_CTU_n,
-    cru_reset           => RST_GLOBAL_CTU,
-    clk100m_ctu_out     => clk100m_out ,
-    clk100m_ctu_out_b   => clk100m_out_b ,
-    using_ext_clock_led => open ,
+    clk100m_ctu       => CLK100_CTU_p,
+    clk100m_ctu_b     => CLK100_CTU_n,
+    cru_reset         => RST_GLOBAL_CTU,
+    clk100m_ctu_out   => clk100m_out ,
+    clk100m_ctu_out_b => clk100m_out_b ,
     -- end added by kim
 
     up_clk        => open,
     fe_clk        => fe_clk,
     mclk          => mclk,
+    mclk0         => mclk0,
     REFCLK_200MHz => RefClk_200MHz,
     REFCLK_125MHz => open,
     up_rst_b      => open,
@@ -239,11 +244,9 @@ begin
     --cs_vio => 
     );
 
---      Inst_IBUFDS1 : IBUFDS port map (
---              O => CLK100_CTU,
---     I => CLK100_CTU_p,
---      IB => CLK100_CTU_n
---      );
+  GMII_TXD_0 <= GMII_TXD_0_bf;
+
+
 
   foribufFE_DIFF_DATA : for i in 0 to fe_NUM_DIFF_CHANNELS-1 generate
   begin
@@ -251,23 +254,23 @@ begin
       port map (O => fe_data(i) , I => fe_data_p(i) , IB => fe_data_n(i));
   end generate;
 --
-  foribufFE_SE_DATA : for i in 0 to fe_NUM_SE_CHANNELS-1 generate
-  begin
-    ibuf_FE_SE_DATA : IBUF
-      port map (O => fe_data(i+fe_NUM_DIFF_CHANNELS) ,
-                I => fe_data_SE(i));
-  end generate;
+--foribufFE_SE_DATA: for i in 0 to fe_NUM_SE_CHANNELS-1 generate begin
+--ibuf_FE_SE_DATA:     IBUF
+--     port map (O => fe_data(i+fe_NUM_DIFF_CHANNELS) ,
+--                I => fe_data_SE(i) );      
+--end generate;
 
 
 -- and the empty channels:
-  fe_data_empty <= (others => '0');
+--fe_data_empty <= (OTHERS=> '0');
 
-  fe_data(fe_NUM_CHANNELS-1 downto fe_NUM_SE_CHANNELS+ fe_NUM_DIFF_CHANNELS) <= fe_data_empty;
+--fe_data( fe_NUM_CHANNELS-1  downto fe_NUM_SE_CHANNELS+ fe_NUM_DIFF_CHANNELS)  <= fe_data_empty;
 
 
 
   fe_i : entity work.fe port map(
     mclk     => mclk ,                  --! Master clock
+    mclk0    => mclk0 ,                 --! Master clock 40MHz
     fe_clk   => fe_clk ,                --! Front-end clock
     fe_rst_b => fe_rst_b ,              --! Front-end reset (active low)
 
@@ -284,16 +287,22 @@ begin
 
     fe_event_ready_out => fe_event_ready_out,
     fe_event_data_out  => fe_event_data_out,
-    LEDs               => LEDs_fe
+    LEDs               => LEDs_fe,
+    FPGA_conf          => FPGA_conf
     );
+
+
+--cs_ila_trig0(31 downto 0) <= fe_event_data_packed ;
+--cs_ila_trig0(32)          <= fe_event_ready_out;
+--cs_ila_trig0(67 downto 60) <= GMII_TXD_0_bf;
 --cs_ila_trig0(96 downto 33) <= cs_fe(63 downto 0);
 --cs_ila_trig0(104  downto 97) <= cs_fe(71 downto 64);
 
---cs_ila_trig0(63 downto 0) <= cs_fe(63 downto 0);
+--cs_ila_trig0 <= cs_fe;
 
-  LEDs <= LEDs_fe;
-                                        --cs_ila_trig0(32) <= fe_event_ready_out;
-                                        --cs_ila_trig0(31 downto 0) <= pack(fe_event_data_out);
+--LEDs <=  GMII_TXD_0_bf;
+  --cs_ila_trig0(32) <= fe_event_ready_out;
+  --cs_ila_trig0(31 downto 0) <= pack(fe_event_data_out);
 
 -- Simulate the delay caused by the Trigger Unit when it calculates coincidence window
 
@@ -339,7 +348,7 @@ begin
                        );
 
 --   cs_vio_out( 63 downto 32 )  <= ( others => '0' )  ;
-                   cs_vio_fe <= cs_vio_out(31 downto 0);
+                   --cs cs_vio_fe   <=   cs_vio_out( 31 downto  0 )     ;
 
 
 
@@ -356,8 +365,8 @@ begin
 --              CLK0_OUT => open,
 --              CLK2X_OUT => RefClk_200MHz,
 --              LOCKED_OUT => open
---      );
-
+--
+--
                    Inst_v5_emac_v1_5_example_design : v5_emac_v1_5_example_design port map(
 
                      EMAC0CLIENTRXDVLD         => EMAC0CLIENTRXDVLD,
@@ -372,7 +381,7 @@ begin
                      CLIENTEMAC0PAUSEREQ       => CLIENTEMAC0PAUSEREQ,
                      CLIENTEMAC0PAUSEVAL       => CLIENTEMAC0PAUSEVAL,
                      GTX_CLK_0                 => GTX_CLK_0,
-                     GMII_TXD_0                => GMII_TXD_0,
+                     GMII_TXD_0                => GMII_TXD_0_bf,
                      GMII_TX_EN_0              => GMII_TX_EN_0,
                      GMII_TX_ER_0              => GMII_TX_ER_0,
                      GMII_TX_CLK_0             => GMII_TX_CLK_0,
@@ -385,7 +394,7 @@ begin
                      PHY_RESET_0               => PHY_RESET_0,
                      fe_event_ready            => fe_event_ready_out,
                      fe_event_data_packed      => fe_event_data_packed,
-                     mclk                      => mclk,
+                     mclk                      => mclk0,  --runs with 40MHz
                      fe_rst_b                  => fe_rst_b,
                      LEDs                      => LEDs_bf,
                      MII_TX_CLK_0              => MII_TX_CLK_0,
@@ -393,7 +402,8 @@ begin
                      GMII_CRS_0                => GMII_CRS_0,
                      cs_ila_trig0              => cs_ila_ToUDP,
                      coincidence_trigger       => coincidence_trigger,
-                     temac_clk_out             => temac_clk_out
+                     temac_clk_out             => temac_clk_out,
+                     FPGA_conf                 => FPGA_conf
 
                      );
                    cs_ila_trig0         <= cs_ila_ToUDP;
