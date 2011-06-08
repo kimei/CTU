@@ -5,133 +5,46 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;LEDS(0)&quot; LOC = AF22 |&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(49)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;LEDS(0)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+<msg type="warning" file="ConstraintSystem" num="56" delta="old" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC &quot;TS_tx_fifo_rd_to_wr_0&quot; = FROM &quot;tx_fifo_rd_to_wr_0&quot; TO &quot;v5_emac_v1_5_client_clk_tx0&quot; 8000 ps DATAPATHONLY;&gt; [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(181)]</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TimeGrp&apos; or &apos;TNM&apos; or &apos;TPSync&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">v5_emac_v1_5_client_clk_tx0</arg>&apos;.
 </msg>
 
-<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS18;&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(49)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;LEDS(0)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+<msg type="warning" file="ConstraintSystem" num="56" delta="old" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC &quot;TS_tx_fifo_wr_to_rd_0&quot; = FROM &quot;tx_fifo_wr_to_rd_0&quot; TO &quot;v5_emac_v1_5_client_clk_tx0&quot; 8000 ps DATAPATHONLY;&gt; [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(182)]</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TimeGrp&apos; or &apos;TNM&apos; or &apos;TPSync&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">v5_emac_v1_5_client_clk_tx0</arg>&apos;.
 </msg>
 
-<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;LEDS(2)&quot; LOC = AF25 |&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(51)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;LEDS(2)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+<msg type="warning" file="ConstraintSystem" num="56" delta="old" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC &quot;TS_rx_fifo_wr_to_rd_0&quot; = FROM &quot;rx_fifo_wr_to_rd_0&quot; TO &quot;v5_emac_v1_5_client_clk_tx0&quot; 8000 ps DATAPATHONLY;&gt; [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(204)]</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TimeGrp&apos; or &apos;TNM&apos; or &apos;TPSync&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">v5_emac_v1_5_client_clk_tx0</arg>&apos;.
 </msg>
 
-<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS18;&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(51)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;LEDS(2)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+<msg type="warning" file="ConstraintSystem" num="56" delta="old" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC &quot;TS_rx_fifo_rd_to_wr_0&quot; = FROM &quot;rx_fifo_rd_to_wr_0&quot; TO &quot;v5_emac_v1_5_client_clk_rx0&quot; 8000 ps DATAPATHONLY;&gt; [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(205)]</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TimeGrp&apos; or &apos;TNM&apos; or &apos;TPSync&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">v5_emac_v1_5_client_clk_rx0</arg>&apos;.
 </msg>
 
-<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;LEDS(3)&quot; LOC = AE25 |&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(52)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;LEDS(3)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;INST /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TXD_0 IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_0</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*gmii0?GMII_TXD_?&quot;     IOB = true;&gt; [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(158)]</arg>.
 </msg>
 
-<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS18;&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(52)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;LEDS(3)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;INST /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TXD_1 IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_1</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*gmii0?GMII_TXD_?&quot;     IOB = true;&gt; [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(158)]</arg>.
 </msg>
 
-<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;LEDS(4)&quot; LOC = AD25 |&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(53)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;LEDS(4)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;INST /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TXD_2 IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_2</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*gmii0?GMII_TXD_?&quot;     IOB = true;&gt; [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(158)]</arg>.
 </msg>
 
-<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS18;&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(53)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;LEDS(4)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;INST /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TXD_3 IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_3</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*gmii0?GMII_TXD_?&quot;     IOB = true;&gt; [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(158)]</arg>.
 </msg>
 
-<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;LEDS(5)&quot; LOC = AE26 |&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(54)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;LEDS(5)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;INST /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TXD_4 IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_4</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*gmii0?GMII_TXD_?&quot;     IOB = true;&gt; [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(158)]</arg>.
 </msg>
 
-<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS18;&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(54)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;LEDS(5)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;INST /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TXD_5 IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_5</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*gmii0?GMII_TXD_?&quot;     IOB = true;&gt; [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(158)]</arg>.
 </msg>
 
-<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;LEDS(6)&quot; LOC = AD26 |&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(55)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;LEDS(6)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;INST /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TXD_6 IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_6</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*gmii0?GMII_TXD_?&quot;     IOB = true;&gt; [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(158)]</arg>.
 </msg>
 
-<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS18;&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(55)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;LEDS(6)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;INST /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TXD_7 IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_7</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*gmii0?GMII_TXD_?&quot;     IOB = true;&gt; [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(158)]</arg>.
 </msg>
 
-<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;net &quot;DIP_SWITCH(0)&quot; LOC =AD13 |&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(69)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;DIP_SWITCH(0)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;INST /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TX_EN IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TX_EN</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*gmii0?GMII_TX_EN&quot;     IOB = true;&gt; [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(159)]</arg>.
 </msg>
 
-<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS18;&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(69)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;DIP_SWITCH(0)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
-</msg>
-
-<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;net &quot;DIP_SWITCH(1)&quot; LOC =AE13 |&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(70)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;DIP_SWITCH(1)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
-</msg>
-
-<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS18;&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(70)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;DIP_SWITCH(1)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
-</msg>
-
-<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;net &quot;DIP_SWITCH(2)&quot; LOC =AF13 |&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(71)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;DIP_SWITCH(2)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
-</msg>
-
-<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS18;&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(71)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;DIP_SWITCH(2)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
-</msg>
-
-<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;net &quot;DIP_SWITCH(3)&quot; LOC =AD15 |&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(72)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;DIP_SWITCH(3)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
-</msg>
-
-<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS18;&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(72)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;DIP_SWITCH(3)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
-</msg>
-
-<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;net &quot;DIP_SWITCH(4)&quot; LOC =AD14 |&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(73)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;DIP_SWITCH(4)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
-</msg>
-
-<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS18;&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(73)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;DIP_SWITCH(4)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
-</msg>
-
-<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;net &quot;DIP_SWITCH(5)&quot; LOC =AF14 |&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(74)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;DIP_SWITCH(5)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
-</msg>
-
-<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS18;&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(74)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;DIP_SWITCH(5)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
-</msg>
-
-<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;net &quot;DIP_SWITCH(6)&quot; LOC =AE15 |&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(75)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;DIP_SWITCH(6)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
-</msg>
-
-<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS18;&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(75)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;DIP_SWITCH(6)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
-</msg>
-
-<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;net &quot;DIP_SWITCH(7)&quot; LOC = AF15 |&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(76)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;DIP_SWITCH(7)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
-</msg>
-
-<msg type="warning" file="ConstraintSystem" num="119" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;IOSTANDARD = LVCMOS18;&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(76)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;DIP_SWITCH(7)&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
-</msg>
-
-<msg type="warning" file="ConstraintSystem" num="56" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC &quot;TS_tx_fifo_rd_to_wr_0&quot; = FROM &quot;tx_fifo_rd_to_wr_0&quot; TO &quot;v5_emac_v1_5_client_clk_tx0&quot; 8000 ps DATAPATHONLY;&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/emac.ucf(181)]</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TimeGrp&apos; or &apos;TNM&apos; or &apos;TPSync&apos; or &apos;TPThru&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">v5_emac_v1_5_client_clk_tx0</arg>&apos;.
-</msg>
-
-<msg type="warning" file="ConstraintSystem" num="56" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC &quot;TS_tx_fifo_wr_to_rd_0&quot; = FROM &quot;tx_fifo_wr_to_rd_0&quot; TO &quot;v5_emac_v1_5_client_clk_tx0&quot; 8000 ps DATAPATHONLY;&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/emac.ucf(182)]</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TimeGrp&apos; or &apos;TNM&apos; or &apos;TPSync&apos; or &apos;TPThru&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">v5_emac_v1_5_client_clk_tx0</arg>&apos;.
-</msg>
-
-<msg type="warning" file="ConstraintSystem" num="56" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC &quot;TS_rx_fifo_wr_to_rd_0&quot; = FROM &quot;rx_fifo_wr_to_rd_0&quot; TO &quot;v5_emac_v1_5_client_clk_tx0&quot; 8000 ps DATAPATHONLY;&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/emac.ucf(204)]</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TimeGrp&apos; or &apos;TNM&apos; or &apos;TPSync&apos; or &apos;TPThru&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">v5_emac_v1_5_client_clk_tx0</arg>&apos;.
-</msg>
-
-<msg type="warning" file="ConstraintSystem" num="56" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC &quot;TS_rx_fifo_rd_to_wr_0&quot; = FROM &quot;rx_fifo_rd_to_wr_0&quot; TO &quot;v5_emac_v1_5_client_clk_rx0&quot; 8000 ps DATAPATHONLY;&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/emac.ucf(205)]</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TimeGrp&apos; or &apos;TNM&apos; or &apos;TPSync&apos; or &apos;TPThru&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">v5_emac_v1_5_client_clk_rx0</arg>&apos;.
-</msg>
-
-<msg type="warning" file="NgdBuild" num="1012" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;INST: UniqueName: /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TXD_0 IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_0</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*gmii0?GMII_TXD_?&quot;     IOB = true;&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/emac.ucf(158)]</arg>.
-</msg>
-
-<msg type="warning" file="NgdBuild" num="1012" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;INST: UniqueName: /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TXD_1 IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_1</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*gmii0?GMII_TXD_?&quot;     IOB = true;&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/emac.ucf(158)]</arg>.
-</msg>
-
-<msg type="warning" file="NgdBuild" num="1012" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;INST: UniqueName: /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TXD_2 IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_2</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*gmii0?GMII_TXD_?&quot;     IOB = true;&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/emac.ucf(158)]</arg>.
-</msg>
-
-<msg type="warning" file="NgdBuild" num="1012" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;INST: UniqueName: /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TXD_3 IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_3</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*gmii0?GMII_TXD_?&quot;     IOB = true;&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/emac.ucf(158)]</arg>.
-</msg>
-
-<msg type="warning" file="NgdBuild" num="1012" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;INST: UniqueName: /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TXD_4 IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_4</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*gmii0?GMII_TXD_?&quot;     IOB = true;&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/emac.ucf(158)]</arg>.
-</msg>
-
-<msg type="warning" file="NgdBuild" num="1012" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;INST: UniqueName: /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TXD_5 IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_5</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*gmii0?GMII_TXD_?&quot;     IOB = true;&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/emac.ucf(158)]</arg>.
-</msg>
-
-<msg type="warning" file="NgdBuild" num="1012" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;INST: UniqueName: /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TXD_6 IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_6</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*gmii0?GMII_TXD_?&quot;     IOB = true;&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/emac.ucf(158)]</arg>.
-</msg>
-
-<msg type="warning" file="NgdBuild" num="1012" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;INST: UniqueName: /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TXD_7 IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_7</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*gmii0?GMII_TXD_?&quot;     IOB = true;&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/emac.ucf(158)]</arg>.
-</msg>
-
-<msg type="warning" file="NgdBuild" num="1012" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;INST: UniqueName: /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TX_EN IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TX_EN</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*gmii0?GMII_TX_EN&quot;     IOB = true;&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/emac.ucf(159)]</arg>.
-</msg>
-
-<msg type="warning" file="NgdBuild" num="1012" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;INST: UniqueName: /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TX_ER IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TX_ER</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*gmii0?GMII_TX_ER&quot;     IOB = true;&gt; [M:/MASTER/COMPET/Trigger/HW/HDL/top/emac.ucf(160)]</arg>.
-</msg>
-
-<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">SIM_MODE</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.WIDE_PRIM18.TDP</arg>&quot; of type &quot;<arg fmt="%s" index="3">RAMB18SDP</arg>&quot;.  This attribute will be ignored.
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;INST /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TX_ER IOB = true&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TX_ER</arg> by the constraint <arg fmt="%s" index="3">&lt;INST &quot;*gmii0?GMII_TX_ER&quot;     IOB = true;&gt; [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(160)]</arg>.
 </msg>
 
 </messages>

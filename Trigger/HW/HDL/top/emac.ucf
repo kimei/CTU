@@ -108,7 +108,7 @@ Net "PHY_RESET_0" TIG;
 #INST "REFCLK"            LOC = "BANK3";
 
 
-CONFIG PART = 5vlx50tff1136-1;
+#CONFIG PART = 5vlx50tff1136-1;
  
 ##################################
 # BLOCK Level constraints
@@ -218,7 +218,7 @@ TIMESPEC "ts_rx_meta_protect_0" = FROM "rx_metastable_0" 5 ns;
 
 # from example design:
 
-CONFIG PART = 5vlx50tff1136-1;
+#CONFIG PART = 5vlx50tff1136-1;
  
 ##################################
 # BLOCK Level constraints

@@ -1,18 +1,21 @@
-Release 10.1.03 - xst K.39 (nt)
-Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to M:/MASTER/COMPET/Trigger/HW/HDL/top_10/top/xst/projnav.tmp
+Release 13.1 - xst O.40d (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.63 secs
+Total CPU time to Xst completion: 0.04 secs
  
---> Parameter xsthdpdir set to M:/MASTER/COMPET/Trigger/HW/HDL/top_10/top/xst
+--> 
+Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.64 secs
+Total CPU time to Xst completion: 0.04 secs
  
---> Reading design: top.prj
+--> 
+Reading design: top.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -26,9 +29,9 @@ TABLE OF CONTENTS
   7) Low Level Synthesis
   8) Partition Report
   9) Final Report
-     9.1) Device utilization summary
-     9.2) Partition Resource Summary
-     9.3) TIMING REPORT
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
 
 
 =========================================================================
@@ -49,26 +52,26 @@ Top Module Name                    : top
 Automatic FSM Extraction           : YES
 FSM Encoding Algorithm             : Auto
 Safe Implementation                : No
-FSM Style                          : lut
+FSM Style                          : LUT
 RAM Extraction                     : Yes
 RAM Style                          : Auto
 ROM Extraction                     : Yes
 Mux Style                          : Auto
 Decoder Extraction                 : YES
-Priority Encoder Extraction        : YES
+Priority Encoder Extraction        : Yes
 Shift Register Extraction          : YES
 Logical Shifter Extraction         : YES
 XOR Collapsing                     : YES
 ROM Style                          : Auto
-Mux Extraction                     : YES
+Mux Extraction                     : Yes
 Resource Sharing                   : YES
 Asynchronous To Synchronous        : NO
-Use DSP Block                      : auto
+Use DSP Block                      : Auto
 Automatic Register Balancing       : No
 
 ---- Target Options
-LUT Combining                      : off
-Reduce Control Sets                : off
+LUT Combining                      : Off
+Reduce Control Sets                : Off
 Add IO Buffers                     : YES
 Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 32
@@ -78,16 +81,15 @@ Optimize Instantiated Primitives   : NO
 Use Clock Enable                   : Auto
 Use Synchronous Set                : Auto
 Use Synchronous Reset              : Auto
-Pack IO Registers into IOBs        : auto
+Pack IO Registers into IOBs        : Auto
 Equivalent register Removal        : YES
 
 ---- General Options
 Optimization Goal                  : Speed
 Optimization Effort                : 1
 Power Reduction                    : NO
-Library Search Order               : top.lso
-Keep Hierarchy                     : NO
-Netlist Hierarchy                  : as_optimized
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
 RTL Output                         : Yes
 Global Optimization                : AllClockNets
 Read Cores                         : YES
@@ -95,7 +97,7 @@ Write Timing Constraints           : NO
 Cross Clock Analysis               : NO
 Hierarchy Separator                : /
 Bus Delimiter                      : <>
-Case Specifier                     : maintain
+Case Specifier                     : Maintain
 Slice Utilization Ratio            : 100
 BRAM Utilization Ratio             : 100
 DSP48 Utilization Ratio            : 100
@@ -103,119 +105,126 @@ Verilog 2001                       : YES
 Auto BRAM Packing                  : NO
 Slice Utilization Ratio Delta      : 5
 
+---- Other Options
+Cores Search Directories           : {"../../rate_counter/fifo" "../../UDP/UDP_mr"  }
+
 =========================================================================
 
 
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Shared/constants.vhd" in Library work.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/COUNTER_6B_LUT_FIFO_MODE.vhd" in Library work.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/Shared/constants.vhd" in Library work.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/comp_6b_equal.vhd" in Library work.
+Architecture comp_6b_equal_a of Entity comp_6b_equal is up to date.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/COUNTER_6B_LUT_FIFO_MODE.vhd" in Library work.
 Architecture behavioral of Entity counter_6b_lut_fifo_mode is up to date.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/COUNTER_11B_EN_TRANS.vhd" in Library work.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/COUNTER_11B_EN_TRANS.vhd" in Library work.
 Architecture behavioral of Entity counter_11b_en_trans is up to date.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Shared/components.vhd" in Library work.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Shared/functions.vhd" in Library work.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/comp_11b_equal.vhd" in Library work.
+Architecture comp_11b_equal_a of Entity comp_11b_equal is up to date.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/Shared/components.vhd" in Library work.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/Shared/functions.vhd" in Library work.
 Architecture functions of Entity functions is up to date.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/PACKET_RECEIVER_FSM.vhd" in Library work.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/PACKET_RECEIVER_FSM.vhd" in Library work.
 Architecture behavioral of Entity packet_receiver_fsm is up to date.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/REG_8b_wren.vhd" in Library work.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/REG_8b_wren.vhd" in Library work.
 Architecture behavioral of Entity reg_8b_wren is up to date.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/COUNTER_11B_EN_RECEIV.vhd" in Library work.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/COUNTER_11B_EN_RECEIV.vhd" in Library work.
 Architecture behavioral of Entity counter_11b_en_receiv is up to date.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/TARGET_EOF.vhd" in Library work.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/TARGET_EOF.vhd" in Library work.
 Architecture behavioral of Entity target_eof is up to date.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/REG_16B_WREN.vhd" in Library work.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/REG_16B_WREN.vhd" in Library work.
 Architecture behavioral of Entity reg_16b_wren is up to date.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4_LUT_INDEXER.vhd" in Library work.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4_LUT_INDEXER.vhd" in Library work.
 Architecture behavioral of Entity ipv4_lut_indexer is up to date.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/OVERRIDE_LUT_CONTROL.vhd" in Library work.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/dist_mem_64x8.vhd" in Library work.
+Architecture dist_mem_64x8_a of Entity dist_mem_64x8 is up to date.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/OVERRIDE_LUT_CONTROL.vhd" in Library work.
 Architecture behavioral of Entity override_lut_control is up to date.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/ALLOW_ZERO_UDP_CHECKSUM.vhd" in Library work.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/ALLOW_ZERO_UDP_CHECKSUM.vhd" in Library work.
 Architecture behavioral of Entity allow_zero_udp_checksum is up to date.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/ENABLE_USER_DATA_TRANSMISSION.vhd" in Library work.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/ENABLE_USER_DATA_TRANSMISSION.vhd" in Library work.
 Architecture behavioral of Entity enable_user_data_transmission is up to date.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" in Library work.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 131. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 135. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 138. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 141. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 144. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 147. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 152. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 155. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 158. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 161. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 164. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 167. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 172. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 174. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 177. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 179. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 192. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 196. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 209. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 212. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 217. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 220. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 232. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 237. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 249. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 253. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 259. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 262. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 272. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 276. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 286. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 290. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 299. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 303. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 313. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 321. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 326. Choice to_unsigned is not a locally static expression.
-WARNING:HDLParsers:817 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 330. Choice to_unsigned is not a locally static expression.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" in Library work.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 131. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 135. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 138. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 141. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 144. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 147. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 152. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 155. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 158. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 161. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 164. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 167. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 172. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 174. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 177. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 179. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 192. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 196. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 209. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 212. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 217. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 220. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 232. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 237. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 249. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 253. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 259. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 262. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 272. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 276. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 286. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 290. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 299. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 303. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 313. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 321. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 326. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 330. Choice to_unsigned is not a locally static expression.
 Architecture behavioral of Entity ipv4writeudpheader is up to date.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/tx_client_fifo_8.vhd" in Library work.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/tx_client_fifo_8.vhd" in Library work.
 Architecture rtl of Entity tx_client_fifo_8 is up to date.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/rx_client_fifo_8.vhd" in Library work.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/rx_client_fifo_8.vhd" in Library work.
 Architecture rtl of Entity rx_client_fifo_8 is up to date.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/physical/gmii_if.vhd" in Library work.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/physical/gmii_if.vhd" in Library work.
 Architecture phy_if of Entity gmii_if is up to date.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5.vhd" in Library work.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5.vhd" in Library work.
 Architecture wrapper of Entity v5_emac_v1_5 is up to date.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Sync_Trigger/edge_detector.vhd" in Library work.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/Sync_Trigger/edge_detector.vhd" in Library work.
 Architecture behave of Entity edge_detector is up to date.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4_PACKET_TRANSMITTER.vhd" in Library work.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4_PACKET_TRANSMITTER.vhd" in Library work.
 Architecture behavioral of Entity ipv4_packet_transmitter is up to date.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/IPv4_PACKET_RECEIVER.vhd" in Library work.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/IPv4_PACKET_RECEIVER.vhd" in Library work.
 Architecture behavioral of Entity ipv4_packet_receiver is up to date.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_block.vhd" in Library work.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_block.vhd" in Library work.
 Architecture top_level of Entity v5_emac_v1_5_block is up to date.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/eth_fifo_8.vhd" in Library work.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/eth_fifo_8.vhd" in Library work.
 Architecture rtl of Entity eth_fifo_8 is up to date.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_locallink.vhd" in Library work.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_locallink.vhd" in Library work.
 Architecture top_level of Entity v5_emac_v1_5_locallink is up to date.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/UDP_IP_Core.vhd" in Library work.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/UDP_IP_Core.vhd" in Library work.
 Architecture behavioral of Entity udp_ip_core is up to date.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/rate_counter/rate_counter.vhd" in Library work.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/rate_counter/rate_counter.vhd" in Library work.
 Architecture behave of Entity rate_counter is up to date.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/rate_counter/fifo/fifo_generator_v4_4.vhd" in Library work.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/rate_counter/fifo/fifo_generator_v4_4.vhd" in Library work.
 Architecture fifo_generator_v4_4_a of Entity fifo_generator_v4_4 is up to date.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/CRU/COREgen/PLL_core.vhd" in Library work.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/CRU/COREgen/PLL_core.vhd" in Library work.
 Architecture behavioral of Entity pll_core is up to date.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Shared/a2s.vhd" in Library work.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/Shared/a2s.vhd" in Library work.
 Architecture rtl of Entity a2s is up to date.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/CRU/CRU.vhd" in Library work.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/CRU/CRU.vhd" in Library work.
 Architecture behavioral of Entity cru is up to date.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd" in Library work.
-Entity <sync_trigger> compiled.
-WARNING:HDLParsers:3350 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd" Line 97. Null range: 1 downto 2
-WARNING:HDLParsers:3350 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd" Line 101. Null range: 1 downto 2
-Entity <sync_trigger> (Architecture <behavioral>) compiled.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_example_design.vhd" in Library work.
-Entity <v5_emac_v1_5_example_design> compiled.
-Entity <v5_emac_v1_5_example_design> (Architecture <top_level>) compiled.
-Compiling vhdl file "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/top/top.vhd" in Library work.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd" in Library work.
+WARNING:HDLParsers:3350 - "/media/disk2/trigger/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd" Line 97. Null range: 1 downto 2
+WARNING:HDLParsers:3350 - "/media/disk2/trigger/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd" Line 101. Null range: 1 downto 2
+Architecture behavioral of Entity sync_trigger is up to date.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_example_design.vhd" in Library work.
+Architecture top_level of Entity v5_emac_v1_5_example_design is up to date.
+Compiling vhdl file "/media/disk2/trigger/Trigger/HW/HDL/top/top.vhd" in Library work.
 Architecture behavioral of Entity top is up to date.
 
 =========================================================================
@@ -304,32 +313,38 @@ Analyzing hierarchy for entity <COUNTER_6B_LUT_FIFO_MODE> in library <work> (arc
 =========================================================================
 Analyzing Entity <top> in library <work> (Architecture <behavioral>).
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <G1[0].diff_in> in unit <top>.
-    Set user-defined property "DIFF_TERM =  FALSE" for instance <G1[0].diff_in> in unit <top>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <G1[0].diff_in> in unit <top>.
     Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <G1[0].diff_in> in unit <top>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <G1[0].diff_in> in unit <top>.
     Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <G1[0].diff_in> in unit <top>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <G1[0].diff_in> in unit <top>.
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <G1[1].diff_in> in unit <top>.
-    Set user-defined property "DIFF_TERM =  FALSE" for instance <G1[1].diff_in> in unit <top>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <G1[1].diff_in> in unit <top>.
     Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <G1[1].diff_in> in unit <top>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <G1[1].diff_in> in unit <top>.
     Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <G1[1].diff_in> in unit <top>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <G1[1].diff_in> in unit <top>.
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <G2[0].diff_out> in unit <top>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <G2[0].diff_out> in unit <top>.
+    Set user-defined property "SLEW =  FAST" for instance <G2[0].diff_out> in unit <top>.
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <G2[1].diff_out> in unit <top>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <G2[1].diff_out> in unit <top>.
+    Set user-defined property "SLEW =  FAST" for instance <G2[1].diff_out> in unit <top>.
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <MCLK_DIFF_OUT1> in unit <top>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <MCLK_DIFF_OUT1> in unit <top>.
+    Set user-defined property "SLEW =  SLOW" for instance <MCLK_DIFF_OUT1> in unit <top>.
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <MCLK_DIFF_OUT2> in unit <top>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <MCLK_DIFF_OUT2> in unit <top>.
+    Set user-defined property "SLEW =  SLOW" for instance <MCLK_DIFF_OUT2> in unit <top>.
 Entity <top> analyzed. Unit <top> generated.
 
 Analyzing Entity <CRU> in library <work> (Architecture <behavioral>).
-WARNING:Xst:2211 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/CRU/CRU.vhd" line 120: Instantiating black box module <OBUFDS>.
-WARNING:Xst:2211 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/CRU/CRU.vhd" line 125: Instantiating black box module <ODDR>.
+WARNING:Xst:2211 - "/media/disk2/trigger/Trigger/HW/HDL/CRU/CRU.vhd" line 120: Instantiating black box module <OBUFDS>.
+WARNING:Xst:2211 - "/media/disk2/trigger/Trigger/HW/HDL/CRU/CRU.vhd" line 125: Instantiating black box module <ODDR>.
     Set user-defined property "DDR_CLK_EDGE =  OPPOSITE_EDGE" for instance <MCLK_ODDR_OUT> in unit <CRU>.
     Set user-defined property "INIT =  0" for instance <MCLK_ODDR_OUT> in unit <CRU>.
     Set user-defined property "SRTYPE =  SYNC" for instance <MCLK_ODDR_OUT> in unit <CRU>.
-WARNING:Xst:2211 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/CRU/CRU.vhd" line 134: Instantiating black box module <IBUFG>.
+WARNING:Xst:2211 - "/media/disk2/trigger/Trigger/HW/HDL/CRU/CRU.vhd" line 134: Instantiating black box module <IBUFG>.
 Entity <CRU> analyzed. Unit <CRU> generated.
 
 Analyzing Entity <PLL_core> in library <work> (Architecture <behavioral>).
@@ -363,6 +378,7 @@ Analyzing Entity <PLL_core> in library <work> (Architecture <behavioral>).
     Set user-defined property "CLKOUT5_DIVIDE =  1" for instance <PLL_ADV_INST> in unit <PLL_core>.
     Set user-defined property "CLKOUT5_DUTY_CYCLE =  0.5000000000000000" for instance <PLL_ADV_INST> in unit <PLL_core>.
     Set user-defined property "CLKOUT5_PHASE =  0.0000000000000000" for instance <PLL_ADV_INST> in unit <PLL_core>.
+    Set user-defined property "CLK_FEEDBACK =  CLKFBOUT" for instance <PLL_ADV_INST> in unit <PLL_core>.
     Set user-defined property "COMPENSATION =  SYSTEM_SYNCHRONOUS" for instance <PLL_ADV_INST> in unit <PLL_core>.
     Set user-defined property "DIVCLK_DIVIDE =  1" for instance <PLL_ADV_INST> in unit <PLL_core>.
     Set user-defined property "EN_REL =  FALSE" for instance <PLL_ADV_INST> in unit <PLL_core>.
@@ -370,6 +386,7 @@ Analyzing Entity <PLL_core> in library <work> (Architecture <behavioral>).
     Set user-defined property "REF_JITTER =  0.0050000000000000" for instance <PLL_ADV_INST> in unit <PLL_core>.
     Set user-defined property "RESET_ON_LOSS_OF_LOCK =  FALSE" for instance <PLL_ADV_INST> in unit <PLL_core>.
     Set user-defined property "RST_DEASSERT_CLK =  CLKIN1" for instance <PLL_ADV_INST> in unit <PLL_core>.
+    Set user-defined property "SIM_DEVICE =  VIRTEX5" for instance <PLL_ADV_INST> in unit <PLL_core>.
 Entity <PLL_core> analyzed. Unit <PLL_core> generated.
 
 Analyzing generic Entity <a2s> in library <work> (Architecture <rtl>).
@@ -396,10 +413,11 @@ Analyzing Entity <v5_emac_v1_5_example_design> in library <work> (Architecture <
     Set user-defined property "ODELAY_VALUE =  0" for instance <gmii_rxc0_delay> in unit <v5_emac_v1_5_example_design>.
     Set user-defined property "REFCLK_FREQUENCY =  200.0000000000000000" for instance <gmii_rxc0_delay> in unit <v5_emac_v1_5_example_design>.
     Set user-defined property "SIGNAL_PATTERN =  CLOCK" for instance <gmii_rxc0_delay> in unit <v5_emac_v1_5_example_design>.
-WARNING:Xst:753 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_example_design.vhd" line 477: Unconnected output port 'RX_LL_FIFO_STATUS_0' of component 'v5_emac_v1_5_locallink'.
-WARNING:Xst:2211 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_example_design.vhd" line 637: Instantiating black box module <fifo_generator_v4_4>.
+WARNING:Xst:753 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_example_design.vhd" line 477: Unconnected output port 'RX_LL_FIFO_STATUS_0' of component 'v5_emac_v1_5_locallink'.
+WARNING:Xst:2211 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_example_design.vhd" line 637: Instantiating black box module <fifo_generator_v4_4>.
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <gtx_clk0_ibuf> in unit <v5_emac_v1_5_example_design>.
     Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <gtx_clk0_ibuf> in unit <v5_emac_v1_5_example_design>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <gtx_clk0_ibuf> in unit <v5_emac_v1_5_example_design>.
     Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <gtx_clk0_ibuf> in unit <v5_emac_v1_5_example_design>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <gtx_clk0_ibuf> in unit <v5_emac_v1_5_example_design>.
 INFO:Xst:2679 - Register <idelayctrl_reset_0_r<0>> in unit <v5_emac_v1_5_example_design> has a constant value of 0 during circuit operation. The register is replaced by logic.
@@ -414,13 +432,13 @@ Analyzing Entity <v5_emac_v1_5_locallink> in library <work> (Architecture <top_l
     Set user-defined property "KEEP =  true" for signal <rx_data_valid_0_i>.
     Set user-defined property "ASYNC_REG =  true" for signal <tx_pre_reset_0_i>.
     Set user-defined property "ASYNC_REG =  true" for signal <rx_pre_reset_0_i>.
-WARNING:Xst:753 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_locallink.vhd" line 404: Unconnected output port 'tx_fifo_status' of component 'eth_fifo_8'.
-WARNING:Xst:753 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_locallink.vhd" line 404: Unconnected output port 'tx_overflow' of component 'eth_fifo_8'.
-WARNING:Xst:753 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_locallink.vhd" line 404: Unconnected output port 'rx_overflow' of component 'eth_fifo_8'.
+WARNING:Xst:753 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_locallink.vhd" line 404: Unconnected output port 'tx_fifo_status' of component 'eth_fifo_8'.
+WARNING:Xst:753 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_locallink.vhd" line 404: Unconnected output port 'tx_overflow' of component 'eth_fifo_8'.
+WARNING:Xst:753 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_locallink.vhd" line 404: Unconnected output port 'rx_overflow' of component 'eth_fifo_8'.
 Entity <v5_emac_v1_5_locallink> analyzed. Unit <v5_emac_v1_5_locallink> generated.
 
 Analyzing Entity <v5_emac_v1_5_block> in library <work> (Architecture <top_level>).
-WARNING:Xst:753 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_block.vhd" line 375: Unconnected output port 'EMAC0CLIENTRXDVLDMSW' of component 'v5_emac_v1_5'.
+WARNING:Xst:753 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_block.vhd" line 375: Unconnected output port 'EMAC0CLIENTRXDVLDMSW' of component 'v5_emac_v1_5'.
 Entity <v5_emac_v1_5_block> analyzed. Unit <v5_emac_v1_5_block> generated.
 
 Analyzing Entity <gmii_if> in library <work> (Architecture <phy_if>).
@@ -707,7 +725,7 @@ Entity <tx_client_fifo_8> analyzed. Unit <tx_client_fifo_8> generated.
 Analyzing Entity <rx_client_fifo_8> in library <work> (Architecture <rtl>).
     Set user-defined property "ASYNC_REG =  TRUE" for signal <rd_store_frame_tog>.
     Set user-defined property "ASYNC_REG =  TRUE" for signal <wr_rd_addr_gray_sync>.
-WARNING:Xst:819 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/rx_client_fifo_8.vhd" line 279: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/rx_client_fifo_8.vhd" line 279: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <rd_valid_pipe>
     Set user-defined property "INITP_00 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ramgen_l> in unit <rx_client_fifo_8>.
     Set user-defined property "INITP_01 =  0000000000000000000000000000000000000000000000000000000000000000" for instance <ramgen_l> in unit <rx_client_fifo_8>.
@@ -881,49 +899,49 @@ Analyzing generic Entity <IPV4_PACKET_TRANSMITTER> in library <work> (Architectu
 	DestMAC = "000000001100000010011111101111110011001110110000"
 	DestPort = "0101010101010100"
 	SrcPort = "0101010101010101"
-WARNING:Xst:819 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4_PACKET_TRANSMITTER.vhd" line 296: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4_PACKET_TRANSMITTER.vhd" line 296: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <rst>
-WARNING:Xst:2211 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4_PACKET_TRANSMITTER.vhd" line 366: Instantiating black box module <dist_mem_64x8>.
+WARNING:Xst:2211 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4_PACKET_TRANSMITTER.vhd" line 366: Instantiating black box module <dist_mem_64x8>.
 Entity <IPV4_PACKET_TRANSMITTER> analyzed. Unit <IPV4_PACKET_TRANSMITTER> generated.
 
 Analyzing Entity <TARGET_EOF> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/TARGET_EOF.vhd" line 66: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/TARGET_EOF.vhd" line 66: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <rst>, <count_end>
-WARNING:Xst:2211 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/TARGET_EOF.vhd" line 89: Instantiating black box module <comp_11b_equal>.
+WARNING:Xst:2211 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/TARGET_EOF.vhd" line 89: Instantiating black box module <comp_11b_equal>.
 Entity <TARGET_EOF> analyzed. Unit <TARGET_EOF> generated.
 
 Analyzing Entity <COUNTER_11B_EN_TRANS> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/COUNTER_11B_EN_TRANS.vhd" line 41: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/COUNTER_11B_EN_TRANS.vhd" line 41: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <rst>
 Entity <COUNTER_11B_EN_TRANS> analyzed. Unit <COUNTER_11B_EN_TRANS> generated.
 
 Analyzing Entity <REG_16B_WREN> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/REG_16B_WREN.vhd" line 42: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/REG_16B_WREN.vhd" line 42: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <rst>
 Entity <REG_16B_WREN> analyzed. Unit <REG_16B_WREN> generated.
 
 Analyzing Entity <IPV4_LUT_INDEXER> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4_LUT_INDEXER.vhd" line 71: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4_LUT_INDEXER.vhd" line 71: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <rst>, <count_end>
-WARNING:Xst:2211 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4_LUT_INDEXER.vhd" line 86: Instantiating black box module <comp_6b_equal>.
+WARNING:Xst:2211 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4_LUT_INDEXER.vhd" line 86: Instantiating black box module <comp_6b_equal>.
 Entity <IPV4_LUT_INDEXER> analyzed. Unit <IPV4_LUT_INDEXER> generated.
 
 Analyzing Entity <COUNTER_6B_LUT_FIFO_MODE> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/COUNTER_6B_LUT_FIFO_MODE.vhd" line 42: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/COUNTER_6B_LUT_FIFO_MODE.vhd" line 42: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <rst>, <funct_sel>
 Entity <COUNTER_6B_LUT_FIFO_MODE> analyzed. Unit <COUNTER_6B_LUT_FIFO_MODE> generated.
 
 Analyzing Entity <OVERRIDE_LUT_CONTROL> in library <work> (Architecture <behavioral>).
-WARNING:Xst:2211 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/OVERRIDE_LUT_CONTROL.vhd" line 69: Instantiating black box module <comp_6b_equal>.
-WARNING:Xst:2211 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/OVERRIDE_LUT_CONTROL.vhd" line 81: Instantiating black box module <comp_6b_equal>.
-WARNING:Xst:2211 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/OVERRIDE_LUT_CONTROL.vhd" line 95: Instantiating black box module <comp_6b_equal>.
+WARNING:Xst:2211 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/OVERRIDE_LUT_CONTROL.vhd" line 69: Instantiating black box module <comp_6b_equal>.
+WARNING:Xst:2211 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/OVERRIDE_LUT_CONTROL.vhd" line 81: Instantiating black box module <comp_6b_equal>.
+WARNING:Xst:2211 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/OVERRIDE_LUT_CONTROL.vhd" line 95: Instantiating black box module <comp_6b_equal>.
 Entity <OVERRIDE_LUT_CONTROL> analyzed. Unit <OVERRIDE_LUT_CONTROL> generated.
 
 Analyzing Entity <ALLOW_ZERO_UDP_CHECKSUM> in library <work> (Architecture <behavioral>).
 Entity <ALLOW_ZERO_UDP_CHECKSUM> analyzed. Unit <ALLOW_ZERO_UDP_CHECKSUM> generated.
 
 Analyzing Entity <ENABLE_USER_DATA_TRANSMISSION> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/ENABLE_USER_DATA_TRANSMISSION.vhd" line 44: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/ENABLE_USER_DATA_TRANSMISSION.vhd" line 44: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <rst>
 Entity <ENABLE_USER_DATA_TRANSMISSION> analyzed. Unit <ENABLE_USER_DATA_TRANSMISSION> generated.
 
@@ -932,27 +950,27 @@ Analyzing generic Entity <IPV4WriteUDPHeader> in library <work> (Architecture <B
 	DestMAC = "000000001100000010011111101111110011001110110000"
 	DestPort = "0101010101010100"
 	SrcPort = "0101010101010101"
-WARNING:Xst:819 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" line 118: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" line 118: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <SrcMAC>, <SrcIP>
 INFO:Xst:2679 - Register <setupNow_n> in unit <IPV4WriteUDPHeader> has a constant value of 0 during circuit operation. The register is replaced by logic.
 Entity <IPV4WriteUDPHeader> analyzed. Unit <IPV4WriteUDPHeader> generated.
 
 Analyzing Entity <IPv4_PACKET_RECEIVER> in library <work> (Architecture <behavioral>).
-WARNING:Xst:2211 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/IPv4_PACKET_RECEIVER.vhd" line 164: Instantiating black box module <comp_11b_equal>.
+WARNING:Xst:2211 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/IPv4_PACKET_RECEIVER.vhd" line 164: Instantiating black box module <comp_11b_equal>.
 Entity <IPv4_PACKET_RECEIVER> analyzed. Unit <IPv4_PACKET_RECEIVER> generated.
 
 Analyzing Entity <PACKET_RECEIVER_FSM> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/PACKET_RECEIVER_FSM.vhd" line 228: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/PACKET_RECEIVER_FSM.vhd" line 228: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <rst>
 Entity <PACKET_RECEIVER_FSM> analyzed. Unit <PACKET_RECEIVER_FSM> generated.
 
 Analyzing Entity <REG_8b_wren> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/REG_8b_wren.vhd" line 42: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/REG_8b_wren.vhd" line 42: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <rst>
 Entity <REG_8b_wren> analyzed. Unit <REG_8b_wren> generated.
 
 Analyzing Entity <COUNTER_11B_EN_RECEIV> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/COUNTER_11B_EN_RECEIV.vhd" line 41: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/COUNTER_11B_EN_RECEIV.vhd" line 41: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <rst>
 Entity <COUNTER_11B_EN_RECEIV> analyzed. Unit <COUNTER_11B_EN_RECEIV> generated.
 
@@ -1000,7 +1018,7 @@ Entity <rate_counter> analyzed. Unit <rate_counter> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <a2s>.
-    Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Shared/a2s.vhd".
+    Related source file is "/media/disk2/trigger/Trigger/HW/HDL/Shared/a2s.vhd".
     Found 2-bit register for signal <d>.
     Summary:
 	inferred   2 D-type flip-flop(s).
@@ -1008,7 +1026,7 @@ Unit <a2s> synthesized.
 
 
 Synthesizing Unit <edge_detector>.
-    Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Sync_Trigger/edge_detector.vhd".
+    Related source file is "/media/disk2/trigger/Trigger/HW/HDL/Sync_Trigger/edge_detector.vhd".
     Found 3-bit register for signal <s>.
     Summary:
 	inferred   3 D-type flip-flop(s).
@@ -1016,7 +1034,7 @@ Unit <edge_detector> synthesized.
 
 
 Synthesizing Unit <REG_16B_WREN>.
-    Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/REG_16B_WREN.vhd".
+    Related source file is "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/REG_16B_WREN.vhd".
     Found 16-bit register for signal <output>.
     Summary:
 	inferred  16 D-type flip-flop(s).
@@ -1024,7 +1042,7 @@ Unit <REG_16B_WREN> synthesized.
 
 
 Synthesizing Unit <ALLOW_ZERO_UDP_CHECKSUM>.
-    Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/ALLOW_ZERO_UDP_CHECKSUM.vhd".
+    Related source file is "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/ALLOW_ZERO_UDP_CHECKSUM.vhd".
     Found 1-bit register for signal <output_to_datasel>.
     Found 1-bit register for signal <input_reg>.
     Summary:
@@ -1033,7 +1051,7 @@ Unit <ALLOW_ZERO_UDP_CHECKSUM> synthesized.
 
 
 Synthesizing Unit <ENABLE_USER_DATA_TRANSMISSION>.
-    Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/ENABLE_USER_DATA_TRANSMISSION.vhd".
+    Related source file is "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/ENABLE_USER_DATA_TRANSMISSION.vhd".
     Found 1-bit register for signal <usr_data_sel>.
     Found 1-bit register for signal <usr_data_sel_prev>.
     Summary:
@@ -1042,7 +1060,7 @@ Unit <ENABLE_USER_DATA_TRANSMISSION> synthesized.
 
 
 Synthesizing Unit <IPV4WriteUDPHeader>.
-    Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd".
+    Related source file is "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd".
 WARNING:Xst:646 - Signal <summand> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <sum> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <addressChanged> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -1052,8 +1070,8 @@ WARNING:Xst:646 - Signal <addressChanged> is assigned but never used. This uncon
     | Transitions        | 40                                             |
     | Inputs             | 1                                              |
     | Outputs            | 39                                             |
-    | Clock              | clk (rising_edge)                              |
-    | Reset              | rst (positive)                                 |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | rst                       (positive)           |
     | Reset type         | asynchronous                                   |
     | Reset State        | 000000                                         |
     | Encoding           | automatic                                      |
@@ -1123,7 +1141,7 @@ Unit <IPV4WriteUDPHeader> synthesized.
 
 
 Synthesizing Unit <COUNTER_11B_EN_TRANS>.
-    Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/COUNTER_11B_EN_TRANS.vhd".
+    Related source file is "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/COUNTER_11B_EN_TRANS.vhd".
     Found 11-bit up counter for signal <value_O>.
     Summary:
 	inferred   1 Counter(s).
@@ -1131,7 +1149,7 @@ Unit <COUNTER_11B_EN_TRANS> synthesized.
 
 
 Synthesizing Unit <COUNTER_6B_LUT_FIFO_MODE>.
-    Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/COUNTER_6B_LUT_FIFO_MODE.vhd".
+    Related source file is "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/COUNTER_6B_LUT_FIFO_MODE.vhd".
     Found 6-bit up counter for signal <value_O>.
     Summary:
 	inferred   1 Counter(s).
@@ -1139,15 +1157,15 @@ Unit <COUNTER_6B_LUT_FIFO_MODE> synthesized.
 
 
 Synthesizing Unit <PACKET_RECEIVER_FSM>.
-    Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/PACKET_RECEIVER_FSM.vhd".
+    Related source file is "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/PACKET_RECEIVER_FSM.vhd".
     Found finite state machine <FSM_1> for signal <current_st>.
     -----------------------------------------------------------------------
     | States             | 6                                              |
     | Transitions        | 11                                             |
     | Inputs             | 3                                              |
     | Outputs            | 6                                              |
-    | Clock              | clk (rising_edge)                              |
-    | Reset              | rst (positive)                                 |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | rst                       (positive)           |
     | Reset type         | asynchronous                                   |
     | Reset State        | rst_state                                      |
     | Power Up State     | rst_state                                      |
@@ -1160,7 +1178,7 @@ Unit <PACKET_RECEIVER_FSM> synthesized.
 
 
 Synthesizing Unit <REG_8b_wren>.
-    Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/REG_8b_wren.vhd".
+    Related source file is "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/REG_8b_wren.vhd".
     Found 8-bit register for signal <output_val>.
     Summary:
 	inferred   8 D-type flip-flop(s).
@@ -1168,7 +1186,7 @@ Unit <REG_8b_wren> synthesized.
 
 
 Synthesizing Unit <COUNTER_11B_EN_RECEIV>.
-    Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/COUNTER_11B_EN_RECEIV.vhd".
+    Related source file is "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/COUNTER_11B_EN_RECEIV.vhd".
     Found 11-bit up counter for signal <value_O>.
     Summary:
 	inferred   1 Counter(s).
@@ -1176,7 +1194,7 @@ Unit <COUNTER_11B_EN_RECEIV> synthesized.
 
 
 Synthesizing Unit <sync_trigger>.
-    Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd".
+    Related source file is "/media/disk2/trigger/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd".
 WARNING:Xst:646 - Signal <coincidence_array<2:3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found 31-bit comparator greater for signal <coincidence$cmp_gt0000> created at line 127.
     Found 1-bit register for signal <coincidence_hold>.
@@ -1190,12 +1208,12 @@ Unit <sync_trigger> synthesized.
 
 
 Synthesizing Unit <PLL_core>.
-    Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/CRU/COREgen/PLL_core.vhd".
+    Related source file is "/media/disk2/trigger/Trigger/HW/HDL/CRU/COREgen/PLL_core.vhd".
 Unit <PLL_core> synthesized.
 
 
 Synthesizing Unit <rate_counter>.
-    Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/rate_counter/rate_counter.vhd".
+    Related source file is "/media/disk2/trigger/Trigger/HW/HDL/rate_counter/rate_counter.vhd".
 WARNING:Xst:647 - Input <coincidence<1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found finite state machine <FSM_2> for signal <state>.
     -----------------------------------------------------------------------
@@ -1203,8 +1221,8 @@ WARNING:Xst:647 - Input <coincidence<1>> is never used. This port will be preser
     | Transitions        | 11                                             |
     | Inputs             | 4                                              |
     | Outputs            | 6                                              |
-    | Clock              | clk (rising_edge)                              |
-    | Reset              | rst_b (negative)                               |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | rst_b                     (negative)           |
     | Reset type         | asynchronous                                   |
     | Reset State        | init                                           |
     | Power Up State     | init                                           |
@@ -1234,7 +1252,7 @@ Unit <rate_counter> synthesized.
 
 
 Synthesizing Unit <gmii_if>.
-    Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/physical/gmii_if.vhd".
+    Related source file is "/media/disk2/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/physical/gmii_if.vhd".
     Found 8-bit register for signal <RXD_TO_MAC>.
     Found 8-bit register for signal <GMII_TXD>.
     Found 1-bit register for signal <RX_ER_TO_MAC>.
@@ -1247,7 +1265,7 @@ Unit <gmii_if> synthesized.
 
 
 Synthesizing Unit <v5_emac_v1_5>.
-    Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5.vhd".
+    Related source file is "/media/disk2/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5.vhd".
 WARNING:Xst:647 - Input <CLIENTEMAC0TXDVLDMSW> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:646 - Signal <gnd_v48_i<47:32>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <client_rx_data_0_i<15:8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -1255,15 +1273,15 @@ Unit <v5_emac_v1_5> synthesized.
 
 
 Synthesizing Unit <tx_client_fifo_8>.
-    Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/tx_client_fifo_8.vhd".
+    Related source file is "/media/disk2/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/tx_client_fifo_8.vhd".
     Found finite state machine <FSM_3> for signal <rd_state>.
     -----------------------------------------------------------------------
     | States             | 9                                              |
     | Transitions        | 21                                             |
     | Inputs             | 5                                              |
     | Outputs            | 15                                             |
-    | Clock              | rd_clk (rising_edge)                           |
-    | Reset              | rd_sreset (positive)                           |
+    | Clock              | rd_clk                    (rising_edge)        |
+    | Reset              | rd_sreset                 (positive)           |
     | Reset type         | synchronous                                    |
     | Reset State        | idle_s                                         |
     | Power Up State     | idle_s                                         |
@@ -1276,8 +1294,8 @@ Synthesizing Unit <tx_client_fifo_8>.
     | Transitions        | 12                                             |
     | Inputs             | 5                                              |
     | Outputs            | 6                                              |
-    | Clock              | wr_clk (rising_edge)                           |
-    | Reset              | wr_sreset (positive)                           |
+    | Clock              | wr_clk                    (rising_edge)        |
+    | Reset              | wr_sreset                 (positive)           |
     | Reset type         | synchronous                                    |
     | Reset State        | wait_s                                         |
     | Power Up State     | wait_s                                         |
@@ -1359,7 +1377,7 @@ Unit <tx_client_fifo_8> synthesized.
 
 
 Synthesizing Unit <rx_client_fifo_8>.
-    Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/rx_client_fifo_8.vhd".
+    Related source file is "/media/disk2/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/rx_client_fifo_8.vhd".
 WARNING:Xst:646 - Signal <rd_valid_pipe<2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found finite state machine <FSM_5> for signal <rd_state>.
     -----------------------------------------------------------------------
@@ -1367,8 +1385,8 @@ WARNING:Xst:646 - Signal <rd_valid_pipe<2>> is assigned but never used. This unc
     | Transitions        | 15                                             |
     | Inputs             | 5                                              |
     | Outputs            | 17                                             |
-    | Clock              | rd_clk (rising_edge)                           |
-    | Reset              | rd_sreset (positive)                           |
+    | Clock              | rd_clk                    (rising_edge)        |
+    | Reset              | rd_sreset                 (positive)           |
     | Reset type         | synchronous                                    |
     | Reset State        | wait_s                                         |
     | Power Up State     | wait_s                                         |
@@ -1381,8 +1399,8 @@ WARNING:Xst:646 - Signal <rd_valid_pipe<2>> is assigned but never used. This unc
     | Transitions        | 15                                             |
     | Inputs             | 5                                              |
     | Outputs            | 5                                              |
-    | Clock              | wr_clk (rising_edge)                           |
-    | Reset              | wr_sreset (positive)                           |
+    | Clock              | wr_clk                    (rising_edge)        |
+    | Reset              | wr_sreset                 (positive)           |
     | Reset type         | synchronous                                    |
     | Reset State        | idle_s                                         |
     | Power Up State     | idle_s                                         |
@@ -1464,7 +1482,7 @@ Unit <rx_client_fifo_8> synthesized.
 
 
 Synthesizing Unit <IPv4_PACKET_RECEIVER>.
-    Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/IPv4_PACKET_RECEIVER.vhd".
+    Related source file is "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/IPv4_PACKET_RECEIVER.vhd".
 WARNING:Xst:646 - Signal <MSbyte_reg_val_out<7:3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found 8-bit subtractor for signal <length_val_7_0$sub0000> created at line 172.
     Summary:
@@ -1473,7 +1491,7 @@ Unit <IPv4_PACKET_RECEIVER> synthesized.
 
 
 Synthesizing Unit <TARGET_EOF>.
-    Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/TARGET_EOF.vhd".
+    Related source file is "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/TARGET_EOF.vhd".
 WARNING:Xst:647 - Input <total_length_from_reg<15:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:1780 - Signal <last_byte> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
     Found 1-bit register for signal <count_en_sig>.
@@ -1484,7 +1502,7 @@ Unit <TARGET_EOF> synthesized.
 
 
 Synthesizing Unit <IPV4_LUT_INDEXER>.
-    Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4_LUT_INDEXER.vhd".
+    Related source file is "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4_LUT_INDEXER.vhd".
     Found 1-bit register for signal <count_en_sig>.
     Summary:
 	inferred   1 D-type flip-flop(s).
@@ -1492,7 +1510,7 @@ Unit <IPV4_LUT_INDEXER> synthesized.
 
 
 Synthesizing Unit <OVERRIDE_LUT_CONTROL>.
-    Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/OVERRIDE_LUT_CONTROL.vhd".
+    Related source file is "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/OVERRIDE_LUT_CONTROL.vhd".
     Found 1-bit register for signal <sel_length_LSBs>.
     Found 1-bit register for signal <sel_total_length_LSBs>.
     Found 1-bit register for signal <sel_header_checksum_LSBs>.
@@ -1502,7 +1520,7 @@ Unit <OVERRIDE_LUT_CONTROL> synthesized.
 
 
 Synthesizing Unit <CRU>.
-    Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/CRU/CRU.vhd".
+    Related source file is "/media/disk2/trigger/Trigger/HW/HDL/CRU/CRU.vhd".
 INFO:Xst:1799 - State ud10 is never reached in FSM <state>.
 INFO:Xst:1799 - State ud11 is never reached in FSM <state>.
 INFO:Xst:1799 - State ud12 is never reached in FSM <state>.
@@ -1516,8 +1534,8 @@ INFO:Xst:1799 - State ud16 is never reached in FSM <state>.
     | Transitions        | 15                                             |
     | Inputs             | 5                                              |
     | Outputs            | 8                                              |
-    | Clock              | fpga_100m_clk_s (rising_edge)                  |
-    | Reset              | fpga_cpu_reset (positive)                      |
+    | Clock              | fpga_100m_clk_s           (rising_edge)        |
+    | Reset              | fpga_cpu_reset            (positive)           |
     | Reset type         | asynchronous                                   |
     | Reset State        | init                                           |
     | Power Up State     | init                                           |
@@ -1541,17 +1559,17 @@ Unit <CRU> synthesized.
 
 
 Synthesizing Unit <v5_emac_v1_5_block>.
-    Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_block.vhd".
+    Related source file is "/media/disk2/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_block.vhd".
 Unit <v5_emac_v1_5_block> synthesized.
 
 
 Synthesizing Unit <eth_fifo_8>.
-    Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/eth_fifo_8.vhd".
+    Related source file is "/media/disk2/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/eth_fifo_8.vhd".
 Unit <eth_fifo_8> synthesized.
 
 
 Synthesizing Unit <IPV4_PACKET_TRANSMITTER>.
-    Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/IPV4_PACKET_TRANSMITTER.vhd".
+    Related source file is "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4_PACKET_TRANSMITTER.vhd".
 WARNING:Xst:646 - Signal <transmit_data_input_bus_tmp> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <header_checksum_base_reg> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <LUTDataWrite> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
@@ -1568,7 +1586,7 @@ Unit <IPV4_PACKET_TRANSMITTER> synthesized.
 
 
 Synthesizing Unit <v5_emac_v1_5_locallink>.
-    Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_locallink.vhd".
+    Related source file is "/media/disk2/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_locallink.vhd".
     Found 1-bit register for signal <rx_bad_frame_0_r>.
     Found 8-bit register for signal <rx_data_0_r>.
     Found 1-bit register for signal <rx_data_valid_0_r>.
@@ -1583,12 +1601,12 @@ Unit <v5_emac_v1_5_locallink> synthesized.
 
 
 Synthesizing Unit <UDP_IP_Core>.
-    Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/UDP_IP_Core.vhd".
+    Related source file is "/media/disk2/trigger/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/UDP_IP_Core.vhd".
 Unit <UDP_IP_Core> synthesized.
 
 
 Synthesizing Unit <v5_emac_v1_5_example_design>.
-    Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_example_design.vhd".
+    Related source file is "/media/disk2/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_example_design.vhd".
 WARNING:Xst:646 - Signal <valid_out_usr_data> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <usr_data_trans_phase_on> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <usr_data_output_bus> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -1613,9 +1631,7 @@ Unit <v5_emac_v1_5_example_design> synthesized.
 
 
 Synthesizing Unit <top>.
-    Related source file is "//aristoteles/kimei/MASTER/COMPET/Trigger/HW/HDL/top/top.vhd".
-WARNING:Xst:1306 - Output <LEDS<0>> is never assigned.
-WARNING:Xst:1306 - Output <LEDS<2:6>> is never assigned.
+    Related source file is "/media/disk2/trigger/Trigger/HW/HDL/top/top.vhd".
 WARNING:Xst:647 - Input <DIP_SWITCH> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:1780 - Signal <uc_leds> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <uc_buttons> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
@@ -1623,7 +1639,7 @@ WARNING:Xst:646 - Signal <rst> is assigned but never used. This unconnected sign
 WARNING:Xst:646 - Signal <clk125> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found 1-bit register for signal <LEDS<7>>.
     Found 1-bit register for signal <trigled>.
-    Found 1-bit xor2 for signal <trigled$xor0000> created at line 277.
+    Found 1-bit xor2 for signal <trigled$xor0000> created at line 283.
     Found 1-bit register for signal <trigled1>.
     Summary:
 	inferred   3 D-type flip-flop(s).
@@ -1687,19 +1703,19 @@ Macro Statistics
 =========================================================================
 
 Analyzing FSM <FSM_7> for best encoding.
-Optimizing FSM <Inst_CRU/state/FSM> on signal <state[1:4]> with gray encoding.
----------------------------
+Optimizing FSM <Inst_CRU/state/FSM> on signal <state[1:9]> with one-hot encoding.
+----------------------------
  State         | Encoding
----------------------------
- init          | 0000
- reset_pll     | 0001
- wait1         | 0011
- det_clockloss | 0101
- wait_clk_lock | 0010
- en_output     | 0110
- reset_rocs    | 0111
- rst5          | 0100
- wait2         | 1100
+----------------------------
+ init          | 000000001
+ reset_pll     | 000000010
+ wait1         | 000000100
+ det_clockloss | 001000000
+ wait_clk_lock | 000001000
+ en_output     | 000010000
+ reset_rocs    | 000100000
+ rst5          | 010000000
+ wait2         | 100000000
  ud10          | unreached
  ud11          | unreached
  ud12          | unreached
@@ -1707,35 +1723,35 @@ Optimizing FSM <Inst_CRU/state/FSM> on signal <state[1:4]> with gray encoding.
  ud14          | unreached
  ud15          | unreached
  ud16          | unreached
----------------------------
+----------------------------
 Analyzing FSM <FSM_6> for best encoding.
-Optimizing FSM <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_state/FSM> on signal <wr_state[1:3]> with sequential encoding.
+Optimizing FSM <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_state/FSM> on signal <wr_state[1:3]> with gray encoding.
 ----------------------
  State    | Encoding
 ----------------------
  idle_s   | 000
  frame_s  | 001
- end_s    | 101
- gf_s     | 011
- bf_s     | 100
- ovflow_s | 010
+ end_s    | 111
+ gf_s     | 010
+ bf_s     | 110
+ ovflow_s | 011
 ----------------------
 Analyzing FSM <FSM_5> for best encoding.
-Optimizing FSM <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_state/FSM> on signal <rd_state[1:3]> with sequential encoding.
+Optimizing FSM <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_state/FSM> on signal <rd_state[1:8]> with one-hot encoding.
 -------------------------
  State       | Encoding
 -------------------------
- wait_s      | 000
- queue1_s    | 001
- queue2_s    | 010
- queue3_s    | 011
- queue_sof_s | 100
- sof_s       | 110
- data_s      | 101
- eof_s       | 111
+ wait_s      | 00000001
+ queue1_s    | 00000010
+ queue2_s    | 00000100
+ queue3_s    | 00001000
+ queue_sof_s | 00010000
+ sof_s       | 01000000
+ data_s      | 00100000
+ eof_s       | 10000000
 -------------------------
 Analyzing FSM <FSM_4> for best encoding.
-Optimizing FSM <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_state/FSM> on signal <wr_state[1:2]> with gray encoding.
+Optimizing FSM <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_state/FSM> on signal <wr_state[1:2]> with user encoding.
 ----------------------
  State    | Encoding
 ----------------------
@@ -1745,32 +1761,32 @@ Optimizing FSM <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_state/FSM>
  ovflow_s | 11
 ----------------------
 Analyzing FSM <FSM_3> for best encoding.
-Optimizing FSM <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state/FSM> on signal <rd_state[1:4]> with gray encoding.
---------------------------
+Optimizing FSM <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state/FSM> on signal <rd_state[1:9]> with one-hot encoding.
+---------------------------
  State        | Encoding
---------------------------
- idle_s       | 0000
- queue1_s     | 0011
- queue2_s     | 0010
- queue3_s     | 0110
- queue_ack_s  | 0111
- wait_ack_s   | 0101
- frame_s      | 0100
- drop_s       | 1100
- retransmit_s | 0001
---------------------------
+---------------------------
+ idle_s       | 000000001
+ queue1_s     | 000000100
+ queue2_s     | 000001000
+ queue3_s     | 000010000
+ queue_ack_s  | 000100000
+ wait_ack_s   | 001000000
+ frame_s      | 010000000
+ drop_s       | 100000000
+ retransmit_s | 000000010
+---------------------------
 Analyzing FSM <FSM_2> for best encoding.
-Optimizing FSM <EMAC_1/rate_counter_1/state/FSM> on signal <state[1:3]> with sequential encoding.
+Optimizing FSM <EMAC_1/rate_counter_1/state/FSM> on signal <state[1:7]> with one-hot encoding.
 ---------------------------
  State         | Encoding
 ---------------------------
- init          | 000
- count         | 001
- wait_for_fifo | 010
- write_fifo1   | 011
- write_fifo2   | 100
- write_fifo3   | 101
- write_fifo4   | 110
+ init          | 0000001
+ count         | 0000010
+ wait_for_fifo | 0000100
+ write_fifo1   | 0001000
+ write_fifo2   | 0010000
+ write_fifo3   | 0100000
+ write_fifo4   | 1000000
 ---------------------------
 Analyzing FSM <FSM_1> for best encoding.
 Optimizing FSM <EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/PACKET_RECEIVER_FSM_port_map/current_st/FSM> on signal <current_st[1:3]> with gray encoding.
@@ -1785,92 +1801,90 @@ Optimizing FSM <EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/PACKET_RECEIV
  receive_usr_data_state                 | 111
 ----------------------------------------------------
 Analyzing FSM <FSM_0> for best encoding.
-Optimizing FSM <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg/FSM> on signal <addr_reg[1:6]> with gray encoding.
---------------------
+Optimizing FSM <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg/FSM> on signal <addr_reg[1:39]> with one-hot encoding.
+---------------------------------------------------
  State  | Encoding
---------------------
- 000000 | 000000
- 000001 | 000001
- 000010 | 000011
- 000011 | 000010
- 000100 | 000110
- 000101 | 000111
- 000110 | 000101
- 000111 | 000100
- 001000 | 001100
- 001001 | 001101
- 001010 | 001111
- 001011 | 001110
- 001100 | 001010
- 001101 | 001011
- 001110 | 001001
- 001111 | 001000
- 010000 | 011000
- 010001 | 011001
- 010010 | 011011
- 010011 | 011010
- 010100 | 011110
- 010101 | 011111
- 010110 | 011101
- 010111 | 011100
- 011010 | 010100
- 011001 | 010101
- 011000 | 010111
- 011011 | 010110
- 011100 | 010010
- 011101 | 010011
- 011110 | 010001
- 011111 | 010000
- 100000 | 110000
- 100001 | 110001
- 100010 | 110011
- 100011 | 110010
- 100100 | 110110
- 100101 | 110111
- 100110 | 110101
---------------------
-Loading device for application Rf_Device from file '5vfx30t.nph' in environment C:\Xilinx\10.1\ISE.
-WARNING:Xst:2404 -  FFs/Latches <output<15:0>> (without init value) have a constant value of 0 in block <REG_16B_WREN>.
-WARNING:Xst:2404 -  FFs/Latches <transmit_data_length<15:1>> (without init value) have a constant value of 0 in block <v5_emac_v1_5_example_design>.
-
-Synthesizing (advanced) Unit <tx_client_fifo_8>.
-INFO:Xst:2774 - HDL ADVISOR - ASYNC_REG property attached to signal wr_rd_addr may hinder XST clustering optimizations.
-Unit <tx_client_fifo_8> synthesized (advanced).
-INFO:Xst:2261 - The FF/Latch <usr_data_sel_prev> in Unit <ENABLE_USER_DATA_TRANSMISSION> is equivalent to the following FF/Latch, which will be removed : <usr_data_sel> 
-WARNING:Xst:1710 - FF/Latch <rd_enable_delay> (without init value) has a constant value of 1 in block <tx_client_fifo_8>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rd_enable_delay2> (without init value) has a constant value of 1 in block <tx_client_fifo_8>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <rd_valid_pipe_2> of sequential type is unconnected in block <rx_client_fifo_8>.
-WARNING:Xst:1293 - FF/Latch <count_en_sig> has a constant value of 0 in block <IPV4_LUT_INDEXER>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <transmit_start_enable_reg> (without init value) has a constant value of 0 in block <IPV4_PACKET_TRANSMITTER>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <source_ready> (without init value) has a constant value of 1 in block <IPV4_PACKET_TRANSMITTER>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <transmit_data_input_bus_0> in Unit <v5_emac_v1_5_example_design> is equivalent to the following 8 FFs/Latches, which will be removed : <transmit_data_input_bus_1> <transmit_data_input_bus_2> <transmit_data_input_bus_3> <transmit_data_input_bus_4> <transmit_data_input_bus_5> <transmit_data_input_bus_6> <transmit_data_input_bus_7> <transmit_data_length> 
-WARNING:Xst:1710 - FF/Latch <wr_ovflow_dst_rdy> (without init value) has a constant value of 0 in block <tx_fifo_i>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <wr_accept_pipe_0> (without init value) has a constant value of 0 in block <tx_fifo_i>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <wr_sof_pipe_0> (without init value) has a constant value of 0 in block <tx_fifo_i>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <FSM_FFd2> has a constant value of 0 in block <wr_state>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <count_en_sig> has a constant value of 0 in block <TARGET_EOF_port_map>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <wr_sof_pipe_1> (without init value) has a constant value of 0 in block <tx_fifo_i>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <wr_fifo_status_0> of sequential type is unconnected in block <tx_fifo_i>.
-WARNING:Xst:2677 - Node <wr_fifo_status_2> of sequential type is unconnected in block <tx_fifo_i>.
-WARNING:Xst:2677 - Node <wr_fifo_status_1> of sequential type is unconnected in block <tx_fifo_i>.
-WARNING:Xst:2677 - Node <wr_fifo_status_3> of sequential type is unconnected in block <tx_fifo_i>.
-WARNING:Xst:2677 - Node <wr_addr_diff_0> of sequential type is unconnected in block <tx_fifo_i>.
-WARNING:Xst:2677 - Node <wr_addr_diff_1> of sequential type is unconnected in block <tx_fifo_i>.
-WARNING:Xst:2677 - Node <wr_fifo_status_0> of sequential type is unconnected in block <rx_fifo_i>.
-WARNING:Xst:2677 - Node <wr_fifo_status_2> of sequential type is unconnected in block <rx_fifo_i>.
-WARNING:Xst:2677 - Node <wr_fifo_status_1> of sequential type is unconnected in block <rx_fifo_i>.
-WARNING:Xst:2677 - Node <rd_src_rdy_n> of sequential type is unconnected in block <rx_fifo_i>.
-WARNING:Xst:2677 - Node <wr_fifo_status_3> of sequential type is unconnected in block <rx_fifo_i>.
-WARNING:Xst:2677 - Node <wr_addr_diff_0> of sequential type is unconnected in block <rx_fifo_i>.
-WARNING:Xst:2677 - Node <wr_addr_diff_1> of sequential type is unconnected in block <rx_fifo_i>.
+---------------------------------------------------
+ 000000 | 000000000000000000000000000000000000001
+ 000001 | 000000000000000000000000000000000000010
+ 000010 | 000000000000000000000000000000000000100
+ 000011 | 000000000000000000000000000000000001000
+ 000100 | 000000000000000000000000000000000010000
+ 000101 | 000000000000000000000000000000000100000
+ 000110 | 000000000000000000000000000000001000000
+ 000111 | 000000000000000000000000000000010000000
+ 001000 | 000000000000000000000000000000100000000
+ 001001 | 000000000000000000000000000001000000000
+ 001010 | 000000000000000000000000000010000000000
+ 001011 | 000000000000000000000000000100000000000
+ 001100 | 000000000000000000000000001000000000000
+ 001101 | 000000000000000000000000010000000000000
+ 001110 | 000000000000000000000000100000000000000
+ 001111 | 000000000000000000000001000000000000000
+ 010000 | 000000000000000000000010000000000000000
+ 010001 | 000000000000000000000100000000000000000
+ 010010 | 000000000000000000001000000000000000000
+ 010011 | 000000000000000000010000000000000000000
+ 010100 | 000000000000000000100000000000000000000
+ 010101 | 000000000000000001000000000000000000000
+ 010110 | 000000000000000010000000000000000000000
+ 010111 | 000000000000000100000000000000000000000
+ 011010 | 000000000000001000000000000000000000000
+ 011001 | 000000000000010000000000000000000000000
+ 011000 | 000000000000100000000000000000000000000
+ 011011 | 000000000001000000000000000000000000000
+ 011100 | 000000000010000000000000000000000000000
+ 011101 | 000000000100000000000000000000000000000
+ 011110 | 000000001000000000000000000000000000000
+ 011111 | 000000010000000000000000000000000000000
+ 100000 | 000000100000000000000000000000000000000
+ 100001 | 000001000000000000000000000000000000000
+ 100010 | 000010000000000000000000000000000000000
+ 100011 | 000100000000000000000000000000000000000
+ 100100 | 001000000000000000000000000000000000000
+ 100101 | 010000000000000000000000000000000000000
+ 100110 | 100000000000000000000000000000000000000
+---------------------------------------------------
+Reading core <../../UDP/UDP_mr/comp_6b_equal.ngc>.
+Reading core <../../UDP/UDP_mr/comp_11b_equal.ngc>.
+Reading core <../../UDP/UDP_mr/dist_mem_64x8.ngc>.
+Reading core <../../rate_counter/fifo/fifo_generator_v4_4.ngc>.
+Loading core <comp_6b_equal> for timing and area information for instance <TARGET_TOTAL_LENGTH_1>.
+Loading core <comp_6b_equal> for timing and area information for instance <TARGET_HEADER_CHECKSUM_1>.
+Loading core <comp_6b_equal> for timing and area information for instance <TARGET_LENGTH_1>.
+Loading core <comp_11b_equal> for timing and area information for instance <Comp_11b_equal_port_map>.
+Loading core <comp_11b_equal> for timing and area information for instance <COMP_TO_TARGET_LAST_BYTE>.
+Loading core <comp_6b_equal> for timing and area information for instance <LUT_END_CHECK>.
+Loading core <dist_mem_64x8> for timing and area information for instance <LUT_MEM>.
+Loading core <fifo_generator_v4_4> for timing and area information for instance <send_fifo>.
 WARNING:Xst:1290 - Hierarchical block <ENABLE_USER_DATA_READ_port_map> is unconnected in block <IPV4_PACKET_TRANSMITTER_port_map>.
    It will be removed from the design.
+INFO:Xst:2261 - The FF/Latch <output_0> in Unit <NUMBER_OR_DATA_IN_BYTES_REGISTER> is equivalent to the following 15 FFs/Latches, which will be removed : <output_1> <output_2> <output_3> <output_4> <output_5> <output_6> <output_7> <output_8> <output_9> <output_10> <output_11> <output_12> <output_13> <output_14> <output_15> 
+INFO:Xst:2261 - The FF/Latch <usr_data_sel_prev> in Unit <ENABLE_USER_DATA_TRANSMISSION_port_map> is equivalent to the following FF/Latch, which will be removed : <usr_data_sel> 
+INFO:Xst:2261 - The FF/Latch <transmit_data_input_bus_0> in Unit <EMAC_1> is equivalent to the following 7 FFs/Latches, which will be removed : <transmit_data_input_bus_1> <transmit_data_input_bus_2> <transmit_data_input_bus_3> <transmit_data_input_bus_4> <transmit_data_input_bus_5> <transmit_data_input_bus_6> <transmit_data_input_bus_7> 
+WARNING:Xst:1293 - FF/Latch <FFd2> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <wr_ovflow_dst_rdy> (without init value) has a constant value of 0 in block <tx_fifo_i>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <wr_accept_pipe_0> (without init value) has a constant value of 0 in block <tx_fifo_i>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <rd_enable_delay> (without init value) has a constant value of 1 in block <tx_fifo_i>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <wr_sof_pipe_0> (without init value) has a constant value of 0 in block <tx_fifo_i>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <count_en_sig> has a constant value of 0 in block <TARGET_EOF_port_map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <output_0> (without init value) has a constant value of 0 in block <NUMBER_OR_DATA_IN_BYTES_REGISTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <count_en_sig> has a constant value of 0 in block <IPV4_LUT_INDEXER_port_map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <transmit_start_enable_reg> (without init value) has a constant value of 0 in block <IPV4_PACKET_TRANSMITTER_port_map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <source_ready> (without init value) has a constant value of 1 in block <IPV4_PACKET_TRANSMITTER_port_map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rd_enable_delay2> (without init value) has a constant value of 1 in block <tx_fifo_i>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <wr_sof_pipe_1> (without init value) has a constant value of 0 in block <tx_fifo_i>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <wr_addr_diff_0> of sequential type is unconnected in block <tx_fifo_i>.
+WARNING:Xst:2677 - Node <wr_addr_diff_1> of sequential type is unconnected in block <tx_fifo_i>.
+WARNING:Xst:2677 - Node <rd_valid_pipe_2> of sequential type is unconnected in block <rx_fifo_i>.
+WARNING:Xst:2677 - Node <wr_addr_diff_0> of sequential type is unconnected in block <rx_fifo_i>.
+WARNING:Xst:2677 - Node <wr_addr_diff_1> of sequential type is unconnected in block <rx_fifo_i>.
 WARNING:Xst:2677 - Node <output_val_3> of sequential type is unconnected in block <MSbyte_REG>.
 WARNING:Xst:2677 - Node <output_val_4> of sequential type is unconnected in block <MSbyte_REG>.
 WARNING:Xst:2677 - Node <output_val_5> of sequential type is unconnected in block <MSbyte_REG>.
 WARNING:Xst:2677 - Node <output_val_6> of sequential type is unconnected in block <MSbyte_REG>.
 WARNING:Xst:2677 - Node <output_val_7> of sequential type is unconnected in block <MSbyte_REG>.
-WARNING:Xst:1293 - FF/Latch <FSM_FFd1> has a constant value of 0 in block <wr_state>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <wr_start_addr_0> (without init value) has a constant value of 0 in block <tx_fifo_i>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <wr_accept_pipe_1> (without init value) has a constant value of 0 in block <tx_fifo_i>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <wr_eof_pipe_1> (without init value) has a constant value of 0 in block <tx_fifo_i>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <wr_data_pipe_1_7> (without init value) has a constant value of 0 in block <tx_fifo_i>. This FF/Latch will be trimmed during the optimization process.
@@ -1881,6 +1895,7 @@ WARNING:Xst:1710 - FF/Latch <wr_data_pipe_1_3> (without init value) has a consta
 WARNING:Xst:1710 - FF/Latch <wr_data_pipe_1_2> (without init value) has a constant value of 0 in block <tx_fifo_i>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <wr_data_pipe_1_1> (without init value) has a constant value of 0 in block <tx_fifo_i>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <wr_data_pipe_1_0> (without init value) has a constant value of 0 in block <tx_fifo_i>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <FFd1> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <wr_eof_bram_0> (without init value) has a constant value of 0 in block <tx_fifo_i>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <wr_data_bram_0> (without init value) has a constant value of 0 in block <tx_fifo_i>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <wr_data_bram_1> (without init value) has a constant value of 0 in block <tx_fifo_i>. This FF/Latch will be trimmed during the optimization process.
@@ -1891,7 +1906,32 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <wr_data_bram_5> (wi
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <wr_data_bram_6> (without init value) has a constant value of 0 in block <tx_fifo_i>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <wr_data_bram_7> (without init value) has a constant value of 0 in block <tx_fifo_i>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <wr_accept_bram> (without init value) has a constant value of 0 in block <tx_fifo_i>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <wr_start_addr_0> (without init value) has a constant value of 0 in block <tx_fifo_i>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <wr_data_pipe_0_0> is unconnected in block <tx_fifo_i>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <wr_data_pipe_0_1> is unconnected in block <tx_fifo_i>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <wr_data_pipe_0_2> is unconnected in block <tx_fifo_i>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <wr_data_pipe_0_3> is unconnected in block <tx_fifo_i>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <wr_data_pipe_0_4> is unconnected in block <tx_fifo_i>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <wr_data_pipe_0_5> is unconnected in block <tx_fifo_i>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <wr_data_pipe_0_6> is unconnected in block <tx_fifo_i>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <sel_total_length_LSBs> is unconnected in block <OVERRIDE_LUT_CONTROL_port_map>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <CheckSumTemplate_i_0> is unconnected in block <Inst_IPV4WriteUDPHeader>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <CheckSumTemplate_i_1> is unconnected in block <Inst_IPV4WriteUDPHeader>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <CheckSumTemplate_i_2> is unconnected in block <Inst_IPV4WriteUDPHeader>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <CheckSumTemplate_i_3> is unconnected in block <Inst_IPV4WriteUDPHeader>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <CheckSumTemplate_i_4> is unconnected in block <Inst_IPV4WriteUDPHeader>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <CheckSumTemplate_i_5> is unconnected in block <Inst_IPV4WriteUDPHeader>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <CheckSumTemplate_i_6> is unconnected in block <Inst_IPV4WriteUDPHeader>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <CheckSumTemplate_i_7> is unconnected in block <Inst_IPV4WriteUDPHeader>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <CheckSumTemplate_i_8> is unconnected in block <Inst_IPV4WriteUDPHeader>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <CheckSumTemplate_i_9> is unconnected in block <Inst_IPV4WriteUDPHeader>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <CheckSumTemplate_i_10> is unconnected in block <Inst_IPV4WriteUDPHeader>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <CheckSumTemplate_i_11> is unconnected in block <Inst_IPV4WriteUDPHeader>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <CheckSumTemplate_i_12> is unconnected in block <Inst_IPV4WriteUDPHeader>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <CheckSumTemplate_i_13> is unconnected in block <Inst_IPV4WriteUDPHeader>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <CheckSumTemplate_i_14> is unconnected in block <Inst_IPV4WriteUDPHeader>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <CheckSumTemplate_i_15> is unconnected in block <Inst_IPV4WriteUDPHeader>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <sel_header_checksum_LSBs> is unconnected in block <OVERRIDE_LUT_CONTROL_port_map>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <wr_data_pipe_0_7> is unconnected in block <tx_fifo_i>.
 WARNING:Xst:1710 - FF/Latch <wr_start_addr_1> (without init value) has a constant value of 0 in block <tx_fifo_i>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <wr_start_addr_2> (without init value) has a constant value of 0 in block <tx_fifo_i>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <wr_start_addr_3> (without init value) has a constant value of 0 in block <tx_fifo_i>. This FF/Latch will be trimmed during the optimization process.
@@ -1903,17 +1943,28 @@ WARNING:Xst:1710 - FF/Latch <wr_start_addr_8> (without init value) has a constan
 WARNING:Xst:1710 - FF/Latch <wr_start_addr_9> (without init value) has a constant value of 0 in block <tx_fifo_i>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <wr_start_addr_10> (without init value) has a constant value of 0 in block <tx_fifo_i>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <wr_start_addr_11> (without init value) has a constant value of 0 in block <tx_fifo_i>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <transmit_data_input_bus_0> of sequential type is unconnected in block <EMAC_1>.
+WARNING:Xst:2677 - Node <wr_eof_pipe_0> of sequential type is unconnected in block <tx_fifo_i>.
+WARNING:Xst:2677 - Node <wr_eof_state_reg> of sequential type is unconnected in block <tx_fifo_i>.
+WARNING:Xst:2677 - Node <wr_col_window_expire> of sequential type is unconnected in block <tx_fifo_i>.
 WARNING:Xst:2677 - Node <sel_length_LSBs> of sequential type is unconnected in block <OVERRIDE_LUT_CONTROL_port_map>.
 WARNING:Xst:1290 - Hierarchical block <ALLOW_ZERO_UDP_CHECKSUM_port_map> is unconnected in block <IPV4_PACKET_TRANSMITTER_port_map>.
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <ENABLE_USER_DATA_TRANSMISSION_port_map> is unconnected in block <IPV4_PACKET_TRANSMITTER_port_map>.
    It will be removed from the design.
+WARNING:Xst:2677 - Node <transmit_data_input_bus_0> of sequential type is unconnected in block <EMAC_1>.
+WARNING:Xst:2404 -  FFs/Latches <output<15:0>> (without init value) have a constant value of 0 in block <REG_16B_WREN>.
+WARNING:Xst:2404 -  FFs/Latches <transmit_data_length<15:1>> (without init value) have a constant value of 0 in block <v5_emac_v1_5_example_design>.
+
+Synthesizing (advanced) Unit <tx_client_fifo_8>.
+INFO:Xst:2774 - HDL ADVISOR - ASYNC_REG property attached to signal wr_rd_addr may hinder XST clustering optimizations.
+Unit <tx_client_fifo_8> synthesized (advanced).
+WARNING:Xst:2677 - Node <rd_valid_pipe_2> of sequential type is unconnected in block <rx_client_fifo_8>.
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
+# FSMs                                                 : 8
 # Adders/Subtractors                                   : 28
  12-bit adder                                          : 2
  12-bit subtractor                                     : 4
@@ -1937,8 +1988,8 @@ Macro Statistics
  9-bit updown counter                                  : 2
 # Accumulators                                         : 1
  12-bit updown accumulator                             : 1
-# Registers                                            : 681
- Flip-Flops                                            : 681
+# Registers                                            : 668
+ Flip-Flops                                            : 668
 # Latches                                              : 18
  1-bit latch                                           : 17
  32-bit latch                                          : 1
@@ -1955,12 +2006,19 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:1710 - FF/Latch <rd_enable_delay> (without init value) has a constant value of 1 in block <tx_client_fifo_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rd_enable_delay2> (without init value) has a constant value of 1 in block <tx_client_fifo_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <count_en_sig> has a constant value of 0 in block <IPV4_LUT_INDEXER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <source_ready> (without init value) has a constant value of 1 in block <IPV4_PACKET_TRANSMITTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <transmit_start_enable_reg> (without init value) has a constant value of 0 in block <IPV4_PACKET_TRANSMITTER>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <usr_data_sel_prev> in Unit <ENABLE_USER_DATA_TRANSMISSION> is equivalent to the following FF/Latch, which will be removed : <usr_data_sel> 
+INFO:Xst:2261 - The FF/Latch <transmit_data_input_bus_0> in Unit <v5_emac_v1_5_example_design> is equivalent to the following 8 FFs/Latches, which will be removed : <transmit_data_input_bus_1> <transmit_data_input_bus_2> <transmit_data_input_bus_3> <transmit_data_input_bus_4> <transmit_data_input_bus_5> <transmit_data_input_bus_6> <transmit_data_input_bus_7> <transmit_data_length> 
+WARNING:Xst:2677 - Node <MSbyte_REG/output_val_7> of sequential type is unconnected in block <IPv4_PACKET_RECEIVER>.
+WARNING:Xst:2677 - Node <MSbyte_REG/output_val_6> of sequential type is unconnected in block <IPv4_PACKET_RECEIVER>.
+WARNING:Xst:2677 - Node <MSbyte_REG/output_val_5> of sequential type is unconnected in block <IPv4_PACKET_RECEIVER>.
+WARNING:Xst:2677 - Node <MSbyte_REG/output_val_4> of sequential type is unconnected in block <IPv4_PACKET_RECEIVER>.
+WARNING:Xst:2677 - Node <MSbyte_REG/output_val_3> of sequential type is unconnected in block <IPv4_PACKET_RECEIVER>.
 WARNING:Xst:1293 - FF/Latch <TARGET_EOF_port_map/count_en_sig> has a constant value of 0 in block <IPV4_PACKET_TRANSMITTER>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/MSbyte_REG/output_val_7> of sequential type is unconnected in block <v5_emac_v1_5_example_design>.
-WARNING:Xst:2677 - Node <UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/MSbyte_REG/output_val_6> of sequential type is unconnected in block <v5_emac_v1_5_example_design>.
-WARNING:Xst:2677 - Node <UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/MSbyte_REG/output_val_5> of sequential type is unconnected in block <v5_emac_v1_5_example_design>.
-WARNING:Xst:2677 - Node <UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/MSbyte_REG/output_val_4> of sequential type is unconnected in block <v5_emac_v1_5_example_design>.
-WARNING:Xst:2677 - Node <UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/MSbyte_REG/output_val_3> of sequential type is unconnected in block <v5_emac_v1_5_example_design>.
 WARNING:Xst:1710 - FF/Latch <TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_10> (without init value) has a constant value of 1 in block <IPV4_PACKET_TRANSMITTER>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IPV4_LUT_INDEXER_port_map/LUT_INDEXER_MODULE/value_O_5> (without init value) has a constant value of 0 in block <IPV4_PACKET_TRANSMITTER>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IPV4_LUT_INDEXER_port_map/LUT_INDEXER_MODULE/value_O_4> (without init value) has a constant value of 0 in block <IPV4_PACKET_TRANSMITTER>. This FF/Latch will be trimmed during the optimization process.
@@ -1972,9 +2030,9 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TARGET_EOF_port_map
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_8> (without init value) has a constant value of 1 in block <IPV4_PACKET_TRANSMITTER>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_7> (without init value) has a constant value of 1 in block <IPV4_PACKET_TRANSMITTER>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_6> (without init value) has a constant value of 1 in block <IPV4_PACKET_TRANSMITTER>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_5> (without init value) has a constant value of 1 in block <IPV4_PACKET_TRANSMITTER>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_4> (without init value) has a constant value of 1 in block <IPV4_PACKET_TRANSMITTER>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_3> (without init value) has a constant value of 0 in block <IPV4_PACKET_TRANSMITTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_5> (without init value) has a constant value of 1 in block <IPV4_PACKET_TRANSMITTER>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_2> (without init value) has a constant value of 1 in block <IPV4_PACKET_TRANSMITTER>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_1> (without init value) has a constant value of 1 in block <IPV4_PACKET_TRANSMITTER>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_0> (without init value) has a constant value of 0 in block <IPV4_PACKET_TRANSMITTER>. This FF/Latch will be trimmed during the optimization process.
@@ -1995,6 +2053,8 @@ INFO:Xst:1901 - Instance ramgen_u in unit rx_client_fifo_8 of type RAMB16_S9_S9 
 
 Optimizing unit <top> ...
 
+Optimizing unit <PACKET_RECEIVER_FSM> ...
+
 Optimizing unit <gmii_if> ...
 
 Optimizing unit <tx_client_fifo_8> ...
@@ -2005,6 +2065,8 @@ Optimizing unit <sync_trigger> ...
 
 Optimizing unit <rate_counter> ...
 
+Optimizing unit <IPv4_PACKET_RECEIVER> ...
+
 Optimizing unit <CRU> ...
 
 Optimizing unit <IPV4_PACKET_TRANSMITTER> ...
@@ -2012,40 +2074,92 @@ Optimizing unit <IPV4_PACKET_TRANSMITTER> ...
 Optimizing unit <v5_emac_v1_5_locallink> ...
 
 Optimizing unit <v5_emac_v1_5_example_design> ...
-WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_10> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_state_FSM_FFd2> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_state_FSM_FFd1> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_sof_pipe_0> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_accept_pipe_0> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_ovflow_dst_rdy> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_sof_pipe_1> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_accept_pipe_0> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_1_0> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_1_1> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_1_2> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_1_3> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_1_4> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_1_5> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_1_6> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_1_7> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_accept_pipe_1> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_bram_0> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_bram_1> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_bram_2> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_bram_3> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_bram_4> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_bram_5> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_bram_6> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_bram_7> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_accept_bram> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_diff_1> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_diff_0> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_fifo_status_3> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_fifo_status_1> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_fifo_status_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_fifo_status_1> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_fifo_status_0> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_diff_1> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_diff_0> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_fifo_status_3> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_fifo_status_2> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_src_rdy_n> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_fifo_status_1> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_fifo_status_2> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_fifo_status_0> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/ENABLE_USER_DATA_READ_port_map/usr_data_sel_prev> of sequential type is unconnected in block <top>.
-WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_1_0> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_1_1> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_1_2> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_1_3> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_1_4> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_1_5> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_1_6> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_1_7> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_7> is unconnected in block <top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_15> is unconnected in block <top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_0_7> is unconnected in block <top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_6> is unconnected in block <top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_14> is unconnected in block <top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_0_6> is unconnected in block <top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_5> is unconnected in block <top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_13> is unconnected in block <top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_0_5> is unconnected in block <top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_4> is unconnected in block <top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_12> is unconnected in block <top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_0_4> is unconnected in block <top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_3> is unconnected in block <top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_11> is unconnected in block <top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_0_3> is unconnected in block <top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_2> is unconnected in block <top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_10> is unconnected in block <top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_0_2> is unconnected in block <top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_1> is unconnected in block <top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_9> is unconnected in block <top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_0_1> is unconnected in block <top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/sel_total_length_LSBs> is unconnected in block <top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <EMAC_1/transmit_data_input_bus_0> is unconnected in block <top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/sel_header_checksum_LSBs> is unconnected in block <top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_0> is unconnected in block <top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_8> is unconnected in block <top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_0_0> is unconnected in block <top>.
 WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_eof_pipe_1> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_sof_pipe_1> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_0> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_1> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_2> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_3> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_4> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_5> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_6> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_7> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_8> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_9> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_10> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_11> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_10> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_state_FSM_FFd1> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_state_FSM_FFd2> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_eof_bram_0> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/ALLOW_ZERO_UDP_CHECKSUM_port_map/output_to_datasel> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/ALLOW_ZERO_UDP_CHECKSUM_port_map/input_reg> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/ENABLE_USER_DATA_TRANSMISSION_port_map/usr_data_sel_prev> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/sel_length_LSBs> of sequential type is unconnected in block <top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/last_byte_reg_out> is unconnected in block <top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_eof_pipe_0> is unconnected in block <top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_sof_pipe_0> is unconnected in block <top>.
 WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_11> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_9> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_8> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
@@ -2055,34 +2169,10 @@ WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/
 WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_4> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_3> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_2> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_0> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_1> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_0> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_1> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_2> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_3> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_4> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_5> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_6> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_7> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_8> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_10> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_eof_bram_0> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_bram_0> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_bram_1> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_bram_2> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_bram_3> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_bram_4> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_bram_5> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_bram_6> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_bram_7> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_0> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_col_window_expire> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_eof_state_reg> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/ALLOW_ZERO_UDP_CHECKSUM_port_map/output_to_datasel> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/ALLOW_ZERO_UDP_CHECKSUM_port_map/input_reg> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/ENABLE_USER_DATA_TRANSMISSION_port_map/usr_data_sel_prev> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/sel_length_LSBs> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/last_byte_reg_out> of sequential type is unconnected in block <top>.
 WARNING:Xst:2398 - RAMs <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u>, <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l> are equivalent
 
 Mapping all equations...
@@ -2101,7 +2191,12 @@ INFO:Xst:2261 - The FF/Latch <EMAC_1/v5_emac_ll/tx_pre_reset_0_i_5> in Unit <top
 WARNING:Xst:638 - in unit top Conflict on KEEP property on signal EMAC_1/v5_emac_ll/tx_pre_reset_0_i<5> and EMAC_1/ll_pre_reset_0_i<5> EMAC_1/ll_pre_reset_0_i<5> signal will be lost.
 INFO:Xst:2261 - The FF/Latch <EMAC_1/v5_emac_ll/tx_reset_0_i> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <EMAC_1/ll_reset_0_i> 
 Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 7.
-FlipFlop EMAC_1/rate_counter_1/count1_0 has been replicated 1 time(s)
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/rstblk/rd_rst_reg_2> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/rstblk/rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/rstblk/rd_rst_reg_2> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/rstblk/rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
 
 Final Macro Processing ...
 
@@ -2117,24 +2212,23 @@ Processing Unit <top> :
 	Found 2-bit shift register for signal <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_gf_pipe_1>.
 	Found 2-bit shift register for signal <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_bf_pipe_1>.
 	Found 2-bit shift register for signal <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_valid_pipe_1>.
-	Found 12-bit shift register for signal <EMAC_1/idelayctrl_reset_0_r_12>.
+INFO:Xst:741 - HDL ADVISOR - A 12-bit shift register was found for signal <EMAC_1/idelayctrl_reset_0_r_12> and currently occupies 12 logic cells (6 slices). Removing the set/reset logic would take advantage of SRL32 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
 Unit <top> processed.
 
 =========================================================================
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 639
- Flip-Flops                                            : 639
-# Shift Registers                                      : 12
- 12-bit shift register                                 : 1
+# Registers                                            : 702
+ Flip-Flops                                            : 702
+# Shift Registers                                      : 11
  2-bit shift register                                  : 3
  3-bit shift register                                  : 8
 
 =========================================================================
 
 =========================================================================
-*                           Partition Report                             *
+*                           Partition Report                            *
 =========================================================================
 
 Partition Implementation Status
@@ -2152,57 +2246,56 @@ RTL Top Level Output File Name     : top.ngr
 Top Level Output File Name         : top
 Output Format                      : NGC
 Optimization Goal                  : Speed
-Keep Hierarchy                     : NO
+Keep Hierarchy                     : No
 
 Design Statistics
 # IOs                              : 101
 
 Cell Usage :
-# BELS                             : 1770
-#      GND                         : 1
-#      INV                         : 58
-#      LUT1                        : 240
-#      LUT2                        : 65
-#      LUT3                        : 65
-#      LUT4                        : 102
-#      LUT5                        : 117
-#      LUT6                        : 375
-#      MUXCY                       : 352
-#      MUXF7                       : 32
-#      VCC                         : 1
-#      XORCY                       : 362
-# FlipFlops/Latches                : 714
-#      FD                          : 13
-#      FDC                         : 188
-#      FDCE                        : 23
-#      FDE                         : 180
-#      FDP                         : 16
-#      FDPE                        : 12
-#      FDR                         : 96
-#      FDRE                        : 133
-#      FDS                         : 1
+# BELS                             : 1900
+#      GND                         : 10
+#      INV                         : 64
+#      LUT1                        : 255
+#      LUT2                        : 92
+#      LUT3                        : 113
+#      LUT4                        : 121
+#      LUT5                        : 108
+#      LUT6                        : 356
+#      MUXCY                       : 378
+#      MUXF7                       : 14
+#      VCC                         : 3
+#      XORCY                       : 386
+# FlipFlops/Latches                : 832
+#      FD                          : 28
+#      FDC                         : 227
+#      FDCE                        : 61
+#      FDE                         : 178
+#      FDP                         : 39
+#      FDPE                        : 4
+#      FDR                         : 103
+#      FDRE                        : 134
+#      FDRS                        : 2
+#      FDS                         : 4
 #      FDSE                        : 1
 #      LD                          : 32
 #      LD_1                        : 17
 #      ODDR                        : 2
-# RAMS                             : 4
+# RAMS                             : 13
+#      RAM64X1S                    : 8
 #      RAMB16                      : 4
-# Shift Registers                  : 12
-#      SRLC16E                     : 12
+#      RAMB18SDP                   : 1
+# Shift Registers                  : 11
+#      SRLC16E                     : 11
 # Clock Buffers                    : 12
 #      BUFG                        : 11
 #      BUFGP                       : 1
-# IO Buffers                       : 79
+# IO Buffers                       : 85
 #      IBUF                        : 43
 #      IBUFDS                      : 2
 #      IBUFG                       : 1
-#      OBUF                        : 28
+#      OBUF                        : 34
 #      OBUFDS                      : 5
-# Others                           : 22
-#      comp_11b_equal              : 2
-#      comp_6b_equal               : 4
-#      dist_mem_64x8               : 1
-#      fifo_generator_v4_4         : 1
+# Others                           : 14
 #      IDELAYCTRL                  : 1
 #      IODELAY                     : 11
 #      PLL_ADV                     : 1
@@ -2216,27 +2309,28 @@ Selected Device : 5vfx30tff665-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             703  out of  20480     3%  
- Number of Slice LUTs:                 1034  out of  20480     5%  
-    Number used as Logic:              1022  out of  20480     4%  
-    Number used as Memory:               12  out of   6080     0%  
-       Number used as SRL:               12
+ Number of Slice Registers:             821  out of  20480     4%  
+ Number of Slice LUTs:                 1128  out of  20480     5%  
+    Number used as Logic:              1109  out of  20480     5%  
+    Number used as Memory:               19  out of   6080     0%  
+       Number used as RAM:                8
+       Number used as SRL:               11
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   1224
-   Number with an unused Flip Flop:     521  out of   1224    42%  
-   Number with an unused LUT:           190  out of   1224    15%  
-   Number of fully used LUT-FF pairs:   513  out of   1224    41%  
-   Number of unique control sets:        54
+ Number of LUT Flip Flop pairs used:   1413
+   Number with an unused Flip Flop:     592  out of   1413    41%  
+   Number with an unused LUT:           285  out of   1413    20%  
+   Number of fully used LUT-FF pairs:   536  out of   1413    37%  
+   Number of unique control sets:        75
 
 IO Utilization: 
  Number of IOs:                         101
- Number of bonded IOBs:                  87  out of    360    24%  
+ Number of bonded IOBs:                  93  out of    360    25%  
     IOB Flip Flops/Latches:              11
 
 Specific Feature Utilization:
- Number of Block RAM/FIFO:                2  out of     68     2%  
-    Number using Block RAM only:          2
+ Number of Block RAM/FIFO:                3  out of     68     4%  
+    Number using Block RAM only:          3
  Number of BUFG/BUFGCTRLs:               12  out of     32    37%  
  Number of PLL_ADVs:                      1  out of      2    50%  
 
@@ -2258,20 +2352,20 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+-------+
-Clock Signal                                                                                                                                                                                                               | Clock buffer(FF name)                                                                                       | Load  |
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+-------+
-Inst_CRU/Inst_PLL_ALL/CLKOUT1_BUF                                                                                                                                                                                          | BUFG                                                                                                        | 18    |
-FPGA100M                                                                                                                                                                                                                   | IBUFG+BUFG                                                                                                  | 31    |
-Inst_CRU/Inst_PLL_ALL/CLKOUT0_BUF                                                                                                                                                                                          | BUFG                                                                                                        | 3     |
-EMAC_1/rx_client_clk_0_o                                                                                                                                                                                                   | BUFG                                                                                                        | 106   |
-EMAC_1/tx_client_clk_0_o                                                                                                                                                                                                   | BUFG                                                                                                        | 490   |
-EMAC_1/tx_phy_clk_0_o                                                                                                                                                                                                      | BUFG                                                                                                        | 11    |
-GMII_RX_CLK_0                                                                                                                                                                                                              | IBUF+IODELAY+BUFG                                                                                           | 10    |
-EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_n_16_and0000(EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_n_16_and00001:O)| NONE(*)(EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_n_16)| 17    |
-EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUTwe1(EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or0000_f7:O)                                                       | BUFG(*)(EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_0)       | 32    |
-Inst_CRU/Inst_PLL_ALL/CLKOUT3_BUF                                                                                                                                                                                          | BUFG+BUFG                                                                                                   | 14    |
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+-------+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                                                                                                                                                                                                                | Clock buffer(FF name)                                                                                       | Load  |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+-------+
+Inst_CRU/Inst_PLL_ALL/CLKOUT1_BUF                                                                                                                                                                                           | BUFG                                                                                                        | 18    |
+FPGA100M                                                                                                                                                                                                                    | IBUFG+BUFG                                                                                                  | 36    |
+Inst_CRU/Inst_PLL_ALL/CLKOUT0_BUF                                                                                                                                                                                           | BUFG                                                                                                        | 3     |
+EMAC_1/rx_client_clk_0_o                                                                                                                                                                                                    | BUFG                                                                                                        | 106   |
+EMAC_1/tx_client_clk_0_o                                                                                                                                                                                                    | BUFG                                                                                                        | 613   |
+EMAC_1/tx_phy_clk_0_o                                                                                                                                                                                                       | BUFG                                                                                                        | 11    |
+GMII_RX_CLK_0                                                                                                                                                                                                               | IBUF+IODELAY+BUFG                                                                                           | 10    |
+EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_n_16_and0000(EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_n_16_and000079:O)| NONE(*)(EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_n_16)| 17    |
+EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or0000_wg_cy<6>1(EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or0000_wg_cy<6>:O)   | BUFG(*)(EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_0)       | 32    |
+Inst_CRU/Inst_PLL_ALL/CLKOUT3_BUF                                                                                                                                                                                           | BUFG+BUFG                                                                                                   | 12    |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+-------+
 (*) These 2 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
@@ -2279,23 +2373,27 @@ INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered
 
 Asynchronous Control Signals Information:
 ----------------------------------------
-----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+-------+
-Control Signal                                                                                                                                            | Buffer(FF name)                                                                           | Load  |
-----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+-------+
-EMAC_1/rate_counter_1/G_edge_det[0].edge_detect_1/rst_b_inv(sync_trigger_1/G3[0].edge_detect_1/rst_b_inv1_INV_0:O)                                        | NONE(sync_trigger_1/trig_out_s_d_2)                                                       | 126   |
-EMAC_1/v5_emac_ll/tx_reset_0_i(EMAC_1/v5_emac_ll/tx_reset_0_i:Q)                                                                                          | NONE(EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/LSbyte_REG/output_val_3)          | 70    |
-BUTTONS<0>                                                                                                                                                | IBUF                                                                                      | 30    |
-EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/rst_count(EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/PACKET_RECEIVER_FSM_port_map/rst_count1:O)| NONE(EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O_0)| 11    |
-Inst_CRU/fe_rst_sync/arst_b_inv(Inst_CRU/fe_rst_sync/arst_b_inv1_INV_0:O)                                                                                 | NONE(Inst_CRU/fe_rst_sync/d_1)                                                            | 2     |
-----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+-------+
+----------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                            | Buffer(FF name)                                                                                     | Load  |
+----------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+-------+
+EMAC_1/rate_counter_1/G_edge_det[0].edge_detect_1/rst_b_inv(sync_trigger_1/G3[0].edge_detect_1/rst_b_inv1_INV_0:O)                                        | NONE(EMAC_1/idelayctrl_reset_0_r_1)                                                                 | 132   |
+EMAC_1/v5_emac_ll/tx_reset_0_i(EMAC_1/v5_emac_ll/tx_reset_0_i:Q)                                                                                          | NONE(EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_reg_0)| 103   |
+BUTTONS<0>                                                                                                                                                | IBUF                                                                                                | 35    |
+EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/rd_rst_reg<2>(EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/rd_rst_reg_2:Q)                                                 | NONE(EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/grss.gdc.dc/dc/count_0)                                  | 26    |
+EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/wr_rst_reg<1>(EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/wr_rst_reg_1:Q)                                                 | NONE(EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i)                                 | 19    |
+EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/rst_count(EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/PACKET_RECEIVER_FSM_port_map/rst_count1:O)| NONE(EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O_0)          | 11    |
+EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/rd_rst_comb(EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/rd_rst_comb1:O)                                                   | NONE(EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/rd_rst_reg_0)                                            | 2     |
+Inst_CRU/fe_rst_sync/arst_b_inv(Inst_CRU/fe_rst_sync/arst_b_inv1_INV_0:O)                                                                                 | NONE(Inst_CRU/fe_rst_sync/d_0)                                                                      | 2     |
+EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/wr_rst_comb(EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/wr_rst_comb1:O)                                                   | NONE(EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/wr_rst_reg_1)                                            | 1     |
+----------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: 3.791ns (Maximum Frequency: 263.783MHz)
-   Minimum input arrival time before clock: 2.713ns
-   Maximum output required time after clock: 4.076ns
+   Minimum period: 3.870ns (Maximum Frequency: 258.398MHz)
+   Minimum input arrival time before clock: 2.884ns
+   Maximum output required time after clock: 4.075ns
    Maximum combinational path delay: 4.196ns
 
 Timing Detail:
@@ -2304,58 +2402,56 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Inst_CRU/Inst_PLL_ALL/CLKOUT1_BUF'
-  Clock period: 3.265ns (frequency: 306.279MHz)
+  Clock period: 3.309ns (frequency: 302.206MHz)
   Total number of paths / destination ports: 51 / 17
 -------------------------------------------------------------------------
-Delay:               3.265ns (Levels of Logic = 9)
-  Source:            sync_trigger_1/coincidence_array<0>_0 (FF)
+Delay:               3.309ns (Levels of Logic = 7)
+  Source:            sync_trigger_1/coincidence_array<1>_0 (FF)
   Destination:       sync_trigger_1/coincidence_hold (FF)
   Source Clock:      Inst_CRU/Inst_PLL_ALL/CLKOUT1_BUF rising
   Destination Clock: Inst_CRU/Inst_PLL_ALL/CLKOUT1_BUF rising
 
-  Data Path: sync_trigger_1/coincidence_array<0>_0 to sync_trigger_1/coincidence_hold
+  Data Path: sync_trigger_1/coincidence_array<1>_0 to sync_trigger_1/coincidence_hold
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              2   0.471   0.794  sync_trigger_1/coincidence_array<0>_0 (sync_trigger_1/coincidence_array<0>_0)
+     FDC:C->Q              2   0.471   0.794  sync_trigger_1/coincidence_array<1>_0 (sync_trigger_1/coincidence_array<1>_0)
      LUT4:I0->O            1   0.094   0.000  sync_trigger_1/Mcompar_coincidence_cmp_gt0000_lut<0>1 (sync_trigger_1/Mcompar_coincidence_cmp_gt0000_lut<0>)
      MUXCY:S->O            1   0.372   0.000  sync_trigger_1/Mcompar_coincidence_cmp_gt0000_cy<0> (sync_trigger_1/Mcompar_coincidence_cmp_gt0000_cy<0>)
      MUXCY:CI->O           1   0.026   0.000  sync_trigger_1/Mcompar_coincidence_cmp_gt0000_cy<1> (sync_trigger_1/Mcompar_coincidence_cmp_gt0000_cy<1>)
      MUXCY:CI->O           1   0.026   0.000  sync_trigger_1/Mcompar_coincidence_cmp_gt0000_cy<2> (sync_trigger_1/Mcompar_coincidence_cmp_gt0000_cy<2>)
      MUXCY:CI->O           1   0.026   0.000  sync_trigger_1/Mcompar_coincidence_cmp_gt0000_cy<3> (sync_trigger_1/Mcompar_coincidence_cmp_gt0000_cy<3>)
-     MUXCY:CI->O           1   0.026   0.000  sync_trigger_1/Mcompar_coincidence_cmp_gt0000_cy<4> (sync_trigger_1/Mcompar_coincidence_cmp_gt0000_cy<4>)
-     MUXCY:CI->O           1   0.026   0.000  sync_trigger_1/Mcompar_coincidence_cmp_gt0000_cy<5> (sync_trigger_1/Mcompar_coincidence_cmp_gt0000_cy<5>)
-     MUXCY:CI->O           6   0.254   0.507  sync_trigger_1/Mcompar_coincidence_cmp_gt0000_cy<6> (sync_trigger_1/Mcompar_coincidence_cmp_gt0000_cy<6>)
-     LUT2:I1->O            1   0.094   0.336  sync_trigger_1/coincidence_hold_not00011 (sync_trigger_1/coincidence_hold_not0001)
+     MUXCY:CI->O           6   0.254   0.603  sync_trigger_1/Mcompar_coincidence_cmp_gt0000_cy<4> (sync_trigger_1/Mcompar_coincidence_cmp_gt0000_cy<4>)
+     LUT2:I0->O            1   0.094   0.336  sync_trigger_1/coincidence_hold_not00011 (sync_trigger_1/coincidence_hold_not0001)
      FDCE:CE                   0.213          sync_trigger_1/coincidence_hold
     ----------------------------------------
-    Total                      3.265ns (1.628ns logic, 1.637ns route)
-                                       (49.9% logic, 50.1% route)
+    Total                      3.309ns (1.576ns logic, 1.733ns route)
+                                       (47.6% logic, 52.4% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'FPGA100M'
-  Clock period: 3.791ns (frequency: 263.783MHz)
-  Total number of paths / destination ports: 1463 / 31
+  Clock period: 3.807ns (frequency: 262.674MHz)
+  Total number of paths / destination ports: 1386 / 36
 -------------------------------------------------------------------------
-Delay:               3.791ns (Levels of Logic = 4)
-  Source:            Inst_CRU/wait_counter_0 (FF)
+Delay:               3.807ns (Levels of Logic = 4)
+  Source:            Inst_CRU/wait_counter_5 (FF)
   Destination:       Inst_CRU/wait_counter_15 (FF)
   Source Clock:      FPGA100M rising
   Destination Clock: FPGA100M rising
 
-  Data Path: Inst_CRU/wait_counter_0 to Inst_CRU/wait_counter_15
+  Data Path: Inst_CRU/wait_counter_5 to Inst_CRU/wait_counter_15
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              4   0.471   1.085  Inst_CRU/wait_counter_0 (Inst_CRU/wait_counter_0)
-     LUT6:I0->O            3   0.094   0.587  Inst_CRU/state_cmp_eq00002_SW0 (N133)
-     LUT6:I4->O            1   0.094   0.710  Inst_CRU/wait_counter_mux0001<0>1_SW1 (N136)
-     LUT6:I3->O           16   0.094   0.562  Inst_CRU/wait_counter_mux0001<0>1 (Inst_CRU/N01)
+     FDC:C->Q              4   0.471   1.085  Inst_CRU/wait_counter_5 (Inst_CRU/wait_counter_5)
+     LUT6:I0->O            3   0.094   0.587  Inst_CRU/state_cmp_eq00002_SW0 (N37)
+     LUT6:I4->O            4   0.094   0.726  Inst_CRU/wait_counter2_cmp_eq00001 (Inst_CRU/wait_counter2_cmp_eq0000)
+     LUT6:I3->O           16   0.094   0.562  Inst_CRU/wait_counter_mux0001<0>11 (Inst_CRU/N01)
      LUT4:I3->O            1   0.094   0.000  Inst_CRU/wait_counter_mux0001<9>1 (Inst_CRU/wait_counter_mux0001<9>)
      FDC:D                    -0.018          Inst_CRU/wait_counter_6
     ----------------------------------------
-    Total                      3.791ns (0.847ns logic, 2.944ns route)
-                                       (22.3% logic, 77.7% route)
+    Total                      3.807ns (0.847ns logic, 2.960ns route)
+                                       (22.2% logic, 77.8% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Inst_CRU/Inst_PLL_ALL/CLKOUT0_BUF'
@@ -2380,47 +2476,49 @@ Delay:               0.807ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'EMAC_1/tx_client_clk_0_o'
-  Clock period: 3.476ns (frequency: 287.687MHz)
-  Total number of paths / destination ports: 9592 / 836
+  Clock period: 3.870ns (frequency: 258.398MHz)
+  Total number of paths / destination ports: 12327 / 1089
 -------------------------------------------------------------------------
-Delay:               3.476ns (Levels of Logic = 4)
-  Source:            EMAC_1/rate_counter_1/count1_0_1 (FF)
-  Destination:       EMAC_1/rate_counter_1/din_0 (FF)
+Delay:               3.870ns (Levels of Logic = 5)
+  Source:            EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_sof_n (FF)
+  Destination:       EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/Comp_11b_equal_port_map/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/gen_output_reg.output_reg/fd/output_1 (FF)
   Source Clock:      EMAC_1/tx_client_clk_0_o rising
   Destination Clock: EMAC_1/tx_client_clk_0_o rising
 
-  Data Path: EMAC_1/rate_counter_1/count1_0_1 to EMAC_1/rate_counter_1/din_0
+  Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_sof_n to EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/Comp_11b_equal_port_map/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/gen_output_reg.output_reg/fd/output_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              2   0.471   0.978  EMAC_1/rate_counter_1/count1_0_1 (EMAC_1/rate_counter_1/count1_0_1)
-     LUT5:I0->O            8   0.094   1.011  EMAC_1/rate_counter_1/Mmux_din_varindex00001101_1 (EMAC_1/rate_counter_1/Mmux_din_varindex00001101)
-     LUT5:I0->O            1   0.094   0.000  EMAC_1/rate_counter_1/din_mux0000<7>101_SW0_G (N358)
-     MUXF7:I1->O           1   0.254   0.480  EMAC_1/rate_counter_1/din_mux0000<7>101_SW0 (N311)
-     LUT6:I5->O            1   0.094   0.000  EMAC_1/rate_counter_1/din_mux0000<7>101 (EMAC_1/rate_counter_1/din_mux0000<7>)
-     FDC:D                    -0.018          EMAC_1/rate_counter_1/din_0
+     FDS:C->Q              4   0.471   1.085  EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_sof_n (EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_sof_n)
+     LUT6:I0->O            2   0.094   0.485  EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/PACKET_RECEIVER_FSM_port_map/comp_Bval<5>1 (EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/comp_Bval<2>)
+     LUT6:I5->O            1   0.094   0.973  EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<5> (EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<5>)
+     begin scope: 'EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/Comp_11b_equal_port_map'
+     begin scope: 'BU2'
+     LUT6:I1->O            1   0.094   0.480  U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[0].i_tile/o189 (U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[0].i_tile/o189)
+     LUT6:I5->O            1   0.094   0.000  U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[0].i_tile/o206 (U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/temp_result)
+     FD:D                     -0.018          U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/gen_output_reg.output_reg/fd/output_1
     ----------------------------------------
-    Total                      3.476ns (1.007ns logic, 2.469ns route)
-                                       (29.0% logic, 71.0% route)
+    Total                      3.870ns (0.847ns logic, 3.023ns route)
+                                       (21.9% logic, 78.1% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'EMAC_1/rx_client_clk_0_o'
-  Clock period: 3.298ns (frequency: 303.214MHz)
-  Total number of paths / destination ports: 1975 / 218
+  Clock period: 3.320ns (frequency: 301.205MHz)
+  Total number of paths / destination ports: 1953 / 218
 -------------------------------------------------------------------------
-Delay:               3.298ns (Levels of Logic = 14)
-  Source:            EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_0 (FF)
+Delay:               3.320ns (Levels of Logic = 14)
+  Source:            EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_2 (FF)
   Destination:       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_diff_11 (FF)
   Source Clock:      EMAC_1/rx_client_clk_0_o rising
   Destination Clock: EMAC_1/rx_client_clk_0_o rising
 
-  Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_0 to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_diff_11
+  Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_2 to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_diff_11
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              1   0.471   1.069  EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_0 (EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_0)
-     LUT6:I0->O            2   0.094   0.581  EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr<0>71 (EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr<0>71)
-     LUT3:I1->O            1   0.094   0.000  EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Msub_wr_addr_diff_sub0000_lut<0> (EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Msub_wr_addr_diff_sub0000_lut<0>)
+     FDR:C->Q              3   0.471   0.587  EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_2 (EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_2)
+     LUT2:I0->O            4   0.094   1.085  EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Mxor_binary_1_xor0004_Result1 (EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/binary_1_xor0004)
+     LUT6:I0->O            1   0.094   0.000  EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Msub_wr_addr_diff_sub0000_lut<0> (EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Msub_wr_addr_diff_sub0000_lut<0>)
      MUXCY:S->O            1   0.372   0.000  EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Msub_wr_addr_diff_sub0000_cy<0> (EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Msub_wr_addr_diff_sub0000_cy<0>)
      MUXCY:CI->O           1   0.026   0.000  EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Msub_wr_addr_diff_sub0000_cy<1> (EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Msub_wr_addr_diff_sub0000_cy<1>)
      MUXCY:CI->O           1   0.026   0.000  EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Msub_wr_addr_diff_sub0000_cy<2> (EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Msub_wr_addr_diff_sub0000_cy<2>)
@@ -2435,29 +2533,29 @@ Delay:               3.298ns (Levels of Logic = 14)
      XORCY:CI->O           1   0.357   0.000  EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Msub_wr_addr_diff_sub0000_xor<11> (EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_diff_sub0000<11>)
      FDR:D                    -0.018          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_diff_11
     ----------------------------------------
-    Total                      3.298ns (1.648ns logic, 1.650ns route)
-                                       (50.0% logic, 50.0% route)
+    Total                      3.320ns (1.648ns logic, 1.672ns route)
+                                       (49.6% logic, 50.4% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Inst_CRU/Inst_PLL_ALL/CLKOUT3_BUF'
-  Clock period: 1.889ns (frequency: 529.381MHz)
-  Total number of paths / destination ports: 13 / 12
+  Clock period: 0.807ns (frequency: 1239.157MHz)
+  Total number of paths / destination ports: 11 / 11
 -------------------------------------------------------------------------
-Delay:               1.889ns (Levels of Logic = 0)
-  Source:            EMAC_1/Mshreg_idelayctrl_reset_0_r_12 (FF)
+Delay:               0.807ns (Levels of Logic = 0)
+  Source:            EMAC_1/idelayctrl_reset_0_r_11 (FF)
   Destination:       EMAC_1/idelayctrl_reset_0_r_12 (FF)
   Source Clock:      Inst_CRU/Inst_PLL_ALL/CLKOUT3_BUF rising
   Destination Clock: Inst_CRU/Inst_PLL_ALL/CLKOUT3_BUF rising
 
-  Data Path: EMAC_1/Mshreg_idelayctrl_reset_0_r_12 to EMAC_1/idelayctrl_reset_0_r_12
+  Data Path: EMAC_1/idelayctrl_reset_0_r_11 to EMAC_1/idelayctrl_reset_0_r_12
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     SRLC16E:CLK->Q        1   1.889   0.000  EMAC_1/Mshreg_idelayctrl_reset_0_r_12 (EMAC_1/Mshreg_idelayctrl_reset_0_r_12)
-     FDE:D                    -0.018          EMAC_1/idelayctrl_reset_0_r_12
+     FDP:C->Q              1   0.471   0.336  EMAC_1/idelayctrl_reset_0_r_11 (EMAC_1/idelayctrl_reset_0_r_11)
+     FDP:D                    -0.018          EMAC_1/idelayctrl_reset_0_r_12
     ----------------------------------------
-    Total                      1.889ns (1.889ns logic, 0.000ns route)
-                                       (100.0% logic, 0.0% route)
+    Total                      0.807ns (0.471ns logic, 0.336ns route)
+                                       (58.4% logic, 41.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_CRU/Inst_PLL_ALL/CLKOUT1_BUF'
@@ -2481,9 +2579,9 @@ Offset:              2.042ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'FPGA100M'
-  Total number of paths / destination ports: 3 / 3
+  Total number of paths / destination ports: 5 / 5
 -------------------------------------------------------------------------
-Offset:              2.068ns (Levels of Logic = 2)
+Offset:              2.069ns (Levels of Logic = 2)
   Source:            BUTTONS<0> (PAD)
   Destination:       Inst_CRU/pll_reset (FF)
   Destination Clock: FPGA100M rising
@@ -2492,12 +2590,12 @@ Offset:              2.068ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            31   0.818   0.463  BUTTONS_0_IBUF (BUTTONS_0_IBUF)
+     IBUF:I->O            36   0.818   0.464  BUTTONS_0_IBUF (BUTTONS_0_IBUF)
      INV:I->O              1   0.238   0.336  Inst_CRU/fpga_cpu_reset_inv1_INV_0 (Inst_CRU/fpga_cpu_reset_inv)
      FDE:CE                    0.213          Inst_CRU/pll_reset
     ----------------------------------------
-    Total                      2.068ns (1.269ns logic, 0.799ns route)
-                                       (61.4% logic, 38.6% route)
+    Total                      2.069ns (1.269ns logic, 0.800ns route)
+                                       (61.3% logic, 38.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'EMAC_1/rx_client_clk_0_o'
@@ -2558,9 +2656,9 @@ Offset:              0.336ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'EMAC_1/tx_client_clk_0_o'
-  Total number of paths / destination ports: 125 / 112
+  Total number of paths / destination ports: 108 / 97
 -------------------------------------------------------------------------
-Offset:              2.713ns (Levels of Logic = 3)
+Offset:              2.884ns (Levels of Logic = 2)
   Source:            EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac:EMAC0CLIENTTXACK (PAD)
   Destination:       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u (RAM)
   Destination Clock: EMAC_1/tx_client_clk_0_o rising
@@ -2569,20 +2667,19 @@ Offset:              2.713ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-    TEMAC:EMAC0CLIENTTXACK    6   0.000   0.816  EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac (EMAC_1/v5_emac_ll/tx_ack_0_i)
-     LUT4:I0->O            1   0.094   0.576  EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_en_SW2 (N72)
-     LUT6:I4->O            1   0.094   0.000  EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_en_G (N340)
-     MUXF7:I1->O          43   0.254   0.465  EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_en (EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_en)
+    TEMAC:EMAC0CLIENTTXACK    8   0.000   1.107  EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac (EMAC_1/v5_emac_ll/tx_ack_0_i)
+     LUT6:I0->O            1   0.094   0.710  EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_en1333 (EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_en1333)
+     LUT5:I2->O           43   0.094   0.465  EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_en1526 (EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_en)
      RAMB16:ENB                0.414          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u
     ----------------------------------------
-    Total                      2.713ns (0.856ns logic, 1.857ns route)
-                                       (31.5% logic, 68.5% route)
+    Total                      2.884ns (0.602ns logic, 2.282ns route)
+                                       (20.9% logic, 79.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_CRU/Inst_PLL_ALL/CLKOUT0_BUF'
-  Total number of paths / destination ports: 9 / 9
+  Total number of paths / destination ports: 8 / 8
 -------------------------------------------------------------------------
-Offset:              4.076ns (Levels of Logic = 2)
+Offset:              4.075ns (Levels of Logic = 2)
   Source:            Inst_CRU/fe_rst_sync/d_1 (FF)
   Destination:       RESET_ROC_B1 (PAD)
   Source Clock:      Inst_CRU/Inst_PLL_ALL/CLKOUT0_BUF rising
@@ -2591,11 +2688,11 @@ Offset:              4.076ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q            109   0.471   0.718  Inst_CRU/fe_rst_sync/d_1 (Inst_CRU/fe_rst_sync/d_1)
+     FDC:C->Q            108   0.471   0.717  Inst_CRU/fe_rst_sync/d_1 (Inst_CRU/fe_rst_sync/d_1)
      LUT2:I0->O            2   0.094   0.341  reset_roc_int_b1 (reset_roc_int_b)
      OBUFDS:I->O               2.452          MCLK_DIFF_OUT1 (RESET_ROC_B1)
     ----------------------------------------
-    Total                      4.076ns (3.017ns logic, 1.059ns route)
+    Total                      4.075ns (3.017ns logic, 1.058ns route)
                                        (74.0% logic, 26.0% route)
 
 =========================================================================
@@ -2658,25 +2755,22 @@ Offset:              0.471ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'EMAC_1/tx_client_clk_0_o'
-  Total number of paths / destination ports: 246 / 54
+  Total number of paths / destination ports: 9 / 9
 -------------------------------------------------------------------------
-Offset:              2.875ns (Levels of Logic = 3)
-  Source:            EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/PACKET_RECEIVER_FSM_port_map/current_st_FSM_FFd1 (FF)
-  Destination:       EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/Comp_11b_equal_port_map:b<7> (PAD)
+Offset:              0.812ns (Levels of Logic = 0)
+  Source:            EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/tx_data_7 (FF)
+  Destination:       EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac:CLIENTEMAC0TXD7 (PAD)
   Source Clock:      EMAC_1/tx_client_clk_0_o rising
 
-  Data Path: EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/PACKET_RECEIVER_FSM_port_map/current_st_FSM_FFd1 to EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/Comp_11b_equal_port_map:b<7>
+  Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/tx_data_7 to EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac:CLIENTEMAC0TXD7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             17   0.471   0.877  EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/PACKET_RECEIVER_FSM_port_map/current_st_FSM_FFd1 (EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/PACKET_RECEIVER_FSM_port_map/current_st_FSM_FFd1)
-     LUT4:I0->O            4   0.094   1.085  EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<3>11 (EMAC_1/N9)
-     LUT6:I0->O            1   0.094   0.000  EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<7>1 (EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<7>1)
-     MUXF7:I1->O           0   0.254   0.000  EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<7>_f7 (EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<7>)
-    comp_11b_equal:b<7>        0.000          EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/Comp_11b_equal_port_map
+     FD:C->Q               2   0.471   0.341  EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/tx_data_7 (EMAC_1/v5_emac_ll/tx_data_0_i<7>)
+    TEMAC:CLIENTEMAC0TXD7        0.000          EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
     ----------------------------------------
-    Total                      2.875ns (0.913ns logic, 1.962ns route)
-                                       (31.8% logic, 68.2% route)
+    Total                      0.812ns (0.471ns logic, 0.341ns route)
+                                       (58.0% logic, 42.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'GMII_RX_CLK_0'
@@ -2699,7 +2793,7 @@ Offset:              0.807ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 77 / 74
+  Total number of paths / destination ports: 63 / 63
 -------------------------------------------------------------------------
 Delay:               4.196ns (Levels of Logic = 3)
   Source:            BUTTONS<1> (PAD)
@@ -2719,14 +2813,15 @@ Delay:               4.196ns (Levels of Logic = 3)
 =========================================================================
 
 
-Total REAL time to Xst completion: 62.00 secs
-Total CPU time to Xst completion: 62.94 secs
+Total REAL time to Xst completion: 21.00 secs
+Total CPU time to Xst completion: 20.51 secs
  
 --> 
 
-Total memory usage is 292572 kilobytes
+
+Total memory usage is 453928 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  290 (   0 filtered)
-Number of infos    :   89 (   0 filtered)
+Number of warnings :  343 (   0 filtered)
+Number of infos    :   99 (   0 filtered)
 

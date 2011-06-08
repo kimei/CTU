@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# PlanAhead v13.1 (64-bit)
+# Build 117799 by hdbuild on Thu Feb 17 11:36:42 PST 2011
+# Start of session at: Tue Jun  7 15:07:19 2011
+# Process ID: 24084
+# Log file: /media/disk2/trigger/Trigger/HW/HDL/top_10/top/planAhead_run_1/planAhead.log
+# Journal file: /media/disk2/trigger/Trigger/HW/HDL/top_10/top/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui -source /media/disk2/trigger/Trigger/HW/HDL/top_10/top/pa.fromNetlist.tcl
+startgroup
+set_property IOSTANDARD {} [get_ports {SYNC_TRIGGER_OUT_b[0]} {SYNC_TRIGGER_OUT[0]}]
+endgroup
+exit

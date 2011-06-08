@@ -155,7 +155,7 @@ entity top is
     PHY_RESET_0  : out std_logic;
     GMII_COL_0   : in  std_logic;
     GMII_CRS_0   : in  std_logic
-    
+
     );
 end top;
 architecture Behavioral of top is
@@ -171,9 +171,9 @@ architecture Behavioral of top is
 
   signal clk125 : std_logic;
   signal clk200 : std_logic;
-  signal mclk  : std_logic;             -- 100
-  signal rst_b : std_logic;
-  signal rst   : std_logic;
+  signal mclk   : std_logic;            -- 100
+  signal rst_b  : std_logic;
+  signal rst    : std_logic;
 
   signal reset_roc_int_b1 : std_logic;
   signal reset_roc_int_b2 : std_logic;
@@ -192,19 +192,20 @@ begin
   trigled0 <= trig_out_se2(0);
   LEDS(1)  <= trigled;
 
-  reset        <= BUTTONS(0);
-  
+  reset <= BUTTONS(0);
+  LEDS(0) <= '0';
+  LEDS(2 to 6) <= (Others=>'0');
   --LEDS(4 to 7) <= uc_leds(0 to 3);
   --LEDS(2 to 3) <= (others => '1');
   --uc_buttons(0 to 1) <= BUTTONS(3 downto 2);
   --uc_buttons(2)      <= '0';
-  reset_roc_int_b2   <= not BUTTONS(2);
+  reset_roc_int_b2 <= not BUTTONS(2);
 
   Inst_CRU : CRU port map(
     fpga_100m_clk  => FPGA100M,
     fpga_cpu_reset => RESET ,
-	 clk200 => clk200,
-	 clk125 => clk125,
+    clk200         => clk200,
+    clk125         => clk125,
     mclk           => MCLK100,
     mclk_b         => MCLK100_b ,
     gclk           => mclk,
@@ -222,15 +223,20 @@ begin
 
   G1 : for I in 0 to (NUMBER_OF_ROCS-1) generate
 --    diff_in : work.components.IBUFDS port map (
-    diff_in : IBUFDS port map (
-      I  => SYNC_TRIGGER_IN(I),
-      IB => SYNC_TRIGGER_IN_b (I),
-      O  => trig_in_se(I));
+    diff_in : IBUFDS generic map (DIFF_TERM => true)
+      port map (
+        I  => SYNC_TRIGGER_IN(I),
+        IB => SYNC_TRIGGER_IN_b (I),
+        O  => trig_in_se(I));
   end generate G1;
 
   G2 : for I in 0 to (NUMBER_OF_MODULES-1) generate
     --diff_out : work.components.OBUFDS port map (
-    diff_out : OBUFDS port map (
+    diff_out : OBUFDS
+      generic map (
+        SLEW => "FAST"
+        )
+      port map (
       O  => SYNC_TRIGGER_OUT(I),
       OB => SYNC_TRIGGER_OUT_b(I),
       I  => trig_out_se2(I));
@@ -251,19 +257,19 @@ begin
   -- UART TESTING GROUNDS!
 
 
-	testproc : process (mclk)
-	begin
-		if mclk'event and mclk = '1' then
-			if BUTTONS(3) = '1' then
-				LEDS(7) <= '0';
-			else
-				LEDS(7) <= '1';
-			
-			end if;
-		end if;
-	
-	
-	end process;
+  testproc : process (mclk)
+  begin
+    if mclk'event and mclk = '1' then
+      if BUTTONS(3) = '1' then
+        LEDS(7) <= '0';
+      else
+        LEDS(7) <= '1';
+        
+      end if;
+    end if;
+    
+    
+  end process;
 
 
 
@@ -283,13 +289,13 @@ begin
   end process triggerled;
 
 
-  EMAC_1: v5_emac_v1_5_example_design
+  EMAC_1 : v5_emac_v1_5_example_design
     port map (
-	 --input for sending data
-		rate_cards => trig_in_se,
-		coincidence => trig_out_se,
-	 
-	 
+      --input for sending data
+      rate_cards  => trig_in_se,
+      coincidence => trig_out_se,
+
+
       clk200                    => clk200,
       rst_b                     => rst_b,
       EMAC0CLIENTRXDVLD         => EMAC0CLIENTRXDVLD,
@@ -318,8 +324,8 @@ begin
       GMII_CRS_0                => GMII_CRS_0);
 
 
-  
-  
+
+
   -- PPC.. not used yet..
 --  Inst_system : system port map(
 --    sys_clk_pin => mclk ,

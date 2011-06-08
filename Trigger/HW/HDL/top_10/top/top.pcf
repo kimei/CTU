@@ -1,13 +1,19 @@
 //! **************************************************************************
-// Written by: Map K.39 on Tue May 24 15:29:46 2011
+// Written by: Map O.40d on Tue Jun 07 15:37:09 2011
 //! **************************************************************************
 
 SCHEMATIC START;
+COMP "RESET_ROC_B1" LOCATE = SITE "AF9" LEVEL 1;
+COMP "RESET_ROC_B2" LOCATE = SITE "AF4" LEVEL 1;
 COMP "RESET_ROC_B1_b" LOCATE = SITE "AF10" LEVEL 1;
 COMP "RESET_ROC_B2_b" LOCATE = SITE "AF3" LEVEL 1;
-COMP "LEDS<1>" LOCATE = SITE "AF23" LEVEL 1;
-COMP "MCLK100" LOCATE = SITE "AB15" LEVEL 1;
-COMP "LEDS<7>" LOCATE = SITE "AC26" LEVEL 1;
+COMP "GMII_RX_ER_0" LOCATE = SITE "B24" LEVEL 1;
+COMP "GMII_RX_DV_0" LOCATE = SITE "C21" LEVEL 1;
+COMP "GMII_TX_EN_0" LOCATE = SITE "A23" LEVEL 1;
+COMP "GMII_TX_ER_0" LOCATE = SITE "A22" LEVEL 1;
+COMP "PHY_RESET_0" LOCATE = SITE "B26" LEVEL 1;
+COMP "SYNC_TRIGGER_OUT_b<0>" LOCATE = SITE "AD11" LEVEL 1;
+COMP "SYNC_TRIGGER_OUT_b<1>" LOCATE = SITE "AD8" LEVEL 1;
 COMP "GMII_RXD_0<0>" LOCATE = SITE "D24" LEVEL 1;
 COMP "GMII_RXD_0<1>" LOCATE = SITE "D23" LEVEL 1;
 COMP "GMII_RXD_0<2>" LOCATE = SITE "D21" LEVEL 1;
@@ -15,9 +21,9 @@ COMP "GMII_RXD_0<3>" LOCATE = SITE "C26" LEVEL 1;
 COMP "GMII_RXD_0<4>" LOCATE = SITE "D20" LEVEL 1;
 COMP "GMII_RXD_0<5>" LOCATE = SITE "C23" LEVEL 1;
 COMP "GMII_RXD_0<6>" LOCATE = SITE "B25" LEVEL 1;
-COMP "PHY_RESET_0" LOCATE = SITE "B26" LEVEL 1;
 COMP "GMII_RXD_0<7>" LOCATE = SITE "C22" LEVEL 1;
-COMP "GMII_TX_CLK_0" LOCATE = SITE "A19" LEVEL 1;
+COMP "GMII_COL_0" LOCATE = SITE "A24" LEVEL 1;
+COMP "GMII_CRS_0" LOCATE = SITE "A25" LEVEL 1;
 COMP "GMII_TXD_0<0>" LOCATE = SITE "D19" LEVEL 1;
 COMP "GMII_TXD_0<1>" LOCATE = SITE "C19" LEVEL 1;
 COMP "GMII_TXD_0<2>" LOCATE = SITE "A20" LEVEL 1;
@@ -26,61 +32,69 @@ COMP "GMII_TXD_0<4>" LOCATE = SITE "B19" LEVEL 1;
 COMP "GMII_TXD_0<5>" LOCATE = SITE "A15" LEVEL 1;
 COMP "GMII_TXD_0<6>" LOCATE = SITE "B22" LEVEL 1;
 COMP "GMII_TXD_0<7>" LOCATE = SITE "B21" LEVEL 1;
-COMP "GTX_CLK_0" LOCATE = SITE "F20" LEVEL 1;
-COMP "GMII_RX_ER_0" LOCATE = SITE "B24" LEVEL 1;
-COMP "GMII_RX_DV_0" LOCATE = SITE "C21" LEVEL 1;
-COMP "GMII_TX_EN_0" LOCATE = SITE "A23" LEVEL 1;
-COMP "GMII_TX_ER_0" LOCATE = SITE "A22" LEVEL 1;
-COMP "SYNC_TRIGGER_OUT_b<0>" LOCATE = SITE "AD11" LEVEL 1;
-COMP "SYNC_TRIGGER_OUT_b<1>" LOCATE = SITE "AD8" LEVEL 1;
-COMP "SYNC_TRIGGER_IN<0>" LOCATE = SITE "AF12" LEVEL 1;
-COMP "SYNC_TRIGGER_IN<1>" LOCATE = SITE "AD10" LEVEL 1;
-COMP "GMII_COL_0" LOCATE = SITE "A24" LEVEL 1;
-COMP "RESET_ROC_B1" LOCATE = SITE "AF9" LEVEL 1;
-COMP "RESET_ROC_B2" LOCATE = SITE "AF4" LEVEL 1;
-COMP "SYNC_TRIGGER_IN_b<0>" LOCATE = SITE "AE12" LEVEL 1;
-COMP "SYNC_TRIGGER_IN_b<1>" LOCATE = SITE "AE10" LEVEL 1;
-COMP "GMII_CRS_0" LOCATE = SITE "A25" LEVEL 1;
+COMP "MII_TX_CLK_0" LOCATE = SITE "E17" LEVEL 1;
+COMP "GMII_RX_CLK_0" LOCATE = SITE "E20" LEVEL 1;
+COMP "GMII_TX_CLK_0" LOCATE = SITE "A19" LEVEL 1;
 COMP "BUTTONS<0>" LOCATE = SITE "AF20" LEVEL 1;
 COMP "BUTTONS<1>" LOCATE = SITE "AE20" LEVEL 1;
 COMP "BUTTONS<2>" LOCATE = SITE "AD19" LEVEL 1;
 COMP "BUTTONS<3>" LOCATE = SITE "AD20" LEVEL 1;
+COMP "SYNC_TRIGGER_IN_b<0>" LOCATE = SITE "AE12" LEVEL 1;
+COMP "SYNC_TRIGGER_IN_b<1>" LOCATE = SITE "AE10" LEVEL 1;
 COMP "MCLK100_b" LOCATE = SITE "AC16" LEVEL 1;
+COMP "FPGA100M" LOCATE = SITE "E18" LEVEL 1;
 COMP "SYNC_TRIGGER_OUT<0>" LOCATE = SITE "AE11" LEVEL 1;
 COMP "SYNC_TRIGGER_OUT<1>" LOCATE = SITE "AC8" LEVEL 1;
-COMP "GMII_RX_CLK_0" LOCATE = SITE "E20" LEVEL 1;
-COMP "MII_TX_CLK_0" LOCATE = SITE "E17" LEVEL 1;
-COMP "FPGA100M" LOCATE = SITE "E18" LEVEL 1;
+COMP "SYNC_TRIGGER_IN<0>" LOCATE = SITE "AF12" LEVEL 1;
+COMP "SYNC_TRIGGER_IN<1>" LOCATE = SITE "AD10" LEVEL 1;
+COMP "LEDS<0>" LOCATE = SITE "AF22" LEVEL 1;
+COMP "LEDS<1>" LOCATE = SITE "AF23" LEVEL 1;
+COMP "LEDS<2>" LOCATE = SITE "AF25" LEVEL 1;
+COMP "MCLK100" LOCATE = SITE "AB15" LEVEL 1;
+COMP "LEDS<3>" LOCATE = SITE "AE25" LEVEL 1;
+COMP "LEDS<4>" LOCATE = SITE "AD25" LEVEL 1;
+COMP "LEDS<5>" LOCATE = SITE "AE26" LEVEL 1;
+COMP "LEDS<6>" LOCATE = SITE "AD26" LEVEL 1;
+COMP "LEDS<7>" LOCATE = SITE "AC26" LEVEL 1;
+COMP "GTX_CLK_0" LOCATE = SITE "F20" LEVEL 1;
+COMP "DIP_SWITCH<0>" LOCATE = SITE "AD13" LEVEL 1;
+COMP "DIP_SWITCH<1>" LOCATE = SITE "AE13" LEVEL 1;
+COMP "DIP_SWITCH<2>" LOCATE = SITE "AF13" LEVEL 1;
+COMP "DIP_SWITCH<3>" LOCATE = SITE "AD15" LEVEL 1;
+COMP "DIP_SWITCH<4>" LOCATE = SITE "AD14" LEVEL 1;
+COMP "DIP_SWITCH<5>" LOCATE = SITE "AF14" LEVEL 1;
+COMP "DIP_SWITCH<6>" LOCATE = SITE "AE15" LEVEL 1;
+COMP "DIP_SWITCH<7>" LOCATE = SITE "AF15" LEVEL 1;
 PIN EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac_pins<18> = BEL
         "EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac" PINNAME
         CLIENTEMAC0RXCLIENTCLKIN;
 PIN EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac_pins<19> = BEL
         "EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac" PINNAME
         CLIENTEMAC0TXCLIENTCLKIN;
-PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<32> = BEL
+PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<30> = BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l" PINNAME
-        CLKAL;
-PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<33> = BEL
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l" PINNAME
-        CLKBL;
-PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<110> =
-        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l"
-        PINNAME REGCLKAL;
-PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<111> =
-        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l"
-        PINNAME REGCLKBL;
-PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<30> = BEL
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u" PINNAME
         CLKAU;
-PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<31> = BEL
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u" PINNAME
+PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<31> = BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l" PINNAME
         CLKBU;
-PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<108> =
-        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u"
+PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<108> =
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l"
         PINNAME REGCLKAU;
-PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<109> =
-        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u"
+PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<109> =
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l"
         PINNAME REGCLKBU;
+PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<32> = BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u" PINNAME
+        CLKAL;
+PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<33> = BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u" PINNAME
+        CLKBL;
+PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<110> =
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u"
+        PINNAME REGCLKAL;
+PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<111> =
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u"
+        PINNAME REGCLKBL;
 TIMEGRP clk_gtp = BEL "EMAC_1/v5_emac_ll/tx_pre_reset_0_i_0" BEL
         "EMAC_1/v5_emac_ll/tx_pre_reset_0_i_1" BEL
         "EMAC_1/v5_emac_ll/tx_pre_reset_0_i_2" BEL
@@ -90,13 +104,21 @@ TIMEGRP clk_gtp = BEL "EMAC_1/v5_emac_ll/tx_pre_reset_0_i_0" BEL
         "EMAC_1/v5_emac_ll/tx_reset_0_i" PIN
         "EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac_pins<18>" PIN
         "EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac_pins<19>" BEL
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd4"
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd9"
         BEL
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd3"
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd8"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd6"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd5"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd4"
         BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd2"
         BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd1"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd3"
         BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frames_8"
         BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frames_7"
         BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frames_6"
@@ -215,6 +237,8 @@ TIMEGRP clk_gtp = BEL "EMAC_1/v5_emac_ll/tx_pre_reset_0_i_0" BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo_sync"
         BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_tran_frame_tog"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_drop_frame"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_retransmit"
         BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_data_pipe_7"
         BEL
@@ -234,6 +258,8 @@ TIMEGRP clk_gtp = BEL "EMAC_1/v5_emac_ll/tx_pre_reset_0_i_0" BEL
         BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frame_in_fifo"
         BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_eof_reg"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire"
         BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/tx_data_7" BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/tx_data_6" BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/tx_data_5" BEL
@@ -243,7 +269,6 @@ TIMEGRP clk_gtp = BEL "EMAC_1/v5_emac_ll/tx_pre_reset_0_i_0" BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/tx_data_1" BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/tx_data_0" BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_transmit_frame"
-        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/tx_data_valid"
         BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_tran_frame_tog"
         BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_eof_pipe"
@@ -261,51 +286,51 @@ TIMEGRP clk_gtp = BEL "EMAC_1/v5_emac_ll/tx_pre_reset_0_i_0" BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_2" BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_1" BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_0" BEL
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_retransmit" BEL
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_drop_frame" BEL
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire"
+        "EMAC_1/bufg_client_rx_0" BEL "EMAC_1/bufg_client_tx_0" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/tx_data_valid" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd7"
         PIN
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<32>"
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<30>"
         PIN
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<33>"
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<31>"
         PIN
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<110>"
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<108>"
         PIN
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<111>"
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<109>"
         PIN
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<32>"
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<30>"
         PIN
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<33>"
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<31>"
         PIN
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<110>"
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<108>"
         PIN
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<111>"
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<109>"
         PIN
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<30>"
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<32>"
         PIN
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<31>"
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<33>"
         PIN
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<108>"
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<110>"
         PIN
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<109>"
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<111>"
         PIN
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<30>"
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<32>"
         PIN
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<31>"
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<33>"
         PIN
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<108>"
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<110>"
         PIN
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<109>";
-PIN EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac_pins<409> = BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<111>";
+PIN EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac_pins<222> = BEL
         "EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac" PINNAME
         PHYEMAC0GTXCLK;
 TIMEGRP clk_gtx0 = PIN
-        "EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac_pins<409>";
-PIN EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac_pins<424> = BEL
+        "EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac_pins<222>";
+PIN EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac_pins<237> = BEL
         "EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac" PINNAME
         PHYEMAC0RXCLK;
 TIMEGRP phy_clk_rx0 = PIN
-        "EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac_pins<424>"
+        "EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac_pins<237>"
         BEL "EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RX_DV_TO_MAC" BEL
         "EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RX_ER_TO_MAC" BEL
         "EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_7" BEL
@@ -315,7 +340,8 @@ TIMEGRP phy_clk_rx0 = PIN
         "EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_3" BEL
         "EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_2" BEL
         "EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_1" BEL
-        "EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_0";
+        "EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_0" BEL
+        "EMAC_1/bufg_phy_rx_0";
 TIMEGRP tx_metastable_0 = BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_retran_frame_tog"
         BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo"

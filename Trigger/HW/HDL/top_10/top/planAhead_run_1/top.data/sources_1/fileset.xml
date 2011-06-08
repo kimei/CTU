@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<DARoots Version="1" Minor="12">
+	<FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+		<Filter Type="EDIFSrcs"/>
+		<File Path="$PPRDIR/../top.ngc">
+		</File>
+		<File Path="$PPRDIR/../../../rate_counter/fifo/fifo_generator_v4_4.ngc">
+		</File>
+		<File Path="$PPRDIR/../../../UDP/UDP_mr/comp_6b_equal.ngc">
+		</File>
+		<File Path="$PPRDIR/../../../UDP/UDP_mr/dist_mem_64x8.ngc">
+		</File>
+		<File Path="$PPRDIR/../../../UDP/UDP_mr/comp_11b_equal.ngc">
+		</File>
+		<Config>
+			<Option Name="DesignMode" Val="GateLvl"/>
+			<Option Name="GateLvlMode" Val="EDIF"/>
+			<Option Name="TopFile" Val="$PPRDIR/../top.ngc"/>
+		</Config>
+	</FileSet>
+</DARoots>
+

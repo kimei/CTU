@@ -1,0 +1,94 @@
+Release 13.1 - ngc2edif O.40d (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design top.ngc ...
+WARNING:NetListWriters:298 - No output is written to top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader
+   /Checksum32_n_mux0002<9 : 7> on block top is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader
+   /Madd_Checksum32_n_addsub0000_lut<15 : 0> on block top is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader
+   /Madd_sum_add0000_cy<13 : 9> on block top is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader
+   /Madd_sum_add0003_lut<14 : 0> on block top is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader
+   /Madd_sum_add0004_lut<15 : 3> on block top is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader
+   /Madd_sum_add0005_lut<8 : 0> on block top is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader
+   /Madd_sum_add0007_cy<13 : 8> on block top is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Maccum_rd_addr_lut<11 : 0>
+   on block top is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file top.edif ...
+ngc2edif: Total memory usage is 74704 kilobytes
+
+Release 13.1 - ngc2edif O.40d (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design dist_mem_64x8.ngc ...
+WARNING:NetListWriters:298 - No output is written to dist_mem_64x8.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file dist_mem_64x8.edif ...
+ngc2edif: Total memory usage is 69140 kilobytes
+
+Release 13.1 - ngc2edif O.40d (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design comp_6b_equal.ngc ...
+WARNING:NetListWriters:298 - No output is written to comp_6b_equal.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file comp_6b_equal.edif ...
+ngc2edif: Total memory usage is 69100 kilobytes
+
+Release 13.1 - ngc2edif O.40d (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design comp_11b_equal.ngc ...
+WARNING:NetListWriters:298 - No output is written to comp_11b_equal.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file comp_11b_equal.edif ...
+ngc2edif: Total memory usage is 69104 kilobytes
+
+Release 13.1 - ngc2edif O.40d (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design fifo_generator_v4_4.ngc ...
+WARNING:NetListWriters:298 - No output is written to fifo_generator_v4_4.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus U0/grf.rf/rstblk/rd_rst_reg<2 : 0> on
+   block fifo_generator_v4_4_fifo_generator_v4_4_xst_1 is not reconstructed,
+   because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file fifo_generator_v4_4.edif ...
+ngc2edif: Total memory usage is 69540 kilobytes
+

@@ -5,73 +5,106 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Map" num="236" delta="unknown" >The MAP option, &quot;-k&quot; (MAP to Input Functions), will be  disabled for this architecture in the next software release.
-
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_col_window_pipe&lt;1&gt;</arg> has no load.
 </msg>
 
-<msg type="warning" file="LIT" num="243" delta="unknown" >Logical network <arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_col_window_pipe&lt;1&gt;</arg> has no load.
+<msg type="info" file="LIT" num="395" delta="old" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">39</arg> more times for the following (max. 5 shown):
+<arg fmt="%s" index="3">DIP_SWITCH&lt;7&gt;_IBUF,
+DIP_SWITCH&lt;6&gt;_IBUF,
+DIP_SWITCH&lt;5&gt;_IBUF,
+DIP_SWITCH&lt;4&gt;_IBUF,
+DIP_SWITCH&lt;3&gt;_IBUF</arg>
+To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
 </msg>
 
-<msg type="warning" file="LIT" num="395" delta="unknown" >The above <arg fmt="%s" index="1">warning</arg> message <arg fmt="%s" index="2">base_net_load_rule</arg> is repeated <arg fmt="%d" index="3">45</arg> more times for the following (max. 5 shown):
-<arg fmt="%s" index="4">LEDS&lt;0&gt;,
-LEDS&lt;2&gt;,
-LEDS&lt;3&gt;,
-LEDS&lt;4&gt;,
-LEDS&lt;5&gt;</arg>
-To see the details of these <arg fmt="%s" index="5">warning</arg> messages, please use the -detail switch.
+<msg type="info" file="MapLib" num="562" delta="old" >No environment variables are currently set.
 </msg>
 
-<msg type="info" file="MapLib" num="562" delta="unknown" >No environment variables are currently set.
+<msg type="info" file="MapLib" num="1078" delta="old" ><arg fmt="%s" index="1">IDELAYCTRL symbol &quot;EMAC_1/dlyctrl0&quot; (output signal=&lt;none&gt;)</arg> does not have assigned IODELAY_GROUP. A default GROUP &quot;<arg fmt="%s" index="2">MapGeneratedIodelayGroup</arg>&quot; will be assigned.
+The following IODELAY Components are assigned to the same GROUP:
+<arg fmt="%s" index="3">IODELAY symbol &quot;EMAC_1/v5_emac_ll/v5_emac_block/gmii0/ideler&quot; (output signal=EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_RX_ER_DLY)
+IODELAY symbol &quot;EMAC_1/v5_emac_ll/v5_emac_block/gmii0/ideldv&quot; (output signal=EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_RX_DV_DLY)
+IODELAY symbol &quot;EMAC_1/v5_emac_ll/v5_emac_block/gmii0/ideld7&quot; (output signal=EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_RXD_DLY&lt;7&gt;)
+IODELAY symbol &quot;EMAC_1/v5_emac_ll/v5_emac_block/gmii0/ideld6&quot; (output signal=EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_RXD_DLY&lt;6&gt;)
+IODELAY symbol &quot;EMAC_1/v5_emac_ll/v5_emac_block/gmii0/ideld5&quot; (output signal=EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_RXD_DLY&lt;5&gt;)
+IODELAY symbol &quot;EMAC_1/v5_emac_ll/v5_emac_block/gmii0/ideld4&quot; (output signal=EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_RXD_DLY&lt;4&gt;)
+IODELAY symbol &quot;EMAC_1/v5_emac_ll/v5_emac_block/gmii0/ideld3&quot; (output signal=EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_RXD_DLY&lt;3&gt;)
+IODELAY symbol &quot;EMAC_1/v5_emac_ll/v5_emac_block/gmii0/ideld2&quot; (output signal=EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_RXD_DLY&lt;2&gt;)
+IODELAY symbol &quot;EMAC_1/v5_emac_ll/v5_emac_block/gmii0/ideld1&quot; (output signal=EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_RXD_DLY&lt;1&gt;)
+IODELAY symbol &quot;EMAC_1/v5_emac_ll/v5_emac_block/gmii0/ideld0&quot; (output signal=EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_RXD_DLY&lt;0&gt;)
+IODELAY symbol &quot;EMAC_1/gmii_rxc0_delay&quot; (output signal=EMAC_1/gmii_rx_clk_0_delay)
+</arg>
 </msg>
 
-<msg type="info" file="MapLib" num="856" delta="unknown" >PLL_ADV <arg fmt="%s" index="1">Inst_CRU/Inst_PLL_ALL/PLL_ADV_INST</arg> CLKIN2 pin was disconnected because a constant 1 is driving the CLKINSEL pin.
+<msg type="info" file="MapLib" num="856" delta="old" >PLL_ADV <arg fmt="%s" index="1">Inst_CRU/Inst_PLL_ALL/PLL_ADV_INST</arg> CLKIN2 pin was disconnected because a constant 1 is driving the CLKINSEL pin.
 </msg>
 
-<msg type="info" file="MapLib" num="841" delta="unknown" >Changing COMPENSATION attribute from <arg fmt="%s" index="1">SYSTEM_SYNCHRONOUS</arg> to <arg fmt="%s" index="2">INTERNAL</arg> for PLL_ADV <arg fmt="%s" index="3">Inst_CRU/Inst_PLL_ALL/PLL_ADV_INST</arg>.
+<msg type="info" file="MapLib" num="841" delta="old" >Changing COMPENSATION attribute from <arg fmt="%s" index="1">SYSTEM_SYNCHRONOUS</arg> to <arg fmt="%s" index="2">INTERNAL</arg> for PLL_ADV <arg fmt="%s" index="3">Inst_CRU/Inst_PLL_ALL/PLL_ADV_INST</arg>.
 </msg>
 
-<msg type="warning" file="MapLib" num="41" delta="unknown" >All members of TNM group &quot;<arg fmt="%s" index="1">tx_addr_wr_0</arg>&quot; have been optimized out of the design.
+<msg type="warning" file="MapLib" num="41" delta="old" >All members of TNM group &quot;<arg fmt="%s" index="1">tx_addr_wr_0</arg>&quot; have been optimized out of the design.
 </msg>
 
-<msg type="warning" file="MapLib" num="41" delta="unknown" >All members of TNM group &quot;<arg fmt="%s" index="1">tx_addr_rd_0</arg>&quot; have been optimized out of the design.
+<msg type="warning" file="MapLib" num="41" delta="old" >All members of TNM group &quot;<arg fmt="%s" index="1">tx_addr_rd_0</arg>&quot; have been optimized out of the design.
 </msg>
 
-<msg type="warning" file="MapLib" num="41" delta="unknown" >All members of TNM group &quot;<arg fmt="%s" index="1">rx_metastable_0</arg>&quot; have been optimized out of the design.
+<msg type="warning" file="MapLib" num="41" delta="old" >All members of TNM group &quot;<arg fmt="%s" index="1">rx_metastable_0</arg>&quot; have been optimized out of the design.
 </msg>
 
-<msg type="warning" file="MapLib" num="41" delta="unknown" >All members of TNM group &quot;<arg fmt="%s" index="1">rx_fifo_wr_to_rd_0</arg>&quot; have been optimized out of the design.
+<msg type="warning" file="MapLib" num="41" delta="old" >All members of TNM group &quot;<arg fmt="%s" index="1">rx_fifo_wr_to_rd_0</arg>&quot; have been optimized out of the design.
 </msg>
 
-<msg type="warning" file="MapLib" num="41" delta="unknown" >All members of TNM group &quot;<arg fmt="%s" index="1">rx_fifo_rd_to_wr_0</arg>&quot; have been optimized out of the design.
+<msg type="warning" file="MapLib" num="41" delta="old" >All members of TNM group &quot;<arg fmt="%s" index="1">rx_fifo_rd_to_wr_0</arg>&quot; have been optimized out of the design.
 </msg>
 
-<msg type="warning" file="MapLib" num="47" delta="unknown" >The timing specification &quot;<arg fmt="%s" index="1">TS_tx_fifo_addr_0</arg>&quot; has been discarded because both its FROM group (<arg fmt="%s" index="2">tx_addr_rd_0</arg>) and TO group (<arg fmt="%s" index="3">tx_addr_wr_0</arg>) were optimized away.
+<msg type="warning" file="MapLib" num="47" delta="old" >The timing specification &quot;<arg fmt="%s" index="1">TS_tx_fifo_addr_0</arg>&quot; has been discarded because both its FROM group (<arg fmt="%s" index="2">tx_addr_rd_0</arg>) and TO group (<arg fmt="%s" index="3">tx_addr_wr_0</arg>) were optimized away.
 </msg>
 
-<msg type="warning" file="MapLib" num="48" delta="unknown" >The timing specification &quot;<arg fmt="%s" index="1">ts_rx_meta_protect_0</arg>&quot; has been discarded because its <arg fmt="%s" index="2">FROM</arg> group (<arg fmt="%s" index="3">rx_metastable_0</arg>) was optimized away.
+<msg type="warning" file="MapLib" num="48" delta="old" >The timing specification &quot;<arg fmt="%s" index="1">ts_rx_meta_protect_0</arg>&quot; has been discarded because its <arg fmt="%s" index="2">FROM</arg> group (<arg fmt="%s" index="3">rx_metastable_0</arg>) was optimized away.
 </msg>
 
-<msg type="info" file="LIT" num="244" delta="unknown" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
+<msg type="info" file="Pack" num="1716" delta="old" >Initializing temperature to <arg fmt="%0.3f" index="1">85.000</arg> Celsius. (default - Range: <arg fmt="%0.3f" index="2">0.000</arg> to <arg fmt="%0.3f" index="3">85.000</arg> Celsius)
 </msg>
 
-<msg type="info" file="Pack" num="1716" delta="unknown" >Initializing temperature to <arg fmt="%0.3f" index="1">85.000</arg> Celsius. (default - Range: <arg fmt="%0.3f" index="2">0.000</arg> to <arg fmt="%0.3f" index="3">85.000</arg> Celsius)
+<msg type="info" file="Pack" num="1720" delta="old" >Initializing voltage to <arg fmt="%0.3f" index="1">0.950</arg> Volts. (default - Range: <arg fmt="%0.3f" index="2">0.950</arg> to <arg fmt="%0.3f" index="3">1.050</arg> Volts)
 </msg>
 
-<msg type="info" file="Pack" num="1720" delta="unknown" >Initializing voltage to <arg fmt="%0.3f" index="1">0.950</arg> Volts. (default - Range: <arg fmt="%0.3f" index="2">0.950</arg> to <arg fmt="%0.3f" index="3">1.050</arg> Volts)
+<msg type="info" file="Timing" num="3386" delta="old" >Intersecting Constraints found and resolved.  For more information, see the TSI report.  Please consult the Xilinx Command Line Tools User Guide for information on generating a TSI report.</msg>
+
+<msg type="info" file="Map" num="215" delta="old" >The Interim Design Summary has been generated in the MAP Report (.mrp).
 </msg>
 
-<msg type="info" file="Timing" num="3377" delta="unknown" >Intersecting Constraints found and resolved.  For more information see the TSI report.</msg>
-
-<msg type="info" file="Map" num="215" delta="unknown" >The Interim Design Summary has been generated in the MAP Report (.mrp).
+<msg type="info" file="Place" num="834" delta="old" >Only a subset of IOs are locked. Out of <arg fmt="%d" index="1">101</arg> IOs, <arg fmt="%d" index="2">62</arg> are locked and <arg fmt="%d" index="3">39</arg> are not locked. <arg fmt="%s" index="4">If you would like to print the names of these IOs, please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1.</arg> 
 </msg>
 
-<msg type="info" file="Place" num="834" delta="unknown" >Only a subset of IOs are locked. Out of <arg fmt="%d" index="1">87</arg> IOs, <arg fmt="%d" index="2">48</arg> are locked and <arg fmt="%d" index="3">39</arg> are not locked. <arg fmt="%s" index="4">If you would like to print the names of these IOs, please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1.</arg> 
+<msg type="info" file="Pack" num="1650" delta="old" >Map created a placed design.
 </msg>
 
-<msg type="info" file="Pack" num="1650" delta="unknown" >Map created a placed design.
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">DIP_SWITCH&lt;0&gt;_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="1412" delta="unknown" >Dangling pins on block:&lt;<arg fmt="%s" index="1">EMAC_1/gmii_rxc0_delay</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">DIP_SWITCH&lt;1&gt;_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">DIP_SWITCH&lt;2&gt;_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">DIP_SWITCH&lt;3&gt;_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">DIP_SWITCH&lt;4&gt;_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">DIP_SWITCH&lt;5&gt;_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">DIP_SWITCH&lt;6&gt;_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">DIP_SWITCH&lt;7&gt;_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="1412" delta="old" >Issue with pin connections and/or configuration on block:&lt;<arg fmt="%s" index="1">EMAC_1/gmii_rxc0_delay</arg>&gt;:&lt;<arg fmt="%s" index="2">IODELAY_IODELAY</arg>&gt;.  When DELAY_SRC is not DATAIN programming the DATAIN input pin is not used and will be ignored.
 </msg>
 
 </messages>

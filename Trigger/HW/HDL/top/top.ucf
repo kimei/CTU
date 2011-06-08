@@ -20,8 +20,8 @@ net "SYNC_TRIGGER_IN(0)"     LOC = AF12;
 net "SYNC_TRIGGER_IN_b(0)" LOC = AE12;
 
 #3
-net "SYNC_TRIGGER_OUT(0)"     LOC = AE11;
-net "SYNC_TRIGGER_OUT_b(0)" LOC = AD11;
+net "SYNC_TRIGGER_OUT(0)"     LOC = AE11 | SLEW=FAST;
+net "SYNC_TRIGGER_OUT_b(0)" LOC = AD11 | SLEW=FAST;
 
 #0
 net "RESET_ROC_B1"     LOC = AF9;
@@ -33,8 +33,8 @@ net "SYNC_TRIGGER_IN(1)"     LOC = AD10;
 net "SYNC_TRIGGER_IN_b(1)" LOC = AE10;
 
 #7
-net "SYNC_TRIGGER_OUT(1)"     LOC = AC8;
-net "SYNC_TRIGGER_OUT_b(1)" LOC = AD8;
+net "SYNC_TRIGGER_OUT(1)"     LOC = AC8 | SLEW=FAST;
+net "SYNC_TRIGGER_OUT_b(1)" LOC = AD8 | SLEW=FAST;
 
 #4
 net "RESET_ROC_B2"     LOC = AF4;

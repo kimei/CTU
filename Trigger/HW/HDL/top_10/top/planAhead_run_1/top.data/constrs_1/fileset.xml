@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<DARoots Version="1" Minor="12">
+	<FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+		<Filter Type="Constrs"/>
+		<File Path="$PPRDIR/../../../top/emac.ucf">
+		</File>
+		<File Path="$PPRDIR/../../../top/top.ucf">
+		</File>
+		<Config>
+			<Option Name="TargetPart" Val="xc5vfx30tff665-1"/>
+		</Config>
+	</FileSet>
+</DARoots>
+

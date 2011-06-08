@@ -6,7 +6,7 @@
 -- Author     :   <kimei@fyspc-epf02>
 -- Company    : 
 -- Created    : 2011-03-08
--- Last update: 2011-05-20
+-- Last update: 2011-06-07
 -- Platform   : 
 -- Standard   : VHDL'87
 -------------------------------------------------------------------------------
@@ -124,7 +124,7 @@ begin
 
 
 -- Sett Denne til > 1 for ordentlig data!
-  coincidence <= '1' when count_ones(coincidence_or) > 0 else '0';
+  coincidence <= '1' when count_ones(coincidence_or) > 1 else '0';
   
   
 

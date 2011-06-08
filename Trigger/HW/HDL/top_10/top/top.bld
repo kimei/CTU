@@ -1,280 +1,113 @@
-Release 10.1.03 ngdbuild K.39 (nt)
-Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+Release 13.1 ngdbuild O.40d (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
-Command Line: C:\Xilinx\10.1\ISE\bin\nt\unwrapped\ngdbuild.exe -ise
-M:/MASTER/COMPET/Trigger/HW/HDL/top_10/top/top.ise -intstyle ise -dd _ngo -sd
-M:/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr -sd
-M:/MASTER/COMPET/Trigger/HW/HDL/rate_counter/fifo -sd
-M:/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr -sd
-M:/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr -nt timestamp -i -p xc5vfx30t-ff665-1
-top.ngc top.ngd
+Command Line: /opt/Xilinx/13.1/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
+ise -dd _ngo -sd ../../rate_counter/fifo -sd ../../UDP/UDP_mr -nt timestamp -uc
+/media/disk2/trigger/Trigger/HW/HDL/top/top.ucf -uc
+/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf -p xc5vfx30t-ff665-1 top.ngc
+top.ngd
 
-Reading NGO file "M:/MASTER/COMPET/Trigger/HW/HDL/top_10/top/top.ngc" ...
-Loading design module
-"M:/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/dist_mem_64x8.ngc"...
-Loading design module
-"M:/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/comp_6b_equal.ngc"...
-Loading design module
-"M:/MASTER/COMPET/Trigger/HW/HDL/UDP/UDP_mr/comp_11b_equal.ngc"...
-Loading design module
-"M:/MASTER/COMPET/Trigger/HW/HDL/rate_counter/fifo/fifo_generator_v4_4.ngc"...
-Reading in constraint information from
-'M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf'...
-Reading in constraint information from
-'M:/MASTER/COMPET/Trigger/HW/HDL/top/emac.ucf'...
+Reading NGO file "/media/disk2/trigger/Trigger/HW/HDL/top_10/top/top.ngc" ...
+Loading design module "../../UDP/UDP_mr/dist_mem_64x8.ngc"...
+Loading design module "../../UDP/UDP_mr/comp_6b_equal.ngc"...
+Loading design module "../../UDP/UDP_mr/comp_11b_equal.ngc"...
+Loading design module "../../rate_counter/fifo/fifo_generator_v4_4.ngc"...
 Gathering constraint information from source properties...
 Done.
 
+Annotating constraints to design from ucf file
+"/media/disk2/trigger/Trigger/HW/HDL/top/top.ucf" ...
+Annotating constraints to design from ucf file
+"/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
-WARNING:ConstraintSystem:119 - Constraint <NET "LEDS(0)" LOC = AF22 |>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(49)]: This constraint cannot be
-   distributed from the design objects matching 'NET "LEDS(0)"' because those
-   design objects do not contain or drive any instances of the correct type.
-
-WARNING:ConstraintSystem:119 - Constraint <IOSTANDARD = LVCMOS18;>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(49)]: This constraint cannot be
-   distributed from the design objects matching 'NET "LEDS(0)"' because those
-   design objects do not contain or drive any instances of the correct type.
-
-WARNING:ConstraintSystem:119 - Constraint <NET "LEDS(2)" LOC = AF25 |>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(51)]: This constraint cannot be
-   distributed from the design objects matching 'NET "LEDS(2)"' because those
-   design objects do not contain or drive any instances of the correct type.
-
-WARNING:ConstraintSystem:119 - Constraint <IOSTANDARD = LVCMOS18;>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(51)]: This constraint cannot be
-   distributed from the design objects matching 'NET "LEDS(2)"' because those
-   design objects do not contain or drive any instances of the correct type.
-
-WARNING:ConstraintSystem:119 - Constraint <NET "LEDS(3)" LOC = AE25 |>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(52)]: This constraint cannot be
-   distributed from the design objects matching 'NET "LEDS(3)"' because those
-   design objects do not contain or drive any instances of the correct type.
-
-WARNING:ConstraintSystem:119 - Constraint <IOSTANDARD = LVCMOS18;>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(52)]: This constraint cannot be
-   distributed from the design objects matching 'NET "LEDS(3)"' because those
-   design objects do not contain or drive any instances of the correct type.
-
-WARNING:ConstraintSystem:119 - Constraint <NET "LEDS(4)" LOC = AD25 |>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(53)]: This constraint cannot be
-   distributed from the design objects matching 'NET "LEDS(4)"' because those
-   design objects do not contain or drive any instances of the correct type.
-
-WARNING:ConstraintSystem:119 - Constraint <IOSTANDARD = LVCMOS18;>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(53)]: This constraint cannot be
-   distributed from the design objects matching 'NET "LEDS(4)"' because those
-   design objects do not contain or drive any instances of the correct type.
-
-WARNING:ConstraintSystem:119 - Constraint <NET "LEDS(5)" LOC = AE26 |>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(54)]: This constraint cannot be
-   distributed from the design objects matching 'NET "LEDS(5)"' because those
-   design objects do not contain or drive any instances of the correct type.
-
-WARNING:ConstraintSystem:119 - Constraint <IOSTANDARD = LVCMOS18;>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(54)]: This constraint cannot be
-   distributed from the design objects matching 'NET "LEDS(5)"' because those
-   design objects do not contain or drive any instances of the correct type.
-
-WARNING:ConstraintSystem:119 - Constraint <NET "LEDS(6)" LOC = AD26 |>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(55)]: This constraint cannot be
-   distributed from the design objects matching 'NET "LEDS(6)"' because those
-   design objects do not contain or drive any instances of the correct type.
-
-WARNING:ConstraintSystem:119 - Constraint <IOSTANDARD = LVCMOS18;>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(55)]: This constraint cannot be
-   distributed from the design objects matching 'NET "LEDS(6)"' because those
-   design objects do not contain or drive any instances of the correct type.
-
-WARNING:ConstraintSystem:119 - Constraint <net "DIP_SWITCH(0)" LOC =AD13 |>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(69)]: This constraint cannot be
-   distributed from the design objects matching 'NET "DIP_SWITCH(0)"' because
-   those design objects do not contain or drive any instances of the correct
-   type.
-
-WARNING:ConstraintSystem:119 - Constraint <IOSTANDARD = LVCMOS18;>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(69)]: This constraint cannot be
-   distributed from the design objects matching 'NET "DIP_SWITCH(0)"' because
-   those design objects do not contain or drive any instances of the correct
-   type.
-
-WARNING:ConstraintSystem:119 - Constraint <net "DIP_SWITCH(1)" LOC =AE13 |>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(70)]: This constraint cannot be
-   distributed from the design objects matching 'NET "DIP_SWITCH(1)"' because
-   those design objects do not contain or drive any instances of the correct
-   type.
-
-WARNING:ConstraintSystem:119 - Constraint <IOSTANDARD = LVCMOS18;>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(70)]: This constraint cannot be
-   distributed from the design objects matching 'NET "DIP_SWITCH(1)"' because
-   those design objects do not contain or drive any instances of the correct
-   type.
-
-WARNING:ConstraintSystem:119 - Constraint <net "DIP_SWITCH(2)" LOC =AF13 |>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(71)]: This constraint cannot be
-   distributed from the design objects matching 'NET "DIP_SWITCH(2)"' because
-   those design objects do not contain or drive any instances of the correct
-   type.
-
-WARNING:ConstraintSystem:119 - Constraint <IOSTANDARD = LVCMOS18;>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(71)]: This constraint cannot be
-   distributed from the design objects matching 'NET "DIP_SWITCH(2)"' because
-   those design objects do not contain or drive any instances of the correct
-   type.
-
-WARNING:ConstraintSystem:119 - Constraint <net "DIP_SWITCH(3)" LOC =AD15 |>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(72)]: This constraint cannot be
-   distributed from the design objects matching 'NET "DIP_SWITCH(3)"' because
-   those design objects do not contain or drive any instances of the correct
-   type.
-
-WARNING:ConstraintSystem:119 - Constraint <IOSTANDARD = LVCMOS18;>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(72)]: This constraint cannot be
-   distributed from the design objects matching 'NET "DIP_SWITCH(3)"' because
-   those design objects do not contain or drive any instances of the correct
-   type.
-
-WARNING:ConstraintSystem:119 - Constraint <net "DIP_SWITCH(4)" LOC =AD14 |>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(73)]: This constraint cannot be
-   distributed from the design objects matching 'NET "DIP_SWITCH(4)"' because
-   those design objects do not contain or drive any instances of the correct
-   type.
-
-WARNING:ConstraintSystem:119 - Constraint <IOSTANDARD = LVCMOS18;>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(73)]: This constraint cannot be
-   distributed from the design objects matching 'NET "DIP_SWITCH(4)"' because
-   those design objects do not contain or drive any instances of the correct
-   type.
-
-WARNING:ConstraintSystem:119 - Constraint <net "DIP_SWITCH(5)" LOC =AF14 |>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(74)]: This constraint cannot be
-   distributed from the design objects matching 'NET "DIP_SWITCH(5)"' because
-   those design objects do not contain or drive any instances of the correct
-   type.
-
-WARNING:ConstraintSystem:119 - Constraint <IOSTANDARD = LVCMOS18;>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(74)]: This constraint cannot be
-   distributed from the design objects matching 'NET "DIP_SWITCH(5)"' because
-   those design objects do not contain or drive any instances of the correct
-   type.
-
-WARNING:ConstraintSystem:119 - Constraint <net "DIP_SWITCH(6)" LOC =AE15 |>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(75)]: This constraint cannot be
-   distributed from the design objects matching 'NET "DIP_SWITCH(6)"' because
-   those design objects do not contain or drive any instances of the correct
-   type.
-
-WARNING:ConstraintSystem:119 - Constraint <IOSTANDARD = LVCMOS18;>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(75)]: This constraint cannot be
-   distributed from the design objects matching 'NET "DIP_SWITCH(6)"' because
-   those design objects do not contain or drive any instances of the correct
-   type.
-
-WARNING:ConstraintSystem:119 - Constraint <net "DIP_SWITCH(7)" LOC = AF15 |>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(76)]: This constraint cannot be
-   distributed from the design objects matching 'NET "DIP_SWITCH(7)"' because
-   those design objects do not contain or drive any instances of the correct
-   type.
-
-WARNING:ConstraintSystem:119 - Constraint <IOSTANDARD = LVCMOS18;>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/top.ucf(76)]: This constraint cannot be
-   distributed from the design objects matching 'NET "DIP_SWITCH(7)"' because
-   those design objects do not contain or drive any instances of the correct
-   type.
-
 WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_tx_fifo_rd_to_wr_0" =
    FROM "tx_fifo_rd_to_wr_0" TO "v5_emac_v1_5_client_clk_tx0" 8000 ps
-   DATAPATHONLY;> [M:/MASTER/COMPET/Trigger/HW/HDL/top/emac.ucf(181)]: Unable to
-   find an active 'TimeGrp' or 'TNM' or 'TPSync' or 'TPThru' constraint named
+   DATAPATHONLY;> [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(181)]:
+   Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named
    'v5_emac_v1_5_client_clk_tx0'.
 
 WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_tx_fifo_wr_to_rd_0" =
    FROM "tx_fifo_wr_to_rd_0" TO "v5_emac_v1_5_client_clk_tx0" 8000 ps
-   DATAPATHONLY;> [M:/MASTER/COMPET/Trigger/HW/HDL/top/emac.ucf(182)]: Unable to
-   find an active 'TimeGrp' or 'TNM' or 'TPSync' or 'TPThru' constraint named
+   DATAPATHONLY;> [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(182)]:
+   Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named
    'v5_emac_v1_5_client_clk_tx0'.
 
 WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_rx_fifo_wr_to_rd_0" =
    FROM "rx_fifo_wr_to_rd_0" TO "v5_emac_v1_5_client_clk_tx0" 8000 ps
-   DATAPATHONLY;> [M:/MASTER/COMPET/Trigger/HW/HDL/top/emac.ucf(204)]: Unable to
-   find an active 'TimeGrp' or 'TNM' or 'TPSync' or 'TPThru' constraint named
+   DATAPATHONLY;> [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(204)]:
+   Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named
    'v5_emac_v1_5_client_clk_tx0'.
 
 WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_rx_fifo_rd_to_wr_0" =
    FROM "rx_fifo_rd_to_wr_0" TO "v5_emac_v1_5_client_clk_rx0" 8000 ps
-   DATAPATHONLY;> [M:/MASTER/COMPET/Trigger/HW/HDL/top/emac.ucf(205)]: Unable to
-   find an active 'TimeGrp' or 'TNM' or 'TPSync' or 'TPThru' constraint named
+   DATAPATHONLY;> [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(205)]:
+   Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named
    'v5_emac_v1_5_client_clk_rx0'.
 
-WARNING:NgdBuild:1012 - The constraint <INST: UniqueName:
+WARNING:NgdBuild:1012 - The constraint <INST
    /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TXD_0 IOB =
    true> is overridden on the design object
    EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_0 by the constraint <INST
    "*gmii0?GMII_TXD_?"     IOB = true;>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/emac.ucf(158)].
-WARNING:NgdBuild:1012 - The constraint <INST: UniqueName:
+   [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(158)].
+WARNING:NgdBuild:1012 - The constraint <INST
    /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TXD_1 IOB =
    true> is overridden on the design object
    EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_1 by the constraint <INST
    "*gmii0?GMII_TXD_?"     IOB = true;>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/emac.ucf(158)].
-WARNING:NgdBuild:1012 - The constraint <INST: UniqueName:
+   [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(158)].
+WARNING:NgdBuild:1012 - The constraint <INST
    /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TXD_2 IOB =
    true> is overridden on the design object
    EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_2 by the constraint <INST
    "*gmii0?GMII_TXD_?"     IOB = true;>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/emac.ucf(158)].
-WARNING:NgdBuild:1012 - The constraint <INST: UniqueName:
+   [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(158)].
+WARNING:NgdBuild:1012 - The constraint <INST
    /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TXD_3 IOB =
    true> is overridden on the design object
    EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_3 by the constraint <INST
    "*gmii0?GMII_TXD_?"     IOB = true;>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/emac.ucf(158)].
-WARNING:NgdBuild:1012 - The constraint <INST: UniqueName:
+   [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(158)].
+WARNING:NgdBuild:1012 - The constraint <INST
    /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TXD_4 IOB =
    true> is overridden on the design object
    EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_4 by the constraint <INST
    "*gmii0?GMII_TXD_?"     IOB = true;>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/emac.ucf(158)].
-WARNING:NgdBuild:1012 - The constraint <INST: UniqueName:
+   [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(158)].
+WARNING:NgdBuild:1012 - The constraint <INST
    /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TXD_5 IOB =
    true> is overridden on the design object
    EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_5 by the constraint <INST
    "*gmii0?GMII_TXD_?"     IOB = true;>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/emac.ucf(158)].
-WARNING:NgdBuild:1012 - The constraint <INST: UniqueName:
+   [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(158)].
+WARNING:NgdBuild:1012 - The constraint <INST
    /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TXD_6 IOB =
    true> is overridden on the design object
    EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_6 by the constraint <INST
    "*gmii0?GMII_TXD_?"     IOB = true;>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/emac.ucf(158)].
-WARNING:NgdBuild:1012 - The constraint <INST: UniqueName:
+   [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(158)].
+WARNING:NgdBuild:1012 - The constraint <INST
    /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TXD_7 IOB =
    true> is overridden on the design object
    EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_7 by the constraint <INST
    "*gmii0?GMII_TXD_?"     IOB = true;>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/emac.ucf(158)].
-WARNING:NgdBuild:1012 - The constraint <INST: UniqueName:
+   [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(158)].
+WARNING:NgdBuild:1012 - The constraint <INST
    /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TX_EN IOB =
    true> is overridden on the design object
    EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TX_EN by the constraint <INST
    "*gmii0?GMII_TX_EN"     IOB = true;>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/emac.ucf(159)].
-WARNING:NgdBuild:1012 - The constraint <INST: UniqueName:
+   [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(159)].
+WARNING:NgdBuild:1012 - The constraint <INST
    /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TX_ER IOB =
    true> is overridden on the design object
    EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TX_ER by the constraint <INST
    "*gmii0?GMII_TX_ER"     IOB = true;>
-   [M:/MASTER/COMPET/Trigger/HW/HDL/top/emac.ucf(160)].
+   [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(160)].
 Done...
-Checking Partitions ...
 
 Checking expanded design ...
-WARNING:NgdBuild:486 - Attribute "SIM_MODE" is not allowed on symbol
-   "U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[
-   0].ram.r/v5_noinit.ram/SDP.WIDE_PRIM18.TDP" of type "RAMB18SDP".  This
-   attribute will be ignored.
 
 Partition Implementation Status
 -------------------------------
@@ -285,10 +118,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:  43
+  Number of warnings:  14
 
-Total memory usage is 84928 kilobytes
+Total memory usage is 275696 kilobytes
 
 Writing NGD file "top.ngd" ...
+Total REAL time to NGDBUILD completion:  3 sec
+Total CPU time to NGDBUILD completion:   3 sec
 
 Writing NGDBUILD log file "top.bld"...
