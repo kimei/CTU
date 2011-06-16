@@ -69,18 +69,52 @@ Slack: 6.120ns (period - (min high pulse limit / (high pulse / period)))
 Timing constraint: ts_tx_meta_protect_0 = MAXDELAY FROM TIMEGRP 
 "tx_metastable_0" 5 ns         DATAPATHONLY;
 
- 28 paths analyzed, 28 endpoints analyzed, 0 failing endpoints
+ 170 paths analyzed, 82 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
- Maximum delay is   3.072ns.
+ Maximum delay is   2.690ns.
 --------------------------------------------------------------------------------
 
-Paths for end point EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_8 (SLICE_X57Y56.B1), 1 path
+Paths for end point EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_7 (SLICE_X61Y55.A1), 1 path
 --------------------------------------------------------------------------------
-Slack:                  1.928ns (requirement - (data path - clock path skew + uncertainty))
+Slack:                  2.310ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo (FF)
+  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_7 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      2.690ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
+  Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X64Y50.AQ      Tcko                  0.471   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
+    SLICE_X64Y51.A4      net (fanout=3)        0.531   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
+    SLICE_X64Y51.A       Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd8
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_reload_or000031
+    SLICE_X61Y53.A6      net (fanout=2)        0.424   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/N57
+    SLICE_X61Y53.A       Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr<1>
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_reload_or00001
+    SLICE_X61Y55.A1      net (fanout=12)       1.050   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_reload
+    SLICE_X61Y55.CLK     Tas                   0.026   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr<10>
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_mux0000<7>1
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_7
+    -------------------------------------------------  ---------------------------
+    Total                                      2.690ns (0.685ns logic, 2.005ns route)
+                                                       (25.5% logic, 74.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_8 (SLICE_X61Y55.B1), 1 path
+--------------------------------------------------------------------------------
+Slack:                  2.311ns (requirement - (data path - clock path skew + uncertainty))
   Source:               EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo (FF)
   Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_8 (FF)
   Requirement:          5.000ns
-  Data Path Delay:      3.072ns (Levels of Logic = 3)
+  Data Path Delay:      2.689ns (Levels of Logic = 3)
   Clock Path Skew:      0.000ns
   Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
   Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
@@ -90,65 +124,31 @@ Slack:                  1.928ns (requirement - (data path - clock path skew + un
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X60Y48.CQ      Tcko                  0.471   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
+    SLICE_X64Y50.AQ      Tcko                  0.471   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
                                                        EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
-    SLICE_X61Y49.A6      net (fanout=3)        0.352   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
-    SLICE_X61Y49.A       Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd8
+    SLICE_X64Y51.A4      net (fanout=3)        0.531   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
+    SLICE_X64Y51.A       Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd8
                                                        EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_reload_or000031
-    SLICE_X57Y53.A4      net (fanout=2)        0.799   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/N57
-    SLICE_X57Y53.A       Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr<1>
+    SLICE_X61Y53.A6      net (fanout=2)        0.424   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/N57
+    SLICE_X61Y53.A       Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr<1>
                                                        EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_reload_or00001
-    SLICE_X57Y56.B1      net (fanout=12)       1.235   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_reload
-    SLICE_X57Y56.CLK     Tas                   0.027   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr<10>
+    SLICE_X61Y55.B1      net (fanout=12)       1.048   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_reload
+    SLICE_X61Y55.CLK     Tas                   0.027   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr<10>
                                                        EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_mux0000<8>1
                                                        EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_8
     -------------------------------------------------  ---------------------------
-    Total                                      3.072ns (0.686ns logic, 2.386ns route)
-                                                       (22.3% logic, 77.7% route)
+    Total                                      2.689ns (0.686ns logic, 2.003ns route)
+                                                       (25.5% logic, 74.5% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_4 (SLICE_X57Y55.B1), 1 path
+Paths for end point EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_11 (SLICE_X62Y56.CE), 1 path
 --------------------------------------------------------------------------------
-Slack:                  2.127ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo (FF)
-  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_4 (FF)
-  Requirement:          5.000ns
-  Data Path Delay:      2.873ns (Levels of Logic = 3)
-  Clock Path Skew:      0.000ns
-  Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
-  Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
-  Clock Uncertainty:    0.000ns
-
-  Maximum Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_4
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X60Y48.CQ      Tcko                  0.471   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
-    SLICE_X61Y49.A6      net (fanout=3)        0.352   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
-    SLICE_X61Y49.A       Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd8
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_reload_or000031
-    SLICE_X57Y53.A4      net (fanout=2)        0.799   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/N57
-    SLICE_X57Y53.A       Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr<1>
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_reload_or00001
-    SLICE_X57Y55.B1      net (fanout=12)       1.036   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_reload
-    SLICE_X57Y55.CLK     Tas                   0.027   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr<6>
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_mux0000<4>1
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_4
-    -------------------------------------------------  ---------------------------
-    Total                                      2.873ns (0.686ns logic, 2.187ns route)
-                                                       (23.9% logic, 76.1% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_11 (SLICE_X56Y57.D4), 1 path
---------------------------------------------------------------------------------
-Slack:                  2.297ns (requirement - (data path - clock path skew + uncertainty))
+Slack:                  2.389ns (requirement - (data path - clock path skew + uncertainty))
   Source:               EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo (FF)
   Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_11 (FF)
   Requirement:          5.000ns
-  Data Path Delay:      2.703ns (Levels of Logic = 3)
+  Data Path Delay:      2.611ns (Levels of Logic = 1)
   Clock Path Skew:      0.000ns
   Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
   Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
@@ -158,21 +158,126 @@ Slack:                  2.297ns (requirement - (data path - clock path skew + un
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X60Y48.CQ      Tcko                  0.471   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
+    SLICE_X64Y50.AQ      Tcko                  0.471   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
                                                        EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
-    SLICE_X61Y49.A6      net (fanout=3)        0.352   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
-    SLICE_X61Y49.A       Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd8
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_reload_or000031
-    SLICE_X57Y53.A4      net (fanout=2)        0.799   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/N57
-    SLICE_X57Y53.A       Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr<1>
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_reload_or00001
-    SLICE_X56Y57.D4      net (fanout=12)       0.883   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_reload
-    SLICE_X56Y57.CLK     Tas                   0.010   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr<11>
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_mux0000<11>1
+    SLICE_X65Y51.C2      net (fanout=3)        0.755   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
+    SLICE_X65Y51.CMUX    Tilo                  0.392   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000125
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001157_G
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001157
+    SLICE_X62Y56.CE      net (fanout=4)        0.764   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001
+    SLICE_X62Y56.CLK     Tceck                 0.229   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr<11>
                                                        EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_11
     -------------------------------------------------  ---------------------------
-    Total                                      2.703ns (0.669ns logic, 2.034ns route)
-                                                       (24.8% logic, 75.2% route)
+    Total                                      2.611ns (1.092ns logic, 1.519ns route)
+                                                       (41.8% logic, 58.2% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_tx_fifo_addr_0 = MAXDELAY FROM TIMEGRP "tx_addr_rd_0" TO 
+TIMEGRP         "tx_addr_wr_0" 10 ns;
+
+ 12 paths analyzed, 12 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Maximum delay is   1.163ns.
+--------------------------------------------------------------------------------
+
+Paths for end point EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_2 (SLICE_X57Y56.CX), 1 path
+--------------------------------------------------------------------------------
+Slack:                  8.837ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_2 (FF)
+  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_2 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      1.109ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.019ns (0.546 - 0.565)
+  Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
+  Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_2 to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X58Y54.CQ      Tcko                  0.471   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer<3>
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_2
+    SLICE_X57Y56.CX      net (fanout=1)        0.634   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer<2>
+    SLICE_X57Y56.CLK     Tdick                 0.004   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr<3>
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_2
+    -------------------------------------------------  ---------------------------
+    Total                                      1.109ns (0.475ns logic, 0.634ns route)
+                                                       (42.8% logic, 57.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_3 (SLICE_X57Y56.DX), 1 path
+--------------------------------------------------------------------------------
+Slack:                  8.994ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_3 (FF)
+  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_3 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      0.952ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.019ns (0.546 - 0.565)
+  Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
+  Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_3 to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X58Y54.DQ      Tcko                  0.471   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer<3>
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_3
+    SLICE_X57Y56.DX      net (fanout=1)        0.479   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer<3>
+    SLICE_X57Y56.CLK     Tdick                 0.002   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr<3>
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_3
+    -------------------------------------------------  ---------------------------
+    Total                                      0.952ns (0.473ns logic, 0.479ns route)
+                                                       (49.7% logic, 50.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_6 (SLICE_X59Y56.CX), 1 path
+--------------------------------------------------------------------------------
+Slack:                  8.999ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_6 (FF)
+  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_6 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      0.959ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.007ns (0.146 - 0.153)
+  Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
+  Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_6 to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X58Y55.CQ      Tcko                  0.471   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer<7>
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_6
+    SLICE_X59Y56.CX      net (fanout=1)        0.484   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer<6>
+    SLICE_X59Y56.CLK     Tdick                 0.004   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr<7>
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_6
+    -------------------------------------------------  ---------------------------
+    Total                                      0.959ns (0.475ns logic, 0.484ns route)
+                                                       (49.5% logic, 50.5% route)
 
 --------------------------------------------------------------------------------
 
@@ -190,16 +295,16 @@ Timing constraint: TS_fe_TEMAC_clk_phy_rx0 = PERIOD TIMEGRP
 
  10 paths analyzed, 10 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   7.297ns.
+ Minimum period is   7.334ns.
 --------------------------------------------------------------------------------
 
 Paths for end point EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac (TEMAC_X0Y0.PHYEMAC0RXD5), 1 path
 --------------------------------------------------------------------------------
-Slack:                  0.203ns (requirement - (data path - clock path skew + uncertainty))
+Slack:                  0.166ns (requirement - (data path - clock path skew + uncertainty))
   Source:               EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_5 (FF)
   Destination:          EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac (CPU)
   Requirement:          7.500ns
-  Data Path Delay:      7.210ns (Levels of Logic = 0)
+  Data Path Delay:      7.247ns (Levels of Logic = 0)
   Clock Path Skew:      -0.052ns (1.532 - 1.584)
   Source Clock:         EMAC_1/rx_clk_0_i rising at 0.000ns
   Destination Clock:    EMAC_1/rx_clk_0_i rising at 7.500ns
@@ -217,22 +322,22 @@ Slack:                  0.203ns (requirement - (data path - clock path skew + un
     -----------------------------------------------------  -------------------
     ILOGIC_X0Y128.Q1         Tickq                 0.517   EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC<5>
                                                            EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_5
-    TEMAC_X0Y0.PHYEMAC0RXD5  net (fanout=1)        6.443   EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC<5>
+    TEMAC_X0Y0.PHYEMAC0RXD5  net (fanout=1)        6.480   EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC<5>
     TEMAC_X0Y0.PHYEMAC0RXCLK Tmacdck_RXD           0.250   EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
                                                            EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
     -----------------------------------------------------  ---------------------------
-    Total                                          7.210ns (0.767ns logic, 6.443ns route)
+    Total                                          7.247ns (0.767ns logic, 6.480ns route)
                                                            (10.6% logic, 89.4% route)
 
 --------------------------------------------------------------------------------
 
 Paths for end point EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac (TEMAC_X0Y0.PHYEMAC0RXD4), 1 path
 --------------------------------------------------------------------------------
-Slack:                  0.659ns (requirement - (data path - clock path skew + uncertainty))
+Slack:                  0.587ns (requirement - (data path - clock path skew + uncertainty))
   Source:               EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_4 (FF)
   Destination:          EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac (CPU)
   Requirement:          7.500ns
-  Data Path Delay:      6.766ns (Levels of Logic = 0)
+  Data Path Delay:      6.838ns (Levels of Logic = 0)
   Clock Path Skew:      -0.040ns (1.532 - 1.572)
   Source Clock:         EMAC_1/rx_clk_0_i rising at 0.000ns
   Destination Clock:    EMAC_1/rx_clk_0_i rising at 7.500ns
@@ -250,23 +355,23 @@ Slack:                  0.659ns (requirement - (data path - clock path skew + un
     -----------------------------------------------------  -------------------
     ILOGIC_X0Y138.Q1         Tickq                 0.517   EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC<4>
                                                            EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_4
-    TEMAC_X0Y0.PHYEMAC0RXD4  net (fanout=1)        5.999   EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC<4>
+    TEMAC_X0Y0.PHYEMAC0RXD4  net (fanout=1)        6.071   EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC<4>
     TEMAC_X0Y0.PHYEMAC0RXCLK Tmacdck_RXD           0.250   EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
                                                            EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
     -----------------------------------------------------  ---------------------------
-    Total                                          6.766ns (0.767ns logic, 5.999ns route)
-                                                           (11.3% logic, 88.7% route)
+    Total                                          6.838ns (0.767ns logic, 6.071ns route)
+                                                           (11.2% logic, 88.8% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac (TEMAC_X0Y0.PHYEMAC0RXD3), 1 path
+Paths for end point EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac (TEMAC_X0Y0.PHYEMAC0RXD7), 1 path
 --------------------------------------------------------------------------------
-Slack:                  0.712ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_3 (FF)
+Slack:                  0.598ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_7 (FF)
   Destination:          EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac (CPU)
   Requirement:          7.500ns
-  Data Path Delay:      6.696ns (Levels of Logic = 0)
-  Clock Path Skew:      -0.057ns (1.532 - 1.589)
+  Data Path Delay:      6.821ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.046ns (1.532 - 1.578)
   Source Clock:         EMAC_1/rx_clk_0_i rising at 0.000ns
   Destination Clock:    EMAC_1/rx_clk_0_i rising at 7.500ns
   Clock Uncertainty:    0.035ns
@@ -277,18 +382,18 @@ Slack:                  0.712ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path: EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_3 to EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
+  Maximum Data Path: EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_7 to EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
     Location                 Delay type         Delay(ns)  Physical Resource
                                                            Logical Resource(s)
     -----------------------------------------------------  -------------------
-    ILOGIC_X0Y122.Q1         Tickq                 0.517   EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC<3>
-                                                           EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_3
-    TEMAC_X0Y0.PHYEMAC0RXD3  net (fanout=1)        5.929   EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC<3>
+    ILOGIC_X0Y134.Q1         Tickq                 0.517   EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC<7>
+                                                           EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_7
+    TEMAC_X0Y0.PHYEMAC0RXD7  net (fanout=1)        6.054   EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC<7>
     TEMAC_X0Y0.PHYEMAC0RXCLK Tmacdck_RXD           0.250   EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
                                                            EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
     -----------------------------------------------------  ---------------------------
-    Total                                          6.696ns (0.767ns logic, 5.929ns route)
-                                                           (11.5% logic, 88.5% route)
+    Total                                          6.821ns (0.767ns logic, 6.054ns route)
+                                                           (11.2% logic, 88.8% route)
 
 --------------------------------------------------------------------------------
 
@@ -334,19 +439,19 @@ ns HIGH 50%;
 Timing constraint: TS_v5_emac_v1_5_gtp_clk = PERIOD TIMEGRP 
 "v5_emac_v1_5_gtp_clk" 7.7 ns HIGH         50%;
 
- 2524 paths analyzed, 588 endpoints analyzed, 0 failing endpoints
+ 16877 paths analyzed, 2705 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   6.632ns.
+ Minimum period is   6.329ns.
 --------------------------------------------------------------------------------
 
-Paths for end point EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_7 (SLICE_X57Y56.CE), 27 paths
+Paths for end point EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram4 (SLICE_X50Y41.D1), 59 paths
 --------------------------------------------------------------------------------
-Slack:                  1.068ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac (CPU)
-  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_7 (FF)
+Slack:                  1.371ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd16 (FF)
+  Destination:          EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram4 (RAM)
   Requirement:          7.700ns
-  Data Path Delay:      6.194ns (Levels of Logic = 2)
-  Clock Path Skew:      -0.403ns (0.517 - 0.920)
+  Data Path Delay:      6.257ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.037ns (0.470 - 0.507)
   Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
   Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
   Clock Uncertainty:    0.035ns
@@ -357,70 +462,38 @@ Slack:                  1.068ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path: EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_7
-    Location                    Delay type         Delay(ns)  Physical Resource
-                                                              Logical Resource(s)
-    --------------------------------------------------------  -------------------
-    TEMAC_X0Y0.EMAC0CLIENTTXACK Tmaccko_ACK           1.550   EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
-                                                              EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
-    SLICE_X62Y49.A1             net (fanout=8)        2.177   EMAC_1/v5_emac_ll/tx_ack_0_i
-    SLICE_X62Y49.A              Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000125
-                                                              EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000189
-    SLICE_X62Y49.D1             net (fanout=1)        0.741   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000189
-    SLICE_X62Y49.CMUX           Topdc                 0.389   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000125
-                                                              EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001157_F
-                                                              EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001157
-    SLICE_X57Y56.CE             net (fanout=4)        1.014   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001
-    SLICE_X57Y56.CLK            Tceck                 0.229   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr<10>
-                                                              EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_7
-    --------------------------------------------------------  ---------------------------
-    Total                                             6.194ns (2.262ns logic, 3.932ns route)
-                                                              (36.5% logic, 63.5% route)
-
---------------------------------------------------------------------------------
-Slack:                  2.658ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd2 (FF)
-  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_7 (FF)
-  Requirement:          7.700ns
-  Data Path Delay:      4.889ns (Levels of Logic = 2)
-  Clock Path Skew:      -0.118ns (0.517 - 0.635)
-  Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
-  Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd2 to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_7
+  Maximum Data Path: EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd16 to EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram4
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X68Y47.BQ      Tcko                  0.471   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd4
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd2
-    SLICE_X62Y49.A2      net (fanout=18)       1.951   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd2
-    SLICE_X62Y49.A       Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000125
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000189
-    SLICE_X62Y49.D1      net (fanout=1)        0.741   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000189
-    SLICE_X62Y49.CMUX    Topdc                 0.389   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000125
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001157_F
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001157
-    SLICE_X57Y56.CE      net (fanout=4)        1.014   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001
-    SLICE_X57Y56.CLK     Tceck                 0.229   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr<10>
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_7
+    SLICE_X48Y40.DQ      Tcko                  0.471   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd16
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd16
+    SLICE_X45Y39.D3      net (fanout=28)       0.986   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd16
+    SLICE_X45Y39.D       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_reg<3>
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or0001_SW0
+    SLICE_X47Y39.A1      net (fanout=2)        0.860   N71
+    SLICE_X47Y39.A       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or00011
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or0001_1
+    SLICE_X49Y41.A1      net (fanout=1)        1.122   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or00011
+    SLICE_X49Y41.A       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<1>
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or000046_1
+    SLICE_X49Y39.A2      net (fanout=10)       0.794   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or000046
+    SLICE_X49Y39.A       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<3>0
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<0>76
+    SLICE_X50Y41.D1      net (fanout=8)        1.268   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<0>
+    SLICE_X50Y41.CLK     Tas                   0.380   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/transmit_data_output_bus_tmp<0>
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram4
     -------------------------------------------------  ---------------------------
-    Total                                      4.889ns (1.183ns logic, 3.706ns route)
-                                                       (24.2% logic, 75.8% route)
+    Total                                      6.257ns (1.227ns logic, 5.030ns route)
+                                                       (19.6% logic, 80.4% route)
 
 --------------------------------------------------------------------------------
-Slack:                  2.779ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_drop_frame (FF)
-  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_7 (FF)
+Slack:                  1.372ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd18 (FF)
+  Destination:          EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram4 (RAM)
   Requirement:          7.700ns
-  Data Path Delay:      4.773ns (Levels of Logic = 2)
-  Clock Path Skew:      -0.113ns (0.517 - 0.630)
+  Data Path Delay:      6.257ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.036ns (0.470 - 0.506)
   Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
   Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
   Clock Uncertainty:    0.035ns
@@ -431,36 +504,38 @@ Slack:                  2.779ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_drop_frame to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_7
+  Maximum Data Path: EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd18 to EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram4
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X69Y48.AQ      Tcko                  0.450   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_drop_frame
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_drop_frame
-    SLICE_X62Y49.A3      net (fanout=17)       1.856   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_drop_frame
-    SLICE_X62Y49.A       Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000125
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000189
-    SLICE_X62Y49.D1      net (fanout=1)        0.741   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000189
-    SLICE_X62Y49.CMUX    Topdc                 0.389   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000125
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001157_F
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001157
-    SLICE_X57Y56.CE      net (fanout=4)        1.014   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001
-    SLICE_X57Y56.CLK     Tceck                 0.229   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr<10>
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_7
+    SLICE_X48Y41.BQ      Tcko                  0.471   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd20
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd18
+    SLICE_X45Y39.D5      net (fanout=12)       0.986   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd18
+    SLICE_X45Y39.D       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_reg<3>
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or0001_SW0
+    SLICE_X47Y39.A1      net (fanout=2)        0.860   N71
+    SLICE_X47Y39.A       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or00011
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or0001_1
+    SLICE_X49Y41.A1      net (fanout=1)        1.122   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or00011
+    SLICE_X49Y41.A       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<1>
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or000046_1
+    SLICE_X49Y39.A2      net (fanout=10)       0.794   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or000046
+    SLICE_X49Y39.A       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<3>0
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<0>76
+    SLICE_X50Y41.D1      net (fanout=8)        1.268   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<0>
+    SLICE_X50Y41.CLK     Tas                   0.380   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/transmit_data_output_bus_tmp<0>
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram4
     -------------------------------------------------  ---------------------------
-    Total                                      4.773ns (1.162ns logic, 3.611ns route)
-                                                       (24.3% logic, 75.7% route)
+    Total                                      6.257ns (1.227ns logic, 5.030ns route)
+                                                       (19.6% logic, 80.4% route)
 
 --------------------------------------------------------------------------------
-
-Paths for end point EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_8 (SLICE_X57Y56.CE), 27 paths
---------------------------------------------------------------------------------
-Slack:                  1.068ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac (CPU)
-  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_8 (FF)
+Slack:                  1.400ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd5 (FF)
+  Destination:          EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram4 (RAM)
   Requirement:          7.700ns
-  Data Path Delay:      6.194ns (Levels of Logic = 2)
-  Clock Path Skew:      -0.403ns (0.517 - 0.920)
+  Data Path Delay:      6.225ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.040ns (0.470 - 0.510)
   Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
   Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
   Clock Uncertainty:    0.035ns
@@ -471,70 +546,41 @@ Slack:                  1.068ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path: EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_8
-    Location                    Delay type         Delay(ns)  Physical Resource
-                                                              Logical Resource(s)
-    --------------------------------------------------------  -------------------
-    TEMAC_X0Y0.EMAC0CLIENTTXACK Tmaccko_ACK           1.550   EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
-                                                              EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
-    SLICE_X62Y49.A1             net (fanout=8)        2.177   EMAC_1/v5_emac_ll/tx_ack_0_i
-    SLICE_X62Y49.A              Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000125
-                                                              EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000189
-    SLICE_X62Y49.D1             net (fanout=1)        0.741   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000189
-    SLICE_X62Y49.CMUX           Topdc                 0.389   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000125
-                                                              EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001157_F
-                                                              EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001157
-    SLICE_X57Y56.CE             net (fanout=4)        1.014   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001
-    SLICE_X57Y56.CLK            Tceck                 0.229   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr<10>
-                                                              EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_8
-    --------------------------------------------------------  ---------------------------
-    Total                                             6.194ns (2.262ns logic, 3.932ns route)
-                                                              (36.5% logic, 63.5% route)
-
---------------------------------------------------------------------------------
-Slack:                  2.658ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd2 (FF)
-  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_8 (FF)
-  Requirement:          7.700ns
-  Data Path Delay:      4.889ns (Levels of Logic = 2)
-  Clock Path Skew:      -0.118ns (0.517 - 0.635)
-  Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
-  Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd2 to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_8
+  Maximum Data Path: EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd5 to EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram4
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X68Y47.BQ      Tcko                  0.471   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd4
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd2
-    SLICE_X62Y49.A2      net (fanout=18)       1.951   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd2
-    SLICE_X62Y49.A       Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000125
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000189
-    SLICE_X62Y49.D1      net (fanout=1)        0.741   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000189
-    SLICE_X62Y49.CMUX    Topdc                 0.389   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000125
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001157_F
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001157
-    SLICE_X57Y56.CE      net (fanout=4)        1.014   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001
-    SLICE_X57Y56.CLK     Tceck                 0.229   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr<10>
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_8
+    SLICE_X46Y41.DQ      Tcko                  0.450   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd5
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd5
+    SLICE_X48Y43.C2      net (fanout=23)       1.115   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd5
+    SLICE_X48Y43.C       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd4
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/data_i<0>11
+    SLICE_X47Y41.A2      net (fanout=4)        1.132   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/N43
+    SLICE_X47Y41.A       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd12
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or000022
+    SLICE_X49Y41.A3      net (fanout=2)        0.710   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or000022
+    SLICE_X49Y41.A       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<1>
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or000046_1
+    SLICE_X49Y39.A2      net (fanout=10)       0.794   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or000046
+    SLICE_X49Y39.A       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<3>0
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<0>76
+    SLICE_X50Y41.D1      net (fanout=8)        1.268   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<0>
+    SLICE_X50Y41.CLK     Tas                   0.380   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/transmit_data_output_bus_tmp<0>
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram4
     -------------------------------------------------  ---------------------------
-    Total                                      4.889ns (1.183ns logic, 3.706ns route)
-                                                       (24.2% logic, 75.8% route)
+    Total                                      6.225ns (1.206ns logic, 5.019ns route)
+                                                       (19.4% logic, 80.6% route)
 
 --------------------------------------------------------------------------------
-Slack:                  2.779ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_drop_frame (FF)
-  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_8 (FF)
+
+Paths for end point EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram3 (SLICE_X50Y41.D1), 59 paths
+--------------------------------------------------------------------------------
+Slack:                  1.371ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd16 (FF)
+  Destination:          EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram3 (RAM)
   Requirement:          7.700ns
-  Data Path Delay:      4.773ns (Levels of Logic = 2)
-  Clock Path Skew:      -0.113ns (0.517 - 0.630)
+  Data Path Delay:      6.257ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.037ns (0.470 - 0.507)
   Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
   Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
   Clock Uncertainty:    0.035ns
@@ -545,36 +591,38 @@ Slack:                  2.779ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_drop_frame to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_8
+  Maximum Data Path: EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd16 to EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram3
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X69Y48.AQ      Tcko                  0.450   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_drop_frame
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_drop_frame
-    SLICE_X62Y49.A3      net (fanout=17)       1.856   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_drop_frame
-    SLICE_X62Y49.A       Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000125
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000189
-    SLICE_X62Y49.D1      net (fanout=1)        0.741   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000189
-    SLICE_X62Y49.CMUX    Topdc                 0.389   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000125
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001157_F
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001157
-    SLICE_X57Y56.CE      net (fanout=4)        1.014   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001
-    SLICE_X57Y56.CLK     Tceck                 0.229   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr<10>
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_8
+    SLICE_X48Y40.DQ      Tcko                  0.471   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd16
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd16
+    SLICE_X45Y39.D3      net (fanout=28)       0.986   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd16
+    SLICE_X45Y39.D       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_reg<3>
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or0001_SW0
+    SLICE_X47Y39.A1      net (fanout=2)        0.860   N71
+    SLICE_X47Y39.A       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or00011
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or0001_1
+    SLICE_X49Y41.A1      net (fanout=1)        1.122   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or00011
+    SLICE_X49Y41.A       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<1>
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or000046_1
+    SLICE_X49Y39.A2      net (fanout=10)       0.794   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or000046
+    SLICE_X49Y39.A       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<3>0
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<0>76
+    SLICE_X50Y41.D1      net (fanout=8)        1.268   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<0>
+    SLICE_X50Y41.CLK     Tas                   0.380   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/transmit_data_output_bus_tmp<0>
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram3
     -------------------------------------------------  ---------------------------
-    Total                                      4.773ns (1.162ns logic, 3.611ns route)
-                                                       (24.3% logic, 75.7% route)
+    Total                                      6.257ns (1.227ns logic, 5.030ns route)
+                                                       (19.6% logic, 80.4% route)
 
 --------------------------------------------------------------------------------
-
-Paths for end point EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_9 (SLICE_X57Y56.CE), 27 paths
---------------------------------------------------------------------------------
-Slack:                  1.068ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac (CPU)
-  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_9 (FF)
+Slack:                  1.372ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd18 (FF)
+  Destination:          EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram3 (RAM)
   Requirement:          7.700ns
-  Data Path Delay:      6.194ns (Levels of Logic = 2)
-  Clock Path Skew:      -0.403ns (0.517 - 0.920)
+  Data Path Delay:      6.257ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.036ns (0.470 - 0.506)
   Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
   Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
   Clock Uncertainty:    0.035ns
@@ -585,70 +633,38 @@ Slack:                  1.068ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path: EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_9
-    Location                    Delay type         Delay(ns)  Physical Resource
-                                                              Logical Resource(s)
-    --------------------------------------------------------  -------------------
-    TEMAC_X0Y0.EMAC0CLIENTTXACK Tmaccko_ACK           1.550   EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
-                                                              EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
-    SLICE_X62Y49.A1             net (fanout=8)        2.177   EMAC_1/v5_emac_ll/tx_ack_0_i
-    SLICE_X62Y49.A              Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000125
-                                                              EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000189
-    SLICE_X62Y49.D1             net (fanout=1)        0.741   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000189
-    SLICE_X62Y49.CMUX           Topdc                 0.389   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000125
-                                                              EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001157_F
-                                                              EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001157
-    SLICE_X57Y56.CE             net (fanout=4)        1.014   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001
-    SLICE_X57Y56.CLK            Tceck                 0.229   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr<10>
-                                                              EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_9
-    --------------------------------------------------------  ---------------------------
-    Total                                             6.194ns (2.262ns logic, 3.932ns route)
-                                                              (36.5% logic, 63.5% route)
-
---------------------------------------------------------------------------------
-Slack:                  2.658ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd2 (FF)
-  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_9 (FF)
-  Requirement:          7.700ns
-  Data Path Delay:      4.889ns (Levels of Logic = 2)
-  Clock Path Skew:      -0.118ns (0.517 - 0.635)
-  Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
-  Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd2 to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_9
+  Maximum Data Path: EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd18 to EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram3
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X68Y47.BQ      Tcko                  0.471   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd4
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd2
-    SLICE_X62Y49.A2      net (fanout=18)       1.951   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd2
-    SLICE_X62Y49.A       Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000125
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000189
-    SLICE_X62Y49.D1      net (fanout=1)        0.741   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000189
-    SLICE_X62Y49.CMUX    Topdc                 0.389   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000125
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001157_F
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001157
-    SLICE_X57Y56.CE      net (fanout=4)        1.014   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001
-    SLICE_X57Y56.CLK     Tceck                 0.229   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr<10>
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_9
+    SLICE_X48Y41.BQ      Tcko                  0.471   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd20
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd18
+    SLICE_X45Y39.D5      net (fanout=12)       0.986   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd18
+    SLICE_X45Y39.D       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_reg<3>
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or0001_SW0
+    SLICE_X47Y39.A1      net (fanout=2)        0.860   N71
+    SLICE_X47Y39.A       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or00011
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or0001_1
+    SLICE_X49Y41.A1      net (fanout=1)        1.122   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or00011
+    SLICE_X49Y41.A       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<1>
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or000046_1
+    SLICE_X49Y39.A2      net (fanout=10)       0.794   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or000046
+    SLICE_X49Y39.A       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<3>0
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<0>76
+    SLICE_X50Y41.D1      net (fanout=8)        1.268   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<0>
+    SLICE_X50Y41.CLK     Tas                   0.380   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/transmit_data_output_bus_tmp<0>
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram3
     -------------------------------------------------  ---------------------------
-    Total                                      4.889ns (1.183ns logic, 3.706ns route)
-                                                       (24.2% logic, 75.8% route)
+    Total                                      6.257ns (1.227ns logic, 5.030ns route)
+                                                       (19.6% logic, 80.4% route)
 
 --------------------------------------------------------------------------------
-Slack:                  2.779ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_drop_frame (FF)
-  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_9 (FF)
+Slack:                  1.400ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd5 (FF)
+  Destination:          EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram3 (RAM)
   Requirement:          7.700ns
-  Data Path Delay:      4.773ns (Levels of Logic = 2)
-  Clock Path Skew:      -0.113ns (0.517 - 0.630)
+  Data Path Delay:      6.225ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.040ns (0.470 - 0.510)
   Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
   Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
   Clock Uncertainty:    0.035ns
@@ -659,25 +675,159 @@ Slack:                  2.779ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_drop_frame to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_9
+  Maximum Data Path: EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd5 to EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram3
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X69Y48.AQ      Tcko                  0.450   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_drop_frame
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_drop_frame
-    SLICE_X62Y49.A3      net (fanout=17)       1.856   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_drop_frame
-    SLICE_X62Y49.A       Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000125
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000189
-    SLICE_X62Y49.D1      net (fanout=1)        0.741   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000189
-    SLICE_X62Y49.CMUX    Topdc                 0.389   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000125
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001157_F
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001157
-    SLICE_X57Y56.CE      net (fanout=4)        1.014   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001
-    SLICE_X57Y56.CLK     Tceck                 0.229   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr<10>
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_9
+    SLICE_X46Y41.DQ      Tcko                  0.450   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd5
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd5
+    SLICE_X48Y43.C2      net (fanout=23)       1.115   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd5
+    SLICE_X48Y43.C       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd4
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/data_i<0>11
+    SLICE_X47Y41.A2      net (fanout=4)        1.132   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/N43
+    SLICE_X47Y41.A       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd12
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or000022
+    SLICE_X49Y41.A3      net (fanout=2)        0.710   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or000022
+    SLICE_X49Y41.A       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<1>
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or000046_1
+    SLICE_X49Y39.A2      net (fanout=10)       0.794   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or000046
+    SLICE_X49Y39.A       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<3>0
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<0>76
+    SLICE_X50Y41.D1      net (fanout=8)        1.268   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<0>
+    SLICE_X50Y41.CLK     Tas                   0.380   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/transmit_data_output_bus_tmp<0>
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram3
     -------------------------------------------------  ---------------------------
-    Total                                      4.773ns (1.162ns logic, 3.611ns route)
-                                                       (24.3% logic, 75.7% route)
+    Total                                      6.225ns (1.206ns logic, 5.019ns route)
+                                                       (19.4% logic, 80.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram2 (SLICE_X50Y41.D1), 59 paths
+--------------------------------------------------------------------------------
+Slack:                  1.371ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd16 (FF)
+  Destination:          EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram2 (RAM)
+  Requirement:          7.700ns
+  Data Path Delay:      6.257ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.037ns (0.470 - 0.507)
+  Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
+  Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd16 to EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X48Y40.DQ      Tcko                  0.471   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd16
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd16
+    SLICE_X45Y39.D3      net (fanout=28)       0.986   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd16
+    SLICE_X45Y39.D       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_reg<3>
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or0001_SW0
+    SLICE_X47Y39.A1      net (fanout=2)        0.860   N71
+    SLICE_X47Y39.A       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or00011
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or0001_1
+    SLICE_X49Y41.A1      net (fanout=1)        1.122   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or00011
+    SLICE_X49Y41.A       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<1>
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or000046_1
+    SLICE_X49Y39.A2      net (fanout=10)       0.794   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or000046
+    SLICE_X49Y39.A       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<3>0
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<0>76
+    SLICE_X50Y41.D1      net (fanout=8)        1.268   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<0>
+    SLICE_X50Y41.CLK     Tas                   0.380   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/transmit_data_output_bus_tmp<0>
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram2
+    -------------------------------------------------  ---------------------------
+    Total                                      6.257ns (1.227ns logic, 5.030ns route)
+                                                       (19.6% logic, 80.4% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.372ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd18 (FF)
+  Destination:          EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram2 (RAM)
+  Requirement:          7.700ns
+  Data Path Delay:      6.257ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.036ns (0.470 - 0.506)
+  Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
+  Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd18 to EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X48Y41.BQ      Tcko                  0.471   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd20
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd18
+    SLICE_X45Y39.D5      net (fanout=12)       0.986   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd18
+    SLICE_X45Y39.D       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_reg<3>
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or0001_SW0
+    SLICE_X47Y39.A1      net (fanout=2)        0.860   N71
+    SLICE_X47Y39.A       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or00011
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or0001_1
+    SLICE_X49Y41.A1      net (fanout=1)        1.122   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or00011
+    SLICE_X49Y41.A       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<1>
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or000046_1
+    SLICE_X49Y39.A2      net (fanout=10)       0.794   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or000046
+    SLICE_X49Y39.A       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<3>0
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<0>76
+    SLICE_X50Y41.D1      net (fanout=8)        1.268   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<0>
+    SLICE_X50Y41.CLK     Tas                   0.380   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/transmit_data_output_bus_tmp<0>
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram2
+    -------------------------------------------------  ---------------------------
+    Total                                      6.257ns (1.227ns logic, 5.030ns route)
+                                                       (19.6% logic, 80.4% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.400ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd5 (FF)
+  Destination:          EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram2 (RAM)
+  Requirement:          7.700ns
+  Data Path Delay:      6.225ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.040ns (0.470 - 0.510)
+  Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
+  Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd5 to EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X46Y41.DQ      Tcko                  0.450   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd5
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd5
+    SLICE_X48Y43.C2      net (fanout=23)       1.115   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd5
+    SLICE_X48Y43.C       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd4
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/data_i<0>11
+    SLICE_X47Y41.A2      net (fanout=4)        1.132   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/N43
+    SLICE_X47Y41.A       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd12
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or000022
+    SLICE_X49Y41.A3      net (fanout=2)        0.710   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or000022
+    SLICE_X49Y41.A       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<1>
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or000046_1
+    SLICE_X49Y39.A2      net (fanout=10)       0.794   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or000046
+    SLICE_X49Y39.A       Tilo                  0.094   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<3>0
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<0>76
+    SLICE_X50Y41.D1      net (fanout=8)        1.268   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<0>
+    SLICE_X50Y41.CLK     Tas                   0.380   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/transmit_data_output_bus_tmp<0>
+                                                       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram2
+    -------------------------------------------------  ---------------------------
+    Total                                      6.225ns (1.206ns logic, 5.019ns route)
+                                                       (19.4% logic, 80.6% route)
 
 --------------------------------------------------------------------------------
 
@@ -722,7 +872,7 @@ Clock to Setup on destination clock GMII_RX_CLK_0
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-GMII_RX_CLK_0  |    7.297|         |         |         |
+GMII_RX_CLK_0  |    7.334|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -731,24 +881,24 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 2562 paths, 0 nets, and 655 connections
+Constraints cover 17069 paths, 0 nets, and 3830 connections
 
 Design statistics:
-   Minimum period:   7.297ns{1}   (Maximum frequency: 137.043MHz)
-   Maximum path delay from/to any node:   3.072ns
+   Minimum period:   7.334ns{1}   (Maximum frequency: 136.351MHz)
+   Maximum path delay from/to any node:   2.690ns
 
 
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Tue Jun  7 15:37:32 2011 
+Analysis completed Thu Jun 16 09:23:36 2011 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 423 MB
+Peak Memory Usage: 436 MB
 
 
 

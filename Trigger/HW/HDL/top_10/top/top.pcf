@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map O.40d on Tue Jun 07 15:37:09 2011
+// Written by: Map O.40d on Thu Jun 16 09:23:10 2011
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -71,6 +71,21 @@ PIN EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac_pins<18> = BEL
 PIN EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac_pins<19> = BEL
         "EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac" PINNAME
         CLIENTEMAC0TXCLIENTCLKIN;
+PIN
+        EMAC_1/send_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.WIDE_PRIM18.TDP_pins<54>
+        = BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.WIDE_PRIM18.TDP"
+        PINNAME RDCLKL;
+PIN
+        EMAC_1/send_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.WIDE_PRIM18.TDP_pins<56>
+        = BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.WIDE_PRIM18.TDP"
+        PINNAME RDRCLKL;
+PIN
+        EMAC_1/send_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.WIDE_PRIM18.TDP_pins<82>
+        = BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.WIDE_PRIM18.TDP"
+        PINNAME WRCLKL;
 PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<30> = BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l" PINNAME
         CLKAU;
@@ -119,16 +134,31 @@ TIMEGRP clk_gtp = BEL "EMAC_1/v5_emac_ll/tx_pre_reset_0_i_0" BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd1"
         BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd3"
-        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frames_8"
-        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frames_7"
-        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frames_6"
-        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frames_5"
-        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frames_4"
-        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frames_3"
-        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frames_2"
-        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frames_1"
-        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frames_0"
         BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_state_FSM_FFd2"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_state_FSM_FFd1"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_11"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_10"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_9" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_8" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_7" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_6" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_5" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_4" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_3" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_2" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_1" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_0" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frames_8" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frames_7" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frames_6" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frames_5" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frames_4" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frames_3" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frames_2" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frames_1" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frames_0" BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer_9"
         BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer_8"
@@ -148,8 +178,36 @@ TIMEGRP clk_gtp = BEL "EMAC_1/v5_emac_ll/tx_pre_reset_0_i_0" BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer_1"
         BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer_0"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_16_count_3"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_16_count_2"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_16_count_1"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_16_count_0"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_col_window_expire"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_diff_11"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_diff_10"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_diff_9"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_diff_8"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_diff_7"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_diff_6"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_diff_5"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_diff_4"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_diff_3"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_diff_2"
         BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_retran_frame_delay"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_col_window_pipe_1"
         BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_data_pipe_u_7"
         BEL
@@ -183,13 +241,59 @@ TIMEGRP clk_gtp = BEL "EMAC_1/v5_emac_ll/tx_pre_reset_0_i_0" BEL
         BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_data_pipe_l_0"
         BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_col_window_pipe_0"
+        BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_retran_frame_sync"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_pipe_1"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_11"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_10"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_9"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_8"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_7"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_6"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_5"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_4"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_3"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_2"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_1"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_0"
         BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_retran_frame_tog"
         BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_pipe_0"
+        BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_retran_frame_tog"
         BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_eof_state_reg"
+        BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_tran_frame_delay"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_11"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_10"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_9"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_8"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_7"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_6"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_5"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_4"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_3"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_2"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_1"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_0"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_txfer_tog_delay"
         BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_tran_frame_sync"
         BEL
@@ -206,7 +310,25 @@ TIMEGRP clk_gtp = BEL "EMAC_1/v5_emac_ll/tx_pre_reset_0_i_0" BEL
         BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_dec_addr_2"
         BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_dec_addr_1"
         BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_dec_addr_0"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_accept_bram"
         BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_bram_u_reg"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_bram_7"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_bram_6"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_bram_5"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_bram_4"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_bram_3"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_bram_2"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_bram_1"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_bram_0"
         BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_11"
         BEL
@@ -231,13 +353,62 @@ TIMEGRP clk_gtp = BEL "EMAC_1/v5_emac_ll/tx_pre_reset_0_i_0" BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_1"
         BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_0"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_txfer_tog_sync"
         BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_eof_bram_0"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_11"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_10"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_9"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_8"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_7"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_6"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_5"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_4"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_3"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_2"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_1"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_0"
         BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_eof" BEL
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_bram_u" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_sof_pipe_1" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_txfer_tog" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_accept_pipe_1"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_eof_pipe_1"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_bram_u" BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo_sync"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_1_7"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_1_6"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_1_5"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_1_4"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_1_3"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_1_2"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_1_1"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_1_0"
         BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_tran_frame_tog"
         BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_drop_frame"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_sof_pipe_0"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_eof_pipe_0"
         BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_retransmit"
         BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_data_pipe_7"
@@ -255,6 +426,7 @@ TIMEGRP clk_gtp = BEL "EMAC_1/v5_emac_ll/tx_pre_reset_0_i_0" BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_data_pipe_1"
         BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_data_pipe_0"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_txfer_tog"
         BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frame_in_fifo"
         BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_eof_reg"
@@ -271,9 +443,14 @@ TIMEGRP clk_gtp = BEL "EMAC_1/v5_emac_ll/tx_pre_reset_0_i_0" BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_transmit_frame"
         BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_tran_frame_tog"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_accept_pipe_0"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_ovflow_dst_rdy"
         BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_eof_pipe"
         BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_retransmit_frame"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_fifo_full"
         BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_11"
         BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_10"
         BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_9" BEL
@@ -286,9 +463,601 @@ TIMEGRP clk_gtp = BEL "EMAC_1/v5_emac_ll/tx_pre_reset_0_i_0" BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_2" BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_1" BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_0" BEL
-        "EMAC_1/bufg_client_rx_0" BEL "EMAC_1/bufg_client_tx_0" BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/source_ready"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/transmit_start_enable_reg"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/ALLOW_ZERO_UDP_CHECKSUM_port_map/output_to_datasel"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/ALLOW_ZERO_UDP_CHECKSUM_port_map/input_reg"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/ENABLE_USER_DATA_TRANSMISSION_port_map/usr_data_sel_prev"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/ENABLE_USER_DATA_READ_port_map/usr_data_sel_prev"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/sel_header_checksum_LSBs"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/sel_length_LSBs"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/sel_total_length_LSBs"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/count_en_sig"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/last_byte_reg_out"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/IPV4_LUT_INDEXER_port_map/count_en_sig"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/IPV4_LUT_INDEXER_port_map/LUT_INDEXER_MODULE/value_O_0"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/IPV4_LUT_INDEXER_port_map/LUT_INDEXER_MODULE/value_O_1"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/IPV4_LUT_INDEXER_port_map/LUT_INDEXER_MODULE/value_O_2"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/IPV4_LUT_INDEXER_port_map/LUT_INDEXER_MODULE/value_O_3"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/IPV4_LUT_INDEXER_port_map/LUT_INDEXER_MODULE/value_O_4"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/IPV4_LUT_INDEXER_port_map/LUT_INDEXER_MODULE/value_O_5"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_0"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_1"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_4"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_2"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_3"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_5"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_6"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_7"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_8"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_9"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_10"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/NUMBER_OR_DATA_IN_BYTES_REGISTER/output_8"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/NUMBER_OR_DATA_IN_BYTES_REGISTER/output_7"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/NUMBER_OR_DATA_IN_BYTES_REGISTER/output_6"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/NUMBER_OR_DATA_IN_BYTES_REGISTER/output_5"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/NUMBER_OR_DATA_IN_BYTES_REGISTER/output_4"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/NUMBER_OR_DATA_IN_BYTES_REGISTER/output_3"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/NUMBER_OR_DATA_IN_BYTES_REGISTER/output_2"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/NUMBER_OR_DATA_IN_BYTES_REGISTER/output_1"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/NUMBER_OR_DATA_IN_BYTES_REGISTER/output_0"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd14"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd13"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd1"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd2"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd3"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd4"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd5"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd6"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd7"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd8"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd9"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd10"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd11"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd12"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd15"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd16"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd17"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd18"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd19"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd20"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd21"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd22"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd23"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd24"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd25"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd26"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd27"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd28"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd29"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd30"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd31"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd32"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd33"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd34"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd35"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd36"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd37"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd39"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd38"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_15"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_14"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_13"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_12"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_11"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_10"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_9"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_8"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_7"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_6"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_5"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_4"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_3"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_2"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_1"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_0"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_reg_16"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_reg_15"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_reg_14"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_reg_13"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_reg_12"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_reg_11"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_reg_10"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_reg_9"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_reg_8"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_reg_7"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_reg_6"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_reg_5"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_reg_4"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_reg_3"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_reg_2"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_reg_1"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_reg_0"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_reg_31"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_reg_30"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_reg_29"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_reg_28"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_reg_27"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_reg_26"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_reg_25"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_reg_24"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_reg_23"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_reg_22"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_reg_21"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_reg_20"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_reg_19"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_reg_18"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_reg_17"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_reg_16"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_reg_15"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_reg_14"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_reg_13"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_reg_12"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_reg_11"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_reg_10"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_reg_9"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_reg_8"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_reg_7"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_reg_6"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_reg_5"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_reg_4"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_reg_3"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_reg_2"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_reg_1"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_reg_0"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/setupNow_reg"
+        BEL "EMAC_1/rate_counter_1/sek" BEL "EMAC_1/rate_counter_1/counts_0_0"
+        BEL "EMAC_1/rate_counter_1/counts_0_1" BEL
+        "EMAC_1/rate_counter_1/counts_0_2" BEL
+        "EMAC_1/rate_counter_1/counts_0_3" BEL
+        "EMAC_1/rate_counter_1/counts_0_4" BEL
+        "EMAC_1/rate_counter_1/counts_0_5" BEL
+        "EMAC_1/rate_counter_1/counts_0_6" BEL
+        "EMAC_1/rate_counter_1/counts_0_7" BEL
+        "EMAC_1/rate_counter_1/counts_0_8" BEL
+        "EMAC_1/rate_counter_1/counts_0_9" BEL
+        "EMAC_1/rate_counter_1/counts_0_10" BEL
+        "EMAC_1/rate_counter_1/counts_0_11" BEL
+        "EMAC_1/rate_counter_1/counts_0_12" BEL
+        "EMAC_1/rate_counter_1/counts_0_13" BEL
+        "EMAC_1/rate_counter_1/counts_0_14" BEL
+        "EMAC_1/rate_counter_1/counts_0_15" BEL
+        "EMAC_1/rate_counter_1/counts_0_16" BEL
+        "EMAC_1/rate_counter_1/counts_0_17" BEL
+        "EMAC_1/rate_counter_1/counts_0_18" BEL
+        "EMAC_1/rate_counter_1/counts_0_19" BEL
+        "EMAC_1/rate_counter_1/counts_0_20" BEL
+        "EMAC_1/rate_counter_1/counts_0_21" BEL
+        "EMAC_1/rate_counter_1/counts_0_22" BEL
+        "EMAC_1/rate_counter_1/counts_0_23" BEL
+        "EMAC_1/rate_counter_1/counts_0_24" BEL
+        "EMAC_1/rate_counter_1/counts_0_25" BEL
+        "EMAC_1/rate_counter_1/counts_0_26" BEL
+        "EMAC_1/rate_counter_1/counts_0_27" BEL
+        "EMAC_1/rate_counter_1/counts_0_28" BEL
+        "EMAC_1/rate_counter_1/counts_0_29" BEL
+        "EMAC_1/rate_counter_1/counts_0_30" BEL
+        "EMAC_1/rate_counter_1/counts_0_31" BEL
+        "EMAC_1/rate_counter_1/counts_1_0" BEL
+        "EMAC_1/rate_counter_1/counts_1_1" BEL
+        "EMAC_1/rate_counter_1/counts_1_2" BEL
+        "EMAC_1/rate_counter_1/counts_1_3" BEL
+        "EMAC_1/rate_counter_1/counts_1_4" BEL
+        "EMAC_1/rate_counter_1/counts_1_5" BEL
+        "EMAC_1/rate_counter_1/counts_1_6" BEL
+        "EMAC_1/rate_counter_1/counts_1_7" BEL
+        "EMAC_1/rate_counter_1/counts_1_8" BEL
+        "EMAC_1/rate_counter_1/counts_1_9" BEL
+        "EMAC_1/rate_counter_1/counts_1_10" BEL
+        "EMAC_1/rate_counter_1/counts_1_11" BEL
+        "EMAC_1/rate_counter_1/counts_1_12" BEL
+        "EMAC_1/rate_counter_1/counts_1_13" BEL
+        "EMAC_1/rate_counter_1/counts_1_14" BEL
+        "EMAC_1/rate_counter_1/counts_1_15" BEL
+        "EMAC_1/rate_counter_1/counts_1_16" BEL
+        "EMAC_1/rate_counter_1/counts_1_17" BEL
+        "EMAC_1/rate_counter_1/counts_1_18" BEL
+        "EMAC_1/rate_counter_1/counts_1_19" BEL
+        "EMAC_1/rate_counter_1/counts_1_20" BEL
+        "EMAC_1/rate_counter_1/counts_1_21" BEL
+        "EMAC_1/rate_counter_1/counts_1_22" BEL
+        "EMAC_1/rate_counter_1/counts_1_23" BEL
+        "EMAC_1/rate_counter_1/counts_1_24" BEL
+        "EMAC_1/rate_counter_1/counts_1_25" BEL
+        "EMAC_1/rate_counter_1/counts_1_26" BEL
+        "EMAC_1/rate_counter_1/counts_1_27" BEL
+        "EMAC_1/rate_counter_1/counts_1_28" BEL
+        "EMAC_1/rate_counter_1/counts_1_29" BEL
+        "EMAC_1/rate_counter_1/counts_1_30" BEL
+        "EMAC_1/rate_counter_1/counts_1_31" BEL "EMAC_1/rate_counter_1/din_0"
+        BEL "EMAC_1/rate_counter_1/din_1" BEL "EMAC_1/rate_counter_1/din_2"
+        BEL "EMAC_1/rate_counter_1/din_3" BEL "EMAC_1/rate_counter_1/din_4"
+        BEL "EMAC_1/rate_counter_1/din_5" BEL "EMAC_1/rate_counter_1/din_6"
+        BEL "EMAC_1/rate_counter_1/din_7" BEL "EMAC_1/rate_counter_1/count1_0"
+        BEL "EMAC_1/rate_counter_1/count1_1" BEL
+        "EMAC_1/rate_counter_1/count1_2" BEL "EMAC_1/rate_counter_1/count1_3"
+        BEL "EMAC_1/rate_counter_1/count1_4" BEL
+        "EMAC_1/rate_counter_1/count1_5" BEL "EMAC_1/rate_counter_1/we" BEL
+        "EMAC_1/rate_counter_1/counts_31_0" BEL
+        "EMAC_1/rate_counter_1/counts_31_1" BEL
+        "EMAC_1/rate_counter_1/counts_31_2" BEL
+        "EMAC_1/rate_counter_1/counts_31_3" BEL
+        "EMAC_1/rate_counter_1/counts_31_4" BEL
+        "EMAC_1/rate_counter_1/counts_31_5" BEL
+        "EMAC_1/rate_counter_1/counts_31_6" BEL
+        "EMAC_1/rate_counter_1/counts_31_7" BEL
+        "EMAC_1/rate_counter_1/counts_31_8" BEL
+        "EMAC_1/rate_counter_1/counts_31_9" BEL
+        "EMAC_1/rate_counter_1/counts_31_10" BEL
+        "EMAC_1/rate_counter_1/counts_31_11" BEL
+        "EMAC_1/rate_counter_1/counts_31_12" BEL
+        "EMAC_1/rate_counter_1/counts_31_13" BEL
+        "EMAC_1/rate_counter_1/counts_31_14" BEL
+        "EMAC_1/rate_counter_1/counts_31_15" BEL
+        "EMAC_1/rate_counter_1/counts_31_16" BEL
+        "EMAC_1/rate_counter_1/counts_31_17" BEL
+        "EMAC_1/rate_counter_1/counts_31_18" BEL
+        "EMAC_1/rate_counter_1/counts_31_19" BEL
+        "EMAC_1/rate_counter_1/counts_31_20" BEL
+        "EMAC_1/rate_counter_1/counts_31_21" BEL
+        "EMAC_1/rate_counter_1/counts_31_22" BEL
+        "EMAC_1/rate_counter_1/counts_31_23" BEL
+        "EMAC_1/rate_counter_1/counts_31_24" BEL
+        "EMAC_1/rate_counter_1/counts_31_25" BEL
+        "EMAC_1/rate_counter_1/counts_31_26" BEL
+        "EMAC_1/rate_counter_1/counts_31_27" BEL
+        "EMAC_1/rate_counter_1/counts_31_28" BEL
+        "EMAC_1/rate_counter_1/counts_31_29" BEL
+        "EMAC_1/rate_counter_1/counts_31_30" BEL
+        "EMAC_1/rate_counter_1/counts_31_31" BEL
+        "EMAC_1/rate_counter_1/en_counter" BEL
+        "EMAC_1/rate_counter_1/edge_detect_coincidence/s_0" BEL
+        "EMAC_1/rate_counter_1/edge_detect_coincidence/s_1" BEL
+        "EMAC_1/rate_counter_1/edge_detect_coincidence/s_2" BEL
+        "EMAC_1/rate_counter_1/G_edge_det[1].edge_detect_1/s_0" BEL
+        "EMAC_1/rate_counter_1/G_edge_det[1].edge_detect_1/s_1" BEL
+        "EMAC_1/rate_counter_1/G_edge_det[1].edge_detect_1/s_2" BEL
+        "EMAC_1/rate_counter_1/G_edge_det[0].edge_detect_1/s_0" BEL
+        "EMAC_1/rate_counter_1/G_edge_det[0].edge_detect_1/s_1" BEL
+        "EMAC_1/rate_counter_1/G_edge_det[0].edge_detect_1/s_2" BEL
+        "EMAC_1/rate_counter_1/state_FSM_FFd3" BEL
+        "EMAC_1/rate_counter_1/state_FSM_FFd4" BEL
+        "EMAC_1/rate_counter_1/state_FSM_FFd5" BEL
+        "EMAC_1/rate_counter_1/state_FSM_FFd6" BEL
+        "EMAC_1/rate_counter_1/state_FSM_FFd7" BEL
+        "EMAC_1/rate_counter_1/state_FSM_FFd8" BEL
+        "EMAC_1/rate_counter_1/state_FSM_FFd2" BEL
+        "EMAC_1/rate_counter_1/state_FSM_FFd1" BEL "EMAC_1/state_FSM_FFd3" BEL
+        "EMAC_1/state_FSM_FFd4" BEL "EMAC_1/state_FSM_FFd5" BEL
+        "EMAC_1/state_FSM_FFd8" BEL "EMAC_1/state_FSM_FFd7" BEL
+        "EMAC_1/state_FSM_FFd6" BEL "EMAC_1/state_FSM_FFd2" BEL
+        "EMAC_1/state_FSM_FFd1" BEL "EMAC_1/bufg_client_rx_0" BEL
+        "EMAC_1/bufg_client_tx_0" BEL "EMAC_1/transmit_start_enable_i" BEL
+        "EMAC_1/transmit_data_length_i_8" BEL
+        "EMAC_1/transmit_data_length_i_7" BEL "EMAC_1/dout_fifo_tmp_7" BEL
+        "EMAC_1/dout_fifo_tmp_6" BEL "EMAC_1/dout_fifo_tmp_5" BEL
+        "EMAC_1/dout_fifo_tmp_4" BEL "EMAC_1/dout_fifo_tmp_3" BEL
+        "EMAC_1/dout_fifo_tmp_2" BEL "EMAC_1/dout_fifo_tmp_1" BEL
+        "EMAC_1/dout_fifo_tmp_0" BEL "EMAC_1/transmit_data_length_i_5" BEL
+        "EMAC_1/bytes_to_send_8" BEL "EMAC_1/bytes_to_send_7" BEL
+        "EMAC_1/bytes_to_send_6" BEL "EMAC_1/bytes_to_send_5" BEL
+        "EMAC_1/bytes_to_send_4" BEL "EMAC_1/bytes_to_send_3" BEL
+        "EMAC_1/bytes_to_send_2" BEL "EMAC_1/bytes_to_send_1" BEL
+        "EMAC_1/bytes_to_send_0" BEL "EMAC_1/transmit_data_length_i_6" BEL
+        "EMAC_1/transmit_data_length_i_3" BEL
+        "EMAC_1/transmit_data_length_i_2" BEL
+        "EMAC_1/transmit_data_length_i_4" BEL
+        "EMAC_1/transmit_data_length_i_1" BEL
+        "EMAC_1/transmit_data_length_i_0" BEL "EMAC_1/rd_en_fifo" BEL
+        "EMAC_1/transmit_data_input_bus_i_7" BEL
+        "EMAC_1/transmit_data_input_bus_i_6" BEL
+        "EMAC_1/transmit_data_input_bus_i_5" BEL
+        "EMAC_1/transmit_data_input_bus_i_4" BEL
+        "EMAC_1/transmit_data_input_bus_i_3" BEL
+        "EMAC_1/transmit_data_input_bus_i_2" BEL
+        "EMAC_1/transmit_data_input_bus_i_1" BEL
+        "EMAC_1/transmit_data_input_bus_i_0" BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/tx_data_valid" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_0_7"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_0_6"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_0_5"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_0_4"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_0_3"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_0_2"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_0_1"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_0_0"
+        BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd7"
+        BEL "EMAC_1/rate_counter_1/ucnt_0" BEL "EMAC_1/rate_counter_1/ucnt_1"
+        BEL "EMAC_1/rate_counter_1/ucnt_2" BEL "EMAC_1/rate_counter_1/ucnt_3"
+        BEL "EMAC_1/rate_counter_1/ucnt_4" BEL "EMAC_1/rate_counter_1/ucnt_5"
+        BEL "EMAC_1/rate_counter_1/ucnt_6" BEL "EMAC_1/rate_counter_1/ucnt_7"
+        BEL "EMAC_1/rate_counter_1/ucnt_8" BEL "EMAC_1/rate_counter_1/ucnt_9"
+        BEL "EMAC_1/rate_counter_1/ucnt_10" BEL
+        "EMAC_1/rate_counter_1/ucnt_11" BEL "EMAC_1/rate_counter_1/ucnt_12"
+        BEL "EMAC_1/rate_counter_1/ucnt_13" BEL
+        "EMAC_1/rate_counter_1/ucnt_14" BEL "EMAC_1/rate_counter_1/ucnt_15"
+        BEL "EMAC_1/rate_counter_1/ucnt_16" BEL
+        "EMAC_1/rate_counter_1/ucnt_17" BEL "EMAC_1/rate_counter_1/ucnt_18"
+        BEL "EMAC_1/rate_counter_1/ucnt_19" BEL
+        "EMAC_1/rate_counter_1/ucnt_20" BEL "EMAC_1/rate_counter_1/ucnt_21"
+        BEL "EMAC_1/rate_counter_1/ucnt_22" BEL
+        "EMAC_1/rate_counter_1/ucnt_23" BEL "EMAC_1/rate_counter_1/ucnt_24"
+        BEL "EMAC_1/rate_counter_1/ucnt_25" BEL
+        "EMAC_1/rate_counter_1/ucnt_26" BEL "EMAC_1/rate_counter_1/ucnt_27"
+        BEL "EMAC_1/rate_counter_1/ucnt_28" BEL
+        "EMAC_1/rate_counter_1/ucnt_29" BEL "EMAC_1/rate_counter_1/ucnt_30"
+        BEL "EMAC_1/rate_counter_1/ucnt_31" BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd22_1"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/qspo_int_0"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/qspo_int_1"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/qspo_int_2"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/qspo_int_3"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/qspo_int_4"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/qspo_int_5"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/qspo_int_6"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/qspo_int_7"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram1"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram2"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram3"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram4"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram5"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram6"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram7"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/Mram_ram8"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TARGET_LENGTH_1/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/gen_output_reg.output_reg/fd/output_1"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TARGET_HEADER_CHECKSUM_1/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/gen_output_reg.output_reg/fd/output_1"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TARGET_TOTAL_LENGTH_1/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/gen_output_reg.output_reg/fd/output_1"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COMP_TO_TARGET_LAST_BYTE/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/gen_output_reg.output_reg/fd/output_1"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/IPV4_LUT_INDEXER_port_map/LUT_END_CHECK/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/gen_output_reg.output_reg/fd/output_1"
+        BEL "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/gr1.gdcf.dc/dc/count_0" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/gr1.gdcf.dc/dc/count_1" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/gr1.gdcf.dc/dc/count_2" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/gr1.gdcf.dc/dc/count_3" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/gr1.gdcf.dc/dc/count_4" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/gr1.gdcf.dc/dc/count_5" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/gr1.gdcf.dc/dc/count_6" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/gr1.gdcf.dc/dc/count_7" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/gr1.gdcf.dc/dc/count_8" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.wr/gwss.wsts/wr_rst_d1" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/rd_rst_asreg_d2" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/wr_rst_asreg_d2" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/rd_rst_asreg_d1" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/wr_rst_asreg" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/wr_rst_asreg_d1" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/rd_rst_asreg" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/rd_rst_reg_2" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/rd_rst_reg_0" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/wr_rst_reg_1" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/rpntr/count_7" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/rpntr/count_6" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/rpntr/count_5" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/rpntr/count_4" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/rpntr/count_3" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/rpntr/count_2" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/rpntr/count_1" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/rpntr/count_0" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/rpntr/count_d1_7" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/rpntr/count_d1_6" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/rpntr/count_d1_5" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/rpntr/count_d1_4" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/rpntr/count_d1_3" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/rpntr/count_d1_2" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/rpntr/count_d1_1" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/rpntr/count_d1_0" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/gr1.rfwft/user_valid" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/gr1.rfwft/empty_fwft_fb" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/gr1.rfwft/empty_fwft_i" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/gr1.rfwft/curr_fwft_state_1"
+        BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/gr1.rfwft/curr_fwft_state_0"
+        BEL "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_7" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_6" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_5" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_4" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_3" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_2" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_1" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_0" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d1_7" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d1_6" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d1_5" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d1_4" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d1_3" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d1_2" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d1_1" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.wr/wpntr/count_d1_0" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/mem/dout_i_7" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/mem/dout_i_6" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/mem/dout_i_5" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/mem/dout_i_4" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/mem/dout_i_3" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/mem/dout_i_2" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/mem/dout_i_1" BEL
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/mem/dout_i_0" PIN
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.WIDE_PRIM18.TDP_pins<54>"
+        PIN
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.WIDE_PRIM18.TDP_pins<56>"
+        PIN
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.WIDE_PRIM18.TDP_pins<82>"
+        PIN
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.WIDE_PRIM18.TDP_pins<54>"
+        PIN
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.WIDE_PRIM18.TDP_pins<56>"
+        PIN
+        "EMAC_1/send_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.WIDE_PRIM18.TDP_pins<82>"
         PIN
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<30>"
         PIN
@@ -343,14 +1112,93 @@ TIMEGRP phy_clk_rx0 = PIN
         "EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_0" BEL
         "EMAC_1/bufg_phy_rx_0";
 TIMEGRP tx_metastable_0 = BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_col_window_pipe_0"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_11"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_10"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_9"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_8"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_7"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_6"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_5"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_4"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_3"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_2"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_1"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_0"
+        BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_retran_frame_tog"
         BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_txfer_tog"
         BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_tran_frame_tog";
 TIMEGRP tx_fifo_rd_to_wr_0 = BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_pipe_1"
+        BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_retran_frame_tog"
         BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_11"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_10"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_9"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_8"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_7"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_6"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_5"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_4"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_3"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_2"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_1"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_0"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_txfer_tog"
+        BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_tran_frame_tog";
+TIMEGRP tx_addr_wr_0 = BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_11" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_10" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_9" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_8" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_7" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_6" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_5" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_4" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_3" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_2" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_1" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_0";
+TIMEGRP tx_addr_rd_0 = BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_11"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_10"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_9"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_8"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_7"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_6"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_5"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_4"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_3"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_2"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_1"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_0";
 TIMEGRP tx_fifo_wr_to_rd_0 = BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frame_in_fifo";
 TIMEGRP clk_tx0 = BEL "GMII_TX_CLK_0";
@@ -363,6 +1211,8 @@ TS_v5_emac_v1_5_clk_phy_rx0 = PERIOD TIMEGRP "v5_emac_v1_5_clk_phy_rx0" 7.5 ns
         HIGH 50%;
 ts_tx_meta_protect_0 = MAXDELAY FROM TIMEGRP "tx_metastable_0" 5 ns
         DATAPATHONLY;
+TS_tx_fifo_addr_0 = MAXDELAY FROM TIMEGRP "tx_addr_rd_0" TO TIMEGRP
+        "tx_addr_wr_0" 10 ns;
 TS_fe_TEMAC_tx_clk0 = PERIOD TIMEGRP "fe_TEMAC_tx_clk0" 7.7 ns HIGH 50%;
 TS_fe_TEMAC_clk_phy_rx0 = PERIOD TIMEGRP "fe_TEMAC_clk_phy_rx0" 7.5 ns HIGH
         50%;

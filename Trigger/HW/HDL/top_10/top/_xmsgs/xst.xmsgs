@@ -5,133 +5,133 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">131</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">131</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">135</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">135</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">138</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">138</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">141</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">141</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">144</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">144</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">147</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">147</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">152</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">152</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">155</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">155</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">158</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">158</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">161</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">161</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">164</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">164</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">167</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">167</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">172</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">172</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">174</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">174</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">177</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">177</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">179</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">179</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">192</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">192</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">196</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">196</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">209</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">209</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">212</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">212</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">217</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">217</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">220</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">220</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">232</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">232</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">237</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">237</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">249</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">249</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">253</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">253</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">259</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">259</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">262</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">262</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">272</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">272</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">276</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">276</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">286</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">286</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">290</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">290</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">299</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">299</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">303</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">303</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">313</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">313</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">321</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">321</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">326</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">326</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">330</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
+<msg type="warning" file="HDLParsers" num="817" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; Line <arg fmt="%d" index="2">330</arg>. Choice <arg fmt="%s" index="3">to_unsigned</arg> is not a locally static expression.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="3350" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd</arg>&quot; Line <arg fmt="%d" index="2">97</arg>. Null range: <arg fmt="%d" index="3">1</arg> downto <arg fmt="%d" index="4">2</arg>
+<msg type="warning" file="HDLParsers" num="3350" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd</arg>&quot; Line <arg fmt="%d" index="2">97</arg>. Null range: <arg fmt="%d" index="3">1</arg> downto <arg fmt="%d" index="4">2</arg>
 </msg>
 
-<msg type="warning" file="HDLParsers" num="3350" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd</arg>&quot; Line <arg fmt="%d" index="2">101</arg>. Null range: <arg fmt="%d" index="3">1</arg> downto <arg fmt="%d" index="4">2</arg>
+<msg type="warning" file="HDLParsers" num="3350" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd</arg>&quot; Line <arg fmt="%d" index="2">101</arg>. Null range: <arg fmt="%d" index="3">1</arg> downto <arg fmt="%d" index="4">2</arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/CRU/CRU.vhd</arg>&quot; line <arg fmt="%d" index="2">120</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">OBUFDS</arg>&gt;.
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/CRU/CRU.vhd</arg>&quot; line <arg fmt="%d" index="2">120</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">OBUFDS</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/CRU/CRU.vhd</arg>&quot; line <arg fmt="%d" index="2">125</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">ODDR</arg>&gt;.
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/CRU/CRU.vhd</arg>&quot; line <arg fmt="%d" index="2">125</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">ODDR</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/CRU/CRU.vhd</arg>&quot; line <arg fmt="%d" index="2">134</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">IBUFG</arg>&gt;.
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/CRU/CRU.vhd</arg>&quot; line <arg fmt="%d" index="2">134</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">IBUFG</arg>&gt;.
 </msg>
 
 <msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">trig_out_s_d&lt;4&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">sync_trigger</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
@@ -143,99 +143,117 @@
 <msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">coincidence_array&lt;3&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">sync_trigger</arg>&gt; has a constant value of <arg fmt="%s" index="3">00</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_example_design.vhd</arg>&quot; line <arg fmt="%d" index="2">477</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">RX_LL_FIFO_STATUS_0</arg>&apos; of component &apos;<arg fmt="%s" index="4">v5_emac_v1_5_locallink</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_example_design.vhd</arg>&quot; line <arg fmt="%d" index="2">488</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">RX_LL_FIFO_STATUS_0</arg>&apos; of component &apos;<arg fmt="%s" index="4">v5_emac_v1_5_locallink</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_example_design.vhd</arg>&quot; line <arg fmt="%d" index="2">637</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fifo_generator_v4_4</arg>&gt;.
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_example_design.vhd</arg>&quot; line <arg fmt="%d" index="2">768</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">fifo_generator_v4_4</arg>&gt;.
 </msg>
 
 <msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">idelayctrl_reset_0_r&lt;0&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">v5_emac_v1_5_example_design</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">transmit_start_enable</arg>&gt; in unit &lt;<arg fmt="%s" index="2">v5_emac_v1_5_example_design</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">transmit_data_length_i&lt;15&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">v5_emac_v1_5_example_design</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_locallink.vhd</arg>&quot; line <arg fmt="%d" index="2">404</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">tx_fifo_status</arg>&apos; of component &apos;<arg fmt="%s" index="4">eth_fifo_8</arg>&apos;.
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">transmit_data_length_i&lt;14&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">v5_emac_v1_5_example_design</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_locallink.vhd</arg>&quot; line <arg fmt="%d" index="2">404</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">tx_overflow</arg>&apos; of component &apos;<arg fmt="%s" index="4">eth_fifo_8</arg>&apos;.
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">transmit_data_length_i&lt;13&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">v5_emac_v1_5_example_design</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_locallink.vhd</arg>&quot; line <arg fmt="%d" index="2">404</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">rx_overflow</arg>&apos; of component &apos;<arg fmt="%s" index="4">eth_fifo_8</arg>&apos;.
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">transmit_data_length_i&lt;12&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">v5_emac_v1_5_example_design</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_block.vhd</arg>&quot; line <arg fmt="%d" index="2">375</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">EMAC0CLIENTRXDVLDMSW</arg>&apos; of component &apos;<arg fmt="%s" index="4">v5_emac_v1_5</arg>&apos;.
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">transmit_data_length_i&lt;11&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">v5_emac_v1_5_example_design</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/rx_client_fifo_8.vhd</arg>&quot; line <arg fmt="%d" index="2">279</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">transmit_data_length_i&lt;10&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">v5_emac_v1_5_example_design</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">transmit_data_length_i&lt;9&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">v5_emac_v1_5_example_design</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_locallink.vhd</arg>&quot; line <arg fmt="%d" index="2">404</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">tx_fifo_status</arg>&apos; of component &apos;<arg fmt="%s" index="4">eth_fifo_8</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_locallink.vhd</arg>&quot; line <arg fmt="%d" index="2">404</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">tx_overflow</arg>&apos; of component &apos;<arg fmt="%s" index="4">eth_fifo_8</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_locallink.vhd</arg>&quot; line <arg fmt="%d" index="2">404</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">rx_overflow</arg>&apos; of component &apos;<arg fmt="%s" index="4">eth_fifo_8</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_block.vhd</arg>&quot; line <arg fmt="%d" index="2">375</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">EMAC0CLIENTRXDVLDMSW</arg>&apos; of component &apos;<arg fmt="%s" index="4">v5_emac_v1_5</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/rx_client_fifo_8.vhd</arg>&quot; line <arg fmt="%d" index="2">279</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;rd_valid_pipe&gt;</arg>
 </msg>
 
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4_PACKET_TRANSMITTER.vhd</arg>&quot; line <arg fmt="%d" index="2">296</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4_PACKET_TRANSMITTER.vhd</arg>&quot; line <arg fmt="%d" index="2">296</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;rst&gt;</arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4_PACKET_TRANSMITTER.vhd</arg>&quot; line <arg fmt="%d" index="2">366</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">dist_mem_64x8</arg>&gt;.
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4_PACKET_TRANSMITTER.vhd</arg>&quot; line <arg fmt="%d" index="2">366</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">dist_mem_64x8</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/TARGET_EOF.vhd</arg>&quot; line <arg fmt="%d" index="2">66</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/TARGET_EOF.vhd</arg>&quot; line <arg fmt="%d" index="2">66</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;rst&gt;, &lt;count_end&gt;</arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/TARGET_EOF.vhd</arg>&quot; line <arg fmt="%d" index="2">89</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">comp_11b_equal</arg>&gt;.
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/TARGET_EOF.vhd</arg>&quot; line <arg fmt="%d" index="2">89</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">comp_11b_equal</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/COUNTER_11B_EN_TRANS.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/COUNTER_11B_EN_TRANS.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;rst&gt;</arg>
 </msg>
 
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/REG_16B_WREN.vhd</arg>&quot; line <arg fmt="%d" index="2">42</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/REG_16B_WREN.vhd</arg>&quot; line <arg fmt="%d" index="2">42</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;rst&gt;</arg>
 </msg>
 
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4_LUT_INDEXER.vhd</arg>&quot; line <arg fmt="%d" index="2">71</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4_LUT_INDEXER.vhd</arg>&quot; line <arg fmt="%d" index="2">71</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;rst&gt;, &lt;count_end&gt;</arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4_LUT_INDEXER.vhd</arg>&quot; line <arg fmt="%d" index="2">86</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">comp_6b_equal</arg>&gt;.
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4_LUT_INDEXER.vhd</arg>&quot; line <arg fmt="%d" index="2">86</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">comp_6b_equal</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/COUNTER_6B_LUT_FIFO_MODE.vhd</arg>&quot; line <arg fmt="%d" index="2">42</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/COUNTER_6B_LUT_FIFO_MODE.vhd</arg>&quot; line <arg fmt="%d" index="2">42</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;rst&gt;, &lt;funct_sel&gt;</arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/OVERRIDE_LUT_CONTROL.vhd</arg>&quot; line <arg fmt="%d" index="2">69</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">comp_6b_equal</arg>&gt;.
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/OVERRIDE_LUT_CONTROL.vhd</arg>&quot; line <arg fmt="%d" index="2">69</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">comp_6b_equal</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/OVERRIDE_LUT_CONTROL.vhd</arg>&quot; line <arg fmt="%d" index="2">81</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">comp_6b_equal</arg>&gt;.
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/OVERRIDE_LUT_CONTROL.vhd</arg>&quot; line <arg fmt="%d" index="2">81</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">comp_6b_equal</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/OVERRIDE_LUT_CONTROL.vhd</arg>&quot; line <arg fmt="%d" index="2">95</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">comp_6b_equal</arg>&gt;.
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/OVERRIDE_LUT_CONTROL.vhd</arg>&quot; line <arg fmt="%d" index="2">95</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">comp_6b_equal</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/ENABLE_USER_DATA_TRANSMISSION.vhd</arg>&quot; line <arg fmt="%d" index="2">44</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/ENABLE_USER_DATA_TRANSMISSION.vhd</arg>&quot; line <arg fmt="%d" index="2">44</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;rst&gt;</arg>
 </msg>
 
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; line <arg fmt="%d" index="2">118</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd</arg>&quot; line <arg fmt="%d" index="2">118</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;SrcMAC&gt;, &lt;SrcIP&gt;</arg>
 </msg>
 
 <msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">setupNow_n</arg>&gt; in unit &lt;<arg fmt="%s" index="2">IPV4WriteUDPHeader</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/IPv4_PACKET_RECEIVER.vhd</arg>&quot; line <arg fmt="%d" index="2">164</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">comp_11b_equal</arg>&gt;.
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/IPv4_PACKET_RECEIVER.vhd</arg>&quot; line <arg fmt="%d" index="2">164</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">comp_11b_equal</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/PACKET_RECEIVER_FSM.vhd</arg>&quot; line <arg fmt="%d" index="2">228</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/PACKET_RECEIVER_FSM.vhd</arg>&quot; line <arg fmt="%d" index="2">228</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;rst&gt;</arg>
 </msg>
 
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/REG_8b_wren.vhd</arg>&quot; line <arg fmt="%d" index="2">42</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/REG_8b_wren.vhd</arg>&quot; line <arg fmt="%d" index="2">42</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;rst&gt;</arg>
 </msg>
 
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">/media/disk2/trigger/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/COUNTER_11B_EN_RECEIV.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/COUNTER_11B_EN_RECEIV.vhd</arg>&quot; line <arg fmt="%d" index="2">41</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;rst&gt;</arg>
 </msg>
 
@@ -509,10 +527,16 @@
 <msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">LUTDataWrite</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">where_to_send</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">valid_out_usr_data_i</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
 <msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">valid_out_usr_data</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">usr_data_trans_phase_on</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">usr_data_output_bus_i</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">usr_data_output_bus</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -521,25 +545,46 @@
 <msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">tx_clk_0</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">transmit_data_output_bus_i</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">start_of_frame_O_i</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">source_ready_i</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">rx_sof_i</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
 <msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">rx_ll_src_rdy_n_0_i</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">rx_eof_i</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">refclk_ibufg_i</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">rd_en_fifo</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">input_word</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">input_word</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">input_bus_i</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">full_fifo</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">dout_fifo</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">end_of_frame_O_i</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">data_count_fifo</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">counter</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">REFCLK</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">prep_first_byte</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">DIP_SWITCH</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -560,53 +605,37 @@
 <msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 </msg>
 
-<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">ENABLE_USER_DATA_READ_port_map</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">IPV4_PACKET_TRANSMITTER_port_map</arg>&gt;.
-It will be removed from the design.
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">output_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">NUMBER_OR_DATA_IN_BYTES_REGISTER</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">15 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;output_1&gt; &lt;output_2&gt; &lt;output_3&gt; &lt;output_4&gt; &lt;output_5&gt; &lt;output_6&gt; &lt;output_7&gt; &lt;output_8&gt; &lt;output_9&gt; &lt;output_10&gt; &lt;output_11&gt; &lt;output_12&gt; &lt;output_13&gt; &lt;output_14&gt; &lt;output_15&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">usr_data_sel_prev</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ENABLE_USER_DATA_READ_port_map</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;usr_data_sel&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">usr_data_sel_prev</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ENABLE_USER_DATA_TRANSMISSION_port_map</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;usr_data_sel&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">transmit_data_input_bus_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">EMAC_1</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;transmit_data_input_bus_1&gt; &lt;transmit_data_input_bus_2&gt; &lt;transmit_data_input_bus_3&gt; &lt;transmit_data_input_bus_4&gt; &lt;transmit_data_input_bus_5&gt; &lt;transmit_data_input_bus_6&gt; &lt;transmit_data_input_bus_7&gt; </arg>
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">FFd2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">FSM</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wr_ovflow_dst_rdy</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wr_accept_pipe_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">rd_enable_delay</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wr_sof_pipe_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">output_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NUMBER_OR_DATA_IN_BYTES_REGISTER</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">count_en_sig</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TARGET_EOF_port_map</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">output_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NUMBER_OR_DATA_IN_BYTES_REGISTER</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">output_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NUMBER_OR_DATA_IN_BYTES_REGISTER</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">output_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NUMBER_OR_DATA_IN_BYTES_REGISTER</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">count_en_sig</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">IPV4_LUT_INDEXER_port_map</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">output_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NUMBER_OR_DATA_IN_BYTES_REGISTER</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">transmit_start_enable_reg</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">IPV4_PACKET_TRANSMITTER_port_map</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">output_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NUMBER_OR_DATA_IN_BYTES_REGISTER</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">source_ready</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">IPV4_PACKET_TRANSMITTER_port_map</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">output_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NUMBER_OR_DATA_IN_BYTES_REGISTER</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">output_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">NUMBER_OR_DATA_IN_BYTES_REGISTER</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">rd_enable_delay2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">wr_sof_pipe_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wr_addr_diff_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tx_fifo_i</arg>&gt;.
@@ -639,212 +668,6 @@ It will be removed from the design.
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">output_val_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MSbyte_REG</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wr_start_addr_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wr_accept_pipe_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wr_eof_pipe_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wr_data_pipe_1_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wr_data_pipe_1_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wr_data_pipe_1_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wr_data_pipe_1_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wr_data_pipe_1_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wr_data_pipe_1_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wr_data_pipe_1_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wr_data_pipe_1_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">FFd1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">FSM</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">wr_eof_bram_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">wr_data_bram_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">wr_data_bram_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">wr_data_bram_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">wr_data_bram_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">wr_data_bram_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">wr_data_bram_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">wr_data_bram_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">wr_data_bram_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">wr_accept_bram</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">wr_data_pipe_0_0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">tx_fifo_i</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">wr_data_pipe_0_1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">tx_fifo_i</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">wr_data_pipe_0_2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">tx_fifo_i</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">wr_data_pipe_0_3</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">tx_fifo_i</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">wr_data_pipe_0_4</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">tx_fifo_i</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">wr_data_pipe_0_5</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">tx_fifo_i</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">wr_data_pipe_0_6</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">tx_fifo_i</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">sel_total_length_LSBs</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">OVERRIDE_LUT_CONTROL_port_map</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">CheckSumTemplate_i_0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Inst_IPV4WriteUDPHeader</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">CheckSumTemplate_i_1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Inst_IPV4WriteUDPHeader</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">CheckSumTemplate_i_2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Inst_IPV4WriteUDPHeader</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">CheckSumTemplate_i_3</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Inst_IPV4WriteUDPHeader</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">CheckSumTemplate_i_4</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Inst_IPV4WriteUDPHeader</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">CheckSumTemplate_i_5</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Inst_IPV4WriteUDPHeader</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">CheckSumTemplate_i_6</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Inst_IPV4WriteUDPHeader</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">CheckSumTemplate_i_7</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Inst_IPV4WriteUDPHeader</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">CheckSumTemplate_i_8</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Inst_IPV4WriteUDPHeader</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">CheckSumTemplate_i_9</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Inst_IPV4WriteUDPHeader</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">CheckSumTemplate_i_10</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Inst_IPV4WriteUDPHeader</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">CheckSumTemplate_i_11</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Inst_IPV4WriteUDPHeader</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">CheckSumTemplate_i_12</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Inst_IPV4WriteUDPHeader</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">CheckSumTemplate_i_13</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Inst_IPV4WriteUDPHeader</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">CheckSumTemplate_i_14</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Inst_IPV4WriteUDPHeader</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">CheckSumTemplate_i_15</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Inst_IPV4WriteUDPHeader</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">sel_header_checksum_LSBs</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">OVERRIDE_LUT_CONTROL_port_map</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">wr_data_pipe_0_7</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">tx_fifo_i</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wr_start_addr_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wr_start_addr_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wr_start_addr_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wr_start_addr_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wr_start_addr_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wr_start_addr_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wr_start_addr_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wr_start_addr_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wr_start_addr_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wr_start_addr_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wr_start_addr_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">tx_fifo_i</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wr_eof_pipe_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tx_fifo_i</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wr_eof_state_reg</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tx_fifo_i</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">wr_col_window_expire</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tx_fifo_i</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">sel_length_LSBs</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">OVERRIDE_LUT_CONTROL_port_map</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">ALLOW_ZERO_UDP_CHECKSUM_port_map</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">IPV4_PACKET_TRANSMITTER_port_map</arg>&gt;.
-It will be removed from the design.
-</msg>
-
-<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">ENABLE_USER_DATA_TRANSMISSION_port_map</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">IPV4_PACKET_TRANSMITTER_port_map</arg>&gt;.
-It will be removed from the design.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">transmit_data_input_bus_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">EMAC_1</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="old" > FFs/Latches &lt;<arg fmt="%s" index="1">output</arg>&lt;<arg fmt="%d" index="2">15</arg>:<arg fmt="%d" index="3">0</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">REG_16B_WREN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2404" delta="old" > FFs/Latches &lt;<arg fmt="%s" index="1">transmit_data_length</arg>&lt;<arg fmt="%d" index="2">15</arg>:<arg fmt="%d" index="3">1</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">v5_emac_v1_5_example_design</arg>&gt;.
-</msg>
-
 <msg type="info" file="Xst" num="2774" delta="old" >HDL ADVISOR - <arg fmt="%s" index="1">ASYNC_REG</arg> <arg fmt="%s" index="2">property</arg> attached to signal <arg fmt="%s" index="3">wr_rd_addr</arg> may hinder XST clustering optimizations.
 </msg>
 
@@ -857,19 +680,7 @@ It will be removed from the design.
 <msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">rd_enable_delay2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">tx_client_fifo_8</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">count_en_sig</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">IPV4_LUT_INDEXER</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">source_ready</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">IPV4_PACKET_TRANSMITTER</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">transmit_start_enable_reg</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">IPV4_PACKET_TRANSMITTER</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">usr_data_sel_prev</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ENABLE_USER_DATA_TRANSMISSION</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;usr_data_sel&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">transmit_data_input_bus_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">v5_emac_v1_5_example_design</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">8 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;transmit_data_input_bus_1&gt; &lt;transmit_data_input_bus_2&gt; &lt;transmit_data_input_bus_3&gt; &lt;transmit_data_input_bus_4&gt; &lt;transmit_data_input_bus_5&gt; &lt;transmit_data_input_bus_6&gt; &lt;transmit_data_input_bus_7&gt; &lt;transmit_data_length&gt; </arg>
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MSbyte_REG/output_val_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">IPv4_PACKET_RECEIVER</arg>&gt;.
@@ -885,60 +696,6 @@ It will be removed from the design.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MSbyte_REG/output_val_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">IPv4_PACKET_RECEIVER</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">TARGET_EOF_port_map/count_en_sig</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">IPV4_PACKET_TRANSMITTER</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">IPV4_PACKET_TRANSMITTER</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">IPV4_LUT_INDEXER_port_map/LUT_INDEXER_MODULE/value_O_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">IPV4_PACKET_TRANSMITTER</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">IPV4_LUT_INDEXER_port_map/LUT_INDEXER_MODULE/value_O_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">IPV4_PACKET_TRANSMITTER</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">IPV4_LUT_INDEXER_port_map/LUT_INDEXER_MODULE/value_O_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">IPV4_PACKET_TRANSMITTER</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">IPV4_LUT_INDEXER_port_map/LUT_INDEXER_MODULE/value_O_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">IPV4_PACKET_TRANSMITTER</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">IPV4_LUT_INDEXER_port_map/LUT_INDEXER_MODULE/value_O_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">IPV4_PACKET_TRANSMITTER</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">IPV4_LUT_INDEXER_port_map/LUT_INDEXER_MODULE/value_O_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">IPV4_PACKET_TRANSMITTER</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">IPV4_PACKET_TRANSMITTER</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">IPV4_PACKET_TRANSMITTER</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">IPV4_PACKET_TRANSMITTER</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">IPV4_PACKET_TRANSMITTER</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">IPV4_PACKET_TRANSMITTER</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">IPV4_PACKET_TRANSMITTER</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">IPV4_PACKET_TRANSMITTER</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">IPV4_PACKET_TRANSMITTER</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">IPV4_PACKET_TRANSMITTER</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">IPV4_PACKET_TRANSMITTER</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">ideld0</arg> in unit <arg fmt="%s" index="2">gmii_if</arg> of type <arg fmt="%s" index="3">IDELAY</arg> has been replaced by <arg fmt="%s" index="4">IODELAY</arg>
@@ -983,367 +740,133 @@ It will be removed from the design.
 <msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">ramgen_u</arg> in unit <arg fmt="%s" index="2">rx_client_fifo_8</arg> of type <arg fmt="%s" index="3">RAMB16_S9_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_ovflow_dst_rdy</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/NUMBER_OR_DATA_IN_BYTES_REGISTER/output_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_accept_pipe_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/NUMBER_OR_DATA_IN_BYTES_REGISTER/output_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_1_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/NUMBER_OR_DATA_IN_BYTES_REGISTER/output_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_1_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/NUMBER_OR_DATA_IN_BYTES_REGISTER/output_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_1_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/NUMBER_OR_DATA_IN_BYTES_REGISTER/output_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_1_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/NUMBER_OR_DATA_IN_BYTES_REGISTER/output_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_1_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/NUMBER_OR_DATA_IN_BYTES_REGISTER/output_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_1_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_diff_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_1_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_diff_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_1_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_fifo_status_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_accept_pipe_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_fifo_status_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_bram_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_fifo_status_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_bram_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_fifo_status_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_bram_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_diff_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_bram_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_diff_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_bram_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_fifo_status_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_bram_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_fifo_status_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_bram_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_src_rdy_n</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_bram_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_fifo_status_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_accept_bram</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_fifo_status_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_diff_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/tx_pre_reset_0_i_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;EMAC_1/ll_pre_reset_0_i_0&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_diff_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">top</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">EMAC_1/v5_emac_ll/tx_pre_reset_0_i&lt;0&gt;</arg> and <arg fmt="%s" index="3">EMAC_1/ll_pre_reset_0_i&lt;0&gt;</arg> <arg fmt="%s" index="4">EMAC_1/ll_pre_reset_0_i&lt;0&gt;</arg> signal will be lost.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_fifo_status_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/tx_pre_reset_0_i_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;EMAC_1/ll_pre_reset_0_i_1&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_fifo_status_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">top</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">EMAC_1/v5_emac_ll/tx_pre_reset_0_i&lt;1&gt;</arg> and <arg fmt="%s" index="3">EMAC_1/ll_pre_reset_0_i&lt;1&gt;</arg> <arg fmt="%s" index="4">EMAC_1/ll_pre_reset_0_i&lt;1&gt;</arg> signal will be lost.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_fifo_status_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/tx_pre_reset_0_i_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;EMAC_1/ll_pre_reset_0_i_2&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_fifo_status_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">top</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">EMAC_1/v5_emac_ll/tx_pre_reset_0_i&lt;2&gt;</arg> and <arg fmt="%s" index="3">EMAC_1/ll_pre_reset_0_i&lt;2&gt;</arg> <arg fmt="%s" index="4">EMAC_1/ll_pre_reset_0_i&lt;2&gt;</arg> signal will be lost.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_diff_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/tx_pre_reset_0_i_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;EMAC_1/ll_pre_reset_0_i_3&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_diff_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">top</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">EMAC_1/v5_emac_ll/tx_pre_reset_0_i&lt;3&gt;</arg> and <arg fmt="%s" index="3">EMAC_1/ll_pre_reset_0_i&lt;3&gt;</arg> <arg fmt="%s" index="4">EMAC_1/ll_pre_reset_0_i&lt;3&gt;</arg> signal will be lost.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_fifo_status_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/tx_pre_reset_0_i_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;EMAC_1/ll_pre_reset_0_i_4&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_fifo_status_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">top</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">EMAC_1/v5_emac_ll/tx_pre_reset_0_i&lt;4&gt;</arg> and <arg fmt="%s" index="3">EMAC_1/ll_pre_reset_0_i&lt;4&gt;</arg> <arg fmt="%s" index="4">EMAC_1/ll_pre_reset_0_i&lt;4&gt;</arg> signal will be lost.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_src_rdy_n</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/tx_pre_reset_0_i_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;EMAC_1/ll_pre_reset_0_i_5&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_fifo_status_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="warning" file="Xst" num="638" delta="old" >in unit <arg fmt="%s" index="1">top</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">EMAC_1/v5_emac_ll/tx_pre_reset_0_i&lt;5&gt;</arg> and <arg fmt="%s" index="3">EMAC_1/ll_pre_reset_0_i&lt;5&gt;</arg> <arg fmt="%s" index="4">EMAC_1/ll_pre_reset_0_i&lt;5&gt;</arg> signal will be lost.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_fifo_status_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/tx_reset_0_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;EMAC_1/ll_reset_0_i&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/ENABLE_USER_DATA_READ_port_map/usr_data_sel_prev</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/grf.rf/rstblk/rd_rst_reg_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BU2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/grf.rf/rstblk/rd_rst_reg_0&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_7</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/grf.rf/gl0.rd/gr1.rfwft/empty_fwft_fb</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BU2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/grf.rf/gl0.rd/gr1.rfwft/empty_fwft_i&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_15</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/grf.rf/gl0.rd/gr1.rfwft/user_valid</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BU2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/grf.rf/gl0.rd/gr1.rfwft/curr_fwft_state_0&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_0_7</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BU2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_6</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/grf.rf/rstblk/rd_rst_reg_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BU2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/grf.rf/rstblk/rd_rst_reg_0&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_14</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/grf.rf/gl0.rd/gr1.rfwft/empty_fwft_fb</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BU2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/grf.rf/gl0.rd/gr1.rfwft/empty_fwft_i&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_0_6</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/grf.rf/gl0.rd/gr1.rfwft/user_valid</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BU2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/grf.rf/gl0.rd/gr1.rfwft/curr_fwft_state_0&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_5</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BU2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_13</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="info" file="Xst" num="741" delta="old" >HDL ADVISOR - A <arg fmt="%d" index="1">12</arg>-bit shift register was found for signal &lt;<arg fmt="%s" index="2">EMAC_1/idelayctrl_reset_0_r_12</arg>&gt; and currently occupies <arg fmt="%d" index="3">12</arg> logic cells (<arg fmt="%d" index="4">6</arg> slices). Removing the set/reset logic would take advantage of SRL<arg fmt="%d" index="5">32</arg> (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
 </msg>
 
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_0_5</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_4</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_12</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_0_4</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_3</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_11</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_0_3</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_10</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_0_2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_9</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_0_1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/sel_total_length_LSBs</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/transmit_data_input_bus_0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/sel_header_checksum_LSBs</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/CheckSumTemplate_i_8</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_0_0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_eof_pipe_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_sof_pipe_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_start_addr_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_state_FSM_FFd1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_state_FSM_FFd2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_eof_bram_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/ALLOW_ZERO_UDP_CHECKSUM_port_map/output_to_datasel</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/ALLOW_ZERO_UDP_CHECKSUM_port_map/input_reg</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/ENABLE_USER_DATA_TRANSMISSION_port_map/usr_data_sel_prev</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/sel_length_LSBs</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/last_byte_reg_out</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_eof_pipe_0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_sof_pipe_0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_col_window_expire</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_eof_state_reg</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2398" delta="new" >RAMs &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u</arg>&gt;, &lt;<arg fmt="%s" index="2">EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l</arg>&gt; are equivalent
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/tx_pre_reset_0_i_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;EMAC_1/ll_pre_reset_0_i_0&gt; </arg>
-</msg>
-
-<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">top</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">EMAC_1/v5_emac_ll/tx_pre_reset_0_i&lt;0&gt;</arg> and <arg fmt="%s" index="3">EMAC_1/ll_pre_reset_0_i&lt;0&gt;</arg> <arg fmt="%s" index="4">EMAC_1/ll_pre_reset_0_i&lt;0&gt;</arg> signal will be lost.
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/tx_pre_reset_0_i_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;EMAC_1/ll_pre_reset_0_i_1&gt; </arg>
-</msg>
-
-<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">top</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">EMAC_1/v5_emac_ll/tx_pre_reset_0_i&lt;1&gt;</arg> and <arg fmt="%s" index="3">EMAC_1/ll_pre_reset_0_i&lt;1&gt;</arg> <arg fmt="%s" index="4">EMAC_1/ll_pre_reset_0_i&lt;1&gt;</arg> signal will be lost.
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/tx_pre_reset_0_i_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;EMAC_1/ll_pre_reset_0_i_2&gt; </arg>
-</msg>
-
-<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">top</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">EMAC_1/v5_emac_ll/tx_pre_reset_0_i&lt;2&gt;</arg> and <arg fmt="%s" index="3">EMAC_1/ll_pre_reset_0_i&lt;2&gt;</arg> <arg fmt="%s" index="4">EMAC_1/ll_pre_reset_0_i&lt;2&gt;</arg> signal will be lost.
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/tx_pre_reset_0_i_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;EMAC_1/ll_pre_reset_0_i_3&gt; </arg>
-</msg>
-
-<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">top</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">EMAC_1/v5_emac_ll/tx_pre_reset_0_i&lt;3&gt;</arg> and <arg fmt="%s" index="3">EMAC_1/ll_pre_reset_0_i&lt;3&gt;</arg> <arg fmt="%s" index="4">EMAC_1/ll_pre_reset_0_i&lt;3&gt;</arg> signal will be lost.
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/tx_pre_reset_0_i_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;EMAC_1/ll_pre_reset_0_i_4&gt; </arg>
-</msg>
-
-<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">top</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">EMAC_1/v5_emac_ll/tx_pre_reset_0_i&lt;4&gt;</arg> and <arg fmt="%s" index="3">EMAC_1/ll_pre_reset_0_i&lt;4&gt;</arg> <arg fmt="%s" index="4">EMAC_1/ll_pre_reset_0_i&lt;4&gt;</arg> signal will be lost.
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/tx_pre_reset_0_i_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;EMAC_1/ll_pre_reset_0_i_5&gt; </arg>
-</msg>
-
-<msg type="warning" file="Xst" num="638" delta="new" >in unit <arg fmt="%s" index="1">top</arg> Conflict on KEEP property on signal <arg fmt="%s" index="2">EMAC_1/v5_emac_ll/tx_pre_reset_0_i&lt;5&gt;</arg> and <arg fmt="%s" index="3">EMAC_1/ll_pre_reset_0_i&lt;5&gt;</arg> <arg fmt="%s" index="4">EMAC_1/ll_pre_reset_0_i&lt;5&gt;</arg> signal will be lost.
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">EMAC_1/v5_emac_ll/tx_reset_0_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;EMAC_1/ll_reset_0_i&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/grf.rf/rstblk/rd_rst_reg_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BU2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/grf.rf/rstblk/rd_rst_reg_0&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BU2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BU2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/grf.rf/rstblk/rd_rst_reg_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BU2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/grf.rf/rstblk/rd_rst_reg_0&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BU2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BU2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="741" delta="new" >HDL ADVISOR - A <arg fmt="%d" index="1">12</arg>-bit shift register was found for signal &lt;<arg fmt="%s" index="2">EMAC_1/idelayctrl_reset_0_r_12</arg>&gt; and currently occupies <arg fmt="%d" index="3">12</arg> logic cells (<arg fmt="%d" index="4">6</arg> slices). Removing the set/reset logic would take advantage of SRL<arg fmt="%d" index="5">32</arg> (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
-</msg>
-
-<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 </msg>
 
 </messages>

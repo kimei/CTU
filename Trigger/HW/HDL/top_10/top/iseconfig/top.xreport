@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="1.7" >
  <header>
-  <DateModified>2011-06-07T15:05:19</DateModified>
+  <DateModified>2011-06-16T09:39:32</DateModified>
   <ModuleName>top</ModuleName>
-  <SummaryTimeStamp>2011-06-07T10:00:30</SummaryTimeStamp>
+  <SummaryTimeStamp>2011-06-14T13:25:12</SummaryTimeStamp>
   <DateInitialized>2011-05-16T09:37:36</DateInitialized>
-  <ImplementationReportsDirectory>/media/disk2/trigger/Trigger/HW/HDL/top_10/top/</ImplementationReportsDirectory>
-  <SavedFilePath>/media/disk2/trigger/Trigger/HW/HDL/top_10/top/iseconfig/top.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/</ImplementationReportsDirectory>
+  <SavedFilePath>/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/iseconfig/top.xreport</SavedFilePath>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>
@@ -23,7 +23,7 @@
    </view>
    <view inputState="Translated" program="map" locator="MAP_IOB_TABLE" contextTags="FPGA_ONLY" type="IOBProperties" file="top_map.xrpt" label="IOB Properties" />
    <view inputState="Translated" program="map" type="Module_Utilization" file="top_map.mrp" label="Module Level Utilization" />
-   <view inputState="Mapped" program="par" locator="CONSTRAINT_TABLE" contextTags="FPGA_ONLY" type="ConstraintsData" file="top.ptwx" label="Timing Constraints" translator="ptwxToTableXML.xslt" />
+   <view inputState="Mapped" program="par" locator="CONSTRAINT_TABLE" contextTags="FPGA_ONLY" type="ConstraintsData" file="top.ptwx" showConstraints="0" label="Timing Constraints" translator="ptwxToTableXML.xslt" />
    <view inputState="Mapped" program="par" locator="PAR_PINOUT_BY_PIN_NUMBER" contextTags="FPGA_ONLY" type="PinoutData" file="top_par.xrpt" label="Pinout Report" />
    <view inputState="Mapped" program="par" locator="PAR_CLOCK_TABLE" contextTags="FPGA_ONLY" type="ClocksData" file="top_par.xrpt" label="Clock Report" />
   </viewgroup>

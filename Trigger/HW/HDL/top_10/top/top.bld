@@ -2,12 +2,13 @@ Release 13.1 ngdbuild O.40d (lin64)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
 Command Line: /opt/Xilinx/13.1/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
-ise -dd _ngo -sd ../../rate_counter/fifo -sd ../../UDP/UDP_mr -nt timestamp -uc
-/media/disk2/trigger/Trigger/HW/HDL/top/top.ucf -uc
-/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf -p xc5vfx30t-ff665-1 top.ngc
+ise -dd _ngo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc
+/home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc
+/home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc
 top.ngd
 
-Reading NGO file "/media/disk2/trigger/Trigger/HW/HDL/top_10/top/top.ngc" ...
+Reading NGO file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.ngc"
+...
 Loading design module "../../UDP/UDP_mr/dist_mem_64x8.ngc"...
 Loading design module "../../UDP/UDP_mr/comp_6b_equal.ngc"...
 Loading design module "../../UDP/UDP_mr/comp_11b_equal.ngc"...
@@ -16,32 +17,32 @@ Gathering constraint information from source properties...
 Done.
 
 Annotating constraints to design from ucf file
-"/media/disk2/trigger/Trigger/HW/HDL/top/top.ucf" ...
+"/home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf" ...
 Annotating constraints to design from ucf file
-"/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf" ...
+"/home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
 WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_tx_fifo_rd_to_wr_0" =
    FROM "tx_fifo_rd_to_wr_0" TO "v5_emac_v1_5_client_clk_tx0" 8000 ps
-   DATAPATHONLY;> [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(181)]:
+   DATAPATHONLY;> [/home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf(124)]:
    Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named
    'v5_emac_v1_5_client_clk_tx0'.
 
 WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_tx_fifo_wr_to_rd_0" =
    FROM "tx_fifo_wr_to_rd_0" TO "v5_emac_v1_5_client_clk_tx0" 8000 ps
-   DATAPATHONLY;> [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(182)]:
+   DATAPATHONLY;> [/home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf(125)]:
    Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named
    'v5_emac_v1_5_client_clk_tx0'.
 
 WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_rx_fifo_wr_to_rd_0" =
    FROM "rx_fifo_wr_to_rd_0" TO "v5_emac_v1_5_client_clk_tx0" 8000 ps
-   DATAPATHONLY;> [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(204)]:
+   DATAPATHONLY;> [/home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf(147)]:
    Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named
    'v5_emac_v1_5_client_clk_tx0'.
 
 WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_rx_fifo_rd_to_wr_0" =
    FROM "rx_fifo_rd_to_wr_0" TO "v5_emac_v1_5_client_clk_rx0" 8000 ps
-   DATAPATHONLY;> [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(205)]:
+   DATAPATHONLY;> [/home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf(148)]:
    Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named
    'v5_emac_v1_5_client_clk_rx0'.
 
@@ -50,61 +51,61 @@ WARNING:NgdBuild:1012 - The constraint <INST
    true> is overridden on the design object
    EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_0 by the constraint <INST
    "*gmii0?GMII_TXD_?"     IOB = true;>
-   [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(158)].
+   [/home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf(101)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TXD_1 IOB =
    true> is overridden on the design object
    EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_1 by the constraint <INST
    "*gmii0?GMII_TXD_?"     IOB = true;>
-   [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(158)].
+   [/home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf(101)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TXD_2 IOB =
    true> is overridden on the design object
    EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_2 by the constraint <INST
    "*gmii0?GMII_TXD_?"     IOB = true;>
-   [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(158)].
+   [/home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf(101)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TXD_3 IOB =
    true> is overridden on the design object
    EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_3 by the constraint <INST
    "*gmii0?GMII_TXD_?"     IOB = true;>
-   [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(158)].
+   [/home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf(101)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TXD_4 IOB =
    true> is overridden on the design object
    EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_4 by the constraint <INST
    "*gmii0?GMII_TXD_?"     IOB = true;>
-   [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(158)].
+   [/home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf(101)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TXD_5 IOB =
    true> is overridden on the design object
    EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_5 by the constraint <INST
    "*gmii0?GMII_TXD_?"     IOB = true;>
-   [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(158)].
+   [/home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf(101)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TXD_6 IOB =
    true> is overridden on the design object
    EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_6 by the constraint <INST
    "*gmii0?GMII_TXD_?"     IOB = true;>
-   [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(158)].
+   [/home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf(101)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TXD_7 IOB =
    true> is overridden on the design object
    EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TXD_7 by the constraint <INST
    "*gmii0?GMII_TXD_?"     IOB = true;>
-   [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(158)].
+   [/home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf(101)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TX_EN IOB =
    true> is overridden on the design object
    EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TX_EN by the constraint <INST
    "*gmii0?GMII_TX_EN"     IOB = true;>
-   [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(159)].
+   [/home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf(102)].
 WARNING:NgdBuild:1012 - The constraint <INST
    /top/EXPANDED/top/EMAC_1\/v5_emac_ll\/v5_emac_block\/gmii0\/GMII_TX_ER IOB =
    true> is overridden on the design object
    EMAC_1/v5_emac_ll/v5_emac_block/gmii0/GMII_TX_ER by the constraint <INST
    "*gmii0?GMII_TX_ER"     IOB = true;>
-   [/media/disk2/trigger/Trigger/HW/HDL/top/emac.ucf(160)].
+   [/home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf(103)].
 Done...
 
 Checking expanded design ...
@@ -120,7 +121,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:  14
 
-Total memory usage is 275696 kilobytes
+Total memory usage is 275548 kilobytes
 
 Writing NGD file "top.ngd" ...
 Total REAL time to NGDBUILD completion:  3 sec

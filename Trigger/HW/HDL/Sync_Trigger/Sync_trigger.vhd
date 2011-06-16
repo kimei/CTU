@@ -135,6 +135,7 @@ begin
         rst_b => rst_b,
         mclk  => mclk,
         inp   => trigger_in(I),
+		  --inp   => trigger_in(0), -- trigger on lyso only
         outp  => edge_det(I));
 	end generate G3;
 

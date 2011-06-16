@@ -1,8 +1,13 @@
 # Output products list for <fifo_generator_v4_4>
+fifo_generator_ug175.pdf
+fifo_generator_v4_4.gise
 fifo_generator_v4_4.ngc
+fifo_generator_v4_4.v
+fifo_generator_v4_4.veo
 fifo_generator_v4_4.vhd
 fifo_generator_v4_4.vho
 fifo_generator_v4_4.xco
-fifo_generator_v4_4_fifo_generator_v4_4_xst_1.ngc_xst.xrpt
+fifo_generator_v4_4.xise
 fifo_generator_v4_4_flist.txt
+fifo_generator_v4_4_readme.txt
 fifo_generator_v4_4_xmdf.tcl

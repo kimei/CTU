@@ -1,0 +1,246 @@
+# //  ModelSim SE-64 6.6e_1 May 25 2011 Linux 2.6.35-28-generic
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {TB_udp.fdo} 
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 6.6e_1 Compiler 2011.05 May 25 2011
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling package constants
+# Model Technology ModelSim SE-64 vcom 6.6e_1 Compiler 2011.05 May 25 2011
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package vcomponents
+# -- Compiling entity v5_emac_v1_5
+# -- Compiling architecture wrapper of v5_emac_v1_5
+# Model Technology ModelSim SE-64 vcom 6.6e_1 Compiler 2011.05 May 25 2011
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package vcomponents
+# -- Compiling entity gmii_if
+# -- Compiling architecture phy_if of gmii_if
+# Model Technology ModelSim SE-64 vcom 6.6e_1 Compiler 2011.05 May 25 2011
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package vcomponents
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity tx_client_fifo_8
+# -- Compiling architecture rtl of tx_client_fifo_8
+# ** Warning: [5] ../../UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/tx_client_fifo_8.vhd(142): Nonresolved signal 'rd_nxt_state' may have multiple sources.
+#   Drivers:
+#     ../../UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/tx_client_fifo_8.vhd(414):Process next_rds_p
+#        Driven at:
+#           ../../UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/tx_client_fifo_8.vhd(421)
+#     ../../UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/tx_client_fifo_8.vhd(461):Process next_rds_p
+#        Driven at:
+#           ../../UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/tx_client_fifo_8.vhd(467)
+# Model Technology ModelSim SE-64 vcom 6.6e_1 Compiler 2011.05 May 25 2011
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package vcomponents
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity rx_client_fifo_8
+# -- Compiling architecture rtl of rx_client_fifo_8
+# Model Technology ModelSim SE-64 vcom 6.6e_1 Compiler 2011.05 May 25 2011
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling package functions
+# -- Compiling package body functions
+# -- Loading package functions
+# Model Technology ModelSim SE-64 vcom 6.6e_1 Compiler 2011.05 May 25 2011
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Compiling package components
+# Model Technology ModelSim SE-64 vcom 6.6e_1 Compiler 2011.05 May 25 2011
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package vcomponents
+# -- Compiling entity v5_emac_v1_5_block
+# -- Compiling architecture top_level of v5_emac_v1_5_block
+# Model Technology ModelSim SE-64 vcom 6.6e_1 Compiler 2011.05 May 25 2011
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package vcomponents
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity eth_fifo_8
+# -- Compiling architecture rtl of eth_fifo_8
+# Model Technology ModelSim SE-64 vcom 6.6e_1 Compiler 2011.05 May 25 2011
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package vcomponents
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Loading package components
+# -- Loading package functions
+# -- Compiling entity edge_detector
+# -- Compiling architecture behave of edge_detector
+# Model Technology ModelSim SE-64 vcom 6.6e_1 Compiler 2011.05 May 25 2011
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package vcomponents
+# -- Compiling entity v5_emac_v1_5_locallink
+# -- Compiling architecture top_level of v5_emac_v1_5_locallink
+# Model Technology ModelSim SE-64 vcom 6.6e_1 Compiler 2011.05 May 25 2011
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package vcomponents
+# -- Loading package constants
+# -- Loading package components
+# -- Compiling entity rate_counter
+# -- Compiling architecture behave of rate_counter
+# Model Technology ModelSim SE-64 vcom 6.6e_1 Compiler 2011.05 May 25 2011
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity fifo_generator_v4_4
+# -- Compiling architecture fifo_generator_v4_4_a of fifo_generator_v4_4
+# -- Loading package iputils_std_logic_arith
+# -- Loading package iputils_std_logic_unsigned
+# -- Loading package textio
+# -- Loading package iputils_conv
+# -- Loading package iputils_misc
+# -- Loading entity fifo_generator_v4_4_bhv_as
+# -- Loading entity fifo_generator_v4_4_bhv_ss
+# -- Loading entity fifo_generator_v4_4
+# Model Technology ModelSim SE-64 vcom 6.6e_1 Compiler 2011.05 May 25 2011
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package vcomponents
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Loading package components
+# -- Compiling entity v5_emac_v1_5_example_design
+# -- Compiling architecture top_level of v5_emac_v1_5_example_design
+# Model Technology ModelSim SE-64 vcom 6.6e_1 Compiler 2011.05 May 25 2011
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_udp
+# -- Compiling architecture behavior of tb_udp
+# vsim -lib work -voptargs=\"+acc\" -t 1ps work.TB_udp 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "v5_emac_v1_5_example_design(top_level)".
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_udp(behavior)#1
+# Loading unisim.vcomponents
+# Loading ieee.numeric_std(body)
+# Loading work.constants
+# Loading work.components
+# Loading work.v5_emac_v1_5_example_design(top_level)#1
+# Loading std.textio(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading unisim.vpkg(body)
+# Loading unisim.idelayctrl(idelayctrl_v)#1
+# Loading unisim.iodelay(iodelay_v)#1
+# Loading unisim.bufg(bufg_v)#1
+# Loading work.v5_emac_v1_5_locallink(top_level)#1
+# Loading work.v5_emac_v1_5_block(top_level)#1
+# Loading work.gmii_if(phy_if)#1
+# Loading unisim.oddr(oddr_v)#1
+# Loading unisim.idelay(idelay_v)#1
+# Loading work.v5_emac_v1_5(wrapper)#1
+# Loading unisim.temac(temac_v)#1
+# Loading secureip.TEMAC_SWIFT(fast)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.eth_fifo_8(rtl)#1
+# Loading work.tx_client_fifo_8(rtl)#1
+# Loading unisim.ramb16_s9_s9(ramb16_s9_s9_v)#1
+# Loading work.rx_client_fifo_8(rtl)#1
+# Loading work.rate_counter(behave)#1
+# Loading work.functions(body)
+# Loading work.edge_detector(behave)#1
+# Loading xilinxcorelib.iputils_std_logic_arith(body)
+# Loading xilinxcorelib.iputils_std_logic_unsigned(body)
+# Loading xilinxcorelib.iputils_conv(body)
+# Loading xilinxcorelib.iputils_misc(body)
+# Loading work.fifo_generator_v4_4(fifo_generator_v4_4_a)#1
+# Loading xilinxcorelib.fifo_generator_v4_4(behavioral)#1
+# Loading xilinxcorelib.fifo_generator_v4_4_bhv_ss(behavioral)#1
+# Loading xilinxcorelib.fifo_generator_v4_4_bhv_preload0(behavioral)#1
+# Loading unisim.ibuf(ibuf_v)#1
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_udp/uut/send_fifo/u0/gen_ss/fgss/valid, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /tb_udp/uut/send_fifo/u0/valid_fifo_out.
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_udp/uut/send_fifo/u0/gen_ss/fgss/underflow, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /tb_udp/uut/send_fifo/u0/underflow_fifo_out.
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_udp/uut/v5_emac_ll/client_side_fifo_emac0/tx_fifo_i
+# 
+#  
+do wave.do
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_udp(behavior)#1
+# Loading unisim.vcomponents
+# Loading ieee.numeric_std(body)
+# Loading work.constants
+# Loading work.components
+# Loading work.v5_emac_v1_5_example_design(top_level)#1
+# Loading std.textio(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading unisim.vpkg(body)
+# Loading unisim.idelayctrl(idelayctrl_v)#1
+# Loading unisim.iodelay(iodelay_v)#1
+# Loading unisim.bufg(bufg_v)#1
+# Loading work.v5_emac_v1_5_locallink(top_level)#1
+# Loading work.v5_emac_v1_5_block(top_level)#1
+# Loading work.gmii_if(phy_if)#1
+# Loading unisim.oddr(oddr_v)#1
+# Loading unisim.idelay(idelay_v)#1
+# Loading work.v5_emac_v1_5(wrapper)#1
+# Loading unisim.temac(temac_v)#1
+# Loading secureip.TEMAC_SWIFT(fast)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.eth_fifo_8(rtl)#1
+# Loading work.tx_client_fifo_8(rtl)#1
+# Loading unisim.ramb16_s9_s9(ramb16_s9_s9_v)#1
+# Loading work.rx_client_fifo_8(rtl)#1
+# Loading work.rate_counter(behave)#1
+# Loading work.functions(body)
+# Loading work.edge_detector(behave)#1
+# Loading xilinxcorelib.iputils_std_logic_arith(body)
+# Loading xilinxcorelib.iputils_std_logic_unsigned(body)
+# Loading xilinxcorelib.iputils_conv(body)
+# Loading xilinxcorelib.iputils_misc(body)
+# Loading work.fifo_generator_v4_4(fifo_generator_v4_4_a)#1
+# Loading xilinxcorelib.fifo_generator_v4_4(behavioral)#1
+# Loading xilinxcorelib.fifo_generator_v4_4_bhv_ss(behavioral)#1
+# Loading xilinxcorelib.fifo_generator_v4_4_bhv_preload0(behavioral)#1
+# Loading unisim.ibuf(ibuf_v)#1
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_udp/uut/send_fifo/u0/gen_ss/fgss/valid, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /tb_udp/uut/send_fifo/u0/valid_fifo_out.
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_udp/uut/send_fifo/u0/gen_ss/fgss/underflow, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /tb_udp/uut/send_fifo/u0/underflow_fifo_out.
+run 500 us
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_udp/uut/v5_emac_ll/client_side_fifo_emac0/tx_fifo_i

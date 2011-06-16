@@ -1,0 +1,17 @@
+# Output products list for <dist_mem_gen_v3_4>
+dist_mem_gen_ds322.pdf
+dist_mem_gen_readme.txt
+dist_mem_gen_v3_4.asy
+dist_mem_gen_v3_4.gise
+dist_mem_gen_v3_4.mif
+dist_mem_gen_v3_4.ngc
+dist_mem_gen_v3_4.sym
+dist_mem_gen_v3_4.v
+dist_mem_gen_v3_4.veo
+dist_mem_gen_v3_4.vhd
+dist_mem_gen_v3_4.vho
+dist_mem_gen_v3_4.xco
+dist_mem_gen_v3_4.xise
+dist_mem_gen_v3_4_flist.txt
+dist_mem_gen_v3_4_readme.txt
+dist_mem_gen_v3_4_xmdf.tcl

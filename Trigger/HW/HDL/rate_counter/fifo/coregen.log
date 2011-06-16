@@ -1,0 +1,18 @@
+CoreGen has not been configured with any user repositories.
+CoreGen has been configured with the following Xilinx repositories:
+ - '/opt/Xilinx/13.1/ISE_DS/ISE/coregen/' []
+INFO:sim:927 - Generating component instance 'fifo_generator_v4_4' of
+   'xilinx.com:ip:fifo_generator:4.4' from
+   '/opt/Xilinx/13.1/ISE_DS/ISE/coregen/ip/xilinx/primary/com/xilinx/ip/fifo_gen
+   erator_v4_4/fifo_generator_v4_4.xcd'.
+Applying current project options...
+Finished applying current project options.
+Customizing IP...
+Release 13.1 - Xilinx CORE Generator IP GUI Launcher O.40d (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Initializing IP model...
+Finished initializing IP model.
+Cancelled Customization.
+Wrote file for project
+'/home/kimei/VHDL/trigger/Trigger/HW/HDL/rate_counter/fifo/fifo_generator_v4_4.c
+gp'.

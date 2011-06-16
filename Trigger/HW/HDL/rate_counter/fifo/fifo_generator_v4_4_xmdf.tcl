@@ -36,8 +36,20 @@ utilities_xmdf::xmdfSetData $instance FileSet $fcount type logical_library
 utilities_xmdf::xmdfSetData $instance FileSet $fcount logical_library unisim
 incr fcount
 
+utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path fifo_generator_ug175.pdf
+utilities_xmdf::xmdfSetData $instance FileSet $fcount type AnyView
+incr fcount
+
 utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path fifo_generator_v4_4.ngc
 utilities_xmdf::xmdfSetData $instance FileSet $fcount type ngc
+incr fcount
+
+utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path fifo_generator_v4_4.v
+utilities_xmdf::xmdfSetData $instance FileSet $fcount type verilog
+incr fcount
+
+utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path fifo_generator_v4_4.veo
+utilities_xmdf::xmdfSetData $instance FileSet $fcount type verilog_template
 incr fcount
 
 utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path fifo_generator_v4_4.vhd
@@ -50,10 +62,6 @@ incr fcount
 
 utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path fifo_generator_v4_4.xco
 utilities_xmdf::xmdfSetData $instance FileSet $fcount type coregen_ip
-incr fcount
-
-utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path fifo_generator_v4_4_fifo_generator_v4_4_xst_1.ngc_xst.xrpt
-utilities_xmdf::xmdfSetData $instance FileSet $fcount type AnyView
 incr fcount
 
 utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path fifo_generator_v4_4_xmdf.tcl

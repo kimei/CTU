@@ -1,0 +1,46 @@
+    ____  ____
+   /   /\/   /
+  /___/  \  /    VENDOR      : Xilinx Inc.
+  \   \   \/     VERSION     : 13.1 (O.40d)
+   \   \         APPLICATION : /opt/Xilinx/13.1/ISE_DS/ISE/bin/lin64/unwrapped/compxlib
+   /   /         CONTENTS    : Compilation Log
+  /___/   /\     FILENAME    : compxlib.log
+  \   \  /  \    
+   \___\/\___\
+
+Release 13.1 - /opt/Xilinx/13.1/ISE_DS/ISE/bin/lin64/unwrapped/compxlib 13.1 (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Processing command line ...
+Reading the compxlib configuration file - 'compxlib.cfg' ...
+ERROR:Compxlib:387 - COMPXLIB[option]: Invalid directory '/modeltech_6.6d/win32' specified for -p.
+Library Source Paths => '/opt/Xilinx/13.1/ISE_DS/ISE'
+Current Working Directory => '/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top'
+Compilation Mode = FAST
+Execute Mode = ON
+Scheduling library installation & compilation for architectures: virtex5
+
+Scheduling library installation & compilation for libraries: simprim unisim xilinxcorelib edk
+
+Signature:-
+------------------------------------------------------------------------------
+/opt/Xilinx/13.1/ISE_DS/ISE/bin/lin64/unwrapped/compxlib -s mti_se -l all -p /modeltech_6.6d/win32 -w -arch virtex5 -lib unisim -lib simprim -lib xilinxcorelib -lib edk -exclude_superseded -intstyle ise 
+------------------------------------------------------------------------------
+ERROR:Compxlib - COMPXLIB[sim]: Unable to automatically find executables for simulator 'mti_se' from the following paths:
+    /opt/Xilinx/13.1/ISE_DS/ISE//bin/lin64
+   /opt/Xilinx/13.1/ISE_DS/common/bin/lin64
+   /opt/Xilinx/13.1/ISE_DS/ISE/sysgen/bin
+   /opt/Xilinx/13.1/ISE_DS/PlanAhead/bin
+   /opt/Xilinx/13.1/ISE_DS/ISE/bin/lin64
+   /opt/Xilinx/13.1/ISE_DS/ISE/sysgen/util
+   /opt/Xilinx/13.1/ISE_DS/EDK/bin/lin64
+   /opt/Xilinx/13.1/ISE_DS/EDK/gnu/microblaze/lin64/bin
+   /opt/Xilinx/13.1/ISE_DS/EDK/gnu/powerpc-eabi/lin64/bin
+   /usr/local/sbin
+   /usr/local/bin
+   /usr/sbin
+   /usr/bin
+   /sbin
+   /bin
+   /usr/X11R6/bin.
+Simulator 'mti_se' is ignored.

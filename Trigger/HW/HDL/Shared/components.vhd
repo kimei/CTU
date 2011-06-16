@@ -234,7 +234,7 @@ package components is
 	rd_en: IN std_logic;
 	rst: IN std_logic;
 	wr_en: IN std_logic;
-	data_count: OUT std_logic_VECTOR(7 downto 0);
+	data_count: OUT std_logic_VECTOR(8 downto 0);
 	dout: OUT std_logic_VECTOR(7 downto 0);
 	empty: OUT std_logic;
 	full: OUT std_logic);

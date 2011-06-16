@@ -97,6 +97,7 @@ use unisim.vcomponents.all;
 
 library ieee;
 use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
 library work;
 use work.components.all;
@@ -108,11 +109,11 @@ use work.constants.all;
 -------------------------------------------------------------------------------
 entity v5_emac_v1_5_example_design is
   port(
-    clk200                    : in  std_logic;
-    rst_b                     : in  std_logic;
-	 
-	 rate_cards : in std_logic_vector(NUMBER_OF_ROCS - 1 downto 0);
-	 coincidence : in std_logic_vector(NUMBER_OF_ROCS - 1 downto 0);
+    clk200 : in std_logic;
+    rst_b  : in std_logic;
+
+    rate_cards                : in  std_logic_vector(NUMBER_OF_ROCS - 1 downto 0);
+    coincidence               : in  std_logic_vector(NUMBER_OF_ROCS - 1 downto 0);
     -- Client Receiver Interface - EMAC0
     EMAC0CLIENTRXDVLD         : out std_logic;
     EMAC0CLIENTRXFRAMEDROP    : out std_logic;
@@ -156,26 +157,33 @@ end v5_emac_v1_5_example_design;
 
 
 architecture TOP_LEVEL of v5_emac_v1_5_example_design is
-	signal DSwitch : std_logic_vector(7 downto 0);
+  signal DSwitch : std_logic_vector(7 downto 0);
 
   signal reset  : std_logic;
   signal REFCLK : std_logic;            --REFCLK
 
-   signal input_word : std_logic_vector(15 downto 0); 
-	
-	
-	-- fifo interface
-  	signal we_rate_counter : std_logic;
-	signal we_others : std_logic;
-	signal din_rate_counter : std_logic_vector(7 downto 0);	
-	signal din_fifo : std_logic_vector(7 downto 0);	
-  	signal rd_en_fifo: std_logic;
+  signal input_word : std_logic_vector(15 downto 0);
 
-  	signal wr_en_fifo: std_logic;
-  	signal data_count_fifo : std_logic_vector(7 downto 0);
-  	signal dout_fifo: std_logic_vector(7 downto 0);	
-  	signal empty_fifo: std_logic;
-  	signal full_fifo: std_logic;
+
+  -- fifo interface
+  signal we_rate_counter  : std_logic;
+  signal we_others        : std_logic;
+  signal din_rate_counter : std_logic_vector(7 downto 0);
+  signal din_fifo         : std_logic_vector(7 downto 0);
+  signal rd_en_fifo       : std_logic;
+
+  signal wr_en_fifo      : std_logic;
+  signal data_count_fifo : std_logic_vector(8 downto 0);
+  signal dout_fifo       : std_logic_vector(7 downto 0);
+  signal empty_fifo      : std_logic;
+  signal full_fifo       : std_logic;
+
+  -- signals for the UDP sender FSM
+  type state_types is (INIT, WAIT_FOR_WR_EN, PREP_TRANS, PREP_TRANS2, START_TRANS,START_TRANS2,PREP_FIRST_BYTE, WAIT_FOR_UDP, SEND_DATA);
+  signal state : state_types;
+  signal bytes_to_send : unsigned(8 downto 0);
+   signal dout_fifo_tmp       : std_logic_vector(7 downto 0);
+  signal where_to_send : std_logic;
 
 
 
@@ -281,26 +289,6 @@ architecture TOP_LEVEL of v5_emac_v1_5_example_design is
 --  end component;
 
 
-  component UDP_IP_Core
-    port (
-      rst                      : in  std_logic;
-      clk_125MHz               : in  std_logic;
-      transmit_start_enable    : in  std_logic;
-      transmit_data_length     : in  std_logic_vector (15 downto 0);
-      usr_data_trans_phase_on  : out std_logic;
-      transmit_data_input_bus  : in  std_logic_vector (7 downto 0);
-      start_of_frame_O         : out std_logic;
-      end_of_frame_O           : out std_logic;
-      source_ready             : out std_logic;
-      transmit_data_output_bus : out std_logic_vector (7 downto 0);
-      rx_sof                   : in  std_logic;
-      rx_eof                   : in  std_logic;
-      input_bus                : in  std_logic_vector(7 downto 0);
-      valid_out_usr_data       : out std_logic;
-      usr_data_output_bus      : out std_logic_vector (7 downto 0);
-		DSwitch : in std_logic_vector(7 downto 0));
-  end component;
-
 
 -----------------------------------------------------------------------
 -- Signal Declarations
@@ -385,7 +373,25 @@ architecture TOP_LEVEL of v5_emac_v1_5_example_design is
   signal input_bus                : std_logic_vector(7 downto 0);
   signal valid_out_usr_data       : std_logic;
   signal usr_data_output_bus      : std_logic_vector (7 downto 0);
-  
+
+
+  signal transmit_start_enable_i    : std_logic;
+  signal transmit_data_length_i     : std_logic_vector (15 downto 0);
+  signal usr_data_trans_phase_on_i  : std_logic;
+  signal transmit_data_input_bus_i  : std_logic_vector (7 downto 0);
+  signal start_of_frame_O_i         : std_logic;
+  signal end_of_frame_O_i           : std_logic;
+  signal source_ready_i             : std_logic;
+  signal transmit_data_output_bus_i : std_logic_vector (7 downto 0);
+  signal rx_sof_i                   : std_logic;
+  signal rx_eof_i                   : std_logic;
+  signal input_bus_i                : std_logic_vector(7 downto 0);
+  signal valid_out_usr_data_i       : std_logic;
+  signal usr_data_output_bus_i      : std_logic_vector (7 downto 0);
+
+
+ 
+
 -------------------------------------------------------------------------------
 -- Main Body of Code
 -------------------------------------------------------------------------------
@@ -393,15 +399,15 @@ architecture TOP_LEVEL of v5_emac_v1_5_example_design is
   signal counter : integer range 0 to 1023;
 
 begin
-	DSwitch <= "01001000";
+  DSwitch     <= "00111110";  --set the ip, we don't have a dip-switch here
   reset       <= not rst_b;
   reset_i     <= not rst_b;
   PHY_RESET_0 <= rst_b;
   REFCLK      <= clk200;
-  
-  we_others <= we_rate_counter;
+
+  we_others  <= we_rate_counter;
   wr_en_fifo <= we_others;
-  din_fifo  <= din_rate_counter;
+  din_fifo   <= din_rate_counter;
   ---------------------------------------------------------------------------
   -- Reset Input Buffer
   ---------------------------------------------------------------------------
@@ -417,7 +423,7 @@ begin
   -- Instantiate IDELAYCTRL for the IDELAY in Fixed Tap Delay Mode
   dlyctrl0 : IDELAYCTRL port map (
     RDY    => open,
-    REFCLK => refclk_bufg_i, -- This needs a 200 mhz input
+    REFCLK => refclk_bufg_i,            -- This needs a 200 mhz input
     RST    => idelayctrl_reset_0_i
     );
 
@@ -457,17 +463,22 @@ begin
       );
 
 
-  -- Put the PHY clocks from the EMAC through BUFGs.
-  -- Used to clock the PHY side of the EMAC wrappers.
+--  -- Put the PHY clocks from the EMAC through BUFGs.
+--  -- Used to clock the PHY side of the EMAC wrappers.
   bufg_phy_tx_0 : BUFG port map (I => tx_phy_clk_0_o, O => tx_phy_clk_0);
   bufg_phy_rx_0 : BUFG port map (I => gmii_rx_clk_0_delay, O => rx_clk_0_i);
-
-  -- Put the client clocks from the EMAC through BUFGs.
-  -- Used to clock the client side of the EMAC wrappers.
+--
+--  -- Put the client clocks from the EMAC through BUFGs.
+--  -- Used to clock the client side of the EMAC wrappers.
   bufg_client_tx_0 : BUFG port map (I => tx_client_clk_0_o, O => tx_client_clk_0);
   bufg_client_rx_0 : BUFG port map (I => rx_client_clk_0_o, O => rx_client_clk_0);
-
+--
   ll_clk_0_i <= tx_client_clk_0;
+--DEBUG SHIT
+--  ll_clk_0_i <= clk200;
+ -- usr_data_trans_phase_on_i <=   GMII_CRS_0;
+ 
+ 
 
 
   ------------------------------------------------------------------------
@@ -562,48 +573,28 @@ begin
   input_bus <= rx_ll_data_0_i;
 
 
-  ---------------------------------------------------------------------
-  --  UDP&IP module
-  ---------------------------------------------------------------------
-  UDP_IP_Core_1 : UDP_IP_Core
-    port map (
-      rst                      => ll_reset_0_i,
-      clk_125MHz               => ll_clk_0_i,
-      transmit_start_enable    => transmit_start_enable,  --active high , It must be high for one clock cycle only.
-      transmit_data_length     => transmit_data_length,  -- number of user data to be transmitted (number of bytes)
-      usr_data_trans_phase_on  => usr_data_trans_phase_on,  -- is high one clock cycle before the transmittion of user data and remains high while transmitting user data
-      transmit_data_input_bus  => transmit_data_input_bus,  -- input data to be transmitted. Starts transmitting one clock cycle after the usr_data_trans_phase_on is set
-      start_of_frame_O         => start_of_frame_O,  -- should be connected to the local link wrapper's input port
-      end_of_frame_O           => end_of_frame_O,  -- should be connected to the local link wrapper's input port
-      source_ready             => source_ready,  --should be connected to the local link wrapper's input port
-      transmit_data_output_bus => transmit_data_output_bus,  -- should be connected to the local link wrapper's input port
-      rx_sof                   => rx_sof,  -- active low, inputs from the local link wrapper
-      rx_eof                   => rx_eof,  -- active low, inputs from the local link wrapper
-      input_bus                => input_bus,  -- input from the local link wrapper
-      valid_out_usr_data       => valid_out_usr_data,  -- output to user, when set it indicates that the usr_data_output_bus contains the user data section of the incoming packet
-      usr_data_output_bus      => usr_data_output_bus,
-		Dswitch 						 => DSwitch);  -- user data output bus output to the user
 
-  send_empty : process(ll_clk_0_i, reset_i)
-  begin
-    if reset_i = '1' then
-      transmit_start_enable   <= '0';
-      transmit_data_length    <= (others => '0');
-      transmit_data_input_bus <= (others => '0');
-      counter                 <= 0;
 
-    elsif ll_clk_0_i'event and ll_clk_0_i = '1' then
-
-                  transmit_start_enable   <= '0';
-                  transmit_data_length    <= "0000000000000001";
-                  transmit_data_input_bus <= "11111111";
-						if counter = 25000 then
-							counter               <= 0;
-							transmit_start_enable <= '1';
-						end if;
-                  counter                 <= counter + 1;
-    end if;
-  end process send_empty;
+--  send_empty : process(ll_clk_0_i, reset_i)
+--  begin
+--    if reset_i = '1' then
+--      transmit_start_enable   <= '0';
+--      transmit_data_length    <= (others => '0');
+--      transmit_data_input_bus <= (others => '0');
+--      counter                 <= 0;
+--
+--    elsif ll_clk_0_i'event and ll_clk_0_i = '1' then
+--
+--                  transmit_start_enable   <= '0';
+--                  transmit_data_length    <= "0000000000000001";
+--                  transmit_data_input_bus <= "11111111";
+--                                              if counter = 25000 then
+--                                                      counter               <= 0;
+--                                                      transmit_start_enable <= '1';
+--                                              end if;
+--                  counter                 <= counter + 1;
+--    end if;
+--  end process send_empty;
 
 
   -- Create synchronous reset in the transmitter clock domain.
@@ -618,50 +609,191 @@ begin
       ll_reset_0_i                 <= ll_pre_reset_0_i(5);
     end if;
   end process gen_ll_reset_emac0;
-  
-  
-  
-  
-	rate_counter_1 : rate_counter
-	port map(
-		clk => ll_clk_0_i, --125 mhz
-		rst_b => rst_b,
-		rate_cards => rate_cards,
-		coincidence => coincidence,
-		fifo_empty => empty_fifo,
-		we => we_rate_counter,
-		we_others => we_others,
-		din => din_rate_counter
-		);
-		
-	send_fifo : fifo_generator_v4_4
-	port map(
-	clk => ll_clk_0_i,  --125 mhz
-	din => din_fifo,
-	rd_en => rd_en_fifo,
-	rst => reset,
-	wr_en => wr_en_fifo,
-	data_count => data_count_fifo,
-	dout => dout_fifo,
-	empty => empty_fifo,
-	full => full_fifo
-	);
-	
-	
-
-  ------------------------------------------------------------------------
-  -- REFCLK used for RGMII IODELAYCTRL primitive - Need to supply a 200MHz clock
-  ------------------------------------------------------------------------
-  --refclk_ibufg : IBUFG port map(I => REFCLK, O => refclk_ibufg_i);
-  refclk_bufg : BUFG port map(I => refclk, O => refclk_bufg_i);
-
-  ----------------------------------------------------------------------
-  -- Stop the tools from automatically adding in a BUFG on the
-  -- GTX_CLK_0 line.
-  ----------------------------------------------------------------------
-  gtx_clk0_ibuf : IBUF port map (I => GTX_CLK_0, O => gtx_clk_0_i);
 
 
 
+  -- a state machine to send data (rate or trigger signal) to either
+  -- the computers or the read-out cards. the first byte of the send_fifo
+  -- will contain a number to decide where to send it. It will look at the
+  -- we_en_fifo signal to decide when to send. it will send when this signal
+  -- goes low. 
+  -- The state machine will have to read out the number of bytes it will send 
+  -- which comes from data_count_fifo
+  -- states: 
+  -- Wait for rising edge on wr_en_fifo
+  -- wait for falling egde on wr_en_fifo
+  -- read out number of bytes to send and where to send it
+  --
+  --
+ 
+    send_udp_data_FSM : process (ll_clk_0_i, rst_b)
+		variable tmp_data : std_logic_vector(7 downto 0);
+    begin
+      if rst_b = '0' then
+        state      <= INIT;
+        rd_en_fifo <= '0';
+        
+      elsif ll_clk_0_i'event and ll_clk_0_i = '1' then
+        transmit_start_enable_i   <= '0';
+        transmit_data_length_i    <= (others => '0');
+        transmit_data_input_bus_i <= (others => '0');
+        rd_en_fifo                <= '0';
+
+        case state is
+          when INIT =>
+            bytes_to_send <= (others => '0');
+            where_to_send <= '0';
+
+            if wr_en_fifo = '1' then
+              state <= WAIT_FOR_WR_EN;
+            else
+              state <= INIT;
+            end if;
+
+          when WAIT_FOR_WR_EN =>
+            if wr_en_fifo = '0' then
+              state <= PREP_TRANS;
+            else
+              state <= WAIT_FOR_WR_EN;
+            end if;
+
+				
+			when PREP_TRANS =>
+				 where_to_send <= dout_fifo(0);
+				 bytes_to_send  <= unsigned(data_count_fifo)-1;
+				 rd_en_fifo <= '1';
+				 state <= PREP_TRANS2;
+				 
+				 when PREP_TRANS2 =>
+				 state <= START_TRANS;
+					
+
+          when START_TRANS =>
+            
+            
+				dout_fifo_tmp <= dout_fifo;
+            state         <= START_TRANS2;
+				
+			when START_TRANS2 =>
+				rd_en_fifo <= '1';
+				transmit_start_enable_i <= '1';
+				transmit_data_length_i(15 downto 9) <= "0000000";
+            transmit_data_length_i(8 downto 0)  <= std_logic_vector(bytes_to_send);
+				state <= WAIT_FOR_UDP;
+						
+				
+
+          when WAIT_FOR_UDP =>
+
+            if usr_data_trans_phase_on_i = '1' then
+				  transmit_data_input_bus_i <= dout_fifo_tmp;
+				  rd_en_fifo <= '1';
+              state                     <= SEND_DATA;
+            else						  
+              state <= WAIT_FOR_UDP;
+            end if;
+				
+            
+          when SEND_DATA =>
+            if usr_data_trans_phase_on_i = '1' then
+              rd_en_fifo                <= '1';
+              transmit_data_input_bus_i <= dout_fifo;
+              state <= SEND_DATA;
+            else
+              state <= INIT;
+            end if;
+            
+          when others =>
+            state <= INIT;
+        end case;
+        
+      end if;
+    end process;
+	 
+	 
+
+     transmit_start_enable <= transmit_start_enable_i;
+     transmit_data_length <= transmit_data_length_i;
+     usr_data_trans_phase_on_i <= usr_data_trans_phase_on;
+	  transmit_data_input_bus <= transmit_data_input_bus_i;
+ 
+     --source_ready      
+    --transmit_data_output_bus 
+
+     -- input_bus              
+ 
+      --usr_data_output_bus      => usr_data_output_bus,
+
+
   
-end TOP_LEVEL;
+UDP_IP_Core_1 : entity work.UDP_IP_Core
+    generic map (
+      --DestMAC =>x"00c09fbf33b0",  --ferrari, must be readout computer eventually
+
+      DestMAC  => x"000e0c333384",      --compet002
+      DestIP   => x"C0A80140",  --192.168.1.64, change to readout computer ip.
+      DestPort => x"5556",
+      SrcPort  => x"5557")
+port map(
+  rst => ll_reset_0_i,
+    clk_125MHz => ll_clk_0_i,
+     transmit_start_enable    => transmit_start_enable,  --active high , It must be high for one clock cycle only.
+     transmit_data_length     => transmit_data_length,  -- number of user data to be transmitted (number of bytes)
+     usr_data_trans_phase_on  => usr_data_trans_phase_on,  -- is high one clock cycle before the transmittion of user data and remains high while transmitting user data
+    transmit_data_input_bus  => transmit_data_input_bus,  -- input data to be transmitted. Starts transmitting one clock cycle after the usr_data_trans_phase_on is set
+    start_of_frame_O         => start_of_frame_O,  -- should be connected to the local link wrapper's input port
+     end_of_frame_O           => end_of_frame_O,  -- should be connected to the local link wrapper's input port
+     source_ready             => source_ready,  --should be connected to the local link wrapper's input port
+      transmit_data_output_bus => transmit_data_output_bus,  -- should be connected to the local link wrapper's input port
+      rx_sof                   => rx_sof,  -- active low, inputs from the local link wrapper
+     rx_eof                   => rx_eof,  -- active low, inputs from the local link wrapper
+      input_bus                => input_bus,  -- input from the local link wrapper
+      valid_out_usr_data       => valid_out_usr_data,  -- output to user, when set it indicates that the usr_data_output_bus contains the user data section of the incoming packet
+      usr_data_output_bus      => usr_data_output_bus,
+      Dswitch                  => DSwitch);  -- user data output bus output to the user
+
+
+    rate_counter_1 : rate_counter
+      port map(
+        clk         => ll_clk_0_i,      --125 mhz
+        rst_b       => rst_b,
+        rate_cards  => rate_cards,
+        coincidence => coincidence,
+        fifo_empty  => empty_fifo,
+        we          => we_rate_counter,
+        we_others   => we_others,
+        din         => din_rate_counter
+        );
+
+    send_fifo : fifo_generator_v4_4
+      port map(
+        clk        => ll_clk_0_i,       --125 mhz
+        din        => din_fifo,
+        rd_en      => rd_en_fifo,
+        rst        => reset,
+        wr_en      => wr_en_fifo,
+        data_count => data_count_fifo,
+        dout       => dout_fifo,
+        empty      => empty_fifo,
+        full       => full_fifo
+        );
+
+
+
+    ------------------------------------------------------------------------
+    -- REFCLK used for RGMII IODELAYCTRL primitive - Need to supply a 200MHz clock
+    ------------------------------------------------------------------------
+    --refclk_ibufg : IBUFG port map(I => REFCLK, O => refclk_ibufg_i);
+ --  refclk_bufg : BUFG port map(I => refclk, O => refclk_bufg_i);
+	 
+refclk_bufg_i <= clk200;
+    ----------------------------------------------------------------------
+    -- Stop the tools from automatically adding in a BUFG on the
+    -- GTX_CLK_0 line.
+    ----------------------------------------------------------------------
+    gtx_clk0_ibuf : IBUF port map (I => GTX_CLK_0, O => gtx_clk_0_i);
+
+
+
+
+    end TOP_LEVEL;
