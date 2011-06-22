@@ -162,6 +162,11 @@ architecture Behavioral of top is
 
   signal trig_in_se  : std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
   signal trig_out_se : std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
+  signal trig_out_se_sync : std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
+  signal trig_out_se_rand : std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
+	
+	signal en_rand_trig_buf0 : std_logic;
+	signal en_rand_trig : std_logic;
 
   signal trig_out_se2 : std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
 
@@ -180,26 +185,39 @@ architecture Behavioral of top is
   signal reset_roc_int_b  : std_logic;
 
   signal reset      : std_logic;
-  signal uc_leds    : std_logic_vector(0 to 7);  -- the uc only get the 4 last leds
-  signal uc_buttons : std_logic_vector(0 to 2);
+
+  signal buttons_deb : std_logic_vector(3 downto 0);
   
 begin
   rst             <= not rst_b;
-  trig_out_se2    <= (others => '1') when (trig_out_se(0) = '1') or (BUTTONS(1) = '1') else (others => '0');
+  trig_out_se2    <= (others => '1') when (trig_out_se(0) = '1') or (buttons_deb(1) = '1') else (others => '0');
   reset_roc_int_b <= reset_roc_int_b1 and reset_roc_int_b2;
 
 
   trigled0 <= trig_out_se2(0);
+  
   LEDS(1)  <= trigled;
 
   reset <= BUTTONS(0);
-  LEDS(0) <= '0';
+  
+  --LEDS(0) <= '0';
   LEDS(2 to 6) <= (Others=>'0');
-  --LEDS(4 to 7) <= uc_leds(0 to 3);
-  --LEDS(2 to 3) <= (others => '1');
-  --uc_buttons(0 to 1) <= BUTTONS(3 downto 2);
-  --uc_buttons(2)      <= '0';
-  reset_roc_int_b2 <= not BUTTONS(2);
+  
+  
+
+  reset_roc_int_b2 <= not buttons_deb(2);
+	
+	Inst_SwitchDebouncer: entity work.SwitchDebouncer 
+		generic map(
+			CLK_FREQ => 100000000,
+			NUM_SWITCHES => 4) 
+		PORT MAP(
+		clk => mclk,
+		reset => rst_b,
+		switchesIn => BUTTONS,
+		switchesOut => buttons_deb
+	);
+	
 
   Inst_CRU : CRU port map(
     fpga_100m_clk  => FPGA100M,
@@ -219,7 +237,13 @@ begin
       rst_b       => rst_b,
       mclk        => mclk,
       trigger_in  => trig_in_se,
-      trigger_out => trig_out_se);
+      trigger_out => trig_out_se_sync);
+		
+		Inst_rand_trigger : entity work.rand_trigger 
+		PORT MAP(
+		rst_b => rst_b,
+		mclk => mclk,
+		trigger_out => trig_out_se_rand );
 
   G1 : for I in 0 to (NUMBER_OF_ROCS-1) generate
 --    diff_in : work.components.IBUFDS port map (
@@ -254,24 +278,7 @@ begin
     OB => RESET_ROC_B2_b,
     I  => reset_roc_int_b);
   -----------------------------------------------------------------------------
-  -- UART TESTING GROUNDS!
-
-
-  testproc : process (mclk)
-  begin
-    if mclk'event and mclk = '1' then
-      if BUTTONS(3) = '1' then
-        LEDS(7) <= '0';
-      else
-        LEDS(7) <= '1';
-        
-      end if;
-    end if;
-    
-    
-  end process;
-
-
+ 
 
 
   triggerled : process (mclk, rst_b)
@@ -287,6 +294,24 @@ begin
       end if;
     end if;
   end process triggerled;
+  
+  
+  trig_out_se <= trig_out_se_sync when en_rand_trig = '0' else trig_out_se_rand;
+  LEDS(0) <= en_rand_trig;
+  
+  triggerswitch : process (mclk, rst_b)
+  begin
+  if rst_b = '0' then
+		en_rand_trig <= '0';
+		en_rand_trig_buf0 <= '0';
+  elsif mclk'event and mclk = '1' then
+		en_rand_trig_buf0 <= buttons_deb(3);
+		if en_rand_trig_buf0 = '0' and buttons_deb(3) = '1' then
+			en_rand_trig <= not en_rand_trig;
+		end if;
+  
+  end if;
+  end process triggerswitch;
 
 
   EMAC_1 : v5_emac_v1_5_example_design

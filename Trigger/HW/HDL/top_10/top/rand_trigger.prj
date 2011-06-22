@@ -1,0 +1,4 @@
+vhdl work "../../Shared/constants.vhd"
+vhdl work "../../Shared/functions.vhd"
+vhdl work "../../Shared/components.vhd"
+vhdl work "../../random_trigger/rand_trigger.vhd"

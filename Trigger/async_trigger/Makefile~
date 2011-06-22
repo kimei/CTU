@@ -1,0 +1,50 @@
+CXX = g++
+CXXFLAGS = -Wall -ansi -pedantic -O3 -D_REENTRANT
+#CXXFLAGS = -Wall -ansi -pedantic -g -D_REENTRANT
+
+
+LIBS += -lreadline -ltermcap -lhdf5 -lboost_thread-mt -lboost_system-mt -lpthread
+
+
+
+
+
+
+
+all:  atrigger
+
+
+#CentralReadoutSettingsUi.py: CentralReadoutSettings.ui
+#	pyuic4 CentralReadoutSettings.ui -o CentralReadoutSettingsUi.py
+
+
+
+#CSloCoServer.o: CSloCoServer.h CSloCoServer.cpp CConstants.h  CDataTypes.h 
+#	$(CXX) $(CXXFLAGS) -fPIC  -c CSloCoServer.cpp $(LIBS)
+
+
+#CWriteHDF5.o: CWriteHDF5.h CWriteHDF5.cpp CConstants.h  CDataTypes.h 
+#	$(CXX) $(CXXFLAGS) -fPIC  -c CWriteHDF5.cpp $(LIBS)
+
+#CEventSorter.o: CEventSorter.h CEventSorter.cpp CConstants.h  CDataTypes.h 
+#	$(CXX) $(CXXFLAGS) -fPIC  -c CEventSorter.cpp $(LIBS)
+
+
+#CReceiver.o: CReceiver.h CReceiver.cpp CConstants.h  CDataTypes.h 
+#	$(CXX) $(CXXFLAGS) -fPIC  -c CReceiver.cpp $(LIBS)
+
+#libCompetReadout.so: CReceiver.o CEventSorter.o CWriteHDF5.o CSloCoServer.o
+#	$(CXX) -shared -Xlinker -zmuldefs -o libCompetReadout.so CReceiver.o CEventSorter.o CWriteHDF5.o CSloCoServer.o
+
+#libCompetReadout.a: CReceiver.o CEventSorter.o CWriteHDF5.o CSloCoServer.o
+#	rm -f $@
+#	ar cq libCompetReadout.a CReceiver.o CEventSorter.o CWriteHDF5.o CSloCoServer.o
+
+atrigger: async_trigger.cpp  CConstants.h  CDataTypes.h 
+	$(CXX) $(CXXFLAGS) -o atrigger  async_trigger.cpp  -L$(PWD) $(LIBS) -lpthread
+
+clean:
+	#rm *.o
+	#rm *.so
+	#rm *.a
+	rm atrigger

@@ -8,6 +8,13 @@
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/UDP_IP_Core - Behavioral |home|kimei|VHDL|trigger|Trigger|HW|HDL|UDP|UDPIP|udp_ip__core|trunk|UDP_IP_CORE|UDP_IP_CORE__Virtex5|UDP_IP_Core.vhd</ClosedNode>
+         <ClosedNode>/top - Behavioral |home|kimei|80|VHDL|trigger|Trigger|HW|HDL|top|top.vhd</ClosedNode>
+         <ClosedNode>/top - Behavioral |home|kimei|80|VHDL|trigger|Trigger|HW|HDL|top|top.vhd/EMAC_1 - v5_emac_v1_5_example_design - TOP_LEVEL/UDP_IP_Core_1 - UDP_IP_Core - Behavioral</ClosedNode>
+         <ClosedNode>/top - Behavioral |home|kimei|80|VHDL|trigger|Trigger|HW|HDL|top|top.vhd/EMAC_1 - v5_emac_v1_5_example_design - TOP_LEVEL/rate_counter_1 - rate_counter - behave</ClosedNode>
+         <ClosedNode>/top - Behavioral |home|kimei|80|VHDL|trigger|Trigger|HW|HDL|top|top.vhd/EMAC_1 - v5_emac_v1_5_example_design - TOP_LEVEL/v5_emac_ll - v5_emac_v1_5_locallink - TOP_LEVEL</ClosedNode>
+         <ClosedNode>/top - Behavioral |home|kimei|80|VHDL|trigger|Trigger|HW|HDL|top|top.vhd/Inst_CRU - CRU - Behavioral</ClosedNode>
+         <ClosedNode>/top - Behavioral |home|kimei|80|VHDL|trigger|Trigger|HW|HDL|top|top.vhd/sync_trigger_1 - sync_trigger - Behavioral</ClosedNode>
+         <ClosedNode>/top - Behavioral |home|kimei|VHDL|trigger|Trigger|HW|HDL|top|top.vhd/EMAC_1 - v5_emac_v1_5_example_design - TOP_LEVEL/UDP_IP_Core_1 - UDP_IP_Core - Behavioral</ClosedNode>
          <ClosedNode>/top - Behavioral |home|kimei|VHDL|trigger|Trigger|HW|HDL|top|top.vhd/EMAC_1 - v5_emac_v1_5_example_design - TOP_LEVEL/UDP_IP_Core_1 - UDP_IP_Core - Behavioral/IPV4_PACKET_TRANSMITTER_port_map - IPV4_PACKET_TRANSMITTER - Behavioral</ClosedNode>
          <ClosedNode>/top - Behavioral |home|kimei|VHDL|trigger|Trigger|HW|HDL|top|top.vhd/EMAC_1 - v5_emac_v1_5_example_design - TOP_LEVEL/UDP_IP_Core_1 - UDP_IP_Core - Behavioral/IPV4_PACKET_TRANSMITTER_port_map - IPV4_PACKET_TRANSMITTER - Behavioral/IPV4_LUT_INDEXER_port_map - IPV4_LUT_INDEXER - Behavioral</ClosedNode>
          <ClosedNode>/top - Behavioral |home|kimei|VHDL|trigger|Trigger|HW|HDL|top|top.vhd/EMAC_1 - v5_emac_v1_5_example_design - TOP_LEVEL/UDP_IP_Core_1 - UDP_IP_Core - Behavioral/IPV4_PACKET_TRANSMITTER_port_map - IPV4_PACKET_TRANSMITTER - Behavioral/OVERRIDE_LUT_CONTROL_port_map - OVERRIDE_LUT_CONTROL - Behavioral</ClosedNode>
@@ -22,44 +29,44 @@
          <ClosedNode>PROJECT</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>top - Behavioral (/home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.vhd)</SelectedItem>
+         <SelectedItem>top - Behavioral (/home/kimei/80/VHDL/trigger/Trigger/HW/HDL/top/top.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000377000000020000000000000000000000000200000064ffffffff000000810000000300000002000003770000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000015e000000020000000000000000000000000200000064ffffffff0000008100000003000000020000015e0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>top - Behavioral (/home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.vhd)</CurrentItem>
+      <CurrentItem>top - Behavioral (/home/kimei/80/VHDL/trigger/Trigger/HW/HDL/top/top.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Configure Target Device</ClosedNode>
-         <ClosedNode>Design Utilities</ClosedNode>
          <ClosedNode>Implement Design/Map</ClosedNode>
          <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
          <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Generate Programming File</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >4</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000202000000010000000100000000000000000000000064ffffffff000000810000000000000001000002020000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000015a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000015a0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Generate Programming File</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>components.vhd</SelectedItem>
+         <SelectedItem>SwitchDebouncer.vhdl</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >10</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000497000000040101000100000000000000000000000064ffffffff0000008100000000000000040000029400000001000000000000011b0000000100000000000000840000000100000000000000640000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>components.vhd</CurrentItem>
+      <CurrentItem>SwitchDebouncer.vhdl</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
@@ -69,7 +76,7 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000128000000010001000100000000000000000000000064ffffffff000000810000000000000001000001280000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000327000000010001000100000000000000000000000064ffffffff000000810000000000000001000003270000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>work</CurrentItem>
    </ItemView>
@@ -78,28 +85,28 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000211000000010000000100000000000000000000000064ffffffff000000810000000000000001000002110000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000169000000010000000100000000000000000000000064ffffffff000000810000000000000001000001690000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000003e6000000010000000100000000000000000000000064ffffffff000000810000000000000001000003e60000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000169000000010000000100000000000000000000000064ffffffff000000810000000000000001000001690000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
-   <SourceProcessView>000000ff00000000000000020000009e000000d701000000060100000002</SourceProcessView>
+   <SourceProcessView>000000ff0000000000000002000001090000013c01000000060100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
       <ClosedNodes>

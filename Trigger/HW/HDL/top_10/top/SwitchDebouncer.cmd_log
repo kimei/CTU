@@ -1,0 +1,1 @@
+vhdtdtfi -prj top -o /home/kimei/80/VHDL/trigger/Trigger/HW/HDL/top_10/top/SwitchDebouncer.vhi -module SwitchDebouncer -template /opt/Xilinx/13.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ../../switchDebouncer/SwitchDebouncer.vhdl 

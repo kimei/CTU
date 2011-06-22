@@ -419,3 +419,9 @@ map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register
 par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
 trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
 bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/80/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/80/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+xst -intstyle ise -ifn "/home/kimei/80/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/80/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+xst -intstyle ise -ifn "/home/kimei/80/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/80/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+netgen -intstyle ise -ar Structure -tm top -w -dir netgen/synthesis -ofmt vhdl -sim top.ngc top_synthesis.vhd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
