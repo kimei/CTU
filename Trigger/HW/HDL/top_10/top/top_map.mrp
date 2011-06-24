@@ -10,38 +10,38 @@ Target Device  : xc5vfx30t
 Target Package : ff665
 Target Speed   : -1
 Mapper Version : virtex5 -- $Revision: 1.55 $
-Mapped Date    : Thu Jun 16 09:22:44 2011
+Mapped Date    : Fri Jun 24 12:39:32 2011
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:   14
 Slice Logic Utilization:
-  Number of Slice Registers:                   778 out of  20,480    3%
-    Number used as Flip Flops:                 729
+  Number of Slice Registers:                   839 out of  20,480    4%
+    Number used as Flip Flops:                 790
     Number used as Latches:                     49
-  Number of Slice LUTs:                      1,152 out of  20,480    5%
-    Number used as logic:                    1,127 out of  20,480    5%
-      Number using O6 output only:             816
-      Number using O5 output only:             255
+  Number of Slice LUTs:                      1,256 out of  20,480    6%
+    Number used as logic:                    1,229 out of  20,480    6%
+      Number using O6 output only:             889
+      Number using O5 output only:             284
       Number using O5 and O6:                   56
     Number used as Memory:                       8 out of   6,080    1%
       Number used as Single Port RAM:            8
         Number using O6 output only:             8
-    Number used as exclusive route-thru:        17
-  Number of route-thrus:                       301
-    Number using O6 output only:               272
-    Number using O5 output only:                29
+    Number used as exclusive route-thru:        19
+  Number of route-thrus:                       330
+    Number using O6 output only:               303
+    Number using O5 output only:                27
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   400 out of   5,120    7%
-  Number of LUT Flip Flop pairs used:        1,303
-    Number with an unused Flip Flop:           525 out of   1,303   40%
-    Number with an unused LUT:                 151 out of   1,303   11%
-    Number of fully used LUT-FF pairs:         627 out of   1,303   48%
-    Number of unique control sets:              69
+  Number of occupied Slices:                   469 out of   5,120    9%
+  Number of LUT Flip Flop pairs used:        1,447
+    Number with an unused Flip Flop:           608 out of   1,447   42%
+    Number with an unused LUT:                 191 out of   1,447   13%
+    Number of fully used LUT-FF pairs:         648 out of   1,447   44%
+    Number of unique control sets:              76
     Number of slice register sites lost
-      to control set restrictions:             146 out of  20,480    1%
+      to control set restrictions:             169 out of  20,480    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -54,7 +54,7 @@ Slice Logic Distribution:
 IO Utilization:
   Number of bonded IOBs:                       101 out of     360   28%
     Number of LOCed IOBs:                       62 out of     101   61%
-    IOB Flip Flops:                             23
+    IOB Flip Flops:                             22
     IOB Master Pads:                             5
     IOB Slave Pads:                              5
 
@@ -70,11 +70,11 @@ Specific Feature Utilization:
   Number of PLL_ADVs:                            1 out of       2   50%
   Number of TEMACs:                              1 out of       2   50%
 
-Average Fanout of Non-Clock Nets:                3.33
+Average Fanout of Non-Clock Nets:                3.36
 
 Peak Memory Usage:  648 MB
-Total REAL time to MAP completion:  27 secs 
-Total CPU time to MAP completion:   27 secs 
+Total REAL time to MAP completion:  35 secs 
+Total CPU time to MAP completion:   34 secs 
 
 Table of Contents
 -----------------
@@ -626,7 +626,7 @@ sourceless and has been removed.
                    Sourceless block
 "EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<5>_SW2" (ROM)
 removed.
-                    The signal "N93" is sourceless and has been removed.
+                    The signal "N107" is sourceless and has been removed.
                      Sourceless block
 "EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<5>" (ROM) removed.
                       The signal "EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/match_val<5>" is
@@ -1289,11 +1289,11 @@ unused and has been removed.
 *                                               Unused block
 "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_state_FSM_FFd2-In1" (ROM)
 removed.
-*                    The signal "N54" is unused and has been removed.
+*                    The signal "N68" is unused and has been removed.
 *                     Unused block
 "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_not0001_SW1" (ROM)
 removed.
-*                    The signal "N53" is unused and has been removed.
+*                    The signal "N67" is unused and has been removed.
 *                     Unused block
 "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_not0001_SW0" (ROM)
 removed.
@@ -2103,7 +2103,7 @@ unused and has been removed.
                                          Unused block
 "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Msub_wr_addr_diff_sub0000_xo
 r<4>" (XOR) removed.
-                                      The signal "N30" is unused and has been removed.
+                                      The signal "N36" is unused and has been removed.
                                        Unused block
 "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_fifo_full_or0000_SW0"
 (ROM) removed.
@@ -2215,7 +2215,7 @@ is unused and has been removed.
              Unused block
 "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_frames_and0000_inv2"
 (ROM) removed.
-              The signal "N79" is unused and has been removed.
+              The signal "N93" is unused and has been removed.
                Unused block
 "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_frames_and0000_inv2_SW0_S
 W0" (ROM) removed.
@@ -2404,7 +2404,7 @@ unused and has been removed.
              Unused block
 "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Mcount_rd_frames_lut<8>"
 (ROM) removed.
-        The signal "N69" is unused and has been removed.
+        The signal "N83" is unused and has been removed.
          Unused block
 "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/frame_in_fifo_or0000_SW0"
 (ROM) removed.
@@ -2975,7 +2975,7 @@ Section 6 - IOB Properties
 | LEDS<4>                            | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
 | LEDS<5>                            | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
 | LEDS<6>                            | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
-| LEDS<7>                            | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW | OFF          |          |          |
+| LEDS<7>                            | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
 | MCLK100                            | IOBM             | OUTPUT    | LVDS_25              |       |          |      | ODDR         |          |          |
 | MCLK100_b                          | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
 | MII_TX_CLK_0                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |

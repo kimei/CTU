@@ -1,7 +1,7 @@
 Release 13.1 par O.40d (lin64)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
-COMPETReadout003::  Thu Jun 16 09:23:12 2011
+COMPETReadout003::  Fri Jun 24 12:40:08 2011
 
 par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
 
@@ -33,19 +33,19 @@ Device Utilization Summary:
       Number of LOCed IOBSs                  5 out of 5     100%
 
    Number of IODELAYs                       11 out of 400     2%
-   Number of OLOGICs                        13 out of 400     3%
+   Number of OLOGICs                        12 out of 400     3%
    Number of PLL_ADVs                        1 out of 2      50%
    Number of RAMB18X2s                       1 out of 68      1%
    Number of RAMB18X2SDPs                    1 out of 68      1%
    Number of TEMACs                          1 out of 2      50%
-   Number of Slices                        400 out of 5120    7%
-   Number of Slice Registers               778 out of 20480   3%
-      Number used as Flip Flops            729
+   Number of Slices                        469 out of 5120    9%
+   Number of Slice Registers               839 out of 20480   3%
+      Number used as Flip Flops            790
       Number used as Latches                49
       Number used as LatchThrus              0
 
-   Number of Slice LUTS                   1152 out of 20480   5%
-   Number of Slice LUT-Flip Flop pairs    1303 out of 20480   6%
+   Number of Slice LUTS                   1256 out of 20480   6%
+   Number of Slice LUT-Flip Flop pairs    1447 out of 20480   7%
 
 
 Overall effort level (-ol):   Standard 
@@ -67,21 +67,21 @@ WARNING:Par:288 - The signal DIP_SWITCH<7>_IBUF has no load.  PAR will not attem
 Starting Router
 
 
-Phase  1  : 6040 unrouted;      REAL time: 8 secs 
+Phase  1  : 6497 unrouted;      REAL time: 7 secs 
 
-Phase  2  : 5224 unrouted;      REAL time: 8 secs 
+Phase  2  : 5624 unrouted;      REAL time: 8 secs 
 
-Phase  3  : 1436 unrouted;      REAL time: 12 secs 
+Phase  3  : 1462 unrouted;      REAL time: 12 secs 
 
-Phase  4  : 1436 unrouted; (Setup:0, Hold:2008, Component Switching Limit:0)     REAL time: 14 secs 
+Phase  4  : 1462 unrouted; (Setup:0, Hold:624, Component Switching Limit:0)     REAL time: 13 secs 
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:2009, Component Switching Limit:0)     REAL time: 14 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:594, Component Switching Limit:0)     REAL time: 14 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:2009, Component Switching Limit:0)     REAL time: 14 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:594, Component Switching Limit:0)     REAL time: 14 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:2009, Component Switching Limit:0)     REAL time: 14 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:594, Component Switching Limit:0)     REAL time: 14 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:2009, Component Switching Limit:0)     REAL time: 14 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:594, Component Switching Limit:0)     REAL time: 14 secs 
 
 Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 14 secs 
 
@@ -106,15 +106,13 @@ Generating Clock Report
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
 |EMAC_1/tx_client_clk |              |      |      |            |             |
-|                  _0 | BUFGCTRL_X0Y3| No   |  250 |  0.476     |  2.014      |
+|                  _0 | BUFGCTRL_X0Y3| No   |  249 |  0.485     |  2.014      |
 +---------------------+--------------+------+------+------------+-------------+
 | EMAC_1/tx_phy_clk_0 |BUFGCTRL_X0Y27| No   |   12 |  0.086     |  2.014      |
 +---------------------+--------------+------+------+------------+-------------+
-|     Inst_CRU/mclk_s | BUFGCTRL_X0Y2| No   |    2 |  0.101     |  1.692      |
+|     Inst_CRU/mclk_s | BUFGCTRL_X0Y2| No   |    2 |  0.100     |  1.692      |
 +---------------------+--------------+------+------+------------+-------------+
 |   EMAC_1/rx_clk_0_i |BUFGCTRL_X0Y29| No   |   11 |  0.075     |  2.003      |
-+---------------------+--------------+------+------+------------+-------------+
-|                mclk | BUFGCTRL_X0Y1| No   |    9 |  0.396     |  1.947      |
 +---------------------+--------------+------+------+------------+-------------+
 |EMAC_1/rx_client_clk |              |      |      |            |             |
 |                  _0 |BUFGCTRL_X0Y28| No   |    1 |  0.000     |  2.018      |
@@ -122,13 +120,15 @@ Generating Clock Report
 |  MII_TX_CLK_0_BUFGP |BUFGCTRL_X0Y31| No   |    1 |  0.000     |  2.003      |
 +---------------------+--------------+------+------+------------+-------------+
 |Inst_CRU/fpga_100m_c |              |      |      |            |             |
-|                lk_s |BUFGCTRL_X0Y30| No   |   15 |  0.109     |  1.819      |
+|                lk_s |BUFGCTRL_X0Y30| No   |   15 |  0.176     |  1.882      |
 +---------------------+--------------+------+------+------------+-------------+
 |EMAC_1/UDP_IP_Core_1 |              |      |      |            |             |
 |/IPV4_PACKET_TRANSMI |              |      |      |            |             |
-| TTER_port_map/LUTwe | BUFGCTRL_X0Y4| No   |    8 |  0.017     |  1.557      |
+| TTER_port_map/LUTwe | BUFGCTRL_X0Y4| No   |    8 |  0.047     |  1.576      |
 +---------------------+--------------+------+------+------------+-------------+
 |              clk200 | BUFGCTRL_X0Y0| No   |    5 |  0.261     |  1.797      |
++---------------------+--------------+------+------+------------+-------------+
+|                mclk | BUFGCTRL_X0Y1| No   |   33 |  0.243     |  1.865      |
 +---------------------+--------------+------+------+------------+-------------+
 |  EMAC_1/gtx_clk_0_i |         Local|      |    1 |  0.000     |  3.709      |
 +---------------------+--------------+------+------+------------+-------------+
@@ -137,7 +137,7 @@ Generating Clock Report
 |TTER_port_map/Inst_I |              |      |      |            |             |
 |PV4WriteUDPHeader/Ch |              |      |      |            |             |
 |ecksumTemplate_n_16_ |              |      |      |            |             |
-|             and0000 |         Local|      |   12 |  0.484     |  0.973      |
+|             and0000 |         Local|      |   12 |  0.550     |  1.206      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -159,24 +159,24 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  TS_fe_TEMAC_clk_phy_rx0 = PERIOD TIMEGRP  | SETUP       |     0.166ns|     7.334ns|       0|           0
+  TS_fe_TEMAC_clk_phy_rx0 = PERIOD TIMEGRP  | SETUP       |     0.203ns|     7.297ns|       0|           0
   "fe_TEMAC_clk_phy_rx0" 7.5 ns HIGH        | HOLD        |     4.034ns|            |       0|           0
     50%                                     |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_v5_emac_v1_5_gtp_clk = PERIOD TIMEGRP  | SETUP       |     1.371ns|     6.329ns|       0|           0
-  "v5_emac_v1_5_gtp_clk" 7.7 ns HIGH        | HOLD        |     0.314ns|            |       0|           0
+  TS_v5_emac_v1_5_gtp_clk = PERIOD TIMEGRP  | SETUP       |     1.464ns|     6.236ns|       0|           0
+  "v5_emac_v1_5_gtp_clk" 7.7 ns HIGH        | HOLD        |     0.322ns|            |       0|           0
     50%                                     |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  ts_tx_meta_protect_0 = MAXDELAY FROM TIME | SETUP       |     2.310ns|     2.690ns|       0|           0
-  GRP "tx_metastable_0" 5 ns         DATAPA | HOLD        |     0.613ns|            |       0|           0
+  ts_tx_meta_protect_0 = MAXDELAY FROM TIME | SETUP       |     2.080ns|     2.920ns|       0|           0
+  GRP "tx_metastable_0" 5 ns         DATAPA | HOLD        |     0.479ns|            |       0|           0
   THONLY                                    |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   TS_v5_emac_v1_5_clk_phy_rx0 = PERIOD TIME | MINPERIOD   |     5.834ns|     1.666ns|       0|           0
   GRP "v5_emac_v1_5_clk_phy_rx0" 7.5 ns     |             |            |            |        |            
        HIGH 50%                             |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_tx_fifo_addr_0 = MAXDELAY FROM TIMEGRP | SETUP       |     8.837ns|     1.163ns|       0|           0
-   "tx_addr_rd_0" TO TIMEGRP         "tx_ad | HOLD        |     0.443ns|            |       0|           0
+  TS_tx_fifo_addr_0 = MAXDELAY FROM TIMEGRP | SETUP       |     8.714ns|     1.286ns|       0|           0
+   "tx_addr_rd_0" TO TIMEGRP         "tx_ad | HOLD        |     0.564ns|            |       0|           0
   dr_wr_0" 10 ns                            |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   TS_fe_TEMAC_tx_clk0 = PERIOD TIMEGRP "fe_ | N/A         |         N/A|         N/A|     N/A|         N/A
@@ -201,10 +201,10 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 8 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 16 secs 
-Total CPU time to PAR completion: 16 secs 
+Total REAL time to PAR completion: 15 secs 
+Total CPU time to PAR completion: 15 secs 
 
-Peak Memory Usage:  537 MB
+Peak Memory Usage:  548 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

@@ -314,7 +314,7 @@ begin
 
   reset <= BUTTONS(0);
 
-  LEDS(2 to 6) <= (others => '0');
+  LEDS(2 to 7) <= (others => '1');
 
 
   reset_roc_int_b2 <= not buttons_deb(2);
@@ -333,7 +333,7 @@ begin
       trigled  <= '0';
     elsif mclk'event and mclk = '1' then
       trigled1 <= trigled0;
-      if ((trigled0 = '1)' and (trigled1 = '0')) then
+      if ((trigled0 = '1') and (trigled1 = '0')) then
         trigled <= not trigled;
       else
         trigled <= trigled;

@@ -12,7 +12,7 @@ Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.02 secs
  
 --> 
 Reading design: top.prj
@@ -341,8 +341,8 @@ Analyzing Entity <top> in library <work> (Architecture <behavioral>).
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <G2[1].diff_out> in unit <top>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <G2[1].diff_out> in unit <top>.
     Set user-defined property "SLEW =  FAST" for instance <G2[1].diff_out> in unit <top>.
-WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.vhd" line 272: Instantiating black box module <OBUFDS>.
-WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.vhd" line 278: Instantiating black box module <OBUFDS>.
+WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.vhd" line 259: Instantiating black box module <OBUFDS>.
+WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.vhd" line 265: Instantiating black box module <OBUFDS>.
 Entity <top> analyzed. Unit <top> generated.
 
 Analyzing generic Entity <SwitchDebouncer> in library <work> (Architecture <Structural>).
@@ -1711,7 +1711,6 @@ Unit <v5_emac_v1_5_example_design> synthesized.
 
 Synthesizing Unit <top>.
     Related source file is "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.vhd".
-WARNING:Xst:1306 - Output <LEDS<7>> is never assigned.
 WARNING:Xst:647 - Input <DIP_SWITCH> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:646 - Signal <rst> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <clk125> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -1719,7 +1718,6 @@ WARNING:Xst:646 - Signal <buttons_deb<0>> is assigned but never used. This uncon
     Found 1-bit register for signal <en_rand_trig>.
     Found 1-bit register for signal <en_rand_trig_buf0>.
     Found 1-bit register for signal <trigled>.
-    Found 1-bit xor2 for signal <trigled$xor0000> created at line 292.
     Found 1-bit register for signal <trigled1>.
     Summary:
 	inferred   4 D-type flip-flop(s).
@@ -1776,8 +1774,8 @@ Macro Statistics
  31-bit comparator greater                             : 1
 # Multiplexers                                         : 1
  32-bit 32-to-1 multiplexer                            : 1
-# Xors                                                 : 42
- 1-bit xor2                                            : 41
+# Xors                                                 : 41
+ 1-bit xor2                                            : 40
  1-bit xor6                                            : 1
 
 =========================================================================
@@ -2025,8 +2023,8 @@ Macro Statistics
  31-bit comparator greater                             : 1
 # Multiplexers                                         : 1
  32-bit 32-to-1 multiplexer                            : 1
-# Xors                                                 : 42
- 1-bit xor2                                            : 41
+# Xors                                                 : 41
+ 1-bit xor2                                            : 40
  1-bit xor6                                            : 1
 
 =========================================================================
@@ -2205,8 +2203,8 @@ Cell Usage :
 #      LUT2                        : 165
 #      LUT3                        : 137
 #      LUT4                        : 187
-#      LUT5                        : 150
-#      LUT6                        : 376
+#      LUT5                        : 151
+#      LUT6                        : 375
 #      MUXCY                       : 464
 #      MUXF7                       : 8
 #      VCC                         : 3
@@ -2214,8 +2212,8 @@ Cell Usage :
 # FlipFlops/Latches                : 1066
 #      FD                          : 35
 #      FDC                         : 282
-#      FDCE                        : 126
-#      FDE                         : 232
+#      FDCE                        : 127
+#      FDE                         : 231
 #      FDP                         : 41
 #      FDPE                        : 14
 #      FDR                         : 111
@@ -2235,11 +2233,11 @@ Cell Usage :
 # Clock Buffers                    : 11
 #      BUFG                        : 10
 #      BUFGP                       : 1
-# IO Buffers                       : 84
+# IO Buffers                       : 85
 #      IBUF                        : 43
 #      IBUFDS                      : 2
 #      IBUFG                       : 1
-#      OBUF                        : 33
+#      OBUF                        : 34
 #      OBUFDS                      : 5
 # Others                           : 14
 #      IDELAYCTRL                  : 1
@@ -2271,7 +2269,7 @@ Slice Logic Distribution:
 
 IO Utilization: 
  Number of IOs:                         101
- Number of bonded IOBs:                  92  out of    360    25%  
+ Number of bonded IOBs:                  93  out of    360    25%  
     IOB Flip Flops/Latches:              10
 
 Specific Feature Utilization:
@@ -2322,7 +2320,7 @@ Asynchronous Control Signals Information:
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+-------+
 Control Signal                                                                                                                                                                                     | Buffer(FF name)                                                                                                   | Load  |
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+-------+
-EMAC_1/rate_counter_1/G_edge_det[0].edge_detect_1/rst_b_inv(sync_trigger_1/G3[0].edge_detect_1/rst_b_inv1_INV_0:O)                                                                                 | NONE(EMAC_1/idelayctrl_reset_0_r_1)                                                                               | 203   |
+EMAC_1/rate_counter_1/G_edge_det[0].edge_detect_1/rst_b_inv(sync_trigger_1/G3[0].edge_detect_1/rst_b_inv1_INV_0:O)                                                                                 | NONE(EMAC_1/idelayctrl_reset_0_r_1)                                                                               | 204   |
 EMAC_1/v5_emac_ll/tx_reset_0_i(EMAC_1/v5_emac_ll/tx_reset_0_i:Q)                                                                                                                                   | NONE(EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/ENABLE_USER_DATA_READ_port_map/usr_data_sel_prev)      | 132   |
 BUTTONS<0>                                                                                                                                                                                         | IBUF                                                                                                              | 35    |
 EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/rd_rst_reg<2>(EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/rd_rst_reg_2:Q)                                                                                          | NONE(EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/gr1.gdcf.dc/dc/count_0)                                                | 31    |
@@ -2342,7 +2340,7 @@ Speed Grade: -1
 
    Minimum period: 4.322ns (Maximum Frequency: 231.374MHz)
    Minimum input arrival time before clock: 2.731ns
-   Maximum output required time after clock: 4.164ns
+   Maximum output required time after clock: 4.175ns
    Maximum combinational path delay: 2.793ns
 
 Timing Detail:
@@ -2631,7 +2629,7 @@ Offset:              2.731ns (Levels of Logic = 3)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_CRU/Inst_PLL_ALL/CLKOUT0_BUF'
   Total number of paths / destination ports: 8 / 8
 -------------------------------------------------------------------------
-Offset:              3.985ns (Levels of Logic = 2)
+Offset:              3.984ns (Levels of Logic = 2)
   Source:            Inst_CRU/fe_rst_sync/d_1 (FF)
   Destination:       RESET_ROC_B1 (PAD)
   Source Clock:      Inst_CRU/Inst_PLL_ALL/CLKOUT0_BUF rising
@@ -2640,11 +2638,11 @@ Offset:              3.985ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q            136   0.471   0.627  Inst_CRU/fe_rst_sync/d_1 (Inst_CRU/fe_rst_sync/d_1)
+     FDC:C->Q            135   0.471   0.626  Inst_CRU/fe_rst_sync/d_1 (Inst_CRU/fe_rst_sync/d_1)
      LUT2:I1->O            2   0.094   0.341  reset_roc_int_b1 (reset_roc_int_b)
      OBUFDS:I->O               2.452          MCLK_DIFF_OUT1 (RESET_ROC_B1)
     ----------------------------------------
-    Total                      3.985ns (3.017ns logic, 0.968ns route)
+    Total                      3.984ns (3.017ns logic, 0.967ns route)
                                        (75.7% logic, 24.3% route)
 
 =========================================================================
@@ -2670,21 +2668,21 @@ Offset:              3.395ns (Levels of Logic = 1)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_CRU/Inst_PLL_ALL/CLKOUT1_BUF'
   Total number of paths / destination ports: 22 / 10
 -------------------------------------------------------------------------
-Offset:              4.164ns (Levels of Logic = 2)
-  Source:            sync_trigger_1/trig_out_s_d_0 (FF)
+Offset:              4.175ns (Levels of Logic = 2)
+  Source:            en_rand_trig (FF)
   Destination:       SYNC_TRIGGER_OUT_b<1> (PAD)
   Source Clock:      Inst_CRU/Inst_PLL_ALL/CLKOUT1_BUF rising
 
-  Data Path: sync_trigger_1/trig_out_s_d_0 to SYNC_TRIGGER_OUT_b<1>
+  Data Path: en_rand_trig to SYNC_TRIGGER_OUT_b<1>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              3   0.471   0.800  sync_trigger_1/trig_out_s_d_0 (sync_trigger_1/trig_out_s_d_0)
+     FDCE:C->Q             5   0.471   0.811  en_rand_trig (en_rand_trig)
      LUT4:I0->O            3   0.094   0.347  trig_out_se2_or00001 (trig_out_se2<0>)
      OBUFDS:I->O               2.452          G2[0].diff_out (SYNC_TRIGGER_OUT<0>)
     ----------------------------------------
-    Total                      4.164ns (3.017ns logic, 1.147ns route)
-                                       (72.5% logic, 27.5% route)
+    Total                      4.175ns (3.017ns logic, 1.158ns route)
+                                       (72.3% logic, 27.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'FPGA100M'
@@ -2764,15 +2762,15 @@ Delay:               2.793ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 23.00 secs
-Total CPU time to Xst completion: 21.98 secs
+Total REAL time to Xst completion: 21.00 secs
+Total CPU time to Xst completion: 20.16 secs
  
 --> 
 
 
-Total memory usage is 461800 kilobytes
+Total memory usage is 461788 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  189 (   0 filtered)
+Number of warnings :  188 (   0 filtered)
 Number of infos    :  107 (   0 filtered)
 
