@@ -304,8 +304,8 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1308738732" xil_pn:in_ck="5778975927242464693" xil_pn:name="TRANEXT_xstsynthesize_virtex5" xil_pn:prop_ck="-2626005245416070532" xil_pn:start_ts="1308738729">
-      <status xil_pn:value="FailedRun"/>
+    <transform xil_pn:end_ts="1308739326" xil_pn:in_ck="5778975927242464693" xil_pn:name="TRANEXT_xstsynthesize_virtex5" xil_pn:prop_ck="-2626005245416070532" xil_pn:start_ts="1308739302">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name=".lso"/>
@@ -315,9 +315,9 @@
       <outfile xil_pn:name="top.ngr"/>
       <outfile xil_pn:name="top.ntrc_log"/>
       <outfile xil_pn:name="top.prj"/>
+      <outfile xil_pn:name="top.stx"/>
       <outfile xil_pn:name="top.syr"/>
       <outfile xil_pn:name="top.xst"/>
-      <outfile xil_pn:name="top_vhdl.prj"/>
       <outfile xil_pn:name="top_xst.xrpt"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
@@ -331,7 +331,6 @@
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
@@ -410,7 +409,8 @@
     <transform xil_pn:end_ts="1308738622" xil_pn:in_ck="-4122716511380081129" xil_pn:name="TRAN_postSynthesisSimModel" xil_pn:prop_ck="-4859685824113929150" xil_pn:start_ts="1308738619">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="netgen"/>
       <outfile xil_pn:name="netgen/synthesis/top_synthesis.nlf"/>
       <outfile xil_pn:name="netgen/synthesis/top_synthesis.vhd"/>

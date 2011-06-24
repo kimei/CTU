@@ -425,3 +425,5 @@ xst -intstyle ise -ifn "/home/kimei/80/VHDL/trigger/Trigger/HW/HDL/top_10/top/to
 xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
 netgen -intstyle ise -ar Structure -tm top -w -dir netgen/synthesis -ofmt vhdl -sim top.ngc top_synthesis.vhd 
 xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
