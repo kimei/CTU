@@ -61,11 +61,10 @@ begin
    elsif mclk'event and mclk = '1' then  -- rising clock edge
      counter <= counter + 1;
      trigger_out <= (others => '0');
-     if counter = 99997 then
+     if counter = 997 then
        trigger_out <= (others => '1');
-     elsif counter = 99998 then
        trigger_out <= (others => '1');
-     elsif counter = 99999 then
+     elsif counter = 999 then
        trigger_out <= (others => '1');
        counter <= (others => '0');
      end if;

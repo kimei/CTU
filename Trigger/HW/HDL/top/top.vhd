@@ -345,7 +345,7 @@ begin
   triggerswitch : process (mclk, rst_b)
   begin
     if rst_b = '0' then
-      en_rand_trig      <= '0';
+      en_rand_trig      <= '1';
       en_rand_trig_buf0 <= '0';
     elsif mclk'event and mclk = '1' then
       en_rand_trig_buf0 <= buttons_deb(3);
