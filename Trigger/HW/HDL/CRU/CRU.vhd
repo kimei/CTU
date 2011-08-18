@@ -26,8 +26,6 @@ use IEEE.STD_LOGIC_1164.all;
 use IEEE.STD_LOGIC_ARITH.all;
 use IEEE.STD_LOGIC_UNSIGNED.all;
 
----- Uncomment the following library declaration if instantiating
----- any Xilinx primitives in this code.
 library UNISIM;
 use UNISIM.VComponents.all;
 
@@ -43,9 +41,9 @@ entity CRU is
     -- Clock outputs
     mclk   : out std_logic;
     mclk_b : out std_logic;             -- Master clock
-    gclk   : out std_logic;  				-- single ended clock used on 'this fpga.
-	 clk200 : out std_logic;
-	 clk125 : out std_logic;
+    gclk   : out std_logic;  -- single ended clock used on 'this fpga.
+    clk200 : out std_logic;
+    clk125 : out std_logic;
 
     -- Reset outputs
     mrst_b : out std_logic;             -- Global master reset
@@ -66,24 +64,24 @@ architecture Behavioral of CRU is
   signal pll_reset     : std_logic;
   signal wait_counter  : integer range 65535 downto 0;  -- To delay the reset signal (16 bit int)
   signal wait_counter2 : integer range 16 downto 0;
-  signal rst_counter   : integer range (NUMBER_OF_ROCS+2) downto 0;  -- Hvor mange trengs?
+  signal rst_counter   : integer range (NUMBER_OF_ROCS+2) downto 0;
   -----------------------------------------------------------------------------
 
-  signal clk_lock : std_logic;
-
+  signal clk_lock        : std_logic;
   signal fpga_100m_clk_s : std_logic;
+  signal mclk_s          : std_logic;  -- Master clock, single ended to go into differential port
+  signal mclk_o_ddr      : std_logic;   -- Out from ODDR
+  signal gclk_s          : std_logic;  -- Signal of gclksignal mclk_s : std_logic;
+  signal clk125_s        : std_logic;
+  signal clk200_s        : std_logic;
 
-  signal mclk_s     : std_logic;  -- Master clock, single ended to go into differential port
-  signal mclk_o_ddr : std_logic;        -- Out from ODDR
-  signal gclk_s     : std_logic;  -- Signal of gclksignal mclk_s : std_logic;
-  signal clk125_s : std_logic;
-  signal clk200_s : std_logic;
-
+  -----------------------------------------------------------------------------
+  -- Component declarations for XILINX primitives
+  -----------------------------------------------------------------------------
   component IBUFG
     port (O : out std_ulogic;
           I : in  std_ulogic);
   end component;
-
 
   component OBUFDS
     port (
@@ -108,13 +106,16 @@ architecture Behavioral of CRU is
   end component;
   
 begin
+  -----------------------------------------------------------------------------
+  -- Component instantiations
+  -----------------------------------------------------------------------------
   Inst_PLL_ALL : PLL_core port map(
     CLKIN1_IN   => fpga_100m_clk_s,
     RST_IN      => pll_reset,
     CLKOUT0_OUT => mclk_s,
     CLKOUT1_OUT => gclk_s,
-	 CLKOUT2_OUT => clk125_s,
-	 CLKOUT3_OUT => clk200_s,
+    CLKOUT2_OUT => clk125_s,
+    CLKOUT3_OUT => clk200_s,
     LOCKED_OUT  => clk_lock);
 
   MCLK_DIFF_OUT : OBUFDS port map(
@@ -135,10 +136,28 @@ begin
     port map (O => fpga_100m_clk_s,
               I => fpga_100m_clk);
 
-  gclk <= gclk_s;
-	clk125 <= clk125_s;
-	clk200 <= clk200_s;
--- The purpose of this state machine is not to over-complicate things. but:
+  fe_rst_sync : entity work.a2s port map(
+    srst_b => '1' ,                     --! Synchronous  reset
+    arst_b => reset_global_b ,          --! Asynchronous reset
+    clk    => mclk_s,                   --! Synchronisation clock
+    i      => '1' ,                     --! Asynchronous input
+    o      => rst_sync_b                --! Synchronous  output (metafiltered)
+    );
+
+  -----------------------------------------------------------------------------
+  -- Concurrent statements
+  -----------------------------------------------------------------------------
+
+  gclk   <= gclk_s;
+  clk125 <= clk125_s;
+  clk200 <= clk200_s;
+  mrst_b <= rst_sync_b;
+  lrst_b <= rst_sync_b;
+
+  -----------------------------------------------------------------------------
+  -- FSM
+  -----------------------------------------------------------------------------
+
 -- the start-up procedure has to happen in a few steps. First, the PLL must be reset. And
 -- LOCK_OUT signal can not be trusted until 100 us after reset. Then the output of
 -- the differential clk must be enabled, then a new reset must be issued to
@@ -153,14 +172,14 @@ begin
     -- a total async reset
     if fpga_cpu_reset = '1' then
       enable_diff_out_b <= '1';
-      reset_global_b      <= '0';
+      reset_global_b    <= '0';
       wait_counter      <= 0;
       wait_counter2     <= 0;
       rst_counter       <= 0;
       state             <= INIT;
 
       -- the state machine is governed by the clock before the PLL, which means
-      -- that it is in some sence async to the rest of the FPGA.
+      -- that it is in some sense async to the rest of the FPGA.
     elsif fpga_100m_clk_s'event and fpga_100m_clk_s = '1' then
       pll_reset      <= '0';
       reset_global_b <= '1';
@@ -221,12 +240,10 @@ begin
         when WAIT2 =>
           state        <= WAIT2;
           wait_counter <= wait_counter + 1;
-
           if wait_counter = WAIT_PERIODS_2 then
             wait_counter  <= 0;
             wait_counter2 <= wait_counter2 + 1;
           end if;
-
           if wait_counter2 = 1 then
             wait_counter  <= 0;
             wait_counter2 <= 0;
@@ -239,26 +256,11 @@ begin
           if clk_lock = '0' then
             state <= INIT;
           end if;
-          
         when others =>
           state <= INIT;
       end case;
-
     end if;
-    
   end process FSM_startup;
-
-  fe_rst_sync : entity work.a2s port map(
-    srst_b => '1' ,                     --! Synchronous  reset
-    arst_b => reset_global_b ,          --! Asynchronous reset
-    clk    => mclk_s,                   --! Synchronisation clock
-    i      => '1' ,                     --! Asynchronous input
-    o      => rst_sync_b                --! Synchronous  output (metafiltered)
-    );
-
-  mrst_b <= rst_sync_b;
-  lrst_b   <= rst_sync_b;
-
 
 end Behavioral;
 

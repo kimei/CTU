@@ -2,7 +2,8 @@ Release 13.1 ngdbuild O.40d (lin64)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
 Command Line: /opt/Xilinx/13.1/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
-ise -dd _ngo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc
+ise -dd _ngo -sd ../../UDP/UDP_rec_kim/fifo -sd ../../UDP/UDP_mr -sd
+../../rate_counter/fifo -nt timestamp -uc
 /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc
 /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc
 top.ngd
@@ -12,6 +13,7 @@ Reading NGO file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.ngc"
 Loading design module "../../UDP/UDP_mr/dist_mem_64x8.ngc"...
 Loading design module "../../UDP/UDP_mr/comp_6b_equal.ngc"...
 Loading design module "../../UDP/UDP_mr/comp_11b_equal.ngc"...
+Loading design module "../../UDP/UDP_rec_kim/fifo/fifo_generator_v8_1.ngc"...
 Loading design module "../../rate_counter/fifo/fifo_generator_v4_4.ngc"...
 Gathering constraint information from source properties...
 Done.
@@ -121,10 +123,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:  14
 
-Total memory usage is 275896 kilobytes
+Total memory usage is 284972 kilobytes
 
 Writing NGD file "top.ngd" ...
-Total REAL time to NGDBUILD completion:  3 sec
-Total CPU time to NGDBUILD completion:   3 sec
+Total REAL time to NGDBUILD completion:  4 sec
+Total CPU time to NGDBUILD completion:   4 sec
 
 Writing NGDBUILD log file "top.bld"...

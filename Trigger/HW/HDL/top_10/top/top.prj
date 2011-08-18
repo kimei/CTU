@@ -1,3 +1,4 @@
+vhdl work "../../UDP/UDP_rec_kim/fifo/fifo_generator_v8_1.vhd"
 vhdl work "../../UDP/UDP_mr/COUNTER_6B_LUT_FIFO_MODE.vhd"
 vhdl work "../../UDP/UDP_mr/COUNTER_11B_EN_TRANS.vhd"
 vhdl work "../../UDP/UDP_mr/comp_6b_equal.vhd"
@@ -25,6 +26,8 @@ vhdl work "../../UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/I
 vhdl work "../../UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_block.vhd"
 vhdl work "../../UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/eth_fifo_8.vhd"
 vhdl work "../../Sync_Trigger/edge_detector.vhd"
+vhdl work "../../UDP/UDP_rec_kim/udp_rec.vhd"
+vhdl work "../../UDP/UDP_rec_kim/receiver_control.vhd"
 vhdl work "../../UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/UDP_IP_Core.vhd"
 vhdl work "../../UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_locallink.vhd"
 vhdl work "../../Shared/a2s.vhd"

@@ -439,3 +439,229 @@ map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register
 par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
 trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
 bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_rec_kim/fifo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_rec_kim/fifo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_rec_kim/fifo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_rec_kim/fifo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_rec_kim/fifo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_rec_kim/fifo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_rec_kim/fifo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_rec_kim/fifo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_rec_kim/fifo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_rec_kim/fifo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_rec_kim/fifo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_rec_kim/fifo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_rec_kim/fifo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_rec_kim/fifo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_rec_kim/fifo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_rec_kim/fifo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_rec_kim/fifo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_rec_kim/fifo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_rec_kim/fifo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_rec_kim/fifo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_rec_kim/fifo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_rec_kim/fifo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_rec_kim/fifo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_rec_kim/fifo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_rec_kim/fifo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../UDP/UDP_rec_kim/fifo -sd ../../UDP/UDP_mr -sd ../../rate_counter/fifo -nt timestamp -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/emac.ucf -uc /home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.ucf -p xc5vfx30t-ff665-1 top.ngc top.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol std -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 

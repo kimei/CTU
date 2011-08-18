@@ -1,0 +1,43 @@
+Release 13.1 - xst O.40d (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/Shared/constants.vhd" in Library work.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/Shared/components.vhd" in Library work.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_rec_kim/fifo/fifo_generator_v8_1.vhd" in Library work.
+Architecture fifo_generator_v8_1_a of Entity fifo_generator_v8_1 is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_rec_kim/receiver_control.vhd" in Library work.
+Entity <receiver_control> compiled.
+Entity <receiver_control> (Architecture <behave>) compiled.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> 
+
+
+Total memory usage is 317012 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

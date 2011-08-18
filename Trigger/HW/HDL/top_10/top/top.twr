@@ -53,7 +53,7 @@ Slack: 6.120ns (period - (min high pulse limit / (high pulse / period)))
   Physical resource: EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RX_ER_TO_MAC/SR
   Logical resource: EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RX_ER_TO_MAC/SR
   Location pin: ILOGIC_X0Y129.SR
-  Clock network: EMAC_1/rate_counter_1/G_edge_det[0].edge_detect_1/rst_b_inv
+  Clock network: EMAC_1/Inst_receiver_control/rst_b_inv
 --------------------------------------------------------------------------------
 Slack: 6.120ns (period - (min high pulse limit / (high pulse / period)))
   Period: 7.500ns
@@ -62,7 +62,7 @@ Slack: 6.120ns (period - (min high pulse limit / (high pulse / period)))
   Physical resource: EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RX_DV_TO_MAC/SR
   Logical resource: EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RX_DV_TO_MAC/SR
   Location pin: ILOGIC_X0Y136.SR
-  Clock network: EMAC_1/rate_counter_1/G_edge_det[0].edge_detect_1/rst_b_inv
+  Clock network: EMAC_1/Inst_receiver_control/rst_b_inv
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -71,99 +71,99 @@ Timing constraint: ts_tx_meta_protect_0 = MAXDELAY FROM TIMEGRP
 
  170 paths analyzed, 82 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
- Maximum delay is   2.920ns.
+ Maximum delay is   3.395ns.
 --------------------------------------------------------------------------------
 
-Paths for end point EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_2 (SLICE_X67Y60.CE), 1 path
+Paths for end point EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_7 (SLICE_X65Y69.CE), 1 path
 --------------------------------------------------------------------------------
-Slack:                  2.080ns (requirement - (data path - clock path skew + uncertainty))
+Slack:                  1.605ns (requirement - (data path - clock path skew + uncertainty))
   Source:               EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo (FF)
-  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_2 (FF)
+  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_7 (FF)
   Requirement:          5.000ns
-  Data Path Delay:      2.920ns (Levels of Logic = 1)
+  Data Path Delay:      3.395ns (Levels of Logic = 1)
   Clock Path Skew:      0.000ns
   Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
   Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_2
+  Maximum Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_7
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X66Y56.AQ      Tcko                  0.450   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd8
+    SLICE_X61Y66.AQ      Tcko                  0.450   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
                                                        EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
-    SLICE_X66Y54.C1      net (fanout=3)        0.894   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
-    SLICE_X66Y54.CMUX    Tilo                  0.392   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000125
+    SLICE_X67Y59.C1      net (fanout=3)        1.302   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
+    SLICE_X67Y59.CMUX    Tilo                  0.392   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000125
                                                        EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001157_G
                                                        EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001157
-    SLICE_X67Y60.CE      net (fanout=4)        0.955   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001
-    SLICE_X67Y60.CLK     Tceck                 0.229   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr<1>
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_2
+    SLICE_X65Y69.CE      net (fanout=4)        1.022   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001
+    SLICE_X65Y69.CLK     Tceck                 0.229   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr<10>
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_7
     -------------------------------------------------  ---------------------------
-    Total                                      2.920ns (1.071ns logic, 1.849ns route)
-                                                       (36.7% logic, 63.3% route)
+    Total                                      3.395ns (1.071ns logic, 2.324ns route)
+                                                       (31.5% logic, 68.5% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_0 (SLICE_X67Y60.CE), 1 path
+Paths for end point EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_8 (SLICE_X65Y69.CE), 1 path
 --------------------------------------------------------------------------------
-Slack:                  2.080ns (requirement - (data path - clock path skew + uncertainty))
+Slack:                  1.605ns (requirement - (data path - clock path skew + uncertainty))
   Source:               EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo (FF)
-  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_0 (FF)
+  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_8 (FF)
   Requirement:          5.000ns
-  Data Path Delay:      2.920ns (Levels of Logic = 1)
+  Data Path Delay:      3.395ns (Levels of Logic = 1)
   Clock Path Skew:      0.000ns
   Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
   Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_0
+  Maximum Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_8
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X66Y56.AQ      Tcko                  0.450   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd8
+    SLICE_X61Y66.AQ      Tcko                  0.450   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
                                                        EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
-    SLICE_X66Y54.C1      net (fanout=3)        0.894   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
-    SLICE_X66Y54.CMUX    Tilo                  0.392   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000125
+    SLICE_X67Y59.C1      net (fanout=3)        1.302   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
+    SLICE_X67Y59.CMUX    Tilo                  0.392   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000125
                                                        EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001157_G
                                                        EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001157
-    SLICE_X67Y60.CE      net (fanout=4)        0.955   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001
-    SLICE_X67Y60.CLK     Tceck                 0.229   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr<1>
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_0
+    SLICE_X65Y69.CE      net (fanout=4)        1.022   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001
+    SLICE_X65Y69.CLK     Tceck                 0.229   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr<10>
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_8
     -------------------------------------------------  ---------------------------
-    Total                                      2.920ns (1.071ns logic, 1.849ns route)
-                                                       (36.7% logic, 63.3% route)
+    Total                                      3.395ns (1.071ns logic, 2.324ns route)
+                                                       (31.5% logic, 68.5% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_1 (SLICE_X67Y60.CE), 1 path
+Paths for end point EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_9 (SLICE_X65Y69.CE), 1 path
 --------------------------------------------------------------------------------
-Slack:                  2.080ns (requirement - (data path - clock path skew + uncertainty))
+Slack:                  1.605ns (requirement - (data path - clock path skew + uncertainty))
   Source:               EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo (FF)
-  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_1 (FF)
+  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_9 (FF)
   Requirement:          5.000ns
-  Data Path Delay:      2.920ns (Levels of Logic = 1)
+  Data Path Delay:      3.395ns (Levels of Logic = 1)
   Clock Path Skew:      0.000ns
   Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
   Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_1
+  Maximum Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_9
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X66Y56.AQ      Tcko                  0.450   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd8
+    SLICE_X61Y66.AQ      Tcko                  0.450   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
                                                        EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
-    SLICE_X66Y54.C1      net (fanout=3)        0.894   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
-    SLICE_X66Y54.CMUX    Tilo                  0.392   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000125
+    SLICE_X67Y59.C1      net (fanout=3)        1.302   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/frame_in_fifo
+    SLICE_X67Y59.CMUX    Tilo                  0.392   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000125
                                                        EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001157_G
                                                        EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001157
-    SLICE_X67Y60.CE      net (fanout=4)        0.955   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001
-    SLICE_X67Y60.CLK     Tceck                 0.229   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr<1>
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_1
+    SLICE_X65Y69.CE      net (fanout=4)        1.022   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001
+    SLICE_X65Y69.CLK     Tceck                 0.229   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr<10>
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_9
     -------------------------------------------------  ---------------------------
-    Total                                      2.920ns (1.071ns logic, 1.849ns route)
-                                                       (36.7% logic, 63.3% route)
+    Total                                      3.395ns (1.071ns logic, 2.324ns route)
+                                                       (31.5% logic, 68.5% route)
 
 --------------------------------------------------------------------------------
 
@@ -173,17 +173,17 @@ TIMEGRP         "tx_addr_wr_0" 10 ns;
 
  12 paths analyzed, 12 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
- Maximum delay is   1.286ns.
+ Maximum delay is   1.096ns.
 --------------------------------------------------------------------------------
 
-Paths for end point EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_8 (SLICE_X59Y66.AX), 1 path
+Paths for end point EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_6 (SLICE_X60Y76.CX), 1 path
 --------------------------------------------------------------------------------
-Slack:                  8.714ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_8 (FF)
-  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_8 (FF)
+Slack:                  8.904ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_6 (FF)
+  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_6 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      1.186ns (Levels of Logic = 0)
-  Clock Path Skew:      -0.065ns (0.519 - 0.584)
+  Data Path Delay:      0.994ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.067ns (0.558 - 0.625)
   Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
   Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
   Clock Uncertainty:    0.035ns
@@ -194,29 +194,29 @@ Slack:                  8.714ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_8 to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_8
+  Maximum Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_6 to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_6
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X60Y65.AQ      Tcko                  0.471   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer<11>
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_8
-    SLICE_X59Y66.AX      net (fanout=1)        0.723   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer<8>
-    SLICE_X59Y66.CLK     Tdick                -0.008   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr<11>
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_8
+    SLICE_X62Y76.CQ      Tcko                  0.450   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer<7>
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_6
+    SLICE_X60Y76.CX      net (fanout=1)        0.549   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer<6>
+    SLICE_X60Y76.CLK     Tdick                -0.005   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr<7>
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_6
     -------------------------------------------------  ---------------------------
-    Total                                      1.186ns (0.463ns logic, 0.723ns route)
-                                                       (39.0% logic, 61.0% route)
+    Total                                      0.994ns (0.445ns logic, 0.549ns route)
+                                                       (44.8% logic, 55.2% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_2 (SLICE_X58Y63.CX), 1 path
+Paths for end point EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_5 (SLICE_X60Y76.BX), 1 path
 --------------------------------------------------------------------------------
-Slack:                  8.725ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_2 (FF)
-  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_2 (FF)
+Slack:                  8.951ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_5 (FF)
+  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_5 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      1.142ns (Levels of Logic = 0)
-  Clock Path Skew:      -0.098ns (0.531 - 0.629)
+  Data Path Delay:      0.947ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.067ns (0.558 - 0.625)
   Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
   Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
   Clock Uncertainty:    0.035ns
@@ -227,29 +227,29 @@ Slack:                  8.725ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_2 to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_2
+  Maximum Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_5 to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_5
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X62Y61.CQ      Tcko                  0.450   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer<3>
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_2
-    SLICE_X58Y63.CX      net (fanout=1)        0.697   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer<2>
-    SLICE_X58Y63.CLK     Tdick                -0.005   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr<3>
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_2
+    SLICE_X62Y76.BQ      Tcko                  0.450   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer<7>
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_5
+    SLICE_X60Y76.BX      net (fanout=1)        0.515   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer<5>
+    SLICE_X60Y76.CLK     Tdick                -0.018   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr<7>
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_5
     -------------------------------------------------  ---------------------------
-    Total                                      1.142ns (0.445ns logic, 0.697ns route)
-                                                       (39.0% logic, 61.0% route)
+    Total                                      0.947ns (0.432ns logic, 0.515ns route)
+                                                       (45.6% logic, 54.4% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_3 (SLICE_X58Y63.DX), 1 path
+Paths for end point EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_11 (SLICE_X61Y76.DX), 1 path
 --------------------------------------------------------------------------------
-Slack:                  8.809ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_3 (FF)
-  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_3 (FF)
+Slack:                  8.997ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_11 (FF)
+  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_11 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      1.058ns (Levels of Logic = 0)
-  Clock Path Skew:      -0.098ns (0.531 - 0.629)
+  Data Path Delay:      0.928ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.040ns (0.558 - 0.598)
   Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
   Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
   Clock Uncertainty:    0.035ns
@@ -260,18 +260,126 @@ Slack:                  8.809ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_3 to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_3
+  Maximum Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_11 to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_11
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X62Y61.DQ      Tcko                  0.450   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer<3>
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_3
-    SLICE_X58Y63.DX      net (fanout=1)        0.613   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer<3>
-    SLICE_X58Y63.CLK     Tdick                -0.005   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr<3>
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_3
+    SLICE_X63Y76.DQ      Tcko                  0.450   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer<11>
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_11
+    SLICE_X61Y76.DX      net (fanout=1)        0.476   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer<11>
+    SLICE_X61Y76.CLK     Tdick                 0.002   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr<11>
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_rd_addr_11
     -------------------------------------------------  ---------------------------
-    Total                                      1.058ns (0.445ns logic, 0.613ns route)
-                                                       (42.1% logic, 57.9% route)
+    Total                                      0.928ns (0.452ns logic, 0.476ns route)
+                                                       (48.7% logic, 51.3% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: ts_rx_meta_protect_0 = MAXDELAY FROM TIMEGRP 
+"rx_metastable_0" 5 ns;
+
+ 13 paths analyzed, 13 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Maximum delay is   1.069ns.
+--------------------------------------------------------------------------------
+
+Paths for end point EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_9 (SLICE_X48Y55.BX), 1 path
+--------------------------------------------------------------------------------
+Slack:                  3.931ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_9 (FF)
+  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_9 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      0.996ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.038ns (0.460 - 0.498)
+  Source Clock:         EMAC_1/rx_client_clk_0 rising at 0.000ns
+  Destination Clock:    EMAC_1/rx_client_clk_0 rising at 7.700ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_9 to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X50Y55.BQ      Tcko                  0.471   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync<11>
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_9
+    SLICE_X48Y55.BX      net (fanout=1)        0.543   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync<9>
+    SLICE_X48Y55.CLK     Tdick                -0.018   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray<11>
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_9
+    -------------------------------------------------  ---------------------------
+    Total                                      0.996ns (0.453ns logic, 0.543ns route)
+                                                       (45.5% logic, 54.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_3 (SLICE_X45Y52.DX), 1 path
+--------------------------------------------------------------------------------
+Slack:                  4.024ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_3 (FF)
+  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_3 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      0.936ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.005ns (0.124 - 0.129)
+  Source Clock:         EMAC_1/rx_client_clk_0 rising at 0.000ns
+  Destination Clock:    EMAC_1/rx_client_clk_0 rising at 7.700ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_3 to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y51.DQ      Tcko                  0.450   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync<3>
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_3
+    SLICE_X45Y52.DX      net (fanout=1)        0.484   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync<3>
+    SLICE_X45Y52.CLK     Tdick                 0.002   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray<3>
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_3
+    -------------------------------------------------  ---------------------------
+    Total                                      0.936ns (0.452ns logic, 0.484ns route)
+                                                       (48.3% logic, 51.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_store_frame_sync (SLICE_X60Y62.AX), 1 path
+--------------------------------------------------------------------------------
+Slack:                  4.036ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_store_frame_tog (FF)
+  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_store_frame_sync (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      0.903ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.026ns (1.336 - 1.362)
+  Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
+  Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_store_frame_tog to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_store_frame_sync
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X62Y59.AQ      Tcko                  0.450   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_store_frame_tog
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_store_frame_tog
+    SLICE_X60Y62.AX      net (fanout=1)        0.465   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_store_frame_tog
+    SLICE_X60Y62.CLK     Tdick                -0.012   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_store_frame_sync
+                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_store_frame_sync
+    -------------------------------------------------  ---------------------------
+    Total                                      0.903ns (0.438ns logic, 0.465ns route)
+                                                       (48.5% logic, 51.5% route)
 
 --------------------------------------------------------------------------------
 
@@ -289,16 +397,16 @@ Timing constraint: TS_fe_TEMAC_clk_phy_rx0 = PERIOD TIMEGRP
 
  10 paths analyzed, 10 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   7.297ns.
+ Minimum period is   7.334ns.
 --------------------------------------------------------------------------------
 
 Paths for end point EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac (TEMAC_X0Y0.PHYEMAC0RXD5), 1 path
 --------------------------------------------------------------------------------
-Slack:                  0.203ns (requirement - (data path - clock path skew + uncertainty))
+Slack:                  0.166ns (requirement - (data path - clock path skew + uncertainty))
   Source:               EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_5 (FF)
   Destination:          EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac (CPU)
   Requirement:          7.500ns
-  Data Path Delay:      7.210ns (Levels of Logic = 0)
+  Data Path Delay:      7.247ns (Levels of Logic = 0)
   Clock Path Skew:      -0.052ns (1.532 - 1.584)
   Source Clock:         EMAC_1/rx_clk_0_i rising at 0.000ns
   Destination Clock:    EMAC_1/rx_clk_0_i rising at 7.500ns
@@ -316,45 +424,12 @@ Slack:                  0.203ns (requirement - (data path - clock path skew + un
     -----------------------------------------------------  -------------------
     ILOGIC_X0Y128.Q1         Tickq                 0.517   EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC<5>
                                                            EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_5
-    TEMAC_X0Y0.PHYEMAC0RXD5  net (fanout=1)        6.443   EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC<5>
+    TEMAC_X0Y0.PHYEMAC0RXD5  net (fanout=1)        6.480   EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC<5>
     TEMAC_X0Y0.PHYEMAC0RXCLK Tmacdck_RXD           0.250   EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
                                                            EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
     -----------------------------------------------------  ---------------------------
-    Total                                          7.210ns (0.767ns logic, 6.443ns route)
+    Total                                          7.247ns (0.767ns logic, 6.480ns route)
                                                            (10.6% logic, 89.4% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac (TEMAC_X0Y0.PHYEMAC0RXD3), 1 path
---------------------------------------------------------------------------------
-Slack:                  0.328ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_3 (FF)
-  Destination:          EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac (CPU)
-  Requirement:          7.500ns
-  Data Path Delay:      7.080ns (Levels of Logic = 0)
-  Clock Path Skew:      -0.057ns (1.532 - 1.589)
-  Source Clock:         EMAC_1/rx_clk_0_i rising at 0.000ns
-  Destination Clock:    EMAC_1/rx_clk_0_i rising at 7.500ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path: EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_3 to EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
-    Location                 Delay type         Delay(ns)  Physical Resource
-                                                           Logical Resource(s)
-    -----------------------------------------------------  -------------------
-    ILOGIC_X0Y122.Q1         Tickq                 0.517   EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC<3>
-                                                           EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_3
-    TEMAC_X0Y0.PHYEMAC0RXD3  net (fanout=1)        6.313   EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC<3>
-    TEMAC_X0Y0.PHYEMAC0RXCLK Tmacdck_RXD           0.250   EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
-                                                           EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
-    -----------------------------------------------------  ---------------------------
-    Total                                          7.080ns (0.767ns logic, 6.313ns route)
-                                                           (10.8% logic, 89.2% route)
 
 --------------------------------------------------------------------------------
 
@@ -391,6 +466,39 @@ Slack:                  0.659ns (requirement - (data path - clock path skew + un
 
 --------------------------------------------------------------------------------
 
+Paths for end point EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac (TEMAC_X0Y0.PHYEMAC0RXD3), 1 path
+--------------------------------------------------------------------------------
+Slack:                  0.712ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_3 (FF)
+  Destination:          EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac (CPU)
+  Requirement:          7.500ns
+  Data Path Delay:      6.696ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.057ns (1.532 - 1.589)
+  Source Clock:         EMAC_1/rx_clk_0_i rising at 0.000ns
+  Destination Clock:    EMAC_1/rx_clk_0_i rising at 7.500ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_3 to EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
+    Location                 Delay type         Delay(ns)  Physical Resource
+                                                           Logical Resource(s)
+    -----------------------------------------------------  -------------------
+    ILOGIC_X0Y122.Q1         Tickq                 0.517   EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC<3>
+                                                           EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_3
+    TEMAC_X0Y0.PHYEMAC0RXD3  net (fanout=1)        5.929   EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC<3>
+    TEMAC_X0Y0.PHYEMAC0RXCLK Tmacdck_RXD           0.250   EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
+                                                           EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
+    -----------------------------------------------------  ---------------------------
+    Total                                          6.696ns (0.767ns logic, 5.929ns route)
+                                                           (11.5% logic, 88.5% route)
+
+--------------------------------------------------------------------------------
+
 Component Switching Limit Checks: TS_fe_TEMAC_clk_phy_rx0 = PERIOD TIMEGRP "fe_TEMAC_clk_phy_rx0" 7.5 ns HIGH
         50%;
 --------------------------------------------------------------------------------
@@ -409,7 +517,7 @@ Slack: 6.120ns (period - (min high pulse limit / (high pulse / period)))
   Physical resource: EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RX_ER_TO_MAC/SR
   Logical resource: EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RX_ER_TO_MAC/SR
   Location pin: ILOGIC_X0Y129.SR
-  Clock network: EMAC_1/rate_counter_1/G_edge_det[0].edge_detect_1/rst_b_inv
+  Clock network: EMAC_1/Inst_receiver_control/rst_b_inv
 --------------------------------------------------------------------------------
 Slack: 6.120ns (period - (min high pulse limit / (high pulse / period)))
   Period: 7.500ns
@@ -418,7 +526,7 @@ Slack: 6.120ns (period - (min high pulse limit / (high pulse / period)))
   Physical resource: EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RX_DV_TO_MAC/SR
   Logical resource: EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RX_DV_TO_MAC/SR
   Location pin: ILOGIC_X0Y136.SR
-  Clock network: EMAC_1/rate_counter_1/G_edge_det[0].edge_detect_1/rst_b_inv
+  Clock network: EMAC_1/Inst_receiver_control/rst_b_inv
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -433,19 +541,19 @@ ns HIGH 50%;
 Timing constraint: TS_v5_emac_v1_5_gtp_clk = PERIOD TIMEGRP 
 "v5_emac_v1_5_gtp_clk" 7.7 ns HIGH         50%;
 
- 16873 paths analyzed, 2705 endpoints analyzed, 0 failing endpoints
- 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   6.236ns.
+ 52099 paths analyzed, 10456 endpoints analyzed, 3 failing endpoints
+ 3 timing errors detected. (3 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   7.949ns.
 --------------------------------------------------------------------------------
 
-Paths for end point EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire (SLICE_X68Y59.SR), 7 paths
+Paths for end point EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_1 (SLICE_X55Y16.C3), 122 paths
 --------------------------------------------------------------------------------
-Slack:                  1.464ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac (CPU)
-  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire (FF)
+Slack:                  -0.249ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0 (FF)
+  Destination:          EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_1 (FF)
   Requirement:          7.700ns
-  Data Path Delay:      5.889ns (Levels of Logic = 2)
-  Clock Path Skew:      -0.312ns (0.608 - 0.920)
+  Data Path Delay:      7.930ns (Levels of Logic = 4)
+  Clock Path Skew:      0.016ns (0.502 - 0.486)
   Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
   Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
   Clock Uncertainty:    0.035ns
@@ -456,65 +564,36 @@ Slack:                  1.464ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path: EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire
-    Location                    Delay type         Delay(ns)  Physical Resource
-                                                              Logical Resource(s)
-    --------------------------------------------------------  -------------------
-    TEMAC_X0Y0.EMAC0CLIENTTXACK Tmaccko_ACK           1.550   EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
-                                                              EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
-    SLICE_X66Y59.A3             net (fanout=8)        2.280   EMAC_1/v5_emac_ll/tx_ack_0_i
-    SLICE_X66Y59.A              Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_load
-                                                              EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire_or000011
-    SLICE_X69Y59.A4             net (fanout=3)        0.872   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_transmit_frame
-    SLICE_X69Y59.A              Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire_or0000
-                                                              EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire_or00002
-    SLICE_X68Y59.SR             net (fanout=4)        0.454   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire_or0000
-    SLICE_X68Y59.CLK            Tsrck                 0.545   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire
-                                                              EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire
-    --------------------------------------------------------  ---------------------------
-    Total                                             5.889ns (2.283ns logic, 3.606ns route)
-                                                              (38.8% logic, 61.2% route)
-
---------------------------------------------------------------------------------
-Slack:                  2.268ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               EMAC_1/v5_emac_ll/tx_reset_0_i (FF)
-  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire (FF)
-  Requirement:          7.700ns
-  Data Path Delay:      5.340ns (Levels of Logic = 1)
-  Clock Path Skew:      -0.057ns (1.295 - 1.352)
-  Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
-  Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path: EMAC_1/v5_emac_ll/tx_reset_0_i to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire
+  Maximum Data Path: EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0 to EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_1
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X39Y3.CQ       Tcko                  0.450   EMAC_1/v5_emac_ll/tx_reset_0_i
-                                                       EMAC_1/v5_emac_ll/tx_reset_0_i
-    SLICE_X69Y59.A6      net (fanout=99)       3.797   EMAC_1/v5_emac_ll/tx_reset_0_i
-    SLICE_X69Y59.A       Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire_or0000
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire_or00002
-    SLICE_X68Y59.SR      net (fanout=4)        0.454   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire_or0000
-    SLICE_X68Y59.CLK     Tsrck                 0.545   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire
+    SLICE_X50Y9.AQ       Tcko                  0.471   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1<3>
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0
+    SLICE_X68Y15.B1      net (fanout=515)      3.573   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1<0>
+    SLICE_X68Y15.B       Tilo                  0.094   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/N317
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM42_RAMB
+    SLICE_X69Y12.A4      net (fanout=1)        0.638   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/N316
+    SLICE_X69Y12.A       Tilo                  0.094   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/N43
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX1_133
+    SLICE_X69Y12.B1      net (fanout=1)        0.854   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX1_133
+    SLICE_X69Y12.B       Tilo                  0.094   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/N43
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX1_8
+    SLICE_X55Y16.C3      net (fanout=1)        2.083   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX1_8
+    SLICE_X55Y16.CLK     Tas                   0.029   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i<1>
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RD_PNTR<11>1
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_1
     -------------------------------------------------  ---------------------------
-    Total                                      5.340ns (1.089ns logic, 4.251ns route)
-                                                       (20.4% logic, 79.6% route)
+    Total                                      7.930ns (0.782ns logic, 7.148ns route)
+                                                       (9.9% logic, 90.1% route)
 
 --------------------------------------------------------------------------------
-Slack:                  3.378ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_retransmit (FF)
-  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire (FF)
+Slack:                  -0.221ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_1 (FF)
+  Destination:          EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_1 (FF)
   Requirement:          7.700ns
-  Data Path Delay:      4.274ns (Levels of Logic = 2)
-  Clock Path Skew:      -0.013ns (0.608 - 0.621)
+  Data Path Delay:      7.902ns (Levels of Logic = 4)
+  Clock Path Skew:      0.016ns (0.502 - 0.486)
   Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
   Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
   Clock Uncertainty:    0.035ns
@@ -525,35 +604,36 @@ Slack:                  3.378ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_retransmit to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire
+  Maximum Data Path: EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_1 to EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_1
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X71Y50.DQ      Tcko                  0.450   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_retransmit
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_retransmit
-    SLICE_X66Y59.A4      net (fanout=20)       1.765   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_retransmit
-    SLICE_X66Y59.A       Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_load
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire_or000011
-    SLICE_X69Y59.A4      net (fanout=3)        0.872   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_transmit_frame
-    SLICE_X69Y59.A       Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire_or0000
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire_or00002
-    SLICE_X68Y59.SR      net (fanout=4)        0.454   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire_or0000
-    SLICE_X68Y59.CLK     Tsrck                 0.545   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire
+    SLICE_X50Y9.BQ       Tcko                  0.471   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1<3>
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_1
+    SLICE_X72Y16.B2      net (fanout=515)      3.312   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1<1>
+    SLICE_X72Y16.B       Tilo                  0.094   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/N347
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM47_RAMB
+    SLICE_X69Y11.B2      net (fanout=1)        1.240   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/N346
+    SLICE_X69Y11.B       Tilo                  0.094   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/N42
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX1_14
+    SLICE_X69Y12.B4      net (fanout=1)        0.485   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX1_14
+    SLICE_X69Y12.B       Tilo                  0.094   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/N43
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX1_8
+    SLICE_X55Y16.C3      net (fanout=1)        2.083   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX1_8
+    SLICE_X55Y16.CLK     Tas                   0.029   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i<1>
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RD_PNTR<11>1
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_1
     -------------------------------------------------  ---------------------------
-    Total                                      4.274ns (1.183ns logic, 3.091ns route)
-                                                       (27.7% logic, 72.3% route)
+    Total                                      7.902ns (0.782ns logic, 7.120ns route)
+                                                       (9.9% logic, 90.1% route)
 
 --------------------------------------------------------------------------------
-
-Paths for end point EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer_5 (SLICE_X70Y60.SR), 7 paths
---------------------------------------------------------------------------------
-Slack:                  1.493ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac (CPU)
-  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer_5 (FF)
+Slack:                  -0.189ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_1 (FF)
+  Destination:          EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_1 (FF)
   Requirement:          7.700ns
-  Data Path Delay:      5.918ns (Levels of Logic = 2)
-  Clock Path Skew:      -0.254ns (1.404 - 1.658)
+  Data Path Delay:      7.870ns (Levels of Logic = 4)
+  Clock Path Skew:      0.016ns (0.502 - 0.486)
   Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
   Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
   Clock Uncertainty:    0.035ns
@@ -564,65 +644,39 @@ Slack:                  1.493ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path: EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer_5
-    Location                    Delay type         Delay(ns)  Physical Resource
-                                                              Logical Resource(s)
-    --------------------------------------------------------  -------------------
-    TEMAC_X0Y0.EMAC0CLIENTTXACK Tmaccko_ACK           1.550   EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
-                                                              EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
-    SLICE_X66Y59.A3             net (fanout=8)        2.280   EMAC_1/v5_emac_ll/tx_ack_0_i
-    SLICE_X66Y59.A              Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_load
-                                                              EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire_or000011
-    SLICE_X69Y59.A4             net (fanout=3)        0.872   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_transmit_frame
-    SLICE_X69Y59.A              Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire_or0000
-                                                              EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire_or00002
-    SLICE_X70Y60.SR             net (fanout=4)        0.481   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire_or0000
-    SLICE_X70Y60.CLK            Tsrck                 0.547   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer<7>
-                                                              EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer_5
-    --------------------------------------------------------  ---------------------------
-    Total                                             5.918ns (2.285ns logic, 3.633ns route)
-                                                              (38.6% logic, 61.4% route)
-
---------------------------------------------------------------------------------
-Slack:                  2.348ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               EMAC_1/v5_emac_ll/tx_reset_0_i (FF)
-  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer_5 (FF)
-  Requirement:          7.700ns
-  Data Path Delay:      5.369ns (Levels of Logic = 1)
-  Clock Path Skew:      0.052ns (1.404 - 1.352)
-  Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
-  Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path: EMAC_1/v5_emac_ll/tx_reset_0_i to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer_5
+  Maximum Data Path: EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_1 to EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_1
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X39Y3.CQ       Tcko                  0.450   EMAC_1/v5_emac_ll/tx_reset_0_i
-                                                       EMAC_1/v5_emac_ll/tx_reset_0_i
-    SLICE_X69Y59.A6      net (fanout=99)       3.797   EMAC_1/v5_emac_ll/tx_reset_0_i
-    SLICE_X69Y59.A       Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire_or0000
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire_or00002
-    SLICE_X70Y60.SR      net (fanout=4)        0.481   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire_or0000
-    SLICE_X70Y60.CLK     Tsrck                 0.547   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer<7>
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer_5
+    SLICE_X50Y9.BQ       Tcko                  0.471   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1<3>
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_1
+    SLICE_X72Y14.B2      net (fanout=515)      3.629   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1<1>
+    SLICE_X72Y14.B       Tilo                  0.094   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/N311
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM41_RAMB
+    SLICE_X69Y12.A5      net (fanout=1)        0.522   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/N310
+    SLICE_X69Y12.A       Tilo                  0.094   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/N43
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX1_133
+    SLICE_X69Y12.B1      net (fanout=1)        0.854   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX1_133
+    SLICE_X69Y12.B       Tilo                  0.094   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/N43
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX1_8
+    SLICE_X55Y16.C3      net (fanout=1)        2.083   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX1_8
+    SLICE_X55Y16.CLK     Tas                   0.029   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i<1>
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RD_PNTR<11>1
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_1
     -------------------------------------------------  ---------------------------
-    Total                                      5.369ns (1.091ns logic, 4.278ns route)
-                                                       (20.3% logic, 79.7% route)
+    Total                                      7.870ns (0.782ns logic, 7.088ns route)
+                                                       (9.9% logic, 90.1% route)
 
 --------------------------------------------------------------------------------
-Slack:                  3.407ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_retransmit (FF)
-  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer_5 (FF)
+
+Paths for end point EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_5 (SLICE_X51Y15.C6), 122 paths
+--------------------------------------------------------------------------------
+Slack:                  -0.153ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_1 (FF)
+  Destination:          EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_5 (FF)
   Requirement:          7.700ns
-  Data Path Delay:      4.303ns (Levels of Logic = 2)
-  Clock Path Skew:      0.045ns (1.404 - 1.359)
+  Data Path Delay:      7.837ns (Levels of Logic = 4)
+  Clock Path Skew:      0.019ns (0.143 - 0.124)
   Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
   Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
   Clock Uncertainty:    0.035ns
@@ -633,35 +687,36 @@ Slack:                  3.407ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_retransmit to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer_5
+  Maximum Data Path: EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_1 to EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_5
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X71Y50.DQ      Tcko                  0.450   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_retransmit
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_retransmit
-    SLICE_X66Y59.A4      net (fanout=20)       1.765   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_retransmit
-    SLICE_X66Y59.A       Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_load
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire_or000011
-    SLICE_X69Y59.A4      net (fanout=3)        0.872   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_transmit_frame
-    SLICE_X69Y59.A       Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire_or0000
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire_or00002
-    SLICE_X70Y60.SR      net (fanout=4)        0.481   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire_or0000
-    SLICE_X70Y60.CLK     Tsrck                 0.547   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer<7>
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer_5
+    SLICE_X50Y9.BQ       Tcko                  0.471   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1<3>
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_1
+    SLICE_X72Y11.C2      net (fanout=515)      3.788   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1<1>
+    SLICE_X72Y11.C       Tilo                  0.094   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/N731
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM111_RAMC
+    SLICE_X69Y9.D1       net (fanout=1)        1.125   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/N731
+    SLICE_X69Y9.D        Tilo                  0.094   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX5_14
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX5_14
+    SLICE_X65Y9.D3       net (fanout=1)        1.090   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX5_14
+    SLICE_X65Y9.D        Tilo                  0.094   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX5_8
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX5_8
+    SLICE_X51Y15.C6      net (fanout=1)        1.052   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX5_8
+    SLICE_X51Y15.CLK     Tas                   0.029   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i<5>
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RD_PNTR<11>51
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_5
     -------------------------------------------------  ---------------------------
-    Total                                      4.303ns (1.185ns logic, 3.118ns route)
-                                                       (27.5% logic, 72.5% route)
+    Total                                      7.837ns (0.782ns logic, 7.055ns route)
+                                                       (10.0% logic, 90.0% route)
 
 --------------------------------------------------------------------------------
-
-Paths for end point EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer_6 (SLICE_X70Y60.SR), 7 paths
---------------------------------------------------------------------------------
-Slack:                  1.493ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac (CPU)
-  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer_6 (FF)
+Slack:                  0.337ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0 (FF)
+  Destination:          EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_5 (FF)
   Requirement:          7.700ns
-  Data Path Delay:      5.918ns (Levels of Logic = 2)
-  Clock Path Skew:      -0.254ns (1.404 - 1.658)
+  Data Path Delay:      7.347ns (Levels of Logic = 4)
+  Clock Path Skew:      0.019ns (0.143 - 0.124)
   Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
   Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
   Clock Uncertainty:    0.035ns
@@ -672,65 +727,36 @@ Slack:                  1.493ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path: EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer_6
-    Location                    Delay type         Delay(ns)  Physical Resource
-                                                              Logical Resource(s)
-    --------------------------------------------------------  -------------------
-    TEMAC_X0Y0.EMAC0CLIENTTXACK Tmaccko_ACK           1.550   EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
-                                                              EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
-    SLICE_X66Y59.A3             net (fanout=8)        2.280   EMAC_1/v5_emac_ll/tx_ack_0_i
-    SLICE_X66Y59.A              Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_load
-                                                              EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire_or000011
-    SLICE_X69Y59.A4             net (fanout=3)        0.872   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_transmit_frame
-    SLICE_X69Y59.A              Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire_or0000
-                                                              EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire_or00002
-    SLICE_X70Y60.SR             net (fanout=4)        0.481   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire_or0000
-    SLICE_X70Y60.CLK            Tsrck                 0.547   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer<7>
-                                                              EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer_6
-    --------------------------------------------------------  ---------------------------
-    Total                                             5.918ns (2.285ns logic, 3.633ns route)
-                                                              (38.6% logic, 61.4% route)
-
---------------------------------------------------------------------------------
-Slack:                  2.348ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               EMAC_1/v5_emac_ll/tx_reset_0_i (FF)
-  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer_6 (FF)
-  Requirement:          7.700ns
-  Data Path Delay:      5.369ns (Levels of Logic = 1)
-  Clock Path Skew:      0.052ns (1.404 - 1.352)
-  Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
-  Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path: EMAC_1/v5_emac_ll/tx_reset_0_i to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer_6
+  Maximum Data Path: EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0 to EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_5
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X39Y3.CQ       Tcko                  0.450   EMAC_1/v5_emac_ll/tx_reset_0_i
-                                                       EMAC_1/v5_emac_ll/tx_reset_0_i
-    SLICE_X69Y59.A6      net (fanout=99)       3.797   EMAC_1/v5_emac_ll/tx_reset_0_i
-    SLICE_X69Y59.A       Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire_or0000
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire_or00002
-    SLICE_X70Y60.SR      net (fanout=4)        0.481   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire_or0000
-    SLICE_X70Y60.CLK     Tsrck                 0.547   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer<7>
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer_6
+    SLICE_X50Y9.AQ       Tcko                  0.471   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1<3>
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0
+    SLICE_X72Y11.C1      net (fanout=515)      3.298   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1<0>
+    SLICE_X72Y11.C       Tilo                  0.094   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/N731
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM111_RAMC
+    SLICE_X69Y9.D1       net (fanout=1)        1.125   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/N731
+    SLICE_X69Y9.D        Tilo                  0.094   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX5_14
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX5_14
+    SLICE_X65Y9.D3       net (fanout=1)        1.090   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX5_14
+    SLICE_X65Y9.D        Tilo                  0.094   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX5_8
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX5_8
+    SLICE_X51Y15.C6      net (fanout=1)        1.052   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX5_8
+    SLICE_X51Y15.CLK     Tas                   0.029   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i<5>
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RD_PNTR<11>51
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_5
     -------------------------------------------------  ---------------------------
-    Total                                      5.369ns (1.091ns logic, 4.278ns route)
-                                                       (20.3% logic, 79.7% route)
+    Total                                      7.347ns (0.782ns logic, 6.565ns route)
+                                                       (10.6% logic, 89.4% route)
 
 --------------------------------------------------------------------------------
-Slack:                  3.407ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_retransmit (FF)
-  Destination:          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer_6 (FF)
+Slack:                  0.427ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0 (FF)
+  Destination:          EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_5 (FF)
   Requirement:          7.700ns
-  Data Path Delay:      4.303ns (Levels of Logic = 2)
-  Clock Path Skew:      0.045ns (1.404 - 1.359)
+  Data Path Delay:      7.257ns (Levels of Logic = 4)
+  Clock Path Skew:      0.019ns (0.143 - 0.124)
   Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
   Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
   Clock Uncertainty:    0.035ns
@@ -741,24 +767,151 @@ Slack:                  3.407ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_retransmit to EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer_6
+  Maximum Data Path: EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0 to EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_5
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X71Y50.DQ      Tcko                  0.450   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_retransmit
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_retransmit
-    SLICE_X66Y59.A4      net (fanout=20)       1.765   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_retransmit
-    SLICE_X66Y59.A       Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_start_addr_load
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire_or000011
-    SLICE_X69Y59.A4      net (fanout=3)        0.872   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_transmit_frame
-    SLICE_X69Y59.A       Tilo                  0.094   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire_or0000
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire_or00002
-    SLICE_X70Y60.SR      net (fanout=4)        0.481   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_col_window_expire_or0000
-    SLICE_X70Y60.CLK     Tsrck                 0.547   EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer<7>
-                                                       EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_slot_timer_6
+    SLICE_X50Y9.AQ       Tcko                  0.471   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1<3>
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0
+    SLICE_X68Y5.C1       net (fanout=515)      3.358   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1<0>
+    SLICE_X68Y5.C        Tilo                  0.094   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/N689
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM104_RAMC
+    SLICE_X69Y4.A4       net (fanout=1)        0.624   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/N689
+    SLICE_X69Y4.A        Tilo                  0.094   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX5_132
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX5_132
+    SLICE_X65Y9.D2       net (fanout=1)        1.441   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX5_132
+    SLICE_X65Y9.D        Tilo                  0.094   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX5_8
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX5_8
+    SLICE_X51Y15.C6      net (fanout=1)        1.052   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX5_8
+    SLICE_X51Y15.CLK     Tas                   0.029   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i<5>
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RD_PNTR<11>51
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_5
     -------------------------------------------------  ---------------------------
-    Total                                      4.303ns (1.185ns logic, 3.118ns route)
-                                                       (27.5% logic, 72.5% route)
+    Total                                      7.257ns (0.782ns logic, 6.475ns route)
+                                                       (10.8% logic, 89.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_2 (SLICE_X53Y14.A6), 122 paths
+--------------------------------------------------------------------------------
+Slack:                  -0.091ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0 (FF)
+  Destination:          EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_2 (FF)
+  Requirement:          7.700ns
+  Data Path Delay:      7.749ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.007ns (0.479 - 0.486)
+  Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
+  Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0 to EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X50Y9.AQ       Tcko                  0.471   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1<3>
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0
+    SLICE_X72Y16.C1      net (fanout=515)      3.556   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1<0>
+    SLICE_X72Y16.C       Tilo                  0.094   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/N347
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM47_RAMC
+    SLICE_X69Y14.D3      net (fanout=1)        0.885   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/N347
+    SLICE_X69Y14.D       Tilo                  0.094   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX2_14
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX2_14
+    SLICE_X69Y14.B2      net (fanout=1)        0.866   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX2_14
+    SLICE_X69Y14.B       Tilo                  0.094   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX2_14
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX2_8
+    SLICE_X53Y14.A6      net (fanout=1)        1.663   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX2_8
+    SLICE_X53Y14.CLK     Tas                   0.026   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i<3>
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RD_PNTR<11>21
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_2
+    -------------------------------------------------  ---------------------------
+    Total                                      7.749ns (0.779ns logic, 6.970ns route)
+                                                       (10.1% logic, 89.9% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -0.051ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0 (FF)
+  Destination:          EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_2 (FF)
+  Requirement:          7.700ns
+  Data Path Delay:      7.709ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.007ns (0.479 - 0.486)
+  Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
+  Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0 to EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X50Y9.AQ       Tcko                  0.471   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1<3>
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0
+    SLICE_X68Y12.C1      net (fanout=515)      3.535   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1<0>
+    SLICE_X68Y12.C       Tilo                  0.094   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/N269
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM34_RAMC
+    SLICE_X70Y12.A1      net (fanout=1)        1.209   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/N269
+    SLICE_X70Y12.A       Tilo                  0.094   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX2_125
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX2_125
+    SLICE_X69Y14.B5      net (fanout=1)        0.523   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX2_125
+    SLICE_X69Y14.B       Tilo                  0.094   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX2_14
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX2_8
+    SLICE_X53Y14.A6      net (fanout=1)        1.663   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX2_8
+    SLICE_X53Y14.CLK     Tas                   0.026   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i<3>
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RD_PNTR<11>21
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_2
+    -------------------------------------------------  ---------------------------
+    Total                                      7.709ns (0.779ns logic, 6.930ns route)
+                                                       (10.1% logic, 89.9% route)
+
+--------------------------------------------------------------------------------
+Slack:                  0.063ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0 (FF)
+  Destination:          EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_2 (FF)
+  Requirement:          7.700ns
+  Data Path Delay:      7.595ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.007ns (0.479 - 0.486)
+  Source Clock:         EMAC_1/tx_client_clk_0 rising at 0.000ns
+  Destination Clock:    EMAC_1/tx_client_clk_0 rising at 7.700ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0 to EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X50Y9.AQ       Tcko                  0.471   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1<3>
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0
+    SLICE_X68Y13.C1      net (fanout=515)      3.393   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1<0>
+    SLICE_X68Y13.C       Tilo                  0.094   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/N323
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM43_RAMC
+    SLICE_X69Y14.A2      net (fanout=1)        0.906   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/N323
+    SLICE_X69Y14.A       Tilo                  0.094   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX2_14
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX2_133
+    SLICE_X69Y14.B1      net (fanout=1)        0.854   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX2_133
+    SLICE_X69Y14.B       Tilo                  0.094   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX2_14
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX2_8
+    SLICE_X53Y14.A6      net (fanout=1)        1.663   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX2_8
+    SLICE_X53Y14.CLK     Tas                   0.026   EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i<3>
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/RD_PNTR<11>21
+                                                       EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_2
+    -------------------------------------------------  ---------------------------
+    Total                                      7.595ns (0.779ns logic, 6.816ns route)
+                                                       (10.3% logic, 89.7% route)
 
 --------------------------------------------------------------------------------
 
@@ -768,30 +921,30 @@ Component Switching Limit Checks: TS_v5_emac_v1_5_gtp_clk = PERIOD TIMEGRP "v5_e
 Slack: 5.478ns (period - min period limit)
   Period: 7.700ns
   Min period limit: 2.222ns (450.045MHz) (Trper_CLKA)
-  Physical resource: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u/CLKAL
-  Logical resource: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u/CLKAL
-  Location pin: RAMB36_X4Y11.CLKARDCLKL
+  Physical resource: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l/CLKAL
+  Logical resource: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l/CLKAL
+  Location pin: RAMB36_X4Y14.CLKARDCLKL
   Clock network: EMAC_1/tx_client_clk_0
 --------------------------------------------------------------------------------
 Slack: 5.478ns (period - min period limit)
   Period: 7.700ns
   Min period limit: 2.222ns (450.045MHz) (Trper_CLKB)
-  Physical resource: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u/CLKBL
-  Logical resource: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u/CLKBL
-  Location pin: RAMB36_X4Y11.CLKBWRCLKL
+  Physical resource: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l/CLKBL
+  Logical resource: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l/CLKBL
+  Location pin: RAMB36_X4Y14.CLKBWRCLKL
   Clock network: EMAC_1/tx_client_clk_0
 --------------------------------------------------------------------------------
 Slack: 5.478ns (period - min period limit)
   Period: 7.700ns
   Min period limit: 2.222ns (450.045MHz) (Trper_CLKA)
-  Physical resource: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u/REGCLKAL
-  Logical resource: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u/REGCLKAL
-  Location pin: RAMB36_X4Y11.REGCLKARDRCLKL
+  Physical resource: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l/REGCLKAL
+  Logical resource: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l/REGCLKAL
+  Location pin: RAMB36_X4Y14.REGCLKARDRCLKL
   Clock network: EMAC_1/tx_client_clk_0
 --------------------------------------------------------------------------------
 
 
-All constraints were met.
+1 constraint not met.
 
 
 Data Sheet report:
@@ -803,33 +956,33 @@ Clock to Setup on destination clock GMII_RX_CLK_0
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-GMII_RX_CLK_0  |    7.297|         |         |         |
+GMII_RX_CLK_0  |    7.334|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
 Timing summary:
 ---------------
 
-Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+Timing errors: 3  Score: 493  (Setup/Max: 493, Hold: 0)
 
-Constraints cover 17065 paths, 0 nets, and 3830 connections
+Constraints cover 52304 paths, 0 nets, and 12313 connections
 
 Design statistics:
-   Minimum period:   7.297ns{1}   (Maximum frequency: 137.043MHz)
-   Maximum path delay from/to any node:   2.920ns
+   Minimum period:   7.949ns{1}   (Maximum frequency: 125.802MHz)
+   Maximum path delay from/to any node:   3.395ns
 
 
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Fri Jun 24 12:40:31 2011 
+Analysis completed Thu Aug 18 15:10:26 2011 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 437 MB
+Peak Memory Usage: 468 MB
 
 
 

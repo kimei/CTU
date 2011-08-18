@@ -1,4 +1,4 @@
 work	"../../Shared/components.vhd"
 work	"../../Shared/constants.vhd"
-work	"../../Shared/functions.vhd"
-work	"../../random_trigger/rand_trigger.vhd"
+work	"../../UDP/UDP_rec_kim/fifo/fifo_generator_v8_1.vhd"
+work	"../../UDP/UDP_rec_kim/receiver_control.vhd"

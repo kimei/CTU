@@ -119,51 +119,7 @@ package components is
           O  : out std_ulogic);
   end component;
 
-  component v5_emac_v1_5_example_design
-    port(
-      -- EMAC example design
-      clk200 : in std_logic;
-      rst_b  : in std_logic;
-
-      rate_cards  : in std_logic_vector(NUMBER_OF_ROCS - 1 downto 0);
-      coincidence : in std_logic_vector(NUMBER_OF_ROCS - 1 downto 0);
-
-      EMAC0CLIENTRXDVLD         : out std_logic;
-      EMAC0CLIENTRXFRAMEDROP    : out std_logic;
-      EMAC0CLIENTRXSTATS        : out std_logic_vector(6 downto 0);
-      EMAC0CLIENTRXSTATSVLD     : out std_logic;
-      EMAC0CLIENTRXSTATSBYTEVLD : out std_logic;
-
-      -- Client Transmitter Interface - EMAC0
-      CLIENTEMAC0TXIFGDELAY     : in  std_logic_vector(7 downto 0);
-      EMAC0CLIENTTXSTATS        : out std_logic;
-      EMAC0CLIENTTXSTATSVLD     : out std_logic;
-      EMAC0CLIENTTXSTATSBYTEVLD : out std_logic;
-
-      -- MAC Control Interface - EMAC0
-      CLIENTEMAC0PAUSEREQ : in std_logic;
-      CLIENTEMAC0PAUSEVAL : in std_logic_vector(15 downto 0);
-
-
-      -- Clock Signals - EMAC0
-      GTX_CLK_0 : in std_logic;
-
-      -- GMII Interface - EMAC0
-      GMII_TXD_0    : out std_logic_vector(7 downto 0);
-      GMII_TX_EN_0  : out std_logic;
-      GMII_TX_ER_0  : out std_logic;
-      GMII_TX_CLK_0 : out std_logic;
-      GMII_RXD_0    : in  std_logic_vector(7 downto 0);
-      GMII_RX_DV_0  : in  std_logic;
-      GMII_RX_ER_0  : in  std_logic;
-      GMII_RX_CLK_0 : in  std_logic;
-
-      MII_TX_CLK_0 : in  std_logic;
-      PHY_RESET_0  : out std_logic;
-      GMII_COL_0   : in  std_logic;
-      GMII_CRS_0   : in  std_logic);
-  end component;
-
+  
 
   -- PPC core
   component system

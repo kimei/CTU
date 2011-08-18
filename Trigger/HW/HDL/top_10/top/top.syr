@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Reading design: top.prj
@@ -106,7 +106,7 @@ Auto BRAM Packing                  : NO
 Slice Utilization Ratio Delta      : 5
 
 ---- Other Options
-Cores Search Directories           : {"../../UDP/UDP_mr" "../../rate_counter/fifo"  }
+Cores Search Directories           : {"../../UDP/UDP_rec_kim/fifo" "../../UDP/UDP_mr" "../../rate_counter/fifo"  }
 
 =========================================================================
 
@@ -196,6 +196,8 @@ Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac
 Architecture wrapper of Entity v5_emac_v1_5 is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/Sync_Trigger/edge_detector.vhd" in Library work.
 Architecture behave of Entity edge_detector is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_rec_kim/fifo/fifo_generator_v8_1.vhd" in Library work.
+Architecture fifo_generator_v8_1_a of Entity fifo_generator_v8_1 is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4_PACKET_TRANSMITTER.vhd" in Library work.
 Architecture behavioral of Entity ipv4_packet_transmitter is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/IPv4_PACKET_RECEIVER.vhd" in Library work.
@@ -208,6 +210,10 @@ Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac
 Architecture top_level of Entity v5_emac_v1_5_locallink is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/UDP_IP_Core.vhd" in Library work.
 Architecture behavioral of Entity udp_ip_core is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_rec_kim/udp_rec.vhd" in Library work.
+Architecture behave of Entity udp_rec is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_rec_kim/receiver_control.vhd" in Library work.
+Architecture behave of Entity receiver_control is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/rate_counter/rate_counter.vhd" in Library work.
 Architecture behave of Entity rate_counter is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/rate_counter/fifo/fifo_generator_v4_4.vhd" in Library work.
@@ -221,12 +227,13 @@ Architecture structural of Entity switchdebouncer is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/CRU/CRU.vhd" in Library work.
 Architecture behavioral of Entity cru is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd" in Library work.
-WARNING:HDLParsers:3350 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd" Line 97. Null range: 1 downto 2
-WARNING:HDLParsers:3350 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd" Line 101. Null range: 1 downto 2
+WARNING:HDLParsers:3350 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd" Line 103. Null range: 1 downto 2
+WARNING:HDLParsers:3350 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd" Line 107. Null range: 1 downto 2
 Architecture behavioral of Entity sync_trigger is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/random_trigger/rand_trigger.vhd" in Library work.
 Architecture behavioral of Entity rand_trigger is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_example_design.vhd" in Library work.
+WARNING:HDLParsers:3555 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_example_design.vhd" Line 553. Warning for LRM section 1.1.1.2 violation about connectivity rules. Parameter en_random_trigger_ent of mode out should not be associated with a formal port of mode buffer.
 Architecture top_level of Entity v5_emac_v1_5_example_design is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.vhd" in Library work.
 Entity <top> compiled.
@@ -247,7 +254,7 @@ Analyzing hierarchy for entity <sync_trigger> in library <work> (architecture <b
 
 Analyzing hierarchy for entity <rand_trigger> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <v5_emac_v1_5_example_design> in library <work> (architecture <top_level>).
+Analyzing hierarchy for entity <v5_emac_v1_5_example_design> in library <work> (architecture <TOP_LEVEL>).
 
 Analyzing hierarchy for entity <PLL_core> in library <work> (architecture <behavioral>).
 
@@ -263,6 +270,10 @@ Analyzing hierarchy for entity <UDP_IP_Core> in library <work> (architecture <Be
 	DestMAC = "000000000000111000001100001100110011001110000100"
 	DestPort = "0101010101010110"
 	SrcPort = "0101010101010111"
+
+Analyzing hierarchy for entity <udp_rec> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <receiver_control> in library <work> (architecture <behave>).
 
 Analyzing hierarchy for entity <rate_counter> in library <work> (architecture <behave>).
 
@@ -341,8 +352,8 @@ Analyzing Entity <top> in library <work> (Architecture <behavioral>).
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <G2[1].diff_out> in unit <top>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <G2[1].diff_out> in unit <top>.
     Set user-defined property "SLEW =  FAST" for instance <G2[1].diff_out> in unit <top>.
-WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.vhd" line 259: Instantiating black box module <OBUFDS>.
-WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.vhd" line 265: Instantiating black box module <OBUFDS>.
+WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.vhd" line 261: Instantiating black box module <OBUFDS>.
+WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top/top.vhd" line 267: Instantiating black box module <OBUFDS>.
 Entity <top> analyzed. Unit <top> generated.
 
 Analyzing generic Entity <SwitchDebouncer> in library <work> (Architecture <Structural>).
@@ -351,12 +362,12 @@ Analyzing generic Entity <SwitchDebouncer> in library <work> (Architecture <Stru
 Entity <SwitchDebouncer> analyzed. Unit <SwitchDebouncer> generated.
 
 Analyzing Entity <CRU> in library <work> (Architecture <behavioral>).
-WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/CRU/CRU.vhd" line 120: Instantiating black box module <OBUFDS>.
-WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/CRU/CRU.vhd" line 125: Instantiating black box module <ODDR>.
+WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/CRU/CRU.vhd" line 121: Instantiating black box module <OBUFDS>.
+WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/CRU/CRU.vhd" line 126: Instantiating black box module <ODDR>.
     Set user-defined property "DDR_CLK_EDGE =  OPPOSITE_EDGE" for instance <MCLK_ODDR_OUT> in unit <CRU>.
     Set user-defined property "INIT =  0" for instance <MCLK_ODDR_OUT> in unit <CRU>.
     Set user-defined property "SRTYPE =  SYNC" for instance <MCLK_ODDR_OUT> in unit <CRU>.
-WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/CRU/CRU.vhd" line 134: Instantiating black box module <IBUFG>.
+WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/CRU/CRU.vhd" line 135: Instantiating black box module <IBUFG>.
 Entity <CRU> analyzed. Unit <CRU> generated.
 
 Analyzing Entity <PLL_core> in library <work> (Architecture <behavioral>).
@@ -417,7 +428,7 @@ Entity <edge_detector> analyzed. Unit <edge_detector> generated.
 Analyzing Entity <rand_trigger> in library <work> (Architecture <Behavioral>).
 Entity <rand_trigger> analyzed. Unit <rand_trigger> generated.
 
-Analyzing Entity <v5_emac_v1_5_example_design> in library <work> (Architecture <top_level>).
+Analyzing Entity <v5_emac_v1_5_example_design> in library <work> (Architecture <TOP_LEVEL>).
     Set user-defined property "ASYNC_REG =  true" for signal <ll_pre_reset_0_i>.
     Set property "buffer_type = none" for signal <gtx_clk_0_i>.
     Set property "syn_noprune = TRUE" for instance <dlyctrl0> in unit <v5_emac_v1_5_example_design>.
@@ -428,8 +439,10 @@ Analyzing Entity <v5_emac_v1_5_example_design> in library <work> (Architecture <
     Set user-defined property "ODELAY_VALUE =  0" for instance <gmii_rxc0_delay> in unit <v5_emac_v1_5_example_design>.
     Set user-defined property "REFCLK_FREQUENCY =  200.0000000000000000" for instance <gmii_rxc0_delay> in unit <v5_emac_v1_5_example_design>.
     Set user-defined property "SIGNAL_PATTERN =  CLOCK" for instance <gmii_rxc0_delay> in unit <v5_emac_v1_5_example_design>.
-WARNING:Xst:753 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_example_design.vhd" line 488: Unconnected output port 'RX_LL_FIFO_STATUS_0' of component 'v5_emac_v1_5_locallink'.
-WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_example_design.vhd" line 768: Instantiating black box module <fifo_generator_v4_4>.
+WARNING:Xst:753 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_example_design.vhd" line 436: Unconnected output port 'RX_LL_FIFO_STATUS_0' of component 'v5_emac_v1_5_locallink'.
+INFO:Xst:1739 - HDL ADVISOR - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_example_design.vhd" line 20: declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output.
+INFO:Xst:1739 - HDL ADVISOR - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_example_design.vhd" line 23: declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output.
+WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_example_design.vhd" line 574: Instantiating black box module <fifo_generator_v4_4>.
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <gtx_clk0_ibuf> in unit <v5_emac_v1_5_example_design>.
     Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <gtx_clk0_ibuf> in unit <v5_emac_v1_5_example_design>.
     Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <gtx_clk0_ibuf> in unit <v5_emac_v1_5_example_design>.
@@ -995,6 +1008,15 @@ WARNING:Xst:819 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDPIP/udp_ip__cor
    <rst>
 Entity <COUNTER_11B_EN_RECEIV> analyzed. Unit <COUNTER_11B_EN_RECEIV> generated.
 
+Analyzing Entity <udp_rec> in library <work> (Architecture <behave>).
+INFO:Xst:2679 - Register <mongo_teller> in unit <udp_rec> has a constant value of 0 during circuit operation. The register is replaced by logic.
+Entity <udp_rec> analyzed. Unit <udp_rec> generated.
+
+Analyzing Entity <receiver_control> in library <work> (Architecture <behave>).
+WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_rec_kim/receiver_control.vhd" line 78: Instantiating black box module <fifo_generator_v8_1>.
+WARNING:Xst:795 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_rec_kim/receiver_control.vhd" line 131: Size of operands are different : result is <false>.
+Entity <receiver_control> analyzed. Unit <receiver_control> generated.
+
 Analyzing Entity <rate_counter> in library <work> (Architecture <behave>).
 INFO:Xst:1433 - Contents of array <counts> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
 INFO:Xst:1433 - Contents of array <counts> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
@@ -1082,6 +1104,20 @@ Synthesizing Unit <edge_detector>.
     Summary:
 	inferred   3 D-type flip-flop(s).
 Unit <edge_detector> synthesized.
+
+
+Synthesizing Unit <udp_rec>.
+    Related source file is "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_rec_kim/udp_rec.vhd".
+WARNING:Xst:646 - Signal <valid_out_usr_data_buf> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <mongo_teller<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 8-bit register for signal <data_out>.
+    Found 16-bit register for signal <port_number>.
+    Found 1-bit register for signal <valid_data>.
+    Found 96-bit register for signal <header>.
+    Found 1-bit register for signal <ip_correct_hold>.
+    Summary:
+	inferred 122 D-type flip-flop(s).
+Unit <udp_rec> synthesized.
 
 
 Synthesizing Unit <REG_16B_WREN>.
@@ -1247,7 +1283,7 @@ Unit <COUNTER_11B_EN_RECEIV> synthesized.
 Synthesizing Unit <sync_trigger>.
     Related source file is "/home/kimei/VHDL/trigger/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd".
 WARNING:Xst:646 - Signal <coincidence_array<2:3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-    Found 31-bit comparator greater for signal <coincidence$cmp_gt0000> created at line 127.
+    Found 31-bit comparator greater for signal <coincidence$cmp_gt0000> created at line 133.
     Found 1-bit register for signal <coincidence_hold>.
     Found 31-bit adder for signal <temp$addsub0000> created at line 49.
     Found 4-bit register for signal <trig_out_s_d<3:0>>.
@@ -1263,15 +1299,53 @@ Synthesizing Unit <PLL_core>.
 Unit <PLL_core> synthesized.
 
 
+Synthesizing Unit <receiver_control>.
+    Related source file is "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_rec_kim/receiver_control.vhd".
+WARNING:Xst:646 - Signal <trigger_mask_s<23:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <full_fifo> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <empty_fifo> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+INFO:Xst:1799 - State wait_for_falling_wr_en is never reached in FSM <state>.
+    Found finite state machine <FSM_2> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 11                                             |
+    | Transitions        | 21                                             |
+    | Inputs             | 10                                             |
+    | Outputs            | 11                                             |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | rst_b                     (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | init                                           |
+    | Power Up State     | init                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <mrst_from_udp_b>.
+    Found 8-bit register for signal <send_fifo_data_in>.
+    Found 1-bit register for signal <send_fifo_we>.
+    Found 1-bit register for signal <en_random_trigger>.
+    Found 8-bit register for signal <instruction>.
+    Found 8-bit register for signal <instruction_buf>.
+    Found 4-bit register for signal <mask_counter>.
+    Found 4-bit adder for signal <mask_counter$addsub0000> created at line 172.
+    Found 1-bit register for signal <rd_en_fifo>.
+    Found 1-bit register for signal <rst_fifo>.
+    Found 2-bit register for signal <trigger_mask_s<1:0>>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  35 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <receiver_control> synthesized.
+
+
 Synthesizing Unit <rate_counter>.
     Related source file is "/home/kimei/VHDL/trigger/Trigger/HW/HDL/rate_counter/rate_counter.vhd".
 WARNING:Xst:647 - Input <coincidence<1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found finite state machine <FSM_2> for signal <state>.
+    Found finite state machine <FSM_3> for signal <state>.
     -----------------------------------------------------------------------
-    | States             | 8                                              |
-    | Transitions        | 12                                             |
+    | States             | 9                                              |
+    | Transitions        | 13                                             |
     | Inputs             | 4                                              |
-    | Outputs            | 7                                              |
+    | Outputs            | 8                                              |
     | Clock              | clk                       (rising_edge)        |
     | Reset              | rst_b                     (negative)           |
     | Reset type         | asynchronous                                   |
@@ -1283,13 +1357,13 @@ WARNING:Xst:647 - Input <coincidence<1>> is never used. This port will be preser
     Found 8-bit register for signal <din>.
     Found 1-bit register for signal <we>.
     Found 6-bit register for signal <count1>.
-    Found 6-bit adder for signal <count1$addsub0000> created at line 166.
+    Found 6-bit adder for signal <count1$addsub0000> created at line 173.
     Found 32-bit register for signal <counts<31>>.
     Found 64-bit register for signal <counts<1:0>>.
     Found 32-bit adder for signal <counts_0$addsub0000> created at line 120.
     Found 32-bit adder for signal <counts_1$addsub0000> created at line 120.
     Found 32-bit adder for signal <counts_31$addsub0000> created at line 120.
-    Found 32-bit 32-to-1 multiplexer for signal <din$varindex0000> created at line 151.
+    Found 32-bit 32-to-1 multiplexer for signal <din$varindex0000> created at line 158.
     Found 1-bit register for signal <en_counter>.
     Found 1-bit register for signal <sek>.
     Found 32-bit up counter for signal <ucnt>.
@@ -1325,7 +1399,7 @@ Unit <v5_emac_v1_5> synthesized.
 
 Synthesizing Unit <tx_client_fifo_8>.
     Related source file is "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/tx_client_fifo_8.vhd".
-    Found finite state machine <FSM_3> for signal <rd_state>.
+    Found finite state machine <FSM_4> for signal <rd_state>.
     -----------------------------------------------------------------------
     | States             | 9                                              |
     | Transitions        | 21                                             |
@@ -1339,7 +1413,7 @@ Synthesizing Unit <tx_client_fifo_8>.
     | Encoding           | automatic                                      |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found finite state machine <FSM_4> for signal <wr_state>.
+    Found finite state machine <FSM_5> for signal <wr_state>.
     -----------------------------------------------------------------------
     | States             | 4                                              |
     | Transitions        | 12                                             |
@@ -1430,7 +1504,7 @@ Unit <tx_client_fifo_8> synthesized.
 Synthesizing Unit <rx_client_fifo_8>.
     Related source file is "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/rx_client_fifo_8.vhd".
 WARNING:Xst:646 - Signal <rd_valid_pipe<2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-    Found finite state machine <FSM_5> for signal <rd_state>.
+    Found finite state machine <FSM_6> for signal <rd_state>.
     -----------------------------------------------------------------------
     | States             | 8                                              |
     | Transitions        | 15                                             |
@@ -1444,7 +1518,7 @@ WARNING:Xst:646 - Signal <rd_valid_pipe<2>> is assigned but never used. This unc
     | Encoding           | automatic                                      |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found finite state machine <FSM_6> for signal <wr_state>.
+    Found finite state machine <FSM_7> for signal <wr_state>.
     -----------------------------------------------------------------------
     | States             | 6                                              |
     | Transitions        | 15                                             |
@@ -1579,7 +1653,7 @@ INFO:Xst:1799 - State ud13 is never reached in FSM <state>.
 INFO:Xst:1799 - State ud14 is never reached in FSM <state>.
 INFO:Xst:1799 - State ud15 is never reached in FSM <state>.
 INFO:Xst:1799 - State ud16 is never reached in FSM <state>.
-    Found finite state machine <FSM_7> for signal <state>.
+    Found finite state machine <FSM_8> for signal <state>.
     -----------------------------------------------------------------------
     | States             | 9                                              |
     | Transitions        | 15                                             |
@@ -1597,11 +1671,11 @@ INFO:Xst:1799 - State ud16 is never reached in FSM <state>.
     Found 1-bit register for signal <pll_reset>.
     Found 1-bit register for signal <reset_global_b>.
     Found 3-bit register for signal <rst_counter>.
-    Found 3-bit adder for signal <rst_counter$addsub0000> created at line 233.
+    Found 3-bit adder for signal <rst_counter$addsub0000> created at line 250.
     Found 16-bit register for signal <wait_counter>.
-    Found 16-bit adder for signal <wait_counter$share0000> created at line 169.
+    Found 16-bit adder for signal <wait_counter$share0000> created at line 188.
     Found 5-bit register for signal <wait_counter2>.
-    Found 5-bit adder for signal <wait_counter2$addsub0000> created at line 227.
+    Found 5-bit adder for signal <wait_counter2$addsub0000> created at line 245.
     Summary:
 	inferred   1 Finite State Machine(s).
 	inferred  27 D-type flip-flop(s).
@@ -1659,10 +1733,12 @@ Unit <UDP_IP_Core> synthesized.
 Synthesizing Unit <v5_emac_v1_5_example_design>.
     Related source file is "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_example_design.vhd".
 WARNING:Xst:646 - Signal <where_to_send> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <we_udp> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <valid_out_usr_data_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <valid_out_usr_data> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <usr_data_output_bus_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <usr_data_output_bus> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <udp_valid_data_buf> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <udp_data_out_buf> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <udp_counter> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <tx_clk_0> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <transmit_data_output_bus_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <start_of_frame_O_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
@@ -1675,10 +1751,12 @@ WARNING:Xst:1780 - Signal <input_word> is never used or assigned. This unconnect
 WARNING:Xst:1780 - Signal <input_bus_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <full_fifo> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <end_of_frame_O_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <en_rand_trigger> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <dout_fifo_udp> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <counter> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <REFCLK> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 INFO:Xst:1799 - State prep_first_byte is never reached in FSM <state>.
-    Found finite state machine <FSM_8> for signal <state>.
+    Found finite state machine <FSM_9> for signal <state>.
     -----------------------------------------------------------------------
     | States             | 8                                              |
     | Transitions        | 12                                             |
@@ -1693,7 +1771,7 @@ INFO:Xst:1799 - State prep_first_byte is never reached in FSM <state>.
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
     Found 9-bit register for signal <bytes_to_send>.
-    Found 9-bit subtractor for signal <bytes_to_send$addsub0000> created at line 663.
+    Found 9-bit subtractor for signal <bytes_to_send$addsub0000> created at line 706.
     Found 8-bit register for signal <dout_fifo_tmp>.
     Found 12-bit register for signal <idelayctrl_reset_0_r<12:1>>.
     Found 6-bit register for signal <ll_pre_reset_0_i>.
@@ -1714,13 +1792,12 @@ Synthesizing Unit <top>.
 WARNING:Xst:647 - Input <DIP_SWITCH> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:646 - Signal <rst> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <clk125> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <buttons_deb<3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <buttons_deb<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-    Found 1-bit register for signal <en_rand_trig>.
-    Found 1-bit register for signal <en_rand_trig_buf0>.
     Found 1-bit register for signal <trigled>.
     Found 1-bit register for signal <trigled1>.
     Summary:
-	inferred   4 D-type flip-flop(s).
+	inferred   2 D-type flip-flop(s).
 Unit <top> synthesized.
 
 INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
@@ -1729,7 +1806,7 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 30
+# Adders/Subtractors                                   : 31
  12-bit adder                                          : 2
  12-bit subtractor                                     : 4
  16-bit adder                                          : 4
@@ -1738,6 +1815,7 @@ Macro Statistics
  3-bit adder                                           : 1
  31-bit adder                                          : 1
  32-bit adder                                          : 4
+ 4-bit adder                                           : 1
  5-bit adder                                           : 1
  6-bit adder                                           : 1
  8-bit subtractor                                      : 1
@@ -1755,17 +1833,18 @@ Macro Statistics
  9-bit updown counter                                  : 2
 # Accumulators                                         : 1
  12-bit updown accumulator                             : 1
-# Registers                                            : 231
- 1-bit register                                        : 177
+# Registers                                            : 256
+ 1-bit register                                        : 184
  12-bit register                                       : 12
- 16-bit register                                       : 3
+ 16-bit register                                       : 4
  17-bit register                                       : 2
  2-bit register                                        : 6
  3-bit register                                        : 2
  32-bit register                                       : 4
+ 4-bit register                                        : 1
  5-bit register                                        : 1
  6-bit register                                        : 1
- 8-bit register                                        : 22
+ 8-bit register                                        : 38
  9-bit register                                        : 1
 # Latches                                              : 18
  1-bit latch                                           : 17
@@ -1784,7 +1863,7 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-Analyzing FSM <FSM_8> for best encoding.
+Analyzing FSM <FSM_9> for best encoding.
 Optimizing FSM <EMAC_1/state/FSM> on signal <state[1:8]> with one-hot encoding.
 -----------------------------
  State           | Encoding
@@ -1799,7 +1878,7 @@ Optimizing FSM <EMAC_1/state/FSM> on signal <state[1:8]> with one-hot encoding.
  wait_for_udp    | 01000000
  send_data       | 10000000
 -----------------------------
-Analyzing FSM <FSM_7> for best encoding.
+Analyzing FSM <FSM_8> for best encoding.
 Optimizing FSM <Inst_CRU/state/FSM> on signal <state[1:9]> with one-hot encoding.
 ----------------------------
  State         | Encoding
@@ -1821,7 +1900,7 @@ Optimizing FSM <Inst_CRU/state/FSM> on signal <state[1:9]> with one-hot encoding
  ud15          | unreached
  ud16          | unreached
 ----------------------------
-Analyzing FSM <FSM_6> for best encoding.
+Analyzing FSM <FSM_7> for best encoding.
 Optimizing FSM <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_state/FSM> on signal <wr_state[1:3]> with gray encoding.
 ----------------------
  State    | Encoding
@@ -1833,7 +1912,7 @@ Optimizing FSM <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_state/FSM>
  bf_s     | 110
  ovflow_s | 011
 ----------------------
-Analyzing FSM <FSM_5> for best encoding.
+Analyzing FSM <FSM_6> for best encoding.
 Optimizing FSM <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_state/FSM> on signal <rd_state[1:8]> with one-hot encoding.
 -------------------------
  State       | Encoding
@@ -1847,7 +1926,7 @@ Optimizing FSM <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_state/FSM>
  data_s      | 00100000
  eof_s       | 10000000
 -------------------------
-Analyzing FSM <FSM_4> for best encoding.
+Analyzing FSM <FSM_5> for best encoding.
 Optimizing FSM <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_state/FSM> on signal <wr_state[1:2]> with user encoding.
 ----------------------
  State    | Encoding
@@ -1857,7 +1936,7 @@ Optimizing FSM <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_state/FSM>
  eof_s    | 10
  ovflow_s | 11
 ----------------------
-Analyzing FSM <FSM_3> for best encoding.
+Analyzing FSM <FSM_4> for best encoding.
 Optimizing FSM <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state/FSM> on signal <rd_state[1:9]> with one-hot encoding.
 ---------------------------
  State        | Encoding
@@ -1872,20 +1951,39 @@ Optimizing FSM <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state/FSM>
  drop_s       | 100000000
  retransmit_s | 000000010
 ---------------------------
+Analyzing FSM <FSM_3> for best encoding.
+Optimizing FSM <EMAC_1/rate_counter_1/state/FSM> on signal <state[1:9]> with one-hot encoding.
+----------------------------------
+ State               | Encoding
+----------------------------------
+ init                | 000000001
+ count               | 000000010
+ wait_for_fifo       | 000000100
+ write_fifo_udp_sel  | 000001000
+ write_fifo_udp_sel2 | 000010000
+ write_fifo1         | 000100000
+ write_fifo2         | 001000000
+ write_fifo3         | 010000000
+ write_fifo4         | 100000000
+----------------------------------
 Analyzing FSM <FSM_2> for best encoding.
-Optimizing FSM <EMAC_1/rate_counter_1/state/FSM> on signal <state[1:8]> with one-hot encoding.
---------------------------------
- State              | Encoding
---------------------------------
- init               | 00000001
- count              | 00000010
- wait_for_fifo      | 00000100
- write_fifo_udp_sel | 00001000
- write_fifo1        | 00010000
- write_fifo2        | 00100000
- write_fifo3        | 01000000
- write_fifo4        | 10000000
---------------------------------
+Optimizing FSM <EMAC_1/Inst_receiver_control/state/FSM> on signal <state[1:11]> with one-hot encoding.
+---------------------------------------
+ State                  | Encoding
+---------------------------------------
+ init                   | 00000000001
+ wait_for_package       | 00000000010
+ wait_for_falling_wr_en | unreached
+ read_instruction       | 00000000100
+ set_mask               | 00100000000
+ set_mask2              | 01000000000
+ send_header            | 00000001000
+ send_header2           | 00000010000
+ notify_reset           | 00000100000
+ r_t_on                 | 00001000000
+ r_t_off                | 00010000000
+ reset_rocs             | 10000000000
+---------------------------------------
 Analyzing FSM <FSM_1> for best encoding.
 Optimizing FSM <EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/PACKET_RECEIVER_FSM_port_map/current_st/FSM> on signal <current_st[1:3]> with gray encoding.
 ----------------------------------------------------
@@ -1943,10 +2041,12 @@ Optimizing FSM <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4W
  100101 | 010000000000000000000000000000000000000
  100110 | 100000000000000000000000000000000000000
 ---------------------------------------------------
+Reading core <../../UDP/UDP_rec_kim/fifo/fifo_generator_v8_1.ngc>.
 Reading core <../../UDP/UDP_mr/comp_6b_equal.ngc>.
 Reading core <../../UDP/UDP_mr/comp_11b_equal.ngc>.
 Reading core <../../UDP/UDP_mr/dist_mem_64x8.ngc>.
 Reading core <../../rate_counter/fifo/fifo_generator_v4_4.ngc>.
+Loading core <fifo_generator_v8_1> for timing and area information for instance <udp_receive_fifo>.
 Loading core <comp_6b_equal> for timing and area information for instance <TARGET_TOTAL_LENGTH_1>.
 Loading core <comp_6b_equal> for timing and area information for instance <TARGET_HEADER_CHECKSUM_1>.
 Loading core <comp_6b_equal> for timing and area information for instance <TARGET_LENGTH_1>.
@@ -1987,8 +2087,8 @@ WARNING:Xst:2677 - Node <rd_valid_pipe_2> of sequential type is unconnected in b
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# FSMs                                                 : 9
-# Adders/Subtractors                                   : 30
+# FSMs                                                 : 10
+# Adders/Subtractors                                   : 31
  12-bit adder                                          : 2
  12-bit subtractor                                     : 4
  16-bit adder                                          : 4
@@ -1997,6 +2097,7 @@ Macro Statistics
  3-bit adder                                           : 1
  31-bit adder                                          : 1
  32-bit adder                                          : 4
+ 4-bit adder                                           : 1
  5-bit adder                                           : 1
  6-bit adder                                           : 1
  8-bit subtractor                                      : 1
@@ -2014,8 +2115,8 @@ Macro Statistics
  9-bit updown counter                                  : 2
 # Accumulators                                         : 1
  12-bit updown accumulator                             : 1
-# Registers                                            : 744
- Flip-Flops                                            : 744
+# Registers                                            : 899
+ Flip-Flops                                            : 899
 # Latches                                              : 18
  1-bit latch                                           : 17
  32-bit latch                                          : 1
@@ -2062,9 +2163,13 @@ Optimizing unit <SwitchDebouncer> ...
 
 Optimizing unit <rand_trigger> ...
 
+Optimizing unit <udp_rec> ...
+
 Optimizing unit <REG_16B_WREN> ...
 
 Optimizing unit <PACKET_RECEIVER_FSM> ...
+
+Optimizing unit <receiver_control> ...
 
 Optimizing unit <gmii_if> ...
 
@@ -2099,7 +2204,15 @@ WARNING:Xst:2677 - Node <Inst_SwitchDebouncer/counter0_3> of sequential type is 
 WARNING:Xst:2677 - Node <Inst_SwitchDebouncer/counter0_2> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_SwitchDebouncer/counter0_1> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_SwitchDebouncer/counter0_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_SwitchDebouncer/counter3_4> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_SwitchDebouncer/counter3_3> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_SwitchDebouncer/counter3_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_SwitchDebouncer/counter3_1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_SwitchDebouncer/counter3_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_SwitchDebouncer/switchesOut_3> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_SwitchDebouncer/switchesOut_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_SwitchDebouncer/sync2_1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_SwitchDebouncer/sync2_0> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_SwitchDebouncer/sync_1> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_SwitchDebouncer/sync_0> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_addr_diff_1> of sequential type is unconnected in block <top>.
@@ -2131,11 +2244,19 @@ WARNING:Xst:638 - in unit top Conflict on KEEP property on signal EMAC_1/v5_emac
 INFO:Xst:2261 - The FF/Latch <EMAC_1/v5_emac_ll/tx_pre_reset_0_i_5> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <EMAC_1/ll_pre_reset_0_i_5> 
 WARNING:Xst:638 - in unit top Conflict on KEEP property on signal EMAC_1/v5_emac_ll/tx_pre_reset_0_i<5> and EMAC_1/ll_pre_reset_0_i<5> EMAC_1/ll_pre_reset_0_i<5> signal will be lost.
 INFO:Xst:2261 - The FF/Latch <EMAC_1/v5_emac_ll/tx_reset_0_i> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <EMAC_1/ll_reset_0_i> 
-Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 9.
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 14.
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2> in Unit <EMAC_1/Inst_receiver_control/udp_receive_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_fb> in Unit <EMAC_1/Inst_receiver_control/udp_receive_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/user_valid> in Unit <EMAC_1/Inst_receiver_control/udp_receive_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/curr_fwft_state_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <EMAC_1/Inst_receiver_control/udp_receive_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/rstblk/rd_rst_reg_2> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/rstblk/rd_rst_reg_0> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/gr1.rfwft/empty_fwft_fb> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/gr1.rfwft/empty_fwft_i> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/gr1.rfwft/user_valid> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/gr1.rfwft/curr_fwft_state_0> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2> in Unit <EMAC_1/Inst_receiver_control/udp_receive_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_fb> in Unit <EMAC_1/Inst_receiver_control/udp_receive_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/user_valid> in Unit <EMAC_1/Inst_receiver_control/udp_receive_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/curr_fwft_state_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <EMAC_1/Inst_receiver_control/udp_receive_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/rstblk/rd_rst_reg_2> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/rstblk/rd_rst_reg_0> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/gr1.rfwft/empty_fwft_fb> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/gr1.rfwft/empty_fwft_i> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/gr1.rfwft/user_valid> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/gr1.rfwft/curr_fwft_state_0> 
@@ -2156,6 +2277,14 @@ Processing Unit <top> :
 	Found 2-bit shift register for signal <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_gf_pipe_1>.
 	Found 2-bit shift register for signal <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_bf_pipe_1>.
 	Found 2-bit shift register for signal <EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_valid_pipe_1>.
+	Found 5-bit shift register for signal <EMAC_1/receiver_unit/header_7_0>.
+	Found 5-bit shift register for signal <EMAC_1/receiver_unit/header_7_1>.
+	Found 5-bit shift register for signal <EMAC_1/receiver_unit/header_7_2>.
+	Found 5-bit shift register for signal <EMAC_1/receiver_unit/header_7_3>.
+	Found 5-bit shift register for signal <EMAC_1/receiver_unit/header_7_4>.
+	Found 5-bit shift register for signal <EMAC_1/receiver_unit/header_7_5>.
+	Found 5-bit shift register for signal <EMAC_1/receiver_unit/header_7_6>.
+	Found 5-bit shift register for signal <EMAC_1/receiver_unit/header_7_7>.
 INFO:Xst:741 - HDL ADVISOR - A 12-bit shift register was found for signal <EMAC_1/idelayctrl_reset_0_r_12> and currently occupies 12 logic cells (6 slices). Removing the set/reset logic would take advantage of SRL32 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
 Unit <top> processed.
 
@@ -2163,11 +2292,12 @@ Unit <top> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 923
- Flip-Flops                                            : 923
-# Shift Registers                                      : 11
+# Registers                                            : 1042
+ Flip-Flops                                            : 1042
+# Shift Registers                                      : 19
  2-bit shift register                                  : 3
  3-bit shift register                                  : 8
+ 5-bit shift register                                  : 8
 
 =========================================================================
 
@@ -2196,26 +2326,26 @@ Design Statistics
 # IOs                              : 101
 
 Cell Usage :
-# BELS                             : 2370
-#      GND                         : 10
+# BELS                             : 2918
+#      GND                         : 11
 #      INV                         : 73
-#      LUT1                        : 311
-#      LUT2                        : 165
-#      LUT3                        : 137
-#      LUT4                        : 187
-#      LUT5                        : 151
-#      LUT6                        : 375
-#      MUXCY                       : 464
-#      MUXF7                       : 8
-#      VCC                         : 3
-#      XORCY                       : 486
-# FlipFlops/Latches                : 1066
-#      FD                          : 35
-#      FDC                         : 282
-#      FDCE                        : 127
-#      FDE                         : 231
-#      FDP                         : 41
-#      FDPE                        : 14
+#      LUT1                        : 335
+#      LUT2                        : 175
+#      LUT3                        : 229
+#      LUT4                        : 226
+#      LUT5                        : 181
+#      LUT6                        : 627
+#      MUXCY                       : 522
+#      MUXF7                       : 12
+#      VCC                         : 4
+#      XORCY                       : 523
+# FlipFlops/Latches                : 1303
+#      FD                          : 39
+#      FDC                         : 365
+#      FDCE                        : 215
+#      FDE                         : 274
+#      FDP                         : 54
+#      FDPE                        : 20
 #      FDR                         : 111
 #      FDRE                        : 159
 #      FDRS                        : 2
@@ -2224,17 +2354,19 @@ Cell Usage :
 #      LD                          : 32
 #      LD_1                        : 17
 #      ODDR                        : 2
-# RAMS                             : 13
+# RAMS                             : 269
+#      RAM64M                      : 128
+#      RAM64X1D                    : 128
 #      RAM64X1S                    : 8
 #      RAMB16                      : 4
 #      RAMB18SDP                   : 1
-# Shift Registers                  : 11
-#      SRLC16E                     : 11
+# Shift Registers                  : 19
+#      SRLC16E                     : 19
 # Clock Buffers                    : 11
 #      BUFG                        : 10
 #      BUFGP                       : 1
-# IO Buffers                       : 85
-#      IBUF                        : 43
+# IO Buffers                       : 84
+#      IBUF                        : 42
 #      IBUFDS                      : 2
 #      IBUFG                       : 1
 #      OBUF                        : 34
@@ -2253,23 +2385,23 @@ Selected Device : 5vfx30tff665-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            1056  out of  20480     5%  
- Number of Slice LUTs:                 1418  out of  20480     6%  
-    Number used as Logic:              1399  out of  20480     6%  
-    Number used as Memory:               19  out of   6080     0%  
-       Number used as RAM:                8
-       Number used as SRL:               11
+ Number of Slice Registers:            1293  out of  20480     6%  
+ Number of Slice LUTs:                 2641  out of  20480    12%  
+    Number used as Logic:              1846  out of  20480     9%  
+    Number used as Memory:              795  out of   6080    13%  
+       Number used as RAM:              776
+       Number used as SRL:               19
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   1788
-   Number with an unused Flip Flop:     732  out of   1788    40%  
-   Number with an unused LUT:           370  out of   1788    20%  
-   Number of fully used LUT-FF pairs:   686  out of   1788    38%  
-   Number of unique control sets:       107
+ Number of LUT Flip Flop pairs used:   3141
+   Number with an unused Flip Flop:    1848  out of   3141    58%  
+   Number with an unused LUT:           500  out of   3141    15%  
+   Number of fully used LUT-FF pairs:   793  out of   3141    25%  
+   Number of unique control sets:       122
 
 IO Utilization: 
  Number of IOs:                         101
- Number of bonded IOBs:                  93  out of    360    25%  
+ Number of bonded IOBs:                  92  out of    360    25%  
     IOB Flip Flops/Latches:              10
 
 Specific Feature Utilization:
@@ -2299,11 +2431,11 @@ Clock Information:
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                                                                                                                                                                                                               | Clock buffer(FF name)                                                                                       | Load  |
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+-------+
-Inst_CRU/Inst_PLL_ALL/CLKOUT1_BUF                                                                                                                                                                                          | BUFG                                                                                                        | 78    |
+Inst_CRU/Inst_PLL_ALL/CLKOUT1_BUF                                                                                                                                                                                          | BUFG                                                                                                        | 68    |
 FPGA100M                                                                                                                                                                                                                   | IBUFG+BUFG                                                                                                  | 36    |
 Inst_CRU/Inst_PLL_ALL/CLKOUT0_BUF                                                                                                                                                                                          | BUFG                                                                                                        | 3     |
 EMAC_1/rx_client_clk_0_o                                                                                                                                                                                                   | BUFG                                                                                                        | 106   |
-EMAC_1/tx_client_clk_0_o                                                                                                                                                                                                   | BUFG                                                                                                        | 787   |
+EMAC_1/tx_client_clk_0_o                                                                                                                                                                                                   | BUFG                                                                                                        | 1298  |
 EMAC_1/tx_phy_clk_0_o                                                                                                                                                                                                      | BUFG                                                                                                        | 11    |
 GMII_RX_CLK_0                                                                                                                                                                                                              | IBUF+IODELAY+BUFG                                                                                           | 10    |
 EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUTwe1(EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or000046:O)                                                        | BUFG(*)(EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_31)      | 32    |
@@ -2317,30 +2449,37 @@ INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered
 
 Asynchronous Control Signals Information:
 ----------------------------------------
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+-------+
-Control Signal                                                                                                                                                                                     | Buffer(FF name)                                                                                                   | Load  |
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+-------+
-EMAC_1/rate_counter_1/G_edge_det[0].edge_detect_1/rst_b_inv(sync_trigger_1/G3[0].edge_detect_1/rst_b_inv1_INV_0:O)                                                                                 | NONE(EMAC_1/idelayctrl_reset_0_r_1)                                                                               | 204   |
-EMAC_1/v5_emac_ll/tx_reset_0_i(EMAC_1/v5_emac_ll/tx_reset_0_i:Q)                                                                                                                                   | NONE(EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/ENABLE_USER_DATA_READ_port_map/usr_data_sel_prev)      | 132   |
-BUTTONS<0>                                                                                                                                                                                         | IBUF                                                                                                              | 35    |
-EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/rd_rst_reg<2>(EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/rd_rst_reg_2:Q)                                                                                          | NONE(EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/gr1.gdcf.dc/dc/count_0)                                                | 31    |
-EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/wr_rst_reg<1>(EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/wr_rst_reg_1:Q)                                                                                          | NONE(EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i)                                               | 19    |
-EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/rst_counter(EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/count_en_sig_or00001:O)            | NONE(EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_0)   | 12    |
-EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/rst_count(EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/PACKET_RECEIVER_FSM_port_map/rst_count1:O)                                         | NONE(EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O_0)                        | 11    |
-EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/rd_rst_reg<0>(EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/rd_rst_reg_0:Q)                                                                                          | NONE(EMAC_1/send_fifo/BU2/U0/grf.rf/mem/dout_i_0)                                                                 | 8     |
-EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/IPV4_LUT_INDEXER_port_map/rst_counter(EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/IPV4_LUT_INDEXER_port_map/count_en_sig_or00001:O)| NONE(EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/IPV4_LUT_INDEXER_port_map/LUT_INDEXER_MODULE/value_O_0)| 7     |
-EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/rd_rst_comb(EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/rd_rst_comb1:O)                                                                                            | NONE(EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/rd_rst_reg_0)                                                          | 2     |
-Inst_CRU/fe_rst_sync/arst_b_inv(Inst_CRU/fe_rst_sync/arst_b_inv1_INV_0:O)                                                                                                                          | NONE(Inst_CRU/fe_rst_sync/d_0)                                                                                    | 2     |
-EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/wr_rst_comb(EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/wr_rst_comb1:O)                                                                                            | NONE(EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/wr_rst_reg_1)                                                          | 1     |
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+-------+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                                                                                             | Buffer(FF name)                                                                                                                               | Load  |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+-------+
+EMAC_1/Inst_receiver_control/rst_b_inv(sync_trigger_1/G3[0].edge_detect_1/rst_b_inv1_INV_0:O)                                                                                                                              | NONE(EMAC_1/Inst_receiver_control/en_random_trigger)                                                                                          | 300   |
+EMAC_1/v5_emac_ll/tx_reset_0_i(EMAC_1/v5_emac_ll/tx_reset_0_i:Q)                                                                                                                                                           | NONE(EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/ENABLE_USER_DATA_READ_port_map/usr_data_sel_prev)                                  | 132   |
+EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)| NONE(EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gdcf.dc/dc/count_0) | 43    |
+BUTTONS<0>                                                                                                                                                                                                                 | IBUF                                                                                                                                          | 35    |
+EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/rd_rst_reg<2>(EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/rd_rst_reg_2:Q)                                                                                                                  | NONE(EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/gr1.gdcf.dc/dc/count_0)                                                                            | 31    |
+EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)| NONE(EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_0)          | 24    |
+EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/wr_rst_reg<1>(EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/wr_rst_reg_1:Q)                                                                                                                  | NONE(EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i)                                                                           | 19    |
+EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<0>(EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0:Q)| NONE(EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_i_0)                  | 16    |
+EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/rst_counter(EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/count_en_sig_or00001:O)                                    | NONE(EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_0)                               | 12    |
+EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/rst_count(EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/PACKET_RECEIVER_FSM_port_map/rst_count1:O)                                                                 | NONE(EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O_0)                                                    | 11    |
+EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/rd_rst_reg<0>(EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/rd_rst_reg_0:Q)                                                                                                                  | NONE(EMAC_1/send_fifo/BU2/U0/grf.rf/mem/dout_i_0)                                                                                             | 8     |
+EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/IPV4_LUT_INDEXER_port_map/rst_counter(EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/IPV4_LUT_INDEXER_port_map/count_en_sig_or00001:O)                        | NONE(EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/IPV4_LUT_INDEXER_port_map/LUT_INDEXER_MODULE/value_O_0)                            | 7     |
+EMAC_1/Inst_receiver_control/rst_fifo(EMAC_1/Inst_receiver_control/rst_fifo:Q)                                                                                                                                             | NONE(EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/RST_FULL_GEN)                             | 6     |
+EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb(EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1:O)  | NONE(EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0)                             | 2     |
+EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2(EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2:Q)             | NONE(EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i)| 2     |
+EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/rd_rst_comb(EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/rd_rst_comb1:O)                                                                                                                    | NONE(EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/rd_rst_reg_0)                                                                                      | 2     |
+Inst_CRU/fe_rst_sync/arst_b_inv(Inst_CRU/fe_rst_sync/arst_b_inv1_INV_0:O)                                                                                                                                                  | NONE(Inst_CRU/fe_rst_sync/d_0)                                                                                                                | 2     |
+EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)  | NONE(EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1)                             | 1     |
+EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/wr_rst_comb(EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/wr_rst_comb1:O)                                                                                                                    | NONE(EMAC_1/send_fifo/BU2/U0/grf.rf/rstblk/wr_rst_reg_1)                                                                                      | 1     |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: 4.322ns (Maximum Frequency: 231.374MHz)
+   Minimum period: 4.424ns (Maximum Frequency: 226.040MHz)
    Minimum input arrival time before clock: 2.731ns
-   Maximum output required time after clock: 4.175ns
+   Maximum output required time after clock: 4.218ns
    Maximum combinational path delay: 2.793ns
 
 Timing Detail:
@@ -2350,7 +2489,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Inst_CRU/Inst_PLL_ALL/CLKOUT1_BUF'
   Clock period: 3.335ns (frequency: 299.850MHz)
-  Total number of paths / destination ports: 1120 / 94
+  Total number of paths / destination ports: 1050 / 78
 -------------------------------------------------------------------------
 Delay:               3.335ns (Levels of Logic = 8)
   Source:            sync_trigger_1/coincidence_array<1>_0 (FF)
@@ -2378,10 +2517,10 @@ Delay:               3.335ns (Levels of Logic = 8)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'FPGA100M'
-  Clock period: 3.796ns (frequency: 263.435MHz)
-  Total number of paths / destination ports: 1386 / 36
+  Clock period: 3.678ns (frequency: 271.887MHz)
+  Total number of paths / destination ports: 1396 / 36
 -------------------------------------------------------------------------
-Delay:               3.796ns (Levels of Logic = 4)
+Delay:               3.678ns (Levels of Logic = 4)
   Source:            Inst_CRU/wait_counter_5 (FF)
   Destination:       Inst_CRU/wait_counter_15 (FF)
   Source Clock:      FPGA100M rising
@@ -2392,14 +2531,14 @@ Delay:               3.796ns (Levels of Logic = 4)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDC:C->Q              4   0.471   1.085  Inst_CRU/wait_counter_5 (Inst_CRU/wait_counter_5)
-     LUT6:I0->O            2   0.094   0.581  Inst_CRU/state_cmp_eq00002_SW0 (N89)
-     LUT6:I4->O            3   0.094   0.721  Inst_CRU/state_cmp_eq00001 (Inst_CRU/state_cmp_eq0000)
-     LUT6:I3->O           16   0.094   0.562  Inst_CRU/wait_counter_mux0001<0>11 (Inst_CRU/N01)
+     LUT6:I0->O            2   0.094   0.581  Inst_CRU/state_cmp_eq00002_SW0 (N91)
+     LUT6:I4->O            6   0.094   0.603  Inst_CRU/wait_counter2_cmp_eq00001 (Inst_CRU/wait_counter2_cmp_eq0000)
+     LUT6:I4->O           16   0.094   0.562  Inst_CRU/wait_counter_mux0001<0>11 (Inst_CRU/N01)
      LUT4:I3->O            1   0.094   0.000  Inst_CRU/wait_counter_mux0001<9>1 (Inst_CRU/wait_counter_mux0001<9>)
      FDC:D                    -0.018          Inst_CRU/wait_counter_6
     ----------------------------------------
-    Total                      3.796ns (0.847ns logic, 2.949ns route)
-                                       (22.3% logic, 77.7% route)
+    Total                      3.678ns (0.847ns logic, 2.831ns route)
+                                       (23.0% logic, 77.0% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Inst_CRU/Inst_PLL_ALL/CLKOUT0_BUF'
@@ -2424,10 +2563,10 @@ Delay:               0.807ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'EMAC_1/tx_client_clk_0_o'
-  Clock period: 4.322ns (frequency: 231.374MHz)
-  Total number of paths / destination ports: 19680 / 1453
+  Clock period: 4.424ns (frequency: 226.040MHz)
+  Total number of paths / destination ports: 33312 / 4881
 -------------------------------------------------------------------------
-Delay:               4.322ns (Levels of Logic = 6)
+Delay:               4.424ns (Levels of Logic = 6)
   Source:            EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd31 (FF)
   Destination:       EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/qspo_int_0 (FF)
   Source Clock:      EMAC_1/tx_client_clk_0_o rising
@@ -2438,8 +2577,8 @@ Delay:               4.322ns (Levels of Logic = 6)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDC:C->Q              4   0.471   1.085  EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd31 (EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd31)
-     LUT6:I0->O            7   0.094   0.513  EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/data_i<4>11 (EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/N42)
-     LUT6:I5->O            1   0.094   0.480  EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_n_16_and00001_1 (EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_n_16_and00001)
+     LUT6:I0->O            6   0.094   0.507  EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/data_i<4>11 (EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/N42)
+     LUT6:I5->O           21   0.094   0.588  EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_n_16_and00001 (EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_n_16_and0000)
      LUT6:I5->O           22   0.094   0.593  EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or000046_1 (EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or000046)
      LUT6:I5->O            8   0.094   0.374  EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<5> (EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_addr_in<5>)
      begin scope: 'EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM'
@@ -2447,8 +2586,8 @@ Delay:               4.322ns (Levels of Logic = 6)
      RAM64X1S:A5->O        1   0.094   0.336  U0/gen_sp_ram.spram_inst/Mram_ram1 (U0/gen_sp_ram.spram_inst/spo_int<0>)
      FD:D                     -0.018          U0/gen_sp_ram.spram_inst/qspo_int_0
     ----------------------------------------
-    Total                      4.322ns (0.941ns logic, 3.381ns route)
-                                       (21.8% logic, 78.2% route)
+    Total                      4.424ns (0.941ns logic, 3.483ns route)
+                                       (21.3% logic, 78.7% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'EMAC_1/rx_client_clk_0_o'
@@ -2509,9 +2648,9 @@ Delay:               0.807ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_CRU/Inst_PLL_ALL/CLKOUT1_BUF'
-  Total number of paths / destination ports: 7 / 5
+  Total number of paths / destination ports: 6 / 4
 -------------------------------------------------------------------------
-Offset:              1.159ns (Levels of Logic = 1)
+Offset:              1.488ns (Levels of Logic = 2)
   Source:            SYNC_TRIGGER_IN<0> (PAD)
   Destination:       sync_trigger_1/G3[0].edge_detect_1/s_2 (FF)
   Destination Clock: Inst_CRU/Inst_PLL_ALL/CLKOUT1_BUF rising
@@ -2520,11 +2659,12 @@ Offset:              1.159ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUFDS:I->O           2   0.818   0.341  G1[0].diff_in (trig_in_se<0>)
+     IBUFDS:I->O           1   0.818   0.576  G1[0].diff_in (trig_in_se<0>)
+     LUT2:I0->O            2   0.094   0.000  trig_in_se_masked<0>1 (trig_in_se_masked<0>)
      FDC:D                    -0.018          sync_trigger_1/G3[0].edge_detect_1/s_2
     ----------------------------------------
-    Total                      1.159ns (0.818ns logic, 0.341ns route)
-                                       (70.6% logic, 29.4% route)
+    Total                      1.488ns (0.912ns logic, 0.576ns route)
+                                       (61.3% logic, 38.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'FPGA100M'
@@ -2618,7 +2758,7 @@ Offset:              2.731ns (Levels of Logic = 3)
     ----------------------------------------  ------------
     TEMAC:EMAC0CLIENTTXACK    8   0.000   1.107  EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac (EMAC_1/v5_emac_ll/tx_ack_0_i)
      LUT6:I0->O            1   0.094   0.576  EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000189 (EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not000189)
-     LUT3:I1->O            1   0.094   0.000  EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001157_F (N190)
+     LUT3:I1->O            1   0.094   0.000  EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001157_F (N210)
      MUXF7:I0->O          12   0.251   0.396  EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001157 (EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_not0001)
      FDRE:CE                   0.213          EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_0
     ----------------------------------------
@@ -2629,7 +2769,7 @@ Offset:              2.731ns (Levels of Logic = 3)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_CRU/Inst_PLL_ALL/CLKOUT0_BUF'
   Total number of paths / destination ports: 8 / 8
 -------------------------------------------------------------------------
-Offset:              3.984ns (Levels of Logic = 2)
+Offset:              4.218ns (Levels of Logic = 2)
   Source:            Inst_CRU/fe_rst_sync/d_1 (FF)
   Destination:       RESET_ROC_B1 (PAD)
   Source Clock:      Inst_CRU/Inst_PLL_ALL/CLKOUT0_BUF rising
@@ -2638,12 +2778,12 @@ Offset:              3.984ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q            135   0.471   0.626  Inst_CRU/fe_rst_sync/d_1 (Inst_CRU/fe_rst_sync/d_1)
-     LUT2:I1->O            2   0.094   0.341  reset_roc_int_b1 (reset_roc_int_b)
+     FDC:C->Q            155   0.471   0.860  Inst_CRU/fe_rst_sync/d_1 (Inst_CRU/fe_rst_sync/d_1)
+     LUT3:I0->O            2   0.094   0.341  reset_roc_int_b1 (reset_roc_int_b)
      OBUFDS:I->O               2.452          MCLK_DIFF_OUT1 (RESET_ROC_B1)
     ----------------------------------------
-    Total                      3.984ns (3.017ns logic, 0.967ns route)
-                                       (75.7% logic, 24.3% route)
+    Total                      4.218ns (3.017ns logic, 1.201ns route)
+                                       (71.5% logic, 28.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'EMAC_1/tx_phy_clk_0_o'
@@ -2666,18 +2806,38 @@ Offset:              3.395ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_CRU/Inst_PLL_ALL/CLKOUT1_BUF'
-  Total number of paths / destination ports: 22 / 10
+  Total number of paths / destination ports: 17 / 9
 -------------------------------------------------------------------------
-Offset:              4.175ns (Levels of Logic = 2)
-  Source:            en_rand_trig (FF)
+Offset:              4.085ns (Levels of Logic = 2)
+  Source:            Inst_rand_trigger/trigger_out_0 (FF)
   Destination:       SYNC_TRIGGER_OUT_b<1> (PAD)
   Source Clock:      Inst_CRU/Inst_PLL_ALL/CLKOUT1_BUF rising
 
-  Data Path: en_rand_trig to SYNC_TRIGGER_OUT_b<1>
+  Data Path: Inst_rand_trigger/trigger_out_0 to SYNC_TRIGGER_OUT_b<1>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             5   0.471   0.811  en_rand_trig (en_rand_trig)
+     FDC:C->Q              3   0.471   0.721  Inst_rand_trigger/trigger_out_0 (Inst_rand_trigger/trigger_out_0)
+     LUT4:I1->O            3   0.094   0.347  trig_out_se2_or00001 (trig_out_se2<0>)
+     OBUFDS:I->O               2.452          G2[0].diff_out (SYNC_TRIGGER_OUT<0>)
+    ----------------------------------------
+    Total                      4.085ns (3.017ns logic, 1.068ns route)
+                                       (73.9% logic, 26.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'EMAC_1/tx_client_clk_0_o'
+  Total number of paths / destination ports: 18 / 18
+-------------------------------------------------------------------------
+Offset:              4.175ns (Levels of Logic = 2)
+  Source:            EMAC_1/Inst_receiver_control/en_random_trigger (FF)
+  Destination:       SYNC_TRIGGER_OUT_b<1> (PAD)
+  Source Clock:      EMAC_1/tx_client_clk_0_o rising
+
+  Data Path: EMAC_1/Inst_receiver_control/en_random_trigger to SYNC_TRIGGER_OUT_b<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.471   0.811  EMAC_1/Inst_receiver_control/en_random_trigger (EMAC_1/Inst_receiver_control/en_random_trigger)
      LUT4:I0->O            3   0.094   0.347  trig_out_se2_or00001 (trig_out_se2<0>)
      OBUFDS:I->O               2.452          G2[0].diff_out (SYNC_TRIGGER_OUT<0>)
     ----------------------------------------
@@ -2702,25 +2862,6 @@ Offset:              0.471ns (Levels of Logic = 0)
     ----------------------------------------
     Total                      0.471ns (0.471ns logic, 0.000ns route)
                                        (100.0% logic, 0.0% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'EMAC_1/tx_client_clk_0_o'
-  Total number of paths / destination ports: 9 / 9
--------------------------------------------------------------------------
-Offset:              0.812ns (Levels of Logic = 0)
-  Source:            EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/tx_data_7 (FF)
-  Destination:       EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac:CLIENTEMAC0TXD7 (PAD)
-  Source Clock:      EMAC_1/tx_client_clk_0_o rising
-
-  Data Path: EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/tx_data_7 to EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac:CLIENTEMAC0TXD7
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q               2   0.471   0.341  EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/tx_data_7 (EMAC_1/v5_emac_ll/tx_data_0_i<7>)
-    TEMAC:CLIENTEMAC0TXD7        0.000          EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac
-    ----------------------------------------
-    Total                      0.812ns (0.471ns logic, 0.341ns route)
-                                       (58.0% logic, 42.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'GMII_RX_CLK_0'
@@ -2762,15 +2903,15 @@ Delay:               2.793ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 21.00 secs
-Total CPU time to Xst completion: 20.16 secs
+Total REAL time to Xst completion: 29.00 secs
+Total CPU time to Xst completion: 28.43 secs
  
 --> 
 
 
-Total memory usage is 461788 kilobytes
+Total memory usage is 478624 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  188 (   0 filtered)
-Number of infos    :  107 (   0 filtered)
+Number of warnings :  209 (   0 filtered)
+Number of infos    :  119 (   0 filtered)
 

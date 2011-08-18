@@ -1,0 +1,4 @@
+vhdl work "../../UDP/UDP_rec_kim/fifo/fifo_generator_v8_1.vhd"
+vhdl work "../../Shared/constants.vhd"
+vhdl work "../../Shared/components.vhd"
+vhdl work "../../UDP/UDP_rec_kim/receiver_control.vhd"

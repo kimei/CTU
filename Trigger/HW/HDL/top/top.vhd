@@ -159,14 +159,16 @@ entity top is
     );
 end top;
 architecture Behavioral of top is
+  signal mrst_from_udp_b : std_logic;
 
-  signal trig_in_se       : std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
-  signal trig_out_se      : std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
-  signal trig_out_se_sync : std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
-  signal trig_out_se_rand : std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
+  signal trigger_mask      : std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
+  signal trig_in_se        : std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
+  signal trig_in_se_masked : std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
+  signal trig_out_se       : std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
+  signal trig_out_se_sync  : std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
+  signal trig_out_se_rand  : std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
 
-  signal en_rand_trig_buf0 : std_logic;
-  signal en_rand_trig      : std_logic;
+  signal en_rand_trig : std_logic;
 
   signal trig_out_se2 : std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
 
@@ -223,7 +225,7 @@ begin
     port map (
       rst_b       => rst_b,
       mclk        => mclk,
-      trigger_in  => trig_in_se,
+      trigger_in  => trig_in_se_masked,
       trigger_out => trig_out_se_sync);
 
 
@@ -267,13 +269,14 @@ begin
     OB => RESET_ROC_B2_b,
     I  => reset_roc_int_b);
 
-  EMAC_1 : v5_emac_v1_5_example_design
+  EMAC_1 : entity work.v5_emac_v1_5_example_design
     port map (
       --input for sending data
-      rate_cards  => trig_in_se,
-      coincidence => trig_out_se,
-
-
+      rate_cards                => trig_in_se_masked,
+      coincidence               => trig_out_se,
+      mrst_from_udp_b_ent       => mrst_from_udp_b,
+      en_random_trigger_ent     => en_rand_trig,
+      trigger_mask              => trigger_mask,
       clk200                    => clk200,
       rst_b                     => rst_b,
       EMAC0CLIENTRXDVLD         => EMAC0CLIENTRXDVLD,
@@ -317,10 +320,12 @@ begin
   LEDS(2 to 7) <= (others => '1');
 
 
-  reset_roc_int_b2 <= not buttons_deb(2);
+  reset_roc_int_b2 <= (not buttons_deb(2)) and mrst_from_udp_b;
 
   trig_out_se <= trig_out_se_sync when en_rand_trig = '0' else trig_out_se_rand;
   LEDS(0)     <= en_rand_trig;
+
+  trig_in_se_masked <= trig_in_se and trigger_mask;
 
 -------------------------------------------------------------------------------
 -- Processes
@@ -340,26 +345,6 @@ begin
       end if;
     end if;
   end process triggerled;
-
-
-  triggerswitch : process (mclk, rst_b)
-  begin
-    if rst_b = '0' then
-      en_rand_trig      <= '1';
-      en_rand_trig_buf0 <= '0';
-    elsif mclk'event and mclk = '1' then
-      en_rand_trig_buf0 <= buttons_deb(3);
-      if en_rand_trig_buf0 = '0' and buttons_deb(3) = '1' then
-        en_rand_trig <= not en_rand_trig;
-      end if;
-      
-    end if;
-  end process triggerswitch;
-
-
-
-
-
 
 
   -- PPC.. not used yet..

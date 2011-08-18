@@ -6,7 +6,7 @@
 -- Author     :   <kimei@fyspc-epf02>
 -- Company    : 
 -- Created    : 2011-03-08
--- Last update: 2011-06-22
+-- Last update: 2011-08-18
 -- Platform   : 
 -- Standard   : VHDL'87
 -------------------------------------------------------------------------------
@@ -44,33 +44,30 @@ entity rand_trigger is
     trigger_out : out std_logic_vector(NUMBER_OF_ROCS-1 downto 0));
 end rand_trigger;
 
-
 architecture Behavioral of rand_trigger is
-
-  signal counter : unsigned(16 downto 0);
-
-begin
-
- -- purpose: generate random triggers 3 clk cycles wide
- rand_triggers: process (mclk, rst_b)
- begin  -- process rand_triggers
-   if rst_b = '0' then                  -- asynchronous reset (active low)
-     counter <= (others => '0');
-     trigger_out <= (others => '0');
-     
-   elsif mclk'event and mclk = '1' then  -- rising clock edge
-     counter <= counter + 1;
-     trigger_out <= (others => '0');
-     if counter = 997 then
-       trigger_out <= (others => '1');
-       trigger_out <= (others => '1');
-     elsif counter = 999 then
-       trigger_out <= (others => '1');
-       counter <= (others => '0');
-     end if;
-     
-   end if;
- end process rand_triggers;
   
- 
+  signal counter : unsigned(16 downto 0);
+begin
+  -- purpose: generate random triggers 3 clk cycles wide
+  rand_triggers : process (mclk, rst_b)
+  begin  -- process rand_triggers
+    if rst_b = '0' then                   -- asynchronous reset (active low)
+      counter     <= (others => '0');
+      trigger_out <= (others => '0');
+    elsif mclk'event and mclk = '1' then  -- rising clock edge
+      counter     <= counter + 1;
+      trigger_out <= (others => '0');
+      if counter = 997 then
+        trigger_out <= (others => '1');
+        trigger_out <= (others => '1');
+      elsif counter = 998 then
+        trigger_out <= (others => '1');
+        trigger_out <= (others => '1');
+      elsif counter = 999 then
+        trigger_out <= (others => '1');
+        counter     <= (others => '0');
+      end if;
+    end if;
+  end process rand_triggers;
+  
 end Behavioral;

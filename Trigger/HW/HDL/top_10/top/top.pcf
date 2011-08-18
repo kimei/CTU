@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map O.40d on Fri Jun 24 12:40:06 2011
+// Written by: Map O.40d on Thu Aug 18 15:09:50 2011
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -86,39 +86,81 @@ PIN
         = BEL
         "EMAC_1/send_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.WIDE_PRIM18.TDP"
         PINNAME WRCLKL;
-PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<30> = BEL
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l" PINNAME
+PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<30> = BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l" PINNAME
         CLKAU;
-PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<31> = BEL
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l" PINNAME
-        CLKBU;
-PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<108> =
-        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l"
+PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<108> =
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l"
         PINNAME REGCLKAU;
-PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<109> =
-        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l"
+PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<31> = BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l" PINNAME
+        CLKBU;
+PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<109> =
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l"
         PINNAME REGCLKBU;
-PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<32> = BEL
+PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<32> = BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u" PINNAME
+        CLKAL;
+PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<110> =
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u"
+        PINNAME REGCLKAL;
+PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<33> = BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u" PINNAME
+        CLKBL;
+PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<111> =
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u"
+        PINNAME REGCLKBL;
+PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<24> = BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l" PINNAME
+        CLKAL;
+PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<25> = BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l" PINNAME
+        CLKBL;
+PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<57> = BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l" PINNAME
+        REGCLKAL;
+PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<58> = BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l" PINNAME
+        REGCLKBL;
+PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<24> = BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u" PINNAME
         CLKAL;
-PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<33> = BEL
+PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<25> = BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u" PINNAME
         CLKBL;
-PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<110> =
-        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u"
-        PINNAME REGCLKAL;
-PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<111> =
-        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u"
-        PINNAME REGCLKBL;
-TIMEGRP clk_gtp = BEL "EMAC_1/v5_emac_ll/tx_pre_reset_0_i_0" BEL
+PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<57> = BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u" PINNAME
+        REGCLKAL;
+PIN EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<58> = BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u" PINNAME
+        REGCLKBL;
+TIMEGRP clk_gtp = BEL "EMAC_1/v5_emac_ll/rx_good_frame_0_r" BEL
+        "EMAC_1/v5_emac_ll/rx_data_valid_0_r" BEL
+        "EMAC_1/v5_emac_ll/rx_bad_frame_0_r" BEL
+        "EMAC_1/v5_emac_ll/tx_pre_reset_0_i_0" BEL
+        "EMAC_1/v5_emac_ll/rx_pre_reset_0_i_0" BEL
+        "EMAC_1/v5_emac_ll/rx_data_0_r_0" BEL
+        "EMAC_1/v5_emac_ll/rx_data_0_r_1" BEL
+        "EMAC_1/v5_emac_ll/rx_data_0_r_2" BEL
+        "EMAC_1/v5_emac_ll/rx_data_0_r_3" BEL
+        "EMAC_1/v5_emac_ll/rx_data_0_r_4" BEL
+        "EMAC_1/v5_emac_ll/rx_data_0_r_5" BEL
+        "EMAC_1/v5_emac_ll/rx_data_0_r_6" BEL
+        "EMAC_1/v5_emac_ll/rx_data_0_r_7" BEL
         "EMAC_1/v5_emac_ll/tx_pre_reset_0_i_1" BEL
+        "EMAC_1/v5_emac_ll/rx_pre_reset_0_i_1" BEL
         "EMAC_1/v5_emac_ll/tx_pre_reset_0_i_2" BEL
+        "EMAC_1/v5_emac_ll/rx_pre_reset_0_i_2" BEL
         "EMAC_1/v5_emac_ll/tx_pre_reset_0_i_3" BEL
+        "EMAC_1/v5_emac_ll/rx_pre_reset_0_i_3" BEL
         "EMAC_1/v5_emac_ll/tx_pre_reset_0_i_4" BEL
+        "EMAC_1/v5_emac_ll/rx_pre_reset_0_i_4" BEL
         "EMAC_1/v5_emac_ll/tx_pre_reset_0_i_5" BEL
-        "EMAC_1/v5_emac_ll/tx_reset_0_i" PIN
-        "EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac_pins<18>" PIN
-        "EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac_pins<19>" BEL
+        "EMAC_1/v5_emac_ll/rx_pre_reset_0_i_5" BEL
+        "EMAC_1/v5_emac_ll/tx_reset_0_i" BEL "EMAC_1/v5_emac_ll/rx_reset_0_i"
+        PIN "EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac_pins<18>"
+        PIN "EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac_pins<19>"
+        BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd9"
         BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd8"
@@ -463,6 +505,248 @@ TIMEGRP clk_gtp = BEL "EMAC_1/v5_emac_ll/tx_pre_reset_0_i_0" BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_2" BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_1" BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_0" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_state_FSM_FFd4"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_state_FSM_FFd5"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_state_FSM_FFd6"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_state_FSM_FFd8"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_state_FSM_FFd7"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_state_FSM_FFd2"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_state_FSM_FFd1"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_state_FSM_FFd2"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_state_FSM_FFd1"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_state_FSM_FFd3"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_11"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_10"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_9" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_8" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_7" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_6" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_5" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_4" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_3" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_2" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_1" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_0" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_11" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_10" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_9" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_8" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_7" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_6" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_5" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_4" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_3" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_2" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_1" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_0" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_frames_8" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_frames_7" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_frames_6" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_frames_5" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_frames_4" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_frames_3" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_frames_2" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_frames_1" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_frames_0" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_diff_11"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_diff_10"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_diff_9"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_diff_8"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_diff_7"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_diff_6"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_diff_5"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_diff_4"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_diff_3"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_addr_diff_2"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_store_frame_delay"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_u_7"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_u_6"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_u_5"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_u_4"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_u_3"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_u_2"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_u_1"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_u_0"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_l_7"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_l_6"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_l_5"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_l_4"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_l_3"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_l_2"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_l_1"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_l_0"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_store_frame_sync"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_store_frame_tog"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_start_addr_11"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_start_addr_10"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_start_addr_9"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_start_addr_8"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_start_addr_7"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_start_addr_6"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_start_addr_5"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_start_addr_4"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_start_addr_3"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_start_addr_2"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_start_addr_1"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_start_addr_0"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_11"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_10"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_9"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_8"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_7"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_6"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_5"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_4"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_3"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_2"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_1"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_0"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_store_frame_tog"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_11"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_10"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_9"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_8"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_7"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_6"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_5"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_4"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_3"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_2"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_1"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_0"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_eof_bram_0"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_11"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_10"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_9"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_8"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_7"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_6"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_5"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_4"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_3"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_2"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_1"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_0"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_bram_u_reg"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_dv_pipe_1"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_bram_u" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out_7" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out_6" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out_5" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out_4" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out_3" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out_2" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out_1" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out_0" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_sof_n" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_7"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_6"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_5"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_4"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_3"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_2"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_1"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_0"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_dv_pipe_0"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_eof_n_int"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_store_frame"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_eof" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/frame_in_fifo" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_fifo_full" BEL
         "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/source_ready"
         BEL
         "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/transmit_start_enable_reg"
@@ -748,6 +1032,56 @@ TIMEGRP clk_gtp = BEL "EMAC_1/v5_emac_ll/tx_pre_reset_0_i_0" BEL
         "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_reg_0"
         BEL
         "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/setupNow_reg"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/LSbyte_REG/output_val_7"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/LSbyte_REG/output_val_6"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/LSbyte_REG/output_val_5"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/LSbyte_REG/output_val_4"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/LSbyte_REG/output_val_3"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/LSbyte_REG/output_val_2"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/LSbyte_REG/output_val_1"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/LSbyte_REG/output_val_0"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/MSbyte_REG/output_val_2"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/MSbyte_REG/output_val_1"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/MSbyte_REG/output_val_0"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O_0"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O_1"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O_2"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O_3"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O_4"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O_5"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O_6"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O_7"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O_8"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O_9"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/COUNTER_11B_EN_port_map/value_O_10"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/PACKET_RECEIVER_FSM_port_map/current_st_FSM_FFd2"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/PACKET_RECEIVER_FSM_port_map/current_st_FSM_FFd1"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/PACKET_RECEIVER_FSM_port_map/current_st_FSM_FFd3"
         BEL "EMAC_1/rate_counter_1/sek" BEL "EMAC_1/rate_counter_1/counts_0_0"
         BEL "EMAC_1/rate_counter_1/counts_0_1" BEL
         "EMAC_1/rate_counter_1/counts_0_2" BEL
@@ -864,12 +1198,141 @@ TIMEGRP clk_gtp = BEL "EMAC_1/v5_emac_ll/tx_pre_reset_0_i_0" BEL
         "EMAC_1/rate_counter_1/G_edge_det[0].edge_detect_1/s_2" BEL
         "EMAC_1/rate_counter_1/state_FSM_FFd3" BEL
         "EMAC_1/rate_counter_1/state_FSM_FFd4" BEL
-        "EMAC_1/rate_counter_1/state_FSM_FFd5" BEL
         "EMAC_1/rate_counter_1/state_FSM_FFd6" BEL
         "EMAC_1/rate_counter_1/state_FSM_FFd7" BEL
         "EMAC_1/rate_counter_1/state_FSM_FFd8" BEL
+        "EMAC_1/rate_counter_1/state_FSM_FFd9" BEL
         "EMAC_1/rate_counter_1/state_FSM_FFd2" BEL
-        "EMAC_1/rate_counter_1/state_FSM_FFd1" BEL "EMAC_1/state_FSM_FFd3" BEL
+        "EMAC_1/rate_counter_1/state_FSM_FFd5" BEL
+        "EMAC_1/rate_counter_1/state_FSM_FFd1" BEL
+        "EMAC_1/Inst_receiver_control/send_fifo_data_in_0" BEL
+        "EMAC_1/Inst_receiver_control/send_fifo_data_in_1" BEL
+        "EMAC_1/Inst_receiver_control/send_fifo_data_in_2" BEL
+        "EMAC_1/Inst_receiver_control/send_fifo_data_in_3" BEL
+        "EMAC_1/Inst_receiver_control/send_fifo_data_in_4" BEL
+        "EMAC_1/Inst_receiver_control/send_fifo_data_in_5" BEL
+        "EMAC_1/Inst_receiver_control/send_fifo_data_in_6" BEL
+        "EMAC_1/Inst_receiver_control/send_fifo_data_in_7" BEL
+        "EMAC_1/Inst_receiver_control/trigger_mask_s_0" BEL
+        "EMAC_1/Inst_receiver_control/trigger_mask_s_1" BEL
+        "EMAC_1/Inst_receiver_control/send_fifo_we" BEL
+        "EMAC_1/Inst_receiver_control/rd_en_fifo" BEL
+        "EMAC_1/Inst_receiver_control/en_random_trigger" BEL
+        "EMAC_1/Inst_receiver_control/mask_counter_0" BEL
+        "EMAC_1/Inst_receiver_control/mask_counter_1" BEL
+        "EMAC_1/Inst_receiver_control/mask_counter_2" BEL
+        "EMAC_1/Inst_receiver_control/mask_counter_3" BEL
+        "EMAC_1/Inst_receiver_control/instruction_buf_0" BEL
+        "EMAC_1/Inst_receiver_control/instruction_buf_1" BEL
+        "EMAC_1/Inst_receiver_control/instruction_buf_2" BEL
+        "EMAC_1/Inst_receiver_control/instruction_buf_3" BEL
+        "EMAC_1/Inst_receiver_control/instruction_buf_4" BEL
+        "EMAC_1/Inst_receiver_control/instruction_buf_5" BEL
+        "EMAC_1/Inst_receiver_control/instruction_buf_6" BEL
+        "EMAC_1/Inst_receiver_control/instruction_buf_7" BEL
+        "EMAC_1/Inst_receiver_control/instruction_0" BEL
+        "EMAC_1/Inst_receiver_control/instruction_1" BEL
+        "EMAC_1/Inst_receiver_control/instruction_2" BEL
+        "EMAC_1/Inst_receiver_control/instruction_3" BEL
+        "EMAC_1/Inst_receiver_control/instruction_4" BEL
+        "EMAC_1/Inst_receiver_control/instruction_5" BEL
+        "EMAC_1/Inst_receiver_control/instruction_6" BEL
+        "EMAC_1/Inst_receiver_control/instruction_7" BEL
+        "EMAC_1/Inst_receiver_control/rst_fifo" BEL
+        "EMAC_1/Inst_receiver_control/mrst_from_udp_b" BEL
+        "EMAC_1/Inst_receiver_control/state_FSM_FFd3" BEL
+        "EMAC_1/Inst_receiver_control/state_FSM_FFd2" BEL
+        "EMAC_1/Inst_receiver_control/state_FSM_FFd6" BEL
+        "EMAC_1/Inst_receiver_control/state_FSM_FFd4" BEL
+        "EMAC_1/Inst_receiver_control/state_FSM_FFd5" BEL
+        "EMAC_1/Inst_receiver_control/state_FSM_FFd9" BEL
+        "EMAC_1/Inst_receiver_control/state_FSM_FFd7" BEL
+        "EMAC_1/Inst_receiver_control/state_FSM_FFd8" BEL
+        "EMAC_1/Inst_receiver_control/state_FSM_FFd10" BEL
+        "EMAC_1/Inst_receiver_control/state_FSM_FFd11" BEL
+        "EMAC_1/Inst_receiver_control/state_FSM_FFd1" BEL
+        "EMAC_1/receiver_unit/valid_data" BEL
+        "EMAC_1/receiver_unit/data_out_0" BEL
+        "EMAC_1/receiver_unit/data_out_1" BEL
+        "EMAC_1/receiver_unit/data_out_2" BEL
+        "EMAC_1/receiver_unit/data_out_3" BEL
+        "EMAC_1/receiver_unit/data_out_4" BEL
+        "EMAC_1/receiver_unit/data_out_5" BEL
+        "EMAC_1/receiver_unit/data_out_6" BEL
+        "EMAC_1/receiver_unit/data_out_7" BEL
+        "EMAC_1/receiver_unit/ip_correct_hold" BEL
+        "EMAC_1/receiver_unit/header_6_0" BEL
+        "EMAC_1/receiver_unit/header_6_1" BEL
+        "EMAC_1/receiver_unit/header_6_2" BEL
+        "EMAC_1/receiver_unit/header_6_3" BEL
+        "EMAC_1/receiver_unit/header_6_4" BEL
+        "EMAC_1/receiver_unit/header_6_5" BEL
+        "EMAC_1/receiver_unit/header_6_6" BEL
+        "EMAC_1/receiver_unit/header_6_7" BEL
+        "EMAC_1/receiver_unit/port_number_0" BEL
+        "EMAC_1/receiver_unit/port_number_1" BEL
+        "EMAC_1/receiver_unit/port_number_2" BEL
+        "EMAC_1/receiver_unit/port_number_3" BEL
+        "EMAC_1/receiver_unit/port_number_4" BEL
+        "EMAC_1/receiver_unit/port_number_5" BEL
+        "EMAC_1/receiver_unit/port_number_6" BEL
+        "EMAC_1/receiver_unit/port_number_7" BEL
+        "EMAC_1/receiver_unit/port_number_8" BEL
+        "EMAC_1/receiver_unit/port_number_9" BEL
+        "EMAC_1/receiver_unit/port_number_10" BEL
+        "EMAC_1/receiver_unit/port_number_11" BEL
+        "EMAC_1/receiver_unit/port_number_12" BEL
+        "EMAC_1/receiver_unit/port_number_13" BEL
+        "EMAC_1/receiver_unit/port_number_14" BEL
+        "EMAC_1/receiver_unit/port_number_15" BEL
+        "EMAC_1/receiver_unit/header_5_0" BEL
+        "EMAC_1/receiver_unit/header_5_1" BEL
+        "EMAC_1/receiver_unit/header_5_2" BEL
+        "EMAC_1/receiver_unit/header_5_3" BEL
+        "EMAC_1/receiver_unit/header_5_4" BEL
+        "EMAC_1/receiver_unit/header_5_5" BEL
+        "EMAC_1/receiver_unit/header_5_6" BEL
+        "EMAC_1/receiver_unit/header_5_7" BEL
+        "EMAC_1/receiver_unit/header_4_0" BEL
+        "EMAC_1/receiver_unit/header_4_1" BEL
+        "EMAC_1/receiver_unit/header_4_2" BEL
+        "EMAC_1/receiver_unit/header_4_3" BEL
+        "EMAC_1/receiver_unit/header_4_4" BEL
+        "EMAC_1/receiver_unit/header_4_5" BEL
+        "EMAC_1/receiver_unit/header_4_6" BEL
+        "EMAC_1/receiver_unit/header_4_7" BEL
+        "EMAC_1/receiver_unit/header_3_0" BEL
+        "EMAC_1/receiver_unit/header_3_1" BEL
+        "EMAC_1/receiver_unit/header_3_2" BEL
+        "EMAC_1/receiver_unit/header_3_3" BEL
+        "EMAC_1/receiver_unit/header_3_4" BEL
+        "EMAC_1/receiver_unit/header_3_5" BEL
+        "EMAC_1/receiver_unit/header_3_6" BEL
+        "EMAC_1/receiver_unit/header_3_7" BEL
+        "EMAC_1/receiver_unit/header_2_0" BEL
+        "EMAC_1/receiver_unit/header_2_1" BEL
+        "EMAC_1/receiver_unit/header_2_2" BEL
+        "EMAC_1/receiver_unit/header_2_3" BEL
+        "EMAC_1/receiver_unit/header_2_4" BEL
+        "EMAC_1/receiver_unit/header_2_5" BEL
+        "EMAC_1/receiver_unit/header_2_6" BEL
+        "EMAC_1/receiver_unit/header_2_7" BEL
+        "EMAC_1/receiver_unit/header_1_0" BEL
+        "EMAC_1/receiver_unit/header_1_1" BEL
+        "EMAC_1/receiver_unit/header_1_2" BEL
+        "EMAC_1/receiver_unit/header_1_3" BEL
+        "EMAC_1/receiver_unit/header_1_4" BEL
+        "EMAC_1/receiver_unit/header_1_5" BEL
+        "EMAC_1/receiver_unit/header_1_6" BEL
+        "EMAC_1/receiver_unit/header_1_7" BEL
+        "EMAC_1/receiver_unit/header_0_0" BEL
+        "EMAC_1/receiver_unit/header_0_1" BEL
+        "EMAC_1/receiver_unit/header_0_2" BEL
+        "EMAC_1/receiver_unit/header_0_3" BEL
+        "EMAC_1/receiver_unit/header_0_4" BEL
+        "EMAC_1/receiver_unit/header_0_5" BEL
+        "EMAC_1/receiver_unit/header_0_6" BEL
+        "EMAC_1/receiver_unit/header_0_7" BEL "EMAC_1/state_FSM_FFd3" BEL
         "EMAC_1/state_FSM_FFd4" BEL "EMAC_1/state_FSM_FFd5" BEL
         "EMAC_1/state_FSM_FFd8" BEL "EMAC_1/state_FSM_FFd7" BEL
         "EMAC_1/state_FSM_FFd6" BEL "EMAC_1/state_FSM_FFd2" BEL
@@ -917,6 +1380,8 @@ TIMEGRP clk_gtp = BEL "EMAC_1/v5_emac_ll/tx_pre_reset_0_i_0" BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_data_pipe_0_0"
         BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_state_FSM_FFd7"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_state_FSM_FFd3"
         BEL "EMAC_1/rate_counter_1/ucnt_0" BEL "EMAC_1/rate_counter_1/ucnt_1"
         BEL "EMAC_1/rate_counter_1/ucnt_2" BEL "EMAC_1/rate_counter_1/ucnt_3"
         BEL "EMAC_1/rate_counter_1/ucnt_4" BEL "EMAC_1/rate_counter_1/ucnt_5"
@@ -939,6 +1404,74 @@ TIMEGRP clk_gtp = BEL "EMAC_1/v5_emac_ll/tx_pre_reset_0_i_0" BEL
         BEL "EMAC_1/rate_counter_1/ucnt_31" BEL
         "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/addr_reg_FSM_FFd22_1"
         BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Mshreg_wr_data_bram_5"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_data_bram_5"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Mshreg_wr_data_bram_7"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_data_bram_7"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Mshreg_wr_data_bram_6"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_data_bram_6"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Mshreg_wr_data_bram_4"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_data_bram_4"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Mshreg_wr_data_bram_3"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_data_bram_3"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Mshreg_wr_data_bram_0"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_data_bram_0"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Mshreg_wr_data_bram_2"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_data_bram_2"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Mshreg_wr_data_bram_1"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_data_bram_1"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Mshreg_wr_gf_pipe_1"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_gf_pipe_1"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Mshreg_wr_bf_pipe_1"
+        BEL "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_bf_pipe_1"
+        BEL "EMAC_1/receiver_unit/Mshreg_header_7_1" BEL
+        "EMAC_1/receiver_unit/header_7_11" BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/Mshreg_rd_valid_pipe_1"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_valid_pipe_1"
+        BEL "EMAC_1/receiver_unit/Mshreg_header_7_0" BEL
+        "EMAC_1/receiver_unit/header_7_01" BEL
+        "EMAC_1/receiver_unit/Mshreg_header_7_2" BEL
+        "EMAC_1/receiver_unit/header_7_21" BEL
+        "EMAC_1/receiver_unit/Mshreg_header_7_3" BEL
+        "EMAC_1/receiver_unit/header_7_31" BEL
+        "EMAC_1/receiver_unit/Mshreg_header_7_4" BEL
+        "EMAC_1/receiver_unit/header_7_41" BEL
+        "EMAC_1/receiver_unit/Mshreg_header_7_5" BEL
+        "EMAC_1/receiver_unit/header_7_51" BEL
+        "EMAC_1/receiver_unit/Mshreg_header_7_6" BEL
+        "EMAC_1/receiver_unit/header_7_61" BEL
+        "EMAC_1/receiver_unit/Mshreg_header_7_7" BEL
+        "EMAC_1/receiver_unit/header_7_71" BEL
+        "EMAC_1/Inst_receiver_control/rst_b_inv_shift1" BEL
+        "EMAC_1/Inst_receiver_control/rst_b_inv_shift2" BEL
+        "EMAC_1/Inst_receiver_control/rst_b_inv_shift3" BEL
+        "EMAC_1/Inst_receiver_control/rst_b_inv_shift4" BEL
+        "EMAC_1/receiver_unit/header_7_0" BEL
+        "EMAC_1/receiver_unit/header_7_1" BEL
+        "EMAC_1/receiver_unit/header_7_2" BEL
+        "EMAC_1/receiver_unit/header_7_3" BEL
+        "EMAC_1/receiver_unit/header_7_4" BEL
+        "EMAC_1/receiver_unit/header_7_5" BEL
+        "EMAC_1/receiver_unit/header_7_6" BEL
+        "EMAC_1/receiver_unit/header_7_7" BEL
         "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/qspo_int_0"
         BEL
         "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/LUT_MEM/BU2/U0/gen_sp_ram.spram_inst/qspo_int_1"
@@ -980,6 +1513,198 @@ TIMEGRP clk_gtp = BEL "EMAC_1/v5_emac_ll/tx_pre_reset_0_i_0" BEL
         "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COMP_TO_TARGET_LAST_BYTE/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/gen_output_reg.output_reg/fd/output_1"
         BEL
         "EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/IPV4_LUT_INDEXER_port_map/LUT_END_CHECK/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/gen_output_reg.output_reg/fd/output_1"
+        BEL
+        "EMAC_1/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/Comp_11b_equal_port_map/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/gen_output_reg.output_reg/fd/output_1"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gdcf.dc/dc/count_0"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gdcf.dc/dc/count_1"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gdcf.dc/dc/count_2"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gdcf.dc/dc/count_3"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gdcf.dc/dc/count_4"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gdcf.dc/dc/count_5"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gdcf.dc/dc/count_6"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gdcf.dc/dc/count_7"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gdcf.dc/dc/count_8"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gdcf.dc/dc/count_9"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gdcf.dc/dc/count_10"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gdcf.dc/dc/count_11"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gdcf.dc/dc/count_12"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/RST_FULL_GEN"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d3"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg_d2"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg_d2"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg_d1"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg_d1"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d1"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_10"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_9"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_11"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_7"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_6"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_8"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_4"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_3"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_5"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_1"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_0"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_2"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_11"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_10"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_9"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_8"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_7"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_6"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_5"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_4"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_1"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/user_valid"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/curr_fwft_state_1"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/curr_fwft_state_0"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_10"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_9"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_11"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_7"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_6"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_8"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_4"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_3"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_5"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_1"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_0"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_2"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_11"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_10"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_9"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_8"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_7"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_6"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_5"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_4"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_0"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_1"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_2"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_3"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_4"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_5"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_6"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_7"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_i_7"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_i_6"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_i_5"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_i_4"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_i_3"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_i_2"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_i_1"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_i_0"
         BEL "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/gr1.gdcf.dc/dc/count_0" BEL
         "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/gr1.gdcf.dc/dc/count_1" BEL
         "EMAC_1/send_fifo/BU2/U0/grf.rf/gl0.rd/gr1.gdcf.dc/dc/count_2" BEL
@@ -1058,48 +1783,1600 @@ TIMEGRP clk_gtp = BEL "EMAC_1/v5_emac_ll/tx_pre_reset_0_i_0" BEL
         "EMAC_1/send_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.WIDE_PRIM18.TDP_pins<56>"
         PIN
         "EMAC_1/send_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.WIDE_PRIM18.TDP_pins<82>"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1321/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1321/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1291/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1291/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1292/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1292/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1322/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1322/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1301/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1301/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1302/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1302/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1311/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1311/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1312/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1312/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1351/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1351/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1332/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1332/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1352/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1352/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1331/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1331/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1341/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1341/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1342/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1342/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1381/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1381/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1382/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1382/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1361/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1361/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1362/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1362/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1371/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1371/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1372/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1372/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1411/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1411/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1412/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1412/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1391/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1391/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1392/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1392/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1401/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1401/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1402/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1402/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1421/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1421/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1441/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1441/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1442/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1442/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1422/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1422/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1431/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1431/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1432/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1432/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1471/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1471/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1472/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1472/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1451/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1451/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1452/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1452/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1461/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1461/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1462/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1462/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1501/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1501/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1502/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1502/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1481/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1481/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1482/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1482/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1491/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1491/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1512/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1512/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1492/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1492/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1511/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1511/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1521/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1521/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1522/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1522/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1531/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1531/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1532/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1532/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1541/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1541/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1542/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1542/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1571/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1571/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1572/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1572/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1551/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1551/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1552/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1552/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1561/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1561/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1562/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1562/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1601/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1601/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1602/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1602/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1591/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1591/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1581/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1581/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1582/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1582/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1592/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1592/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1631/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1631/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1632/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1632/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1611/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1611/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1612/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1612/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1621/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1621/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1622/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1622/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1661/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1661/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1662/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1662/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1641/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1641/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1642/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1642/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1651/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1651/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1652/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1652/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1691/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1691/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1672/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1672/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1692/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1692/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1671/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1671/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1681/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1681/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1682/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1682/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1721/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1721/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1722/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1722/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1701/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1701/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1702/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1702/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1711/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1711/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1712/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1712/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1751/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1751/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1752/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1752/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1731/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1731/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1732/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1732/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1741/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1741/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1742/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1742/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1771/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1771/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1761/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1761/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1762/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1762/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1772/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1772/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1781/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1781/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1782/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1782/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1791/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1791/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1792/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1792/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1821/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1821/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1822/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1822/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1801/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1801/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1802/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1802/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1811/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1811/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1812/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1812/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1851/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1851/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1852/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1852/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1831/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1831/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1842/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1842/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1832/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1832/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1841/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1841/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1881/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1881/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1882/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1882/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1861/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1861/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1862/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1862/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1871/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1871/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1872/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1872/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1911/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1911/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1912/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1912/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1891/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1891/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1892/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1892/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1901/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1901/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1902/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1902/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1921/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1921/DP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1922/SP"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1922/DP"
         PIN
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<30>"
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<30>"
         PIN
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<31>"
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<108>"
         PIN
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<108>"
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<31>"
         PIN
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<109>"
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_l_pins<109>"
         PIN
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<30>"
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<32>"
         PIN
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<31>"
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<110>"
         PIN
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<108>"
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<33>"
         PIN
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<109>"
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/ramgen_u_pins<111>"
         PIN
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<32>"
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<24>"
         PIN
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<33>"
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<25>"
         PIN
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<110>"
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<57>"
         PIN
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<111>"
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<58>"
         PIN
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<32>"
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<24>"
         PIN
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<33>"
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<25>"
         PIN
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<110>"
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<57>"
         PIN
-        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<111>";
-PIN EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac_pins<222> = BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_l_pins<58>"
+        PIN
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<24>"
+        PIN
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<25>"
+        PIN
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<57>"
+        PIN
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<58>"
+        PIN
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<24>"
+        PIN
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<25>"
+        PIN
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<57>"
+        PIN
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/ramgen_u_pins<58>"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM10_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM10_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM10_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM10_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM100_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM100_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM100_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM100_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM101_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM101_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM101_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM101_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM102_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM102_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM102_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM102_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM103_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM103_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM103_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM103_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM104_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM104_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM104_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM104_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM105_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM105_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM105_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM105_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM106_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM106_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM106_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM106_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM107_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM107_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM107_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM107_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM108_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM108_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM108_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM108_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM109_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM109_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM109_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM109_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM11_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM11_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM11_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM11_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM110_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM110_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM110_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM110_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM111_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM111_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM111_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM111_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM112_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM112_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM112_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM112_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM113_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM113_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM113_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM113_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM114_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM114_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM114_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM114_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM115_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM115_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM115_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM115_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM116_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM116_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM116_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM116_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM117_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM117_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM117_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM117_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM118_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM118_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM118_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM118_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM119_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM119_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM119_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM119_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM12_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM12_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM12_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM12_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM120_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM120_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM120_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM120_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM121_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM121_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM121_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM121_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM122_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM122_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM122_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM122_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM123_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM123_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM123_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM123_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM124_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM124_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM124_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM124_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM125_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM125_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM125_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM125_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM126_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM126_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM126_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM126_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM127_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM127_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM127_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM127_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM128_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM128_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM128_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM128_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM13_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM13_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM13_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM13_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM14_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM14_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM14_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM14_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM15_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM15_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM15_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM15_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM16_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM16_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM16_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM16_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM17_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM17_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM17_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM17_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM18_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM18_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM18_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM18_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM19_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM19_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM19_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM19_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM2_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM2_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM2_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM2_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM20_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM20_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM20_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM20_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM21_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM21_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM21_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM21_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM22_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM22_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM22_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM22_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM23_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM23_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM23_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM23_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM24_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM24_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM24_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM24_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM25_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM25_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM25_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM25_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM26_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM26_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM26_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM26_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM27_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM27_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM27_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM27_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM28_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM28_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM28_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM28_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM29_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM29_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM29_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM29_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM3_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM3_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM3_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM3_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM30_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM30_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM30_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM30_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM31_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM31_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM31_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM31_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM32_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM32_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM32_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM32_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM33_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM33_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM33_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM33_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM34_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM34_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM34_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM34_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM35_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM35_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM35_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM35_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM36_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM36_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM36_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM36_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM37_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM37_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM37_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM37_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM38_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM38_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM38_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM38_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM39_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM39_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM39_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM39_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM4_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM4_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM4_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM4_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM40_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM40_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM40_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM40_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM41_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM41_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM41_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM41_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM42_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM42_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM42_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM42_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM43_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM43_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM43_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM43_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM44_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM44_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM44_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM44_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM45_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM45_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM45_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM45_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM46_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM46_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM46_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM46_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM47_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM47_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM47_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM47_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM48_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM48_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM48_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM48_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM49_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM49_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM49_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM49_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM5_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM5_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM5_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM5_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM50_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM50_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM50_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM50_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM51_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM51_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM51_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM51_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM52_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM52_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM52_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM52_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM53_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM53_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM53_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM53_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM54_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM54_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM54_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM54_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM55_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM55_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM55_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM55_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM56_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM56_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM56_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM56_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM57_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM57_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM57_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM57_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM58_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM58_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM58_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM58_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM59_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM59_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM59_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM59_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM6_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM6_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM6_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM6_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM60_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM60_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM60_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM60_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM61_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM61_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM61_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM61_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM62_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM62_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM62_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM62_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM63_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM63_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM63_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM63_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM64_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM64_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM64_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM64_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM65_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM65_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM65_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM65_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM66_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM66_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM66_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM66_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM67_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM67_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM67_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM67_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM68_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM68_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM68_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM68_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM69_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM69_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM69_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM69_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM7_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM7_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM7_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM7_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM70_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM70_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM70_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM70_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM71_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM71_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM71_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM71_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM72_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM72_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM72_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM72_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM73_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM73_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM73_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM73_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM74_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM74_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM74_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM74_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM75_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM75_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM75_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM75_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM76_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM76_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM76_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM76_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM77_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM77_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM77_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM77_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM78_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM78_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM78_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM78_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM79_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM79_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM79_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM79_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM8_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM8_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM8_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM8_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM80_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM80_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM80_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM80_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM81_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM81_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM81_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM81_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM82_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM82_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM82_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM82_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM83_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM83_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM83_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM83_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM84_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM84_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM84_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM84_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM85_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM85_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM85_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM85_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM86_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM86_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM86_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM86_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM87_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM87_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM87_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM87_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM88_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM88_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM88_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM88_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM89_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM89_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM89_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM89_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM9_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM9_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM9_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM9_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM90_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM90_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM90_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM90_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM91_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM91_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM91_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM91_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM92_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM92_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM92_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM92_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM93_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM93_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM93_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM93_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM94_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM94_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM94_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM94_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM95_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM95_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM95_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM95_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM96_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM96_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM96_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM96_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM97_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM97_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM97_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM97_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM98_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM98_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM98_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM98_RAMD"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM99_RAMA"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM99_RAMB"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM99_RAMC"
+        BEL
+        "EMAC_1/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM99_RAMD";
+PIN EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac_pins<232> = BEL
         "EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac" PINNAME
         PHYEMAC0GTXCLK;
 TIMEGRP clk_gtx0 = PIN
-        "EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac_pins<222>";
-PIN EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac_pins<237> = BEL
+        "EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac_pins<232>";
+PIN EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac_pins<247> = BEL
         "EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac" PINNAME
         PHYEMAC0RXCLK;
 TIMEGRP phy_clk_rx0 = PIN
-        "EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac_pins<237>"
+        "EMAC_1/v5_emac_ll/v5_emac_block/v5_emac_wrapper/v5_emac_pins<247>"
         BEL "EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RX_DV_TO_MAC" BEL
         "EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RX_ER_TO_MAC" BEL
         "EMAC_1/v5_emac_ll/v5_emac_block/gmii0/RXD_TO_MAC_7" BEL
@@ -1201,6 +3478,58 @@ TIMEGRP tx_addr_rd_0 = BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_addr_txfer_0";
 TIMEGRP tx_fifo_wr_to_rd_0 = BEL
         "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/wr_frame_in_fifo";
+TIMEGRP rx_metastable_0 = BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_store_frame_tog"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_11"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_10"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_9"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_8"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_7"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_6"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_5"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_4"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_3"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_2"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_1"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync_0";
+TIMEGRP rx_fifo_wr_to_rd_0 = BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_store_frame_tog";
+TIMEGRP rx_fifo_rd_to_wr_0 = BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_11"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_10"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_9"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_8"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_7"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_6"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_5"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_4"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_3"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_2"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_1"
+        BEL
+        "EMAC_1/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray_0";
 TIMEGRP clk_tx0 = BEL "GMII_TX_CLK_0";
 TIMEGRP v5_emac_v1_5_clk_phy_rx0 = TIMEGRP "phy_clk_rx0";
 TIMEGRP fe_TEMAC_tx_clk0 = TIMEGRP "clk_tx0";
@@ -1213,6 +3542,7 @@ ts_tx_meta_protect_0 = MAXDELAY FROM TIMEGRP "tx_metastable_0" 5 ns
         DATAPATHONLY;
 TS_tx_fifo_addr_0 = MAXDELAY FROM TIMEGRP "tx_addr_rd_0" TO TIMEGRP
         "tx_addr_wr_0" 10 ns;
+ts_rx_meta_protect_0 = MAXDELAY FROM TIMEGRP "rx_metastable_0" 5 ns;
 TS_fe_TEMAC_tx_clk0 = PERIOD TIMEGRP "fe_TEMAC_tx_clk0" 7.7 ns HIGH 50%;
 TS_fe_TEMAC_clk_phy_rx0 = PERIOD TIMEGRP "fe_TEMAC_clk_phy_rx0" 7.5 ns HIGH
         50%;

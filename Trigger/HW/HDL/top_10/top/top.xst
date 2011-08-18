@@ -16,7 +16,7 @@ run
 -rtlview Yes
 -glob_opt AllClockNets
 -read_cores YES
--sd {"../../UDP/UDP_mr" "../../rate_counter/fifo"  }
+-sd {"../../UDP/UDP_rec_kim/fifo" "../../UDP/UDP_mr" "../../rate_counter/fifo"  }
 -write_timing_constraints NO
 -cross_clock_analysis NO
 -hierarchy_separator /
