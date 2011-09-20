@@ -1,7 +1,12 @@
-/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.ngc 1313672894
+/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/top.ngc 1316443743
 ../../UDP/UDP_mr/dist_mem_64x8.ngc 1307530540
 ../../UDP/UDP_mr/comp_6b_equal.ngc 1307530540
 ../../UDP/UDP_mr/comp_11b_equal.ngc 1307530540
-../../UDP/UDP_rec_kim/fifo/fifo_generator_v8_1.ngc 1313578803
+../../async_trigger/fifo/fifo_generator_v8_1_8b.ngc 1314101002
+../../async_trigger/fifo/fifo_generator_v8_1_32b.ngc 1315915947
+ipcore_dir/trigger_time_fifo.ngc 1315913858
+../../UDP/UDP_rec_kim/fifo/fifo_generator_v8_1.ngc 1316443529
 ../../rate_counter/fifo/fifo_generator_v4_4.ngc 1308041756
+ipcore_dir/ila_cs.ngc 1315387966
+ipcore_dir/cs_controller.ngc 1316439031
 OK

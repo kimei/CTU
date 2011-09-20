@@ -58,13 +58,13 @@ package components is
       o      : out std_logic);          --! Output
   end component;
 
-  component sync_trigger
-    port (
-      rst_b       : in  std_logic;
-      mclk        : in  std_logic;
-      trigger_in  : in  std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
-      trigger_out : out std_logic_vector(NUMBER_OF_ROCS-1 downto 0));
-  end component;
+  --component sync_trigger
+  --  port (
+  --    rst_b       : in  std_logic;
+  --    mclk        : in  std_logic;
+  --    trigger_in  : in  std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
+  --    trigger_out : out std_logic_vector(NUMBER_OF_ROCS-1 downto 0));
+  --end component;
 
   component uart
     generic (

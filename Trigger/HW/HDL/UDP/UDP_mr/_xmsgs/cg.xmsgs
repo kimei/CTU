@@ -8,11 +8,5 @@
 <msg type="info" file="sim" num="927" delta="old" >Generating component instance &apos;<arg fmt="%s" index="1">dist_mem_64x8</arg>&apos; of &apos;<arg fmt="%s" index="2">xilinx.com:ip:dist_mem_gen:3.4</arg>&apos; from &apos;<arg fmt="%s" index="3">/opt/Xilinx/13.1/ISE_DS/ISE/coregen/ip/xilinx/primary/com/xilinx/ip/dist_mem_gen_v3_4/dist_mem_gen_v3_4.xcd</arg>&apos;.
 </msg>
 
-<msg type="warning" file="sim" num="89" delta="new" >A core named &lt;<arg fmt="%s" index="1">dist_mem_gen_v3_4</arg>&gt; already exists in the output directory. Output products for this core may be overwritten.
-</msg>
-
-<msg type="info" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Generating SYM schematic symbol for &apos;dist_mem_gen_v3_4&apos;...</arg>
-</msg>
-
 </messages>
 

@@ -1,0 +1,52 @@
+Release 13.1 - xst O.40d (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/tx_client_fifo_8.vhd" in Library work.
+Architecture rtl of Entity tx_client_fifo_8 is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/rx_client_fifo_8.vhd" in Library work.
+Architecture rtl of Entity rx_client_fifo_8 is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/physical/gmii_if.vhd" in Library work.
+Architecture phy_if of Entity gmii_if is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/ipcore_dir/TEMAC2/example_design/TEMAC2_block.vhd" in Library work.
+Architecture top_level of Entity temac2_block is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/eth_fifo_8.vhd" in Library work.
+Architecture rtl of Entity eth_fifo_8 is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/Shared/constants.vhd" in Library work.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/ipcore_dir/TEMAC2/example_design/TEMAC2_locallink.vhd" in Library work.
+Architecture top_level of Entity temac2_locallink is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/ipcore_dir/TEMAC2/example_design/TEMAC2_example_design.vhd" in Library work.
+Entity <temac2_example_design> compiled.
+Entity <TEMAC2_example_design> (Architecture <TOP_LEVEL>) compiled.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> 
+
+
+Total memory usage is 320692 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

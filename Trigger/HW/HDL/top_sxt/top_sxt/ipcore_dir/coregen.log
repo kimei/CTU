@@ -1,0 +1,16 @@
+CoreGen has not been configured with any user repositories.
+CoreGen has been configured with the following Xilinx repositories:
+ - '/opt/Xilinx/13.1/ISE_DS/ISE/coregen/' []
+INFO:sim:927 - Generating component instance 'cs_cont' of
+   'xilinx.com:ip:chipscope_icon:1.05.a' from
+   '/opt/Xilinx/13.1/ISE_DS/ISE/coregen/iprepo/Chipscope/pcores/chipscope_icon_v
+   1_05_a/chipscope_icon_v1_05_a.xcd'.
+Customizing IP...
+Release 13.1 - Xilinx CORE Generator IP GUI Launcher O.40d (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Initializing IP model...
+Finished initializing IP model.
+Cancelled Customization.
+Wrote file for project
+'/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/ipcore_dir/cs_cont.cgp'
+.

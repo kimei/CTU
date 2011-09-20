@@ -1,0 +1,16 @@
+# Output products list for <send_fifo_core>
+_xmsgs/pn_parser.xmsgs
+fifo_generator_readme.txt
+fifo_generator_ug175.pdf
+send_fifo_core.asy
+send_fifo_core.gise
+send_fifo_core.ngc
+send_fifo_core.sym
+send_fifo_core.v
+send_fifo_core.veo
+send_fifo_core.vhd
+send_fifo_core.vho
+send_fifo_core.xco
+send_fifo_core.xise
+send_fifo_core_flist.txt
+send_fifo_core_xmdf.tcl

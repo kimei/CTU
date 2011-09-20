@@ -1,0 +1,174 @@
+net "BUTTONS<0>" LOC=AM32;
+net "BUTTONS<1>" LOC=AN34;
+net "BUTTONS<2>" LOC=AN33;
+net "BUTTONS<3>" LOC=AN32;
+
+
+### dip switches:
+net "DIP_Switch<0>" LOC=U26;
+net "DIP_Switch<1>" LOC=U27;
+net "DIP_Switch<2>" LOC=U28;
+net "DIP_Switch<3>" LOC=T28;
+net "DIP_Switch<4>" LOC=T30;
+net "DIP_Switch<5>" LOC=T29;
+net "DIP_Switch<6>" LOC=R27;
+net "DIP_Switch<7>" LOC=R26;
+
+#
+net 		"LEDs<0>" LOC = H13;
+net 		"LEDs<1>" LOC = J17;
+net 		"LEDs<2>" LOC = H15;
+net 		"LEDs<3>" LOC = G16;
+
+net 		"LEDs<4>" LOC = L18;
+net 		"LEDs<5>" LOC = H18;
+net 		"LEDs<6>" LOC = J19;
+net 		"LEDs<7>" LOC = J21;
+Net "LEDs<0>" TIG;
+Net "LEDs<1>" TIG;
+Net "LEDs<2>" TIG;
+Net "LEDs<3>" TIG;
+Net "LEDs<4>" TIG;
+Net "LEDs<5>" TIG;
+Net "LEDs<6>" TIG;
+Net "LEDs<7>" TIG;
+
+#Exp1: Differential inputs:
+
+NET "fe_data_n<0>"           LOC=H8;   
+NET "fe_data_p<0>"           LOC=G8;   
+NET "fe_data_n<1>"           LOC=N9;   
+NET "fe_data_p<1>"           LOC=N10;   
+NET "fe_data_n<2>"           LOC=F8;   
+NET "fe_data_p<2>"           LOC=F9;   
+NET "fe_data_n<3>"           LOC=L8;   
+NET "fe_data_p<3>"           LOC=M8;   
+NET "fe_data_n<4>"           LOC=E8;   
+NET "fe_data_p<4>"           LOC=E9;   
+NET "fe_data_n<5>"           LOC=L9;   
+NET "fe_data_p<5>"           LOC=M10;   
+NET "fe_data_n<6>"           LOC=E11;   
+NET "fe_data_p<6>"           LOC=F11;   
+NET "fe_data_n<7>"           LOC=J9;   
+NET "fe_data_p<7>"           LOC=J10; 
+
+#
+NET "fe_data_n<8>"           LOC=C13;   
+NET "fe_data_p<8>"           LOC=B13; 
+NET "fe_data_n<9>"           LOC=H9;   
+NET "fe_data_p<9>"           LOC=H10; 
+NET "fe_data_n<10>"           LOC=K9; #its labeled EXP1_DIFF_CLK_OUT_n
+NET "fe_data_p<10>"           LOC=K8; # its labeled EXP1_DIFF_CLK_OUT_p
+NET "fe_data_n<11>"           LOC=G10;   
+NET "fe_data_p<11>"           LOC=F10; 
+NET "fe_data_n<12>"           LOC=B12;   
+NET "fe_data_p<12>"           LOC=A13; 
+NET "fe_data_n<13>"           LOC=D10;   
+NET "fe_data_p<13>"           LOC=D11; 
+NET "fe_data_n<14>"           LOC=C12;   
+NET "fe_data_p<14>"           LOC=D12; 
+NET "fe_data_n<15>"           LOC=J11;   
+NET "fe_data_p<15>"           LOC=K11; 
+NET "fe_data_n<16>"           LOC=E13;   
+NET "fe_data_p<16>"           LOC=E12; 
+NET "fe_data_n<17>"           LOC=G13;   
+NET "fe_data_p<17>"           LOC=F13; 
+NET "fe_data_n<18>"           LOC=G12;   
+NET "fe_data_p<18>"           LOC=G11; 
+NET "fe_data_n<19>"           LOC=L11;   
+NET "fe_data_p<19>"           LOC=L10;
+
+#Rocket IOs:
+#NET "fe_data_n<20>"           LOC=J1;   #labeled EXP1_MGT_RX_DIFF_n20
+#NET "fe_data_p<20>"           LOC=K1;
+#NET "fe_data_n<21>"           LOC=K2;   
+#NET "fe_data_p<21>"           LOC=L2;
+
+
+#Exp1, SE inputs:
+
+#NET "fe_data_SE<0>"     LOC=H32;
+#NET "fe_data_SE<1>"     LOC=R34;
+#NET "fe_data_SE<2>"     LOC=G33;
+#NET "fe_data_SE<3>"     LOC=P32;
+#NET "fe_data_SE<4>"     LOC=G32;
+#NET "fe_data_SE<5>"     LOC=N33;
+#NET "fe_data_SE<6>"     LOC=F34;
+#NET "fe_data_SE<7>"     LOC=N34;
+#NET "fe_data_SE<8>"     LOC=F33;
+#NET "fe_data_SE<9>"     LOC=N32;
+#NET "fe_data_SE<10>"     LOC=E34;
+#NET "fe_data_SE<11>"     LOC=M33;
+#NET "fe_data_SE<12>"     LOC=E33;
+#NET "fe_data_SE<13>"     LOC=M32;
+#NET "fe_data_SE<14>"     LOC=E32;
+#NET "fe_data_SE<15>"     LOC=L33;
+#NET "fe_data_SE<16>"     LOC=D34;
+#NET "fe_data_SE<17>"     LOC=L34;
+#NET "fe_data_SE<18>"     LOC=D32;
+#NET "fe_data_SE<19>"     LOC=K33;
+#NET "fe_data_SE<20>"     LOC=C34;
+#NET "fe_data_SE<21>"     LOC=K34;
+#NET "fe_data_SE<22>"     LOC=C33;
+#NET "fe_data_SE<23>"     LOC=K32;
+#NET "fe_data_SE<24>"     LOC=C32;
+#NET "fe_data_SE<25>"     LOC=J34;
+#NET "fe_data_SE<26>"     LOC=B33;
+#NET "fe_data_SE<27>"     LOC=J32;
+#NET "fe_data_SE<28>"     LOC=H34;
+#NET "fe_data_SE<29>"     LOC=H33;
+#NET "fe_data_SE<30>"     LOC=A33;
+#NET "fe_data_SE<31>"     LOC=B32;
+##NET "fe_data_SE<32>"     LOC=P34;
+##NET "fe_data_SE<33>"     LOC=T33;
+
+
+
+
+NET "fe_data_p<0>"      IOSTANDARD =LVDS_25;
+NET "fe_data_n<0>"      IOSTANDARD =LVDS_25;
+NET "fe_data_p<1>"      IOSTANDARD =LVDS_25;
+NET "fe_data_n<1>"      IOSTANDARD =LVDS_25;
+NET "fe_data_p<2>"      IOSTANDARD =LVDS_25;
+NET "fe_data_n<2>"      IOSTANDARD =LVDS_25;
+NET "fe_data_p<3>"      IOSTANDARD =LVDS_25;
+NET "fe_data_n<3>"      IOSTANDARD =LVDS_25;
+NET "fe_data_p<4>"      IOSTANDARD =LVDS_25;
+NET "fe_data_n<4>"      IOSTANDARD =LVDS_25;
+NET "fe_data_p<5>"      IOSTANDARD =LVDS_25;
+NET "fe_data_n<5>"      IOSTANDARD =LVDS_25;
+NET "fe_data_p<6>"      IOSTANDARD =LVDS_25;
+NET "fe_data_n<6>"      IOSTANDARD =LVDS_25;
+NET "fe_data_p<7>"      IOSTANDARD =LVDS_25;
+NET "fe_data_n<7>"      IOSTANDARD =LVDS_25;
+
+
+
+NET "fe_data_p<0>"      IOBDELAY=NONE; 
+NET "fe_data_n<0>"      IOBDELAY=NONE; #LVDS_25    IOSTANDARD=LVDS_25  |
+NET "fe_data_p<1>"      IOBDELAY=NONE; #LVDS_25    IOSTANDARD=LVDS_25  |
+NET "fe_data_n<1>"      IOBDELAY=NONE; #LVDS_25    IOSTANDARD=LVDS_25  |
+NET "fe_data_p<2>"      IOBDELAY=NONE; #LVDS_25    IOSTANDARD=LVDS_25  |
+NET "fe_data_n<2>"      IOBDELAY=NONE; #LVDS_25    IOSTANDARD=LVDS_25  |
+NET "fe_data_p<3>"      IOBDELAY=NONE; #LVDS_25    IOSTANDARD=LVDS_25  |
+NET "fe_data_n<3>"      IOBDELAY=NONE; #LVDS_25    IOSTANDARD=LVDS_25  |
+NET "fe_data_p<4>"      IOBDELAY=NONE; #LVDS_25    IOSTANDARD=LVDS_25  |
+NET "fe_data_n<4>"      IOBDELAY=NONE; #LVDS_25    IOSTANDARD=LVDS_25  |
+NET "fe_data_p<5>"      IOBDELAY=NONE; #LVDS_25    IOSTANDARD=LVDS_25  |
+NET "fe_data_n<5>"      IOBDELAY=NONE; #LVDS_25    IOSTANDARD=LVDS_25  |
+NET "fe_data_p<6>"      IOBDELAY=NONE; #LVDS_25    IOSTANDARD=LVDS_25  |
+NET "fe_data_n<6>"      IOBDELAY=NONE; #LVDS_25    IOSTANDARD=LVDS_25  |
+NET "fe_data_p<7>"      IOBDELAY=NONE; #LVDS_25    IOSTANDARD=LVDS_25  |
+NET "fe_data_n<7>"      IOBDELAY=NONE; #LVDS_25    IOSTANDARD=LVDS_25  |
+
+
+
+#trigger stuff:
+
+NET cru_reset    LOC = AB10; #exp2_diff_p0
+NET cru_reset_b  LOC = AA10; #exp2_diff_n0
+
+NET coincidence_trigger     LOC =  AF9;  #EXP2_DIFF_P3
+NET coincidence_trigger_b   LOC =  AF10; #EXP2_DIFF_N3
+NET fe_event_trigger        LOC =  AC10; #EXP2_DIFF_P1
+NET fe_event_trigger_b      LOC =  AC9;  #EXP2_DIFF_N1

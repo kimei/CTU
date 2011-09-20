@@ -30,7 +30,7 @@ library UNISIM;
 use UNISIM.VComponents.all;
 
 library work;
-use work.components.all;
+
 use work.constants.all;
 
 entity CRU is
@@ -81,6 +81,18 @@ architecture Behavioral of CRU is
   component IBUFG
     port (O : out std_ulogic;
           I : in  std_ulogic);
+  end component;
+
+  component PLL_core
+    port(
+      CLKIN1_IN   : in  std_logic;
+      RST_IN      : in  std_logic;
+      CLKOUT0_OUT : out std_logic;
+      CLKOUT1_OUT : out std_logic;
+      CLKOUT2_OUT : out std_logic;
+      CLKOUT3_OUT : out std_logic;
+      LOCKED_OUT  : out std_logic
+      );
   end component;
 
   component OBUFDS

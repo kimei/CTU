@@ -1,0 +1,46 @@
+Release 13.1 - par O.40d (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Tue Sep 20 09:50:34 2011
+
+All signals are completely routed.
+
+WARNING:ParHelpers:361 - There are 34 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   BUTTONS<3>_IBUF
+   DIP_SWITCH<0>_IBUF
+   DIP_SWITCH<1>_IBUF
+   DIP_SWITCH<2>_IBUF
+   DIP_SWITCH<3>_IBUF
+   DIP_SWITCH<4>_IBUF
+   DIP_SWITCH<5>_IBUF
+   DIP_SWITCH<6>_IBUF
+   DIP_SWITCH<7>_IBUF
+   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/IPV4_LUT_INDEXER_port_map/LUT_END_CHECK/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/temp_result
+   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TARGET_HEADER_CHECKSUM_1/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/temp_result
+   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TARGET_LENGTH_1/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/temp_result
+   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TARGET_TOTAL_LENGTH_1/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/temp_result
+   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COMP_TO_TARGET_LAST_BYTE/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[0].i_tile/o139
+   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COMP_TO_TARGET_LAST_BYTE/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[0].i_tile/o189
+   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COMP_TO_TARGET_LAST_BYTE/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[0].i_tile/o26
+   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COMP_TO_TARGET_LAST_BYTE/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[0].i_tile/o62
+   EMAC_1/UDP_IP_Core_2/IPV4_PACKET_TRANSMITTER_port_map/IPV4_LUT_INDEXER_port_map/LUT_END_CHECK/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/temp_result
+   EMAC_1/UDP_IP_Core_2/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TARGET_HEADER_CHECKSUM_1/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/temp_result
+   EMAC_1/UDP_IP_Core_2/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TARGET_LENGTH_1/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/temp_result
+   EMAC_1/UDP_IP_Core_2/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_port_map/TARGET_TOTAL_LENGTH_1/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/temp_result
+   EMAC_1/UDP_IP_Core_2/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COMP_TO_TARGET_LAST_BYTE/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[0].i_tile/o139
+   EMAC_1/UDP_IP_Core_2/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COMP_TO_TARGET_LAST_BYTE/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[0].i_tile/o189
+   EMAC_1/UDP_IP_Core_2/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COMP_TO_TARGET_LAST_BYTE/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[0].i_tile/o26
+   EMAC_1/UDP_IP_Core_2/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COMP_TO_TARGET_LAST_BYTE/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequal_b.i_a_eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_tier/loop_tiles[0].i_tile/o62
+   EMAC_1/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_mem<0>
+   EMAC_1/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_mem<1>
+   EMAC_1/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_mem<2>
+   EMAC_1/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_mem<3>
+   EMAC_1/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_mem<4>
+   EMAC_1/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_mem<5>
+   EMAC_1/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_mem<6>
+   EMAC_1/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_mem<7>
+   EMAC_1/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/ram_regout_en
+
+

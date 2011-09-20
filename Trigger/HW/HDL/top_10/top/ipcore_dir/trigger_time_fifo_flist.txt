@@ -1,0 +1,16 @@
+# Output products list for <trigger_time_fifo>
+_xmsgs/pn_parser.xmsgs
+fifo_generator_readme.txt
+fifo_generator_ug175.pdf
+trigger_time_fifo.asy
+trigger_time_fifo.gise
+trigger_time_fifo.ngc
+trigger_time_fifo.sym
+trigger_time_fifo.v
+trigger_time_fifo.veo
+trigger_time_fifo.vhd
+trigger_time_fifo.vho
+trigger_time_fifo.xco
+trigger_time_fifo.xise
+trigger_time_fifo_flist.txt
+trigger_time_fifo_xmdf.tcl

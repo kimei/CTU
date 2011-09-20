@@ -6,7 +6,7 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 library work;
-use work.components.all;
+
 use work.constants.all;
 
 entity receiver_control is
@@ -19,15 +19,17 @@ entity receiver_control is
     port_number : in std_logic_vector(15 downto 0);
 
     --control_signals_out
-    mrst_from_udp_b   : out    std_logic;
-    en_random_trigger : buffer std_logic;
+    mrst_from_udp_b   : out std_logic;
+    en_random_trigger : out std_logic;
+    en_or_trigger     : out std_logic;
+    trigger_mask        : out std_logic_vector(NUMBER_OF_ROCs-1 downto 0);
+    module_mask         : out std_logic_vector(NUMBER_OF_MODULES-1 downto 0);
 
     -- udp sender fifo signals
     send_fifo_we        : out std_logic;
     send_fifo_we_others : in  std_logic;
     send_fifo_empty     : in  std_logic;
-    send_fifo_data_in   : out std_logic_vector(7 downto 0);
-    trigger_mask        : out std_logic_vector(NUMBER_OF_ROCs-1 downto 0)
+    send_fifo_data_in   : out std_logic_vector(7 downto 0)
     );
 
 end receiver_control;
@@ -41,16 +43,17 @@ architecture behave of receiver_control is
   signal full_fifo           : std_logic;
   signal empty_fifo          : std_logic;
   signal rst_fifo            : std_logic;
-  signal data_count          : std_logic_vector(12 downto 0);
+  signal data_count          : std_logic_vector(10 downto 0);
   signal valid_data_and_port : std_logic;
 
   signal trigger_mask_s : std_logic_vector(23 downto 0);
   signal mask_counter   : integer range 0 to 15;
+  signal module_mask_s  : std_logic_vector(7 downto 0);
 
 
   --FSM signals
 
-  type   states is (INIT, WAIT_FOR_PACKAGE, WAIT_FOR_FALLING_WR_EN, READ_INSTRUCTION, SET_MASK,SET_MASK2 , SEND_HEADER, SEND_HEADER2 , NOTIFY_RESET, R_T_ON, R_T_OFF, RESET_ROCS);
+  type   states is (INIT, WAIT_FOR_PACKAGE, WAIT_FOR_FALLING_WR_EN, READ_INSTRUCTION, SET_MASK, SET_MASK2, SET_MODULE_MASK, SET_MODULE_MASK2 , SEND_HEADER, SEND_HEADER2 , NOTIFY_RESET, R_T_ON, AND_TRIGGER_ON, OR_TRIGGER_ON , RESET_ROCS, RESET_ROCS2);
   signal state           : states;
   signal instruction     : std_logic_vector(7 downto 0);
   signal instruction_buf : std_logic_vector(7 downto 0);
@@ -65,12 +68,20 @@ architecture behave of receiver_control is
       dout       : out std_logic_vector(7 downto 0);
       full       : out std_logic;
       empty      : out std_logic;
-      data_count : out std_logic_vector(12 downto 0)
+      data_count : out std_logic_vector(10 downto 0)
       );
   end component;
+
+ 
+ 
 begin  -- behave
 
+ 
+  
+  
+
   trigger_mask <= trigger_mask_s(NUMBER_OF_ROCs-1 downto 0);
+  module_mask  <= module_mask_s(NUMBER_OF_MODULES-1 downto 0);
 
   valid_data_and_port <= '1' when ((valid_data = '1') and (port_number = x"138d")) else '0';
   -- port 5005
@@ -96,8 +107,10 @@ begin  -- behave
       rd_en_fifo        <= '0';
       en_random_trigger <= '0';
       trigger_mask_s    <= (others => '1');
+      module_mask_s     <= (others => '1');
       instruction       <= (others => '0');
       mask_counter      <= 0;
+      en_or_trigger     <= '0';
       
       
     elsif clk'event and clk = '1' then  -- rising clock edge
@@ -117,7 +130,7 @@ begin  -- behave
         when WAIT_FOR_PACKAGE =>
           
           state <= WAIT_FOR_PACKAGE;
-          if data_count /= "0000000000000" then
+          if empty_fifo = '0' then
             state <= READ_INSTRUCTION;
           end if;
 
@@ -129,7 +142,7 @@ begin  -- behave
 
           if instruction /= X"00" then
             state <= SEND_HEADER;
-          elsif data_count = "000000000000" then
+          elsif empty_fifo = '1' then
             state <= WAIT_FOR_PACKAGE;
           elsif instruction = instruction_buf then
             state <= INIT;
@@ -153,10 +166,15 @@ begin  -- behave
           elsif instruction_buf = x"73" then
             state <= R_T_ON;
           elsif instruction_buf = x"74" then
-            state <= R_T_OFF;
+            state <= AND_TRIGGER_ON;
           elsif instruction_buf = x"6d" then
             rd_en_fifo <= '1';
             state      <= SET_MASK;
+          elsif instruction_buf = x"6f" then
+            state <= OR_TRIGGER_ON;
+          elsif instruction_buf = x"6e" then
+            rd_en_fifo <= '1';
+            state      <= SET_MODULE_MASK;
           else
             state <= INIT;
           end if;
@@ -164,8 +182,8 @@ begin  -- behave
         when SET_MASK =>
           send_fifo_we      <= '1';
           send_fifo_data_in <= x"6d";
-          rd_en_fifo <= '1';
-          state <= SET_MASK2;
+          rd_en_fifo        <= '1';
+          state             <= SET_MASK2;
 
         when SET_MASK2 =>
           rd_en_fifo   <= '1';
@@ -185,17 +203,38 @@ begin  -- behave
           elsif mask_counter = 3 then
             state <= INIT;
           end if;
+
+        when SET_MODULE_MASK =>
+          send_fifo_we      <= '1';
+          send_fifo_data_in <= x"6e";
+          rd_en_fifo        <= '1';
+          state             <= SET_MODULE_MASK2;
           
+        when SET_MODULE_MASK2 =>
+          rd_en_fifo        <= '1';
+          module_mask_s     <= dout_fifo;
+          send_fifo_we      <= '1';
+          send_fifo_data_in <= dout_fifo;
+          state             <= INIT;
           
+
         when NOTIFY_RESET =>
           send_fifo_we      <= '1';
           send_fifo_data_in <= x"72";
           state             <= RESET_ROCS;
 
-        when R_T_OFF =>
+        when AND_TRIGGER_ON =>
           send_fifo_we      <= '1';
           send_fifo_data_in <= x"74";
           en_random_trigger <= '0';
+          en_or_trigger     <= '0';
+          state             <= INIT;
+
+        when OR_TRIGGER_ON =>
+          send_fifo_we      <= '1';
+          send_fifo_data_in <= x"6f";
+          en_random_trigger <= '0';
+          en_or_trigger     <= '1';
           state             <= INIT;
           
         when R_T_ON =>
@@ -205,6 +244,10 @@ begin  -- behave
           state             <= INIT;
 
         when RESET_ROCS =>
+          mrst_from_udp_b <= '0';
+          state           <= RESET_ROCS2;
+
+        when RESET_ROCS2 =>
           mrst_from_udp_b <= '0';
           state           <= INIT;
 

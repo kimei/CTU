@@ -8,117 +8,32 @@
 # //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
 # //  AND IS SUBJECT TO LICENSE TERMS.
 # //
-# do {receiver_control_tb.fdo} 
+# do {fill_ones_tb.fdo} 
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vcom 6.6e_1 Compiler 2011.05 May 25 2011
 # -- Loading package standard
 # -- Loading package std_logic_1164
-# -- Compiling entity fifo_generator_v8_1
-# -- Compiling architecture fifo_generator_v8_1_a of fifo_generator_v8_1
 # -- Loading package std_logic_arith
 # -- Loading package std_logic_unsigned
-# -- Loading entity fifo_generator_v8_1_bhv_as
-# -- Loading entity fifo_generator_v8_1_bhv_ss
-# -- Loading entity fifo_generator_v8_1_conv
-# -- Loading entity fifo_generator_v8_1
+# -- Compiling entity fill_ones
+# -- Compiling architecture behavioral of fill_ones
 # Model Technology ModelSim SE-64 vcom 6.6e_1 Compiler 2011.05 May 25 2011
 # -- Loading package standard
 # -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling package constants
-# Model Technology ModelSim SE-64 vcom 6.6e_1 Compiler 2011.05 May 25 2011
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Loading package constants
-# -- Compiling package components
-# Model Technology ModelSim SE-64 vcom 6.6e_1 Compiler 2011.05 May 25 2011
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package vcomponents
-# -- Loading package numeric_std
-# -- Loading package constants
-# -- Loading package components
-# -- Compiling entity receiver_control
-# -- Compiling architecture behave of receiver_control
-# Model Technology ModelSim SE-64 vcom 6.6e_1 Compiler 2011.05 May 25 2011
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity receiver_control_tb
-# -- Compiling architecture tb of receiver_control_tb
-# vsim -lib work -voptargs=\"+acc\" -t 1ps work.receiver_control_tb 
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# -- Compiling entity fill_ones_tb
+# -- Compiling architecture stimulu of fill_ones_tb
+# vsim -lib work -voptargs=\"+acc\" -t 1ps work.fill_ones_tb 
+# ** Note: (vsim-3812) Design is being optimized...
 # Loading std.standard
 # Loading ieee.std_logic_1164(body)
-# Loading work.receiver_control_tb(tb)#1
-# Loading unisim.vcomponents
-# Loading ieee.numeric_std(body)
-# Loading work.constants
-# Loading work.components
-# Loading work.receiver_control(behave)#1
+# Loading work.fill_ones_tb(stimulu)#1
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_unsigned(body)
-# Loading work.fifo_generator_v8_1(fifo_generator_v8_1_a)#1
-# Loading xilinxcorelib.fifo_generator_v8_1(behavioral)#1
-# Loading xilinxcorelib.fifo_generator_v8_1_conv(behavioral)#1
-# Loading xilinxcorelib.fifo_generator_v8_1_bhv_ss(behavioral)#1
-# Loading xilinxcorelib.fifo_generator_v8_1_bhv_preload0(behavioral)#1
-# ** Warning: (vsim-8684) No drivers exist on out port /receiver_control_tb/dut/udp_receive_fifo/u0/gconvfifo/inst_conv_fifo/gen_ss/fgss/prog_empty, and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /receiver_control_tb/dut/udp_receive_fifo/u0/prog_empty.
-# ** Warning: (vsim-8684) No drivers exist on out port /receiver_control_tb/dut/udp_receive_fifo/u0/gconvfifo/inst_conv_fifo/gen_ss/fgss/prog_full, and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /receiver_control_tb/dut/udp_receive_fifo/u0/prog_full.
-# ** Warning: (vsim-8684) No drivers exist on out port /receiver_control_tb/dut/udp_receive_fifo/u0/gconvfifo/inst_conv_fifo/gen_ss/fgss/valid, and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /receiver_control_tb/dut/udp_receive_fifo/u0/gconvfifo/inst_conv_fifo/valid_fifo_out.
-# ** Warning: (vsim-8684) No drivers exist on out port /receiver_control_tb/dut/udp_receive_fifo/u0/gconvfifo/inst_conv_fifo/gen_ss/fgss/underflow, and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /receiver_control_tb/dut/udp_receive_fifo/u0/gconvfifo/inst_conv_fifo/underflow_fifo_out.
-# ** Warning: (vsim-8684) No drivers exist on out port /receiver_control_tb/dut/udp_receive_fifo/u0/gconvfifo/inst_conv_fifo/prog_full, and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /receiver_control_tb/dut/udp_receive_fifo/u0/prog_full.
-# ** Warning: (vsim-8684) No drivers exist on out port /receiver_control_tb/dut/udp_receive_fifo/u0/gconvfifo/inst_conv_fifo/prog_empty, and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /receiver_control_tb/dut/udp_receive_fifo/u0/prog_empty.
+# Loading work.fill_ones(behavioral)#1
+# ** Warning: (vsim-8683) Uninitialized out port /fill_ones_tb/dut/cs_wk(31 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
 # 
 #  
-restart -f
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading std.standard
-# Loading ieee.std_logic_1164(body)
-# Loading work.receiver_control_tb(tb)#1
-# Loading unisim.vcomponents
-# Loading ieee.numeric_std(body)
-# Loading work.constants
-# Loading work.components
-# Loading work.receiver_control(behave)#1
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.fifo_generator_v8_1(fifo_generator_v8_1_a)#1
-# Loading xilinxcorelib.fifo_generator_v8_1(behavioral)#1
-# Loading xilinxcorelib.fifo_generator_v8_1_conv(behavioral)#1
-# Loading xilinxcorelib.fifo_generator_v8_1_bhv_ss(behavioral)#1
-# Loading xilinxcorelib.fifo_generator_v8_1_bhv_preload0(behavioral)#1
-# ** Warning: (vsim-8684) No drivers exist on out port /receiver_control_tb/dut/udp_receive_fifo/u0/gconvfifo/inst_conv_fifo/gen_ss/fgss/prog_empty, and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /receiver_control_tb/dut/udp_receive_fifo/u0/prog_empty.
-# ** Warning: (vsim-8684) No drivers exist on out port /receiver_control_tb/dut/udp_receive_fifo/u0/gconvfifo/inst_conv_fifo/gen_ss/fgss/prog_full, and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /receiver_control_tb/dut/udp_receive_fifo/u0/prog_full.
-# ** Warning: (vsim-8684) No drivers exist on out port /receiver_control_tb/dut/udp_receive_fifo/u0/gconvfifo/inst_conv_fifo/gen_ss/fgss/valid, and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /receiver_control_tb/dut/udp_receive_fifo/u0/gconvfifo/inst_conv_fifo/valid_fifo_out.
-# ** Warning: (vsim-8684) No drivers exist on out port /receiver_control_tb/dut/udp_receive_fifo/u0/gconvfifo/inst_conv_fifo/gen_ss/fgss/underflow, and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /receiver_control_tb/dut/udp_receive_fifo/u0/gconvfifo/inst_conv_fifo/underflow_fifo_out.
-# ** Warning: (vsim-8684) No drivers exist on out port /receiver_control_tb/dut/udp_receive_fifo/u0/gconvfifo/inst_conv_fifo/prog_full, and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /receiver_control_tb/dut/udp_receive_fifo/u0/prog_full.
-# ** Warning: (vsim-8684) No drivers exist on out port /receiver_control_tb/dut/udp_receive_fifo/u0/gconvfifo/inst_conv_fifo/prog_empty, and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /receiver_control_tb/dut/udp_receive_fifo/u0/prog_empty.
-run 2 us

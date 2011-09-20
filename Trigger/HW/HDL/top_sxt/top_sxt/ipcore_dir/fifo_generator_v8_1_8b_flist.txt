@@ -1,0 +1,16 @@
+# Output products list for <fifo_generator_v8_1_8b>
+_xmsgs/pn_parser.xmsgs
+fifo_generator_readme.txt
+fifo_generator_ug175.pdf
+fifo_generator_v8_1_8b.asy
+fifo_generator_v8_1_8b.gise
+fifo_generator_v8_1_8b.ngc
+fifo_generator_v8_1_8b.sym
+fifo_generator_v8_1_8b.v
+fifo_generator_v8_1_8b.veo
+fifo_generator_v8_1_8b.vhd
+fifo_generator_v8_1_8b.vho
+fifo_generator_v8_1_8b.xco
+fifo_generator_v8_1_8b.xise
+fifo_generator_v8_1_8b_flist.txt
+fifo_generator_v8_1_8b_xmdf.tcl

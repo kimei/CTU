@@ -1,0 +1,179 @@
+Release 13.1 Drc O.40d (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Tue Sep 20 09:51:42 2011
+
+drc -z top.ncd top.pcf
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   EMAC_0/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader
+   /ChecksumTemplate_n_16_and0000 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader
+   /ChecksumTemplate_n_16_and0000 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net EMAC_0/CONTROL0<13> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   EMAC_0/UDP_IP_Core_2/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader
+   /ChecksumTemplate_n_16_and0000 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   EMAC_1/UDP_IP_Core_2/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader
+   /ChecksumTemplate_n_16_and0000 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:367 - The signal <BUTTONS<3>_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <DIP_SWITCH<0>_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <DIP_SWITCH<1>_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <DIP_SWITCH<2>_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <DIP_SWITCH<3>_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <DIP_SWITCH<4>_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <DIP_SWITCH<5>_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <DIP_SWITCH<6>_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <DIP_SWITCH<7>_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <EMAC_1/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+   .mem/dout_mem<7>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal
+   <EMAC_1/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+   .mem/dout_mem<6>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal
+   <EMAC_1/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+   .mem/dout_mem<5>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal
+   <EMAC_1/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+   .mem/dout_mem<4>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal
+   <EMAC_1/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+   .mem/dout_mem<3>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal
+   <EMAC_1/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+   .mem/dout_mem<2>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal
+   <EMAC_1/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+   .mem/dout_mem<1>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal
+   <EMAC_1/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+   .mem/dout_mem<0>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal
+   <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/CO
+   MP_TO_TARGET_LAST_BYTE/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_no
+   tequal_b.i_a_eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_t
+   ier/loop_tiles[0].i_tile/o139> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <EMAC_1/UDP_IP_Core_2/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/CO
+   MP_TO_TARGET_LAST_BYTE/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_no
+   tequal_b.i_a_eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_t
+   ier/loop_tiles[0].i_tile/o26> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/CO
+   MP_TO_TARGET_LAST_BYTE/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_no
+   tequal_b.i_a_eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_t
+   ier/loop_tiles[0].i_tile/o189> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <EMAC_1/UDP_IP_Core_2/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/CO
+   MP_TO_TARGET_LAST_BYTE/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_no
+   tequal_b.i_a_eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_t
+   ier/loop_tiles[0].i_tile/o139> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/CO
+   MP_TO_TARGET_LAST_BYTE/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_no
+   tequal_b.i_a_eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_t
+   ier/loop_tiles[0].i_tile/o62> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <EMAC_1/UDP_IP_Core_2/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/CO
+   MP_TO_TARGET_LAST_BYTE/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_no
+   tequal_b.i_a_eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_t
+   ier/loop_tiles[0].i_tile/o62> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <EMAC_1/UDP_IP_Core_2/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/CO
+   MP_TO_TARGET_LAST_BYTE/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_no
+   tequal_b.i_a_eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_t
+   ier/loop_tiles[0].i_tile/o189> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/CO
+   MP_TO_TARGET_LAST_BYTE/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_no
+   tequal_b.i_a_eq_ne_b/i_use_carry_plus_luts.lut_and.i_gate_bit/tier_gen[1].i_t
+   ier/loop_tiles[0].i_tile/o26> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_p
+   ort_map/TARGET_HEADER_CHECKSUM_1/BU2/U0/gen_structure_logic.gen_nonpipelined.
+   a_equal_notequal_b.i_a_eq_ne_b/temp_result> is incomplete. The signal does
+   not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_p
+   ort_map/TARGET_TOTAL_LENGTH_1/BU2/U0/gen_structure_logic.gen_nonpipelined.a_e
+   qual_notequal_b.i_a_eq_ne_b/temp_result> is incomplete. The signal does not
+   drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <EMAC_1/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/ram_regout_en> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/IPV4_LUT_INDEXER_port_
+   map/LUT_END_CHECK/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequa
+   l_b.i_a_eq_ne_b/temp_result> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <EMAC_1/UDP_IP_Core_2/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_p
+   ort_map/TARGET_TOTAL_LENGTH_1/BU2/U0/gen_structure_logic.gen_nonpipelined.a_e
+   qual_notequal_b.i_a_eq_ne_b/temp_result> is incomplete. The signal does not
+   drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <EMAC_1/UDP_IP_Core_2/IPV4_PACKET_TRANSMITTER_port_map/IPV4_LUT_INDEXER_port_
+   map/LUT_END_CHECK/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_notequa
+   l_b.i_a_eq_ne_b/temp_result> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <EMAC_1/UDP_IP_Core_2/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_p
+   ort_map/TARGET_HEADER_CHECKSUM_1/BU2/U0/gen_structure_logic.gen_nonpipelined.
+   a_equal_notequal_b.i_a_eq_ne_b/temp_result> is incomplete. The signal does
+   not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_p
+   ort_map/TARGET_LENGTH_1/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_n
+   otequal_b.i_a_eq_ne_b/temp_result> is incomplete. The signal does not drive
+   any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <EMAC_1/UDP_IP_Core_2/IPV4_PACKET_TRANSMITTER_port_map/OVERRIDE_LUT_CONTROL_p
+   ort_map/TARGET_LENGTH_1/BU2/U0/gen_structure_logic.gen_nonpipelined.a_equal_n
+   otequal_b.i_a_eq_ne_b/temp_result> is incomplete. The signal does not drive
+   any load pins in the design.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on block:<EMAC_1/gmii_rxc1_delay>:<IODELAY_IODELAY>.  When DELAY_SRC is not
+   DATAIN programming the DATAIN input pin is not used and will be ignored.
+WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
+   on block:<EMAC_0/gmii_rxc0_delay>:<IODELAY_IODELAY>.  When DELAY_SRC is not
+   DATAIN programming the DATAIN input pin is not used and will be ignored.
+DRC detected 0 errors and 41 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

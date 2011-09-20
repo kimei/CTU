@@ -1,0 +1,427 @@
+#### Module Hard_Ethernet_MAC1 constraints
+
+
+
+
+#Net RESET LOC=AN32;
+##Net RESET IOSTANDARD = LVCMOS25;
+#Net RESET TIG;
+#Net RESET TIG;
+
+
+Net "gmii_txd_0<0>" LOC=J6;
+Net "gmii_txd_0<0>" IOSTANDARD =LVCMOS25;
+Net "gmii_txd_0<1>" LOC=K7;
+Net "gmii_txd_0<1>" IOSTANDARD = LVCMOS25;
+Net "gmii_txd_0<2>" LOC=L5;
+Net "gmii_txd_0<2>" IOSTANDARD = LVCMOS25;
+Net "gmii_txd_0<3>" LOC=K6;
+Net "gmii_txd_0<3>" IOSTANDARD = LVCMOS25;
+Net "gmii_txd_0<4>" LOC=L4;
+Net "gmii_txd_0<4>" IOSTANDARD = LVCMOS25;
+Net "gmii_txd_0<5>" LOC=L6;
+Net "gmii_txd_0<5>" IOSTANDARD = LVCMOS25;
+Net "gmii_txd_0<6>" LOC=M5;
+Net "gmii_txd_0<6>" IOSTANDARD = LVCMOS25;
+Net "gmii_txd_0<7>" LOC=M6;
+Net "gmii_txd_0<7>" IOSTANDARD = LVCMOS25;
+Net "gmii_tx_en_0" LOC=M7;
+Net "gmii_tx_en_0" IOSTANDARD = LVCMOS25;
+Net "gmii_tx_er_0" LOC=N5;
+Net "gmii_tx_er_0" IOSTANDARD =LVCMOS25;
+Net "gmii_tx_clk_0" LOC=P7; #was P7
+Net "gmii_tx_clk_0" IOSTANDARD = LVCMOS25;
+Net "gmii_rxd_0<0>" LOC=P5;
+Net "gmii_rxd_0<0>" IOSTANDARD = LVCMOS25;
+Net "gmii_rxd_0<1>" LOC=P6;
+Net "gmii_rxd_0<1>" IOSTANDARD = LVCMOS25;
+Net "gmii_rxd_0<2>" LOC=R6;
+Net "gmii_rxd_0<2>" IOSTANDARD = LVCMOS25;
+Net "gmii_rxd_0<3>" LOC=T6;
+Net "gmii_rxd_0<3>" IOSTANDARD = LVCMOS25;
+Net "gmii_rxd_0<4>" LOC=N7;
+Net "gmii_rxd_0<4>" IOSTANDARD = LVCMOS25;
+Net "gmii_rxd_0<5>" LOC=R7;
+Net "gmii_rxd_0<5>" IOSTANDARD = LVCMOS25;
+Net "gmii_rxd_0<6>" LOC=U7;
+Net "gmii_rxd_0<6>" IOSTANDARD = LVCMOS25;
+Net "gmii_rxd_0<7>" LOC=R8;
+Net "gmii_rxd_0<7>" IOSTANDARD = LVCMOS25;
+Net "gmii_rx_dv_0" LOC=T8;
+Net "gmii_rx_dv_0" IOSTANDARD = LVCMOS25;
+Net "gmii_rx_er_0" LOC=N8;
+Net "gmii_rx_er_0" IOSTANDARD = LVCMOS25;
+Net "gmii_rx_clk_0" LOC=G15;
+#Net "gmii_rx_clk_0" LOC=AH17;
+Net "gmii_rx_clk_0" IOSTANDARD = LVCMOS25;
+Net "GTX_CLK_0" LOC =K17; # maybe K18?
+Net "GTX_CLK_0" IOSTANDARD = LVCMOS25;
+
+	
+net  "MII_TX_CLK_0" LOC = K18;
+net  "GMII_COL_0"   LOC = P10;
+net  "GMII_CRS_0"   LOC = T9;
+
+NET "PHY_RESET_0" LOC = J7;
+Net "PHY_RESET_0" IOSTANDARD = LVCMOS25;
+Net "PHY_RESET_0" TIG;
+#Net fpga_0_Hard_Ethernet_MAC1_MDC_0_pin LOC=H5;
+#Net fpga_0_Hard_Ethernet_MAC1_MDC_0_pin IOSTANDARD = LVCMOS25;
+#Net fpga_0_Hard_Ethernet_MAC1_MDIO_0_pin LOC=J5;
+#Net fpga_0_Hard_Ethernet_MAC1_MDIO_0_pin IOSTANDARD = LVCMOS25;
+#Net fpga_0_Hard_Ethernet_MAC1_PHY_MII_INT_pin LOC=H7;
+#Net fpga_0_Hard_Ethernet_MAC1_PHY_MII_INT_pin IOSTANDARD = LVCMOS25;
+#Net fpga_0_Hard_Ethernet_MAC1_PHY_MII_INT_pin PULLUP;
+#Net fpga_0_Hard_Ethernet_MAC1_PHY_MII_INT_pin TIG;
+
+
+
+
+
+
+CONFIG PART = 5vlx50tff1136-1;
+ 
+##################################
+# BLOCK Level constraints
+##################################
+
+NET "GMII_RX_CLK_0" TNM_NET   = "phy_clk_rx0";
+TIMEGRP  "v5_emac_v1_5_clk_phy_rx0"        = "phy_clk_rx0";
+TIMESPEC "TS_v5_emac_v1_5_clk_phy_rx0"     = PERIOD "v5_emac_v1_5_clk_phy_rx0" 7500 ps HIGH 50 %;
+
+
+
+# Set the IDELAY values on the data inputs.
+# Please modify to suit your design.
+INST "*gmii0?ideldv"  IDELAY_VALUE = 38;
+INST "*gmii0?ideld0"  IDELAY_VALUE = 38;
+INST "*gmii0?ideld1"  IDELAY_VALUE = 38;
+INST "*gmii0?ideld2"  IDELAY_VALUE = 38;
+INST "*gmii0?ideld3"  IDELAY_VALUE = 38;
+INST "*gmii0?ideld4"  IDELAY_VALUE = 38;
+INST "*gmii0?ideld5"  IDELAY_VALUE = 38;
+INST "*gmii0?ideld6"  IDELAY_VALUE = 38;
+INST "*gmii0?ideld7"  IDELAY_VALUE = 38;
+INST "*gmii0?ideler"  IDELAY_VALUE = 38;
+
+INST "*gmii_rxc0_delay" IDELAY_VALUE = 0;
+INST "*gmii_rxc0_delay" SIGNAL_PATTERN = CLOCK;
+
+# GMII Receiver Constraints:  place flip-flops in IOB
+INST "*gmii0?RXD_TO_MAC*"    IOB = true;
+INST "*gmii0?RX_DV_TO_MAC"   IOB = true;
+INST "*gmii0?RX_ER_TO_MAC"   IOB = true;
+
+INST "*gmii0?GMII_TXD_?"     IOB = true;
+INST "*gmii0?GMII_TX_EN"     IOB = true;
+INST "*gmii0?GMII_TX_ER"     IOB = true;
+
+
+
+
+
+##################################
+# LocalLink Level constraints
+##################################
+
+
+# EMAC0 LocalLink client FIFO constraints.
+
+INST "*client_side_FIFO_emac0?tx_fifo_i?rd_tran_frame_tog"    TNM = "tx_fifo_rd_to_wr_0";
+INST "*client_side_FIFO_emac0?tx_fifo_i?rd_retran_frame_tog"  TNM = "tx_fifo_rd_to_wr_0";
+INST "*client_side_FIFO_emac0?tx_fifo_i?rd_col_window_pipe_1" TNM = "tx_fifo_rd_to_wr_0";
+INST "*client_side_FIFO_emac0?tx_fifo_i?rd_addr_txfer*"       TNM = "tx_fifo_rd_to_wr_0";
+INST "*client_side_FIFO_emac0?tx_fifo_i?rd_txfer_tog"         TNM = "tx_fifo_rd_to_wr_0";
+INST "*client_side_FIFO_emac0?tx_fifo_i?wr_frame_in_fifo"     TNM = "tx_fifo_wr_to_rd_0";
+
+
+TIMESPEC "TS_tx_fifo_rd_to_wr_0" = FROM "tx_fifo_rd_to_wr_0" TO "v5_emac_v1_5_client_clk_tx0" 8000 ps DATAPATHONLY;
+TIMESPEC "TS_tx_fifo_wr_to_rd_0" = FROM "tx_fifo_wr_to_rd_0" TO "v5_emac_v1_5_client_clk_tx0" 8000 ps DATAPATHONLY;
+
+# Reduce clock period to allow 3 ns for metastability settling time
+INST "*client_side_FIFO_emac0?tx_fifo_i?wr_tran_frame_tog"    TNM = "tx_metastable_0";
+INST "*client_side_FIFO_emac0?tx_fifo_i?wr_rd_addr*"          TNM = "tx_metastable_0";
+INST "*client_side_FIFO_emac0?tx_fifo_i?wr_txfer_tog"         TNM = "tx_metastable_0";
+INST "*client_side_FIFO_emac0?tx_fifo_i?frame_in_fifo"        TNM = "tx_metastable_0";
+INST "*client_side_FIFO_emac0?tx_fifo_i?wr_retran_frame_tog*" TNM = "tx_metastable_0";
+INST "*client_side_FIFO_emac0?tx_fifo_i?wr_col_window_pipe_0" TNM = "tx_metastable_0";
+
+TIMESPEC "ts_tx_meta_protect_0" = FROM "tx_metastable_0" 5 ns DATAPATHONLY;
+
+INST "*client_side_FIFO_emac0?tx_fifo_i?rd_addr_txfer*"       TNM = "tx_addr_rd_0";
+INST "*client_side_FIFO_emac0?tx_fifo_i?wr_rd_addr*"          TNM = "tx_addr_wr_0";
+TIMESPEC "TS_tx_fifo_addr_0" = FROM "tx_addr_rd_0" TO "tx_addr_wr_0" 10ns;
+
+## RX Client FIFO
+# Group the clock crossing signals into timing groups
+INST "*client_side_FIFO_emac0?rx_fifo_i?wr_store_frame_tog"   TNM = "rx_fifo_wr_to_rd_0";
+INST "*client_side_FIFO_emac0?rx_fifo_i?rd_addr_gray*"        TNM = "rx_fifo_rd_to_wr_0";
+
+
+TIMESPEC "TS_rx_fifo_wr_to_rd_0" = FROM "rx_fifo_wr_to_rd_0" TO "v5_emac_v1_5_client_clk_tx0" 8000 ps DATAPATHONLY;
+TIMESPEC "TS_rx_fifo_rd_to_wr_0" = FROM "rx_fifo_rd_to_wr_0" TO "v5_emac_v1_5_client_clk_rx0" 8000 ps DATAPATHONLY;
+
+# Reduce clock period to allow for metastability settling time
+INST "*client_side_FIFO_emac0?rx_fifo_i?wr_rd_addr_gray_sync*" TNM = "rx_metastable_0";
+INST "*client_side_FIFO_emac0?rx_fifo_i?rd_store_frame_tog"    TNM = "rx_metastable_0";
+
+TIMESPEC "ts_rx_meta_protect_0" = FROM "rx_metastable_0" 5 ns;
+
+
+
+
+
+
+
+# from example design:
+
+CONFIG PART = 5vlx50tff1136-1;
+ 
+##################################
+# BLOCK Level constraints
+##################################
+
+# EMAC0 Clocking
+# EMAC0 TX Clock input from BUFG
+NET "GMII_TX_CLK_0" TNM_NET        = "clk_tx0";
+TIMEGRP  "fe_TEMAC_tx_clk0"            = "clk_tx0";
+TIMESPEC "TS_fe_TEMAC_tx_clk0"         = PERIOD "fe_TEMAC_tx_clk0" 7700 ps HIGH 50 %;
+## EMAC0 RX PHY Clock
+NET "GMII_RX_CLK_0" TNM_NET   = "phy_clk_rx0";
+TIMEGRP  "fe_TEMAC_clk_phy_rx0"        = "phy_clk_rx0";
+TIMESPEC "TS_fe_TEMAC_clk_phy_rx0"     = PERIOD "fe_TEMAC_clk_phy_rx0" 7500 ps HIGH 50 %;
+
+
+NET "GTX_CLK_0" TNM_NET        = "clk_gtx0";
+TIMEGRP  "fe_TEMAC_gtx_clk0"            = "clk_gtx0";
+TIMESPEC "TS_fe_TEMAC_gtx_clk0"         = PERIOD "fe_TEMAC_gtx_clk0" 8000 ps HIGH 50 %;
+
+
+ #125MHz clock input from BUFG
+NET "*client_clk*" TNM_NET = "clk_gtp";
+TIMEGRP  "v5_emac_v1_5_gtp_clk" = "clk_gtp";
+TIMESPEC "TS_v5_emac_v1_5_gtp_clk" = PERIOD "v5_emac_v1_5_gtp_clk" 7700 ps HIGH 50 %;
+
+
+
+
+# PHY Autonegotiate ON
+INST *?v5_emac EMAC0_PHYINITAUTONEG_ENABLE = TRUE;
+
+
+
+### The second TEMAC #####
+
+
+
+Net "gmii_txd_1<0>" LOC=L24;
+Net "gmii_txd_1<0>" IOSTANDARD =LVCMOS25;
+Net "gmii_txd_1<1>" LOC=J24;
+Net "gmii_txd_1<1>" IOSTANDARD = LVCMOS25;
+Net "gmii_txd_1<2>" LOC=J26;
+Net "gmii_txd_1<2>" IOSTANDARD = LVCMOS25;
+Net "gmii_txd_1<3>" LOC=M28;
+Net "gmii_txd_1<3>" IOSTANDARD = LVCMOS25;
+Net "gmii_txd_1<4>" LOC=K27;
+Net "gmii_txd_1<4>" IOSTANDARD = LVCMOS25;
+Net "gmii_txd_1<5>" LOC=N28;
+Net "gmii_txd_1<5>" IOSTANDARD = LVCMOS25;
+Net "gmii_txd_1<6>" LOC=N27;
+Net "gmii_txd_1<6>" IOSTANDARD = LVCMOS25;
+Net "gmii_txd_1<7>" LOC=M27;
+Net "gmii_txd_1<7>" IOSTANDARD = LVCMOS25;
+Net "gmii_tx_en_1" LOC=P26;
+Net "gmii_tx_en_1" IOSTANDARD = LVCMOS25;
+Net "gmii_tx_er_1" LOC=P27;
+Net "gmii_tx_er_1" IOSTANDARD =LVCMOS25;
+Net "gmii_tx_clk_1" LOC=G25; #was G25
+Net "gmii_tx_clk_1" IOSTANDARD = LVCMOS25;
+Net "gmii_rxd_1<0>" LOC=K24;
+Net "gmii_rxd_1<0>" IOSTANDARD = LVCMOS25;
+Net "gmii_rxd_1<1>" LOC=J25;
+Net "gmii_rxd_1<1>" IOSTANDARD = LVCMOS25;
+Net "gmii_rxd_1<2>" LOC=J27;
+Net "gmii_rxd_1<2>" IOSTANDARD = LVCMOS25;
+Net "gmii_rxd_1<3>" LOC=K28;
+Net "gmii_rxd_1<3>" IOSTANDARD = LVCMOS25;
+Net "gmii_rxd_1<4>" LOC=L28;
+Net "gmii_rxd_1<4>" IOSTANDARD = LVCMOS25;
+Net "gmii_rxd_1<5>" LOC=M26;
+Net "gmii_rxd_1<5>" IOSTANDARD = LVCMOS25;
+Net "gmii_rxd_1<6>" LOC=L26;
+Net "gmii_rxd_0<6>" IOSTANDARD = LVCMOS25;
+Net "gmii_rxd_1<7>" LOC=K26;
+Net "gmii_rxd_1<7>" IOSTANDARD = LVCMOS25;
+Net "gmii_rx_dv_1" LOC=M25;
+Net "gmii_rx_dv_1" IOSTANDARD = LVCMOS25;
+Net "gmii_rx_er_1" LOC=L25;
+Net "gmii_rx_er_1" IOSTANDARD = LVCMOS25;
+Net "gmii_rx_clk_1" LOC=AH18;
+
+Net "gmii_rx_clk_1" IOSTANDARD = LVCMOS25;
+Net "GTX_CLK_1" LOC =AH17; # maybe K18?
+Net "GTX_CLK_1" IOSTANDARD = LVCMOS25;
+
+	
+#net  "MII_TX_CLK_1" LOC = AF18;
+#net  "GMII_COL_1"   LOC = N24;
+#net  "GMII_CRS_1"   LOC = P24;
+
+NET "PHY_RESET_1" LOC = G26;
+Net "PHY_RESET_1" IOSTANDARD = LVCMOS25;
+Net "PHY_RESET_1" TIG;
+
+
+
+
+
+
+
+##################################
+# BLOCK Level constraints
+##################################
+
+NET "GMII_RX_CLK_1" TNM_NET   = "phy_clk_rx1";
+TIMEGRP  "v5_emac_v1_5_clk_phy_rx1"        = "phy_clk_rx1";
+TIMESPEC "TS_v5_emac_v1_5_clk_phy_rx1"     = PERIOD "v5_emac_v1_5_clk_phy_rx1" 7500 ps HIGH 50 %;
+
+
+
+# Set the IDELAY values on the data inputs.
+# Please modify to suit your design.
+INST "*gmii1?ideldv"  IDELAY_VALUE = 38;
+INST "*gmii1?ideld0"  IDELAY_VALUE = 38;
+INST "*gmii1?ideld1"  IDELAY_VALUE = 38;
+INST "*gmii1?ideld2"  IDELAY_VALUE = 38;
+INST "*gmii1?ideld3"  IDELAY_VALUE = 38;
+INST "*gmii1?ideld4"  IDELAY_VALUE = 38;
+INST "*gmii1?ideld5"  IDELAY_VALUE = 38;
+INST "*gmii1?ideld6"  IDELAY_VALUE = 38;
+INST "*gmii1?ideld7"  IDELAY_VALUE = 38;
+INST "*gmii1?ideler"  IDELAY_VALUE = 38;
+
+INST "*gmii_rxc1_delay" IDELAY_VALUE = 0;
+INST "*gmii_rxc1_delay" SIGNAL_PATTERN = CLOCK;
+
+#GMII Receiver Constraints:  place flip-flops in IOB
+INST "*gmii1?RXD_TO_MAC*"    IOB = true;
+INST "*gmii1?RX_DV_TO_MAC"   IOB = true;
+INST "*gmii1?RX_ER_TO_MAC"   IOB = true;
+
+INST "*gmii1?GMII_TXD_?"     IOB = true;
+INST "*gmii1?GMII_TX_EN"     IOB = true;
+INST "*gmii1?GMII_TX_ER"     IOB = true;
+
+
+
+
+
+##################################
+# LocalLink Level constraints
+##################################
+
+
+# EMAC0 LocalLink client FIFO constraints.
+
+INST "*client_side_FIFO_emac1?tx_fifo_i?rd_tran_frame_tog"    TNM = "tx_fifo_rd_to_wr_1";
+INST "*client_side_FIFO_emac1?tx_fifo_i?rd_retran_frame_tog"  TNM = "tx_fifo_rd_to_wr_1";
+INST "*client_side_FIFO_emac1?tx_fifo_i?rd_col_window_pipe_1" TNM = "tx_fifo_rd_to_wr_1";
+INST "*client_side_FIFO_emac1?tx_fifo_i?rd_addr_txfer*"       TNM = "tx_fifo_rd_to_wr_1";
+INST "*client_side_FIFO_emac1?tx_fifo_i?rd_txfer_tog"         TNM = "tx_fifo_rd_to_wr_1";
+INST "*client_side_FIFO_emac1?tx_fifo_i?wr_frame_in_fifo"     TNM = "tx_fifo_wr_to_rd_1";
+
+
+TIMESPEC "TS_tx_fifo_rd_to_wr_1" = FROM "tx_fifo_rd_to_wr_1" TO "v5_emac_v1_5_client_clk_tx1" 8000 ps DATAPATHONLY;
+TIMESPEC "TS_tx_fifo_wr_to_rd_1" = FROM "tx_fifo_wr_to_rd_1" TO "v5_emac_v1_5_client_clk_tx1" 8000 ps DATAPATHONLY;
+
+# Reduce clock period to allow 3 ns for metastability settling time
+INST "*client_side_FIFO_emac1?tx_fifo_i?wr_tran_frame_tog"    TNM = "tx_metastable_1";
+INST "*client_side_FIFO_emac1?tx_fifo_i?wr_rd_addr*"          TNM = "tx_metastable_1";
+INST "*client_side_FIFO_emac1?tx_fifo_i?wr_txfer_tog"         TNM = "tx_metastable_1";
+INST "*client_side_FIFO_emac1?tx_fifo_i?frame_in_fifo"        TNM = "tx_metastable_1";
+INST "*client_side_FIFO_emac1?tx_fifo_i?wr_retran_frame_tog*" TNM = "tx_metastable_1";
+INST "*client_side_FIFO_emac1?tx_fifo_i?wr_col_window_pipe_0" TNM = "tx_metastable_1";
+
+TIMESPEC "ts_tx_meta_protect_1" = FROM "tx_metastable_1" 5 ns DATAPATHONLY;
+
+INST "*client_side_FIFO_emac1?tx_fifo_i?rd_addr_txfer*"       TNM = "tx_addr_rd_1";
+INST "*client_side_FIFO_emac1?tx_fifo_i?wr_rd_addr*"          TNM = "tx_addr_wr_1";
+TIMESPEC "TS_tx_fifo_addr_1" = FROM "tx_addr_rd_1" TO "tx_addr_wr_1" 10ns;
+
+## RX Client FIFO
+# Group the clock crossing signals into timing groups
+INST "*client_side_FIFO_emac1?rx_fifo_i?wr_store_frame_tog"   TNM = "rx_fifo_wr_to_rd_1";
+INST "*client_side_FIFO_emac1?rx_fifo_i?rd_addr_gray*"        TNM = "rx_fifo_rd_to_wr_1";
+
+
+TIMESPEC "TS_rx_fifo_wr_to_rd_1" = FROM "rx_fifo_wr_to_rd_1" TO "v5_emac_v1_5_client_clk_tx1" 8000 ps DATAPATHONLY;
+TIMESPEC "TS_rx_fifo_rd_to_wr_1" = FROM "rx_fifo_rd_to_wr_1" TO "v5_emac_v1_5_client_clk_rx1" 8000 ps DATAPATHONLY;
+
+# Reduce clock period to allow for metastability settling time
+INST "*client_side_FIFO_emac1?rx_fifo_i?wr_rd_addr_gray_sync*" TNM = "rx_metastable_1";
+INST "*client_side_FIFO_emac1?rx_fifo_i?rd_store_frame_tog"    TNM = "rx_metastable_1";
+
+TIMESPEC "ts_rx_meta_protect_1" = FROM "rx_metastable_1" 5 ns;
+
+
+
+
+
+
+
+# from example design:
+
+CONFIG PART = 5vlx50tff1136-1;
+ 
+##################################
+# BLOCK Level constraints
+##################################
+
+# EMAC0 Clocking
+# EMAC0 TX Clock input from BUFG
+NET "GMII_TX_CLK_1" TNM_NET        = "clk_tx1";
+TIMEGRP  "fe_TEMAC_tx_clk1"            = "clk_tx1";
+TIMESPEC "TS_fe_TEMAC_tx_clk1"         = PERIOD "fe_TEMAC_tx_clk1" 7700 ps HIGH 50 %;
+## EMAC0 RX PHY Clock
+NET "GMII_RX_CLK_1" TNM_NET   = "phy_clk_rx1";
+TIMEGRP  "fe_TEMAC_clk_phy_rx1"        = "phy_clk_rx1";
+TIMESPEC "TS_fe_TEMAC_clk_phy_rx1"     = PERIOD "fe_TEMAC_clk_phy_rx1" 7500 ps HIGH 50 %;
+
+
+NET "GTX_CLK_1" TNM_NET        = "clk_gtx1";
+TIMEGRP  "fe_TEMAC_gtx_clk1"            = "clk_gtx1";
+TIMESPEC "TS_fe_TEMAC_gtx_clk1"         = PERIOD "fe_TEMAC_gtx_clk1" 8000 ps HIGH 50 %;
+
+
+# #125MHz clock input from BUFG
+#NET "*client_clk*" TNM_NET = "clk_gtp";
+#TIMEGRP  "v5_emac_v1_5_gtp_clk" = "clk_gtp";
+#TIMESPEC "TS_v5_emac_v1_5_gtp_clk" = PERIOD "v5_emac_v1_5_gtp_clk" 7700 ps HIGH 50 %;
+
+
+
+
+# PHY Autonegotiate ON
+INST *?v5_emac EMAC1_PHYINITAUTONEG_ENABLE = TRUE;
+
+
+#100MHz Clock
+Net FPGA100M LOC=H17 | IOSTANDARD = LVCMOS25;
+Net FPGA100M TNM_NET = FPGA100M;
+TIMESPEC TS_FPGA100M = PERIOD FPGA100M 10000 ps;
+#Net sys_rst_pin TIG;
+
+
+
+#net    clk100m_ctu         LOC = H19;
+#net    clk100m_ctu_b       LOC = H20;
+#Net clk100m_ctu TNM_NET = clk100m_ctu;
+#TIMESPEC TS_clk100m_ctu = PERIOD clk100m_ctu 10000 ps;
+
+Net MCLK100 TNM_NET = MCLK100;
+TIMESPEC TS_clk100m_ctu_b = PERIOD clk100m_ctu_b 10000 ps;
+net    MCLK100     LOC = AK7;
+net    MCLK100_b   LOC = AK6;
+
+#inst "EMAC_0/dlyctrl0" LOC="IDELAYCTRL_X0Y2";
+#inst "EMAC_1/dlyctrl1" LOC="IDELAYCTRL_X0Y3";

@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<DARoots Version="1" Minor="12">
+	<FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+		<Filter Type="Srcs"/>
+		<File Path="$PPRDIR/../../../UDP/UDP_rec_kim/fifo/fifo_generator_v8_1.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../UDP/UDP_mr/COUNTER_6B_LUT_FIFO_MODE.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../UDP/UDP_mr/COUNTER_11B_EN_TRANS.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../UDP/UDP_mr/comp_6b_equal.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../UDP/UDP_mr/comp_11b_equal.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../Shared/constants.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../UDP/UDP_mr/TARGET_EOF.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../UDP/UDP_mr/REG_16B_WREN.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../UDP/UDP_mr/OVERRIDE_LUT_CONTROL.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../UDP/UDP_mr/IPV4_LUT_INDEXER.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../UDP/UDP_mr/IPV4WriteUDPHeader.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../UDP/UDP_mr/ENABLE_USER_DATA_TRANSMISSION.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../UDP/UDP_mr/dist_mem_64x8.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../UDP/UDP_mr/ALLOW_ZERO_UDP_CHECKSUM.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/REG_8b_wren.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/PACKET_RECEIVER_FSM.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/COUNTER_11B_EN_RECEIV.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../UDP/CoreGEN/v5_emac_v1_5/example_design/physical/gmii_if.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/tx_client_fifo_8.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/rx_client_fifo_8.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../Shared/functions.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../Shared/components.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../UDP/UDP_mr/IPV4_PACKET_TRANSMITTER.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/IPv4_PACKET_RECEIVER.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_block.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/eth_fifo_8.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../Sync_Trigger/edge_detector.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../UDP/UDP_rec_kim/udp_rec.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../UDP/UDP_rec_kim/receiver_control.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../UDP/UDPIP/udp_ip__core/trunk/UDP_IP_CORE/UDP_IP_CORE__Virtex5/UDP_IP_Core.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_locallink.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../Shared/a2s.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../rate_counter/rate_counter.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../rate_counter/fifo/fifo_generator_v4_4.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../CRU/COREgen/PLL_core.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_example_design.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../Sync_Trigger/Sync_trigger.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../switchDebouncer/SwitchDebouncer.vhdl">
+		</File>
+		<File Path="$PPRDIR/../../../random_trigger/rand_trigger.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../CRU/CRU.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../top/top.vhd">
+		</File>
+		<File Path="$PPRDIR/../../../UDP/UDP_mr/comp_11b_equal.ngc">
+		</File>
+		<File Path="$PPRDIR/../../../UDP/UDP_mr/comp_6b_equal.ngc">
+		</File>
+		<File Path="$PPRDIR/../../../UDP/UDP_mr/dist_mem_64x8.ngc">
+		</File>
+		<File Path="$PPRDIR/../../../rate_counter/fifo/fifo_generator_v4_4.ngc">
+		</File>
+		<Config>
+			<Option Name="DesignMode" Val="RTL"/>
+			<Option Name="TopModule" Val="top"/>
+		</Config>
+	</FileSet>
+</DARoots>
+

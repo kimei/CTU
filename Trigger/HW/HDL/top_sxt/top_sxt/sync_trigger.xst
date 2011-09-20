@@ -1,0 +1,5 @@
+set -tmpdir "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/xst/projnav.tmp"
+set -xsthdpdir "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/xst"
+elaborate
+-ifn sync_trigger.prj
+-ifmt mixed

@@ -1,7 +1,7 @@
 Release 13.1 - par O.40d (lin64)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
-Thu Aug 18 15:10:16 2011
+Mon Sep 19 16:51:01 2011
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -49,10 +49,10 @@ Pinout by Pin Number:
 |AA2       |                         |OPAD     |MGTTXN0_118             |UNUSED   |           |              |          |         |           |         |         |          |           |                |
 |AA3       |                         |         |MGTAVTTRX_118           |         |           |              |          |         |           |         |         |          |           |                |
 |AA4       |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
-|AA5       |                         |IOBM     |IO_L9P_CC_18            |UNUSED   |           |18            |          |         |           |         |         |          |           |                |
+|AA5       |CLIENTEMAC0PAUSEVAL<10>  |IOB      |IO_L9P_CC_18            |INPUT    |LVCMOS25*  |18            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
 |AA6       |                         |         |VCCO_18                 |         |           |18            |          |         |           |         |2.50     |          |           |                |
-|AA7       |EMAC0CLIENTRXSTATS<5>    |IOB      |IO_L7P_18               |OUTPUT   |LVCMOS25*  |18            |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
-|AA8       |                         |IOBS     |IO_L7N_18               |UNUSED   |           |18            |          |         |           |         |         |          |           |                |
+|AA7       |CLIENTEMAC0PAUSEVAL<14>  |IOB      |IO_L7P_18               |INPUT    |LVCMOS25*  |18            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AA8       |CLIENTEMAC0PAUSEVAL<13>  |IOB      |IO_L7N_18               |INPUT    |LVCMOS25*  |18            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
 |AA9       |                         |IOBS     |IO_L19N_18              |UNUSED   |           |18            |          |         |           |         |         |          |           |                |
 |AA10      |                         |IOBM     |IO_L2P_A23_2            |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |AA11      |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
@@ -60,11 +60,11 @@ Pinout by Pin Number:
 |AA13      |                         |IOBM     |IO_L6P_D7_2             |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |AA14      |                         |IOBS     |IO_L6N_D6_2             |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |AA15      |                         |IOBS     |IO_L9N_D0_FS0_2         |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
-|AA16      |                         |         |VCCO_2                  |         |           |2             |          |         |           |         |2.50     |          |           |                |
+|AA16      |                         |         |VCCO_2                  |         |           |2             |          |         |           |         |any******|          |           |                |
 |AA17      |                         |IOBM     |IO_L5P_FWE_B_2          |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |AA18      |                         |IOBM     |IO_L3P_A21_2            |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |AA19      |                         |IOBS     |IO_L1N_CC_A24_2         |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
-|AA20      |                         |IOBS     |IO_L0N_GC_D14_4         |UNUSED   |           |4             |          |         |           |         |         |          |           |                |
+|AA20      |EMAC0CLIENTRXSTATS<0>    |IOB      |IO_L0N_GC_D14_4         |OUTPUT   |LVCMOS25*  |4             |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
 |AA21      |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
 |AA22      |                         |IOBM     |IO_L10P_CC_13           |UNUSED   |           |13            |          |         |           |         |         |          |           |                |
 |AA23      |                         |IOBS     |IO_L15N_13              |UNUSED   |           |13            |          |         |           |         |         |          |           |                |
@@ -75,23 +75,23 @@ Pinout by Pin Number:
 |AB2       |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
 |AB3       |                         |IPAD     |MGTREFCLKN_118          |UNUSED   |           |              |          |         |           |         |         |          |           |                |
 |AB4       |                         |IPAD     |MGTREFCLKP_118          |UNUSED   |           |              |          |         |           |         |         |          |           |                |
-|AB5       |                         |IOBS     |IO_L9N_CC_18            |UNUSED   |           |18            |          |         |           |         |         |          |           |                |
-|AB6       |                         |IOBM     |IO_L10P_CC_18           |UNUSED   |           |18            |          |         |           |         |         |          |           |                |
-|AB7       |                         |IOBS     |IO_L10N_CC_18           |UNUSED   |           |18            |          |         |           |         |         |          |           |                |
+|AB5       |CLIENTEMAC0PAUSEVAL<9>   |IOB      |IO_L9N_CC_18            |INPUT    |LVCMOS25*  |18            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AB6       |CLIENTEMAC0PAUSEVAL<8>   |IOB      |IO_L10P_CC_18           |INPUT    |LVCMOS25*  |18            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AB7       |CLIENTEMAC0PAUSEVAL<7>   |IOB      |IO_L10N_CC_18           |INPUT    |LVCMOS25*  |18            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
 |AB8       |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
 |AB9       |                         |IOBM     |IO_L19P_18              |UNUSED   |           |18            |          |         |           |         |         |          |           |                |
-|AB10      |                         |IOBM     |IO_L1P_GC_D13_4         |UNUSED   |           |4             |          |         |           |         |         |          |           |                |
-|AB11      |                         |IOBS     |IO_L1N_GC_D12_4         |UNUSED   |           |4             |          |         |           |         |         |          |           |                |
-|AB12      |                         |IOBS     |IO_L3N_GC_D8_4          |UNUSED   |           |4             |          |         |           |         |         |          |           |                |
+|AB10      |CLIENTEMAC0TXIFGDELAY<7> |IOB      |IO_L1P_GC_D13_4         |INPUT    |LVCMOS25*  |4             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AB11      |CLIENTEMAC0TXIFGDELAY<6> |IOB      |IO_L1N_GC_D12_4         |INPUT    |LVCMOS25*  |4             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AB12      |CLIENTEMAC0TXIFGDELAY<2> |IOB      |IO_L3N_GC_D8_4          |INPUT    |LVCMOS25*  |4             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
 |AB13      |                         |         |VCCO_4                  |         |           |4             |          |         |           |         |2.50     |          |           |                |
-|AB14      |                         |IOBM     |IO_L7P_GC_VRN_4         |UNUSED   |           |4             |          |         |           |         |         |          |           |                |
+|AB14      |EMAC0CLIENTTXSTATSBYTEVLD|IOB      |IO_L7P_GC_VRN_4         |OUTPUT   |LVCMOS25*  |4             |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
 |AB15      |MCLK100                  |IOBM     |IO_L9P_CC_GC_4          |OUTPUT   |LVDS_25    |4             |          |         |           |         |         |LOCATED   |YES        |NONE            |
-|AB16      |                         |IOBS     |IO_L8N_CC_GC_4          |UNUSED   |           |4             |          |         |           |         |         |          |           |                |
-|AB17      |                         |IOBS     |IO_L6N_GC_4             |UNUSED   |           |4             |          |         |           |         |         |          |           |                |
+|AB16      |EMAC0CLIENTRXSTATSBYTEVLD|IOB      |IO_L8N_CC_GC_4          |OUTPUT   |LVCMOS25*  |4             |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
+|AB17      |EMAC0CLIENTRXDVLD        |IOB      |IO_L6N_GC_4             |OUTPUT   |LVCMOS25*  |4             |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
 |AB18      |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
-|AB19      |                         |IOBM     |IO_L4P_GC_4             |UNUSED   |           |4             |          |         |           |         |         |          |           |                |
-|AB20      |                         |IOBS     |IO_L2N_GC_D10_4         |UNUSED   |           |4             |          |         |           |         |         |          |           |                |
-|AB21      |                         |IOBM     |IO_L2P_GC_D11_4         |UNUSED   |           |4             |          |         |           |         |         |          |           |                |
+|AB19      |CLIENTEMAC0TXIFGDELAY<1> |IOB      |IO_L4P_GC_4             |INPUT    |LVCMOS25*  |4             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AB20      |CLIENTEMAC0TXIFGDELAY<4> |IOB      |IO_L2N_GC_D10_4         |INPUT    |LVCMOS25*  |4             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AB21      |CLIENTEMAC0TXIFGDELAY<5> |IOB      |IO_L2P_GC_D11_4         |INPUT    |LVCMOS25*  |4             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
 |AB22      |                         |IOBS     |IO_L7N_17               |UNUSED   |           |17            |          |         |           |         |         |          |           |                |
 |AB23      |                         |         |VCCO_17                 |         |           |17            |          |         |           |         |1.80     |          |           |                |
 |AB24      |                         |IOBM     |IO_L15P_13              |UNUSED   |           |13            |          |         |           |         |         |          |           |                |
@@ -103,19 +103,19 @@ Pinout by Pin Number:
 |AC4       |                         |         |MGTAVCC_118             |         |           |              |          |         |           |         |         |          |           |                |
 |AC5       |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
 |AC6       |                         |IOBM     |IO_L12P_VRN_18          |UNUSED   |           |18            |          |         |           |         |         |          |           |                |
-|AC7       |                         |IOBS     |IO_L16N_18              |UNUSED   |           |18            |          |         |           |         |         |          |           |                |
+|AC7       |CLIENTEMAC0PAUSEVAL<0>   |IOB      |IO_L16N_18              |INPUT    |LVCMOS25*  |18            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
 |AC8       |SYNC_TRIGGER_OUT<1>      |IOBM     |IO_L17P_18              |OUTPUT   |LVDS_25    |18            |          |         |           |         |         |LOCATED   |NO         |NONE            |
 |AC9       |                         |IOBS     |IO_L18N_18              |UNUSED   |           |18            |          |         |           |         |         |          |           |                |
 |AC10      |                         |         |VCCO_18                 |         |           |18            |          |         |           |         |2.50     |          |           |                |
-|AC11      |                         |IOBM     |IO_L3P_GC_D9_4          |UNUSED   |           |4             |          |         |           |         |         |          |           |                |
-|AC12      |                         |IOBM     |IO_L5P_GC_4             |UNUSED   |           |4             |          |         |           |         |         |          |           |                |
-|AC13      |                         |IOBS     |IO_L5N_GC_4             |UNUSED   |           |4             |          |         |           |         |         |          |           |                |
-|AC14      |                         |IOBS     |IO_L7N_GC_VRP_4         |UNUSED   |           |4             |          |         |           |         |         |          |           |                |
+|AC11      |CLIENTEMAC0TXIFGDELAY<3> |IOB      |IO_L3P_GC_D9_4          |INPUT    |LVCMOS25*  |4             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AC12      |CLIENTEMAC0TXIFGDELAY<0> |IOB      |IO_L5P_GC_4             |INPUT    |LVCMOS25*  |4             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AC13      |CLIENTEMAC0PAUSEREQ      |IOB      |IO_L5N_GC_4             |INPUT    |LVCMOS25*  |4             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AC14      |EMAC0CLIENTRXFRAMEDROP   |IOB      |IO_L7N_GC_VRP_4         |OUTPUT   |LVCMOS25*  |4             |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
 |AC15      |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
 |AC16      |MCLK100_b                |IOBS     |IO_L9N_CC_GC_4          |OUTPUT   |LVDS_25    |4             |          |         |           |         |         |LOCATED   |NO         |NONE            |
-|AC17      |                         |IOBM     |IO_L8P_CC_GC_4          |UNUSED   |           |4             |          |         |           |         |         |          |           |                |
-|AC18      |                         |IOBM     |IO_L6P_GC_4             |UNUSED   |           |4             |          |         |           |         |         |          |           |                |
-|AC19      |                         |IOBS     |IO_L4N_GC_VREF_4        |UNUSED   |           |4             |          |         |           |         |         |          |           |                |
+|AC17      |EMAC0CLIENTTXSTATSVLD    |IOB      |IO_L8P_CC_GC_4          |OUTPUT   |LVCMOS25*  |4             |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
+|AC18      |EMAC0CLIENTTXSTATS       |IOB      |IO_L6P_GC_4             |OUTPUT   |LVCMOS25*  |4             |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
+|AC19      |EMAC0CLIENTRXSTATSVLD    |IOB      |IO_L4N_GC_VREF_4        |OUTPUT   |LVCMOS25*  |4             |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
 |AC20      |                         |         |VCCO_17                 |         |           |17            |          |         |           |         |1.80     |          |           |                |
 |AC21      |                         |IOBM     |IO_L11P_CC_17           |UNUSED   |           |17            |          |         |           |         |         |          |           |                |
 |AC22      |                         |IOBM     |IO_L7P_17               |UNUSED   |           |17            |          |         |           |         |         |          |           |                |
@@ -128,7 +128,7 @@ Pinout by Pin Number:
 |AD3       |                         |         |MGTAVCCPLL_118          |         |           |              |          |         |           |         |         |          |           |                |
 |AD4       |                         |IOBS     |IO_L14N_VREF_18         |UNUSED   |           |18            |          |         |           |         |         |          |           |                |
 |AD5       |                         |IOBS     |IO_L12N_VRP_18          |UNUSED   |           |18            |          |         |           |         |         |          |           |                |
-|AD6       |                         |IOBM     |IO_L16P_18              |UNUSED   |           |18            |          |         |           |         |         |          |           |                |
+|AD6       |CLIENTEMAC0PAUSEVAL<1>   |IOB      |IO_L16P_18              |INPUT    |LVCMOS25*  |18            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
 |AD7       |                         |         |VCCO_18                 |         |           |18            |          |         |           |         |2.50     |          |           |                |
 |AD8       |SYNC_TRIGGER_OUT_b<1>    |IOBS     |IO_L17N_18              |OUTPUT   |LVDS_25    |18            |          |         |           |         |         |LOCATED   |NO         |NONE            |
 |AD9       |                         |IOBM     |IO_L18P_18              |UNUSED   |           |18            |          |         |           |         |         |          |           |                |
@@ -139,9 +139,9 @@ Pinout by Pin Number:
 |AD14      |DIP_SWITCH<4>            |IOB      |IO_L19N_17              |INPUT    |LVCMOS18   |17            |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
 |AD15      |DIP_SWITCH<3>            |IOB      |IO_L16P_17              |INPUT    |LVCMOS18   |17            |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
 |AD16      |                         |IOBS     |IO_L15N_17              |UNUSED   |           |17            |          |         |           |         |         |          |           |                |
-|AD17      |                         |         |VCCO_2                  |         |           |2             |          |         |           |         |2.50     |          |           |                |
+|AD17      |                         |         |VCCO_2                  |         |           |2             |          |         |           |         |any******|          |           |                |
 |AD18      |                         |IOBS     |IO_L13N_17              |UNUSED   |           |17            |          |         |           |         |         |          |           |                |
-|AD19      |BUTTONS<2>               |IOB      |IO_L10P_CC_17           |INPUT    |LVCMOS18   |17            |          |         |PULLUP     |NONE     |         |LOCATED   |NO         |NONE            |
+|AD19      |BUTTONS<2>               |IOB      |IO_L10P_CC_17           |INPUT    |LVCMOS18   |17            |          |         |PULLUP     |NONE     |         |LOCATED   |YES        |NONE            |
 |AD20      |BUTTONS<3>               |IOB      |IO_L10N_CC_17           |INPUT    |LVCMOS18   |17            |          |         |PULLUP     |NONE     |         |LOCATED   |NO         |NONE            |
 |AD21      |                         |IOBS     |IO_L11N_CC_17           |UNUSED   |           |17            |          |         |           |         |         |          |           |                |
 |AD22      |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
@@ -152,10 +152,10 @@ Pinout by Pin Number:
 |AE2       |                         |OPAD     |MGTTXP1_118             |UNUSED   |           |              |          |         |           |         |         |          |           |                |
 |AE3       |                         |         |MGTAVTTTX_118           |         |           |              |          |         |           |         |         |          |           |                |
 |AE4       |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
-|AE5       |                         |IOBM     |IO_L14P_18              |UNUSED   |           |18            |          |         |           |         |         |          |           |                |
-|AE6       |                         |IOBM     |IO_L13P_18              |UNUSED   |           |18            |          |         |           |         |         |          |           |                |
-|AE7       |                         |IOBS     |IO_L11N_CC_18           |UNUSED   |           |18            |          |         |           |         |         |          |           |                |
-|AE8       |                         |IOBM     |IO_L11P_CC_18           |UNUSED   |           |18            |          |         |           |         |         |          |           |                |
+|AE5       |CLIENTEMAC0PAUSEVAL<2>   |IOB      |IO_L14P_18              |INPUT    |LVCMOS25*  |18            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AE6       |CLIENTEMAC0PAUSEVAL<4>   |IOB      |IO_L13P_18              |INPUT    |LVCMOS25*  |18            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AE7       |CLIENTEMAC0PAUSEVAL<5>   |IOB      |IO_L11N_CC_18           |INPUT    |LVCMOS25*  |18            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AE8       |CLIENTEMAC0PAUSEVAL<6>   |IOB      |IO_L11P_CC_18           |INPUT    |LVCMOS25*  |18            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
 |AE9       |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
 |AE10      |SYNC_TRIGGER_IN_b<1>     |IOB      |IO_L4N_VREF_18          |INPUT    |LVDS_25    |18            |          |         |           |NONE     |         |LOCATED   |NO         |DIFF_TERM       |
 |AE11      |SYNC_TRIGGER_OUT<0>      |IOBM     |IO_L2P_18               |OUTPUT   |LVDS_25    |18            |          |         |           |         |         |LOCATED   |NO         |NONE            |
@@ -167,7 +167,7 @@ Pinout by Pin Number:
 |AE17      |                         |IOBM     |IO_L14P_17              |UNUSED   |           |17            |          |         |           |         |         |          |           |                |
 |AE18      |                         |IOBM     |IO_L13P_17              |UNUSED   |           |17            |          |         |           |         |         |          |           |                |
 |AE19      |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
-|AE20      |BUTTONS<1>               |IOB      |IO_L9N_CC_17            |INPUT    |LVCMOS18   |17            |          |         |PULLUP     |NONE     |         |LOCATED   |NO         |NONE            |
+|AE20      |BUTTONS<1>               |IOB      |IO_L9N_CC_17            |INPUT    |LVCMOS18   |17            |          |         |PULLUP     |NONE     |         |LOCATED   |YES        |NONE            |
 |AE21      |                         |IOBS     |IO_L8N_CC_17            |UNUSED   |           |17            |          |         |           |         |         |          |           |                |
 |AE22      |                         |IOBM     |IO_L5P_17               |UNUSED   |           |17            |          |         |           |         |         |          |           |                |
 |AE23      |                         |IOBS     |IO_L4N_VREF_17          |UNUSED   |           |17            |          |         |           |         |         |          |           |                |
@@ -177,10 +177,10 @@ Pinout by Pin Number:
 |AF2       |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
 |AF3       |RESET_ROC_B2_b           |IOBS     |IO_L15N_18              |OUTPUT   |LVDS_25    |18            |          |         |           |         |         |LOCATED   |NO         |NONE            |
 |AF4       |RESET_ROC_B2             |IOBM     |IO_L15P_18              |OUTPUT   |LVDS_25    |18            |          |         |           |         |         |LOCATED   |NO         |NONE            |
-|AF5       |                         |IOBS     |IO_L13N_18              |UNUSED   |           |18            |          |         |           |         |         |          |           |                |
+|AF5       |CLIENTEMAC0PAUSEVAL<3>   |IOB      |IO_L13N_18              |INPUT    |LVCMOS25*  |18            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
 |AF6       |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
-|AF7       |                         |IOBM     |IO_L8P_CC_18            |UNUSED   |           |18            |          |         |           |         |         |          |           |                |
-|AF8       |                         |IOBS     |IO_L8N_CC_18            |UNUSED   |           |18            |          |         |           |         |         |          |           |                |
+|AF7       |CLIENTEMAC0PAUSEVAL<12>  |IOB      |IO_L8P_CC_18            |INPUT    |LVCMOS25*  |18            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AF8       |CLIENTEMAC0PAUSEVAL<11>  |IOB      |IO_L8N_CC_18            |INPUT    |LVCMOS25*  |18            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
 |AF9       |RESET_ROC_B1             |IOBM     |IO_L6P_18               |OUTPUT   |LVDS_25    |18            |          |         |           |         |         |LOCATED   |NO         |NONE            |
 |AF10      |RESET_ROC_B1_b           |IOBS     |IO_L6N_18               |OUTPUT   |LVDS_25    |18            |          |         |           |         |         |LOCATED   |NO         |NONE            |
 |AF11      |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
@@ -194,8 +194,8 @@ Pinout by Pin Number:
 |AF19      |                         |IOBM     |IO_L12P_VRN_17          |UNUSED   |           |17            |          |         |           |         |         |          |           |                |
 |AF20      |BUTTONS<0>               |IOB      |IO_L9P_CC_17            |INPUT    |LVCMOS18   |17            |          |         |PULLUP     |NONE     |         |LOCATED   |NO         |NONE            |
 |AF21      |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
-|AF22      |LEDS<0>                  |IOB      |IO_L8P_CC_17            |OUTPUT   |LVCMOS18   |17            |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
-|AF23      |LEDS<1>                  |IOB      |IO_L4P_17               |OUTPUT   |LVCMOS18   |17            |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
+|AF22      |LEDS<0>                  |IOB      |IO_L8P_CC_17            |OUTPUT   |LVCMOS18   |17            |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
+|AF23      |LEDS<1>                  |IOB      |IO_L4P_17               |OUTPUT   |LVCMOS18   |17            |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
 |AF24      |                         |IOBS     |IO_L3N_17               |UNUSED   |           |17            |          |         |           |         |         |          |           |                |
 |AF25      |LEDS<2>                  |IOB      |IO_L3P_17               |OUTPUT   |LVCMOS18   |17            |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |AF26      |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
@@ -223,7 +223,7 @@ Pinout by Pin Number:
 |B23       |                         |         |VCCO_15                 |         |           |15            |          |         |           |         |2.50     |          |           |                |
 |B24       |GMII_RX_ER_0             |IOB      |IO_L15P_15              |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |LOCATED   |YES        |NONE            |
 |B25       |GMII_RXD_0<6>            |IOB      |IO_L17P_15              |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |LOCATED   |YES        |NONE            |
-|B26       |PHY_RESET_0              |IOB      |IO_L18P_15              |OUTPUT   |LVCMOS25*  |15            |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
+|B26       |PHY_RESET_0              |IOB      |IO_L18P_15              |OUTPUT   |LVCMOS25*  |15            |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
 |C1        |                         |IPAD     |MGTRXP0_116             |UNUSED   |           |              |          |         |           |         |         |          |           |                |
 |C2        |                         |OPAD     |MGTTXN0_116             |UNUSED   |           |              |          |         |           |         |         |          |           |                |
 |C3        |                         |         |MGTAVTTRX_116           |         |           |              |          |         |           |         |         |          |           |                |
@@ -233,7 +233,7 @@ Pinout by Pin Number:
 |C7        |                         |IOBM     |IO_L9P_CC_16            |UNUSED   |           |16            |          |         |           |         |         |          |           |                |
 |C8        |                         |IOBS     |IO_L6N_16               |UNUSED   |           |16            |          |         |           |         |         |          |           |                |
 |C9        |                         |IOBM     |IO_L8P_CC_16            |UNUSED   |           |16            |          |         |           |         |         |          |           |                |
-|C10       |                         |         |VCCO_16                 |         |           |16            |          |         |           |         |2.50     |          |           |                |
+|C10       |                         |         |VCCO_16                 |         |           |16            |          |         |           |         |any******|          |           |                |
 |C11       |                         |IOBM     |IO_L19P_16              |UNUSED   |           |16            |          |         |           |         |         |          |           |                |
 |C12       |                         |IOBS     |IO_L17N_16              |UNUSED   |           |16            |          |         |           |         |         |          |           |                |
 |C13       |                         |IOBM     |IO_L0P_15               |UNUSED   |           |15            |          |         |           |         |         |          |           |                |
@@ -256,7 +256,7 @@ Pinout by Pin Number:
 |D4        |                         |IPAD     |MGTREFCLKP_116          |UNUSED   |           |              |          |         |           |         |         |          |           |                |
 |D5        |                         |IOBM     |IO_L18P_16              |UNUSED   |           |16            |          |         |           |         |         |          |           |                |
 |D6        |                         |IOBS     |IO_L7N_16               |UNUSED   |           |16            |          |         |           |         |         |          |           |                |
-|D7        |                         |         |VCCO_16                 |         |           |16            |          |         |           |         |2.50     |          |           |                |
+|D7        |                         |         |VCCO_16                 |         |           |16            |          |         |           |         |any******|          |           |                |
 |D8        |                         |IOBS     |IO_L8N_CC_16            |UNUSED   |           |16            |          |         |           |         |         |          |           |                |
 |D9        |                         |IOBM     |IO_L11P_CC_16           |UNUSED   |           |16            |          |         |           |         |         |          |           |                |
 |D10       |                         |IOBS     |IO_L11N_CC_16           |UNUSED   |           |16            |          |         |           |         |         |          |           |                |
@@ -306,7 +306,7 @@ Pinout by Pin Number:
 |F2        |                         |OPAD     |MGTTXN1_116             |UNUSED   |           |              |          |         |           |         |         |          |           |                |
 |F3        |                         |         |MGTAVCCPLL_116          |         |           |              |          |         |           |         |         |          |           |                |
 |F4        |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
-|F5        |CLIENTEMAC0PAUSEVAL<13>  |IOB      |IO_L3N_12               |INPUT    |LVCMOS25*  |12            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|F5        |                         |IOBS     |IO_L3N_12               |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
 |F6        |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
 |F7        |                         |IOBM     |IO_L1P_16               |UNUSED   |           |16            |          |         |           |         |         |          |           |                |
 |F8        |                         |IOBS     |IO_L1N_16               |UNUSED   |           |16            |          |         |           |         |         |          |           |                |
@@ -330,11 +330,11 @@ Pinout by Pin Number:
 |F26       |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
 |G2        |                         |OPAD     |MGTTXP1_116             |UNUSED   |           |              |          |         |           |         |         |          |           |                |
 |G3        |                         |         |MGTAVTTTX_116           |         |           |              |          |         |           |         |         |          |           |                |
-|G4        |CLIENTEMAC0PAUSEVAL<11>  |IOB      |IO_L5P_12               |INPUT    |LVCMOS25*  |12            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
-|G5        |CLIENTEMAC0PAUSEVAL<14>  |IOB      |IO_L3P_12               |INPUT    |LVCMOS25*  |12            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
-|G6        |EMAC0CLIENTRXSTATS<2>    |IOB      |IO_L1P_12               |OUTPUT   |LVCMOS25*  |12            |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
+|G4        |                         |IOBM     |IO_L5P_12               |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
+|G5        |                         |IOBM     |IO_L3P_12               |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
+|G6        |                         |IOBM     |IO_L1P_12               |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
 |G7        |                         |IOBS     |IO_L0N_16               |UNUSED   |           |16            |          |         |           |         |         |          |           |                |
-|G8        |                         |         |VCCO_16                 |         |           |16            |          |         |           |         |2.50     |          |           |                |
+|G8        |                         |         |VCCO_16                 |         |           |16            |          |         |           |         |any******|          |           |                |
 |G9        |                         |IOBS     |IO_L2N_16               |UNUSED   |           |16            |          |         |           |         |         |          |           |                |
 |G10       |                         |IOBM     |IO_L9P_CC_A1_D17_1      |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |G11       |                         |IOBM     |IO_L7P_A5_D21_1         |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
@@ -355,10 +355,10 @@ Pinout by Pin Number:
 |G26       |                         |IOBS     |IO_L1N_11               |UNUSED   |           |11            |          |         |           |         |         |          |           |                |
 |H2        |                         |OPAD     |MGTTXP0_112             |UNUSED   |           |              |          |         |           |         |         |          |           |                |
 |H3        |                         |         |MGTAVTTTX_112           |         |           |              |          |         |           |         |         |          |           |                |
-|H4        |CLIENTEMAC0PAUSEVAL<9>   |IOB      |IO_L5N_12               |INPUT    |LVCMOS25*  |12            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
-|H5        |                         |         |VCCO_12                 |         |           |12            |          |         |           |         |2.50     |          |           |                |
-|H6        |EMAC0CLIENTRXSTATS<1>    |IOB      |IO_L1N_12               |OUTPUT   |LVCMOS25*  |12            |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
-|H7        |EMAC0CLIENTRXSTATS<3>    |IOB      |IO_L0P_16               |OUTPUT   |LVCMOS25*  |16            |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
+|H4        |                         |IOBS     |IO_L5N_12               |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
+|H5        |                         |         |VCCO_12                 |         |           |12            |          |         |           |         |any******|          |           |                |
+|H6        |                         |IOBS     |IO_L1N_12               |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
+|H7        |                         |IOBM     |IO_L0P_16               |UNUSED   |           |16            |          |         |           |         |         |          |           |                |
 |H8        |                         |IOBM     |IO_L3P_16               |UNUSED   |           |16            |          |         |           |         |         |          |           |                |
 |H9        |                         |IOBS     |IO_L9N_CC_A0_D16_1      |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |H10       |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
@@ -382,8 +382,8 @@ Pinout by Pin Number:
 |J2        |                         |OPAD     |MGTTXN0_112             |UNUSED   |           |              |          |         |           |         |         |          |           |                |
 |J3        |                         |         |MGTAVTTRX_112           |         |           |              |          |         |           |         |         |          |           |                |
 |J4        |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
-|J5        |CLIENTEMAC0PAUSEVAL<6>   |IOB      |IO_L7P_12               |INPUT    |LVCMOS25*  |12            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
-|J6        |CLIENTEMAC0PAUSEVAL<5>   |IOB      |IO_L7N_12               |INPUT    |LVCMOS25*  |12            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|J5        |                         |IOBM     |IO_L7P_12               |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
+|J6        |                         |IOBS     |IO_L7N_12               |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
 |J7        |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
 |J8        |                         |IOBS     |IO_L3N_16               |UNUSED   |           |16            |          |         |           |         |         |          |           |                |
 |J10       |                         |         |D_IN_0                  |         |           |              |          |         |           |         |         |          |           |                |
@@ -407,9 +407,9 @@ Pinout by Pin Number:
 |K2        |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
 |K3        |                         |IPAD     |MGTREFCLKN_112          |UNUSED   |           |              |          |         |           |         |         |          |           |                |
 |K4        |                         |IPAD     |MGTREFCLKP_112          |UNUSED   |           |              |          |         |           |         |         |          |           |                |
-|K5        |CLIENTEMAC0PAUSEVAL<1>   |IOB      |IO_L9P_CC_12            |INPUT    |LVCMOS25*  |12            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
-|K6        |CLIENTEMAC0TXIFGDELAY<6> |IOB      |IO_L10P_CC_12           |INPUT    |LVCMOS25*  |12            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
-|K7        |CLIENTEMAC0TXIFGDELAY<5> |IOB      |IO_L10N_CC_12           |INPUT    |LVCMOS25*  |12            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|K5        |                         |IOBM     |IO_L9P_CC_12            |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
+|K6        |                         |IOBM     |IO_L10P_CC_12           |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
+|K7        |                         |IOBS     |IO_L10N_CC_12           |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
 |K8        |                         |IOBM     |IO_L12P_VRN_12          |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
 |K9        |                         |         |VCCAUX                  |         |           |              |          |         |           |         |2.5      |          |           |                |
 |K10       |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
@@ -433,8 +433,8 @@ Pinout by Pin Number:
 |L2        |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
 |L3        |                         |         |MGTAVCC_112             |         |           |              |          |         |           |         |         |          |           |                |
 |L4        |                         |         |MGTAVCC_112             |         |           |              |          |         |           |         |         |          |           |                |
-|L5        |CLIENTEMAC0TXIFGDELAY<7> |IOB      |IO_L9N_CC_12            |INPUT    |LVCMOS25*  |12            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
-|L6        |                         |         |VCCO_12                 |         |           |12            |          |         |           |         |2.50     |          |           |                |
+|L5        |                         |IOBS     |IO_L9N_CC_12            |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
+|L6        |                         |         |VCCO_12                 |         |           |12            |          |         |           |         |any******|          |           |                |
 |L7        |                         |IOBS     |IO_L12N_VRP_12          |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
 |L8        |                         |IOBS     |IO_L14N_VREF_12         |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
 |L9        |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
@@ -461,7 +461,7 @@ Pinout by Pin Number:
 |M4        |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
 |M5        |                         |         |NC                      |         |           |              |          |         |           |         |         |          |           |                |
 |M6        |                         |IOBM     |IO_L17P_12              |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
-|M7        |EMAC0CLIENTRXSTATSBYTEVLD|IOB      |IO_L14P_12              |OUTPUT   |LVCMOS25*  |12            |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
+|M7        |                         |IOBM     |IO_L14P_12              |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
 |M8        |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
 |M9        |                         |         |VCCAUX                  |         |           |              |          |         |           |         |2.5      |          |           |                |
 |M10       |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
@@ -511,7 +511,7 @@ Pinout by Pin Number:
 |P4        |                         |         |MGTRREF_112             |         |           |              |          |         |           |         |         |          |           |                |
 |P5        |                         |         |MGTAVTTRXC              |         |           |              |          |         |           |         |         |          |           |                |
 |P6        |                         |IOBM     |IO_L16P_12              |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
-|P7        |                         |         |VCCO_12                 |         |           |12            |          |         |           |         |2.50     |          |           |                |
+|P7        |                         |         |VCCO_12                 |         |           |12            |          |         |           |         |any******|          |           |                |
 |P8        |                         |IOBS     |IO_L18N_12              |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
 |P9        |                         |         |VCCAUX                  |         |           |              |          |         |           |         |2.5      |          |           |                |
 |P10       |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
@@ -535,8 +535,8 @@ Pinout by Pin Number:
 |R2        |                         |OPAD     |MGTTXN0_114             |UNUSED   |           |              |          |         |           |         |         |          |           |                |
 |R3        |                         |         |MGTAVTTRX_114           |         |           |              |          |         |           |         |         |          |           |                |
 |R4        |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
-|R5        |EMAC0CLIENTRXDVLD        |IOB      |IO_L13N_12              |OUTPUT   |LVCMOS25*  |12            |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
-|R6        |EMAC0CLIENTRXSTATSVLD    |IOB      |IO_L15P_12              |OUTPUT   |LVCMOS25*  |12            |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
+|R5        |                         |IOBS     |IO_L13N_12              |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
+|R6        |                         |IOBM     |IO_L15P_12              |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
 |R7        |                         |IOBS     |IO_L19N_12              |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
 |R8        |                         |IOBM     |IO_L19P_12              |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
 |R9        |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
@@ -561,10 +561,10 @@ Pinout by Pin Number:
 |T2        |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
 |T3        |                         |IPAD     |MGTREFCLKN_114          |UNUSED   |           |              |          |         |           |         |         |          |           |                |
 |T4        |                         |IPAD     |MGTREFCLKP_114          |UNUSED   |           |              |          |         |           |         |         |          |           |                |
-|T5        |CLIENTEMAC0TXIFGDELAY<0> |IOB      |IO_L13P_12              |INPUT    |LVCMOS25*  |12            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|T5        |                         |IOBM     |IO_L13P_12              |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
 |T6        |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
-|T7        |EMAC0CLIENTRXFRAMEDROP   |IOB      |IO_L15N_12              |OUTPUT   |LVCMOS25*  |12            |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
-|T8        |CLIENTEMAC0PAUSEVAL<3>   |IOB      |IO_L8N_CC_12            |INPUT    |LVCMOS25*  |12            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|T7        |                         |IOBS     |IO_L15N_12              |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
+|T8        |                         |IOBS     |IO_L8N_CC_12            |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
 |T9        |                         |         |VCCAUX                  |         |           |              |          |         |           |         |2.5      |          |           |                |
 |T10       |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
 |T11       |                         |         |VCCINT                  |         |           |              |          |         |           |         |1.0      |          |           |                |
@@ -587,9 +587,9 @@ Pinout by Pin Number:
 |U2        |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
 |U3        |                         |         |MGTAVCC_114             |         |           |              |          |         |           |         |         |          |           |                |
 |U4        |                         |         |MGTAVCC_114             |         |           |              |          |         |           |         |         |          |           |                |
-|U5        |CLIENTEMAC0TXIFGDELAY<1> |IOB      |IO_L11N_CC_12           |INPUT    |LVCMOS25*  |12            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
-|U6        |CLIENTEMAC0TXIFGDELAY<4> |IOB      |IO_L11P_CC_12           |INPUT    |LVCMOS25*  |12            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
-|U7        |CLIENTEMAC0PAUSEVAL<4>   |IOB      |IO_L8P_CC_12            |INPUT    |LVCMOS25*  |12            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|U5        |                         |IOBS     |IO_L11N_CC_12           |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
+|U6        |                         |IOBM     |IO_L11P_CC_12           |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
+|U7        |                         |IOBM     |IO_L8P_CC_12            |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
 |U8        |                         |         |VCCAUX                  |         |           |              |          |         |           |         |2.5      |          |           |                |
 |U9        |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
 |U10       |                         |         |VCCINT                  |         |           |              |          |         |           |         |1.0      |          |           |                |
@@ -614,10 +614,10 @@ Pinout by Pin Number:
 |V3        |                         |         |MGTAVCCPLL_114          |         |           |              |          |         |           |         |         |          |           |                |
 |V4        |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
 |V5        |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
-|V6        |CLIENTEMAC0PAUSEVAL<8>   |IOB      |IO_L6P_12               |INPUT    |LVCMOS25*  |12            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
-|V7        |CLIENTEMAC0PAUSEVAL<7>   |IOB      |IO_L6N_12               |INPUT    |LVCMOS25*  |12            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
-|V8        |EMAC0CLIENTTXSTATSVLD    |IOB      |IO_L1P_18               |OUTPUT   |LVCMOS25*  |18            |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
-|V9        |CLIENTEMAC0TXIFGDELAY<2> |IOB      |IO_L1N_18               |INPUT    |LVCMOS25*  |18            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|V6        |                         |IOBM     |IO_L6P_12               |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
+|V7        |                         |IOBS     |IO_L6N_12               |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
+|V8        |EMAC0CLIENTRXSTATS<6>    |IOB      |IO_L1P_18               |OUTPUT   |LVCMOS25*  |18            |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
+|V9        |EMAC0CLIENTRXSTATS<5>    |IOB      |IO_L1N_18               |OUTPUT   |LVCMOS25*  |18            |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
 |V10       |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
 |V11       |                         |         |TCK_0                   |         |           |              |          |         |           |         |         |          |           |                |
 |V12       |                         |         |TDO_0                   |         |           |              |          |         |           |         |         |          |           |                |
@@ -637,14 +637,14 @@ Pinout by Pin Number:
 |V26       |                         |IOBS     |IO_L4N_VREF_13          |UNUSED   |           |13            |          |         |           |         |         |          |           |                |
 |W2        |                         |OPAD     |MGTTXP1_114             |UNUSED   |           |              |          |         |           |         |         |          |           |                |
 |W3        |                         |         |MGTAVTTTX_114           |         |           |              |          |         |           |         |         |          |           |                |
-|W4        |CLIENTEMAC0PAUSEVAL<15>  |IOB      |IO_L2N_12               |INPUT    |LVCMOS25*  |12            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
-|W5        |CLIENTEMAC0PAUSEVAL<12>  |IOB      |IO_L4P_12               |INPUT    |LVCMOS25*  |12            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|W4        |                         |IOBS     |IO_L2N_12               |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
+|W5        |                         |IOBM     |IO_L4P_12               |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
 |W6        |                         |IOBS     |IO_L4N_VREF_12          |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
 |W7        |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
-|W8        |CLIENTEMAC0PAUSEVAL<0>   |IOB      |IO_L3N_18               |INPUT    |LVCMOS25*  |18            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
-|W9        |CLIENTEMAC0TXIFGDELAY<3> |IOB      |IO_L3P_18               |INPUT    |LVCMOS25*  |18            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|W8        |EMAC0CLIENTRXSTATS<3>    |IOB      |IO_L3N_18               |OUTPUT   |LVCMOS25*  |18            |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
+|W9        |EMAC0CLIENTRXSTATS<4>    |IOB      |IO_L3P_18               |OUTPUT   |LVCMOS25*  |18            |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
 |W10       |                         |         |VCCAUX                  |         |           |              |          |         |           |         |2.5      |          |           |                |
-|W11       |EMAC0CLIENTTXSTATSBYTEVLD|IOB      |IO_L0P_CC_RS1_2         |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
+|W11       |                         |IOBM     |IO_L0P_CC_RS1_2         |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |W12       |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
 |W13       |                         |         |TMS_0                   |         |           |              |          |         |           |         |         |          |           |                |
 |W14       |                         |IOBS     |IO_L8N_D2_FS2_2         |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
@@ -662,13 +662,13 @@ Pinout by Pin Number:
 |W26       |                         |IOBM     |IO_L8P_CC_SM1P_13       |UNUSED   |           |13            |          |         |           |         |         |          |           |                |
 |Y2        |                         |OPAD     |MGTTXP0_118             |UNUSED   |           |              |          |         |           |         |         |          |           |                |
 |Y3        |                         |         |MGTAVTTTX_118           |         |           |              |          |         |           |         |         |          |           |                |
-|Y4        |EMAC0CLIENTRXSTATS<0>    |IOB      |IO_L2P_12               |OUTPUT   |LVCMOS25*  |12            |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
-|Y5        |EMAC0CLIENTRXSTATS<4>    |IOB      |IO_L0N_12               |OUTPUT   |LVCMOS25*  |12            |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
-|Y6        |EMAC0CLIENTRXSTATS<6>    |IOB      |IO_L0P_12               |OUTPUT   |LVCMOS25*  |12            |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
-|Y7        |CLIENTEMAC0PAUSEVAL<2>   |IOB      |IO_L5P_18               |INPUT    |LVCMOS25*  |18            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
-|Y8        |CLIENTEMAC0PAUSEVAL<10>  |IOB      |IO_L5N_18               |INPUT    |LVCMOS25*  |18            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|Y4        |                         |IOBM     |IO_L2P_12               |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
+|Y5        |                         |IOBS     |IO_L0N_12               |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
+|Y6        |                         |IOBM     |IO_L0P_12               |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
+|Y7        |EMAC0CLIENTRXSTATS<2>    |IOB      |IO_L5P_18               |OUTPUT   |LVCMOS25*  |18            |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
+|Y8        |CLIENTEMAC0PAUSEVAL<15>  |IOB      |IO_L5N_18               |INPUT    |LVCMOS25*  |18            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
 |Y9        |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |
-|Y10       |EMAC0CLIENTTXSTATS       |IOB      |IO_L0N_CC_RS0_2         |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
+|Y10       |                         |IOBS     |IO_L0N_CC_RS0_2         |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |Y11       |                         |IOBS     |IO_L2N_A22_2            |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |Y12       |                         |IOBM     |IO_L4P_FCS_B_2          |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |Y13       |                         |IOBM     |IO_L8P_D3_2             |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
@@ -678,8 +678,8 @@ Pinout by Pin Number:
 |Y17       |                         |IOBS     |IO_L5N_CSO_B_2          |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |Y18       |                         |IOBS     |IO_L3N_A20_2            |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |Y19       |                         |         |VCCAUX                  |         |           |              |          |         |           |         |2.5      |          |           |                |
-|Y20       |CLIENTEMAC0PAUSEREQ      |IOB      |IO_L1P_CC_A25_2         |INPUT    |LVCMOS25*  |2             |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
-|Y21       |                         |IOBM     |IO_L0P_GC_D15_4         |UNUSED   |           |4             |          |         |           |         |         |          |           |                |
+|Y20       |                         |IOBM     |IO_L1P_CC_A25_2         |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
+|Y21       |EMAC0CLIENTRXSTATS<1>    |IOB      |IO_L0P_GC_D15_4         |OUTPUT   |LVCMOS25*  |4             |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
 |Y22       |                         |IOBS     |IO_L10N_CC_13           |UNUSED   |           |13            |          |         |           |         |         |          |           |                |
 |Y23       |                         |IOBM     |IO_L11P_CC_13           |UNUSED   |           |13            |          |         |           |         |         |          |           |                |
 |Y24       |                         |         |GND                     |         |           |              |          |         |           |         |         |          |           |                |

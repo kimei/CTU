@@ -31,7 +31,7 @@ library UNISIM;
 use UNISIM.VComponents.all;
 
 library work;
-use work.components.all;
+
 use work.constants.all;
 
 
@@ -66,109 +66,64 @@ entity top is
     DIP_SWITCH : in  std_logic_vector(7 downto 0);
 
 
-
-    --Communication
-    --uart
-
-
-
-    -- memory
-
-    -- from system.vhi
-
-
---    fpga_0_Hard_Ethernet_MAC_GMII_RX_ER_0_pin  : in std_logic;
---    fpga_0_Hard_Ethernet_MAC_GMII_RX_CLK_0_pin : in std_logic;
---    fpga_0_Hard_Ethernet_MAC_GMII_RX_DV_0_pin  : in std_logic;
---    fpga_0_Hard_Ethernet_MAC_GMII_RXD_0_pin    : in std_logic_vector(7 downto 0);
---    fpga_0_Hard_Ethernet_MAC_MII_TX_CLK_0_pin  : in std_logic;
-
-
---    fpga_0_FLASH_8Mx16_Mem_DQ_pin       : inout std_logic_vector(0 to 15);
---    fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQS   : inout std_logic_vector(3 downto 0);
---    fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQS_N : inout std_logic_vector(3 downto 0);
---    fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQ    : inout std_logic_vector(31 downto 0);
---    fpga_0_Hard_Ethernet_MAC_MDIO_0_pin : inout std_logic;
-
-
---    fpga_0_FLASH_8Mx16_Mem_A_pin                : out std_logic_vector(7 to 31);
---    fpga_0_FLASH_8Mx16_Mem_WEN_pin              : out std_logic;
---    fpga_0_FLASH_8Mx16_Mem_OEN_pin              : out std_logic_vector(0 to 0);
---    fpga_0_FLASH_8Mx16_Mem_CEN_pin              : out std_logic_vector(0 to 0);
---    fpga_0_FLASH_8Mx16_rpn_dummy_pin            : out std_logic;
---    fpga_0_FLASH_8Mx16_byte_dummy_pin           : out std_logic;
---    fpga_0_FLASH_8Mx16_adv_dummy_pin            : out std_logic;
---    fpga_0_FLASH_8Mx16_clk_dummy_pin            : out std_logic;
---    fpga_0_FLASH_8Mx16_wait_dummy_pin           : out std_logic;
---    fpga_0_DDR2_SDRAM_16Mx32_DDR2_ODT_pin       : out std_logic_vector(0 to 0);
---    fpga_0_DDR2_SDRAM_16Mx32_DDR2_A_pin         : out std_logic_vector(12 downto 0);
---    fpga_0_DDR2_SDRAM_16Mx32_DDR2_BA_pin        : out std_logic_vector(1 downto 0);
---    fpga_0_DDR2_SDRAM_16Mx32_DDR2_CAS_N_pin     : out std_logic;
---    fpga_0_DDR2_SDRAM_16Mx32_DDR2_CKE_pin       : out std_logic;
---    fpga_0_DDR2_SDRAM_16Mx32_DDR2_CS_N_pin      : out std_logic;
---    fpga_0_DDR2_SDRAM_16Mx32_DDR2_RAS_N_pin     : out std_logic;
---    fpga_0_DDR2_SDRAM_16Mx32_DDR2_WE_N_pin      : out std_logic;
---    fpga_0_DDR2_SDRAM_16Mx32_DDR2_DM_pin        : out std_logic_vector(3 downto 0);
---    fpga_0_DDR2_SDRAM_16Mx32_DDR2_CK_pin        : out std_logic_vector(1 downto 0);
---    fpga_0_DDR2_SDRAM_16Mx32_DDR2_CK_N_pin      : out std_logic_vector(1 downto 0);
---    fpga_0_Hard_Ethernet_MAC_TemacPhy_RST_n_pin : out std_logic;
---    fpga_0_Hard_Ethernet_MAC_GMII_TXD_0_pin     : out std_logic_vector(7 downto 0);
---    fpga_0_Hard_Ethernet_MAC_GMII_TX_EN_0_pin   : out std_logic;
---    fpga_0_Hard_Ethernet_MAC_GMII_TX_CLK_0_pin  : out std_logic;
---    fpga_0_Hard_Ethernet_MAC_GMII_TX_ER_0_pin   : out std_logic;
---    fpga_0_Hard_Ethernet_MAC_MDC_0_pin          : out std_logic;
---    fpga_0_Hard_Ethernet_MAC_PHY_MII_INT_pin    : out std_logic
-
-
-    -- PHY interface
     EMAC0CLIENTRXDVLD         : out std_logic;
     EMAC0CLIENTRXFRAMEDROP    : out std_logic;
     EMAC0CLIENTRXSTATS        : out std_logic_vector(6 downto 0);
     EMAC0CLIENTRXSTATSVLD     : out std_logic;
     EMAC0CLIENTRXSTATSBYTEVLD : out std_logic;
-
-    -- Client Transmitter Interface - EMAC0
     CLIENTEMAC0TXIFGDELAY     : in  std_logic_vector(7 downto 0);
     EMAC0CLIENTTXSTATS        : out std_logic;
     EMAC0CLIENTTXSTATSVLD     : out std_logic;
     EMAC0CLIENTTXSTATSBYTEVLD : out std_logic;
+    CLIENTEMAC0PAUSEREQ       : in  std_logic;
+    CLIENTEMAC0PAUSEVAL       : in  std_logic_vector(15 downto 0);
+    GTX_CLK_0                 : in  std_logic;
+    GMII_TXD_0                : out std_logic_vector(7 downto 0);
+    GMII_TX_EN_0              : out std_logic;
+    GMII_TX_ER_0              : out std_logic;
+    GMII_TX_CLK_0             : out std_logic;
+    GMII_RXD_0                : in  std_logic_vector(7 downto 0);
+    GMII_RX_DV_0              : in  std_logic;
+    GMII_RX_ER_0              : in  std_logic;
+    GMII_RX_CLK_0             : in  std_logic;
+    REFCLK_100MHz             : in  std_logic;
+    --  RESET                           : in  std_logic;
+    PHY_RESET_0               : out std_logic;
 
-    -- MAC Control Interface - EMAC0
-    CLIENTEMAC0PAUSEREQ : in std_logic;
-    CLIENTEMAC0PAUSEVAL : in std_logic_vector(15 downto 0);
-
-
-    -- Clock Signals - EMAC0
-    GTX_CLK_0 : in std_logic;
-
-    -- GMII Interface - EMAC0
-    GMII_TXD_0    : out std_logic_vector(7 downto 0);
-    GMII_TX_EN_0  : out std_logic;
-    GMII_TX_ER_0  : out std_logic;
-    GMII_TX_CLK_0 : out std_logic;
-    GMII_RXD_0    : in  std_logic_vector(7 downto 0);
-    GMII_RX_DV_0  : in  std_logic;
-    GMII_RX_ER_0  : in  std_logic;
-    GMII_RX_CLK_0 : in  std_logic;
-
-    MII_TX_CLK_0 : in  std_logic;
-    PHY_RESET_0  : out std_logic;
-    GMII_COL_0   : in  std_logic;
-    GMII_CRS_0   : in  std_logic
-
+    MII_TX_CLK_0              : in  std_logic;
+    GMII_COL_0                : in  std_logic;
+    GMII_CRS_0                : in  std_logic
     );
 end top;
 architecture Behavioral of top is
-  signal mrst_from_udp_b : std_logic;
+  
 
-  signal trigger_mask      : std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
+  
   signal trig_in_se        : std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
   signal trig_in_se_masked : std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
   signal trig_out_se       : std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
   signal trig_out_se_sync  : std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
   signal trig_out_se_rand  : std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
 
-  signal en_rand_trig : std_logic;
+  signal mrst_from_udp_b : std_logic;
+  signal en_rand_trig    : std_logic;
+  signal en_or_trigger_s : std_logic;
+  signal trigger_mask    : std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
+  signal module_mask_s   : std_logic_vector(NUMBER_OF_MODULES-1 downto 0);
+
+  signal mrst_from_udp_b_us : std_logic;
+  signal en_rand_trig_us    : std_logic;
+  signal en_or_trigger_s_us : std_logic;
+  signal trigger_mask_us    : std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
+  signal module_mask_s_us   : std_logic_vector(NUMBER_OF_MODULES-1 downto 0);
+
+  signal mrst_from_udp_b_buf : std_logic;
+  signal en_rand_trig_buf    : std_logic;
+  signal en_or_trigger_s_buf : std_logic;
+  signal trigger_mask_buf    : std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
+  signal module_mask_s_buf   : std_logic_vector(NUMBER_OF_MODULES-1 downto 0);
+
+
 
   signal trig_out_se2 : std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
 
@@ -186,7 +141,7 @@ architecture Behavioral of top is
   signal reset_roc_int_b2 : std_logic;
   signal reset_roc_int_b  : std_logic;
 
-  signal reset : std_logic;
+  signal reset_i : std_logic;
 
   signal buttons_deb : std_logic_vector(3 downto 0);
   
@@ -195,40 +150,6 @@ begin
   -----------------------------------------------------------------------------
   -- Components
   -----------------------------------------------------------------------------
-
-  Inst_SwitchDebouncer : entity work.SwitchDebouncer
-    generic map(
-      CLK_FREQ     => 100000000,
-      NUM_SWITCHES => 4) 
-    port map(
-      clk         => mclk,
-      reset       => rst_b,
-      switchesIn  => BUTTONS,
-      switchesOut => buttons_deb
-      );
-
-
-  Inst_CRU : CRU port map(
-    fpga_100m_clk  => FPGA100M,
-    fpga_cpu_reset => RESET ,
-    clk200         => clk200,
-    clk125         => clk125,
-    mclk           => MCLK100,
-    mclk_b         => MCLK100_b ,
-    gclk           => mclk,
-    mrst_b         => reset_roc_int_b1,
-    lrst_b         => rst_b
-    );
-
-
-  sync_trigger_1 : sync_trigger
-    port map (
-      rst_b       => rst_b,
-      mclk        => mclk,
-      trigger_in  => trig_in_se_masked,
-      trigger_out => trig_out_se_sync);
-
-
 
   G1 : for I in 0 to (NUMBER_OF_ROCS-1) generate
 --    diff_in : work.components.IBUFDS port map (
@@ -251,6 +172,49 @@ begin
         I  => trig_out_se2(I));
   end generate G2;
 
+
+  Inst_SwitchDebouncer : entity work.SwitchDebouncer
+    generic map(
+      CLK_FREQ     => 100000000,
+      NUM_SWITCHES => 4) 
+    port map(
+      clk         => mclk,
+      reset       => rst_b,
+      switchesIn  => BUTTONS,
+      switchesOut => buttons_deb
+      );
+
+
+  Inst_CRU : entity work.CRU port map(
+    fpga_100m_clk  => FPGA100M,
+    fpga_cpu_reset => reset_i ,
+    clk200         => clk200,
+    clk125         => clk125,
+    mclk           => MCLK100,
+    mclk_b         => MCLK100_b ,
+    gclk           => mclk,
+    mrst_b         => reset_roc_int_b1,
+    lrst_b         => rst_b
+    );
+
+
+  sync_trigger_1 : entity work.sync_trigger
+    port map (
+      rst_b         => rst_b,
+      mclk          => mclk,
+      en_or_trigger => en_or_trigger_s,
+      module_mask   => module_mask_s,
+      trigger_in    => trig_in_se_masked,
+      trigger_out   => trig_out_se_sync);
+
+
+
+  
+
+
+
+
+
   Inst_rand_trigger : entity work.rand_trigger
     port map(
       rst_b       => rst_b,
@@ -269,14 +233,24 @@ begin
     OB => RESET_ROC_B2_b,
     I  => reset_roc_int_b);
 
-  EMAC_1 : entity work.v5_emac_v1_5_example_design
+
+  
+
+  EMAC_0 : entity work.v5_emac_v1_5_example_design
     port map (
       --input for sending data
-      rate_cards                => trig_in_se_masked,
-      coincidence               => trig_out_se,
-      mrst_from_udp_b_ent       => mrst_from_udp_b,
-      en_random_trigger_ent     => en_rand_trig,
-      trigger_mask              => trigger_mask,
+      rate_cards  => trig_in_se_masked,
+      coincidence => trig_out_se,
+
+      rst_b_from_rocs_to_async_trigger => reset_roc_int_b,
+      clk100                           => mclk,
+
+      mrst_from_udp_b_ent   => mrst_from_udp_b_us,
+      en_random_trigger_ent => en_rand_trig_us,
+      en_or_trigger         => en_or_trigger_s_us,
+      trigger_mask          => trigger_mask_us,
+      module_mask           => module_mask_s_us,
+
       clk200                    => clk200,
       rst_b                     => rst_b,
       EMAC0CLIENTRXDVLD         => EMAC0CLIENTRXDVLD,
@@ -303,6 +277,16 @@ begin
       PHY_RESET_0               => PHY_RESET_0,
       GMII_COL_0                => GMII_COL_0,
       GMII_CRS_0                => GMII_CRS_0);
+
+  
+
+
+
+
+
+
+
+
   -----------------------------------------------------------------------------
   -- COMBINATORICAL
   -----------------------------------------------------------------------------
@@ -315,7 +299,7 @@ begin
 
   LEDS(1) <= trigled;
 
-  reset <= BUTTONS(0);
+  reset_i <= BUTTONS(0);
 
   LEDS(2 to 7) <= (others => '1');
 
@@ -347,59 +331,28 @@ begin
   end process triggerled;
 
 
-  -- PPC.. not used yet..
---  Inst_system : system port map(
---    sys_clk_pin => mclk ,
---    sys_rst_pin => rst,
+  sync_contr_signals : process(mclk, rst_b)
+  begin
+    if rst_b = '0' then
+      en_rand_trig_buf    <= '0';
+      en_or_trigger_s_buf <= '0';
+      trigger_mask_buf    <= (others => '1');
+      module_mask_s_buf   <= (others => '1');
+    elsif mclk'event and mclk = '1' then
+      en_rand_trig_buf    <= en_rand_trig_us;
+      en_or_trigger_s_buf <= en_or_trigger_s_us;
+      trigger_mask_buf    <= trigger_mask_us;
+      module_mask_s_buf   <= module_mask_s_us;
+      mrst_from_udp_b_buf <= mrst_from_udp_b_us;
 
---    fpga_0_RS232_sin_pin  => rx ,
---    fpga_0_RS232_sout_pin => tx,
+      mrst_from_udp_b <= mrst_from_udp_b_buf;
+      en_rand_trig    <= en_rand_trig_buf;
+      en_or_trigger_s <= en_or_trigger_s_buf;
+      trigger_mask    <= trigger_mask_buf;
+      module_mask_s   <= module_mask_s_buf;
 
---    fpga_0_LEDs_8Bit_GPIO_d_out_pin      => uc_leds ,
---    fpga_0_DIP_Switches_8Bit_GPIO_in_pin => DIP_SWITCH ,
---    fpga_0_Push_Buttons_3Bit_GPIO_in_pin => uc_buttons ,
-
---    fpga_0_FLASH_8Mx16_Mem_DQ_pin  => fpga_0_FLASH_8Mx16_Mem_DQ_pin,
---    fpga_0_FLASH_8Mx16_Mem_A_pin   => fpga_0_FLASH_8Mx16_Mem_A_pin,
---    fpga_0_FLASH_8Mx16_Mem_WEN_pin => fpga_0_FLASH_8Mx16_Mem_WEN_pin ,
---    fpga_0_FLASH_8Mx16_Mem_OEN_pin => fpga_0_FLASH_8Mx16_Mem_OEN_pin ,
---    fpga_0_FLASH_8Mx16_Mem_CEN_pin => fpga_0_FLASH_8Mx16_Mem_CEN_pin ,
-
---    fpga_0_FLASH_8Mx16_rpn_dummy_pin  => fpga_0_FLASH_8Mx16_rpn_dummy_pin ,
---    fpga_0_FLASH_8Mx16_byte_dummy_pin => fpga_0_FLASH_8Mx16_byte_dummy_pin ,
---    fpga_0_FLASH_8Mx16_adv_dummy_pin  => fpga_0_FLASH_8Mx16_adv_dummy_pin,
---    fpga_0_FLASH_8Mx16_clk_dummy_pin  => fpga_0_FLASH_8Mx16_clk_dummy_pin ,
---    fpga_0_FLASH_8Mx16_wait_dummy_pin => fpga_0_FLASH_8Mx16_wait_dummy_pin,
-
---    fpga_0_DDR2_SDRAM_16Mx32_DDR2_ODT_pin       => fpga_0_DDR2_SDRAM_16Mx32_DDR2_ODT_pin ,
---    fpga_0_DDR2_SDRAM_16Mx32_DDR2_A_pin         => fpga_0_DDR2_SDRAM_16Mx32_DDR2_A_pin ,
---    fpga_0_DDR2_SDRAM_16Mx32_DDR2_BA_pin        => fpga_0_DDR2_SDRAM_16Mx32_DDR2_BA_pin ,
---    fpga_0_DDR2_SDRAM_16Mx32_DDR2_CAS_N_pin     => fpga_0_DDR2_SDRAM_16Mx32_DDR2_CAS_N_pin ,
---    fpga_0_DDR2_SDRAM_16Mx32_DDR2_CKE_pin       => fpga_0_DDR2_SDRAM_16Mx32_DDR2_CKE_pin,
---    fpga_0_DDR2_SDRAM_16Mx32_DDR2_CS_N_pin      => fpga_0_DDR2_SDRAM_16Mx32_DDR2_CS_N_pin ,
---    fpga_0_DDR2_SDRAM_16Mx32_DDR2_RAS_N_pin     => fpga_0_DDR2_SDRAM_16Mx32_DDR2_RAS_N_pin ,
---    fpga_0_DDR2_SDRAM_16Mx32_DDR2_WE_N_pin      => fpga_0_DDR2_SDRAM_16Mx32_DDR2_WE_N_pin,
---    fpga_0_DDR2_SDRAM_16Mx32_DDR2_DM_pin        => fpga_0_DDR2_SDRAM_16Mx32_DDR2_DM_pin ,
---    fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQS           => fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQS,
---    fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQS_N         => fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQS_N ,
---    fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQ            => fpga_0_DDR2_SDRAM_16Mx32_DDR2_DQ ,
---    fpga_0_DDR2_SDRAM_16Mx32_DDR2_CK_pin        => fpga_0_DDR2_SDRAM_16Mx32_DDR2_CK_pin ,
---    fpga_0_DDR2_SDRAM_16Mx32_DDR2_CK_N_pin      => fpga_0_DDR2_SDRAM_16Mx32_DDR2_CK_N_pin ,
---    fpga_0_Hard_Ethernet_MAC_TemacPhy_RST_n_pin => fpga_0_Hard_Ethernet_MAC_TemacPhy_RST_n_pin ,
---    fpga_0_Hard_Ethernet_MAC_GMII_TXD_0_pin     => fpga_0_Hard_Ethernet_MAC_GMII_TXD_0_pin ,
---    fpga_0_Hard_Ethernet_MAC_GMII_TX_EN_0_pin   => fpga_0_Hard_Ethernet_MAC_GMII_TX_EN_0_pin,
---    fpga_0_Hard_Ethernet_MAC_GMII_TX_CLK_0_pin  => fpga_0_Hard_Ethernet_MAC_GMII_TX_CLK_0_pin,
---    fpga_0_Hard_Ethernet_MAC_GMII_TX_ER_0_pin   => fpga_0_Hard_Ethernet_MAC_GMII_TX_ER_0_pin ,
---    fpga_0_Hard_Ethernet_MAC_GMII_RX_ER_0_pin   => fpga_0_Hard_Ethernet_MAC_GMII_RX_ER_0_pin ,
---    fpga_0_Hard_Ethernet_MAC_GMII_RX_CLK_0_pin  => fpga_0_Hard_Ethernet_MAC_GMII_RX_CLK_0_pin ,
---    fpga_0_Hard_Ethernet_MAC_GMII_RX_DV_0_pin   => fpga_0_Hard_Ethernet_MAC_GMII_RX_DV_0_pin,
---    fpga_0_Hard_Ethernet_MAC_GMII_RXD_0_pin     => fpga_0_Hard_Ethernet_MAC_GMII_RXD_0_pin ,
---    fpga_0_Hard_Ethernet_MAC_MII_TX_CLK_0_pin   => fpga_0_Hard_Ethernet_MAC_MII_TX_CLK_0_pin ,
---    fpga_0_Hard_Ethernet_MAC_MDC_0_pin          => fpga_0_Hard_Ethernet_MAC_MDC_0_pin ,
---    fpga_0_Hard_Ethernet_MAC_MDIO_0_pin         => fpga_0_Hard_Ethernet_MAC_MDIO_0_pin ,
---    fpga_0_Hard_Ethernet_MAC_PHY_MII_INT_pin    => fpga_0_Hard_Ethernet_MAC_PHY_MII_INT_pin
---    );
-
+    end if;
+  end process sync_contr_signals;
 
 end Behavioral;
 

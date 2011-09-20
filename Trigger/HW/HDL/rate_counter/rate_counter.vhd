@@ -8,7 +8,7 @@ library UNISIM;
 use UNISIM.VComponents.all;
 
 library work;
-use work.components.all;
+
 use work.constants.all;
 
 
@@ -54,7 +54,7 @@ architecture behave of rate_counter is
 begin
 
   G_edge_det : for I in 0 to NUMBER_OF_ROCS-1 generate
-    edge_detect_1 : edge_detector
+    edge_detect_1 : entity work.edge_detector
       port map (
         rst_b => rst_b,
         mclk  => clk,
@@ -64,7 +64,7 @@ begin
 
   edge_detect(30 downto NUMBER_OF_ROCS) <= (others => '0');  -- set unused to 0
 
-  edge_detect_coincidence : edge_detector
+  edge_detect_coincidence :entity work.edge_detector
     port map (
       rst_b => rst_b,
       mclk  => clk,
@@ -103,6 +103,7 @@ begin
     elsif clk'event and clk = '1' then
       en_counter <= '0';
       we         <= '0';
+      din    <= (others => '0');
 
       case state is
         when init =>
@@ -142,7 +143,7 @@ begin
           
         when write_fifo_udp_sel =>
           we    <= '1';
-          din   <= "11111111";  -- 0 is to let the udp transmitter know that it goes to the computers
+          din   <= x"FF";  -- 1 is to let the udp transmitter know that it goes to the computers
           state <= write_fifo_udp_sel2;
 
         when write_fifo_udp_sel2 =>

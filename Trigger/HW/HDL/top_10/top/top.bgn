@@ -5,7 +5,7 @@ Loading device for application Rf_Device from file '5vfx30t.nph' in environment
    "top" is an NCD, version 3.2, device xc5vfx30t, package ff665, speed -1
 Opened constraints file top.pcf.
 
-Thu Aug 18 15:10:31 2011
+Mon Sep 19 16:51:21 2011
 
 /opt/Xilinx/13.1/ISE_DS/ISE/bin/lin64/unwrapped/bitgen -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g ConfigRate:2 -g CclkPin:PullUp -g M0Pin:PullUp -g M1Pin:PullUp -g M2Pin:PullUp -g ProgPin:PullUp -g DonePin:PullUp -g InitPin:Pullup -g CsPin:Pullup -g DinPin:Pullup -g BusyPin:Pullup -g RdWrPin:Pullup -g HswapenPin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g ConfigFallback:Enable -g SelectMAPAbort:Enable -g BPI_page_size:1 -g OverTempPowerDown:Disable -g JTAG_SysMon:Enable -g DCIUpdateMode:AsRequired -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Match_cycle:Auto -g Security:None -g DonePipe:No -g DriveDone:No -g Encrypt:No top.ncd 
 
@@ -126,10 +126,18 @@ There were 0 CONFIG constraint(s) processed from top.pcf.
 
 Running DRC.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   EMAC_1/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader
+   EMAC_0/UDP_IP_Core_2/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader
    /ChecksumTemplate_n_16_and0000 is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   EMAC_0/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader
+   /ChecksumTemplate_n_16_and0000 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net EMAC_0/CONTROL0<13> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:367 - The signal <BUTTONS<3>_IBUF> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <DIP_SWITCH<0>_IBUF> is incomplete. The
@@ -149,9 +157,9 @@ WARNING:PhysDesignRules:367 - The signal <DIP_SWITCH<6>_IBUF> is incomplete. The
 WARNING:PhysDesignRules:367 - The signal <DIP_SWITCH<7>_IBUF> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
-   on block:<EMAC_1/gmii_rxc0_delay>:<IODELAY_IODELAY>.  When DELAY_SRC is not
+   on block:<EMAC_0/gmii_rxc0_delay>:<IODELAY_IODELAY>.  When DELAY_SRC is not
    DATAIN programming the DATAIN input pin is not used and will be ignored.
-DRC detected 0 errors and 11 warnings.  Please see the previously displayed
+DRC detected 0 errors and 13 warnings.  Please see the previously displayed
 individual error or warning messages for more details.
 Creating bit map...
 Saving bit stream in "top.bit".

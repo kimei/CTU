@@ -1,0 +1,2 @@
+vhdl work "../../Sync_Trigger/edge_detector.vhd"
+vhdl work "../../Sync_Trigger/Sync_trigger.vhd"

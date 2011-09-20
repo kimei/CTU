@@ -1,0 +1,8 @@
+vhdl work "../../UDP/CoreGEN/v5_emac_v1_5/example_design/physical/gmii_if.vhd"
+vhdl work "../../UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/tx_client_fifo_8.vhd"
+vhdl work "../../UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/rx_client_fifo_8.vhd"
+vhdl work "../../UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/eth_fifo_8.vhd"
+vhdl work "ipcore_dir/TEMAC2/example_design/TEMAC2_block.vhd"
+vhdl work "ipcore_dir/TEMAC2/example_design/TEMAC2_locallink.vhd"
+vhdl work "../../Shared/constants.vhd"
+vhdl work "ipcore_dir/TEMAC2/example_design/TEMAC2_example_design.vhd"

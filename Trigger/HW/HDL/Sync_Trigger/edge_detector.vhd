@@ -6,7 +6,7 @@
 -- Author     :   <kimei@fyspc-epf02>
 -- Company    : 
 -- Created    : 2011-03-15
--- Last update: 2011-06-29
+-- Last update: 2011-09-15
 -- Platform   : 
 -- Standard   : VHDL'87
 -------------------------------------------------------------------------------
@@ -32,7 +32,7 @@ library UNISIM;
 use UNISIM.VComponents.all;
 
 library work;
-use work.components.all;
+
 use work.constants.all;
 use work.functions.all;
 
