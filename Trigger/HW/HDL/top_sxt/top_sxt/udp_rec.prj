@@ -1,0 +1,2 @@
+vhdl work "../../Shared/constants.vhd"
+vhdl work "../../UDP/UDP_rec_kim/udp_rec.vhd"

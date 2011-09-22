@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="sim" num="927" delta="new" >Generating component instance &apos;<arg fmt="%s" index="1">TEMAC2</arg>&apos; of &apos;<arg fmt="%s" index="2">xilinx.com:ip:v5_emac:1.8</arg>&apos; from &apos;<arg fmt="%s" index="3">D:\Xilinx\13.1\ISE_DS\ISE\coregen\ip\xilinx\network\com\xilinx\ip\v5_emac_v1_8\component.xml</arg>&apos;.
+</msg>
+
+<msg type="info" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Resolving generics for &apos;TEMAC2&apos;...</arg>
+</msg>
+
+<msg type="info" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Applying external generics to &apos;TEMAC2&apos;...</arg>
+</msg>
+
+<msg type="info" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Delivering associated files for &apos;TEMAC2&apos;...</arg>
+</msg>
+
+<msg type="info" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Delivering EJava files for &apos;TEMAC2&apos;...</arg>
+</msg>
+
+<msg type="info" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Generating SYM schematic symbol for &apos;TEMAC2&apos;...</arg>
+</msg>
+
+<msg type="warning" file="sim" num="0" delta="new" > This core does not have a top level called &quot;/TEMAC2&quot;
+</msg>
+
+<msg type="warning" file="sim" num="0" delta="new" > Top level has been set to &quot;/TEMAC2_block&quot;
+</msg>
+
+</messages>
+

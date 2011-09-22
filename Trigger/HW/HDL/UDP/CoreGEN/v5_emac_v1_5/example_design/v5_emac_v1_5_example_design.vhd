@@ -279,9 +279,9 @@ architecture TOP_LEVEL of v5_emac_v1_5_example_design is
   signal source_ready_FF             : std_logic;
   signal transmit_data_output_bus_FF : std_logic_vector (7 downto 0);
 
-  signal input_bus_FF                : std_logic_vector(7 downto 0);
-  signal valid_out_usr_data_FF       : std_logic;
-  signal usr_data_output_bus_FF      : std_logic_vector (7 downto 0);
+  signal input_bus_FF           : std_logic_vector(7 downto 0);
+  signal valid_out_usr_data_FF  : std_logic;
+  signal usr_data_output_bus_FF : std_logic_vector (7 downto 0);
 
 
   signal transmit_start_enable_i    : std_logic;
@@ -320,7 +320,9 @@ architecture TOP_LEVEL of v5_emac_v1_5_example_design is
   signal send_fifo_data_in_async_trigger : std_logic_vector(7 downto 0);
 
   signal mrst_from_udp_b : std_logic;
-  signal en_rand_trigger : std_logic;
+
+  signal en_random_trigger_ent_i : std_logic;
+  signal en_or_trigger_i         : std_logic;
 
   signal sender_ip : std_logic_vector(7 downto 0);
 -------------------------------------------------------------------------------
@@ -406,40 +408,40 @@ architecture TOP_LEVEL of v5_emac_v1_5_example_design is
   end component;
 
 
-  
-  signal CONTROL0 : std_logic_vector(35 downto 0);
-  component cs_controller
-    port (
-      CONTROL0 : inout std_logic_vector(35 downto 0));
-  end component;
-  component ila_cs
-    port (
-      CONTROL : inout std_logic_vector(35 downto 0);
-      CLK     : in    std_logic;
-      TRIG0   : in    std_logic_vector(127 downto 0));
-  end component;
-  signal cs_trig : std_logic_vector(127 downto 0);
+
+  --signal CONTROL0 : std_logic_vector(35 downto 0);
+  --component cs_controller
+  --  port (
+  --    CONTROL0 : inout std_logic_vector(35 downto 0));
+  --end component;
+  --component ila_cs
+  --  port (
+  --    CONTROL : inout std_logic_vector(35 downto 0);
+  --    CLK     : in    std_logic;
+  --    TRIG0   : in    std_logic_vector(127 downto 0));
+  --end component;
+  --signal cs_trig : std_logic_vector(127 downto 0);
 
 
 begin
 
-  cs_contr : cs_controller
-    port map (
-      CONTROL0 => CONTROL0);
-  your_instance_name : ila_cs
-    port map (
-      CONTROL => CONTROL0,
-      CLK     => ll_clk_0_i,
-      TRIG0   => cs_trig);
+  --cs_contr : cs_controller
+  --  port map (
+  --    CONTROL0 => CONTROL0);
+  --your_instance_name : ila_cs
+  --  port map (
+  --    CONTROL => CONTROL0,
+  --    CLK     => ll_clk_0_i,
+  --    TRIG0   => cs_trig);
 
-  cs_trig(7 downto 0) <= usr_data_output_bus;
-  cs_trig(8) <= valid_out_usr_data;
-  cs_trig(17 downto 10) <= udp_data_out;
-  cs_trig(18) <= udp_valid_data;
-  cs_trig(27 downto 20) <= sender_ip;
-    
- 
-  
+  --cs_trig(7 downto 0)   <= usr_data_output_bus;
+  --cs_trig(8)            <= valid_out_usr_data;
+  --cs_trig(17 downto 10) <= udp_data_out;
+  --cs_trig(18)           <= udp_valid_data;
+  --cs_trig(27 downto 20) <= sender_ip;
+
+
+
 -------------------------------------------------------------------------------
 -- Component instantiations
 -------------------------------------------------------------------------------
@@ -591,31 +593,31 @@ begin
       Dswitch                  => DSwitch);  -- user data output bus output to the user
 
 
-  UDP_IP_Core_2 : entity work.UDP_IP_Core
-    generic map (
-      --DestMAC =>x"00c09fbf33b0",  --ferrari, must be readout computer eventually
+  --UDP_IP_Core_2 : entity work.UDP_IP_Core
+  --  generic map (
+  --    --DestMAC =>x"00c09fbf33b0",  --ferrari, must be readout computer eventually
 
-      DestMAC  => x"ffffffffffff",      --compet002
-      DestIP   => x"C0A801FF",  --192.168.1.64, change to readout computer ip.
-      DestPort => x"5500",
-      SrcPort  => x"5501")
-    port map(
-      rst                      => ll_reset_0_i,
-      clk_125MHz               => ll_clk_0_i,
-      transmit_start_enable    => transmit_start_enable_FF,  --active high , It must be high for one clock cycle only.
-      transmit_data_length     => transmit_data_length_FF,  -- number of user data to be transmitted (number of bytes)
-      usr_data_trans_phase_on  => usr_data_trans_phase_on_FF,  -- is high one clock cycle before the transmittion of user data and remains high while transmitting user data
-      transmit_data_input_bus  => transmit_data_input_bus_FF,  -- input data to be transmitted. Starts transmitting one clock cycle after the usr_data_trans_phase_on is set
-      start_of_frame_O         => start_of_frame_O_FF,  -- should be connected to the local link wrapper's input port
-      end_of_frame_O           => end_of_frame_O_FF,  -- should be connected to the local link wrapper's input port
-      source_ready             => source_ready_FF,  --should be connected to the local link wrapper's input port
-      transmit_data_output_bus => transmit_data_output_bus_FF,  -- should be connected to the local link wrapper's input port
-      rx_sof                   => rx_sof,  -- active low, inputs from the local link wrapper
-      rx_eof                   => rx_eof,  -- active low, inputs from the local link wrapper
-      input_bus                => input_bus,  -- input from the local link wrapper
-      valid_out_usr_data       => valid_out_usr_data_FF,  -- output to user, when set it indicates that the usr_data_output_bus contains the user data section of the incoming packet
-      usr_data_output_bus      => usr_data_output_bus_FF,
-      Dswitch                  => DSwitch);  -- user data output bus output to the user
+  --    DestMAC  => x"ffffffffffff",      --compet002
+  --    DestIP   => x"C0A801FF",  --192.168.1.64, change to readout computer ip.
+  --    DestPort => x"5500",
+  --    SrcPort  => x"5501")
+  --  port map(
+  --    rst                      => ll_reset_0_i,
+  --    clk_125MHz               => ll_clk_0_i,
+  --    transmit_start_enable    => transmit_start_enable_FF,  --active high , It must be high for one clock cycle only.
+  --    transmit_data_length     => transmit_data_length_FF,  -- number of user data to be transmitted (number of bytes)
+  --    usr_data_trans_phase_on  => usr_data_trans_phase_on_FF,  -- is high one clock cycle before the transmittion of user data and remains high while transmitting user data
+  --    transmit_data_input_bus  => transmit_data_input_bus_FF,  -- input data to be transmitted. Starts transmitting one clock cycle after the usr_data_trans_phase_on is set
+  --    start_of_frame_O         => start_of_frame_O_FF,  -- should be connected to the local link wrapper's input port
+  --    end_of_frame_O           => end_of_frame_O_FF,  -- should be connected to the local link wrapper's input port
+  --    source_ready             => source_ready_FF,  --should be connected to the local link wrapper's input port
+  --    transmit_data_output_bus => transmit_data_output_bus_FF,  -- should be connected to the local link wrapper's input port
+  --    rx_sof                   => rx_sof,  -- active low, inputs from the local link wrapper
+  --    rx_eof                   => rx_eof,  -- active low, inputs from the local link wrapper
+  --    input_bus                => input_bus,  -- input from the local link wrapper
+  --    valid_out_usr_data       => valid_out_usr_data_FF,  -- output to user, when set it indicates that the usr_data_output_bus contains the user data section of the incoming packet
+  --    usr_data_output_bus      => usr_data_output_bus_FF,
+  --    Dswitch                  => DSwitch);  -- user data output bus output to the user
 
   receiver_unit : entity work.udp_rec
     port map(
@@ -626,6 +628,7 @@ begin
       data_out           => udp_data_out,
       valid_data         => udp_valid_data,
       sender_ip          => sender_ip,
+      DSwitch            => DSwitch,
       port_number        => udp_port_number);
 
   Inst_receiver_control : entity work.receiver_control
@@ -636,8 +639,8 @@ begin
       valid_data          => udp_valid_data,
       port_number         => udp_port_number,
       mrst_from_udp_b     => mrst_from_udp_b,
-      en_random_trigger   => en_random_trigger_ent,
-      en_or_trigger       => en_or_trigger,
+      en_random_trigger   => en_random_trigger_ent_i,
+      en_or_trigger       => en_or_trigger_i,
       trigger_mask        => trigger_mask,
       module_mask         => module_mask,
       send_fifo_we        => send_fifo_we_rec_contr,
@@ -645,28 +648,33 @@ begin
       send_fifo_empty     => empty_fifo,
       send_fifo_data_in   => send_fifo_data_in_rec_contr);
 
-  inst_async_trigger : entity work.async_trigger
-    port map(
+  en_random_trigger_ent <= en_random_trigger_ent_i;
+  en_or_trigger         <= en_or_trigger_i;
 
-      clk          => ll_clk_0_i,
-      clk100       => clk100,
-      rst_b        => ll_reset_0_i_b,
-      rocs_reset_b => rst_b_from_rocs_to_async_trigger,
-      udp_data_in  => udp_data_out,
-      valid_data   => udp_valid_data,
-      port_number  => udp_port_number,
-      sender_ip    => sender_ip,
+  --inst_async_trigger : entity work.async_trigger
+  --  port map(
 
-      send_fifo_we        => send_fifo_we_async_trigger,
-      send_fifo_we_others => we_others,
-      send_fifo_empty     => empty_fifo,
-      send_fifo_data_in   => send_fifo_data_in_async_trigger
-      );
+  --    clk             => ll_clk_0_i,
+  --    clk100          => clk100,
+  --    rst_b           => ll_reset_0_i_b,
+  --    rocs_reset_b    => rst_b_from_rocs_to_async_trigger,
+  --    udp_data_in     => udp_data_out,
+  --    valid_data      => udp_valid_data,
+  --    port_number     => udp_port_number,
+  --    sender_ip       => sender_ip,
+  --    en_or_trigger   => en_or_trigger_i,
+  --    en_rand_trigger => en_random_trigger_ent_i,
+
+  --    send_fifo_we        => send_fifo_we_async_trigger,
+  --    send_fifo_we_others => we_others,
+  --    send_fifo_empty     => empty_fifo,
+  --    send_fifo_data_in   => send_fifo_data_in_async_trigger
+  --    );
 
 
 
 
-  rate_counter_1 :entity work.rate_counter
+  rate_counter_1 : entity work.rate_counter
     port map(
       clk         => ll_clk_0_i,        --125 mhz
       rst_b       => ll_reset_0_i_b,
@@ -712,7 +720,7 @@ begin
   mrst_from_udp_b_ent <= mrst_from_udp_b;
 
   -- we_others <= send_fifo_we_rec_contr or we_rate_counter;
-  we_others <= (we_rate_counter or (send_fifo_we_rec_contr or send_fifo_we_async_trigger));
+  we_others <= we_rate_counter or send_fifo_we_rec_contr;  --  or send_fifo_we_async_trigger;
 
 
   wr_en_fifo <= we_others;
@@ -720,7 +728,7 @@ begin
   --din_fifo <= din_rate_counter when we_rate_counter = '1' else send_fifo_data_in_rec_contr;
 
 
-  din_fifo <= din_rate_counter or send_fifo_data_in_rec_contr or send_fifo_data_in_async_trigger;
+  din_fifo <= din_rate_counter or send_fifo_data_in_rec_contr;  -- or send_fifo_data_in_async_trigger;
 
   ll_clk_0_i <= tx_client_clk_0;
 
@@ -739,7 +747,7 @@ begin
   idelayctrl_reset_0_i <= idelayctrl_reset_0_r(12);
 
 
- -- Connection of UDP multiplexing
+  -- Connection of UDP multiplexing
   transmit_start_enable    <= transmit_start_enable_i when where_to_send = '1' else '0';
   transmit_start_enable_FF <= transmit_start_enable_i when where_to_send = '0' else '0';
 
@@ -754,7 +762,7 @@ begin
   transmit_data_input_bus_FF <= transmit_data_input_bus_i when where_to_send = '0' else x"00";
 
   start_of_frame_O_i <= start_of_frame_O when where_to_send = '1' else start_of_frame_O_FF;
-  end_of_frame_O_i <= end_of_frame_O when where_to_send = '1' else end_of_frame_O_FF;
+  end_of_frame_O_i   <= end_of_frame_O   when where_to_send = '1' else end_of_frame_O_FF;
 
   source_ready_i <= source_ready when where_to_send = '1' else source_ready_FF;
 

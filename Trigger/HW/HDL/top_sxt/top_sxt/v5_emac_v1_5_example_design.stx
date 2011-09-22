@@ -5,14 +5,14 @@ Parameter TMPDIR set to /home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Parameter xsthdpdir set to /home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
@@ -20,8 +20,8 @@ WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Onl
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-WARNING:HDLParsers:3607 - Unit work/v5_emac_v1_5_example_design is now defined in a different file.  It was defined in "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/ipcore_dir/TEMAC2/example_design/TEMAC2_example_design.vhd", and is now defined in "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/v5_emac_v1_5_example_design.vhd".
-WARNING:HDLParsers:3607 - Unit work/v5_emac_v1_5_example_design/TOP_LEVEL is now defined in a different file.  It was defined in "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/ipcore_dir/TEMAC2/example_design/TEMAC2_example_design.vhd", and is now defined in "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/v5_emac_v1_5_example_design.vhd".
+WARNING:HDLParsers:3498 - No primary, secondary unit in the file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/ipcore_dir/cs_controller.vhd. Ignore this file from project file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/v5_emac_v1_5_example_design_vhdl.prj".
+WARNING:HDLParsers:3498 - No primary, secondary unit in the file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/ipcore_dir/ila_cs.vhd. Ignore this file from project file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/v5_emac_v1_5_example_design_vhdl.prj".
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/comp_6b_equal.vhd" in Library work.
 Architecture comp_6b_equal_a of Entity comp_6b_equal is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/COUNTER_6B_LUT_FIFO_MODE.vhd" in Library work.
@@ -131,20 +131,19 @@ Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/async_trigger/async
 Architecture behavioral of Entity async_trigger is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/rate_counter/rate_counter.vhd" in Library work.
 Architecture behave of Entity rate_counter is up to date.
-Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/ipcore_dir/send_fifo_core.vhd" in Library work.
-Architecture send_fifo_core_a of Entity send_fifo_core is up to date.
-Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/v5_emac_v1_5_example_design.vhd" in Library work.
-Entity <v5_emac_v1_5_example_design> compiled.
-Entity <v5_emac_v1_5_example_design> (Architecture <top_level>) compiled.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/ipcore_dir/fifo_generator_v4_4.vhd" in Library work.
+Architecture fifo_generator_v4_4_a of Entity fifo_generator_v4_4 is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/v5_emac_v1_5_example_design.vhd" in Library work.
+Architecture top_level of Entity v5_emac_v1_5_example_design is up to date.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.34 secs
+Total CPU time to Xst completion: 0.25 secs
  
 --> 
 
 
-Total memory usage is 329600 kilobytes
+Total memory usage is 329620 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   41 (   0 filtered)

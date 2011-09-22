@@ -5,14 +5,14 @@ Parameter TMPDIR set to /home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Parameter xsthdpdir set to /home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
@@ -20,33 +20,127 @@ WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Onl
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/comp_6b_equal.vhd" in Library work.
+Architecture comp_6b_equal_a of Entity comp_6b_equal is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/COUNTER_6B_LUT_FIFO_MODE.vhd" in Library work.
+Architecture behavioral of Entity counter_6b_lut_fifo_mode is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/COUNTER_11B_EN_TRANS.vhd" in Library work.
+Architecture behavioral of Entity counter_11b_en_trans is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/comp_11b_equal.vhd" in Library work.
+Architecture comp_11b_equal_a of Entity comp_11b_equal is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/tx_client_fifo_8.vhd" in Library work.
 Architecture rtl of Entity tx_client_fifo_8 is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/rx_client_fifo_8.vhd" in Library work.
 Architecture rtl of Entity rx_client_fifo_8 is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/physical/gmii_if.vhd" in Library work.
 Architecture phy_if of Entity gmii_if is up to date.
-Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/ipcore_dir/TEMAC2/example_design/TEMAC2_block.vhd" in Library work.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/temac2/example_TEMAC2_design/TEMAC2/example_design/TEMAC2.vhd" in Library work.
+Architecture wrapper of Entity temac2 is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/PACKET_RECEIVER_FSM.vhd" in Library work.
+Architecture behavioral of Entity packet_receiver_fsm is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/REG_8b_wren.vhd" in Library work.
+Architecture behavioral of Entity reg_8b_wren is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/COUNTER_11B_EN_RECEIV.vhd" in Library work.
+Architecture behavioral of Entity counter_11b_en_receiv is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/TARGET_EOF.vhd" in Library work.
+Architecture behavioral of Entity target_eof is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/REG_16B_WREN.vhd" in Library work.
+Architecture behavioral of Entity reg_16b_wren is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4_LUT_INDEXER.vhd" in Library work.
+Architecture behavioral of Entity ipv4_lut_indexer is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/dist_mem_64x8.vhd" in Library work.
+Architecture dist_mem_64x8_a of Entity dist_mem_64x8 is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/OVERRIDE_LUT_CONTROL.vhd" in Library work.
+Architecture behavioral of Entity override_lut_control is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/ALLOW_ZERO_UDP_CHECKSUM.vhd" in Library work.
+Architecture behavioral of Entity allow_zero_udp_checksum is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/ENABLE_USER_DATA_TRANSMISSION.vhd" in Library work.
+Architecture behavioral of Entity enable_user_data_transmission is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" in Library work.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 131. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 135. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 138. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 141. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 144. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 147. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 152. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 155. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 158. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 161. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 164. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 167. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 172. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 174. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 177. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 179. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 192. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 196. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 209. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 212. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 217. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 220. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 232. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 237. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 249. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 253. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 259. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 262. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 272. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 276. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 286. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 290. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 299. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 303. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 313. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 321. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 326. Choice to_unsigned is not a locally static expression.
+WARNING:HDLParsers:817 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4WriteUDPHeader.vhd" Line 330. Choice to_unsigned is not a locally static expression.
+Architecture behavioral of Entity ipv4writeudpheader is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/Shared/constants.vhd" in Library work.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/Shared/functions.vhd" in Library work.
+Architecture functions of Entity functions is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/temac2/example_TEMAC2_design/TEMAC2/example_design/TEMAC2_block.vhd" in Library work.
 Architecture top_level of Entity temac2_block is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/CoreGEN/v5_emac_v1_5/example_design/client/fifo/eth_fifo_8.vhd" in Library work.
 Architecture rtl of Entity eth_fifo_8 is up to date.
-Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/Shared/constants.vhd" in Library work.
-Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/ipcore_dir/TEMAC2/example_design/TEMAC2_locallink.vhd" in Library work.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPV4_PACKET_TRANSMITTER.vhd" in Library work.
+Architecture behavioral of Entity ipv4_packet_transmitter is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/IPv4_PACKET_RECEIVER.vhd" in Library work.
+Architecture behavioral of Entity ipv4_packet_receiver is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/ipcore_dir/fifo_generator_v8_1_8b.vhd" in Library work.
+Architecture fifo_generator_v8_1_8b_a of Entity fifo_generator_v8_1_8b is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/ipcore_dir/fifo_generator_v8_1_32b.vhd" in Library work.
+Architecture fifo_generator_v8_1_32b_a of Entity fifo_generator_v8_1_32b is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/ipcore_dir/trigger_time_fifo.vhd" in Library work.
+Architecture trigger_time_fifo_a of Entity trigger_time_fifo is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/Sync_Trigger/edge_detector.vhd" in Library work.
+Architecture behave of Entity edge_detector is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/ipcore_dir/fifo_generator_v4_4.vhd" in Library work.
+Architecture fifo_generator_v4_4_a of Entity fifo_generator_v4_4 is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/rate_counter/rate_counter.vhd" in Library work.
+Architecture behave of Entity rate_counter is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/async_trigger/async_trigger.vhd" in Library work.
+Architecture behavioral of Entity async_trigger is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_rec_kim/udp_rec.vhd" in Library work.
+Architecture behave of Entity udp_rec is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/UDP_IP_Core.vhd" in Library work.
+Architecture behavioral of Entity udp_ip_core is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/temac2/example_TEMAC2_design/TEMAC2/example_design/TEMAC2_locallink.vhd" in Library work.
 Architecture top_level of Entity temac2_locallink is up to date.
-Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/ipcore_dir/TEMAC2/example_design/TEMAC2_example_design.vhd" in Library work.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/temac2/example_TEMAC2_design/TEMAC2/example_design/TEMAC2_example_design.vhd" in Library work.
 Entity <temac2_example_design> compiled.
-Entity <TEMAC2_example_design> (Architecture <TOP_LEVEL>) compiled.
+Entity <temac2_example_design> (Architecture <top_level>) compiled.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.19 secs
+Total CPU time to Xst completion: 0.31 secs
  
 --> 
 
 
-Total memory usage is 320692 kilobytes
+Total memory usage is 328872 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    1 (   0 filtered)
+Number of warnings :   39 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

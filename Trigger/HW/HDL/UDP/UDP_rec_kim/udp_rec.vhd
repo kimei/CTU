@@ -15,6 +15,7 @@ entity udp_rec is
     rst_b              : in  std_logic;
     usr_data_input_bus : in  std_logic_vector(7 downto 0);
     valid_out_usr_data : in  std_logic;
+    dswitch : in std_logic_vector(7 downto 0);
     data_out           : inout std_logic_vector(7 downto 0);
     valid_data         : inout std_logic;
     sender_ip          : inout std_logic_vector(7 downto 0);
@@ -37,16 +38,16 @@ architecture behave of udp_rec is
   signal sender_ip_i   : std_logic_vector(7 downto 0);
   signal port_number_i : std_logic_vector(15 downto 0);
 
-
+  signal dswitch_p1 : std_logic_vector(7 downto 0);
 
 
 begin  -- behave
 
-
+  dswitch_p1 <= std_logic_vector(unsigned(dswitch)+1);
  
 
   -- Check if it is 192.168.1.63
-  ip_correct <= '1' when (header(4) = X"c0" and header(5) = X"a8" and header(6) = X"01" and header(7) = X"3f") else '0';
+  ip_correct <= '1' when (header(4) = X"c0" and header(5) = X"a8" and header(6) = X"01" and header(7) = dswitch_p1) else '0';
 
   --sender_ip <= sender_ip_i; -- when ((ip_correct = '1' or ip_correct_hold = '1') and valid_out_usr_data = '1') else x"00";
   --port_number <= port_number_i; -- when ((ip_correct = '1' or ip_correct_hold = '1') and valid_out_usr_data = '1') else x"0000";

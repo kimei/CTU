@@ -45,6 +45,9 @@ entity async_trigger is
     port_number  : in std_logic_vector(15 downto 0);
     sender_ip    : in std_logic_vector(7 downto 0);
 
+    en_or_trigger   : in std_logic;
+    en_rand_trigger : in std_logic;
+
     send_fifo_we        : out std_logic;
     send_fifo_we_others : in  std_logic;
     send_fifo_empty     : in  std_logic;
@@ -75,6 +78,7 @@ architecture Behavioral of async_trigger is
   signal wr_en_8b_fifos_np : std_logic_vector(3 downto 0);
 
   signal rd_en_8b_fifos : std_logic_vector(3 downto 0);
+  signal rst_8_bit_fifos : std_logic;
 
   signal data_out_8bit_array : data_out_8bit_array_type;
 
@@ -96,6 +100,15 @@ architecture Behavioral of async_trigger is
   signal data_out_32bit_array    : data_out_32bit_array_type;
   signal trigger_times_array_old : data_out_32bit_array_type;
 
+  signal wr_en_tt_fifo_and : std_logic;
+  signal din_tt_fifo_and   : std_logic_vector(31 downto 0);
+
+  signal wr_en_tt_fifo_or : std_logic;
+  signal din_tt_fifo_or   : std_logic_vector(31 downto 0);
+
+  signal wr_en_tt_fifo_rand : std_logic;
+  signal din_tt_fifo_rand   : std_logic_vector(31 downto 0);
+
   signal wr_en_tt_fifo      : std_logic;
   signal rd_en_tt_fifo      : std_logic;
   signal full_tt_fifo       : std_logic;
@@ -109,7 +122,7 @@ architecture Behavioral of async_trigger is
   signal late_running_counter     : unsigned(31 downto 0);
   signal late_running_counter_buf : unsigned(31 downto 0);
   signal late_running_counter_us  : unsigned(31 downto 0);
-  signal package_counter  : unsigned(7 downto 0);
+  signal package_counter          : unsigned(7 downto 0);
 
   signal tt_to_send : std_logic_vector(31 downto 0);
 
@@ -122,20 +135,22 @@ architecture Behavioral of async_trigger is
   signal comp_1_3 : std_logic;
   signal comp_2_3 : std_logic;
 
-  signal rocs_reset : std_logic;
+  signal rocs_reset     : std_logic;
   signal rocs_reset_buf : std_logic;
+
+  signal count_bit_buf : std_logic;
 
 
   component fifo_generator_v8_1_8b
     port (
-      clk        : in  std_logic;
-      rst        : in  std_logic;
-      din        : in  std_logic_vector(7 downto 0);
-      wr_en      : in  std_logic;
-      rd_en      : in  std_logic;
-      dout       : out std_logic_vector(7 downto 0);
-      full       : out std_logic;
-      empty      : out std_logic
+      clk   : in  std_logic;
+      rst   : in  std_logic;
+      din   : in  std_logic_vector(7 downto 0);
+      wr_en : in  std_logic;
+      rd_en : in  std_logic;
+      dout  : out std_logic_vector(7 downto 0);
+      full  : out std_logic;
+      empty : out std_logic
       --data_count : out std_logic_vector(11 downto 0)
       );
   end component;
@@ -247,15 +262,15 @@ begin
   generate_8b_fifos : for i in 0 to 3 generate
     module_1_8b_fifo : fifo_generator_v8_1_8b
       port map (
-        clk        => clk,
-        rst        => rocs_reset,
-        din        => udp_data_in,
-        wr_en      => wr_en_8b_fifos(i),
-        rd_en      => rd_en_8b_fifos(i),
-        dout       => data_out_8bit_array(i),
-        full       => full_8b_fifos(i),
-        empty      => empty_8b_fifos(i)
-       -- data_count => open
+        clk   => clk,
+        rst   => rst_8_bit_fifos,
+        din   => udp_data_in,
+        wr_en => wr_en_8b_fifos(i),
+        rd_en => rd_en_8b_fifos(i),
+        dout  => data_out_8bit_array(i),
+        full  => full_8b_fifos(i),
+        empty => empty_8b_fifos(i)
+        -- data_count => open
         );
   end generate generate_8b_fifos;
 
@@ -293,12 +308,14 @@ begin
     if rst_b = '0' then                 -- asynchronous reset (active low)
       state <= INIT;
     elsif clk'event and clk = '1' then  -- rising clock edge
-      wr_en_32b_fifos <= (others => '0');
-      din_32b_fifo    <= (others => '0');
-      --wr_en_tt_fifo   <= '0';
-      -- din_tt_fifo     <= (others => '0');
+      wr_en_32b_fifos  <= (others => '0');
+      din_32b_fifo     <= (others => '0');
+      wr_en_tt_fifo_or <= '0';
+      din_tt_fifo_or   <= (others => '0');
+      rst_8_bit_fifos <= '0';
       case state is
         when INIT =>
+          rst_8_bit_fifos <= '1';
           byte_counter     <= 0;
           tt_counter       <= 0;
           fifo_selector    <= "0000";
@@ -338,12 +355,21 @@ begin
           elsif byte_counter = 3 then
             trigger_time_uns(7 downto 0) <= data_out_8bit_array(fifo_selector_uns);
           elsif byte_counter = 4 then
-            wr_en_32b_fifos <= fifo_selector;
-            din_32b_fifo    <= trigger_time_uns;
-            -- wr_en_tt_fifo   <= '1';     -- DEBUG SHIT
-            -- din_tt_fifo     <= trigger_time_uns;
-            byte_counter    <= 0;
-            tt_counter      <= tt_counter +1;
+
+            -- Write directly to output fifo if we want OR trigger
+            if en_or_trigger = '1' and en_rand_trigger = '0' then
+              wr_en_tt_fifo_or <= '1';
+              din_tt_fifo_or   <= trigger_time_uns;
+            end if;
+
+            --only write it if we want AND triggering
+            if en_or_trigger = '0' and en_rand_trigger = '0' then
+              wr_en_32b_fifos <= fifo_selector;
+              din_32b_fifo    <= trigger_time_uns;
+            end if;
+
+            byte_counter <= 0;
+            tt_counter   <= tt_counter +1;
 
             if tt_counter = 0 then      --This will decide how many trigger
               state <= INIT;
@@ -375,16 +401,40 @@ begin
     if rst_b = '0' then                 -- asynchronous reset (active low)
       late_running_counter     <= (others => '0');
       late_running_counter_buf <= (others => '0');
-      rocs_reset <= '0';
-      rocs_reset_buf <= '0';
+      rocs_reset               <= '0';
+      rocs_reset_buf           <= '0';
       
     elsif clk'event and clk = '1' then  -- rising clock edge
-      rocs_reset_buf <= not rocs_reset_b;
-      rocs_reset <= rocs_reset_buf;
+      rocs_reset_buf           <= not rocs_reset_b;
+      rocs_reset               <= rocs_reset_buf;
       late_running_counter_buf <= late_running_counter_us;
       late_running_counter     <= late_running_counter_buf;
     end if;
   end process late_counter_synchroniser;
+
+  rand_trigger_proc : process (clk, rst_b)
+  begin  -- process trigger_FSM
+    if rst_b = '0' then                 -- asynchronous reset (active low)
+      din_tt_fifo_rand   <= (others => '0');
+      wr_en_tt_fifo_rand <= '0';
+      
+    elsif clk'event and clk = '1' then  -- rising clock edge
+      count_bit_buf <= late_running_counter(10);
+
+      if count_bit_buf /= late_running_counter(10) then
+        if en_rand_trigger = '1' then
+          din_tt_fifo_rand   <= std_logic_vector(late_running_counter + 100000);
+          wr_en_tt_fifo_rand <= '1';
+        else
+          din_tt_fifo_rand   <= (others => '0');
+          wr_en_tt_fifo_rand <= '0';
+        end if;
+      else
+        din_tt_fifo_rand   <= (others => '0');
+        wr_en_tt_fifo_rand <= '0';
+      end if;
+    end if;
+  end process rand_trigger_proc;
 
 
   comp_0_1 <= '1' when (unsigned(data_out_32bit_array(0)(31 downto 0))-unsigned(data_out_32bit_array(1)(31 downto 0)) + 1) < 3 else '0';
@@ -393,6 +443,11 @@ begin
   comp_1_2 <= '1' when (unsigned(data_out_32bit_array(1)(31 downto 0))-unsigned(data_out_32bit_array(2)(31 downto 0)) +1) < 3  else '0';
   comp_1_3 <= '1' when (unsigned(data_out_32bit_array(1)(31 downto 0))-unsigned(data_out_32bit_array(3)(31 downto 0)) +1) < 3  else '0';
   comp_2_3 <= '1' when (unsigned(data_out_32bit_array(2)(31 downto 0))-unsigned(data_out_32bit_array(3)(31 downto 0)) +1) < 3  else '0';
+
+
+  -- SWITCH BETWEEN OR TRIGGER, AND TRIGGER or RAND TRIGGER
+  din_tt_fifo   <= din_tt_fifo_or or din_tt_fifo_rand or din_tt_fifo_and;
+  wr_en_tt_fifo <= wr_en_tt_fifo_or or wr_en_tt_fifo_rand or wr_en_tt_fifo_and;
 
   async_trigger_proc : process (clk, rst_b)
   begin  -- process async_trigger_proc
@@ -403,9 +458,9 @@ begin
       trigger_time_tmp        <= (others => '0');
       
     elsif clk'event and clk = '1' then  -- rising clock edge
-      wr_en_tt_fifo   <= '0';
-      rd_en_32b_fifos <= (others => '0');
-      din_tt_fifo     <= (others => '0');
+      wr_en_tt_fifo_and <= '0';
+      rd_en_32b_fifos   <= (others => '0');
+      din_tt_fifo_and   <= (others => '0');
 
 
       case atrig_state is
@@ -417,12 +472,12 @@ begin
           rd_en_32b_fifos  <= (others => '0');
           atrig_state      <= CHECK_TIMES;
 
-         for j in 0 to 3 loop            
-           if data_out_32bit_array(j) = std_logic_vector(late_running_counter) then--and empty_32b_fifos(j) = '0' then
-             atrig_state        <= PULL_OLD0;
-             rd_en_32b_fifos(j) <= '1';
-           end if;
-         end loop;  -- j
+          for j in 0 to 3 loop
+            if data_out_32bit_array(j) = std_logic_vector(late_running_counter) then  --and empty_32b_fifos(j) = '0' then
+              atrig_state        <= PULL_OLD0;
+              rd_en_32b_fifos(j) <= '1';
+            end if;
+          end loop;  -- j
 
           if comp_0_1 = '1' and (empty_32b_fifos(1) = '0' and empty_32b_fifos(0) = '0') then
             trigger_time_tmp <= data_out_32bit_array(0);
@@ -485,9 +540,9 @@ begin
 
 
         when PULL_TRIGGER0 =>
-          wr_en_tt_fifo <= '1';
-          din_tt_fifo   <= trigger_time_tmp;
-          atrig_state   <= CHECK_TIMES;
+          wr_en_tt_fifo_and <= '1';
+          din_tt_fifo_and   <= trigger_time_tmp;
+          atrig_state       <= CHECK_TIMES;
 
         when others =>
           atrig_state <= INIT;
@@ -498,7 +553,7 @@ begin
   send_tt : process (clk, rst_b)
   begin  -- process send_tt
     if rst_b = '0' then                 -- asynchronous reset (active low)
-      send_tt_state <= INIT;
+      send_tt_state   <= INIT;
       package_counter <= (others => '0');
     elsif clk'event and clk = '1' then  -- rising clock edge
       rd_en_tt_fifo     <= '0';
@@ -517,10 +572,10 @@ begin
           send_tt_state   <= WAIT_TT;
           send_tt_counter <= 0;
           if rocs_reset = '1' then
-            package_counter <= (others => '0');       
+            package_counter <= (others => '0');
           elsif empty_tt_fifo /= '1' then
             tt_to_send    <= dout_tt_fifo;
-            send_tt_state <= SEND_PRE0;        
+            send_tt_state <= SEND_PRE0;
           end if;
 
         when SEND_PRE0 =>
@@ -539,7 +594,7 @@ begin
 
         when SEND_PRE2 =>
           send_fifo_data_in <= std_logic_vector(package_counter);
-          package_counter <= package_counter+1;
+          package_counter   <= package_counter+1;
           send_fifo_we      <= '1';
           send_tt_state     <= SEND0;
 

@@ -308,46 +308,52 @@ begin
       GMII_CRS_0                => GMII_CRS_0);
 
   
-EMAC_1 : entity work.TEMAC2_example_design
-    port map (
-      --input for sending data
-      rate_cards  => trig_in_se_masked,
-      coincidence => trig_out_se,
+  Inst_TEMAC2_example_design : entity work.TEMAC2_example_design port map(
+    EMAC1CLIENTRXDVLD         => EMAC1CLIENTRXDVLD,
+    EMAC1CLIENTRXFRAMEDROP    => EMAC1CLIENTRXFRAMEDROP,
+    EMAC1CLIENTRXSTATS        => EMAC1CLIENTRXSTATS,
+    EMAC1CLIENTRXSTATSVLD     => EMAC1CLIENTRXSTATSVLD,
+    EMAC1CLIENTRXSTATSBYTEVLD => EMAC1CLIENTRXSTATSBYTEVLD,
+    CLIENTEMAC1TXIFGDELAY     => CLIENTEMAC1TXIFGDELAY,
+    EMAC1CLIENTTXSTATS        => EMAC1CLIENTTXSTATS,
+    EMAC1CLIENTTXSTATSVLD     => EMAC1CLIENTTXSTATSVLD,
+    EMAC1CLIENTTXSTATSBYTEVLD => EMAC1CLIENTTXSTATSBYTEVLD,
+    CLIENTEMAC1PAUSEREQ       => CLIENTEMAC1PAUSEREQ,
+    CLIENTEMAC1PAUSEVAL       => CLIENTEMAC1PAUSEVAL,
+    GTX_CLK_1                 => GTX_CLK_1,
+    GMII_TXD_1                => GMII_TXD_1,
+    GMII_TX_EN_1              => GMII_TX_EN_1,
+    GMII_TX_ER_1              => GMII_TX_ER_1,
+    GMII_TX_CLK_1             => GMII_TX_CLK_1,
+    GMII_RXD_1                => GMII_RXD_1,
+    GMII_RX_DV_1              => GMII_RX_DV_1,
+    GMII_RX_ER_1              => GMII_RX_ER_1,
+    GMII_RX_CLK_1             => GMII_RX_CLK_1,
+    REFCLK                    => clk200,
+    RESET                     => rst,
+    PHY_RESET_1               => PHY_RESET_1,
 
-      rst_b_from_rocs_to_async_trigger => reset_roc_int_b,
-      clk100                           => mclk,
 
-      mrst_from_udp_b_ent   => open,
-      en_random_trigger_ent => open,
-      en_or_trigger         => open,
-      trigger_mask          => open,
-      module_mask           => open,
+-- fe_trigger_ready          => fe_trigger_ready,  -- change to trigger information!!
+    --  fe_trigger_data_packed    => fe_trigger_data,
+    --  TriggerTimeBack           => TriggerTimeBack,
+    --   TriggerTimeBackRdy        => TriggerTimeBackRdy,
+    mclk                             => mclk,  -- needs to run with
+                                               -- 100MHz!! Trigger time
+                                               -- packages run with this speed.
+    rst_b_from_rocs_to_async_trigger => reset_roc_int_b,
+    en_or_trigger                    => en_or_trigger_s_us,
+    en_rand_trigger                  => en_rand_trig_us,
+    rst_b                            => rst_b
+    --  coincidence_trigger       => coincidence_trigger_i,
 
-      clk200                    => clk200,
-      rst_b                     => rst_b,
-      EMAC1CLIENTRXDVLD         => EMAC1CLIENTRXDVLD,
-      EMAC1CLIENTRXFRAMEDROP    => EMAC1CLIENTRXFRAMEDROP,
-      EMAC1CLIENTRXSTATS        => EMAC1CLIENTRXSTATS,
-      EMAC1CLIENTRXSTATSVLD     => EMAC1CLIENTRXSTATSVLD,
-      EMAC1CLIENTRXSTATSBYTEVLD => EMAC1CLIENTRXSTATSBYTEVLD,
-      CLIENTEMAC1TXIFGDELAY     => CLIENTEMAC1TXIFGDELAY,
-      EMAC1CLIENTTXSTATS        => EMAC1CLIENTTXSTATS,
-      EMAC1CLIENTTXSTATSVLD     => EMAC1CLIENTTXSTATSVLD,
-      EMAC1CLIENTTXSTATSBYTEVLD => EMAC1CLIENTTXSTATSBYTEVLD,
-      CLIENTEMAC1PAUSEREQ       => CLIENTEMAC0PAUSEREQ,
-      CLIENTEMAC1PAUSEVAL       => CLIENTEMAC0PAUSEVAL,
-      GTX_CLK_1                 => GTX_CLK_1,
-      GMII_TXD_1                => GMII_TXD_1,
-      GMII_TX_EN_1              => GMII_TX_EN_1,
-      GMII_TX_ER_1              => GMII_TX_ER_1,
-      GMII_TX_CLK_1             => GMII_TX_CLK_1,
-      GMII_RXD_1                => GMII_RXD_1,
-      GMII_RX_DV_1              => GMII_RX_DV_1,
-      GMII_RX_ER_1              => GMII_RX_ER_1,
-      GMII_RX_CLK_1             => GMII_RX_CLK_1,
-      PHY_RESET_1               => PHY_RESET_1);
+    --FPGA_conf => FPGA_conf,
 
-  
+    --cs_ila_trig0 => cs_ila_ToUDP2
+    --  cs_ila_trig0 => open
+    );
+
+
 
 
 
