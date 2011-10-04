@@ -47,11 +47,9 @@ entity top is
     MCLK100   : out std_logic;
     MCLK100_b : out std_logic;
 
-    RESET_ROC_B1   : out std_logic;
-    RESET_ROC_B1_b : out std_logic;
+    RESET_ROC_B   : out std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
+    RESET_ROC_B_b : out std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
 
-    RESET_ROC_B2   : out std_logic;
-    RESET_ROC_B2_b : out std_logic;
 
     --Sync Trigger trigger part
 
@@ -189,7 +187,7 @@ begin
         O  => trig_in_se(I));
   end generate G1;
 
-  G2 : for I in 0 to (NUMBER_OF_MODULES-1) generate
+  G2 : for I in 0 to (NUMBER_OF_ROCS-1) generate
     --diff_out : work.components.OBUFDS port map (
     diff_out : OBUFDS
       generic map (
@@ -200,6 +198,14 @@ begin
         OB => SYNC_TRIGGER_OUT_b(I),
         I  => trig_out_se2(I));
   end generate G2;
+
+   G3 : for I in 0 to (NUMBER_OF_ROCS-1) generate
+    --diff_out : work.components.OBUFDS port map (
+  reset_diff_out : OBUFDS port map(
+    O  => RESET_ROC_B(i),
+    OB => RESET_ROC_B_b(i),
+    I  => reset_roc_int_b);
+ end generate G3;
 
 
   Inst_SwitchDebouncer : entity work.SwitchDebouncer
@@ -250,17 +256,9 @@ begin
       mclk        => mclk,
       trigger_out => trig_out_se_rand);
 
-  --MCLK_DIFF_OUT : work.components.OBUFDS port map (
-  MCLK_DIFF_OUT1 : OBUFDS port map(
-    O  => RESET_ROC_B1,
-    OB => RESET_ROC_B1_b,
-    I  => reset_roc_int_b);
+  
+  
 
-  --    MCLK_DIFF_OUT2 : work.components.OBUFDS port map (
-  MCLK_DIFF_OUT2 : OBUFDS port map(
-    O  => RESET_ROC_B2,
-    OB => RESET_ROC_B2_b,
-    I  => reset_roc_int_b);
 
 
   

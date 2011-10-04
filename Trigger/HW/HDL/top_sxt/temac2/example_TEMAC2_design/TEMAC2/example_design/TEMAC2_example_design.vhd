@@ -340,7 +340,7 @@ architecture TOP_LEVEL of TEMAC2_example_design is
   signal rd_en_fifo       : std_logic;
 
   signal wr_en_fifo      : std_logic;
-  signal data_count_fifo : std_logic_vector(8 downto 0);
+  signal data_count_fifo : std_logic_vector(11 downto 0);
   signal dout_fifo       : std_logic_vector(7 downto 0);
   signal empty_fifo      : std_logic;
   signal full_fifo       : std_logic;
@@ -408,42 +408,42 @@ architecture TOP_LEVEL of TEMAC2_example_design is
   -- signals for the UDP sender FSM
   type   state_types is (INIT, WAIT_FOR_WR_EN, PREP_TRANS, PREP_TRANS2, START_TRANS, START_TRANS2, PREP_FIRST_BYTE, WAIT_FOR_UDP, SEND_DATA);
   signal state         : state_types;
-  signal bytes_to_send : unsigned(8 downto 0);
+  signal bytes_to_send : unsigned(11 downto 0);
   signal dout_fifo_tmp : std_logic_vector(7 downto 0);
   signal where_to_send : std_logic;
 
   signal ll_reset_1_i_b : std_logic;
 
 
-  signal CONTROL0 : std_logic_vector(35 downto 0);
-  component cs_controller
-    port (
-      CONTROL0 : inout std_logic_vector(35 downto 0));
-  end component;
-  component ila_cs
-    port (
-      CONTROL : inout std_logic_vector(35 downto 0);
-      CLK     : in    std_logic;
-      TRIG0   : in    std_logic_vector(127 downto 0));
-  end component;
-  signal cs_trig : std_logic_vector(127 downto 0);
+  --signal CONTROL0 : std_logic_vector(35 downto 0);
+  --component cs_controller
+  --  port (
+  --    CONTROL0 : inout std_logic_vector(35 downto 0));
+  --end component;
+  --component ila_cs
+  --  port (
+  --    CONTROL : inout std_logic_vector(35 downto 0);
+  --    CLK     : in    std_logic;
+  --    TRIG0   : in    std_logic_vector(127 downto 0));
+  --end component;
+  --signal cs_trig : std_logic_vector(127 downto 0);
 
 begin
-  cs_contr : cs_controller
-    port map (
-      CONTROL0 => CONTROL0);
-  your_instance_name : ila_cs
-    port map (
-      CONTROL => CONTROL0,
-      CLK     => ll_clk_1_i,
-      TRIG0   => cs_trig);
+  --cs_contr : cs_controller
+  --  port map (
+  --    CONTROL0 => CONTROL0);
+  --your_instance_name : ila_cs
+  --  port map (
+  --    CONTROL => CONTROL0,
+  --    CLK     => ll_clk_1_i,
+  --    TRIG0   => cs_trig);
 
-  cs_trig(7 downto 0) <= usr_data_output_bus;
-  cs_trig(8)          <= valid_out_usr_data;
+  --cs_trig(7 downto 0) <= usr_data_output_bus;
+  --cs_trig(8)          <= valid_out_usr_data;
 
-  cs_trig(17 downto 10) <= udp_data_out;
-  cs_trig(18)           <= udp_valid_data;
-  cs_trig(27 downto 20) <= sender_ip;
+  --cs_trig(17 downto 10) <= udp_data_out;
+  --cs_trig(18)           <= udp_valid_data;
+  --cs_trig(27 downto 20) <= sender_ip;
 
 
 
@@ -519,8 +519,8 @@ begin
     port map(
       clk         => ll_clk_1_i,        --125 mhz
       rst_b       => ll_reset_1_i_b,
-      rate_cards  => "00",
-      coincidence => "00",
+      rate_cards  => "0000",
+      coincidence => "0000",
       fifo_empty  => empty_fifo,
       we          => we_rate_counter,
       we_others   => we_others,
@@ -829,8 +829,8 @@ begin
         when START_TRANS2 =>
           rd_en_fifo                          <= '1';
           transmit_start_enable_i             <= '1';
-          transmit_data_length_i(15 downto 9) <= "0000000";
-          transmit_data_length_i(8 downto 0)  <= std_logic_vector(bytes_to_send);
+          transmit_data_length_i(15 downto 12) <= "0000";
+          transmit_data_length_i(11 downto 0)  <= std_logic_vector(bytes_to_send);
           state                               <= WAIT_FOR_UDP;
         when WAIT_FOR_UDP =>
           if usr_data_trans_phase_on_i = '1' then

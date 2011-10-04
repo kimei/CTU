@@ -8,7 +8,7 @@
 <!-- Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/temac2/example_TEMAC2_design/TEMAC2/example_design/TEMAC2_example_design.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/top_sxt.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

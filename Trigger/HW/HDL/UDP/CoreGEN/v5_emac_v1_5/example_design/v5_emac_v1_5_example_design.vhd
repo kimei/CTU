@@ -181,7 +181,7 @@ architecture TOP_LEVEL of v5_emac_v1_5_example_design is
   signal rd_en_fifo       : std_logic;
 
   signal wr_en_fifo      : std_logic;
-  signal data_count_fifo : std_logic_vector(8 downto 0);
+  signal data_count_fifo : std_logic_vector(11 downto 0);
   signal dout_fifo       : std_logic_vector(7 downto 0);
   signal empty_fifo      : std_logic;
   signal full_fifo       : std_logic;
@@ -189,7 +189,7 @@ architecture TOP_LEVEL of v5_emac_v1_5_example_design is
   -- signals for the UDP sender FSM
   type   state_types is (INIT, WAIT_FOR_WR_EN, PREP_TRANS, PREP_TRANS2, START_TRANS, START_TRANS2, PREP_FIRST_BYTE, WAIT_FOR_UDP, SEND_DATA);
   signal state         : state_types;
-  signal bytes_to_send : unsigned(8 downto 0);
+  signal bytes_to_send : unsigned(11 downto 0);
   signal dout_fifo_tmp : std_logic_vector(7 downto 0);
   signal where_to_send : std_logic;
 
@@ -854,8 +854,8 @@ begin
         when START_TRANS2 =>
           rd_en_fifo                          <= '1';
           transmit_start_enable_i             <= '1';
-          transmit_data_length_i(15 downto 9) <= "0000000";
-          transmit_data_length_i(8 downto 0)  <= std_logic_vector(bytes_to_send);
+          transmit_data_length_i(15 downto 12) <= "0000";
+          transmit_data_length_i(11 downto 0)  <= std_logic_vector(bytes_to_send);
           state                               <= WAIT_FOR_UDP;
         when WAIT_FOR_UDP =>
           if usr_data_trans_phase_on_i = '1' then

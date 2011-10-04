@@ -64,7 +64,7 @@ architecture Behavioral of CRU is
   signal pll_reset     : std_logic;
   signal wait_counter  : integer range 65535 downto 0;  -- To delay the reset signal (16 bit int)
   signal wait_counter2 : integer range 16 downto 0;
-  signal rst_counter   : integer range (NUMBER_OF_ROCS+2) downto 0;
+  signal rst_counter   : integer range (31) downto 0;
   -----------------------------------------------------------------------------
 
   signal clk_lock        : std_logic;
@@ -244,11 +244,13 @@ begin
           reset_global_b <= '0';
           wait_counter   <= wait_counter + 1;
           state          <= RST5;
-          if wait_counter = 4 then
+          if wait_counter = 10 then
             state        <= WAIT2;
             wait_counter <= 0;
           end if;
           -- Pull reset low and wait 2X WAIT_PERIODS_2
+
+          
         when WAIT2 =>
           state        <= WAIT2;
           wait_counter <= wait_counter + 1;
@@ -263,6 +265,8 @@ begin
             state         <= RESET_ROCS;
           end if;
           -- Wait here until the llock_lock is lost again
+
+          
         when DET_CLOCKLOSS =>
           state <= DET_CLOCKLOSS;
           if clk_lock = '0' then

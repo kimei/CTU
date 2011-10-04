@@ -7,7 +7,7 @@ run
 -ofmt NGC
 -p xc5vlx50t-1-ff1136
 -top top
--opt_mode Speed
+-opt_mode Area
 -opt_level 1
 -power NO
 -iuc NO
@@ -25,7 +25,7 @@ run
 -slice_utilization_ratio 100
 -bram_utilization_ratio 100
 -dsp_utilization_ratio 100
--lc Off
+-lc Area
 -reduce_control_sets Off
 -verilog2001 YES
 -fsm_extract YES -fsm_encoding Auto
@@ -41,7 +41,7 @@ run
 -shift_extract YES
 -xor_collapse YES
 -rom_style Auto
--auto_bram_packing NO
+-auto_bram_packing YES
 -mux_extract Yes
 -resource_sharing YES
 -async_to_sync NO
@@ -56,6 +56,6 @@ run
 -use_clock_enable Auto
 -use_sync_set Auto
 -use_sync_reset Auto
--iob Auto
+-iob True
 -equivalent_register_removal YES
 -slice_utilization_ratio_maxmargin 5

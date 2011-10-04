@@ -1,7 +1,7 @@
 Release 13.1 par O.40d (lin64)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
-COMPETReadout003::  Wed Sep 21 14:38:49 2011
+COMPETReadout003::  Tue Oct 04 12:34:11 2011
 
 par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
 
@@ -21,33 +21,33 @@ Device speed data version:  "PRODUCTION 1.72 2011-02-03".
 Device Utilization Summary:
 
    Number of BSCANs                          1 out of 4      25%
-   Number of BUFGs                          15 out of 32     46%
+   Number of BUFGs                          16 out of 32     50%
    Number of IDELAYCTRLs                     4 out of 16     25%
    Number of ILOGICs                        22 out of 560     3%
-   Number of External IOBs                 154 out of 480    32%
-      Number of LOCed IOBs                  76 out of 154    49%
+   Number of External IOBs                 158 out of 480    32%
+      Number of LOCed IOBs                  80 out of 158    50%
 
-   Number of External IOBMs                  5 out of 240     2%
-      Number of LOCed IOBMs                  5 out of 5     100%
+   Number of External IOBMs                  9 out of 240     3%
+      Number of LOCed IOBMs                  9 out of 9     100%
 
-   Number of External IOBSs                  5 out of 240     2%
-      Number of LOCed IOBSs                  5 out of 5     100%
+   Number of External IOBSs                  9 out of 240     3%
+      Number of LOCed IOBSs                  9 out of 9     100%
 
    Number of IODELAYs                       22 out of 560     3%
    Number of OLOGICs                        27 out of 560     4%
    Number of PLL_ADVs                        1 out of 6      16%
-   Number of RAMB18X2s                       9 out of 60     15%
-   Number of RAMB18X2SDPs                    4 out of 60      6%
+   Number of RAMB18X2s                      12 out of 60     20%
+   Number of RAMB18X2SDPs                    1 out of 60      1%
    Number of RAMB36_EXPs                    35 out of 60     58%
    Number of TEMACs                          2 out of 2     100%
-   Number of Slices                       2230 out of 7200   30%
-   Number of Slice Registers              4032 out of 28800  13%
-      Number used as Flip Flops           3884
+   Number of Slices                       2261 out of 7200   31%
+   Number of Slice Registers              5033 out of 28800  16%
+      Number used as Flip Flops           4885
       Number used as Latches               148
       Number used as LatchThrus              0
 
-   Number of Slice LUTS                   4893 out of 28800  16%
-   Number of Slice LUT-Flip Flop pairs    6513 out of 28800  22%
+   Number of Slice LUTS                   5027 out of 28800  17%
+   Number of Slice LUT-Flip Flop pairs    7658 out of 28800  26%
 
 
 Overall effort level (-ol):   High 
@@ -70,33 +70,60 @@ WARNING:Par:288 - The signal DIP_SWITCH<7>_IBUF has no load.  PAR will not attem
 Starting Router
 
 
-Phase  1  : 30751 unrouted;      REAL time: 14 secs 
+Phase  1  : 32685 unrouted;      REAL time: 15 secs 
 
-Phase  2  : 25436 unrouted;      REAL time: 16 secs 
+Phase  2  : 25604 unrouted;      REAL time: 16 secs 
 
-Phase  3  : 7639 unrouted;      REAL time: 25 secs 
+Phase  3  : 8031 unrouted;      REAL time: 27 secs 
 
-Phase  4  : 7787 unrouted; (Setup:20644, Hold:24738, Component Switching Limit:0)     REAL time: 29 secs 
-
-Updating file: top.ncd with current fully routed design.
-
-Phase  5  : 0 unrouted; (Setup:14565, Hold:24156, Component Switching Limit:0)     REAL time: 36 secs 
-
-Phase  6  : 0 unrouted; (Setup:8429, Hold:24156, Component Switching Limit:0)     REAL time: 38 secs 
+Phase  4  : 8047 unrouted; (Setup:49823, Hold:25702, Component Switching Limit:0)     REAL time: 31 secs 
 
 Updating file: top.ncd with current fully routed design.
 
-Phase  7  : 0 unrouted; (Setup:300, Hold:24156, Component Switching Limit:0)     REAL time: 3 mins 42 secs 
+Phase  5  : 0 unrouted; (Setup:75196, Hold:29281, Component Switching Limit:0)     REAL time: 44 secs 
+
+Phase  6  : 0 unrouted; (Setup:79654, Hold:29281, Component Switching Limit:0)     REAL time: 54 secs 
 
 Updating file: top.ncd with current fully routed design.
 
-Phase  8  : 0 unrouted; (Setup:300, Hold:24156, Component Switching Limit:0)     REAL time: 3 mins 46 secs 
+Phase  7  : 0 unrouted; (Setup:80170, Hold:29281, Component Switching Limit:0)     REAL time: 1 mins 10 secs 
 
-Phase  9  : 0 unrouted; (Setup:300, Hold:0, Component Switching Limit:0)     REAL time: 3 mins 47 secs 
+Updating file: top.ncd with current fully routed design.
 
-Phase 10  : 0 unrouted; (Setup:173, Hold:0, Component Switching Limit:0)     REAL time: 3 mins 48 secs 
-Total REAL time to Router completion: 3 mins 48 secs 
-Total CPU time to Router completion: 3 mins 59 secs 
+Phase  8  : 0 unrouted; (Setup:74184, Hold:29281, Component Switching Limit:0)     REAL time: 1 mins 17 secs 
+WARNING:Route:522 - Unusually high hold time violation detected among 12 connections.The router will continue and try to
+   fix it 
+	EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray<7>:DQ ->
+EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync<7>:DX -2533
+	EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray<11>:DQ ->
+EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync<11>:DX -2530
+	EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray<11>:BQ ->
+EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync<11>:AX -2416
+	EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray<11>:AQ ->
+EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync<11>:BX -2404
+	EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray<7>:CQ ->
+EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync<7>:BX -2374
+	EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray<7>:BQ ->
+EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync<7>:CX -2363
+	EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray<3>:DQ ->
+EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync<3>:DX -2346
+	EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray<3>:BQ ->
+EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync<3>:CX -2311
+	EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray<7>:AQ ->
+EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync<7>:AX -2252
+	EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray<3>:AQ ->
+EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync<3>:AX -2222
+	EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray<3>:CQ ->
+EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync<3>:BX -2197
+	EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_addr_gray<11>:CQ ->
+EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_rd_addr_gray_sync<11>:CX -2069
+
+
+Phase  9  : 0 unrouted; (Setup:74184, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 17 secs 
+
+Phase 10  : 0 unrouted; (Setup:70854, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 19 secs 
+Total REAL time to Router completion: 1 mins 19 secs 
+Total CPU time to Router completion: 1 mins 23 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -114,22 +141,36 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
+|Inst_TEMAC2_example_ |              |      |      |            |             |
+|     design/tx_clk_1 | BUFGCTRL_X0Y0| No   | 1321 |  0.494     |  1.996      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_TEMAC2_example_ |              |      |      |            |             |
+|design/inst_async_tr |              |      |      |            |             |
+|   igger/CONTROL0<0> |BUFGCTRL_X0Y24| No   |   73 |  0.361     |  1.925      |
++---------------------+--------------+------+------+------------+-------------+
+|                mclk | BUFGCTRL_X0Y3| No   |   48 |  0.194     |  1.721      |
++---------------------+--------------+------+------+------------+-------------+
+|    lut7250_228_BUFG |BUFGCTRL_X0Y28| No   |   15 |  0.046     |  1.767      |
++---------------------+--------------+------+------+------------+-------------+
 |EMAC_0/tx_client_clk |              |      |      |            |             |
-|                  _0 | BUFGCTRL_X0Y5| No   |  374 |  0.386     |  1.908      |
+|                  _0 |BUFGCTRL_X0Y25| No   |  364 |  0.384     |  1.908      |
 +---------------------+--------------+------+------+------------+-------------+
 |Inst_TEMAC2_example_ |              |      |      |            |             |
-|     design/tx_clk_1 | BUFGCTRL_X0Y0| No   | 1045 |  0.497     |  2.003      |
-+---------------------+--------------+------+------+------------+-------------+
-|Inst_TEMAC2_example_ |              |      |      |            |             |
-|  design/CONTROL0<0> | BUFGCTRL_X0Y7| No   |   68 |  0.313     |  1.888      |
+|   design/rx_clk_1_i | BUFGCTRL_X0Y1| No   |   49 |  0.389     |  1.994      |
 +---------------------+--------------+------+------+------------+-------------+
 |EMAC_0/rx_client_clk |              |      |      |            |             |
-|                  _0 |BUFGCTRL_X0Y26| No   |   38 |  0.325     |  1.912      |
+|                  _0 | BUFGCTRL_X0Y7| No   |   37 |  0.384     |  1.912      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_CRU/fpga_100m_c |              |      |      |            |             |
+|                lk_s |BUFGCTRL_X0Y29| No   |   15 |  0.096     |  1.707      |
 +---------------------+--------------+------+------+------------+-------------+
 |Inst_TEMAC2_example_ |              |      |      |            |             |
-|   design/rx_clk_1_i | BUFGCTRL_X0Y1| No   |   49 |  0.340     |  1.994      |
-+---------------------+--------------+------+------+------------+-------------+
-|                mclk | BUFGCTRL_X0Y3| No   |   47 |  0.219     |  1.722      |
+|design/UDP_IP_Core_1 |              |      |      |            |             |
+|/IPV4_PACKET_TRANSMI |              |      |      |            |             |
+|TTER_port_map/Inst_I |              |      |      |            |             |
+|PV4WriteUDPHeader/Ch |              |      |      |            |             |
+|ecksum32_n_or0000_wg |              |      |      |            |             |
+|              _cy<6> | BUFGCTRL_X0Y6| No   |    9 |  0.048     |  1.738      |
 +---------------------+--------------+------+------+------------+-------------+
 |Inst_TEMAC2_example_ |              |      |      |            |             |
 |design/UDP_IP_Core_2 |              |      |      |            |             |
@@ -137,67 +178,35 @@ Generating Clock Report
 |TTER_port_map/Inst_I |              |      |      |            |             |
 |PV4WriteUDPHeader/Ch |              |      |      |            |             |
 |ecksum32_n_or0000_wg |              |      |      |            |             |
-|              _cy<6> |BUFGCTRL_X0Y27| No   |    9 |  0.031     |  1.693      |
+|              _cy<6> |BUFGCTRL_X0Y26| No   |    9 |  0.039     |  1.798      |
 +---------------------+--------------+------+------+------------+-------------+
-|Inst_CRU/fpga_100m_c |              |      |      |            |             |
-|                lk_s |BUFGCTRL_X0Y29| No   |   16 |  0.162     |  1.754      |
+|EMAC_0/UDP_IP_Core_1 |              |      |      |            |             |
+|/IPV4_PACKET_TRANSMI |              |      |      |            |             |
+|TTER_port_map/Inst_I |              |      |      |            |             |
+|PV4WriteUDPHeader/Ch |              |      |      |            |             |
+|ecksum32_n_or0000_wg |              |      |      |            |             |
+|              _cy<6> | BUFGCTRL_X0Y5| No   |    9 |  0.048     |  1.599      |
 +---------------------+--------------+------+------+------------+-------------+
 |              clk200 | BUFGCTRL_X0Y2| No   |    7 |  0.187     |  1.692      |
 +---------------------+--------------+------+------+------------+-------------+
-| EMAC_0/tx_phy_clk_0 |BUFGCTRL_X0Y28| No   |   12 |  0.260     |  1.908      |
+| EMAC_0/tx_phy_clk_0 |BUFGCTRL_X0Y27| No   |   12 |  0.260     |  1.908      |
 +---------------------+--------------+------+------+------------+-------------+
-|     Inst_CRU/mclk_s | BUFGCTRL_X0Y4| No   |    4 |  0.323     |  1.833      |
+|     Inst_CRU/mclk_s | BUFGCTRL_X0Y4| No   |    5 |  0.308     |  1.833      |
 +---------------------+--------------+------+------+------------+-------------+
 |   EMAC_0/rx_clk_0_i |BUFGCTRL_X0Y30| No   |   11 |  0.252     |  1.897      |
 +---------------------+--------------+------+------+------------+-------------+
 |  MII_TX_CLK_0_BUFGP |BUFGCTRL_X0Y31| No   |    1 |  0.000     |  1.897      |
 +---------------------+--------------+------+------+------------+-------------+
-|Inst_TEMAC2_example_ |              |      |      |            |             |
-|design/UDP_IP_Core_1 |              |      |      |            |             |
-|/IPV4_PACKET_TRANSMI |              |      |      |            |             |
-| TTER_port_map/LUTwe |BUFGCTRL_X0Y25| No   |    8 |  0.091     |  1.716      |
+|          lut5197_89 |         Local|      |    8 |  0.390     |  1.021      |
 +---------------------+--------------+------+------+------------+-------------+
-|EMAC_0/UDP_IP_Core_1 |              |      |      |            |             |
-|/IPV4_PACKET_TRANSMI |              |      |      |            |             |
-| TTER_port_map/LUTwe | BUFGCTRL_X0Y6| No   |    8 |  0.090     |  1.704      |
+|  EMAC_0/gtx_clk_0_i |         Local|      |    1 |  0.000     |  2.992      |
 +---------------------+--------------+------+------+------------+-------------+
-|EMAC_0/UDP_IP_Core_1 |              |      |      |            |             |
-|/IPV4_PACKET_TRANSMI |              |      |      |            |             |
-|TTER_port_map/Inst_I |              |      |      |            |             |
-|PV4WriteUDPHeader/Ch |              |      |      |            |             |
-|ecksumTemplate_n_16_ |              |      |      |            |             |
-|             and0000 |         Local|      |   10 |  0.479     |  1.269      |
+|        lut10557_463 |         Local|      |    5 |  0.000     |  1.462      |
 +---------------------+--------------+------+------+------------+-------------+
 |Inst_TEMAC2_example_ |              |      |      |            |             |
-|design/UDP_IP_Core_1 |              |      |      |            |             |
-|/IPV4_PACKET_TRANSMI |              |      |      |            |             |
-|TTER_port_map/Inst_I |              |      |      |            |             |
-|PV4WriteUDPHeader/Ch |              |      |      |            |             |
-|ecksumTemplate_n_16_ |              |      |      |            |             |
-|             and0000 |         Local|      |   10 |  0.599     |  1.294      |
-+---------------------+--------------+------+------+------------+-------------+
-|Inst_TEMAC2_example_ |              |      |      |            |             |
-|design/UDP_IP_Core_2 |              |      |      |            |             |
-|/IPV4_PACKET_TRANSMI |              |      |      |            |             |
-|TTER_port_map/Inst_I |              |      |      |            |             |
-|PV4WriteUDPHeader/Ch |              |      |      |            |             |
-|ecksumTemplate_n_16_ |              |      |      |            |             |
-|             and0000 |         Local|      |   10 |  0.724     |  1.399      |
-+---------------------+--------------+------+------+------------+-------------+
-|EMAC_0/UDP_IP_Core_1 |              |      |      |            |             |
-|/IPV4_PACKET_TRANSMI |              |      |      |            |             |
-|TTER_port_map/Inst_I |              |      |      |            |             |
-|PV4WriteUDPHeader/Ma |              |      |      |            |             |
-|      dd_SrcIP_cy<7> |         Local|      | 1821 |  1.535     |  4.924      |
-+---------------------+--------------+------+------+------------+-------------+
-|Inst_TEMAC2_example_ |              |      |      |            |             |
-| design/CONTROL0<13> |         Local|      |    4 |  0.000     |  0.650      |
-+---------------------+--------------+------+------+------------+-------------+
-|  EMAC_0/gtx_clk_0_i |         Local|      |    1 |  0.000     |  3.920      |
-+---------------------+--------------+------+------+------------+-------------+
-|Inst_TEMAC2_example_ |              |      |      |            |             |
-|design/cs_contr/U0/i |              |      |      |            |             |
-|          UPDATE_OUT |         Local|      |    1 |  0.000     |  0.834      |
+|design/inst_async_tr |              |      |      |            |             |
+|igger/cs_contr/U0/iU |              |      |      |            |             |
+|           PDATE_OUT |         Local|      |    1 |  0.000     |  1.028      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -205,7 +214,7 @@ only delays for the net. Note this is different from Clock Skew which
 is reported in TRCE timing report. Clock Skew is the difference between
 the minimum and maximum path delays which includes logic delays.
 
-Timing Score: 173 (Setup: 173, Hold: 0, Component Switching Limit: 0)
+Timing Score: 70854 (Setup: 70854, Hold: 0, Component Switching Limit: 0)
 
 WARNING:Par:468 - Your design did not meet timing.  The following are some suggestions to assist you to meet timing in
    your design.
@@ -233,48 +242,48 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-* TS_fe_TEMAC_gtx_clk1 = PERIOD TIMEGRP "fe | SETUP       |    -0.173ns|     8.173ns|       1|         173
-  _TEMAC_gtx_clk1" 8 ns HIGH 50%            | HOLD        |     0.236ns|            |       0|           0
+* TS_fe_TEMAC_gtx_clk1 = PERIOD TIMEGRP "fe | SETUP       |    -1.172ns|     9.172ns|     109|       70854
+  _TEMAC_gtx_clk1" 8 ns HIGH 50%            | HOLD        |     0.222ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_v5_emac_v1_5_gtp_clk = PERIOD TIMEGRP  | SETUP       |     0.592ns|     7.108ns|       0|           0
-  "v5_emac_v1_5_gtp_clk" 7.7 ns HIGH        | HOLD        |     0.264ns|            |       0|           0
+  TS_v5_emac_v1_5_gtp_clk = PERIOD TIMEGRP  | SETUP       |     0.300ns|     7.400ns|       0|           0
+  "v5_emac_v1_5_gtp_clk" 7.7 ns HIGH        | HOLD        |     0.252ns|            |       0|           0
     50%                                     |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  ts_tx_meta_protect_1 = MAXDELAY FROM TIME | SETUP       |     0.936ns|     4.064ns|       0|           0
-  GRP "tx_metastable_1" 5 ns         DATAPA | HOLD        |     0.587ns|            |       0|           0
-  THONLY                                    |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_fe_TEMAC_clk_phy_rx1 = PERIOD TIMEGRP  | SETUP       |     1.326ns|     6.174ns|       0|           0
-  "fe_TEMAC_clk_phy_rx1" 7.5 ns HIGH        | HOLD        |     0.444ns|            |       0|           0
-    50%                                     |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  ts_tx_meta_protect_0 = MAXDELAY FROM TIME | SETUP       |     1.667ns|     3.333ns|       0|           0
-  GRP "tx_metastable_0" 5 ns         DATAPA | HOLD        |     0.651ns|            |       0|           0
-  THONLY                                    |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_Inst_CRU_Inst_PLL_ALL_CLKOUT0_BUF = PE | SETUP       |     1.670ns|     6.660ns|       0|           0
-  RIOD TIMEGRP         "Inst_CRU_Inst_PLL_A | HOLD        |     0.486ns|            |       0|           0
+  TS_Inst_CRU_Inst_PLL_ALL_CLKOUT0_BUF = PE | SETUP       |     1.083ns|     7.834ns|       0|           0
+  RIOD TIMEGRP         "Inst_CRU_Inst_PLL_A | HOLD        |     1.691ns|            |       0|           0
   LL_CLKOUT0_BUF" TS_FPGA100M HIGH 50%      |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_Inst_CRU_Inst_PLL_ALL_CLKOUT3_BUF = PE | SETUP       |     3.649ns|     1.351ns|       0|           0
-  RIOD TIMEGRP         "Inst_CRU_Inst_PLL_A | HOLD        |     0.468ns|            |       0|           0
-  LL_CLKOUT3_BUF" TS_FPGA100M / 2 HIGH 50%  | MINPERIOD   |     3.334ns|     1.666ns|       0|           0
+  ts_tx_meta_protect_1 = MAXDELAY FROM TIME | SETUP       |     1.376ns|     3.624ns|       0|           0
+  GRP "tx_metastable_1" 5 ns         DATAPA | HOLD        |     0.467ns|            |       0|           0
+  THONLY                                    |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_FPGA100M = PERIOD TIMEGRP "FPGA100M" 1 | SETUP       |     4.806ns|     5.194ns|       0|           0
-  0 ns HIGH 50%                             | HOLD        |     0.488ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  ts_rx_meta_protect_0 = MAXDELAY FROM TIME | SETUP       |     3.539ns|     1.461ns|       0|           0
-  GRP "rx_metastable_0" 5 ns                | HOLD        |     0.420ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  TS_fe_TEMAC_clk_phy_rx0 = PERIOD TIMEGRP  | SETUP       |     3.679ns|     3.821ns|       0|           0
-  "fe_TEMAC_clk_phy_rx0" 7.5 ns HIGH        | HOLD        |     1.008ns|            |       0|           0
+  TS_fe_TEMAC_clk_phy_rx1 = PERIOD TIMEGRP  | SETUP       |     1.454ns|     6.046ns|       0|           0
+  "fe_TEMAC_clk_phy_rx1" 7.5 ns HIGH        | HOLD        |     0.437ns|            |       0|           0
     50%                                     |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  ts_rx_meta_protect_1 = MAXDELAY FROM TIME | SETUP       |     3.814ns|     1.186ns|       0|           0
-  GRP "rx_metastable_1" 5 ns                | HOLD        |     0.452ns|            |       0|           0
+  ts_tx_meta_protect_0 = MAXDELAY FROM TIME | SETUP       |     1.480ns|     3.520ns|       0|           0
+  GRP "tx_metastable_0" 5 ns         DATAPA | HOLD        |     0.472ns|            |       0|           0
+  THONLY                                    |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_Inst_CRU_Inst_PLL_ALL_CLKOUT1_BUF = PE | SETUP       |     5.111ns|     4.889ns|       0|           0
-  RIOD TIMEGRP         "Inst_CRU_Inst_PLL_A | HOLD        |     0.487ns|            |       0|           0
+  TS_Inst_CRU_Inst_PLL_ALL_CLKOUT3_BUF = PE | SETUP       |     3.644ns|     1.356ns|       0|           0
+  RIOD TIMEGRP         "Inst_CRU_Inst_PLL_A | HOLD        |     0.466ns|            |       0|           0
+  LL_CLKOUT3_BUF" TS_FPGA100M / 2 HIGH 50%  | MINPERIOD   |     3.334ns|     1.666ns|       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_FPGA100M = PERIOD TIMEGRP "FPGA100M" 1 | SETUP       |     4.461ns|     5.539ns|       0|           0
+  0 ns HIGH 50%                             | HOLD        |     0.488ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  ts_rx_meta_protect_0 = MAXDELAY FROM TIME | SETUP       |     3.541ns|     1.459ns|       0|           0
+  GRP "rx_metastable_0" 5 ns                | HOLD        |     0.424ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_fe_TEMAC_clk_phy_rx0 = PERIOD TIMEGRP  | SETUP       |     3.679ns|     3.821ns|       0|           0
+  "fe_TEMAC_clk_phy_rx0" 7.5 ns HIGH        | HOLD        |     1.010ns|            |       0|           0
+    50%                                     |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  ts_rx_meta_protect_1 = MAXDELAY FROM TIME | SETUP       |     3.999ns|     1.001ns|       0|           0
+  GRP "rx_metastable_1" 5 ns                | HOLD        |     0.449ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_Inst_CRU_Inst_PLL_ALL_CLKOUT1_BUF = PE | SETUP       |     4.349ns|     5.651ns|       0|           0
+  RIOD TIMEGRP         "Inst_CRU_Inst_PLL_A | HOLD        |     0.446ns|            |       0|           0
   LL_CLKOUT1_BUF" TS_FPGA100M HIGH 50%      |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   TS_v5_emac_v1_5_clk_phy_rx1 = PERIOD TIME | MINPERIOD   |     5.278ns|     2.222ns|       0|           0
@@ -285,22 +294,22 @@ Asterisk (*) preceding a constraint indicates it was not met.
   GRP "v5_emac_v1_5_clk_phy_rx0" 7.5 ns     |             |            |            |        |            
        HIGH 50%                             |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_tx_fifo_addr_0 = MAXDELAY FROM TIMEGRP | SETUP       |     8.886ns|     1.114ns|       0|           0
-   "tx_addr_rd_0" TO TIMEGRP         "tx_ad | HOLD        |     0.291ns|            |       0|           0
-  dr_wr_0" 10 ns                            |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_tx_fifo_addr_1 = MAXDELAY FROM TIMEGRP | SETUP       |     8.973ns|     1.027ns|       0|           0
-   "tx_addr_rd_1" TO TIMEGRP         "tx_ad | HOLD        |     0.443ns|            |       0|           0
+  TS_tx_fifo_addr_1 = MAXDELAY FROM TIMEGRP | SETUP       |     8.527ns|     1.473ns|       0|           0
+   "tx_addr_rd_1" TO TIMEGRP         "tx_ad | HOLD        |     0.431ns|            |       0|           0
   dr_wr_1" 10 ns                            |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_U_TO_J = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    11.672ns|     3.328ns|       0|           0
-   TO TIMEGRP "J_CLK" 15 ns                 | HOLD        |     1.983ns|            |       0|           0
+  TS_tx_fifo_addr_0 = MAXDELAY FROM TIMEGRP | SETUP       |     9.007ns|     0.993ns|       0|           0
+   "tx_addr_rd_0" TO TIMEGRP         "tx_ad | HOLD        |     0.460ns|            |       0|           0
+  dr_wr_0" 10 ns                            |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    14.110ns|     0.890ns|       0|           0
-   TO TIMEGRP "U_CLK" 15 ns                 | HOLD        |     0.566ns|            |       0|           0
+  TS_U_TO_J = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    12.362ns|     2.638ns|       0|           0
+   TO TIMEGRP "J_CLK" 15 ns                 | HOLD        |     1.310ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns H | SETUP       |    19.411ns|    10.589ns|       0|           0
-  IGH 50%                                   | HOLD        |     0.333ns|            |       0|           0
+  TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    14.127ns|     0.873ns|       0|           0
+   TO TIMEGRP "U_CLK" 15 ns                 | HOLD        |     0.550ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns H | SETUP       |    21.516ns|     8.484ns|       0|           0
+  IGH 50%                                   | HOLD        |     0.324ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   TS_fe_TEMAC_tx_clk0 = PERIOD TIMEGRP "fe_ | N/A         |         N/A|         N/A|     N/A|         N/A
   TEMAC_tx_clk0" 7.7 ns HIGH 50%            |             |            |            |        |            
@@ -311,9 +320,9 @@ Asterisk (*) preceding a constraint indicates it was not met.
   TS_fe_TEMAC_tx_clk1 = PERIOD TIMEGRP "fe_ | N/A         |         N/A|         N/A|     N/A|         N/A
   TEMAC_tx_clk1" 7.7 ns HIGH 50%            |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_D_TO_J_path" TIG                 | SETUP       |         N/A|     2.790ns|     N/A|           0
+  PATH "TS_D_TO_J_path" TIG                 | SETUP       |         N/A|     2.941ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_J_TO_D_path" TIG                 | SETUP       |         N/A|     3.421ns|     N/A|           0
+  PATH "TS_J_TO_D_path" TIG                 | SETUP       |         N/A|     3.203ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -327,10 +336,10 @@ Derived Constraints for TS_FPGA100M
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_FPGA100M                    |     10.000ns|      5.194ns|      6.660ns|            0|            0|         1462|         1652|
-| TS_Inst_CRU_Inst_PLL_ALL_CLKOU|     10.000ns|      6.660ns|          N/A|            0|            0|            5|            0|
+|TS_FPGA100M                    |     10.000ns|      5.539ns|      7.834ns|            0|            0|         1521|         1603|
+| TS_Inst_CRU_Inst_PLL_ALL_CLKOU|     10.000ns|      7.834ns|          N/A|            0|            0|            5|            0|
 | T0_BUF                        |             |             |             |             |             |             |             |
-| TS_Inst_CRU_Inst_PLL_ALL_CLKOU|     10.000ns|      4.889ns|          N/A|            0|            0|         1636|            0|
+| TS_Inst_CRU_Inst_PLL_ALL_CLKOU|     10.000ns|      5.651ns|          N/A|            0|            0|         1587|            0|
 | T1_BUF                        |             |             |             |             |             |             |             |
 | TS_Inst_CRU_Inst_PLL_ALL_CLKOU|      5.000ns|      1.666ns|          N/A|            0|            0|           11|            0|
 | T3_BUF                        |             |             |             |             |             |             |             |
@@ -350,17 +359,17 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 9 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 3 mins 54 secs 
-Total CPU time to PAR completion: 4 mins 4 secs 
+Total REAL time to PAR completion: 1 mins 24 secs 
+Total CPU time to PAR completion: 1 mins 28 secs 
 
-Peak Memory Usage:  695 MB
+Peak Memory Usage:  726 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
-Timing: Completed - 1 errors found.
+Timing: Completed - 109 errors found.
 
 Number of error messages: 0
-Number of warning messages: 12
+Number of warning messages: 13
 Number of info messages: 1
 
 Writing design to file top.ncd

@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2011-09-20T14:31:41</DateModified>
+  <DateModified>2011-10-04T11:40:34</DateModified>
   <ModuleName>top</ModuleName>
-  <SummaryTimeStamp>2011-09-20T14:13:59</SummaryTimeStamp>
+  <SummaryTimeStamp>2011-10-04T11:31:54</SummaryTimeStamp>
   <SavedFilePath>/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/iseconfig/top.xreport</SavedFilePath>
   <ImplementationReportsDirectory>/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/</ImplementationReportsDirectory>
   <DateInitialized>2011-09-19T13:39:17</DateInitialized>
@@ -11,7 +11,7 @@
  </header>
  <body>
   <viewgroup label="Design Overview" >
-   <view inputState="Unknown" program="implementation" ShowPartitionData="false" type="FPGASummary" file="top_summary.html" label="Summary" >
+   <view inputState="Unknown" program="implementation" ExpandErrors="true" ShowPartitionData="false" type="FPGASummary" file="top_summary.html" label="Summary" >
     <toc-item title="Design Overview" target="Design Overview" />
     <toc-item title="Design Utilization Summary" target="Design Utilization Summary" />
     <toc-item title="Performance Summary" target="Performance Summary" />
@@ -19,7 +19,7 @@
     <toc-item title="Detailed Reports" target="Detailed Reports" />
    </view>
    <view inputState="Unknown" program="implementation" contextTags="FPGA_ONLY" hidden="true" type="HTML" file="top_envsettings.html" label="System Settings" />
-   <view inputState="Translated" program="map" locator="MAP_IOB_TABLE" contextTags="FPGA_ONLY" type="IOBProperties" file="top_map.xrpt" label="IOB Properties" />
+   <view inputState="Translated" program="map" locator="MAP_IOB_TABLE" contextTags="FPGA_ONLY" type="IOBProperties" file="top_map.xrpt" showConstraints="0" label="IOB Properties" />
    <view inputState="Translated" program="map" contextTags="FPGA_ONLY" hidden="true" type="Control_Sets" file="top_map.xrpt" label="Control Set Information" />
    <view inputState="Translated" program="map" locator="MAP_MODULE_HIERARCHY" contextTags="FPGA_ONLY" type="Module_Utilization" file="top_map.xrpt" label="Module Level Utilization" />
    <view inputState="Mapped" program="par" locator="CONSTRAINT_TABLE" contextTags="FPGA_ONLY" type="ConstraintsData" file="top.ptwx" showConstraints="0" label="Timing Constraints" translator="ptwxToTableXML.xslt" />
@@ -52,7 +52,7 @@
    <view inputState="Routed" program="xpwr" WrapMessages="true" contextTags="EDK_OFF" hidden="true" type="MessageList" hideColumns="Filtered" file="_xmsgs/xpwr.xmsgs" label="Power Messages" />
    <view inputState="Routed" program="bitgen" WrapMessages="true" contextTags="FPGA_ONLY" type="MessageList" hideColumns="Filtered" file="_xmsgs/bitgen.xmsgs" label="Bitgen Messages" />
    <view inputState="Translated" program="cpldfit" WrapMessages="true" contextTags="CPLD_ONLY,EDK_OFF" hidden="true" type="MessageList" hideColumns="Filtered" file="_xmsgs/cpldfit.xmsgs" label="Fitter Messages" />
-   <view inputState="Current" program="implementation" WrapMessages="true" fileList="_xmsgs/xst.xmsgs,_xmsgs/ngdbuild.xmsgs,_xmsgs/map.xmsgs,_xmsgs/par.xmsgs,_xmsgs/trce.xmsgs,_xmsgs/xpwr.xmsgs,_xmsgs/bitgen.xmsgs" contextTags="FPGA_ONLY" type="MessageList" hideColumns="Filtered" file="_xmsgs/*.xmsgs" label="All Implementation Messages" />
+   <view inputState="Current" program="implementation" WrapMessages="true" fileList="_xmsgs/xst.xmsgs,_xmsgs/ngdbuild.xmsgs,_xmsgs/map.xmsgs,_xmsgs/par.xmsgs,_xmsgs/trce.xmsgs,_xmsgs/xpwr.xmsgs,_xmsgs/bitgen.xmsgs" contextTags="FPGA_ONLY" type="MessageList" hideColumns="Filtered" file="_xmsgs/*.xmsgs" label="All Implementation Messages" showWarnings="0" />
    <view inputState="Current" program="fitting" WrapMessages="true" fileList="_xmsgs/xst.xmsgs,_xmsgs/ngdbuild.xmsgs,_xmsgs/cpldfit.xmsgs,_xmsgs/xpwr.xmsgs" contextTags="CPLD_ONLY,EDK_OFF" hidden="true" type="CPLD_MessageList" hideColumns="Filtered" file="_xmsgs/*.xmsgs" label="All Implementation Messages (CPLD)" />
   </viewgroup>
   <viewgroup label="Detailed Reports" >
