@@ -172,7 +172,7 @@ END COMPONENT;
       c_implementation_type_wrch => 1,
       c_init_wr_pntr_val => 0,
       c_interface_type => 0,
-      c_memory_type => 1,
+      c_memory_type => 2,
       c_mif_file_name => "BlankString",
       c_msgon_val => 1,
       c_optimization_mode => 0,

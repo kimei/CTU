@@ -1,0 +1,73 @@
+# //  ModelSim SE-64 6.6e_1 May 25 2011 Linux 2.6.35-30-generic
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {sync_trigger_tb.fdo} 
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 6.6e_1 Compiler 2011.05 May 25 2011
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling package functions
+# -- Compiling package body functions
+# -- Loading package functions
+# Model Technology ModelSim SE-64 vcom 6.6e_1 Compiler 2011.05 May 25 2011
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling package constants
+# Model Technology ModelSim SE-64 vcom 6.6e_1 Compiler 2011.05 May 25 2011
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package vcomponents
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Loading package functions
+# -- Compiling entity edge_detector
+# -- Compiling architecture behave of edge_detector
+# Model Technology ModelSim SE-64 vcom 6.6e_1 Compiler 2011.05 May 25 2011
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Loading package vcomponents
+# -- Loading package constants
+# -- Loading package functions
+# -- Compiling entity sync_trigger
+# -- Compiling architecture behavioral of sync_trigger
+# -- Loading entity edge_detector
+# Model Technology ModelSim SE-64 vcom 6.6e_1 Compiler 2011.05 May 25 2011
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package textio
+# -- Loading package numeric_std
+# -- Loading package constants
+# -- Compiling entity sync_trigger_tb
+# -- Compiling architecture tb of sync_trigger_tb
+# ** Warning: [10] ../../Sync_Trigger/sim/sync_trigger_tb.vhd(64): (vcom-1135) Subprogram parameter f is declared using VHDL 1987 syntax.
+# vsim -lib work -voptargs=\"+acc\" -t 1ps work.sync_trigger_tb 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading std.textio(body)
+# Loading ieee.numeric_std(body)
+# Loading work.constants
+# Loading work.sync_trigger_tb(tb)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading unisim.vcomponents
+# Loading work.functions(body)
+# Loading work.sync_trigger(behavioral)#1
+# Loading work.edge_detector(behave)#1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# 
+#  

@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/impact.xsl
+OUTFILE=/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/impact.xsl
+FAMILY=None
+PART=None
+WORKINGDIR=/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt
+LICENSE=iMPACT
+USER_INFO=iMPACT

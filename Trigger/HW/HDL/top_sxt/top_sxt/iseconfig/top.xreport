@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2011-10-04T11:40:34</DateModified>
+  <DateModified>2011-11-16T11:16:57</DateModified>
   <ModuleName>top</ModuleName>
-  <SummaryTimeStamp>2011-10-04T11:31:54</SummaryTimeStamp>
+  <SummaryTimeStamp>2011-10-17T11:48:47</SummaryTimeStamp>
   <SavedFilePath>/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/iseconfig/top.xreport</SavedFilePath>
   <ImplementationReportsDirectory>/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/</ImplementationReportsDirectory>
   <DateInitialized>2011-09-19T13:39:17</DateInitialized>

@@ -10,42 +10,44 @@ Target Device  : xc5vlx50t
 Target Package : ff1136
 Target Speed   : -1
 Mapper Version : virtex5 -- $Revision: 1.55 $
-Mapped Date    : Tue Oct  4 12:31:44 2011
+Mapped Date    : Thu Oct 20 10:49:56 2011
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings: 5183
+Number of warnings: 5200
 Slice Logic Utilization:
-  Number of Slice Registers:                 5,033 out of  28,800   17%
-    Number used as Flip Flops:               4,885
+  Number of Slice Registers:                 5,050 out of  28,800   17%
+    Number used as Flip Flops:               4,902
     Number used as Latches:                    148
-  Number of Slice LUTs:                      5,027 out of  28,800   17%
-    Number used as logic:                    4,778 out of  28,800   16%
-      Number using O6 output only:           2,253
-      Number using O5 output only:           1,267
-      Number using O5 and O6:                1,258
-    Number used as Memory:                     139 out of   7,680    1%
+  Number of Slice LUTs:                      7,336 out of  28,800   25%
+    Number used as logic:                    5,304 out of  28,800   18%
+      Number using O6 output only:           2,758
+      Number using O5 output only:           1,270
+      Number using O5 and O6:                1,276
+    Number used as Memory:                   1,931 out of   7,680   25%
+      Number used as Dual Port RAM:          1,808
+        Number using O6 output only:         1,808
       Number used as Single Port RAM:           24
         Number using O6 output only:            24
-      Number used as Shift Register:           115
-        Number using O6 output only:           114
+      Number used as Shift Register:            99
+        Number using O6 output only:            98
         Number using O5 and O6:                  1
-    Number used as exclusive route-thru:       110
-  Number of route-thrus:                     1,477
-    Number using O6 output only:             1,366
-    Number using O5 output only:               107
+    Number used as exclusive route-thru:       101
+  Number of route-thrus:                     1,455
+    Number using O6 output only:             1,364
+    Number using O5 output only:                87
     Number using O5 and O6:                      4
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 2,261 out of   7,200   31%
-  Number of LUT Flip Flop pairs used:        7,658
-    Number with an unused Flip Flop:         2,625 out of   7,658   34%
-    Number with an unused LUT:               2,631 out of   7,658   34%
-    Number of fully used LUT-FF pairs:       2,402 out of   7,658   31%
-    Number of unique control sets:             268
+  Number of occupied Slices:                 2,857 out of   7,200   39%
+  Number of LUT Flip Flop pairs used:       10,029
+    Number with an unused Flip Flop:         4,979 out of  10,029   49%
+    Number with an unused LUT:               2,693 out of  10,029   26%
+    Number of fully used LUT-FF pairs:       2,357 out of  10,029   23%
+    Number of unique control sets:             402
     Number of slice register sites lost
-      to control set restrictions:             507 out of  28,800    1%
+      to control set restrictions:             502 out of  28,800    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -56,19 +58,19 @@ Slice Logic Distribution:
   over-mapped for a non-BRAM resource or if placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                       176 out of     480   36%
-    Number of LOCed IOBs:                       98 out of     176   55%
+  Number of bonded IOBs:                       182 out of     480   37%
+    Number of LOCed IOBs:                      104 out of     182   57%
     IOB Flip Flops:                             49
-    IOB Master Pads:                             9
-    IOB Slave Pads:                              9
+    IOB Master Pads:                            11
+    IOB Slave Pads:                             11
 
 Specific Feature Utilization:
-  Number of BlockRAM/FIFO:                      48 out of      60   80%
-    Number using BlockRAM only:                 48
+  Number of BlockRAM/FIFO:                      43 out of      60   71%
+    Number using BlockRAM only:                 43
     Total primitives used:
       Number of 36k BlockRAM used:              35
-      Number of 18k BlockRAM used:              21
-    Total Memory used (KB):                  1,638 out of   2,160   75%
+      Number of 18k BlockRAM used:              13
+    Total Memory used (KB):                  1,494 out of   2,160   69%
   Number of BUFG/BUFGCTRLs:                     16 out of      32   50%
     Number used as BUFGs:                       16
   Number of IDELAYCTRLs:                         4 out of      16   25%
@@ -77,11 +79,11 @@ Specific Feature Utilization:
   Number of TEMACs:                              2 out of       2  100%
 
   Number of RPM macros:           12
-Average Fanout of Non-Clock Nets:                3.00
+Average Fanout of Non-Clock Nets:                3.92
 
-Peak Memory Usage:  897 MB
-Total REAL time to MAP completion:  2 mins 25 secs 
-Total CPU time to MAP completion:   2 mins 15 secs 
+Peak Memory Usage:  957 MB
+Total REAL time to MAP completion:  3 mins 17 secs 
+Total CPU time to MAP completion:   3 mins 8 secs 
 
 Table of Contents
 -----------------
@@ -1476,9 +1478,9 @@ WARNING:Pack:2874 - Trimming timing constraints from pin
    32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.
    gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[7].ram.r/v5_noinit.
    ram/SDP.SINGLE_PRIM36.TDP_REGCLKBL_tiesig
-WARNING:Pack:2515 - The LUT-1 inverter "][46771_4_INV_0" failed to join the
+WARNING:Pack:2515 - The LUT-1 inverter "][48735_4_INV_0" failed to join the
    OLOGIC comp matched to output buffer "LEDS_1_OBUF".  This may result in
-   suboptimal timing.  The LUT-1 inverter ][46771_4_INV_0 drives multiple loads.
+   suboptimal timing.  The LUT-1 inverter ][48735_4_INV_0 drives multiple loads.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/cs_contr/U0/U_ICON/U_CMD/G_TAR
    GET[10].I_NE0.U_TARGET" has the property IOB=TRUE, but it did not join an IO
@@ -1609,16 +1611,6 @@ WARNING:Pack:2780 - The register
    ss.wsts/ram_full_fb_i" has the property IOB=TRUE, but it did not join an IO
    component because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gw
-   ss.wsts/ram_full_fb_i" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gw
-   ss.wsts/ram_full_fb_i" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/
    gwss.wsts/ram_full_fb_i" has the property IOB=TRUE, but it did not join an IO
@@ -1650,14 +1642,6 @@ WARNING:Pack:2780 - The register
    any IO element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/wr_en_32b_fifos_1" has the
-   property IOB=TRUE, but it did not join an IO component because it is not
-   connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/wr_en_32b_fifos_2" has the
-   property IOB=TRUE, but it did not join an IO component because it is not
-   connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/wr_en_32b_fifos_3" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
 WARNING:Pack:2780 - The register
@@ -2650,13 +2634,16 @@ WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_2_25" has the
 WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_2_17" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_3_10" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
 WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_2_26" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
 WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_2_18" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
-WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_3_10" has the
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_3_11" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
 WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_2_27" has the
@@ -2665,25 +2652,22 @@ WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_2_27" has the
 WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_2_19" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
-WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_3_11" has the
-   property IOB=TRUE, but it did not join an IO component because it is not
-   connected to any IO element.
-WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_2_28" has the
-   property IOB=TRUE, but it did not join an IO component because it is not
-   connected to any IO element.
 WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_3_20" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
 WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_3_12" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
-WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_2_29" has the
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_2_28" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
 WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_3_21" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
 WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_3_13" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_2_29" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
 WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_3_30" has the
@@ -2722,20 +2706,86 @@ WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_3_26" has the
 WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_3_18" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_4_10" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
 WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_3_27" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
 WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_3_19" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_4_11" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
 WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_3_28" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_4_20" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_4_12" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
 WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_3_29" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_4_21" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_4_13" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_4_30" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_4_22" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_4_14" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_4_31" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_4_23" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_4_15" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_4_24" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_4_16" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_4_25" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_4_17" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_4_26" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_4_18" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_4_27" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_4_19" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
 WARNING:Pack:2780 - The register
    "EMAC_0/v5_emac_ll/client_side_FIFO_emac0/tx_fifo_i/rd_bram_u" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_4_28" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_4_29" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
 WARNING:Pack:2780 - The register
@@ -3641,6 +3691,11 @@ WARNING:Pack:2780 - The register
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
 WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_10"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/your_instance_name/U0/I_NO_D.U
    _ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[48].I_SRLT_NE_0.DLY9/SRL16E3" has the
    property IOB=TRUE, but it did not join an IO component because it is not
@@ -3670,6 +3725,11 @@ WARNING:Pack:2780 - The register
    _ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[100].I_SRLT_NE_0.DLY9/SRL16E3" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_11"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/your_instance_name/U0/I_NO_D.U
    _ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[48].I_SRLT_NE_0.DLY9/SRL16E4" has the
@@ -3701,6 +3761,16 @@ WARNING:Pack:2780 - The register
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
 WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_12"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_20"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/your_instance_name/U0/I_NO_D.U
    _ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[48].I_SRLT_NE_0.DLY9/SRL16E5" has the
    property IOB=TRUE, but it did not join an IO component because it is not
@@ -3730,6 +3800,16 @@ WARNING:Pack:2780 - The register
    _ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[100].I_SRLT_NE_0.DLY9/SRL16E5" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_13"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_21"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/your_instance_name/U0/I_NO_D.U
    _ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[48].I_SRLT_NE_0.DLY9/SRL16E6" has the
@@ -3761,6 +3841,21 @@ WARNING:Pack:2780 - The register
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
 WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_14"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_22"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_30"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/your_instance_name/U0/I_NO_D.U
    _ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[48].I_SRLT_NE_0.DLY9/SRL16E7" has the
    property IOB=TRUE, but it did not join an IO component because it is not
@@ -3791,6 +3886,21 @@ WARNING:Pack:2780 - The register
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
 WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_15"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_23"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_31"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/your_instance_name/U0/I_NO_D.U
    _ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[48].I_SRLT_NE_0.DLY9/SRL16E8" has the
    property IOB=TRUE, but it did not join an IO component because it is not
@@ -3820,6 +3930,56 @@ WARNING:Pack:2780 - The register
    _ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[100].I_SRLT_NE_0.DLY9/SRL16E8" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_16"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_24"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_17"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_25"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_18"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_26"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_19"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_27"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_28"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_29"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/v5_emac_ll/client_side_FIFO_emac1/rx_fifo_i/rd_ad
    dr_gray_0" has the property IOB=TRUE, but it did not join an IO component
@@ -4779,13 +4939,16 @@ WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_2_3" has the
 WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_1_7" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_3_0" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
 WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_2_4" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
 WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_1_8" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
-WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_3_0" has the
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_3_1" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
 WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_2_5" has the
@@ -4794,19 +4957,16 @@ WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_2_5" has the
 WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_1_9" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
-WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_3_1" has the
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_3_2" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
 WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_2_6" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
-WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_3_2" has the
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_3_3" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
 WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_2_7" has the
-   property IOB=TRUE, but it did not join an IO component because it is not
-   connected to any IO element.
-WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_3_3" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
 WARNING:Pack:2780 - The register
@@ -4814,28 +4974,58 @@ WARNING:Pack:2780 - The register
    _ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[9].U_FDRE
    " has the property IOB=TRUE, but it did not join an IO component because it
    is not connected to any IO element.
-WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_2_8" has the
-   property IOB=TRUE, but it did not join an IO component because it is not
-   connected to any IO element.
 WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_3_4" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
-WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_2_9" has the
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_2_8" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_4_0" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
 WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_3_5" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_2_9" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_4_1" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
 WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_3_6" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_4_2" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
 WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_3_7" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_4_3" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
 WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_3_8" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_4_4" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
 WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_3_9" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_4_5" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_4_6" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_4_7" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_4_8" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/rate_counter_1/counts_4_9" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
 WARNING:Pack:2780 - The register "Inst_CRU/rst_counter_0" has the property
@@ -5319,6 +5509,18 @@ WARNING:Pack:2780 - The register
    IOB=TRUE, but it did not join an IO component because it is not connected to
    any IO element.
 WARNING:Pack:2780 - The register
+   "EMAC_0/rate_counter_1/G_edge_det[4].edge_detect_1/s_0" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register
+   "EMAC_0/rate_counter_1/G_edge_det[4].edge_detect_1/s_1" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register
+   "EMAC_0/rate_counter_1/G_edge_det[4].edge_detect_1/s_2" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/your_instance_name/U0/I_NO_D.U
    _ILA/U_G2_SQ.U_CAPCTRL/U_WCNT_HCMP_Q" has the property IOB=TRUE, but it did
    not join an IO component because it is not connected to any IO element.
@@ -5377,13 +5579,13 @@ WARNING:Pack:2780 - The register
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
 WARNING:Pack:2780 - The register
-   "EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out_5" has the
-   property IOB=TRUE, but it did not join an IO component because it is not
-   connected to any IO element.
-WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/cs_contr/U0/U_ICON/U_CMD/G_TAR
    GET[14].I_NE0.U_TARGET" has the property IOB=TRUE, but it did not join an IO
    component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out_5" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
 WARNING:Pack:2780 - The register
    "EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out_6" has the
    property IOB=TRUE, but it did not join an IO component because it is not
@@ -5529,14 +5731,6 @@ WARNING:Pack:2780 - The register
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
 WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/rd_en_8b_fifos_2" has the
-   property IOB=TRUE, but it did not join an IO component because it is not
-   connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/rd_en_8b_fifos_3" has the
-   property IOB=TRUE, but it did not join an IO component because it is not
-   connected to any IO element.
-WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/your_instance_name/U0/I_NO_D.U
    _ILA/U_RST/U_ARM_XFER/U_GEN_DELAY[2].U_FD" has the property IOB=TRUE, but it
    did not join an IO component because it is not connected to any IO element.
@@ -5622,16 +5816,6 @@ WARNING:Pack:2780 - The register
    because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_10" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_10" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
    8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
    ntr/count_10" has the property IOB=TRUE, but it did not join an IO component
    because it is not connected to any IO element.
@@ -5999,6 +6183,9 @@ WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/v5_emac_ll/client_side_FIFO_emac1/rx_fifo_i/wr_st
    art_addr_5" has the property IOB=TRUE, but it did not join an IO component
    because it is not connected to any IO element.
+WARNING:Pack:2780 - The register "trigger_mask_4" has the property IOB=TRUE, but
+   it did not join an IO component because it is not connected to any IO
+   element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/v5_emac_ll/client_side_FIFO_emac1/rx_fifo_i/wr_st
    art_addr_6" has the property IOB=TRUE, but it did not join an IO component
@@ -6463,16 +6650,6 @@ WARNING:Pack:2780 - The register
    ntr/count_1" has the property IOB=TRUE, but it did not join an IO component
    because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_1" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_1" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/
    rpntr/count_1" has the property IOB=TRUE, but it did not join an IO component
@@ -6517,16 +6694,6 @@ WARNING:Pack:2780 - The register
    because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_2" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_2" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
    8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
    ntr/count_2" has the property IOB=TRUE, but it did not join an IO component
    because it is not connected to any IO element.
@@ -6579,16 +6746,6 @@ WARNING:Pack:2780 - The register
    ntr/count_3" has the property IOB=TRUE, but it did not join an IO component
    because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_3" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_3" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/
    rpntr/count_3" has the property IOB=TRUE, but it did not join an IO component
@@ -6633,16 +6790,6 @@ WARNING:Pack:2780 - The register
    because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_4" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_4" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
    8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
    ntr/count_4" has the property IOB=TRUE, but it did not join an IO component
    because it is not connected to any IO element.
@@ -6695,16 +6842,6 @@ WARNING:Pack:2780 - The register
    ntr/count_5" has the property IOB=TRUE, but it did not join an IO component
    because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_5" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_5" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/
    rpntr/count_5" has the property IOB=TRUE, but it did not join an IO component
@@ -6749,16 +6886,6 @@ WARNING:Pack:2780 - The register
    because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_6" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_6" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
    8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
    ntr/count_6" has the property IOB=TRUE, but it did not join an IO component
    because it is not connected to any IO element.
@@ -6811,16 +6938,6 @@ WARNING:Pack:2780 - The register
    ntr/count_7" has the property IOB=TRUE, but it did not join an IO component
    because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_7" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_7" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/
    rpntr/count_7" has the property IOB=TRUE, but it did not join an IO component
@@ -6869,16 +6986,6 @@ WARNING:Pack:2780 - The register
    ntr/count_8" has the property IOB=TRUE, but it did not join an IO component
    because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_8" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_8" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/
    rpntr/count_8" has the property IOB=TRUE, but it did not join an IO component
@@ -6903,11 +7010,6 @@ WARNING:Pack:2780 - The register
    rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_8" has the property IOB=TRUE, but it
    did not join an IO component because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
-   "EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfif
-   o.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_9" has the property
-   IOB=TRUE, but it did not join an IO component because it is not connected to
-   any IO element.
-WARNING:Pack:2780 - The register
    "EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
    .gl0.rd/rpntr/count_9" has the property IOB=TRUE, but it did not join an IO
    component because it is not connected to any IO element.
@@ -6918,16 +7020,6 @@ WARNING:Pack:2780 - The register
    because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_9" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_9" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
    8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
    ntr/count_9" has the property IOB=TRUE, but it did not join an IO component
    because it is not connected to any IO element.
@@ -7289,16 +7381,6 @@ WARNING:Pack:2780 - The register
    i_0" has the property IOB=TRUE, but it did not join an IO component because
    it is not connected to any IO element.
 WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_
-   i_0" has the property IOB=TRUE, but it did not join an IO component because
-   it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_
-   i_0" has the property IOB=TRUE, but it did not join an IO component because
-   it is not connected to any IO element.
-WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dou
    t_i_0" has the property IOB=TRUE, but it did not join an IO component because
@@ -7354,16 +7436,6 @@ WARNING:Pack:2780 - The register
    i_1" has the property IOB=TRUE, but it did not join an IO component because
    it is not connected to any IO element.
 WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_
-   i_1" has the property IOB=TRUE, but it did not join an IO component because
-   it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_
-   i_1" has the property IOB=TRUE, but it did not join an IO component because
-   it is not connected to any IO element.
-WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dou
    t_i_1" has the property IOB=TRUE, but it did not join an IO component because
@@ -7415,16 +7487,6 @@ WARNING:Pack:2780 - The register
    it is not connected to any IO element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_
-   i_2" has the property IOB=TRUE, but it did not join an IO component because
-   it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_
-   i_2" has the property IOB=TRUE, but it did not join an IO component because
-   it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
    8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_
    i_2" has the property IOB=TRUE, but it did not join an IO component because
    it is not connected to any IO element.
@@ -7488,16 +7550,6 @@ WARNING:Pack:2780 - The register
    i_3" has the property IOB=TRUE, but it did not join an IO component because
    it is not connected to any IO element.
 WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_
-   i_3" has the property IOB=TRUE, but it did not join an IO component because
-   it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_
-   i_3" has the property IOB=TRUE, but it did not join an IO component because
-   it is not connected to any IO element.
-WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dou
    t_i_3" has the property IOB=TRUE, but it did not join an IO component because
@@ -7557,16 +7609,6 @@ WARNING:Pack:2780 - The register
    i_4" has the property IOB=TRUE, but it did not join an IO component because
    it is not connected to any IO element.
 WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_
-   i_4" has the property IOB=TRUE, but it did not join an IO component because
-   it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_
-   i_4" has the property IOB=TRUE, but it did not join an IO component because
-   it is not connected to any IO element.
-WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dou
    t_i_4" has the property IOB=TRUE, but it did not join an IO component because
@@ -7618,16 +7660,6 @@ WARNING:Pack:2780 - The register
    it is not connected to any IO element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_
-   i_5" has the property IOB=TRUE, but it did not join an IO component because
-   it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_
-   i_5" has the property IOB=TRUE, but it did not join an IO component because
-   it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
    8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_
    i_5" has the property IOB=TRUE, but it did not join an IO component because
    it is not connected to any IO element.
@@ -7687,16 +7719,6 @@ WARNING:Pack:2780 - The register
    i_6" has the property IOB=TRUE, but it did not join an IO component because
    it is not connected to any IO element.
 WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_
-   i_6" has the property IOB=TRUE, but it did not join an IO component because
-   it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_
-   i_6" has the property IOB=TRUE, but it did not join an IO component because
-   it is not connected to any IO element.
-WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dou
    t_i_6" has the property IOB=TRUE, but it did not join an IO component because
@@ -7748,16 +7770,6 @@ WARNING:Pack:2780 - The register
    it is not connected to any IO element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_
-   i_7" has the property IOB=TRUE, but it did not join an IO component because
-   it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_
-   i_7" has the property IOB=TRUE, but it did not join an IO component because
-   it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
    8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_
    i_7" has the property IOB=TRUE, but it did not join an IO component because
    it is not connected to any IO element.
@@ -8465,7 +8477,15 @@ WARNING:Pack:2780 - The register
    IOB=TRUE, but it did not join an IO component because it is not connected to
    any IO element.
 WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/tt_counter_7" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/receiver_unit/valid_data" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/tt_counter_8" has the property
    IOB=TRUE, but it did not join an IO component because it is not connected to
    any IO element.
 WARNING:Pack:2780 - The register "EMAC_0/receiver_unit/header_11_01" has the
@@ -8881,6 +8901,26 @@ WARNING:Pack:2780 - The register "EMAC_0/dout_fifo_tmp_6" has the property
 WARNING:Pack:2780 - The register "EMAC_0/dout_fifo_tmp_7" has the property
    IOB=TRUE, but it did not join an IO component because it is not connected to
    any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1
+   _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/
+   gwss.wsts/ram_full_i" has the property IOB=TRUE, but it did not join an IO
+   component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[1].module_1
+   _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/
+   gwss.wsts/ram_full_i" has the property IOB=TRUE, but it did not join an IO
+   component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[2].module_1
+   _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/
+   gwss.wsts/ram_full_i" has the property IOB=TRUE, but it did not join an IO
+   component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[3].module_1
+   _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/
+   gwss.wsts/ram_full_i" has the property IOB=TRUE, but it did not join an IO
+   component because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
    "EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_l_0" has the
    property IOB=TRUE, but it did not join an IO component because it is not
@@ -10419,6 +10459,38 @@ WARNING:Pack:2780 - The register
    _addr_gray_9" has the property IOB=TRUE, but it did not join an IO component
    because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
+   "EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_0" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register
+   "EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_1" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register
+   "EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_2" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register
+   "EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_3" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register
+   "EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_4" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register
+   "EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_5" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register
+   "EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_6" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register
+   "EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_7" has the
+   property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/your_instance_name/U0/I_TQ0.G_
    TW[108].U_TQ" has the property IOB=TRUE, but it did not join an IO component
    because it is not connected to any IO element.
@@ -11790,6 +11862,38 @@ WARNING:Pack:2780 - The register
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
 WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/v5_emac_ll/client_side_FIFO_emac1/rx_fifo_i/rd_da
+   ta_pipe_0" has the property IOB=TRUE, but it did not join an IO component
+   because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/v5_emac_ll/client_side_FIFO_emac1/rx_fifo_i/rd_da
+   ta_pipe_1" has the property IOB=TRUE, but it did not join an IO component
+   because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/v5_emac_ll/client_side_FIFO_emac1/rx_fifo_i/rd_da
+   ta_pipe_2" has the property IOB=TRUE, but it did not join an IO component
+   because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/v5_emac_ll/client_side_FIFO_emac1/rx_fifo_i/rd_da
+   ta_pipe_3" has the property IOB=TRUE, but it did not join an IO component
+   because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/v5_emac_ll/client_side_FIFO_emac1/rx_fifo_i/rd_da
+   ta_pipe_4" has the property IOB=TRUE, but it did not join an IO component
+   because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/v5_emac_ll/client_side_FIFO_emac1/rx_fifo_i/rd_da
+   ta_pipe_5" has the property IOB=TRUE, but it did not join an IO component
+   because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/v5_emac_ll/client_side_FIFO_emac1/rx_fifo_i/rd_da
+   ta_pipe_6" has the property IOB=TRUE, but it did not join an IO component
+   because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/v5_emac_ll/client_side_FIFO_emac1/rx_fifo_i/rd_da
+   ta_pipe_7" has the property IOB=TRUE, but it did not join an IO component
+   because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/your_instance_name/U0/I_NO_D.U
    _ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GAND.U_match/I_CS_GAND.U_CS_GAND_SRL
    /I_V5.U_CS_GAND_SRL_V5/I_USE_INPUT_REG_NE0.G_GAND_DLY[30].U_GAND_IREG" has
@@ -12600,16 +12704,6 @@ WARNING:Pack:2780 - The register
    ntr/count_d1_10" has the property IOB=TRUE, but it did not join an IO
    component because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_d1_10" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_d1_10" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/
    rpntr/count_d1_10" has the property IOB=TRUE, but it did not join an IO
@@ -12777,16 +12871,6 @@ WARNING:Pack:2780 - The register
    because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_10" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_10" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
    8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
    ntr/count_10" has the property IOB=TRUE, but it did not join an IO component
    because it is not connected to any IO element.
@@ -13167,35 +13251,6 @@ WARNING:Pack:2780 - The register
    TW[95].U_TQ" has the property IOB=TRUE, but it did not join an IO component
    because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
-   "EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfif
-   o.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/curr_fwft_state_0" has the
-   property IOB=TRUE, but it did not join an IO component because it is not
-   connected to any IO element.
-WARNING:Pack:2780 - The register
-   "EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
-   .gl0.rd/gr1.rfwft/curr_fwft_state_0" has the property IOB=TRUE, but it did
-   not join an IO component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[0].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr
-   1.rfwft/curr_fwft_state_0" has the property IOB=TRUE, but it did not join an
-   IO component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr
-   1.rfwft/curr_fwft_state_0" has the property IOB=TRUE, but it did not join an
-   IO component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr
-   1.rfwft/curr_fwft_state_0" has the property IOB=TRUE, but it did not join an
-   IO component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr
-   1.rfwft/curr_fwft_state_0" has the property IOB=TRUE, but it did not join an
-   IO component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/
    gr1.rfwft/curr_fwft_state_0" has the property IOB=TRUE, but it did not join
@@ -13221,11 +13276,6 @@ WARNING:Pack:2780 - The register
    ft_state_0" has the property IOB=TRUE, but it did not join an IO component
    because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.
-   rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/curr_fwft_state_0" has the property
-   IOB=TRUE, but it did not join an IO component because it is not connected to
-   any IO element.
-WARNING:Pack:2780 - The register
    "EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfif
    o.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/curr_fwft_state_1" has the
    property IOB=TRUE, but it did not join an IO component because it is not
@@ -13241,16 +13291,6 @@ WARNING:Pack:2780 - The register
    IO component because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr
-   1.rfwft/curr_fwft_state_1" has the property IOB=TRUE, but it did not join an
-   IO component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr
-   1.rfwft/curr_fwft_state_1" has the property IOB=TRUE, but it did not join an
-   IO component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
    8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr
    1.rfwft/curr_fwft_state_1" has the property IOB=TRUE, but it did not join an
    IO component because it is not connected to any IO element.
@@ -13530,6 +13570,34 @@ WARNING:Pack:2780 - The register
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
 WARNING:Pack:2780 - The register
+   "EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfif
+   o.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_0" has the property IOB=TRUE,
+   but it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register
+   "EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+   .mem/gdm.dm/dout_i_0" has the property IOB=TRUE, but it did not join an IO
+   component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[0].module_1_
+   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.d
+   m/dout_i_0" has the property IOB=TRUE, but it did not join an IO component
+   because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
+   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.d
+   m/dout_i_0" has the property IOB=TRUE, but it did not join an IO component
+   because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_0" has
+   the property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.
+   rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_0" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/your_instance_name/U0/I_NO_D.U
    _ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[89].I_SRLT_NE_0.DLY9/SRL16E8" has the
    property IOB=TRUE, but it did not join an IO component because it is not
@@ -13563,6 +13631,34 @@ WARNING:Pack:2780 - The register
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
 WARNING:Pack:2780 - The register
+   "EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfif
+   o.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_1" has the property IOB=TRUE,
+   but it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register
+   "EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+   .mem/gdm.dm/dout_i_1" has the property IOB=TRUE, but it did not join an IO
+   component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[0].module_1_
+   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.d
+   m/dout_i_1" has the property IOB=TRUE, but it did not join an IO component
+   because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
+   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.d
+   m/dout_i_1" has the property IOB=TRUE, but it did not join an IO component
+   because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_1" has
+   the property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.
+   rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_1" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/din_32b_fifo_25" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
@@ -13570,6 +13666,34 @@ WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/din_32b_fifo_17" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
+WARNING:Pack:2780 - The register
+   "EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfif
+   o.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_2" has the property IOB=TRUE,
+   but it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register
+   "EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+   .mem/gdm.dm/dout_i_2" has the property IOB=TRUE, but it did not join an IO
+   component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[0].module_1_
+   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.d
+   m/dout_i_2" has the property IOB=TRUE, but it did not join an IO component
+   because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
+   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.d
+   m/dout_i_2" has the property IOB=TRUE, but it did not join an IO component
+   because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_2" has
+   the property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.
+   rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_2" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/din_32b_fifo_26" has the
    property IOB=TRUE, but it did not join an IO component because it is not
@@ -13579,6 +13703,34 @@ WARNING:Pack:2780 - The register
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
 WARNING:Pack:2780 - The register
+   "EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfif
+   o.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_3" has the property IOB=TRUE,
+   but it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register
+   "EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+   .mem/gdm.dm/dout_i_3" has the property IOB=TRUE, but it did not join an IO
+   component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[0].module_1_
+   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.d
+   m/dout_i_3" has the property IOB=TRUE, but it did not join an IO component
+   because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
+   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.d
+   m/dout_i_3" has the property IOB=TRUE, but it did not join an IO component
+   because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_3" has
+   the property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.
+   rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_3" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/din_32b_fifo_27" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
@@ -13587,12 +13739,134 @@ WARNING:Pack:2780 - The register
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
 WARNING:Pack:2780 - The register
+   "EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfif
+   o.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_4" has the property IOB=TRUE,
+   but it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register
+   "EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+   .mem/gdm.dm/dout_i_4" has the property IOB=TRUE, but it did not join an IO
+   component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[0].module_1_
+   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.d
+   m/dout_i_4" has the property IOB=TRUE, but it did not join an IO component
+   because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
+   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.d
+   m/dout_i_4" has the property IOB=TRUE, but it did not join an IO component
+   because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_4" has
+   the property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.
+   rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_4" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/din_32b_fifo_28" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
 WARNING:Pack:2780 - The register
+   "EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfif
+   o.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_5" has the property IOB=TRUE,
+   but it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register
+   "EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+   .mem/gdm.dm/dout_i_5" has the property IOB=TRUE, but it did not join an IO
+   component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[0].module_1_
+   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.d
+   m/dout_i_5" has the property IOB=TRUE, but it did not join an IO component
+   because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
+   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.d
+   m/dout_i_5" has the property IOB=TRUE, but it did not join an IO component
+   because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_5" has
+   the property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.
+   rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_5" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/din_32b_fifo_29" has the
    property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register
+   "EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfif
+   o.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_6" has the property IOB=TRUE,
+   but it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register
+   "EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+   .mem/gdm.dm/dout_i_6" has the property IOB=TRUE, but it did not join an IO
+   component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[0].module_1_
+   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.d
+   m/dout_i_6" has the property IOB=TRUE, but it did not join an IO component
+   because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
+   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.d
+   m/dout_i_6" has the property IOB=TRUE, but it did not join an IO component
+   because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_6" has
+   the property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.
+   rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_6" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfif
+   o.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_7" has the property IOB=TRUE,
+   but it did not join an IO component because it is not connected to any IO
+   element.
+WARNING:Pack:2780 - The register
+   "EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+   .mem/gdm.dm/dout_i_7" has the property IOB=TRUE, but it did not join an IO
+   component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[0].module_1_
+   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.d
+   m/dout_i_7" has the property IOB=TRUE, but it did not join an IO component
+   because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
+   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.d
+   m/dout_i_7" has the property IOB=TRUE, but it did not join an IO component
+   because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_7" has
+   the property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.
+   rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_7" has the property IOB=TRUE, but it
+   did not join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_8" has
+   the property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_9" has
+   the property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
 WARNING:Pack:2780 - The register "EMAC_0/v5_emac_ll/rx_good_frame_0_r" has the
    property IOB=TRUE, but it did not join an IO component because it is not
@@ -14147,16 +14421,6 @@ WARNING:Pack:2780 - The register
    ntr/count_1" has the property IOB=TRUE, but it did not join an IO component
    because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_1" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_1" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/
    wpntr/count_1" has the property IOB=TRUE, but it did not join an IO component
@@ -14201,16 +14465,6 @@ WARNING:Pack:2780 - The register
    because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_2" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_2" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
    8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
    ntr/count_2" has the property IOB=TRUE, but it did not join an IO component
    because it is not connected to any IO element.
@@ -14263,16 +14517,6 @@ WARNING:Pack:2780 - The register
    ntr/count_3" has the property IOB=TRUE, but it did not join an IO component
    because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_3" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_3" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/
    wpntr/count_3" has the property IOB=TRUE, but it did not join an IO component
@@ -14317,16 +14561,6 @@ WARNING:Pack:2780 - The register
    because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_4" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_4" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
    8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
    ntr/count_4" has the property IOB=TRUE, but it did not join an IO component
    because it is not connected to any IO element.
@@ -14379,16 +14613,6 @@ WARNING:Pack:2780 - The register
    ntr/count_5" has the property IOB=TRUE, but it did not join an IO component
    because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_5" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_5" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/
    wpntr/count_5" has the property IOB=TRUE, but it did not join an IO component
@@ -14433,16 +14657,6 @@ WARNING:Pack:2780 - The register
    because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_6" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_6" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
    8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
    ntr/count_6" has the property IOB=TRUE, but it did not join an IO component
    because it is not connected to any IO element.
@@ -14495,16 +14709,6 @@ WARNING:Pack:2780 - The register
    ntr/count_7" has the property IOB=TRUE, but it did not join an IO component
    because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_7" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_7" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/
    wpntr/count_7" has the property IOB=TRUE, but it did not join an IO component
@@ -14553,16 +14757,6 @@ WARNING:Pack:2780 - The register
    ntr/count_8" has the property IOB=TRUE, but it did not join an IO component
    because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_8" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_8" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/
    wpntr/count_8" has the property IOB=TRUE, but it did not join an IO component
@@ -14587,11 +14781,6 @@ WARNING:Pack:2780 - The register
    rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_8" has the property IOB=TRUE, but it
    did not join an IO component because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
-   "EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfif
-   o.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_9" has the property
-   IOB=TRUE, but it did not join an IO component because it is not connected to
-   any IO element.
-WARNING:Pack:2780 - The register
    "EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
    .gl0.wr/wpntr/count_9" has the property IOB=TRUE, but it did not join an IO
    component because it is not connected to any IO element.
@@ -14602,16 +14791,6 @@ WARNING:Pack:2780 - The register
    because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_9" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_9" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
    8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
    ntr/count_9" has the property IOB=TRUE, but it did not join an IO component
    because it is not connected to any IO element.
@@ -14979,16 +15158,6 @@ WARNING:Pack:2780 - The register
    ntr/count_d1_0" has the property IOB=TRUE, but it did not join an IO
    component because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_d1_0" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_d1_0" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/
    wpntr/count_d1_0" has the property IOB=TRUE, but it did not join an IO
@@ -15034,16 +15203,6 @@ WARNING:Pack:2780 - The register
    component because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_d1_1" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_d1_1" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
    8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
    ntr/count_d1_1" has the property IOB=TRUE, but it did not join an IO
    component because it is not connected to any IO element.
@@ -15097,16 +15256,6 @@ WARNING:Pack:2780 - The register
    ntr/count_d1_2" has the property IOB=TRUE, but it did not join an IO
    component because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_d1_2" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_d1_2" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/
    wpntr/count_d1_2" has the property IOB=TRUE, but it did not join an IO
@@ -15152,16 +15301,6 @@ WARNING:Pack:2780 - The register
    component because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_d1_3" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_d1_3" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
    8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
    ntr/count_d1_3" has the property IOB=TRUE, but it did not join an IO
    component because it is not connected to any IO element.
@@ -15215,16 +15354,6 @@ WARNING:Pack:2780 - The register
    ntr/count_d1_4" has the property IOB=TRUE, but it did not join an IO
    component because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_d1_4" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_d1_4" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/
    wpntr/count_d1_4" has the property IOB=TRUE, but it did not join an IO
@@ -15270,16 +15399,6 @@ WARNING:Pack:2780 - The register
    component because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_d1_5" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_d1_5" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
    8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
    ntr/count_d1_5" has the property IOB=TRUE, but it did not join an IO
    component because it is not connected to any IO element.
@@ -15333,16 +15452,6 @@ WARNING:Pack:2780 - The register
    ntr/count_d1_6" has the property IOB=TRUE, but it did not join an IO
    component because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_d1_6" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_d1_6" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/
    wpntr/count_d1_6" has the property IOB=TRUE, but it did not join an IO
@@ -15388,16 +15497,6 @@ WARNING:Pack:2780 - The register
    component because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_d1_7" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_d1_7" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
    8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
    ntr/count_d1_7" has the property IOB=TRUE, but it did not join an IO
    component because it is not connected to any IO element.
@@ -15451,16 +15550,6 @@ WARNING:Pack:2780 - The register
    ntr/count_d1_8" has the property IOB=TRUE, but it did not join an IO
    component because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_d1_8" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_d1_8" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/
    wpntr/count_d1_8" has the property IOB=TRUE, but it did not join an IO
@@ -15486,11 +15575,6 @@ WARNING:Pack:2780 - The register
    it did not join an IO component because it is not connected to any IO
    element.
 WARNING:Pack:2780 - The register
-   "EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfif
-   o.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_9" has the property
-   IOB=TRUE, but it did not join an IO component because it is not connected to
-   any IO element.
-WARNING:Pack:2780 - The register
    "EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
    .gl0.wr/wpntr/count_d1_9" has the property IOB=TRUE, but it did not join an
    IO component because it is not connected to any IO element.
@@ -15501,16 +15585,6 @@ WARNING:Pack:2780 - The register
    component because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_d1_9" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_d1_9" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
    8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
    ntr/count_d1_9" has the property IOB=TRUE, but it did not join an IO
    component because it is not connected to any IO element.
@@ -17479,6 +17553,9 @@ WARNING:Pack:2780 - The register "EMAC_0/Inst_receiver_control/trigger_mask_s_2"
 WARNING:Pack:2780 - The register "EMAC_0/Inst_receiver_control/trigger_mask_s_3"
    has the property IOB=TRUE, but it did not join an IO component because it is
    not connected to any IO element.
+WARNING:Pack:2780 - The register "EMAC_0/Inst_receiver_control/trigger_mask_s_4"
+   has the property IOB=TRUE, but it did not join an IO component because it is
+   not connected to any IO element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/your_instance_name/U0/I_NO_D.U
    _ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[98].I_SRLT_NE_0.DLY9/SRL16E1" has the
@@ -18183,6 +18260,30 @@ WARNING:Pack:2780 - The register "EMAC_0/transmit_data_length_i_8" has the
 WARNING:Pack:2780 - The register "EMAC_0/transmit_data_length_i_9" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
+WARNING:Pack:2780 - The register
+   "EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfif
+   o.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
+WARNING:Pack:2780 - The register
+   "EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
+   .gl0.rd/gr1.rfwft/empty_fwft_i" has the property IOB=TRUE, but it did not
+   join an IO component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[0].module_1_
+   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr
+   1.rfwft/empty_fwft_i" has the property IOB=TRUE, but it did not join an IO
+   component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
+   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr
+   1.rfwft/empty_fwft_i" has the property IOB=TRUE, but it did not join an IO
+   component because it is not connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.
+   rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i" has the property
+   IOB=TRUE, but it did not join an IO component because it is not connected to
+   any IO element.
 WARNING:Pack:2780 - The register "EMAC_0/receiver_unit/header_10_0" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
@@ -19036,6 +19137,15 @@ WARNING:Pack:2780 - The register
    _ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GAND.U_match/I_CS_GAND.U_CS_GAND_SRL
    /I_V5.U_CS_GAND_SRL_V5/I_USE_INPUT_REG_NE0.G_GAND_DLY[7].U_GAND_IREG" has the
    property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "sync_trigger_1/G3[4].edge_detect_1/s_0" has
+   the property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "sync_trigger_1/G3[4].edge_detect_1/s_1" has
+   the property IOB=TRUE, but it did not join an IO component because it is not
+   connected to any IO element.
+WARNING:Pack:2780 - The register "sync_trigger_1/G3[4].edge_detect_1/s_2" has
+   the property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/your_instance_name/U0/I_NO_D.U
@@ -20363,16 +20473,6 @@ WARNING:Pack:2780 - The register
    ntr/count_d1_0" has the property IOB=TRUE, but it did not join an IO
    component because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_d1_0" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_d1_0" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/
    rpntr/count_d1_0" has the property IOB=TRUE, but it did not join an IO
@@ -20418,16 +20518,6 @@ WARNING:Pack:2780 - The register
    component because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_d1_1" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_d1_1" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
    8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
    ntr/count_d1_1" has the property IOB=TRUE, but it did not join an IO
    component because it is not connected to any IO element.
@@ -20481,16 +20571,6 @@ WARNING:Pack:2780 - The register
    ntr/count_d1_2" has the property IOB=TRUE, but it did not join an IO
    component because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_d1_2" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_d1_2" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/
    rpntr/count_d1_2" has the property IOB=TRUE, but it did not join an IO
@@ -20536,16 +20616,6 @@ WARNING:Pack:2780 - The register
    component because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_d1_3" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_d1_3" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
    8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
    ntr/count_d1_3" has the property IOB=TRUE, but it did not join an IO
    component because it is not connected to any IO element.
@@ -20599,16 +20669,6 @@ WARNING:Pack:2780 - The register
    ntr/count_d1_4" has the property IOB=TRUE, but it did not join an IO
    component because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_d1_4" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_d1_4" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/
    rpntr/count_d1_4" has the property IOB=TRUE, but it did not join an IO
@@ -20658,16 +20718,6 @@ WARNING:Pack:2780 - The register
    ntr/count_d1_5" has the property IOB=TRUE, but it did not join an IO
    component because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_d1_5" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_d1_5" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/
    rpntr/count_d1_5" has the property IOB=TRUE, but it did not join an IO
@@ -20713,16 +20763,6 @@ WARNING:Pack:2780 - The register
    component because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_d1_6" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_d1_6" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
    8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
    ntr/count_d1_6" has the property IOB=TRUE, but it did not join an IO
    component because it is not connected to any IO element.
@@ -20780,16 +20820,6 @@ WARNING:Pack:2780 - The register
    ntr/count_d1_7" has the property IOB=TRUE, but it did not join an IO
    component because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_d1_7" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_d1_7" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/
    rpntr/count_d1_7" has the property IOB=TRUE, but it did not join an IO
@@ -20843,16 +20873,6 @@ WARNING:Pack:2780 - The register
    ntr/count_d1_8" has the property IOB=TRUE, but it did not join an IO
    component because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_d1_8" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_d1_8" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/
    rpntr/count_d1_8" has the property IOB=TRUE, but it did not join an IO
@@ -20882,11 +20902,6 @@ WARNING:Pack:2780 - The register
    IOB=TRUE, but it did not join an IO component because it is not connected to
    any IO element.
 WARNING:Pack:2780 - The register
-   "EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfif
-   o.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_9" has the property
-   IOB=TRUE, but it did not join an IO component because it is not connected to
-   any IO element.
-WARNING:Pack:2780 - The register
    "EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo
    .gl0.rd/rpntr/count_d1_9" has the property IOB=TRUE, but it did not join an
    IO component because it is not connected to any IO element.
@@ -20897,16 +20912,6 @@ WARNING:Pack:2780 - The register
    component because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_d1_9" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
-   ntr/count_d1_9" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
    8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rp
    ntr/count_d1_9" has the property IOB=TRUE, but it did not join an IO
    component because it is not connected to any IO element.
@@ -21089,14 +21094,6 @@ WARNING:Pack:2780 - The register
    connected to any IO element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/fifo_selector_1" has the
-   property IOB=TRUE, but it did not join an IO component because it is not
-   connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/fifo_selector_2" has the
-   property IOB=TRUE, but it did not join an IO component because it is not
-   connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/fifo_selector_3" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
 WARNING:Pack:2780 - The register "sync_trigger_1/coincidence_hold" has the
@@ -22379,6 +22376,9 @@ WARNING:Pack:2780 - The register "trigger_mask_buf_2" has the property IOB=TRUE,
 WARNING:Pack:2780 - The register "trigger_mask_buf_3" has the property IOB=TRUE,
    but it did not join an IO component because it is not connected to any IO
    element.
+WARNING:Pack:2780 - The register "trigger_mask_buf_4" has the property IOB=TRUE,
+   but it did not join an IO component because it is not connected to any IO
+   element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/your_instance_name/U0/I_NO_D.U
    _ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[1].U_FDRE
@@ -22404,16 +22404,6 @@ WARNING:Pack:2780 - The register
    component because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_d1_10" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
-   ntr/count_d1_10" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
    8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wp
    ntr/count_d1_10" has the property IOB=TRUE, but it did not join an IO
    component because it is not connected to any IO element.
@@ -22751,16 +22741,6 @@ WARNING:Pack:2780 - The register
    component because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr
-   ss.rsts/ram_empty_fb_i" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr
-   ss.rsts/ram_empty_fb_i" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
    8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr
    ss.rsts/ram_empty_fb_i" has the property IOB=TRUE, but it did not join an IO
    component because it is not connected to any IO element.
@@ -23405,9 +23385,9 @@ WARNING:Pack:2780 - The register
    _ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_0_TO_64K.F_SEL[7].U_SEL" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut5197_89 is sourced by a combinatorial pin. This is not good
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut6293_57 is sourced by a combinatorial pin. This is not good
    design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut10557_463 is sourced by a combinatorial pin. This is not good
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11653_367 is sourced by a combinatorial pin. This is not good
    design practice. Use the CE pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:367 - The signal <BUTTONS<3>_IBUF> is incomplete. The signal does not drive any load pins in the
    design.
@@ -23710,6 +23690,31 @@ INFO:Xst:2261 - The FF/Latch
    <Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/RST_FULL_GEN> 
 INFO:Xst:2260 - The FF/Latch
+   <EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg
+   _1> in Unit <top> is equivalent to the following FF/Latch :
+   <EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg
+   _0> 
+INFO:Xst:2260 - The FF/Latch
+   <Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1> in Unit <top> is
+   equivalent to the following 5 FFs/Latches :
+   <Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0>
+   <Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
+   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1>
+   <Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
+   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0>
+   <Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[0].module_1_
+   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1>
+   <Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[0].module_1_
+   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch
+   <EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfif
+   o.rf/grf.rf/rstblk/wr_rst_reg_1> in Unit <top> is equivalent to the following
+   FF/Latch :
+   <EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfif
+   o.rf/grf.rf/rstblk/rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch
    <Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[3].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1> in
    Unit <top> is equivalent to the following 7 FFs/Latches :
@@ -23728,25 +23733,23 @@ INFO:Xst:2260 - The FF/Latch
    <Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0> 
 INFO:Xst:2260 - The FF/Latch
-   <EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfif
-   o.rf/grf.rf/rstblk/wr_rst_reg_1> in Unit <top> is equivalent to the following
-   FF/Latch :
-   <EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfif
-   o.rf/grf.rf/rstblk/rd_rst_reg_0> 
-INFO:Xst:2260 - The FF/Latch
+   <Inst_TEMAC2_example_design/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.
+   rf/rstblk/wr_rst_reg_1> in Unit <top> is equivalent to the following FF/Latch
+   :
+   <Inst_TEMAC2_example_design/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.
+   rf/rstblk/rd_rst_reg_0> 
+INFO:Xst:2261 - The FF/Latch
+   <EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg
+   _1> in Unit <top> is equivalent to the following FF/Latch, which will be
+   removed :
+   <EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg
+   _0> 
+INFO:Xst:2261 - The FF/Latch
    <Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
    fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1> in Unit <top> is
-   equivalent to the following 9 FFs/Latches :
+   equivalent to the following 5 FFs/Latches, which will be removed :
    <Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
    fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0>
-   <Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1>
-   <Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0>
-   <Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1>
-   <Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0>
    <Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
    8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1>
    <Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
@@ -23755,17 +23758,12 @@ INFO:Xst:2260 - The FF/Latch
    8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1>
    <Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[0].module_1_
    8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0> 
-INFO:Xst:2260 - The FF/Latch
-   <Inst_TEMAC2_example_design/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.
-   rf/rstblk/wr_rst_reg_1> in Unit <top> is equivalent to the following FF/Latch
-   :
-   <Inst_TEMAC2_example_design/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.
-   rf/rstblk/rd_rst_reg_0> 
-INFO:Xst:2260 - The FF/Latch
-   <EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg
-   _1> in Unit <top> is equivalent to the following FF/Latch :
-   <EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg
-   _0> 
+INFO:Xst:2261 - The FF/Latch
+   <EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfif
+   o.rf/grf.rf/rstblk/wr_rst_reg_1> in Unit <top> is equivalent to the following
+   FF/Latch, which will be removed :
+   <EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfif
+   o.rf/grf.rf/rstblk/rd_rst_reg_0> 
 INFO:Xst:2261 - The FF/Latch
    <Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[3].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1> in
@@ -23786,45 +23784,11 @@ INFO:Xst:2261 - The FF/Latch
    <Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0> 
 INFO:Xst:2261 - The FF/Latch
-   <EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfif
-   o.rf/grf.rf/rstblk/wr_rst_reg_1> in Unit <top> is equivalent to the following
-   FF/Latch, which will be removed :
-   <EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfif
-   o.rf/grf.rf/rstblk/rd_rst_reg_0> 
-INFO:Xst:2261 - The FF/Latch
-   <Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
-   fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1> in Unit <top> is
-   equivalent to the following 9 FFs/Latches, which will be removed :
-   <Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
-   fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0>
-   <Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1>
-   <Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0>
-   <Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1>
-   <Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0>
-   <Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1>
-   <Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0>
-   <Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[0].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1>
-   <Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[0].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0> 
-INFO:Xst:2261 - The FF/Latch
    <Inst_TEMAC2_example_design/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.
    rf/rstblk/wr_rst_reg_1> in Unit <top> is equivalent to the following
    FF/Latch, which will be removed :
    <Inst_TEMAC2_example_design/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.
    rf/rstblk/rd_rst_reg_0> 
-INFO:Xst:2261 - The FF/Latch
-   <EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg
-   _1> in Unit <top> is equivalent to the following FF/Latch, which will be
-   removed :
-   <EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg
-   _0> 
 INFO:LIT:243 - Logical network MII_TX_CLK_0_BUFGP/N2 has no load.
 INFO:LIT:395 - The above info message is repeated 21 more times for the
    following (max. 5 shown):
@@ -23935,14 +23899,14 @@ INFO:Timing:3386 - Intersecting Constraints found and resolved.  For more
    Tools User Guide for information on generating a TSI report.
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
-INFO:Place:834 - Only a subset of IOs are locked. Out of 176 IOs, 98 are locked
+INFO:Place:834 - Only a subset of IOs are locked. Out of 182 IOs, 104 are locked
    and 78 are not locked. If you would like to print the names of these IOs,
    please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
 INFO:Pack:1650 - Map created a placed design.
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-  12 block(s) removed
+  14 block(s) removed
   22 block(s) optimized away
   13 signal(s) removed
 
@@ -23959,6 +23923,10 @@ To quickly locate the original cause for the removal of a chain of logic, look
 above the place where that logic is listed in the trimming report, then locate
 the lines that are least indented (begin at the leftmost edge).
 
+Loadless block "Inst_TEMAC2_example_design/inst_async_trigger/wr_en_32b_fifos_2"
+(FF) removed.
+Loadless block "Inst_TEMAC2_example_design/inst_async_trigger/wr_en_32b_fifos_3"
+(FF) removed.
 The signal "MII_TX_CLK_0_BUFGP/N2" is sourceless and has been removed.
 The signal "MII_TX_CLK_0_BUFGP/N3" is sourceless and has been removed.
 The signal
@@ -24321,26 +24289,32 @@ Section 6 - IOB Properties
 | RESET_ROC_B<1>                     | IOBM             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
 | RESET_ROC_B<2>                     | IOBM             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
 | RESET_ROC_B<3>                     | IOBM             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
+| RESET_ROC_B<4>                     | IOBM             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
 | RESET_ROC_B_b<0>                   | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
 | RESET_ROC_B_b<1>                   | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
 | RESET_ROC_B_b<2>                   | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
 | RESET_ROC_B_b<3>                   | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
+| RESET_ROC_B_b<4>                   | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
 | SYNC_TRIGGER_IN<0>                 | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
 | SYNC_TRIGGER_IN<1>                 | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
 | SYNC_TRIGGER_IN<2>                 | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
 | SYNC_TRIGGER_IN<3>                 | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| SYNC_TRIGGER_IN<4>                 | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
 | SYNC_TRIGGER_IN_b<0>               | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
 | SYNC_TRIGGER_IN_b<1>               | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
 | SYNC_TRIGGER_IN_b<2>               | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
 | SYNC_TRIGGER_IN_b<3>               | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
+| SYNC_TRIGGER_IN_b<4>               | IOB              | INPUT     | LVDS_25              | TRUE  |          |      |              |          |          |
 | SYNC_TRIGGER_OUT<0>                | IOBM             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
 | SYNC_TRIGGER_OUT<1>                | IOBM             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
 | SYNC_TRIGGER_OUT<2>                | IOBM             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
 | SYNC_TRIGGER_OUT<3>                | IOBM             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
+| SYNC_TRIGGER_OUT<4>                | IOBM             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
 | SYNC_TRIGGER_OUT_b<0>              | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
 | SYNC_TRIGGER_OUT_b<1>              | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
 | SYNC_TRIGGER_OUT_b<2>              | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
 | SYNC_TRIGGER_OUT_b<3>              | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
+| SYNC_TRIGGER_OUT_b<4>              | IOBS             | OUTPUT    | LVDS_25              |       |          |      |              |          |          |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Section 7 - RPMs

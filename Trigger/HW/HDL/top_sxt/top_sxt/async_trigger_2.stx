@@ -1,0 +1,50 @@
+Release 13.1 - xst O.40d (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3498 - No primary, secondary unit in the file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/ipcore_dir/cs_controller.vhd. Ignore this file from project file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/async_trigger_2_vhdl.prj".
+WARNING:HDLParsers:3498 - No primary, secondary unit in the file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/ipcore_dir/ila_cs.vhd. Ignore this file from project file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/async_trigger_2_vhdl.prj".
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/Shared/constants.vhd" in Library work.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/Shared/functions.vhd" in Library work.
+Architecture functions of Entity functions is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/ipcore_dir/fifo_generator_v8_1_8b.vhd" in Library work.
+Architecture fifo_generator_v8_1_8b_a of Entity fifo_generator_v8_1_8b is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/ipcore_dir/fifo_generator_v8_1_32b.vhd" in Library work.
+Architecture fifo_generator_v8_1_32b_a of Entity fifo_generator_v8_1_32b is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/ipcore_dir/trigger_time_fifo.vhd" in Library work.
+Architecture trigger_time_fifo_a of Entity trigger_time_fifo is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/async_trigger/async_trigger_2.vhd" in Library work.
+Entity <async_trigger_2> compiled.
+Entity <async_trigger_2> (Architecture <Behavioral>) compiled.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> 
+
+
+Total memory usage is 309312 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

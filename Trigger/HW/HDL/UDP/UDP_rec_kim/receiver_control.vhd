@@ -43,7 +43,7 @@ architecture behave of receiver_control is
   signal full_fifo           : std_logic;
   signal empty_fifo          : std_logic;
   signal rst_fifo            : std_logic;
-  signal data_count          : std_logic_vector(10 downto 0);
+  signal data_count          : std_logic_vector(9 downto 0);
   signal valid_data_and_port : std_logic;
 
   signal trigger_mask_s : std_logic_vector(23 downto 0);
@@ -68,7 +68,7 @@ architecture behave of receiver_control is
       dout       : out std_logic_vector(7 downto 0);
       full       : out std_logic;
       empty      : out std_logic;
-      data_count : out std_logic_vector(10 downto 0)
+      data_count : out std_logic_vector(9 downto 0)
       );
   end component;
 

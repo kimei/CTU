@@ -5,14 +5,14 @@ Parameter TMPDIR set to /home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Parameter xsthdpdir set to /home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
@@ -20,31 +20,35 @@ WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Onl
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
+WARNING:HDLParsers:3607 - Unit work/async_trigger is now defined in a different file.  It was defined in "/home/kimei/VHDL/trigger/Trigger/HW/HDL/async_trigger/async_trigger.vhd", and is now defined in "/home/kimei/VHDL/trigger/Trigger/HW/HDL/async_trigger/async_trigger_2.vhd".
+WARNING:HDLParsers:3607 - Unit work/async_trigger/Behavioral is now defined in a different file.  It was defined in "/home/kimei/VHDL/trigger/Trigger/HW/HDL/async_trigger/async_trigger.vhd", and is now defined in "/home/kimei/VHDL/trigger/Trigger/HW/HDL/async_trigger/async_trigger_2.vhd".
+WARNING:HDLParsers:3498 - No primary, secondary unit in the file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/ipcore_dir/cs_controller.vhd. Ignore this file from project file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/async_trigger_vhdl.prj".
+WARNING:HDLParsers:3498 - No primary, secondary unit in the file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_10/top/ipcore_dir/ila_cs.vhd. Ignore this file from project file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/async_trigger_vhdl.prj".
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/Shared/constants.vhd" in Library work.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/Shared/functions.vhd" in Library work.
 Architecture functions of Entity functions is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/ipcore_dir/fifo_generator_v8_1_8b.vhd" in Library work.
-Entity <fifo_generator_v8_1_8b> compiled.
-Entity <fifo_generator_v8_1_8b> (Architecture <fifo_generator_v8_1_8b_a>) compiled.
+Architecture fifo_generator_v8_1_8b_a of Entity fifo_generator_v8_1_8b is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/ipcore_dir/fifo_generator_v8_1_32b.vhd" in Library work.
 Architecture fifo_generator_v8_1_32b_a of Entity fifo_generator_v8_1_32b is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/ipcore_dir/trigger_time_fifo.vhd" in Library work.
-Entity <trigger_time_fifo> compiled.
-Entity <trigger_time_fifo> (Architecture <trigger_time_fifo_a>) compiled.
+Architecture trigger_time_fifo_a of Entity trigger_time_fifo is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/async_trigger/async_trigger.vhd" in Library work.
+Architecture behavioral of Entity async_trigger is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/async_trigger/async_trigger_2.vhd" in Library work.
 Entity <async_trigger> compiled.
 Entity <async_trigger> (Architecture <behavioral>) compiled.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> 
 
 
-Total memory usage is 309452 kilobytes
+Total memory usage is 309988 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    1 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

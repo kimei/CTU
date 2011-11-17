@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Reading design: top.prj
@@ -222,7 +222,8 @@ Architecture fifo_generator_v4_4_a of Entity fifo_generator_v4_4 is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/rate_counter/rate_counter.vhd" in Library work.
 Architecture behave of Entity rate_counter is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/async_trigger/async_trigger.vhd" in Library work.
-Architecture behavioral of Entity async_trigger is up to date.
+Entity <async_trigger> compiled.
+Entity <async_trigger> (Architecture <behavioral>) compiled.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_rec_kim/udp_rec.vhd" in Library work.
 Architecture behave of Entity udp_rec is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/UDP_IP_Core.vhd" in Library work.
@@ -240,8 +241,7 @@ Architecture rtl of Entity a2s is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/switchDebouncer/SwitchDebouncer.vhdl" in Library work.
 Architecture structural of Entity switchdebouncer is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/CRU/CRU.vhd" in Library work.
-Entity <cru> compiled.
-Entity <cru> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity cru is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd" in Library work.
 Architecture behavioral of Entity sync_trigger is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/random_trigger/rand_trigger.vhd" in Library work.
@@ -251,8 +251,7 @@ Architecture top_level of Entity v5_emac_v1_5_example_design is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/temac2/example_TEMAC2_design/TEMAC2/example_design/TEMAC2_example_design.vhd" in Library work.
 Architecture top_level of Entity temac2_example_design is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/top_sxt.vhd" in Library work.
-Entity <top> compiled.
-Entity <top> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity top is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -401,6 +400,12 @@ Analyzing Entity <top> in library <work> (Architecture <behavioral>).
     Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <G1[3].diff_in> in unit <top>.
     Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <G1[3].diff_in> in unit <top>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <G1[3].diff_in> in unit <top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <G1[4].diff_in> in unit <top>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <G1[4].diff_in> in unit <top>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <G1[4].diff_in> in unit <top>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <G1[4].diff_in> in unit <top>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <G1[4].diff_in> in unit <top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <G1[4].diff_in> in unit <top>.
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <G2[0].diff_out> in unit <top>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <G2[0].diff_out> in unit <top>.
     Set user-defined property "SLEW =  FAST" for instance <G2[0].diff_out> in unit <top>.
@@ -413,6 +418,9 @@ Analyzing Entity <top> in library <work> (Architecture <behavioral>).
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <G2[3].diff_out> in unit <top>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <G2[3].diff_out> in unit <top>.
     Set user-defined property "SLEW =  FAST" for instance <G2[3].diff_out> in unit <top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <G2[4].diff_out> in unit <top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <G2[4].diff_out> in unit <top>.
+    Set user-defined property "SLEW =  FAST" for instance <G2[4].diff_out> in unit <top>.
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <G3[0].reset_diff_out> in unit <top>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <G3[0].reset_diff_out> in unit <top>.
     Set user-defined property "SLEW =  SLOW" for instance <G3[0].reset_diff_out> in unit <top>.
@@ -425,6 +433,9 @@ Analyzing Entity <top> in library <work> (Architecture <behavioral>).
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <G3[3].reset_diff_out> in unit <top>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <G3[3].reset_diff_out> in unit <top>.
     Set user-defined property "SLEW =  SLOW" for instance <G3[3].reset_diff_out> in unit <top>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <G3[4].reset_diff_out> in unit <top>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <G3[4].reset_diff_out> in unit <top>.
+    Set user-defined property "SLEW =  SLOW" for instance <G3[4].reset_diff_out> in unit <top>.
 Entity <top> analyzed. Unit <top> generated.
 
 Analyzing generic Entity <SwitchDebouncer> in library <work> (Architecture <Structural>).
@@ -1113,7 +1124,6 @@ INFO:Xst:2679 - Register <counts<8>> in unit <rate_counter> has a constant value
 INFO:Xst:2679 - Register <counts<7>> in unit <rate_counter> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <counts<6>> in unit <rate_counter> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <counts<5>> in unit <rate_counter> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <counts<4>> in unit <rate_counter> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
 Entity <rate_counter> analyzed. Unit <rate_counter> generated.
 
 Analyzing Entity <TEMAC2_example_design> in library <work> (Architecture <TOP_LEVEL>).
@@ -1143,15 +1153,15 @@ Entity <TEMAC2_example_design> analyzed. Unit <TEMAC2_example_design> generated.
 Analyzing Entity <async_trigger> in library <work> (Architecture <Behavioral>).
 WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/async_trigger/async_trigger.vhd" line 216: Instantiating black box module <cs_controller>.
 WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/async_trigger/async_trigger.vhd" line 219: Instantiating black box module <ila_cs>.
-WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/async_trigger/async_trigger.vhd" line 279: Instantiating black box module <fifo_generator_v8_1_8b>.
-WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/async_trigger/async_trigger.vhd" line 279: Instantiating black box module <fifo_generator_v8_1_8b>.
-WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/async_trigger/async_trigger.vhd" line 279: Instantiating black box module <fifo_generator_v8_1_8b>.
-WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/async_trigger/async_trigger.vhd" line 279: Instantiating black box module <fifo_generator_v8_1_8b>.
-WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/async_trigger/async_trigger.vhd" line 294: Instantiating black box module <fifo_generator_v8_1_32b>.
-WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/async_trigger/async_trigger.vhd" line 294: Instantiating black box module <fifo_generator_v8_1_32b>.
-WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/async_trigger/async_trigger.vhd" line 294: Instantiating black box module <fifo_generator_v8_1_32b>.
-WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/async_trigger/async_trigger.vhd" line 294: Instantiating black box module <fifo_generator_v8_1_32b>.
-WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/async_trigger/async_trigger.vhd" line 308: Instantiating black box module <trigger_time_fifo>.
+WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/async_trigger/async_trigger.vhd" line 282: Instantiating black box module <fifo_generator_v8_1_8b>.
+WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/async_trigger/async_trigger.vhd" line 282: Instantiating black box module <fifo_generator_v8_1_8b>.
+WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/async_trigger/async_trigger.vhd" line 282: Instantiating black box module <fifo_generator_v8_1_8b>.
+WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/async_trigger/async_trigger.vhd" line 282: Instantiating black box module <fifo_generator_v8_1_8b>.
+WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/async_trigger/async_trigger.vhd" line 297: Instantiating black box module <fifo_generator_v8_1_32b>.
+WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/async_trigger/async_trigger.vhd" line 297: Instantiating black box module <fifo_generator_v8_1_32b>.
+WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/async_trigger/async_trigger.vhd" line 297: Instantiating black box module <fifo_generator_v8_1_32b>.
+WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/async_trigger/async_trigger.vhd" line 297: Instantiating black box module <fifo_generator_v8_1_32b>.
+WARNING:Xst:2211 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/async_trigger/async_trigger.vhd" line 311: Instantiating black box module <trigger_time_fifo>.
 INFO:Xst:1433 - Contents of array <data_out_8bit_array> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
 INFO:Xst:1433 - Contents of array <data_out_8bit_array> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
 INFO:Xst:1433 - Contents of array <data_out_8bit_array> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
@@ -1329,11 +1339,11 @@ Unit <SwitchDebouncer> synthesized.
 
 Synthesizing Unit <rand_trigger>.
     Related source file is "/home/kimei/VHDL/trigger/Trigger/HW/HDL/random_trigger/rand_trigger.vhd".
-    Found 4-bit register for signal <trigger_out>.
+    Found 5-bit register for signal <trigger_out>.
     Found 17-bit register for signal <counter>.
     Found 17-bit adder for signal <counter$addsub0000>.
     Summary:
-	inferred  21 D-type flip-flop(s).
+	inferred  22 D-type flip-flop(s).
 	inferred   1 Adder/Subtractor(s).
 Unit <rand_trigger> synthesized.
 
@@ -1642,7 +1652,7 @@ Unit <PLL_core> synthesized.
 
 Synthesizing Unit <receiver_control>.
     Related source file is "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_rec_kim/receiver_control.vhd".
-WARNING:Xst:646 - Signal <trigger_mask_s<23:4>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <trigger_mask_s<23:5>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <module_mask_s<7:2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <full_fifo> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <data_count> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -1673,17 +1683,17 @@ INFO:Xst:1799 - State wait_for_falling_wr_en is never reached in FSM <state>.
     Found 8-bit register for signal <module_mask_s>.
     Found 1-bit register for signal <rd_en_fifo>.
     Found 1-bit register for signal <rst_fifo>.
-    Found 4-bit register for signal <trigger_mask_s<3:0>>.
+    Found 5-bit register for signal <trigger_mask_s<4:0>>.
     Summary:
 	inferred   1 Finite State Machine(s).
-	inferred  46 D-type flip-flop(s).
+	inferred  47 D-type flip-flop(s).
 	inferred   1 Adder/Subtractor(s).
 Unit <receiver_control> synthesized.
 
 
 Synthesizing Unit <rate_counter>.
     Related source file is "/home/kimei/VHDL/trigger/Trigger/HW/HDL/rate_counter/rate_counter.vhd".
-WARNING:Xst:647 - Input <coincidence<3:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <coincidence<4:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found finite state machine <FSM_4> for signal <state>.
     -----------------------------------------------------------------------
     | States             | 9                                              |
@@ -1703,12 +1713,13 @@ WARNING:Xst:647 - Input <coincidence<3:1>> is never used. This port will be pres
     Found 6-bit register for signal <count1>.
     Found 6-bit adder for signal <count1$addsub0000> created at line 174.
     Found 32-bit register for signal <counts<31>>.
-    Found 128-bit register for signal <counts<3:0>>.
+    Found 160-bit register for signal <counts<4:0>>.
     Found 32-bit adder for signal <counts_0$addsub0000> created at line 121.
     Found 32-bit adder for signal <counts_1$addsub0000> created at line 121.
     Found 32-bit adder for signal <counts_2$addsub0000> created at line 121.
     Found 32-bit adder for signal <counts_3$addsub0000> created at line 121.
     Found 32-bit adder for signal <counts_31$addsub0000> created at line 121.
+    Found 32-bit adder for signal <counts_4$addsub0000> created at line 121.
     Found 32-bit 32-to-1 multiplexer for signal <din$varindex0000> created at line 159.
     Found 1-bit register for signal <en_counter>.
     Found 1-bit register for signal <sek>.
@@ -1716,8 +1727,8 @@ WARNING:Xst:647 - Input <coincidence<3:1>> is never used. This port will be pres
     Summary:
 	inferred   1 Finite State Machine(s).
 	inferred   1 Counter(s).
-	inferred 177 D-type flip-flop(s).
-	inferred   6 Adder/Subtractor(s).
+	inferred 209 D-type flip-flop(s).
+	inferred   7 Adder/Subtractor(s).
 	inferred  32 Multiplexer(s).
 Unit <rate_counter> synthesized.
 
@@ -2002,16 +2013,17 @@ WARNING:Xst:646 - Signal <rst_8_bit_fifos> is assigned but never used. This unco
 WARNING:Xst:646 - Signal <rst> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <full_tt_fifo> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <full_8b_fifos> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <full_32b_fifos> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <fifo_selector_uns<2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <empty_tt_fifo> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <din_tt_fifo_or> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <data_count_tt_fifo<8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <cs_trig<31:6>> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000.
+WARNING:Xst:653 - Signal <cs_trig<31:28>> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
+WARNING:Xst:653 - Signal <cs_trig<19:18>> is used but never assigned. This sourceless signal will be automatically connected to value 00.
+WARNING:Xst:653 - Signal <cs_trig<5>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+INFO:Xst:1799 - State wr_32b_fifo is never reached in FSM <state>.
 INFO:Xst:1799 - State send_full1 is never reached in FSM <send_tt_state>.
 INFO:Xst:1799 - State send_full2 is never reached in FSM <send_tt_state>.
 INFO:Xst:1799 - State send_full3 is never reached in FSM <send_tt_state>.
-INFO:Xst:1799 - State wr_32b_fifo is never reached in FSM <state>.
 INFO:Xst:1799 - State pull_old0 is never reached in FSM <atrig_state>.
 INFO:Xst:1799 - State pull_old1 is never reached in FSM <atrig_state>.
 INFO:Xst:1799 - State pull_old2 is never reached in FSM <atrig_state>.
@@ -2020,12 +2032,12 @@ INFO:Xst:1799 - State pull_old4 is never reached in FSM <atrig_state>.
 INFO:Xst:1799 - State pull_trigger1 is never reached in FSM <atrig_state>.
 INFO:Xst:1799 - State pull_trigger2 is never reached in FSM <atrig_state>.
 INFO:Xst:1799 - State pull_trigger3 is never reached in FSM <atrig_state>.
-    Found finite state machine <FSM_9> for signal <send_tt_state>.
+    Found finite state machine <FSM_9> for signal <state>.
     -----------------------------------------------------------------------
-    | States             | 11                                             |
-    | Transitions        | 18                                             |
+    | States             | 6                                              |
+    | Transitions        | 17                                             |
     | Inputs             | 7                                              |
-    | Outputs            | 12                                             |
+    | Outputs            | 6                                              |
     | Clock              | clk                       (rising_edge)        |
     | Reset              | rst_b                     (negative)           |
     | Reset type         | asynchronous                                   |
@@ -2034,12 +2046,12 @@ INFO:Xst:1799 - State pull_trigger3 is never reached in FSM <atrig_state>.
     | Encoding           | automatic                                      |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found finite state machine <FSM_10> for signal <state>.
+    Found finite state machine <FSM_10> for signal <send_tt_state>.
     -----------------------------------------------------------------------
-    | States             | 6                                              |
-    | Transitions        | 17                                             |
+    | States             | 11                                             |
+    | Transitions        | 18                                             |
     | Inputs             | 7                                              |
-    | Outputs            | 6                                              |
+    | Outputs            | 12                                             |
     | Clock              | clk                       (rising_edge)        |
     | Reset              | rst_b                     (negative)           |
     | Reset type         | asynchronous                                   |
@@ -2064,6 +2076,7 @@ INFO:Xst:1799 - State pull_trigger3 is never reached in FSM <atrig_state>.
     -----------------------------------------------------------------------
     Found 8-bit register for signal <send_fifo_data_in>.
     Found 1-bit register for signal <send_fifo_we>.
+    Found 9-bit adder carry out for signal <add0000$addsub0000> created at line 406.
     Found 32-bit adder for signal <atrig_state$add0000> created at line 565.
     Found 32-bit comparator equal for signal <atrig_state$cmp_eq0000> created at line 565.
     Found 32-bit comparator equal for signal <atrig_state$cmp_eq0001> created at line 565.
@@ -2071,85 +2084,84 @@ INFO:Xst:1799 - State pull_trigger3 is never reached in FSM <atrig_state>.
     Found 32-bit comparator equal for signal <atrig_state$cmp_eq0003> created at line 565.
     Found 1-bit register for signal <bit17_lrc>.
     Found 5-bit register for signal <byte_counter>.
-    Found 5-bit adder for signal <byte_counter$share0000> created at line 332.
-    Found 32-bit adder for signal <comp_0_1$add0000> created at line 484.
-    Found 32-bit subtractor for signal <comp_0_1$addsub0000> created at line 484.
-    Found 32-bit comparator less for signal <comp_0_1$cmp_lt0000> created at line 484.
-    Found 32-bit adder for signal <comp_0_2$add0000> created at line 485.
-    Found 32-bit subtractor for signal <comp_0_2$addsub0000> created at line 485.
-    Found 32-bit comparator less for signal <comp_0_2$cmp_lt0000> created at line 485.
-    Found 32-bit subtractor for signal <comp_0_3$addsub0000> created at line 486.
-    Found 32-bit adder for signal <comp_0_3$addsub0001> created at line 486.
-    Found 32-bit comparator less for signal <comp_0_3$cmp_lt0000> created at line 486.
-    Found 32-bit adder for signal <comp_1_2$add0000> created at line 487.
-    Found 32-bit subtractor for signal <comp_1_2$addsub0000> created at line 487.
-    Found 32-bit comparator less for signal <comp_1_2$cmp_lt0000> created at line 487.
-    Found 32-bit subtractor for signal <comp_1_3$addsub0000> created at line 488.
-    Found 32-bit adder for signal <comp_1_3$addsub0001> created at line 488.
-    Found 32-bit comparator less for signal <comp_1_3$cmp_lt0000> created at line 488.
-    Found 32-bit subtractor for signal <comp_2_3$addsub0000> created at line 489.
-    Found 32-bit adder for signal <comp_2_3$addsub0001> created at line 489.
-    Found 32-bit comparator less for signal <comp_2_3$cmp_lt0000> created at line 489.
+    Found 5-bit adder for signal <byte_counter$add0000> created at line 376.
+    Found 32-bit adder for signal <comp_0_1$add0000> created at line 476.
+    Found 32-bit subtractor for signal <comp_0_1$addsub0000> created at line 476.
+    Found 32-bit comparator less for signal <comp_0_1$cmp_lt0000> created at line 476.
+    Found 32-bit adder for signal <comp_0_2$add0000> created at line 477.
+    Found 32-bit subtractor for signal <comp_0_2$addsub0000> created at line 477.
+    Found 32-bit comparator less for signal <comp_0_2$cmp_lt0000> created at line 477.
+    Found 32-bit subtractor for signal <comp_0_3$addsub0000> created at line 478.
+    Found 32-bit adder for signal <comp_0_3$addsub0001> created at line 478.
+    Found 32-bit comparator less for signal <comp_0_3$cmp_lt0000> created at line 478.
+    Found 32-bit adder for signal <comp_1_2$add0000> created at line 479.
+    Found 32-bit subtractor for signal <comp_1_2$addsub0000> created at line 479.
+    Found 32-bit comparator less for signal <comp_1_2$cmp_lt0000> created at line 479.
+    Found 32-bit subtractor for signal <comp_1_3$addsub0000> created at line 480.
+    Found 32-bit adder for signal <comp_1_3$addsub0001> created at line 480.
+    Found 32-bit comparator less for signal <comp_1_3$cmp_lt0000> created at line 480.
+    Found 32-bit subtractor for signal <comp_2_3$addsub0000> created at line 481.
+    Found 32-bit adder for signal <comp_2_3$addsub0001> created at line 481.
+    Found 32-bit comparator less for signal <comp_2_3$cmp_lt0000> created at line 481.
     Found 1-bit register for signal <count_bit_buf>.
     Found 32-bit register for signal <din_32b_fifo>.
     Found 32-bit register for signal <din_tt_fifo>.
     Found 32-bit register for signal <din_tt_fifo_and_or>.
     Found 32-bit register for signal <din_tt_fifo_rand>.
-    Found 32-bit adder for signal <din_tt_fifo_rand$addsub0000> created at line 470.
-    Found 1-bit xor2 for signal <din_tt_fifo_rand$cmp_ne0000> created at line 468.
+    Found 32-bit adder for signal <din_tt_fifo_rand$addsub0000> created at line 462.
+    Found 1-bit xor2 for signal <din_tt_fifo_rand$cmp_ne0000> created at line 460.
     Found 1-bit register for signal <en_or_buf>.
     Found 4-bit register for signal <fifo_selector>.
     Found 32-bit register for signal <late_running_counter>.
     Found 32-bit register for signal <late_running_counter_buf>.
     Found 32-bit up counter for signal <late_running_counter_us>.
     Found 8-bit register for signal <package_counter>.
-    Found 8-bit adder for signal <package_counter$addsub0000> created at line 747.
+    Found 8-bit adder for signal <package_counter$addsub0000> created at line 734.
     Found 4-bit register for signal <rd_en_32b_fifos>.
-    Found 32-bit comparator equal for signal <rd_en_32b_fifos_0$cmp_eq0000> created at line 558.
-    Found 32-bit subtractor for signal <rd_en_32b_fifos_1$addsub0000> created at line 622.
-    Found 32-bit adder for signal <rd_en_32b_fifos_1$addsub0001> created at line 622.
-    Found 32-bit comparator equal for signal <rd_en_32b_fifos_1$cmp_eq0000> created at line 558.
-    Found 32-bit comparator less for signal <rd_en_32b_fifos_1$cmp_lt0000> created at line 622.
-    Found 32-bit subtractor for signal <rd_en_32b_fifos_2$addsub0000> created at line 622.
-    Found 32-bit adder for signal <rd_en_32b_fifos_2$addsub0001> created at line 622.
-    Found 32-bit subtractor for signal <rd_en_32b_fifos_2$addsub0002> created at line 648.
-    Found 32-bit adder for signal <rd_en_32b_fifos_2$addsub0003> created at line 648.
-    Found 32-bit comparator equal for signal <rd_en_32b_fifos_2$cmp_eq0000> created at line 558.
-    Found 32-bit comparator less for signal <rd_en_32b_fifos_2$cmp_lt0000> created at line 622.
-    Found 32-bit comparator less for signal <rd_en_32b_fifos_2$cmp_lt0001> created at line 648.
-    Found 32-bit subtractor for signal <rd_en_32b_fifos_3$addsub0000> created at line 622.
-    Found 32-bit adder for signal <rd_en_32b_fifos_3$addsub0001> created at line 622.
-    Found 32-bit subtractor for signal <rd_en_32b_fifos_3$addsub0002> created at line 648.
-    Found 32-bit adder for signal <rd_en_32b_fifos_3$addsub0003> created at line 648.
-    Found 32-bit subtractor for signal <rd_en_32b_fifos_3$addsub0004> created at line 661.
-    Found 32-bit adder for signal <rd_en_32b_fifos_3$addsub0005> created at line 661.
-    Found 32-bit comparator equal for signal <rd_en_32b_fifos_3$cmp_eq0000> created at line 558.
-    Found 32-bit comparator less for signal <rd_en_32b_fifos_3$cmp_lt0000> created at line 622.
-    Found 32-bit comparator less for signal <rd_en_32b_fifos_3$cmp_lt0001> created at line 648.
-    Found 32-bit comparator less for signal <rd_en_32b_fifos_3$cmp_lt0002> created at line 661.
+    Found 32-bit comparator greater for signal <rd_en_32b_fifos$cmp_gt0000> created at line 549.
+    Found 32-bit subtractor for signal <rd_en_32b_fifos_1$addsub0000> created at line 609.
+    Found 32-bit adder for signal <rd_en_32b_fifos_1$addsub0001> created at line 609.
+    Found 32-bit comparator greater for signal <rd_en_32b_fifos_1$cmp_gt0000> created at line 549.
+    Found 32-bit comparator less for signal <rd_en_32b_fifos_1$cmp_lt0000> created at line 609.
+    Found 32-bit subtractor for signal <rd_en_32b_fifos_2$addsub0000> created at line 609.
+    Found 32-bit adder for signal <rd_en_32b_fifos_2$addsub0001> created at line 609.
+    Found 32-bit subtractor for signal <rd_en_32b_fifos_2$addsub0002> created at line 635.
+    Found 32-bit adder for signal <rd_en_32b_fifos_2$addsub0003> created at line 635.
+    Found 32-bit comparator greater for signal <rd_en_32b_fifos_2$cmp_gt0000> created at line 549.
+    Found 32-bit comparator less for signal <rd_en_32b_fifos_2$cmp_lt0000> created at line 609.
+    Found 32-bit comparator less for signal <rd_en_32b_fifos_2$cmp_lt0001> created at line 635.
+    Found 32-bit subtractor for signal <rd_en_32b_fifos_3$addsub0000> created at line 609.
+    Found 32-bit adder for signal <rd_en_32b_fifos_3$addsub0001> created at line 609.
+    Found 32-bit subtractor for signal <rd_en_32b_fifos_3$addsub0002> created at line 635.
+    Found 32-bit adder for signal <rd_en_32b_fifos_3$addsub0003> created at line 635.
+    Found 32-bit subtractor for signal <rd_en_32b_fifos_3$addsub0004> created at line 648.
+    Found 32-bit adder for signal <rd_en_32b_fifos_3$addsub0005> created at line 648.
+    Found 32-bit comparator greater for signal <rd_en_32b_fifos_3$cmp_gt0000> created at line 549.
+    Found 32-bit comparator less for signal <rd_en_32b_fifos_3$cmp_lt0000> created at line 609.
+    Found 32-bit comparator less for signal <rd_en_32b_fifos_3$cmp_lt0001> created at line 635.
+    Found 32-bit comparator less for signal <rd_en_32b_fifos_3$cmp_lt0002> created at line 648.
     Found 4-bit register for signal <rd_en_8b_fifos>.
     Found 1-bit register for signal <rd_en_tt_fifo>.
     Found 1-bit register for signal <rocs_reset>.
     Found 1-bit register for signal <rocs_reset_buf>.
     Found 1-bit register for signal <rst_32b_fifos>.
-    Found 1-bit xor2 for signal <rst_32b_fifos$xor0000> created at line 524.
+    Found 1-bit xor2 for signal <rst_32b_fifos$xor0000> created at line 516.
     Found 8-bit register for signal <send_tt_counter>.
-    Found 8-bit adder for signal <send_tt_counter$addsub0000> created at line 780.
-    Found 8-bit comparator not equal for signal <send_tt_state$cmp_ne0000> created at line 757.
-    Found 7-bit adder carry out for signal <state$addsub0001> created at line 402.
-    Found 8-bit comparator equal for signal <state$cmp_eq0004> created at line 402.
+    Found 8-bit adder for signal <send_tt_counter$addsub0000> created at line 767.
+    Found 8-bit comparator not equal for signal <send_tt_state$cmp_ne0000> created at line 744.
+    Found 10-bit comparator equal for signal <state$cmp_eq0004> created at line 406.
     Found 32-bit register for signal <trigger_time_tmp>.
-    Found 32-bit comparator less for signal <trigger_time_tmp$cmp_lt0000> created at line 588.
-    Found 32-bit comparator less for signal <trigger_time_tmp$cmp_lt0001> created at line 602.
-    Found 32-bit comparator less for signal <trigger_time_tmp$cmp_lt0002> created at line 615.
-    Found 32-bit comparator less for signal <trigger_time_tmp$cmp_lt0003> created at line 628.
-    Found 32-bit comparator less for signal <trigger_time_tmp$cmp_lt0004> created at line 641.
-    Found 32-bit comparator less for signal <trigger_time_tmp$cmp_lt0005> created at line 654.
+    Found 32-bit comparator less for signal <trigger_time_tmp$cmp_lt0000> created at line 575.
+    Found 32-bit comparator less for signal <trigger_time_tmp$cmp_lt0001> created at line 589.
+    Found 32-bit comparator less for signal <trigger_time_tmp$cmp_lt0002> created at line 602.
+    Found 32-bit comparator less for signal <trigger_time_tmp$cmp_lt0003> created at line 615.
+    Found 32-bit comparator less for signal <trigger_time_tmp$cmp_lt0004> created at line 628.
+    Found 32-bit comparator less for signal <trigger_time_tmp$cmp_lt0005> created at line 641.
     Found 24-bit register for signal <trigger_time_uns<23:0>>.
     Found 8-bit register for signal <trigger_times_received>.
     Found 8-bit register for signal <trigger_times_to_send>.
-    Found 7-bit register for signal <tt_counter>.
-    Found 7-bit adder for signal <tt_counter$addsub0000> created at line 401.
+    Found 9-bit register for signal <tt_counter>.
+    Found 9-bit adder for signal <tt_counter$addsub0000> created at line 405.
     Found 32-bit register for signal <tt_to_send>.
     Found 4-bit register for signal <wr_en_32b_fifos>.
     Found 1-bit register for signal <wr_en_tt_fifo>.
@@ -2158,7 +2170,7 @@ INFO:Xst:1799 - State pull_trigger3 is never reached in FSM <atrig_state>.
     Summary:
 	inferred   3 Finite State Machine(s).
 	inferred   1 Counter(s).
-	inferred 359 D-type flip-flop(s).
+	inferred 361 D-type flip-flop(s).
 	inferred  31 Adder/Subtractor(s).
 	inferred  28 Comparator(s).
 Unit <async_trigger> synthesized.
@@ -2447,12 +2459,12 @@ WARNING:Xst:646 - Signal <buttons_deb<0>> is assigned but never used. This uncon
     Found 2-bit register for signal <module_mask_s_buf>.
     Found 1-bit register for signal <mrst_from_udp_b>.
     Found 1-bit register for signal <mrst_from_udp_b_buf>.
-    Found 4-bit register for signal <trigger_mask>.
-    Found 4-bit register for signal <trigger_mask_buf>.
+    Found 5-bit register for signal <trigger_mask>.
+    Found 5-bit register for signal <trigger_mask_buf>.
     Found 1-bit register for signal <trigled>.
     Found 1-bit register for signal <trigled1>.
     Summary:
-	inferred  20 D-type flip-flop(s).
+	inferred  22 D-type flip-flop(s).
 Unit <top> synthesized.
 
 
@@ -2460,24 +2472,23 @@ Unit <top> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 112
+# Adders/Subtractors                                   : 114
  12-bit adder                                          : 4
  12-bit subtractor                                     : 10
  16-bit adder                                          : 10
  16-bit subtractor                                     : 3
  17-bit adder                                          : 24
  31-bit adder                                          : 1
- 32-bit adder                                          : 29
+ 32-bit adder                                          : 31
  32-bit subtractor                                     : 12
  4-bit adder                                           : 1
  48-bit adder                                          : 2
  5-bit adder                                           : 3
  6-bit adder                                           : 2
- 7-bit adder                                           : 1
- 7-bit adder carry out                                 : 1
  8-bit adder                                           : 4
  8-bit subtractor                                      : 3
- 9-bit adder                                           : 2
+ 9-bit adder                                           : 3
+ 9-bit adder carry out                                 : 1
 # Counters                                             : 29
  10-bit up counter                                     : 2
  11-bit up counter                                     : 6
@@ -2490,27 +2501,29 @@ Macro Statistics
  9-bit updown counter                                  : 4
 # Accumulators                                         : 2
  12-bit updown accumulator                             : 2
-# Registers                                            : 583
- 1-bit register                                        : 416
+# Registers                                            : 595
+ 1-bit register                                        : 426
  12-bit register                                       : 26
  16-bit register                                       : 9
  17-bit register                                       : 4
  2-bit register                                        : 7
  3-bit register                                        : 2
- 32-bit register                                       : 21
- 4-bit register                                        : 7
- 5-bit register                                        : 3
+ 32-bit register                                       : 23
+ 4-bit register                                        : 4
+ 5-bit register                                        : 6
  6-bit register                                        : 2
- 7-bit register                                        : 1
  8-bit register                                        : 85
+ 9-bit register                                        : 1
 # Latches                                              : 54
  1-bit latch                                           : 51
  32-bit latch                                          : 3
 # Comparators                                          : 32
+ 10-bit comparator equal                               : 1
  31-bit comparator greater                             : 2
- 32-bit comparator equal                               : 8
+ 32-bit comparator equal                               : 4
+ 32-bit comparator greater                             : 4
  32-bit comparator less                                : 18
- 8-bit comparator equal                                : 3
+ 8-bit comparator equal                                : 2
  8-bit comparator not equal                            : 1
 # Multiplexers                                         : 2
  32-bit 32-to-1 multiplexer                            : 2
@@ -2594,19 +2607,6 @@ Optimizing FSM <Inst_TEMAC2_example_design/inst_async_trigger/atrig_state/FSM> o
  pull_trigger3 | unreached
 ---------------------------
 Analyzing FSM <FSM_10> for best encoding.
-Optimizing FSM <Inst_TEMAC2_example_design/inst_async_trigger/state/FSM> on signal <state[1:6]> with one-hot encoding.
-------------------------------
- State            | Encoding
-------------------------------
- init             | 000001
- wait_for_wr_en   | 000010
- set_rd_enable    | 001000
- set_rd_enable0   | 000100
- collect_preamble | 010000
- collect_bytes    | 100000
- wr_32b_fifo      | unreached
-------------------------------
-Analyzing FSM <FSM_9> for best encoding.
 Optimizing FSM <Inst_TEMAC2_example_design/inst_async_trigger/send_tt_state/FSM> on signal <send_tt_state[1:11]> with one-hot encoding.
 ---------------------------
  State      | Encoding
@@ -2626,6 +2626,19 @@ Optimizing FSM <Inst_TEMAC2_example_design/inst_async_trigger/send_tt_state/FSM>
  send_full2 | unreached
  send_full3 | unreached
 ---------------------------
+Analyzing FSM <FSM_9> for best encoding.
+Optimizing FSM <Inst_TEMAC2_example_design/inst_async_trigger/state/FSM> on signal <state[1:6]> with one-hot encoding.
+------------------------------
+ State            | Encoding
+------------------------------
+ init             | 000001
+ wait_for_wr_en   | 000010
+ set_rd_enable    | 001000
+ set_rd_enable0   | 000100
+ collect_preamble | 010000
+ collect_bytes    | 100000
+ wr_32b_fifo      | unreached
+------------------------------
 Analyzing FSM <FSM_8> for best encoding.
 Optimizing FSM <EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/wr_state/FSM> on signal <wr_state[1:3]> with gray encoding.
 Optimizing FSM <Inst_TEMAC2_example_design/v5_emac_ll/client_side_FIFO_emac1/rx_fifo_i/wr_state/FSM> on signal <wr_state[1:3]> with gray encoding.
@@ -2886,6 +2899,7 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rd_enable_delay2> (
 WARNING:Xst:2677 - Node <trigger_out_1> of sequential type is unconnected in block <Inst_rand_trigger>.
 WARNING:Xst:2677 - Node <trigger_out_2> of sequential type is unconnected in block <Inst_rand_trigger>.
 WARNING:Xst:2677 - Node <trigger_out_3> of sequential type is unconnected in block <Inst_rand_trigger>.
+WARNING:Xst:2677 - Node <trigger_out_4> of sequential type is unconnected in block <Inst_rand_trigger>.
 WARNING:Xst:2677 - Node <wr_addr_diff_0> of sequential type is unconnected in block <tx_fifo_i>.
 WARNING:Xst:2677 - Node <wr_addr_diff_1> of sequential type is unconnected in block <tx_fifo_i>.
 WARNING:Xst:2677 - Node <rd_valid_pipe_2> of sequential type is unconnected in block <rx_fifo_i>.
@@ -2934,24 +2948,23 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # FSMs                                                 : 15
-# Adders/Subtractors                                   : 112
+# Adders/Subtractors                                   : 114
  12-bit adder                                          : 4
  12-bit subtractor                                     : 10
  16-bit adder                                          : 10
  16-bit subtractor                                     : 3
  17-bit adder                                          : 24
  31-bit adder                                          : 1
- 32-bit adder                                          : 29
+ 32-bit adder                                          : 31
  32-bit subtractor                                     : 12
  4-bit adder                                           : 1
  48-bit adder                                          : 2
  5-bit adder                                           : 3
  6-bit adder                                           : 2
- 7-bit adder                                           : 1
- 7-bit adder carry out                                 : 1
  8-bit adder                                           : 4
  8-bit subtractor                                      : 3
- 9-bit adder                                           : 2
+ 9-bit adder                                           : 3
+ 9-bit adder carry out                                 : 1
 # Counters                                             : 29
  10-bit up counter                                     : 2
  11-bit up counter                                     : 6
@@ -2964,16 +2977,18 @@ Macro Statistics
  9-bit updown counter                                  : 4
 # Accumulators                                         : 2
  12-bit updown accumulator                             : 2
-# Registers                                            : 2366
- Flip-Flops                                            : 2366
+# Registers                                            : 2445
+ Flip-Flops                                            : 2445
 # Latches                                              : 54
  1-bit latch                                           : 51
  32-bit latch                                          : 3
 # Comparators                                          : 32
+ 10-bit comparator equal                               : 1
  31-bit comparator greater                             : 2
- 32-bit comparator equal                               : 8
+ 32-bit comparator equal                               : 4
+ 32-bit comparator greater                             : 4
  32-bit comparator less                                : 18
- 8-bit comparator equal                                : 3
+ 8-bit comparator equal                                : 2
  8-bit comparator not equal                            : 1
 # Multiplexers                                         : 2
  32-bit 32-to-1 multiplexer                            : 2
@@ -3026,7 +3041,7 @@ Optimizing unit <top> ...
 Optimizing unit <SwitchDebouncer> ...
 
 Optimizing unit <rand_trigger> ...
-INFO:Xst:2261 - The FF/Latch <trigger_out_0> in Unit <rand_trigger> is equivalent to the following 3 FFs/Latches, which will be removed : <trigger_out_1> <trigger_out_2> <trigger_out_3> 
+INFO:Xst:2261 - The FF/Latch <trigger_out_0> in Unit <rand_trigger> is equivalent to the following 4 FFs/Latches, which will be removed : <trigger_out_1> <trigger_out_2> <trigger_out_3> <trigger_out_4> 
 
 Optimizing unit <udp_rec> ...
 
@@ -3133,6 +3148,7 @@ WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/v5_emac_ll/client_side_FIFO_
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/v5_emac_ll/client_side_FIFO_emac1/rx_fifo_i/wr_fifo_status_1> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/v5_emac_ll/client_side_FIFO_emac1/rx_fifo_i/wr_fifo_status_2> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/v5_emac_ll/client_side_FIFO_emac1/rx_fifo_i/wr_fifo_status_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/sek> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_0_0> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_0_1> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_0_2> of sequential type is unconnected in block <top>.
@@ -3165,39 +3181,6 @@ WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_0_28> 
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_0_29> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_0_30> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_0_31> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/sek> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_0> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_1> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_2> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_3> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_4> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_5> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_6> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_7> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_8> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_9> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_10> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_11> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_12> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_13> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_14> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_15> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_16> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_17> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_18> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_19> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_20> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_21> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_22> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_23> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_24> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_25> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_26> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_27> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_28> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_29> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_30> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_31> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_1_0> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_1_1> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_1_2> of sequential type is unconnected in block <top>.
@@ -3230,6 +3213,38 @@ WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_1_28> 
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_1_29> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_1_30> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_1_31> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_4_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_4_1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_4_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_4_3> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_4_4> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_4_5> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_4_6> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_4_7> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_4_8> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_4_9> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_4_10> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_4_11> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_4_12> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_4_13> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_4_14> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_4_15> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_4_16> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_4_17> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_4_18> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_4_19> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_4_20> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_4_21> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_4_22> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_4_23> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_4_24> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_4_25> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_4_26> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_4_27> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_4_28> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_4_29> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_4_30> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_4_31> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_2_0> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_2_1> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_2_2> of sequential type is unconnected in block <top>.
@@ -3262,7 +3277,38 @@ WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_2_28> 
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_2_29> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_2_30> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_2_31> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/we> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_3> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_4> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_5> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_6> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_7> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_8> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_9> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_10> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_11> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_12> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_13> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_14> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_15> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_16> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_17> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_18> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_19> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_20> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_21> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_22> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_23> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_24> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_25> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_26> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_27> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_28> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_29> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_30> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/counts_3_31> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/din_0> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/din_1> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/din_2> of sequential type is unconnected in block <top>.
@@ -3271,6 +3317,7 @@ WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/din_4> of seq
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/din_5> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/din_6> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/din_7> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/we> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/count1_0> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/count1_1> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/count1_2> of sequential type is unconnected in block <top>.
@@ -3313,6 +3360,9 @@ WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/en_counter> o
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/edge_detect_coincidence/s_0> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/edge_detect_coincidence/s_1> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/edge_detect_coincidence/s_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/G_edge_det[4].edge_detect_1/s_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/G_edge_det[4].edge_detect_1/s_1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/G_edge_det[4].edge_detect_1/s_2> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/G_edge_det[3].edge_detect_1/s_0> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/G_edge_det[3].edge_detect_1/s_1> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Inst_TEMAC2_example_design/rate_counter_1/G_edge_det[3].edge_detect_1/s_2> of sequential type is unconnected in block <top>.
@@ -3415,7 +3465,7 @@ INFO:Xst:2261 - The FF/Latch <EMAC_0/v5_emac_ll/tx_pre_reset_0_i_5> in Unit <top
 WARNING:Xst:638 - in unit top Conflict on KEEP property on signal EMAC_0/v5_emac_ll/tx_pre_reset_0_i<5> and EMAC_0/ll_pre_reset_0_i<5> EMAC_0/ll_pre_reset_0_i<5> signal will be lost.
 INFO:Xst:2261 - The FF/Latch <Inst_TEMAC2_example_design/v5_emac_ll/tx_reset_1_i> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <Inst_TEMAC2_example_design/ll_reset_1_i> 
 INFO:Xst:2261 - The FF/Latch <EMAC_0/v5_emac_ll/tx_reset_0_i> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <EMAC_0/ll_reset_0_i> 
-Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 26.
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 34.
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2> in Unit <EMAC_0/Inst_receiver_control/udp_receive_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/user_valid> in Unit <EMAC_0/Inst_receiver_control/udp_receive_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/curr_fwft_state_0> 
 INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_fb> in Unit <EMAC_0/Inst_receiver_control/udp_receive_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i> 
@@ -3551,8 +3601,8 @@ Unit <top> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 2429
- Flip-Flops                                            : 2429
+# Registers                                            : 2472
+ Flip-Flops                                            : 2472
 # Shift Registers                                      : 39
  2-bit shift register                                  : 7
  3-bit shift register                                  : 16
@@ -3583,35 +3633,35 @@ Optimization Goal                  : Area
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 178
+# IOs                              : 184
 
 Cell Usage :
-# BELS                             : 11149
+# BELS                             : 12211
 #      GND                         : 49
-#      INV                         : 260
-#      LUT1                        : 1412
-#      LUT2                        : 948
-#      LUT3                        : 403
-#      LUT4                        : 1184
-#      LUT5                        : 573
-#      LUT6                        : 987
-#      MUXCY                       : 2758
+#      INV                         : 243
+#      LUT1                        : 1476
+#      LUT2                        : 952
+#      LUT3                        : 388
+#      LUT4                        : 1257
+#      LUT5                        : 599
+#      LUT6                        : 1736
+#      MUXCY                       : 2822
 #      MUXCY_L                     : 95
 #      MUXF5                       : 2
 #      MUXF6                       : 1
-#      MUXF7                       : 91
+#      MUXF7                       : 159
 #      MUXF8                       : 2
 #      VCC                         : 26
-#      XORCY                       : 2358
-# FlipFlops/Latches                : 4327
+#      XORCY                       : 2404
+# FlipFlops/Latches                : 4453
 #      FD                          : 255
-#      FDC                         : 811
-#      FDCE                        : 889
-#      FDE                         : 753
-#      FDP                         : 352
-#      FDPE                        : 214
+#      FDC                         : 822
+#      FDCE                        : 1060
+#      FDE                         : 788
+#      FDP                         : 348
+#      FDPE                        : 215
 #      FDR                         : 160
-#      FDRE                        : 720
+#      FDRE                        : 632
 #      FDRS                        : 4
 #      FDS                         : 14
 #      FDSE                        : 4
@@ -3619,11 +3669,12 @@ Cell Usage :
 #      LD_1                        : 51
 #      LDC                         : 1
 #      ODDR                        : 3
-# RAMS                             : 80
+# RAMS                             : 920
+#      RAM64M                      : 440
+#      RAM64X1D                    : 408
 #      RAM64X1S                    : 24
 #      RAMB16                      : 9
-#      RAMB18                      : 11
-#      RAMB18SDP                   : 1
+#      RAMB18                      : 4
 #      RAMB36_EXP                  : 35
 # Shift Registers                  : 229
 #      SRL16                       : 128
@@ -3633,12 +3684,12 @@ Cell Usage :
 # Clock Buffers                    : 16
 #      BUFG                        : 15
 #      BUFGP                       : 1
-# IO Buffers                       : 153
+# IO Buffers                       : 156
 #      IBUF                        : 79
-#      IBUFDS                      : 4
+#      IBUFDS                      : 5
 #      IBUFG                       : 1
 #      OBUF                        : 60
-#      OBUFDS                      : 9
+#      OBUFDS                      : 11
 # Others                           : 29
 #      BSCAN_VIRTEX5               : 1
 #      IDELAYCTRL                  : 1
@@ -3655,28 +3706,28 @@ Selected Device : 5vlx50tff1136-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            4301  out of  28800    14%  
- Number of Slice LUTs:                 6020  out of  28800    20%  
-    Number used as Logic:              5767  out of  28800    20%  
-    Number used as Memory:              253  out of   7680     3%  
-       Number used as RAM:               24
+ Number of Slice Registers:            4427  out of  28800    15%  
+ Number of Slice LUTs:                 9480  out of  28800    32%  
+    Number used as Logic:              6651  out of  28800    23%  
+    Number used as Memory:             2829  out of   7680    36%  
+       Number used as RAM:             2600
        Number used as SRL:              229
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   7688
-   Number with an unused Flip Flop:    3387  out of   7688    44%  
-   Number with an unused LUT:          1668  out of   7688    21%  
-   Number of fully used LUT-FF pairs:  2633  out of   7688    34%  
-   Number of unique control sets:       373
+ Number of LUT Flip Flop pairs used:  11162
+   Number with an unused Flip Flop:    6735  out of  11162    60%  
+   Number with an unused LUT:          1682  out of  11162    15%  
+   Number of fully used LUT-FF pairs:  2745  out of  11162    24%  
+   Number of unique control sets:       381
 
 IO Utilization: 
- Number of IOs:                         178
- Number of bonded IOBs:                 167  out of    480    34%  
+ Number of IOs:                         184
+ Number of bonded IOBs:                 173  out of    480    36%  
     IOB Flip Flops/Latches:              26
 
 Specific Feature Utilization:
- Number of Block RAM/FIFO:               47  out of     60    78%  
-    Number using Block RAM only:         47
+ Number of Block RAM/FIFO:               42  out of     60    70%  
+    Number using Block RAM only:         42
  Number of BUFG/BUFGCTRLs:               16  out of     32    50%  
  Number of PLL_ADVs:                      1  out of      6    16%  
 
@@ -3701,18 +3752,18 @@ Clock Information:
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                                                                                                                                                                                                                                                        | Clock buffer(FF name)                                                                                                           | Load  |
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+-------+
-Inst_CRU/Inst_PLL_ALL/CLKOUT1_BUF                                                                                                                                                                                                                                   | BUFG                                                                                                                            | 126   |
+Inst_CRU/Inst_PLL_ALL/CLKOUT1_BUF                                                                                                                                                                                                                                   | BUFG                                                                                                                            | 131   |
 FPGA100M                                                                                                                                                                                                                                                            | IBUFG+BUFG                                                                                                                      | 38    |
 Inst_CRU/Inst_PLL_ALL/CLKOUT0_BUF                                                                                                                                                                                                                                   | BUFG                                                                                                                            | 5     |
 EMAC_0/rx_client_clk_0_o                                                                                                                                                                                                                                            | BUFG                                                                                                                            | 106   |
-EMAC_0/tx_client_clk_0_o                                                                                                                                                                                                                                            | BUFG                                                                                                                            | 1131  |
+EMAC_0/tx_client_clk_0_o                                                                                                                                                                                                                                            | BUFG                                                                                                                            | 1336  |
 EMAC_0/tx_phy_clk_0_o                                                                                                                                                                                                                                               | BUFG                                                                                                                            | 11    |
 GMII_RX_CLK_0                                                                                                                                                                                                                                                       | IBUF+IODELAY+BUFG                                                                                                               | 10    |
 EMAC_0/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or0000_wg_cy<6>1(EMAC_0/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or0000_wg_cy<6>:O)                                           | BUFG(*)(EMAC_0/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_31)                          | 32    |
 EMAC_0/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_n_16_and0000(EMAC_0/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_n_16_and000079:O)                                        | NONE(*)(EMAC_0/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_n_16)                    | 17    |
 Inst_CRU/Inst_PLL_ALL/CLKOUT3_BUF                                                                                                                                                                                                                                   | BUFG                                                                                                                            | 12    |
 GMII_RX_CLK_1                                                                                                                                                                                                                                                       | IBUF+IODELAY+BUFG                                                                                                               | 116   |
-GTX_CLK_1                                                                                                                                                                                                                                                           | IBUF+BUFG                                                                                                                       | 2785  |
+GTX_CLK_1                                                                                                                                                                                                                                                           | IBUF+BUFG                                                                                                                       | 3541  |
 Inst_TEMAC2_example_design/UDP_IP_Core_2/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or0000_wg_cy<6>1(Inst_TEMAC2_example_design/UDP_IP_Core_2/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or0000_wg_cy<6>:O)   | BUFG(*)(Inst_TEMAC2_example_design/UDP_IP_Core_2/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_31)      | 32    |
 Inst_TEMAC2_example_design/UDP_IP_Core_2/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_n_16_and0000(Inst_TEMAC2_example_design/UDP_IP_Core_2/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_n_16_and000079:O)| NONE(*)(Inst_TEMAC2_example_design/UDP_IP_Core_2/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/ChecksumTemplate_n_16)| 17    |
 Inst_TEMAC2_example_design/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or0000_wg_cy<6>1(Inst_TEMAC2_example_design/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_or0000_wg_cy<6>:O)   | BUFG(*)(Inst_TEMAC2_example_design/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/Inst_IPV4WriteUDPHeader/Checksum32_n_31)      | 32    |
@@ -3732,15 +3783,16 @@ Asynchronous Control Signals Information:
 Control Signal                                                                                                                                                                                                                                                                                             | Buffer(FF name)                                                                                                                                                                                                                                                       | Load  |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 Inst_TEMAC2_example_design/v5_emac_ll/tx_reset_1_i(Inst_TEMAC2_example_design/v5_emac_ll/tx_reset_1_i:Q)                                                                                                                                                                                                   | NONE(Inst_TEMAC2_example_design/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/ENABLE_USER_DATA_READ_port_map/usr_data_sel_prev)                                                                                                                                      | 534   |
-EMAC_0/v5_emac_ll/tx_reset_0_i(EMAC_0/v5_emac_ll/tx_reset_0_i:Q)                                                                                                                                                                                                                                           | NONE(EMAC_0/Inst_receiver_control/en_or_trigger)                                                                                                                                                                                                                      | 328   |
-EMAC_0/reset_i(sync_trigger_1/G3[0].edge_detect_1/rst_b_inv1_INV_0:O)                                                                                                                                                                                                                                      | NONE(EMAC_0/idelayctrl_reset_0_r_1)                                                                                                                                                                                                                                   | 185   |
+EMAC_0/v5_emac_ll/tx_reset_0_i(EMAC_0/v5_emac_ll/tx_reset_0_i:Q)                                                                                                                                                                                                                                           | NONE(EMAC_0/Inst_receiver_control/en_or_trigger)                                                                                                                                                                                                                      | 332   |
+EMAC_0/reset_i(sync_trigger_1/G3[0].edge_detect_1/rst_b_inv1_INV_0:O)                                                                                                                                                                                                                                      | NONE(EMAC_0/idelayctrl_reset_0_r_1)                                                                                                                                                                                                                                   | 189   |
 Inst_TEMAC2_example_design/inst_async_trigger/your_instance_name/N0(Inst_TEMAC2_example_design/inst_async_trigger/your_instance_name/XST_GND:G)                                                                                                                                                            | NONE(Inst_TEMAC2_example_design/inst_async_trigger/your_instance_name/U0/I_NO_D.U_ILA/U_RST/U_POR)                                                                                                                                                                    | 129   |
 Inst_TEMAC2_example_design/inst_async_trigger/cs_contr/CONTROL0<20>(Inst_TEMAC2_example_design/inst_async_trigger/cs_contr/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[0].U_HCE:O)                                                                                                                                 | NONE(Inst_TEMAC2_example_design/inst_async_trigger/your_instance_name/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GAND.U_match/I_CS_GAND.U_CS_GAND_SRL/I_V5.U_CS_GAND_SRL_V5/I_USE_INPUT_REG_NE0.G_GAND_DLY[0].U_GAND_IREG)                                   | 128   |
+Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<0>(Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0:Q)                                  | NONE(Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_i_0)                                                                                                                   | 64    |
 Inst_TEMAC2_example_design/inst_async_trigger/your_instance_name/N1(Inst_TEMAC2_example_design/inst_async_trigger/your_instance_name/XST_VCC:P)                                                                                                                                                            | NONE(Inst_TEMAC2_example_design/inst_async_trigger/your_instance_name/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_V5.U_CS_BRAM_CASCADE_V5/I_DEPTH_LTEQ_32K.U_SBRAM_0/I_B18KGT0.u_ramb16/U_RAMB16)                                               | 60    |
 EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)                                                                                                                                          | NONE(EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gdcf.dc/dc/count_0)                                                                                                                                                      | 40    |
 Inst_TEMAC2_example_design/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(Inst_TEMAC2_example_design/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)                                                                                                  | NONE(Inst_TEMAC2_example_design/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gdcf.dc/dc/count_0)                                                                                                                                  | 40    |
 BUTTONS<0>                                                                                                                                                                                                                                                                                                 | IBUF                                                                                                                                                                                                                                                                  | 37    |
-EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)                                                                                | NONE(EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gdcf.dc/dc/count_0)                                                                                                                         | 37    |
+EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)                                                                                | NONE(EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gdcf.dc/dc/count_0)                                                                                                                         | 34    |
 Inst_TEMAC2_example_design/inst_async_trigger/rocs_reset_b_inv(Inst_TEMAC2_example_design/inst_async_trigger/rocs_reset_b_inv1:O)                                                                                                                                                                          | NONE(Inst_TEMAC2_example_design/inst_async_trigger/late_running_counter_us_0)                                                                                                                                                                                         | 32    |
 Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1_32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1_32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)| NONE(Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1_32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/curr_fwft_state_0)                                                                            | 31    |
 Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[1].module_1_32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[1].module_1_32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)| NONE(Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[1].module_1_32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/curr_fwft_state_0)                                                                            | 31    |
@@ -3767,8 +3819,15 @@ Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_8b_f
 Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)    | NONE(Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_0)                                                                                            | 22    |
 Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)    | NONE(Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_0)                                                                                            | 22    |
 Inst_TEMAC2_example_design/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(Inst_TEMAC2_example_design/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)                                                                                                  | NONE(Inst_TEMAC2_example_design/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_0)                                                                                                                                           | 22    |
-EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)                                                                                | NONE(EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_0)                                                                                                                                  | 20    |
+EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)                                                                                | NONE(EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_0)                                                                                                                                  | 18    |
+EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<0>(EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0:Q)                                                                                | NONE(EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_i_0)                                                                                                                                          | 16    |
+EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<0>(EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0:Q)                                                                                                                                          | NONE(EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_i_0)                                                                                                                                                                       | 16    |
+Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[0].module_1_8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<0>(Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[0].module_1_8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0:Q)    | NONE(Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[0].module_1_8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_i_0)                                                                                                    | 16    |
+Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<0>(Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0:Q)    | NONE(Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_i_0)                                                                                                    | 16    |
+Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<0>(Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0:Q)    | NONE(Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[2].module_1_8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_i_0)                                                                                                    | 16    |
+Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<0>(Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0:Q)    | NONE(Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[3].module_1_8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_i_0)                                                                                                    | 16    |
 Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)                                  | NONE(Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_0)                                                                                                           | 16    |
+Inst_TEMAC2_example_design/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<0>(Inst_TEMAC2_example_design/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0:Q)                                                                                                  | NONE(Inst_TEMAC2_example_design/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_i_0)                                                                                                                                                   | 16    |
 EMAC_0/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/rst_counter(EMAC_0/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/count_en_sig_or00001:O)                                                                                                                    | NONE(EMAC_0/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_0)                                                                                                                                                       | 12    |
 Inst_TEMAC2_example_design/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/rst_counter(Inst_TEMAC2_example_design/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/count_en_sig_or00001:O)                                                                            | NONE(Inst_TEMAC2_example_design/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_0)                                                                                                                                   | 12    |
 Inst_TEMAC2_example_design/UDP_IP_Core_2/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/rst_counter(Inst_TEMAC2_example_design/UDP_IP_Core_2/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/count_en_sig_or00001:O)                                                                            | NONE(Inst_TEMAC2_example_design/UDP_IP_Core_2/IPV4_PACKET_TRANSMITTER_port_map/TARGET_EOF_port_map/COUNT_TRANFERED_BYTES/value_O_0)                                                                                                                                   | 12    |
@@ -3831,9 +3890,9 @@ Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: 10.122ns (Maximum Frequency: 98.792MHz)
+   Minimum period: 10.329ns (Maximum Frequency: 96.812MHz)
    Minimum input arrival time before clock: 3.335ns
-   Maximum output required time after clock: 4.175ns
+   Maximum output required time after clock: 4.180ns
    Maximum combinational path delay: 2.793ns
 
 =========================================================================
@@ -4012,15 +4071,15 @@ Delay:                  7.531ns
 =========================================================================
 
 
-Total REAL time to Xst completion: 68.00 secs
-Total CPU time to Xst completion: 67.72 secs
+Total REAL time to Xst completion: 81.00 secs
+Total CPU time to Xst completion: 80.75 secs
  
 --> 
 
 
-Total memory usage is 588500 kilobytes
+Total memory usage is 627148 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  648 (   0 filtered)
-Number of infos    :  249 (   0 filtered)
+Number of warnings :  685 (   0 filtered)
+Number of infos    :  248 (   0 filtered)
 

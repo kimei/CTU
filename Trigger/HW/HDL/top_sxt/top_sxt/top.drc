@@ -1,14 +1,14 @@
 Release 13.1 Drc O.40d (lin64)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
-Tue Oct  4 12:35:59 2011
+Thu Oct 20 10:55:13 2011
 
 drc -z top.ncd top.pcf
 
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut5197_89 is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut6293_57 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut10557_463 is sourced by
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11653_367 is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:367 - The signal <BUTTONS<3>_IBUF> is incomplete. The

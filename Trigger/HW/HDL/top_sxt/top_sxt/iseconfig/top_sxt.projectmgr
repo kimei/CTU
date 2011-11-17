@@ -18,7 +18,6 @@
          <ClosedNode>/top - Behavioral |home|kimei|VHDL|trigger|Trigger|HW|HDL|top_sxt|top_sxt|top_sxt.vhd/EMAC_0 - v5_emac_v1_5_example_design - TOP_LEVEL/UDP_IP_Core_2 - UDP_IP_Core - Behavioral</ClosedNode>
          <ClosedNode>/top - Behavioral |home|kimei|VHDL|trigger|Trigger|HW|HDL|top_sxt|top_sxt|top_sxt.vhd/EMAC_0 - v5_emac_v1_5_example_design - TOP_LEVEL/inst_async_trigger - async_trigger - Behavioral</ClosedNode>
          <ClosedNode>/top - Behavioral |home|kimei|VHDL|trigger|Trigger|HW|HDL|top_sxt|top_sxt|top_sxt.vhd/EMAC_0 - v5_emac_v1_5_example_design - TOP_LEVEL/rate_counter_1 - rate_counter - behave</ClosedNode>
-         <ClosedNode>/top - Behavioral |home|kimei|VHDL|trigger|Trigger|HW|HDL|top_sxt|top_sxt|top_sxt.vhd/EMAC_0 - v5_emac_v1_5_example_design - TOP_LEVEL/v5_emac_ll - v5_emac_v1_5_locallink - TOP_LEVEL</ClosedNode>
          <ClosedNode>/top - Behavioral |home|kimei|VHDL|trigger|Trigger|HW|HDL|top_sxt|top_sxt|top_sxt.vhd/EMAC_1 - TEMAC2_example_design - TOP_LEVEL</ClosedNode>
          <ClosedNode>/top - Behavioral |home|kimei|VHDL|trigger|Trigger|HW|HDL|top_sxt|top_sxt|top_sxt.vhd/EMAC_1 - TEMAC2_example_design - TOP_LEVEL/UDP_IP_Core_1 - UDP_IP_Core - Behavioral</ClosedNode>
          <ClosedNode>/top - Behavioral |home|kimei|VHDL|trigger|Trigger|HW|HDL|top_sxt|top_sxt|top_sxt.vhd/EMAC_1 - TEMAC2_example_design - TOP_LEVEL/UDP_IP_Core_2 - UDP_IP_Core - Behavioral</ClosedNode>
@@ -26,7 +25,6 @@
          <ClosedNode>/top - Behavioral |home|kimei|VHDL|trigger|Trigger|HW|HDL|top_sxt|top_sxt|top_sxt.vhd/EMAC_1 - TEMAC2_example_design - TOP_LEVEL/rate_counter_1 - rate_counter - behave</ClosedNode>
          <ClosedNode>/top - Behavioral |home|kimei|VHDL|trigger|Trigger|HW|HDL|top_sxt|top_sxt|top_sxt.vhd/EMAC_1 - TEMAC2_example_design - TOP_LEVEL/v5_emac_ll - TEMAC2_locallink - TOP_LEVEL</ClosedNode>
          <ClosedNode>/top - Behavioral |home|kimei|VHDL|trigger|Trigger|HW|HDL|top_sxt|top_sxt|top_sxt.vhd/Inst_CRU - CRU - Behavioral</ClosedNode>
-         <ClosedNode>/top - Behavioral |home|kimei|VHDL|trigger|Trigger|HW|HDL|top_sxt|top_sxt|top_sxt.vhd/Inst_TEMAC2_example_design - TEMAC2_example_design - TOP_LEVEL</ClosedNode>
          <ClosedNode>/top - Behavioral |home|kimei|VHDL|trigger|Trigger|HW|HDL|top_sxt|top_sxt|top_sxt.vhd/Inst_TEMAC2_example_design - TEMAC2_example_design - TOP_LEVEL/UDP_IP_Core_1 - UDP_IP_Core - Behavioral</ClosedNode>
          <ClosedNode>/top - Behavioral |home|kimei|VHDL|trigger|Trigger|HW|HDL|top_sxt|top_sxt|top_sxt.vhd/Inst_TEMAC2_example_design - TEMAC2_example_design - TOP_LEVEL/UDP_IP_Core_2 - UDP_IP_Core - Behavioral</ClosedNode>
          <ClosedNode>/top - Behavioral |home|kimei|VHDL|trigger|Trigger|HW|HDL|top_sxt|top_sxt|top_sxt.vhd/Inst_TEMAC2_example_design - TEMAC2_example_design - TOP_LEVEL/rate_counter_1 - rate_counter - behave</ClosedNode>
@@ -47,7 +45,9 @@
          <ClosedNode>/top - Behavioral |home|kimei|VHDL|trigger|Trigger|HW|HDL|top|top.vhd/sync_trigger_1 - sync_trigger - Behavioral</ClosedNode>
          <ClosedNode>PROJECT</ClosedNode>
       </ClosedNodes>
-      <SelectedItems/>
+      <SelectedItems>
+         <SelectedItem>top - Behavioral (/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/top_sxt.vhd)</SelectedItem>
+      </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000048c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000048c0000000100000003000000000000000100000003</ViewHeaderState>
@@ -60,13 +60,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000315000000010000000100000000000000000000000064ffffffff000000810000000000000001000003150000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -89,7 +89,7 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000315000000010001000100000000000000000000000064ffffffff000000810000000000000001000003150000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000128000000010001000100000000000000000000000064ffffffff000000810000000000000001000001280000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>work</CurrentItem>
    </ItemView>
@@ -109,13 +109,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Design Summary/Reports</SelectedItem>
+         <SelectedItem>Generate Programming File</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000315000000010000000100000000000000000000000064ffffffff000000810000000000000001000003150000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000002e4000000010000000100000000000000000000000064ffffffff000000810000000000000001000002e40000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Design Summary/Reports</CurrentItem>
+      <CurrentItem>Generate Programming File</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_NGC" guiview="Process" >
       <ClosedNodes>
@@ -130,7 +130,7 @@
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem/>
    </ItemView>
-   <SourceProcessView>000000ff0000000000000002000001770000011801000000060100000002</SourceProcessView>
+   <SourceProcessView>000000ff00000000000000020000017a0000015101000000060100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
       <ClosedNodes>
@@ -141,7 +141,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000315000000010000000100000000000000000000000064ffffffff000000810000000000000001000003150000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000002e4000000010000000100000000000000000000000064ffffffff000000810000000000000001000002e40000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -150,12 +150,12 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Edit Constraints (Text)</SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000315000000010000000100000000000000000000000064ffffffff000000810000000000000001000003150000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Edit Constraints (Text)</CurrentItem>
+      <CurrentItem/>
    </ItemView>
 </Project>

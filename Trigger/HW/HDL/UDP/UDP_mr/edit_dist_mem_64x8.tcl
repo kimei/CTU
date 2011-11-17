@@ -22,7 +22,7 @@ proc findRtfPath { relativePath } {
 
 source [ findRtfPath "data/projnav/scripts/dpm_cgUtils.tcl" ]
 
-set result [ run_cg_edit "dist_mem_64x8" xc5vfx30t-1ff665 VHDL_and_Verilog ]
+set result [ run_cg_edit "dist_mem_64x8" xc5vlx50t-1ff1136 VHDL_and_Verilog ]
 
 if { $result == 0 } {
    puts "Core Generator edit command completed successfully."

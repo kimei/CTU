@@ -15,6 +15,8 @@ package functions is
 
   FUNCTION zshr(s1:std_logic_vector) return std_logic_vector;
 
+ 
+
 
 end functions;
 package body functions is

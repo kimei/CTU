@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 13.1
-# Date: Mon Oct  3 07:57:37 2011
+# Date: Fri Oct 14 11:06:09 2011
 #
 ##############################################################
 #
@@ -105,7 +105,7 @@ CSET fifo_application_type_rdch=Data_FIFO
 CSET fifo_application_type_wach=Data_FIFO
 CSET fifo_application_type_wdch=Data_FIFO
 CSET fifo_application_type_wrch=Data_FIFO
-CSET fifo_implementation=Common_Clock_Block_RAM
+CSET fifo_implementation=Common_Clock_Distributed_RAM
 CSET fifo_implementation_axis=Common_Clock_Block_RAM
 CSET fifo_implementation_rach=Common_Clock_Block_RAM
 CSET fifo_implementation_rdch=Common_Clock_Block_RAM
@@ -210,4 +210,4 @@ CSET wuser_width=1
 MISC pkg_timestamp=2011-02-03T22:23:32.000Z
 # END Extra information
 GENERATE
-# CRC: 7b02d1d1
+# CRC: 7c38041b

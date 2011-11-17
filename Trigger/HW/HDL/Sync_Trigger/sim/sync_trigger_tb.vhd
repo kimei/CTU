@@ -6,7 +6,7 @@
 -- Author     :   <kimei@fyspc-epf02>
 -- Company    : 
 -- Created    : 2011-03-11
--- Last update: 2011-03-31
+-- Last update: 2011-10-21
 -- Platform   : 
 -- Standard   : VHDL'87
 -------------------------------------------------------------------------------
@@ -26,7 +26,6 @@ use std.textio.all;
 
 
 library work;
-use work.components.all;
 use work.constants.all;
 -------------------------------------------------------------------------------
 
@@ -42,6 +41,8 @@ architecture tb of sync_trigger_tb is
     port (
       rst_b         : in  std_logic;
       mclk          : in  std_logic;
+      en_or_trigger : in std_logic;
+      module_mask : in std_logic_vector(NUMBER_OF_MODULES-1 downto 0);
       trigger_in    : in  std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
       trigger_out   : out std_logic_vector(NUMBER_OF_ROCS-1 downto 0));
   end component;
@@ -53,6 +54,8 @@ architecture tb of sync_trigger_tb is
 
   signal trigger_out   : std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
 
+  signal      en_or_trigger :std_logic;
+signal     module_mask :  std_logic_vector(NUMBER_OF_MODULES-1 downto 0);
 
   -- clock
   signal Clk : std_logic := '1';
@@ -86,6 +89,8 @@ architecture tb of sync_trigger_tb is
       -- component instantiation
       DUT : sync_trigger
         port map (
+          en_or_trigger => en_or_trigger,
+          module_mask => module_mask,
           rst_b         => rst_b,
           mclk          => mclk,
           trigger_in    => trigger_in,
@@ -109,7 +114,9 @@ architecture tb of sync_trigger_tb is
         file infile       : text open read_mode is "vectors.dat";
         variable buf      : line;
         variable stimulus : std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
-      begin
+      begin 
+       en_or_trigger <=  '0';
+       module_mask <=  (others => '1');
         while not(endfile(infile)) loop
           read_v1d(infile, stimulus);
           trigger_in <= stimulus;

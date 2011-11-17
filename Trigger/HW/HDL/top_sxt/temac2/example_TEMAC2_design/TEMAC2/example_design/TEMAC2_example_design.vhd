@@ -519,8 +519,8 @@ begin
     port map(
       clk         => ll_clk_1_i,        --125 mhz
       rst_b       => ll_reset_1_i_b,
-      rate_cards  => "0000",
-      coincidence => "0000",
+      rate_cards  => "00000",
+      coincidence => "00000",
       fifo_empty  => empty_fifo,
       we          => we_rate_counter,
       we_others   => we_others,
