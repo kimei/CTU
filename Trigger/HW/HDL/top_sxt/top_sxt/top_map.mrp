@@ -10,44 +10,45 @@ Target Device  : xc5vlx50t
 Target Package : ff1136
 Target Speed   : -1
 Mapper Version : virtex5 -- $Revision: 1.55 $
-Mapped Date    : Thu Oct 20 10:49:56 2011
+Mapped Date    : Mon Dec 12 13:39:47 2011
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings: 5200
+Number of warnings: 5183
 Slice Logic Utilization:
-  Number of Slice Registers:                 5,050 out of  28,800   17%
-    Number used as Flip Flops:               4,902
+  Number of Slice Registers:                 5,034 out of  28,800   17%
+    Number used as Flip Flops:               4,885
     Number used as Latches:                    148
-  Number of Slice LUTs:                      7,336 out of  28,800   25%
-    Number used as logic:                    5,304 out of  28,800   18%
-      Number using O6 output only:           2,758
-      Number using O5 output only:           1,270
-      Number using O5 and O6:                1,276
-    Number used as Memory:                   1,931 out of   7,680   25%
+    Number used as Latch-thrus:                  1
+  Number of Slice LUTs:                      7,334 out of  28,800   25%
+    Number used as logic:                    5,280 out of  28,800   18%
+      Number using O6 output only:           2,769
+      Number using O5 output only:           1,271
+      Number using O5 and O6:                1,240
+    Number used as Memory:                   1,947 out of   7,680   25%
       Number used as Dual Port RAM:          1,808
         Number using O6 output only:         1,808
       Number used as Single Port RAM:           24
         Number using O6 output only:            24
-      Number used as Shift Register:            99
-        Number using O6 output only:            98
+      Number used as Shift Register:           115
+        Number using O6 output only:           114
         Number using O5 and O6:                  1
-    Number used as exclusive route-thru:       101
-  Number of route-thrus:                     1,455
-    Number using O6 output only:             1,364
-    Number using O5 output only:                87
-    Number using O5 and O6:                      4
+    Number used as exclusive route-thru:       107
+  Number of route-thrus:                     1,473
+    Number using O6 output only:             1,370
+    Number using O5 output only:                98
+    Number using O5 and O6:                      5
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 2,857 out of   7,200   39%
-  Number of LUT Flip Flop pairs used:       10,029
-    Number with an unused Flip Flop:         4,979 out of  10,029   49%
-    Number with an unused LUT:               2,693 out of  10,029   26%
-    Number of fully used LUT-FF pairs:       2,357 out of  10,029   23%
-    Number of unique control sets:             402
+  Number of occupied Slices:                 2,824 out of   7,200   39%
+  Number of LUT Flip Flop pairs used:        9,925
+    Number with an unused Flip Flop:         4,891 out of   9,925   49%
+    Number with an unused LUT:               2,591 out of   9,925   26%
+    Number of fully used LUT-FF pairs:       2,443 out of   9,925   24%
+    Number of unique control sets:             401
     Number of slice register sites lost
-      to control set restrictions:             502 out of  28,800    1%
+      to control set restrictions:             499 out of  28,800    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -65,8 +66,8 @@ IO Utilization:
     IOB Slave Pads:                             11
 
 Specific Feature Utilization:
-  Number of BlockRAM/FIFO:                      43 out of      60   71%
-    Number using BlockRAM only:                 43
+  Number of BlockRAM/FIFO:                      42 out of      60   70%
+    Number using BlockRAM only:                 42
     Total primitives used:
       Number of 36k BlockRAM used:              35
       Number of 18k BlockRAM used:              13
@@ -79,11 +80,11 @@ Specific Feature Utilization:
   Number of TEMACs:                              2 out of       2  100%
 
   Number of RPM macros:           12
-Average Fanout of Non-Clock Nets:                3.92
+Average Fanout of Non-Clock Nets:                3.93
 
-Peak Memory Usage:  957 MB
-Total REAL time to MAP completion:  3 mins 17 secs 
-Total CPU time to MAP completion:   3 mins 8 secs 
+Peak Memory Usage:  955 MB
+Total REAL time to MAP completion:  3 mins 11 secs 
+Total CPU time to MAP completion:   2 mins 59 secs 
 
 Table of Contents
 -----------------
@@ -106,6 +107,12 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
+WARNING:Security:43 - No license file was found in the standard Xilinx license
+directory.
+WARNING:Security:44 - No license file was found.
+WARNING:Security:42 - Your license support version '2011.12' for ISE expires in
+18 days after which you will not qualify for Xilinx software updates or new
+releases.
 WARNING:Pack:2874 - Trimming timing constraints from pin
    Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1_
    32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.
@@ -1478,9 +1485,9 @@ WARNING:Pack:2874 - Trimming timing constraints from pin
    32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.
    gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[7].ram.r/v5_noinit.
    ram/SDP.SINGLE_PRIM36.TDP_REGCLKBL_tiesig
-WARNING:Pack:2515 - The LUT-1 inverter "][48735_4_INV_0" failed to join the
+WARNING:Pack:2515 - The LUT-1 inverter "][48456_4_INV_0" failed to join the
    OLOGIC comp matched to output buffer "LEDS_1_OBUF".  This may result in
-   suboptimal timing.  The LUT-1 inverter ][48735_4_INV_0 drives multiple loads.
+   suboptimal timing.  The LUT-1 inverter ][48456_4_INV_0 drives multiple loads.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/cs_contr/U0/U_ICON/U_CMD/G_TAR
    GET[10].I_NE0.U_TARGET" has the property IOB=TRUE, but it did not join an IO
@@ -5579,13 +5586,13 @@ WARNING:Pack:2780 - The register
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
 WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/inst_async_trigger/cs_contr/U0/U_ICON/U_CMD/G_TAR
-   GET[14].I_NE0.U_TARGET" has the property IOB=TRUE, but it did not join an IO
-   component because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
    "EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out_5" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
+WARNING:Pack:2780 - The register
+   "Inst_TEMAC2_example_design/inst_async_trigger/cs_contr/U0/U_ICON/U_CMD/G_TAR
+   GET[14].I_NE0.U_TARGET" has the property IOB=TRUE, but it did not join an IO
+   component because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
    "EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out_6" has the
    property IOB=TRUE, but it did not join an IO component because it is not
@@ -10459,38 +10466,6 @@ WARNING:Pack:2780 - The register
    _addr_gray_9" has the property IOB=TRUE, but it did not join an IO component
    because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
-   "EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_0" has the
-   property IOB=TRUE, but it did not join an IO component because it is not
-   connected to any IO element.
-WARNING:Pack:2780 - The register
-   "EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_1" has the
-   property IOB=TRUE, but it did not join an IO component because it is not
-   connected to any IO element.
-WARNING:Pack:2780 - The register
-   "EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_2" has the
-   property IOB=TRUE, but it did not join an IO component because it is not
-   connected to any IO element.
-WARNING:Pack:2780 - The register
-   "EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_3" has the
-   property IOB=TRUE, but it did not join an IO component because it is not
-   connected to any IO element.
-WARNING:Pack:2780 - The register
-   "EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_4" has the
-   property IOB=TRUE, but it did not join an IO component because it is not
-   connected to any IO element.
-WARNING:Pack:2780 - The register
-   "EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_5" has the
-   property IOB=TRUE, but it did not join an IO component because it is not
-   connected to any IO element.
-WARNING:Pack:2780 - The register
-   "EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_6" has the
-   property IOB=TRUE, but it did not join an IO component because it is not
-   connected to any IO element.
-WARNING:Pack:2780 - The register
-   "EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_7" has the
-   property IOB=TRUE, but it did not join an IO component because it is not
-   connected to any IO element.
-WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/your_instance_name/U0/I_TQ0.G_
    TW[108].U_TQ" has the property IOB=TRUE, but it did not join an IO component
    because it is not connected to any IO element.
@@ -11861,38 +11836,6 @@ WARNING:Pack:2780 - The register
    _ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[9].U_FDRE" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/v5_emac_ll/client_side_FIFO_emac1/rx_fifo_i/rd_da
-   ta_pipe_0" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/v5_emac_ll/client_side_FIFO_emac1/rx_fifo_i/rd_da
-   ta_pipe_1" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/v5_emac_ll/client_side_FIFO_emac1/rx_fifo_i/rd_da
-   ta_pipe_2" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/v5_emac_ll/client_side_FIFO_emac1/rx_fifo_i/rd_da
-   ta_pipe_3" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/v5_emac_ll/client_side_FIFO_emac1/rx_fifo_i/rd_da
-   ta_pipe_4" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/v5_emac_ll/client_side_FIFO_emac1/rx_fifo_i/rd_da
-   ta_pipe_5" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/v5_emac_ll/client_side_FIFO_emac1/rx_fifo_i/rd_da
-   ta_pipe_6" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
-WARNING:Pack:2780 - The register
-   "Inst_TEMAC2_example_design/v5_emac_ll/client_side_FIFO_emac1/rx_fifo_i/rd_da
-   ta_pipe_7" has the property IOB=TRUE, but it did not join an IO component
-   because it is not connected to any IO element.
 WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/your_instance_name/U0/I_NO_D.U
    _ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GAND.U_match/I_CS_GAND.U_CS_GAND_SRL
@@ -21096,9 +21039,6 @@ WARNING:Pack:2780 - The register
    "Inst_TEMAC2_example_design/inst_async_trigger/fifo_selector_1" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
-WARNING:Pack:2780 - The register "sync_trigger_1/coincidence_hold" has the
-   property IOB=TRUE, but it did not join an IO component because it is not
-   connected to any IO element.
 WARNING:Pack:2780 - The register
    "EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_eof" has the property
    IOB=TRUE, but it did not join an IO component because it is not connected to
@@ -23385,9 +23325,9 @@ WARNING:Pack:2780 - The register
    _ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_0_TO_64K.F_SEL[7].U_SEL" has the
    property IOB=TRUE, but it did not join an IO component because it is not
    connected to any IO element.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut6293_57 is sourced by a combinatorial pin. This is not good
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut6291_56 is sourced by a combinatorial pin. This is not good
    design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11653_367 is sourced by a combinatorial pin. This is not good
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11650_365 is sourced by a combinatorial pin. This is not good
    design practice. Use the CE pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:367 - The signal <BUTTONS<3>_IBUF> is incomplete. The signal does not drive any load pins in the
    design.
@@ -23416,6 +23356,12 @@ WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration o
 
 Section 3 - Informational
 -------------------------
+INFO:Security:67 - XILINXD_LICENSE_FILE is set to
+'/opt/Xilinx/13.1/ISE_DS/ISE/coregen/core_licenses' in /home/kimei/.flexlmrc.
+INFO:Security:51 - The XILINXD_LICENSE_FILE environment variable is not set.
+INFO:Security:52 - The LM_LICENSE_FILE environment variable is set to
+'5370@pordoi.ifi.uio.no'.
+INFO:Security:54 - 'xc5vlx50t' is a WebPack part.
 INFO:Xst:2261 - The FF/Latch
    <Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
    fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/curr_fw
@@ -23695,26 +23641,6 @@ INFO:Xst:2260 - The FF/Latch
    <EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg
    _0> 
 INFO:Xst:2260 - The FF/Latch
-   <Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
-   fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1> in Unit <top> is
-   equivalent to the following 5 FFs/Latches :
-   <Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
-   fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0>
-   <Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1>
-   <Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0>
-   <Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[0].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1>
-   <Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[0].module_1_
-   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0> 
-INFO:Xst:2260 - The FF/Latch
-   <EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfif
-   o.rf/grf.rf/rstblk/wr_rst_reg_1> in Unit <top> is equivalent to the following
-   FF/Latch :
-   <EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfif
-   o.rf/grf.rf/rstblk/rd_rst_reg_0> 
-INFO:Xst:2260 - The FF/Latch
    <Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[3].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1> in
    Unit <top> is equivalent to the following 7 FFs/Latches :
@@ -23738,16 +23664,10 @@ INFO:Xst:2260 - The FF/Latch
    :
    <Inst_TEMAC2_example_design/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.
    rf/rstblk/rd_rst_reg_0> 
-INFO:Xst:2261 - The FF/Latch
-   <EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg
-   _1> in Unit <top> is equivalent to the following FF/Latch, which will be
-   removed :
-   <EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg
-   _0> 
-INFO:Xst:2261 - The FF/Latch
+INFO:Xst:2260 - The FF/Latch
    <Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
    fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1> in Unit <top> is
-   equivalent to the following 5 FFs/Latches, which will be removed :
+   equivalent to the following 5 FFs/Latches :
    <Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
    fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0>
    <Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
@@ -23758,12 +23678,18 @@ INFO:Xst:2261 - The FF/Latch
    8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1>
    <Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[0].module_1_
    8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0> 
-INFO:Xst:2261 - The FF/Latch
+INFO:Xst:2260 - The FF/Latch
    <EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfif
    o.rf/grf.rf/rstblk/wr_rst_reg_1> in Unit <top> is equivalent to the following
-   FF/Latch, which will be removed :
+   FF/Latch :
    <EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfif
    o.rf/grf.rf/rstblk/rd_rst_reg_0> 
+INFO:Xst:2261 - The FF/Latch
+   <EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg
+   _1> in Unit <top> is equivalent to the following FF/Latch, which will be
+   removed :
+   <EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg
+   _0> 
 INFO:Xst:2261 - The FF/Latch
    <Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[3].module_1
    _32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1> in
@@ -23789,6 +23715,26 @@ INFO:Xst:2261 - The FF/Latch
    FF/Latch, which will be removed :
    <Inst_TEMAC2_example_design/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.
    rf/rstblk/rd_rst_reg_0> 
+INFO:Xst:2261 - The FF/Latch
+   <Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1> in Unit <top> is
+   equivalent to the following 5 FFs/Latches, which will be removed :
+   <Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_
+   fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0>
+   <Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
+   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1>
+   <Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_
+   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0>
+   <Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[0].module_1_
+   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1>
+   <Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[0].module_1_
+   8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0> 
+INFO:Xst:2261 - The FF/Latch
+   <EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfif
+   o.rf/grf.rf/rstblk/wr_rst_reg_1> in Unit <top> is equivalent to the following
+   FF/Latch, which will be removed :
+   <EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfif
+   o.rf/grf.rf/rstblk/rd_rst_reg_0> 
 INFO:LIT:243 - Logical network MII_TX_CLK_0_BUFGP/N2 has no load.
 INFO:LIT:395 - The above info message is repeated 21 more times for the
    following (max. 5 shown):

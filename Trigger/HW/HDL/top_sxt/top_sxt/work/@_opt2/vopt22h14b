@@ -1,0 +1,200 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt
+T_opt
+Z1 Va0`Ol<_Dle]M=10I<43TA0
+Z2 04 15 2 work sync_trigger_tb tb 1
+Z3 =2-d48564bef720-4ed77690-29b9a-22d9
+Z4 o-quiet -auto_acc_if_foreign -work work +acc
+Z5 n@_opt
+Z6 OL;O;6.6e_1;45
+Z7 d/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt
+T_opt1
+Z8 VE1C;XXX@7Yc6e;]2RYW;O2
+R2
+Z9 =1-d48564bef720-4ed76faf-e1c05-189b
+R4
+Z10 n@_opt1
+R6
+R7
+T_opt2
+Z11 VZAZ`mF89GD@mlaJL`TVfO0
+Z12 04 12 10 work sync_trigger behavioral 1
+Z13 =1-d48564bef720-4ed77b74-e9c86-26b2
+R4
+Z14 n@_opt2
+R6
+R7
+Pconstants
+Z15 DPx17 __model_tech/ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+Z16 DPx17 __model_tech/ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+31
+Mx2 17 __model_tech/ieee 14 std_logic_1164
+Mx1 17 __model_tech/ieee 11 numeric_std
+Z17 w1322730924
+R7
+Z18 8../../Shared/constants.vhd
+Z19 F../../Shared/constants.vhd
+l0
+L11
+Z20 VR`JeO9RoMm3WoU40B@PR=0
+Z21 OL;C;6.6e_1;45
+Z22 o-explicit -93
+Z23 tExplicit 1
+Z24 !s100 b;Hh]2S3280YeK;fo1@CO1
+Eedge_detector
+Z25 w1316084937
+Z26 DPx60 /home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/work 9 functions 0 22 4l3O`bMG998[m_mjLo5eN2
+R15
+Z27 DPx60 /home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/work 9 constants 0 22 R`JeO9RoMm3WoU40B@PR=0
+Z28 DPx59 /opt/Xilinx/13.1/ISE_DS/ISE/vhdl/mti_se/6.6e_1/lin64/unisim 11 vcomponents 0 22 M6]?3k[eP:FTC3@JignX<0
+Z29 DPx17 __model_tech/ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
+Z30 DPx17 __model_tech/ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
+R16
+31
+R7
+Z31 8../../Sync_Trigger/edge_detector.vhd
+Z32 F../../Sync_Trigger/edge_detector.vhd
+l0
+L39
+Z33 VTGR2<^2W2IYRkzPk@5Jei2
+R21
+R22
+R23
+Z34 !s100 7EgL_9X;MQjC=>3G3N[6D1
+Abehave
+R26
+R15
+R27
+R28
+R29
+R30
+R16
+Z35 DEx60 /home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/work 13 edge_detector 0 22 TGR2<^2W2IYRkzPk@5Jei2
+31
+Z36 Mx7 17 __model_tech/ieee 14 std_logic_1164
+Z37 Mx6 17 __model_tech/ieee 15 std_logic_arith
+Z38 Mx5 17 __model_tech/ieee 18 std_logic_unsigned
+Mx4 59 /opt/Xilinx/13.1/ISE_DS/ISE/vhdl/mti_se/6.6e_1/lin64/unisim 11 vcomponents
+Mx3 60 /home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/work 9 constants
+Mx2 17 __model_tech/ieee 11 numeric_std
+Z39 Mx1 60 /home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/work 9 functions
+l50
+L48
+Z40 V3cl=N0GoZ5Zl04:Tg5UP63
+R21
+R22
+R23
+Z41 !s100 ZG4N^0K<jk2`b]BMi0`W32
+Pfunctions
+R16
+31
+b1
+Z42 Mx1 17 __model_tech/ieee 14 std_logic_1164
+Z43 w1319116942
+R7
+Z44 8../../Shared/functions.vhd
+Z45 F../../Shared/functions.vhd
+l0
+L6
+Z46 V4l3O`bMG998[m_mjLo5eN2
+R21
+b1
+R22
+R23
+Z47 !s100 Q=SY`E`X?H;_z6RR2kiif1
+Bbody
+DBx60 /home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/work 9 functions 0 22 4l3O`bMG998[m_mjLo5eN2
+R16
+31
+R42
+l0
+L22
+Z48 VSRI`475Cgh<IB@7XonbG`1
+R21
+R22
+R23
+nbody
+Z49 !s100 hhV_zD9hEbhdL227U^`dX2
+Esync_trigger
+Z50 w1322744674
+R26
+R27
+R28
+R15
+R29
+R30
+R16
+31
+R7
+Z51 8../../Sync_Trigger/Sync_trigger.vhd
+Z52 F../../Sync_Trigger/Sync_trigger.vhd
+l0
+L44
+Z53 VV^oIIhRiz5>>l:N1CbDej0
+R21
+R22
+R23
+Z54 !s100 WeA@N:;Ao0M>1nUD4_AZE1
+Abehavioral
+R35
+R26
+R27
+R28
+R15
+R29
+R30
+R16
+DEx60 /home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/work 12 sync_trigger 0 22 V^oIIhRiz5>>l:N1CbDej0
+31
+R36
+R37
+R38
+Mx4 17 __model_tech/ieee 11 numeric_std
+Mx3 59 /opt/Xilinx/13.1/ISE_DS/ISE/vhdl/mti_se/6.6e_1/lin64/unisim 11 vcomponents
+Mx2 60 /home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/work 9 constants
+R39
+l82
+L55
+Z55 V6Jj?`QAaUQVd:0dL1S2hg2
+R21
+R22
+R23
+Z56 !s100 OL9Tl0k<O09Q132dEMV0f1
+Esync_trigger_tb
+Z57 w1322743355
+Z58 DPx4 ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+Z59 DPx4 work 9 constants 0 22 R`JeO9RoMm3WoU40B@PR=0
+Z60 DPx3 std 6 textio 0 22 m2KQDRRhmF833<<DjYdL70
+Z61 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+R7
+Z62 8../../Sync_Trigger/sim/sync_trigger_tb.vhd
+Z63 F../../Sync_Trigger/sim/sync_trigger_tb.vhd
+l0
+L32
+Z64 VAD2X5CCNdVfDVhHPOd8=m3
+R21
+31
+R22
+R23
+Z65 !s100 >Ud_IoI;hDoczM_>2N]B<3
+Atb
+R58
+R59
+R60
+R61
+Z66 DEx4 work 15 sync_trigger_tb 0 22 AD2X5CCNdVfDVhHPOd8=m3
+l87
+L38
+Z67 VgLC_k3>9hMBNO834X0d`60
+R21
+31
+Z68 Mx4 4 ieee 14 std_logic_1164
+Z69 Mx3 3 std 6 textio
+Z70 Mx2 4 work 9 constants
+Z71 Mx1 4 ieee 11 numeric_std
+R22
+R23
+Z72 !s100 DB]H2]h2aV;9XPR=<oidM1

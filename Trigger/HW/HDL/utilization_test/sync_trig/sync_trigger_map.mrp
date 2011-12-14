@@ -1,0 +1,229 @@
+Release 13.1 Map O.40d (lin64)
+Xilinx Mapping Report File for Design 'sync_trigger'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc5vlx50t-ff1136-1 -w -logic_opt off -ol
+high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr
+off -lc off -power off -o sync_trigger_map.ncd sync_trigger.ngd sync_trigger.pcf
+ 
+Target Device  : xc5vlx50t
+Target Package : ff1136
+Target Speed   : -1
+Mapper Version : virtex5 -- $Revision: 1.55 $
+Mapped Date    : Fri Dec  2 16:09:01 2011
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    0
+Slice Logic Utilization:
+  Number of Slice Registers:                    72 out of  28,800    1%
+    Number used as Flip Flops:                  72
+  Number of Slice LUTs:                         46 out of  28,800    1%
+    Number used as logic:                       46 out of  28,800    1%
+      Number using O6 output only:              40
+      Number using O5 output only:               1
+      Number using O5 and O6:                    5
+
+Slice Logic Distribution:
+  Number of occupied Slices:                    33 out of   7,200    1%
+  Number of LUT Flip Flop pairs used:          104
+    Number with an unused Flip Flop:            32 out of     104   30%
+    Number with an unused LUT:                  58 out of     104   55%
+    Number of fully used LUT-FF pairs:          14 out of     104   13%
+    Number of unique control sets:               1
+    Number of slice register sites lost
+      to control set restrictions:               0 out of  28,800    0%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        47 out of     480    9%
+    Number of LOCed IOBs:                        1 out of      47    2%
+
+Specific Feature Utilization:
+  Number of BUFG/BUFGCTRLs:                      1 out of      32    3%
+    Number used as BUFGs:                        1
+
+Average Fanout of Non-Clock Nets:                2.52
+
+Peak Memory Usage:  644 MB
+Total REAL time to MAP completion:  13 secs 
+Total CPU time to MAP completion:   13 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Security:43 - No license file was found in the standard Xilinx license
+directory.
+WARNING:Security:44 - No license file was found.
+WARNING:Security:42 - Your license support version '2011.12' for ISE expires in
+28 days after which you will not qualify for Xilinx software updates or new
+releases.
+
+Section 3 - Informational
+-------------------------
+INFO:Security:67 - XILINXD_LICENSE_FILE is set to
+'/opt/Xilinx/13.1/ISE_DS/ISE/coregen/core_licenses' in /home/kimei/.flexlmrc.
+INFO:Security:51 - The XILINXD_LICENSE_FILE environment variable is not set.
+INFO:Security:52 - The LM_LICENSE_FILE environment variable is set to
+'5370@pordoi.ifi.uio.no'.
+INFO:Security:54 - 'xc5vlx50t' is a WebPack part.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 0.950 Volts. (default - Range: 0.950 to
+   1.050 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Place:834 - Only a subset of IOs are locked. Out of 47 IOs, 1 are locked
+   and 46 are not locked. If you would like to print the names of these IOs,
+   please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   2 block(s) optimized away
+
+Section 5 - Removed Logic
+-------------------------
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| en_or_trigger                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| mclk                               | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| module_mask<0>                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| module_mask<1>                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| module_mask<2>                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| module_mask<3>                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| rst_b                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| trigger_in<0>                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| trigger_in<1>                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| trigger_in<2>                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| trigger_in<3>                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| trigger_in<4>                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| trigger_in<5>                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| trigger_in<6>                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| trigger_in<7>                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| trigger_in<8>                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| trigger_in<9>                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| trigger_in<10>                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| trigger_in<11>                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| trigger_in<12>                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| trigger_in<13>                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| trigger_in<14>                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| trigger_in<15>                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| trigger_in<16>                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| trigger_in<17>                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| trigger_in<18>                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| trigger_in<19>                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| trigger_out<0>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| trigger_out<1>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| trigger_out<2>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| trigger_out<3>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| trigger_out<4>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| trigger_out<5>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| trigger_out<6>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| trigger_out<7>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| trigger_out<8>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| trigger_out<9>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| trigger_out<10>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| trigger_out<11>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| trigger_out<12>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| trigger_out<13>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| trigger_out<14>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| trigger_out<15>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| trigger_out<16>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| trigger_out<17>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| trigger_out<18>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| trigger_out<19>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

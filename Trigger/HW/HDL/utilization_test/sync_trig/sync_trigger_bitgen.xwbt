@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/kimei/VHDL/trigger/Trigger/HW/HDL/utilization_test/sync_trig/sync_trigger.ncd
+OUTFILE=/home/kimei/VHDL/trigger/Trigger/HW/HDL/utilization_test/sync_trig/sync_trigger.bit
+FAMILY=Virtex5
+PART=xc5vlx50t-1ff1136
+WORKINGDIR=/home/kimei/VHDL/trigger/Trigger/HW/HDL/utilization_test/sync_trig
+LICENSE=ISE
+USER_INFO=174112965_174112966_204374020_425

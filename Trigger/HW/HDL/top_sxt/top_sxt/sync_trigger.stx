@@ -20,19 +20,28 @@ WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Onl
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
+WARNING:HDLParsers:3516 - Found error in file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd". 
+WARNING:HDLParsers:3458 - Because of erroneous VHDL file(s), automatic determination of correct order of compilation of files in project file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/top_sxt/top_sxt/sync_trigger_vhdl.prj" may be inaccurate. Please put the files in the project file in correct order with keyword 'nosort' at end of the project file, or compile your vhdl file(s) individually to find and fix the error(s) in your vhdl file(s). 
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/Shared/constants.vhd" in Library work.
+Package <constants> compiled.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/Shared/functions.vhd" in Library work.
+Architecture functions of Entity functions is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/Sync_Trigger/edge_detector.vhd" in Library work.
-ERROR:HDLParsers:3014 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/Sync_Trigger/edge_detector.vhd" Line 35. Library unit components is not available in library work.
+Architecture behave of Entity edge_detector is up to date.
+Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd" in Library work.
+Entity <sync_trigger> compiled.
+ERROR:HDLParsers:164 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd" Line 209. parse error, unexpected PROCESS, expecting IF
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> 
 
 
-Total memory usage is 316132 kilobytes
+Total memory usage is 317648 kilobytes
 
 Number of errors   :    1 (   0 filtered)
-Number of warnings :    1 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

@@ -1,2 +1,4 @@
+vhdl work "/home/kimei/VHDL/trigger/Trigger/HW/HDL/Shared/functions.vhd"
+vhdl work "/home/kimei/VHDL/trigger/Trigger/HW/HDL/Shared/constants.vhd"
 vhdl work "/home/kimei/VHDL/trigger/Trigger/HW/HDL/Sync_Trigger/edge_detector.vhd"
 vhdl work "/home/kimei/VHDL/trigger/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd"

@@ -1,0 +1,7 @@
+EN sync_trigger NULL /home/kimei/VHDL/trigger/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd sub00/vhpl05 1322838539
+PB functions functions /home/kimei/VHDL/trigger/Trigger/HW/HDL/Shared/functions.vhd sub00/vhpl02 1322838536
+PH constants NULL /home/kimei/VHDL/trigger/Trigger/HW/HDL/Shared/constants.vhd sub00/vhpl00 1322838534
+AR edge_detector behave /home/kimei/VHDL/trigger/Trigger/HW/HDL/Sync_Trigger/edge_detector.vhd sub00/vhpl04 1322838538
+PH functions NULL /home/kimei/VHDL/trigger/Trigger/HW/HDL/Shared/functions.vhd sub00/vhpl01 1322838535
+AR sync_trigger behavioral /home/kimei/VHDL/trigger/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd sub00/vhpl06 1322838540
+EN edge_detector NULL /home/kimei/VHDL/trigger/Trigger/HW/HDL/Sync_Trigger/edge_detector.vhd sub00/vhpl03 1322838537

@@ -222,8 +222,7 @@ Architecture fifo_generator_v4_4_a of Entity fifo_generator_v4_4 is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/rate_counter/rate_counter.vhd" in Library work.
 Architecture behave of Entity rate_counter is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/async_trigger/async_trigger.vhd" in Library work.
-Entity <async_trigger> compiled.
-Entity <async_trigger> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity async_trigger is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_rec_kim/udp_rec.vhd" in Library work.
 Architecture behave of Entity udp_rec is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/UDP/UDP_mr/UDP_IP_Core.vhd" in Library work.
@@ -243,6 +242,8 @@ Architecture structural of Entity switchdebouncer is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/CRU/CRU.vhd" in Library work.
 Architecture behavioral of Entity cru is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd" in Library work.
+WARNING:HDLParsers:3350 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd" Line 149. Null range: 4 downto 5
+WARNING:HDLParsers:3350 - "/home/kimei/VHDL/trigger/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd" Line 153. Null range: 4 downto 5
 Architecture behavioral of Entity sync_trigger is up to date.
 Compiling vhdl file "/home/kimei/VHDL/trigger/Trigger/HW/HDL/random_trigger/rand_trigger.vhd" in Library work.
 Architecture behavioral of Entity rand_trigger is up to date.
@@ -500,8 +501,10 @@ Entity <a2s> analyzed. Unit <a2s> generated.
 
 Analyzing Entity <sync_trigger> in library <work> (Architecture <Behavioral>).
 INFO:Xst:2679 - Register <trig_out_s_d<4>> in unit <sync_trigger> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <delayed_trigger<128>> in unit <sync_trigger> has a constant value of 0 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <coincidence_array<2>> in unit <sync_trigger> has a constant value of 00 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <coincidence_array<3>> in unit <sync_trigger> has a constant value of 00 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <delayed_trigger_en> in unit <sync_trigger> has a constant value of 0 during circuit operation. The register is replaced by logic.
 Entity <sync_trigger> analyzed. Unit <sync_trigger> generated.
 
 Analyzing Entity <edge_detector> in library <work> (Architecture <behave>).
@@ -1632,11 +1635,13 @@ Unit <IPV4WriteUDPHeader_2> synthesized.
 
 Synthesizing Unit <sync_trigger>.
     Related source file is "/home/kimei/VHDL/trigger/Trigger/HW/HDL/Sync_Trigger/Sync_trigger.vhd".
+WARNING:Xst:647 - Input <en_delayed_trigger> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <delayed_trigger<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <coincidence_array<2:3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-    Found 31-bit comparator greater for signal <coincidence_and_trigger$cmp_gt0000> created at line 144.
+    Found 31-bit comparator greater for signal <coincidence_and_trigger$cmp_gt0000> created at line 183.
     Found 1-bit register for signal <coincidence_hold>.
-    Found 31-bit comparator greater for signal <coincidence_or_trigger$cmp_gt0000> created at line 145.
-    Found 31-bit adder for signal <temp$addsub0000> created at line 49.
+    Found 31-bit comparator greater for signal <coincidence_or_trigger$cmp_gt0000> created at line 184.
+    Found 31-bit adder for signal <temp$addsub0000> created at line 51.
     Found 4-bit register for signal <trig_out_s_d<3:0>>.
     Summary:
 	inferred   9 D-type flip-flop(s).
@@ -2077,11 +2082,10 @@ INFO:Xst:1799 - State pull_trigger3 is never reached in FSM <atrig_state>.
     Found 8-bit register for signal <send_fifo_data_in>.
     Found 1-bit register for signal <send_fifo_we>.
     Found 9-bit adder carry out for signal <add0000$addsub0000> created at line 406.
-    Found 32-bit adder for signal <atrig_state$add0000> created at line 565.
-    Found 32-bit comparator equal for signal <atrig_state$cmp_eq0000> created at line 565.
-    Found 32-bit comparator equal for signal <atrig_state$cmp_eq0001> created at line 565.
-    Found 32-bit comparator equal for signal <atrig_state$cmp_eq0002> created at line 565.
-    Found 32-bit comparator equal for signal <atrig_state$cmp_eq0003> created at line 565.
+    Found 32-bit comparator equal for signal <atrig_state$cmp_eq0000> created at line 564.
+    Found 32-bit comparator equal for signal <atrig_state$cmp_eq0001> created at line 564.
+    Found 32-bit comparator equal for signal <atrig_state$cmp_eq0002> created at line 564.
+    Found 32-bit comparator equal for signal <atrig_state$cmp_eq0003> created at line 564.
     Found 1-bit register for signal <bit17_lrc>.
     Found 5-bit register for signal <byte_counter>.
     Found 5-bit adder for signal <byte_counter$add0000> created at line 376.
@@ -2116,30 +2120,30 @@ INFO:Xst:1799 - State pull_trigger3 is never reached in FSM <atrig_state>.
     Found 32-bit register for signal <late_running_counter_buf>.
     Found 32-bit up counter for signal <late_running_counter_us>.
     Found 8-bit register for signal <package_counter>.
-    Found 8-bit adder for signal <package_counter$addsub0000> created at line 734.
+    Found 8-bit adder for signal <package_counter$addsub0000> created at line 733.
     Found 4-bit register for signal <rd_en_32b_fifos>.
     Found 32-bit comparator greater for signal <rd_en_32b_fifos$cmp_gt0000> created at line 549.
-    Found 32-bit subtractor for signal <rd_en_32b_fifos_1$addsub0000> created at line 609.
-    Found 32-bit adder for signal <rd_en_32b_fifos_1$addsub0001> created at line 609.
+    Found 32-bit subtractor for signal <rd_en_32b_fifos_1$addsub0000> created at line 608.
+    Found 32-bit adder for signal <rd_en_32b_fifos_1$addsub0001> created at line 608.
     Found 32-bit comparator greater for signal <rd_en_32b_fifos_1$cmp_gt0000> created at line 549.
-    Found 32-bit comparator less for signal <rd_en_32b_fifos_1$cmp_lt0000> created at line 609.
-    Found 32-bit subtractor for signal <rd_en_32b_fifos_2$addsub0000> created at line 609.
-    Found 32-bit adder for signal <rd_en_32b_fifos_2$addsub0001> created at line 609.
-    Found 32-bit subtractor for signal <rd_en_32b_fifos_2$addsub0002> created at line 635.
-    Found 32-bit adder for signal <rd_en_32b_fifos_2$addsub0003> created at line 635.
+    Found 32-bit comparator less for signal <rd_en_32b_fifos_1$cmp_lt0000> created at line 608.
+    Found 32-bit subtractor for signal <rd_en_32b_fifos_2$addsub0000> created at line 608.
+    Found 32-bit adder for signal <rd_en_32b_fifos_2$addsub0001> created at line 608.
+    Found 32-bit subtractor for signal <rd_en_32b_fifos_2$addsub0002> created at line 634.
+    Found 32-bit adder for signal <rd_en_32b_fifos_2$addsub0003> created at line 634.
     Found 32-bit comparator greater for signal <rd_en_32b_fifos_2$cmp_gt0000> created at line 549.
-    Found 32-bit comparator less for signal <rd_en_32b_fifos_2$cmp_lt0000> created at line 609.
-    Found 32-bit comparator less for signal <rd_en_32b_fifos_2$cmp_lt0001> created at line 635.
-    Found 32-bit subtractor for signal <rd_en_32b_fifos_3$addsub0000> created at line 609.
-    Found 32-bit adder for signal <rd_en_32b_fifos_3$addsub0001> created at line 609.
-    Found 32-bit subtractor for signal <rd_en_32b_fifos_3$addsub0002> created at line 635.
-    Found 32-bit adder for signal <rd_en_32b_fifos_3$addsub0003> created at line 635.
-    Found 32-bit subtractor for signal <rd_en_32b_fifos_3$addsub0004> created at line 648.
-    Found 32-bit adder for signal <rd_en_32b_fifos_3$addsub0005> created at line 648.
+    Found 32-bit comparator less for signal <rd_en_32b_fifos_2$cmp_lt0000> created at line 608.
+    Found 32-bit comparator less for signal <rd_en_32b_fifos_2$cmp_lt0001> created at line 634.
+    Found 32-bit subtractor for signal <rd_en_32b_fifos_3$addsub0000> created at line 608.
+    Found 32-bit adder for signal <rd_en_32b_fifos_3$addsub0001> created at line 608.
+    Found 32-bit subtractor for signal <rd_en_32b_fifos_3$addsub0002> created at line 634.
+    Found 32-bit adder for signal <rd_en_32b_fifos_3$addsub0003> created at line 634.
+    Found 32-bit subtractor for signal <rd_en_32b_fifos_3$addsub0004> created at line 647.
+    Found 32-bit adder for signal <rd_en_32b_fifos_3$addsub0005> created at line 647.
     Found 32-bit comparator greater for signal <rd_en_32b_fifos_3$cmp_gt0000> created at line 549.
-    Found 32-bit comparator less for signal <rd_en_32b_fifos_3$cmp_lt0000> created at line 609.
-    Found 32-bit comparator less for signal <rd_en_32b_fifos_3$cmp_lt0001> created at line 635.
-    Found 32-bit comparator less for signal <rd_en_32b_fifos_3$cmp_lt0002> created at line 648.
+    Found 32-bit comparator less for signal <rd_en_32b_fifos_3$cmp_lt0000> created at line 608.
+    Found 32-bit comparator less for signal <rd_en_32b_fifos_3$cmp_lt0001> created at line 634.
+    Found 32-bit comparator less for signal <rd_en_32b_fifos_3$cmp_lt0002> created at line 647.
     Found 4-bit register for signal <rd_en_8b_fifos>.
     Found 1-bit register for signal <rd_en_tt_fifo>.
     Found 1-bit register for signal <rocs_reset>.
@@ -2147,16 +2151,16 @@ INFO:Xst:1799 - State pull_trigger3 is never reached in FSM <atrig_state>.
     Found 1-bit register for signal <rst_32b_fifos>.
     Found 1-bit xor2 for signal <rst_32b_fifos$xor0000> created at line 516.
     Found 8-bit register for signal <send_tt_counter>.
-    Found 8-bit adder for signal <send_tt_counter$addsub0000> created at line 767.
-    Found 8-bit comparator not equal for signal <send_tt_state$cmp_ne0000> created at line 744.
+    Found 8-bit adder for signal <send_tt_counter$addsub0000> created at line 766.
+    Found 8-bit comparator not equal for signal <send_tt_state$cmp_ne0000> created at line 743.
     Found 10-bit comparator equal for signal <state$cmp_eq0004> created at line 406.
     Found 32-bit register for signal <trigger_time_tmp>.
-    Found 32-bit comparator less for signal <trigger_time_tmp$cmp_lt0000> created at line 575.
-    Found 32-bit comparator less for signal <trigger_time_tmp$cmp_lt0001> created at line 589.
-    Found 32-bit comparator less for signal <trigger_time_tmp$cmp_lt0002> created at line 602.
-    Found 32-bit comparator less for signal <trigger_time_tmp$cmp_lt0003> created at line 615.
-    Found 32-bit comparator less for signal <trigger_time_tmp$cmp_lt0004> created at line 628.
-    Found 32-bit comparator less for signal <trigger_time_tmp$cmp_lt0005> created at line 641.
+    Found 32-bit comparator less for signal <trigger_time_tmp$cmp_lt0000> created at line 574.
+    Found 32-bit comparator less for signal <trigger_time_tmp$cmp_lt0001> created at line 588.
+    Found 32-bit comparator less for signal <trigger_time_tmp$cmp_lt0002> created at line 601.
+    Found 32-bit comparator less for signal <trigger_time_tmp$cmp_lt0003> created at line 614.
+    Found 32-bit comparator less for signal <trigger_time_tmp$cmp_lt0004> created at line 627.
+    Found 32-bit comparator less for signal <trigger_time_tmp$cmp_lt0005> created at line 640.
     Found 24-bit register for signal <trigger_time_uns<23:0>>.
     Found 8-bit register for signal <trigger_times_received>.
     Found 8-bit register for signal <trigger_times_to_send>.
@@ -2171,7 +2175,7 @@ INFO:Xst:1799 - State pull_trigger3 is never reached in FSM <atrig_state>.
 	inferred   3 Finite State Machine(s).
 	inferred   1 Counter(s).
 	inferred 361 D-type flip-flop(s).
-	inferred  31 Adder/Subtractor(s).
+	inferred  30 Adder/Subtractor(s).
 	inferred  28 Comparator(s).
 Unit <async_trigger> synthesized.
 
@@ -2472,14 +2476,14 @@ Unit <top> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 114
+# Adders/Subtractors                                   : 113
  12-bit adder                                          : 4
  12-bit subtractor                                     : 10
  16-bit adder                                          : 10
  16-bit subtractor                                     : 3
  17-bit adder                                          : 24
  31-bit adder                                          : 1
- 32-bit adder                                          : 31
+ 32-bit adder                                          : 30
  32-bit subtractor                                     : 12
  4-bit adder                                           : 1
  48-bit adder                                          : 2
@@ -2948,14 +2952,14 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # FSMs                                                 : 15
-# Adders/Subtractors                                   : 114
+# Adders/Subtractors                                   : 113
  12-bit adder                                          : 4
  12-bit subtractor                                     : 10
  16-bit adder                                          : 10
  16-bit subtractor                                     : 3
  17-bit adder                                          : 24
  31-bit adder                                          : 1
- 32-bit adder                                          : 31
+ 32-bit adder                                          : 30
  32-bit subtractor                                     : 12
  4-bit adder                                           : 1
  48-bit adder                                          : 2
@@ -3062,6 +3066,7 @@ Optimizing unit <IPV4WriteUDPHeader_1> ...
 Optimizing unit <IPV4WriteUDPHeader_2> ...
 
 Optimizing unit <sync_trigger> ...
+WARNING:Xst:2677 - Node <coincidence_hold> of sequential type is unconnected in block <sync_trigger>.
 
 Optimizing unit <rate_counter> ...
 
@@ -3601,8 +3606,8 @@ Unit <top> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 2472
- Flip-Flops                                            : 2472
+# Registers                                            : 2471
+ Flip-Flops                                            : 2471
 # Shift Registers                                      : 39
  2-bit shift register                                  : 7
  3-bit shift register                                  : 16
@@ -3636,27 +3641,27 @@ Design Statistics
 # IOs                              : 184
 
 Cell Usage :
-# BELS                             : 12211
+# BELS                             : 12119
 #      GND                         : 49
-#      INV                         : 243
-#      LUT1                        : 1476
+#      INV                         : 241
+#      LUT1                        : 1447
 #      LUT2                        : 952
 #      LUT3                        : 388
-#      LUT4                        : 1257
+#      LUT4                        : 1256
 #      LUT5                        : 599
-#      LUT6                        : 1736
-#      MUXCY                       : 2822
+#      LUT6                        : 1737
+#      MUXCY                       : 2792
 #      MUXCY_L                     : 95
 #      MUXF5                       : 2
 #      MUXF6                       : 1
 #      MUXF7                       : 159
 #      MUXF8                       : 2
 #      VCC                         : 26
-#      XORCY                       : 2404
-# FlipFlops/Latches                : 4453
+#      XORCY                       : 2373
+# FlipFlops/Latches                : 4452
 #      FD                          : 255
 #      FDC                         : 822
-#      FDCE                        : 1060
+#      FDCE                        : 1059
 #      FDE                         : 788
 #      FDP                         : 348
 #      FDPE                        : 215
@@ -3706,19 +3711,19 @@ Selected Device : 5vlx50tff1136-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            4427  out of  28800    15%  
- Number of Slice LUTs:                 9480  out of  28800    32%  
-    Number used as Logic:              6651  out of  28800    23%  
+ Number of Slice Registers:            4426  out of  28800    15%  
+ Number of Slice LUTs:                 9449  out of  28800    32%  
+    Number used as Logic:              6620  out of  28800    22%  
     Number used as Memory:             2829  out of   7680    36%  
        Number used as RAM:             2600
        Number used as SRL:              229
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:  11162
-   Number with an unused Flip Flop:    6735  out of  11162    60%  
-   Number with an unused LUT:          1682  out of  11162    15%  
-   Number of fully used LUT-FF pairs:  2745  out of  11162    24%  
-   Number of unique control sets:       381
+ Number of LUT Flip Flop pairs used:  11130
+   Number with an unused Flip Flop:    6704  out of  11130    60%  
+   Number with an unused LUT:          1681  out of  11130    15%  
+   Number of fully used LUT-FF pairs:  2745  out of  11130    24%  
+   Number of unique control sets:       380
 
 IO Utilization: 
  Number of IOs:                         184
@@ -3752,7 +3757,7 @@ Clock Information:
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                                                                                                                                                                                                                                                        | Clock buffer(FF name)                                                                                                           | Load  |
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+-------+
-Inst_CRU/Inst_PLL_ALL/CLKOUT1_BUF                                                                                                                                                                                                                                   | BUFG                                                                                                                            | 131   |
+Inst_CRU/Inst_PLL_ALL/CLKOUT1_BUF                                                                                                                                                                                                                                   | BUFG                                                                                                                            | 130   |
 FPGA100M                                                                                                                                                                                                                                                            | IBUFG+BUFG                                                                                                                      | 38    |
 Inst_CRU/Inst_PLL_ALL/CLKOUT0_BUF                                                                                                                                                                                                                                   | BUFG                                                                                                                            | 5     |
 EMAC_0/rx_client_clk_0_o                                                                                                                                                                                                                                            | BUFG                                                                                                                            | 106   |
@@ -3784,7 +3789,7 @@ Control Signal                                                                  
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 Inst_TEMAC2_example_design/v5_emac_ll/tx_reset_1_i(Inst_TEMAC2_example_design/v5_emac_ll/tx_reset_1_i:Q)                                                                                                                                                                                                   | NONE(Inst_TEMAC2_example_design/UDP_IP_Core_1/IPV4_PACKET_TRANSMITTER_port_map/ENABLE_USER_DATA_READ_port_map/usr_data_sel_prev)                                                                                                                                      | 534   |
 EMAC_0/v5_emac_ll/tx_reset_0_i(EMAC_0/v5_emac_ll/tx_reset_0_i:Q)                                                                                                                                                                                                                                           | NONE(EMAC_0/Inst_receiver_control/en_or_trigger)                                                                                                                                                                                                                      | 332   |
-EMAC_0/reset_i(sync_trigger_1/G3[0].edge_detect_1/rst_b_inv1_INV_0:O)                                                                                                                                                                                                                                      | NONE(EMAC_0/idelayctrl_reset_0_r_1)                                                                                                                                                                                                                                   | 189   |
+EMAC_0/reset_i(sync_trigger_1/G3[0].edge_detect_1/rst_b_inv1_INV_0:O)                                                                                                                                                                                                                                      | NONE(EMAC_0/idelayctrl_reset_0_r_1)                                                                                                                                                                                                                                   | 188   |
 Inst_TEMAC2_example_design/inst_async_trigger/your_instance_name/N0(Inst_TEMAC2_example_design/inst_async_trigger/your_instance_name/XST_GND:G)                                                                                                                                                            | NONE(Inst_TEMAC2_example_design/inst_async_trigger/your_instance_name/U0/I_NO_D.U_ILA/U_RST/U_POR)                                                                                                                                                                    | 129   |
 Inst_TEMAC2_example_design/inst_async_trigger/cs_contr/CONTROL0<20>(Inst_TEMAC2_example_design/inst_async_trigger/cs_contr/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[0].U_HCE:O)                                                                                                                                 | NONE(Inst_TEMAC2_example_design/inst_async_trigger/your_instance_name/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GAND.U_match/I_CS_GAND.U_CS_GAND_SRL/I_V5.U_CS_GAND_SRL_V5/I_USE_INPUT_REG_NE0.G_GAND_DLY[0].U_GAND_IREG)                                   | 128   |
 Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<0>(Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0:Q)                                  | NONE(Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_i_0)                                                                                                                   | 64    |
@@ -4072,14 +4077,14 @@ Delay:                  7.531ns
 
 
 Total REAL time to Xst completion: 81.00 secs
-Total CPU time to Xst completion: 80.75 secs
+Total CPU time to Xst completion: 79.96 secs
  
 --> 
 
 
-Total memory usage is 627148 kilobytes
+Total memory usage is 626624 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  685 (   0 filtered)
-Number of infos    :  248 (   0 filtered)
+Number of warnings :  690 (   0 filtered)
+Number of infos    :  250 (   0 filtered)
 

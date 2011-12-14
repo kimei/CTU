@@ -1,0 +1,86 @@
+######################
+#for V5FXT EVAL board#
+######################
+NET "MCLK100" LOC = AB15;
+NET "MCLK100_b" LOC = AC16;
+
+NET "FPGA100M" LOC = E18;
+
+NET "LEDS(0)" LOC = AF22;
+NET "LEDS(1)" LOC = AF23;
+NET "LEDS(2)" LOC = AF25;
+NET "LEDS(3)" LOC = AE25;
+NET "LEDS(4)" LOC = AD25;
+NET "LEDS(5)" LOC = AE26;
+NET "LEDS(6)" LOC = AD26;
+NET "LEDS(7)" LOC = AC26;
+
+NET "BUTTONS(0)" LOC = AF20;
+NET "BUTTONS(1)" LOC = AE20;
+NET "BUTTONS(2)" LOC = AD19;
+NET "BUTTONS(3)" LOC = AD20;
+
+
+
+
+
+
+#1
+net "SYNC_TRIGGER_IN(0)"     LOC = AF12;
+net "SYNC_TRIGGER_IN_b(0)" LOC = AE12;
+
+#3
+net "SYNC_TRIGGER_OUT(0)"     LOC = AE11;
+net "SYNC_TRIGGER_OUT_b(0)" LOC = AD11;
+
+#0
+net "RESET_ROC_B1"     LOC = AF9;
+net "RESET_ROC_B1_b" LOC = AF10;
+
+#board 2:
+#5
+net "SYNC_TRIGGER_IN(1)"     LOC = AD10;
+net "SYNC_TRIGGER_IN_b(1)" LOC = AE10;
+
+#7
+net "SYNC_TRIGGER_OUT(1)"     LOC = AC8;
+net "SYNC_TRIGGER_OUT_b(1)" LOC = AD8;
+
+#4
+net "RESET_ROC_B2"     LOC = AF4;
+net "RESET_ROC_B2_b" LOC = AF3;
+
+
+
+# PlanAhead Generated IO constraints 
+#NET "RESET_ROC" LOC = A12;
+#NET "RESET_ROC" DRIVE = 24;
+#NET "RESET_ROC" SLEW = FAST;
+##diff pairs for trigger input
+##diff pairs for trigger output
+##########################
+#END for V5FXT EVAL board#
+##########################
+######################
+#for ML505 board#
+######################
+#NET "MCLK100" LOC = J20;
+#NET "MCLK100_b" LOC = J21;
+#
+#
+#NET "FPGA100M" LOC = AH15;
+#NET "RESET" LOC = U8;
+#
+#NET "SYNC_TRIGGER_IN[0]" LOC = W1;
+##NET "SYNC_TRIGGER_IN_b[0]" LOC = Y1;
+#
+#NET "SYNC_TRIGGER_OUT[0]" LOC = V2;
+#NET "RESET_ROC" LOC = A12;
+#NET "RESET_ROC" DRIVE = 24;
+#NET "RESET_ROC" SLEW = FAST;
+##########################
+#END for ML505 board#
+##########################ÿÿÿÿ
+# PlanAhead Generated physical constraints 
+NET "tx" LOC = L8;
+

@@ -54,6 +54,7 @@
 # -- Compiling architecture tb of sync_trigger_tb
 # ** Warning: [10] ../../Sync_Trigger/sim/sync_trigger_tb.vhd(64): (vcom-1135) Subprogram parameter f is declared using VHDL 1987 syntax.
 # vsim -lib work -voptargs=\"+acc\" -t 1ps work.sync_trigger_tb 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading std.standard
 # Loading ieee.std_logic_1164(body)
 # Loading std.textio(body)
@@ -71,3 +72,21 @@
 # .main_pane.objects.interior.cs.body.tree
 # 
 #  
+run 1 us
+do wave.do
+run 2 us
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading std.textio(body)
+# Loading ieee.numeric_std(body)
+# Loading work.constants
+# Loading work.sync_trigger_tb(tb)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading unisim.vcomponents
+# Loading work.functions(body)
+# Loading work.sync_trigger(behavioral)#1
+# Loading work.edge_detector(behave)#1
+run 2us

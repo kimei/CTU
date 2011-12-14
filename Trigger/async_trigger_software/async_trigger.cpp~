@@ -1,0 +1,80 @@
+#include <sys/prctl.h>
+#include <boost/asio.hpp>
+#include <iostream>
+#include <boost/thread/thread.hpp>
+#include <boost/thread/condition.hpp>
+#include <boost/array.hpp>
+#include "CConstants.h"
+
+
+//using namespace std;
+
+
+
+void UDP_receive()
+{
+  int TotalPackageCounter = 0;
+  boost::asio::ip::address ReceiverAdresses[NUMBEROFREADOUTCARDS];
+  std::string  ipaddresses[NUMBEROFREADOUTCARDS];
+  ipaddresses[0] = IPCARD0; 
+  ipaddresses[1] = IPCARD1;
+  for (int card=0;card<NUMBEROFREADOUTCARDS;card++)
+    {
+      ReceiverAdresses[card] = boost::asio::ip::address_v4::from_string(ipaddresses[card]);
+    }
+  try
+    {
+      boost::asio::io_service io_service;
+      boost::asio::ip::udp::socket socket(io_service, boost::asio::ip::udp::endpoint(boost::asio::ip::udp::v4(), PORT));
+      int lastpackage_counter[NUMBEROFREADOUTCARDS];
+      int package_counter[NUMBEROFREADOUTCARDS];
+      int package_counterMSB[NUMBEROFREADOUTCARDS];
+      //Reset everything
+      for (int card=0;card<NUMBEROFREADOUTCARDS;card++)
+	{
+	  lastpackage_counter[card]=0;
+	  package_counter[card]=0;
+	  package_counterMSB[card] =0;
+	}
+      
+      while(1){
+	TotalPackageCounter++;
+	boost::array<unsigned char, 32768> recv_buf;
+	boost::asio::ip::udp::endpoint remote_endpoint;
+	boost::system::error_code error;
+	int size = socket.receive_from(boost::asio::buffer(recv_buf),
+				       remote_endpoint, 0, error);
+	std::cout<<size<<std::endl;
+	int NumberOfHitsInPackage = (size-4)/4; //footer size is 4, 4 bytes per hit
+	int card = 0;
+
+	// identify the card:
+	for (card=0;card<NUMBEROFREADOUTCARDS;++card)
+	  {
+	    //std::cout<<remote_endpoint.address()<<" "<<ReceiverAdresses[card]<<std::endl;
+	    if(remote_endpoint.address() ==  ReceiverAdresses[card])
+	      {
+		//std::cout<<remote_endpoint.address()<<std::endl;
+		break;
+	      }  
+	  }
+	//std::cout<<size<<std::endl;
+	//std::cout<<card<<std::endl;
+	if (error && error != boost::asio::error::message_size)
+	  throw boost::system::system_error(error);
+
+      }
+      
+	  
+    }
+  catch(std::exception& e){
+    std::cerr << e.what() << std::endl;
+  }
+}
+
+
+int main()
+{
+  std::cout << NUMBEROFREADOUTCARDS << std::endl;   
+  return 0;
+}

@@ -116,31 +116,31 @@
 <msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0&gt; &lt;Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1&gt; &lt;Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0&gt; &lt;Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[0].module_1_8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1&gt; &lt;Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[0].module_1_8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0&gt; </arg>
-</msg>
-
 <msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[3].module_1_32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[3].module_1_32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0&gt; &lt;Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[2].module_1_32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1&gt; &lt;Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[2].module_1_32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0&gt; &lt;Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[1].module_1_32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1&gt; &lt;Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[1].module_1_32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0&gt; &lt;Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1_32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1&gt; &lt;Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1_32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_TEMAC2_example_design/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;Inst_TEMAC2_example_design/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0&gt; </arg>
 </msg>
 
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0&gt; &lt;Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1&gt; &lt;Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0&gt; &lt;Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[0].module_1_8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1&gt; &lt;Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[0].module_1_8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0&gt; </arg>
+</msg>
+
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;EMAC_0/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0&gt; &lt;Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1&gt; &lt;Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0&gt; &lt;Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[0].module_1_8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1&gt; &lt;Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[0].module_1_8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[3].module_1_32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[3].module_1_32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0&gt; &lt;Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[2].module_1_32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1&gt; &lt;Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[2].module_1_32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0&gt; &lt;Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[1].module_1_32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1&gt; &lt;Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[1].module_1_32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0&gt; &lt;Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1_32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1&gt; &lt;Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[0].module_1_32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_TEMAC2_example_design/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_TEMAC2_example_design/send_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_TEMAC2_example_design/inst_async_trigger/trigger_time_fifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0&gt; &lt;Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1&gt; &lt;Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[1].module_1_8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0&gt; &lt;Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[0].module_1_8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1&gt; &lt;Inst_TEMAC2_example_design/inst_async_trigger/generate_8b_fifos[0].module_1_8b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;EMAC_0/Inst_receiver_control/udp_receive_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0&gt; </arg>
 </msg>
 
 <msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">MII_TX_CLK_0_BUFGP/N2</arg> has no load.
@@ -751,7 +751,7 @@ of frag <arg fmt="%s" index="2">REGCLKBU</arg> connected to power/ground net <ar
 of frag <arg fmt="%s" index="2">REGCLKBL</arg> connected to power/ground net <arg fmt="%s" index="3">Inst_TEMAC2_example_design/inst_async_trigger/generate_32b_fifos[3].module_1_32b_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[7].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKBL_tiesig</arg>
 </msg>
 
-<msg type="warning" file="Pack" num="2515" delta="new" >The LUT-1 inverter &quot;<arg fmt="%s" index="1">][48735_4_INV_0</arg>&quot; failed to join the OLOGIC comp matched to output buffer &quot;<arg fmt="%s" index="2">LEDS_1_OBUF</arg>&quot;.  This may result in suboptimal timing.  <arg fmt="%z" index="3">The LUT-1 inverter ][48735_4_INV_0 drives multiple loads.</arg>
+<msg type="warning" file="Pack" num="2515" delta="new" >The LUT-1 inverter &quot;<arg fmt="%s" index="1">][48456_4_INV_0</arg>&quot; failed to join the OLOGIC comp matched to output buffer &quot;<arg fmt="%s" index="2">LEDS_1_OBUF</arg>&quot;.  This may result in suboptimal timing.  <arg fmt="%z" index="3">The LUT-1 inverter ][48456_4_INV_0 drives multiple loads.</arg>
 </msg>
 
 <msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">Inst_TEMAC2_example_design/inst_async_trigger/cs_contr/U0/U_ICON/U_CMD/G_TARGET[10].I_NE0.U_TARGET</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
@@ -3667,7 +3667,7 @@ of frag <arg fmt="%s" index="2">REGCLKBL</arg> connected to power/ground net <ar
 <msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">EMAC_0/UDP_IP_Core_1/IPv4_PACKET_RECEIVER_port_map/PACKET_RECEIVER_FSM_port_map/current_st_FSM_FFd3</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">Inst_rand_trigger/trigger_out_0</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">Inst_rand_trigger/trigger_out_0</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
 <msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out_0</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
@@ -3685,10 +3685,10 @@ of frag <arg fmt="%s" index="2">REGCLKBL</arg> connected to power/ground net <ar
 <msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out_4</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">Inst_TEMAC2_example_design/inst_async_trigger/cs_contr/U0/U_ICON/U_CMD/G_TARGET[14].I_NE0.U_TARGET</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out_5</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out_5</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">Inst_TEMAC2_example_design/inst_async_trigger/cs_contr/U0/U_ICON/U_CMD/G_TARGET[14].I_NE0.U_TARGET</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
 <msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_out_6</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
@@ -3976,25 +3976,25 @@ of frag <arg fmt="%s" index="2">REGCLKBL</arg> connected to power/ground net <ar
 <msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">Inst_TEMAC2_example_design/inst_async_trigger/your_instance_name/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GAND.U_match/I_CS_GAND.U_CS_GAND_SRL/I_V5.U_CS_GAND_SRL_V5/I_USE_INPUT_REG_NE0.G_GAND_DLY[29].U_GAND_IREG</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">Inst_rand_trigger/counter_10</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">Inst_rand_trigger/counter_10</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">Inst_rand_trigger/counter_11</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">Inst_rand_trigger/counter_11</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">Inst_rand_trigger/counter_12</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">Inst_rand_trigger/counter_12</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">Inst_rand_trigger/counter_13</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">Inst_rand_trigger/counter_13</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">Inst_rand_trigger/counter_14</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">Inst_rand_trigger/counter_14</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">Inst_rand_trigger/counter_15</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">Inst_rand_trigger/counter_15</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">Inst_rand_trigger/counter_16</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">Inst_rand_trigger/counter_16</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
 <msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">Inst_TEMAC2_example_design/inst_async_trigger/your_instance_name/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GAND.U_match/I_CS_GAND.U_CS_GAND_SRL/I_V5.U_CS_GAND_SRL_V5/I_USE_INPUT_REG_NE0.G_GAND_DLY[96].U_GAND_IREG</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
@@ -4345,25 +4345,25 @@ of frag <arg fmt="%s" index="2">REGCLKBL</arg> connected to power/ground net <ar
 <msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">Inst_TEMAC2_example_design/receiver_unit/sender_ip_7</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">Inst_rand_trigger/counter_3</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">Inst_rand_trigger/counter_3</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">Inst_rand_trigger/counter_4</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">Inst_rand_trigger/counter_4</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">Inst_rand_trigger/counter_5</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">Inst_rand_trigger/counter_5</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">Inst_rand_trigger/counter_6</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">Inst_rand_trigger/counter_6</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">Inst_rand_trigger/counter_7</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">Inst_rand_trigger/counter_7</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">Inst_rand_trigger/counter_8</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">Inst_rand_trigger/counter_8</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">Inst_rand_trigger/counter_9</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
+<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">Inst_rand_trigger/counter_9</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
 <msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">Inst_TEMAC2_example_design/inst_async_trigger/your_instance_name/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[0].U_FDRE</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
@@ -6991,30 +6991,6 @@ of frag <arg fmt="%s" index="2">REGCLKBL</arg> connected to power/ground net <ar
 <msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">Inst_TEMAC2_example_design/v5_emac_ll/client_side_FIFO_emac1/rx_fifo_i/wr_rd_addr_gray_9</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_0</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
-</msg>
-
-<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
-</msg>
-
-<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_2</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
-</msg>
-
-<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_3</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
-</msg>
-
-<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_4</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
-</msg>
-
-<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_5</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
-</msg>
-
-<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_6</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
-</msg>
-
-<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_data_pipe_7</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
-</msg>
-
 <msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">Inst_TEMAC2_example_design/inst_async_trigger/your_instance_name/U0/I_TQ0.G_TW[108].U_TQ</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
@@ -8036,30 +8012,6 @@ of frag <arg fmt="%s" index="2">REGCLKBL</arg> connected to power/ground net <ar
 </msg>
 
 <msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">Inst_TEMAC2_example_design/inst_async_trigger/your_instance_name/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[9].U_FDRE</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
-</msg>
-
-<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">Inst_TEMAC2_example_design/v5_emac_ll/client_side_FIFO_emac1/rx_fifo_i/rd_data_pipe_0</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
-</msg>
-
-<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">Inst_TEMAC2_example_design/v5_emac_ll/client_side_FIFO_emac1/rx_fifo_i/rd_data_pipe_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
-</msg>
-
-<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">Inst_TEMAC2_example_design/v5_emac_ll/client_side_FIFO_emac1/rx_fifo_i/rd_data_pipe_2</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
-</msg>
-
-<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">Inst_TEMAC2_example_design/v5_emac_ll/client_side_FIFO_emac1/rx_fifo_i/rd_data_pipe_3</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
-</msg>
-
-<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">Inst_TEMAC2_example_design/v5_emac_ll/client_side_FIFO_emac1/rx_fifo_i/rd_data_pipe_4</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
-</msg>
-
-<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">Inst_TEMAC2_example_design/v5_emac_ll/client_side_FIFO_emac1/rx_fifo_i/rd_data_pipe_5</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
-</msg>
-
-<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">Inst_TEMAC2_example_design/v5_emac_ll/client_side_FIFO_emac1/rx_fifo_i/rd_data_pipe_6</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
-</msg>
-
-<msg type="warning" file="Pack" num="2780" delta="new" >The register &quot;<arg fmt="%s" index="1">Inst_TEMAC2_example_design/v5_emac_ll/client_side_FIFO_emac1/rx_fifo_i/rd_data_pipe_7</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
 <msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">Inst_TEMAC2_example_design/inst_async_trigger/your_instance_name/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GAND.U_match/I_CS_GAND.U_CS_GAND_SRL/I_V5.U_CS_GAND_SRL_V5/I_USE_INPUT_REG_NE0.G_GAND_DLY[30].U_GAND_IREG</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
@@ -14326,9 +14278,6 @@ of frag <arg fmt="%s" index="2">REGCLKBL</arg> connected to power/ground net <ar
 <msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">Inst_TEMAC2_example_design/inst_async_trigger/fifo_selector_1</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
-<msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">sync_trigger_1/coincidence_hold</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
-</msg>
-
 <msg type="warning" file="Pack" num="2780" delta="old" >The register &quot;<arg fmt="%s" index="1">EMAC_0/v5_emac_ll/client_side_FIFO_emac0/rx_fifo_i/rd_eof</arg>&quot; has the property IOB=<arg fmt="%s" index="2">TRUE</arg>, but it did not join an IO component because it is not connected to any IO element.
 </msg>
 
@@ -15909,10 +15858,10 @@ of frag <arg fmt="%s" index="2">REGCLKBL</arg> connected to power/ground net <ar
 <msg type="info" file="Pack" num="1650" delta="old" >Map created a placed design.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut6293_57</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut6291_56</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut11653_367</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">lut11650_365</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
 </msg>
 
 <msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">BUTTONS&lt;3&gt;_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.

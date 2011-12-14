@@ -19,6 +19,29 @@ Loading design module "../../top_10/top/ipcore_dir/ila_cs.ngc"...
 Loading design module "ipcore_dir/fifo_generator_v8_1_8b.ngc"...
 Loading design module "ipcore_dir/fifo_generator_v8_1_32b.ngc"...
 Loading design module "ipcore_dir/trigger_time_fifo.ngc"...
+INFO:NgdBuild:1317 - Using core chipscope_ila_v1 requires a ChipScopePro
+   license.  The following blocks are instances of core chipscope_ila_v1:
+	/top/Inst_TEMAC2_example_design/inst_async_trigger/your_instance_name
+
+-----------------------------------------------
+INFO:Security:67 - XILINXD_LICENSE_FILE is set to
+'/opt/Xilinx/13.1/ISE_DS/ISE/coregen/core_licenses' in /home/kimei/.flexlmrc.
+INFO:Security:51 - The XILINXD_LICENSE_FILE environment variable is not set.
+INFO:Security:52 - The LM_LICENSE_FILE environment variable is set to
+'5370@pordoi.ifi.uio.no'.
+WARNING:Security:43 - No license file was found in the standard Xilinx license
+directory.
+WARNING:Security:44 - No license file was found.
+       Please run the Xilinx License Configuration Manager
+       (xlcm or "Manage Xilinx Licenses")
+       to assist in obtaining a license.
+WARNING:Security:42 - Your license support version '2011.12' for ChipScopePro
+expires in 18 days after which you will not qualify for Xilinx software updates
+or new releases.
+
+-----------------------------------------------
+
+-----------------------------------------------
 Gathering constraint information from source properties...
 Done.
 
@@ -249,7 +272,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:  30
 
-Total memory usage is 362176 kilobytes
+Total memory usage is 362220 kilobytes
 
 Writing NGD file "top.ngd" ...
 Total REAL time to NGDBUILD completion:  13 sec

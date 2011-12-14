@@ -1,0 +1,425 @@
+m255
+K3
+13
+cModel Technology
+Z0 dM:\MASTER\COMPET\Trigger\HW\HDL\Sync_Trigger\sim
+T_opt
+Z1 V=3l3cCWZPm=nZ=TDKAZ]f1
+Z2 04 6 2 work top_tb tb 1
+Z3 =1-001aa0e92aad-4d8c8ff0-393-b48
+Z4 o-quiet -auto_acc_if_foreign -work work +acc
+Z5 n@_opt
+Z6 OE;O;6.6d;45
+Z7 dM:\MASTER\COMPET\Trigger\HW\HDL\Sync_Trigger\sim
+Ea2s
+Z8 w1295360630
+Z9 DPx4 work 9 constants 0 22 ZWJ8=b41OeFk@JSJX:4oB0
+Z10 DPx4 ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+Z11 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z12 dM:\MASTER\COMPET\Trigger\HW\HDL\top\sim
+Z13 8../../shared/a2s.vhd
+Z14 F../../shared/a2s.vhd
+l0
+L26
+Z15 Vc8bjdKmJS87N72K4>ez2z3
+Z16 OE;C;6.6d;45
+31
+Z17 o-work work -93 -explicit
+Z18 tExplicit 1
+Z19 !s100 n9JSGA_ROj^XS02a57CVz2
+Artl
+Z20 DPx44 M:\MASTER\COMPET\Trigger\HW\HDL\top\sim\work 9 constants 0 22 ZWJ8=b41OeFk@JSJX:4oB0
+Z21 DPx22 C:\modeltech_6.6d\ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+Z22 DPx22 C:\modeltech_6.6d\ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z23 DEx44 M:\MASTER\COMPET\Trigger\HW\HDL\top\sim\work 3 a2s 0 22 c8bjdKmJS87N72K4>ez2z3
+31
+Z24 Mx3 22 C:\modeltech_6.6d\ieee 14 std_logic_1164
+Z25 Mx2 22 C:\modeltech_6.6d\ieee 11 numeric_std
+Z26 Mx1 44 M:\MASTER\COMPET\Trigger\HW\HDL\top\sim\work 9 constants
+l46
+L40
+Z27 VIn]Q=UgPg9JVCI0WNNTD43
+R16
+R17
+R18
+Z28 !s100 ae2;85>ETN`EG::EQ^nce3
+Pcomponents
+R20
+R21
+R22
+31
+R24
+R25
+R26
+Z29 w1301052780
+R12
+Z30 8../../shared/components.vhd
+Z31 F../../shared/components.vhd
+l0
+L12
+Z32 VXm^g2W3<`TmU=2IET>8]52
+R16
+R17
+R18
+Z33 !s100 _@5a9VF8;>kTa>=1PchW_1
+Pconstants
+R21
+R22
+31
+Z34 Mx2 22 C:\modeltech_6.6d\ieee 14 std_logic_1164
+Z35 Mx1 22 C:\modeltech_6.6d\ieee 11 numeric_std
+Z36 w1301042094
+R12
+Z37 8../../shared/constants.vhd
+Z38 F../../shared/constants.vhd
+l0
+L11
+Z39 VZWJ8=b41OeFk@JSJX:4oB0
+R16
+R17
+R18
+Z40 !s100 8hJIh1gdZE865;hGS]jEk2
+Ecru
+Z41 w1301051844
+R9
+R10
+Z42 DPx4 work 10 components 0 22 Xm^g2W3<`TmU=2IET>8]52
+Z43 DPx6 unisim 11 vcomponents 0 22 ^aPg^g8R`383Ij9LHKGf]3
+Z44 DPx4 ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
+Z45 DPx4 ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
+R11
+R12
+Z46 8../../CRU/CRU.vhd
+Z47 F../../CRU/CRU.vhd
+l0
+L38
+Z48 VkA]AFchRbf`_Cd5H@5U2C2
+R16
+31
+R17
+R18
+Z49 !s100 7nzUmN6cFchGoP>F;T4;]2
+Abehavioral
+R23
+Z50 DEx37 C:\Xilinx\10.1\ISE\vhdl\mti_se\unisim 5 ibufg 0 22 z^LD_>TQ2OS9nOajFLgCn0
+Z51 DEx37 C:\Xilinx\10.1\ISE\vhdl\mti_se\unisim 4 oddr 0 22 dR]E`21W[EVhOeSRP2d751
+Z52 DEx37 C:\Xilinx\10.1\ISE\vhdl\mti_se\unisim 6 obufds 0 22 A_W?:?Uj>nAZd6YGoai9b3
+Z53 DEx44 M:\MASTER\COMPET\Trigger\HW\HDL\top\sim\work 7 pll_all 0 22 chgI^aKe]GbG1FQ0aA0kf0
+R20
+R21
+Z54 DPx44 M:\MASTER\COMPET\Trigger\HW\HDL\top\sim\work 10 components 0 22 Xm^g2W3<`TmU=2IET>8]52
+Z55 DPx37 C:\Xilinx\10.1\ISE\vhdl\mti_se\unisim 11 vcomponents 0 22 ^aPg^g8R`383Ij9LHKGf]3
+Z56 DPx22 C:\modeltech_6.6d\ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
+Z57 DPx22 C:\modeltech_6.6d\ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
+R22
+Z58 DEx44 M:\MASTER\COMPET\Trigger\HW\HDL\top\sim\work 3 cru 0 22 kA]AFchRbf`_Cd5H@5U2C2
+31
+Z59 Mx7 22 C:\modeltech_6.6d\ieee 14 std_logic_1164
+Z60 Mx6 22 C:\modeltech_6.6d\ieee 15 std_logic_arith
+Z61 Mx5 22 C:\modeltech_6.6d\ieee 18 std_logic_unsigned
+Z62 Mx4 37 C:\Xilinx\10.1\ISE\vhdl\mti_se\unisim 11 vcomponents
+Z63 Mx3 44 M:\MASTER\COMPET\Trigger\HW\HDL\top\sim\work 10 components
+R25
+R26
+l106
+L54
+Z64 VJ8PA[@@1@>JXY`ze1B<`_2
+R16
+R17
+R18
+Z65 !s100 l2FRDDbe7JOlOC]z<ZF902
+Eedge_detector
+Z66 w1300887380
+Z67 DPx4 work 9 functions 0 22 h3h[J0A^k]GS1YnWY[AcI0
+R9
+R10
+R42
+R43
+R44
+R45
+R11
+R12
+Z68 8../../Sync_Trigger/edge_detector.vhd
+Z69 F../../Sync_Trigger/edge_detector.vhd
+l0
+L39
+Z70 VNm?:A4nH<j<;NWo;M;fTB3
+R16
+31
+R17
+R18
+Z71 !s100 Qg0aKWg47lnl?W`eCg`321
+Abehave
+Z72 DPx44 M:\MASTER\COMPET\Trigger\HW\HDL\top\sim\work 9 functions 0 22 h3h[J0A^k]GS1YnWY[AcI0
+R20
+R21
+R54
+R55
+R56
+R57
+R22
+Z73 DEx44 M:\MASTER\COMPET\Trigger\HW\HDL\top\sim\work 13 edge_detector 0 22 Nm?:A4nH<j<;NWo;M;fTB3
+31
+Z74 Mx8 22 C:\modeltech_6.6d\ieee 14 std_logic_1164
+Z75 Mx7 22 C:\modeltech_6.6d\ieee 15 std_logic_arith
+Z76 Mx6 22 C:\modeltech_6.6d\ieee 18 std_logic_unsigned
+Z77 Mx5 37 C:\Xilinx\10.1\ISE\vhdl\mti_se\unisim 11 vcomponents
+Z78 Mx4 44 M:\MASTER\COMPET\Trigger\HW\HDL\top\sim\work 10 components
+Z79 Mx3 22 C:\modeltech_6.6d\ieee 11 numeric_std
+Z80 Mx2 44 M:\MASTER\COMPET\Trigger\HW\HDL\top\sim\work 9 constants
+Z81 Mx1 44 M:\MASTER\COMPET\Trigger\HW\HDL\top\sim\work 9 functions
+l50
+L48
+Z82 V@P1ZO=Z3QB^OYH>Qf]cil2
+R16
+R17
+R18
+Z83 !s100 @^KIJ`1=SEJGFh7g=fIWd2
+Pfunctions
+R22
+31
+b1
+Z84 Mx1 22 C:\modeltech_6.6d\ieee 14 std_logic_1164
+Z85 w1300371647
+R12
+Z86 8../../shared/functions.vhd
+Z87 F../../shared/functions.vhd
+l0
+L6
+Z88 Vh3h[J0A^k]GS1YnWY[AcI0
+R16
+b1
+R17
+R18
+Z89 !s100 gHGX1K;KN3IQzeSnZ0I7H3
+Bbody
+Z90 DBx44 M:\MASTER\COMPET\Trigger\HW\HDL\top\sim\work 9 functions 0 22 h3h[J0A^k]GS1YnWY[AcI0
+R22
+31
+R84
+l0
+L20
+Z91 Vo[b0BaQ1iB4Zl@@7zJkN_3
+R16
+R17
+R18
+nbody
+Z92 !s100 QmUhP]:RG7i0KPjOKJPLh2
+Epll_all
+Z93 w1297694469
+R43
+R10
+R11
+R12
+Z94 8../../CRU/PLL_ALL.vhd
+Z95 F../../CRU/PLL_ALL.vhd
+l0
+L30
+Z96 VchgI^aKe]GbG1FQ0aA0kf0
+R16
+31
+R17
+R18
+Z97 !s100 J9Z^fZ>Q1nO01[^:n0d@o2
+Abehavioral
+Z98 DEx37 C:\Xilinx\10.1\ISE\vhdl\mti_se\unisim 7 pll_adv 0 22 k4I9UnAkDb0ij5Vdc9dJI1
+Z99 DEx37 C:\Xilinx\10.1\ISE\vhdl\mti_se\unisim 4 bufg 0 22 51QbVaN7h7:fTHS;R0Ci]3
+R55
+R21
+R22
+R53
+31
+R24
+R25
+Z100 Mx1 37 C:\Xilinx\10.1\ISE\vhdl\mti_se\unisim 11 vcomponents
+l46
+L38
+Z101 VW>ARDOZZbLf0J:Ze2>iVB1
+R16
+R17
+R18
+Z102 !s100 E@lSzQFm:h6SkOYc1n9Y@2
+Esync_trigger
+Z103 w1301057001
+R67
+R9
+R42
+R43
+R10
+R44
+R45
+R11
+R12
+Z104 8../../Sync_Trigger/Sync_trigger.vhd
+Z105 F../../Sync_Trigger/Sync_trigger.vhd
+l0
+L44
+Z106 VCNGSB=X;gdUXcEO2X:el>2
+R16
+31
+R17
+R18
+Z107 !s100 G5ILg=kJ@3?TTWS[8bGQb1
+Abehavioral
+R73
+R52
+Z108 DEx37 C:\Xilinx\10.1\ISE\vhdl\mti_se\unisim 6 ibufds 0 22 6j:HCDQEd`?4J0;kLg=CM3
+R72
+R20
+R54
+R55
+R21
+R56
+R57
+R22
+Z109 DEx44 M:\MASTER\COMPET\Trigger\HW\HDL\top\sim\work 12 sync_trigger 0 22 CNGSB=X;gdUXcEO2X:el>2
+31
+R74
+R75
+R76
+Z110 Mx5 22 C:\modeltech_6.6d\ieee 11 numeric_std
+R62
+R63
+R80
+R81
+l82
+L58
+Z111 VL[h86T:UQTdz1^MdLOXYY2
+R16
+R17
+R18
+Z112 !s100 HbI0oY9gPJ]E9R][h:cRC1
+Z113 w1301056011
+Etop
+Z114 w1301057353
+R20
+R21
+R54
+R55
+R56
+R57
+R22
+31
+R12
+Z115 8../top.vhd
+Z116 F../top.vhd
+l0
+L35
+Z117 VFHFm0n0:XF7NNMhWk=RbM1
+R16
+R17
+R18
+Z118 !s100 HhDZoZ;SNI6V7@DGbcT5;3
+Abehavioral
+R52
+R109
+R58
+R20
+R21
+R54
+R55
+R56
+R57
+R22
+Z119 DEx44 M:\MASTER\COMPET\Trigger\HW\HDL\top\sim\work 3 top 0 22 FHFm0n0:XF7NNMhWk=RbM1
+31
+R59
+R60
+R61
+R62
+R63
+R25
+R26
+l84
+L70
+Z120 VL?g<lnlemBX4>bgmalk0e2
+R16
+R17
+R18
+Z121 !s100 Ync@c8mTe?7:Qel>5XjlE2
+Etop_tb
+Z122 w1301057510
+R20
+R21
+R54
+R55
+R22
+31
+R12
+Z123 8top_tb.vhd
+Z124 Ftop_tb.vhd
+l0
+L33
+Z125 VA^7lBHC2dFde`0l95XFnW2
+R16
+Z126 o-93 -explicit
+R18
+Z127 !s100 ZShl?oSD^XWAWzUN6TmTU1
+Atb
+R119
+R20
+R21
+R54
+R55
+R22
+DEx44 M:\MASTER\COMPET\Trigger\HW\HDL\top\sim\work 6 top_tb 0 22 A^7lBHC2dFde`0l95XFnW2
+31
+Z128 Mx5 22 C:\modeltech_6.6d\ieee 14 std_logic_1164
+R62
+R63
+R25
+R26
+l84
+L39
+Z129 VhNWdcAG2?MEZn>S:b6fPl0
+R16
+R126
+R18
+Z130 !s100 Jk[6fR;TYa?8BiH_G2Ud]3
+Etrigger_hold
+Z131 w1300366921
+R67
+R9
+R10
+R42
+R43
+R44
+R45
+R11
+R12
+Z132 8../../Sync_Trigger/trigger_hold.vhd
+Z133 F../../Sync_Trigger/trigger_hold.vhd
+l0
+L37
+Z134 ViJRJJMTO9_VO@K8S7Fz<L1
+R16
+31
+R17
+R18
+Z135 !s100 hfGnEmHeGZ1R88nIkRTNG3
+Acomb
+R67
+R9
+R10
+R42
+R43
+R44
+R45
+R11
+Z136 DEx4 work 12 trigger_hold 0 22 iJRJJMTO9_VO@K8S7Fz<L1
+l49
+L46
+Z137 V^Abo^8l5Vz4g3ADjSY=_V1
+R16
+31
+Z138 Mx8 4 ieee 14 std_logic_1164
+Z139 Mx7 4 ieee 15 std_logic_arith
+Z140 Mx6 4 ieee 18 std_logic_unsigned
+Z141 Mx5 6 unisim 11 vcomponents
+Z142 Mx4 4 work 10 components
+Z143 Mx3 4 ieee 11 numeric_std
+Z144 Mx2 4 work 9 constants
+Z145 Mx1 4 work 9 functions
+R17
+R18
+Z146 !s100 l<@hceNAg:Xe9M<b6Q20H3

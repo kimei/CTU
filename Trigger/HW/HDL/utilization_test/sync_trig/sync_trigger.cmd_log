@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/utilization_test/sync_trig/sync_trigger.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/utilization_test/sync_trig/sync_trigger.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc5vfx30t-ff665-1 sync_trigger.ngc sync_trigger.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sync_trigger_map.ncd sync_trigger.ngd sync_trigger.pcf 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/utilization_test/sync_trig/sync_trigger.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/utilization_test/sync_trig/sync_trigger.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc5vfx30t-ff665-1 sync_trigger.ngc sync_trigger.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sync_trigger_map.ncd sync_trigger.ngd sync_trigger.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc5vfx30t-ff665-1 sync_trigger.ngc sync_trigger.ngd  
+map -intstyle ise -p xc5vfx30t-ff665-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sync_trigger_map.ncd sync_trigger.ngd sync_trigger.pcf 
+par -w -intstyle ise -ol high -mt off sync_trigger_map.ncd sync_trigger.ncd sync_trigger.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sync_trigger.twx sync_trigger.ncd -o sync_trigger.twr sync_trigger.pcf 
+xst -intstyle ise -ifn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/utilization_test/sync_trig/sync_trigger.xst" -ofn "/home/kimei/VHDL/trigger/Trigger/HW/HDL/utilization_test/sync_trig/sync_trigger.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MyTemac.ucf -p xc5vlx50t-ff1136-1 sync_trigger.ngc sync_trigger.ngd  
+map -intstyle ise -p xc5vlx50t-ff1136-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o sync_trigger_map.ncd sync_trigger.ngd sync_trigger.pcf 
+par -w -intstyle ise -ol high -mt off sync_trigger_map.ncd sync_trigger.ncd sync_trigger.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml sync_trigger.twx sync_trigger.ncd -o sync_trigger.twr sync_trigger.pcf -ucf MyTemac.ucf 
+bitgen -intstyle ise -f sync_trigger.ut sync_trigger.ncd 

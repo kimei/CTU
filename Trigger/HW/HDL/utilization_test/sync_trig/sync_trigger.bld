@@ -1,0 +1,38 @@
+Release 13.1 ngdbuild O.40d (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Command Line: /opt/Xilinx/13.1/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
+ise -dd _ngo -nt timestamp -uc MyTemac.ucf -p xc5vlx50t-ff1136-1
+sync_trigger.ngc sync_trigger.ngd
+
+Reading NGO file
+"/home/kimei/VHDL/trigger/Trigger/HW/HDL/utilization_test/sync_trig/sync_trigger
+.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "MyTemac.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 262848 kilobytes
+
+Writing NGD file "sync_trigger.ngd" ...
+Total REAL time to NGDBUILD completion:  2 sec
+Total CPU time to NGDBUILD completion:   2 sec
+
+Writing NGDBUILD log file "sync_trigger.bld"...

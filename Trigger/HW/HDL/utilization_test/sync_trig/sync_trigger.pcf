@@ -1,0 +1,45 @@
+//! **************************************************************************
+// Written by: Map O.40d on Fri Dec 02 16:09:14 2011
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "mclk" LOCATE = SITE "H17" LEVEL 1;
+TIMEGRP mclk = BEL "coincidence_array<2>_1" BEL "coincidence_array<2>_0" BEL
+        "coincidence_array<3>_0" BEL "coincidence_array<0>_1" BEL
+        "coincidence_array<3>_1" BEL "coincidence_array<0>_0" BEL
+        "trig_out_s_d_0" BEL "trig_out_s_d_1" BEL "coincidence_array<1>_0" BEL
+        "trig_out_s_d_2" BEL "trig_out_s_d_3" BEL "coincidence_array<1>_1" BEL
+        "G3[19].edge_detect_1/s_0" BEL "G3[19].edge_detect_1/s_1" BEL
+        "G3[19].edge_detect_1/s_2" BEL "G3[18].edge_detect_1/s_0" BEL
+        "G3[18].edge_detect_1/s_1" BEL "G3[18].edge_detect_1/s_2" BEL
+        "G3[17].edge_detect_1/s_0" BEL "G3[17].edge_detect_1/s_1" BEL
+        "G3[17].edge_detect_1/s_2" BEL "G3[16].edge_detect_1/s_0" BEL
+        "G3[16].edge_detect_1/s_1" BEL "G3[16].edge_detect_1/s_2" BEL
+        "G3[15].edge_detect_1/s_0" BEL "G3[15].edge_detect_1/s_1" BEL
+        "G3[15].edge_detect_1/s_2" BEL "G3[14].edge_detect_1/s_0" BEL
+        "G3[14].edge_detect_1/s_1" BEL "G3[14].edge_detect_1/s_2" BEL
+        "G3[13].edge_detect_1/s_0" BEL "G3[13].edge_detect_1/s_1" BEL
+        "G3[13].edge_detect_1/s_2" BEL "G3[12].edge_detect_1/s_0" BEL
+        "G3[12].edge_detect_1/s_1" BEL "G3[12].edge_detect_1/s_2" BEL
+        "G3[11].edge_detect_1/s_0" BEL "G3[11].edge_detect_1/s_1" BEL
+        "G3[11].edge_detect_1/s_2" BEL "G3[10].edge_detect_1/s_0" BEL
+        "G3[10].edge_detect_1/s_1" BEL "G3[10].edge_detect_1/s_2" BEL
+        "G3[9].edge_detect_1/s_0" BEL "G3[9].edge_detect_1/s_1" BEL
+        "G3[9].edge_detect_1/s_2" BEL "G3[8].edge_detect_1/s_0" BEL
+        "G3[8].edge_detect_1/s_1" BEL "G3[8].edge_detect_1/s_2" BEL
+        "G3[7].edge_detect_1/s_0" BEL "G3[7].edge_detect_1/s_1" BEL
+        "G3[7].edge_detect_1/s_2" BEL "G3[6].edge_detect_1/s_0" BEL
+        "G3[6].edge_detect_1/s_1" BEL "G3[6].edge_detect_1/s_2" BEL
+        "G3[5].edge_detect_1/s_0" BEL "G3[5].edge_detect_1/s_1" BEL
+        "G3[5].edge_detect_1/s_2" BEL "G3[4].edge_detect_1/s_0" BEL
+        "G3[4].edge_detect_1/s_1" BEL "G3[4].edge_detect_1/s_2" BEL
+        "G3[3].edge_detect_1/s_0" BEL "G3[3].edge_detect_1/s_1" BEL
+        "G3[3].edge_detect_1/s_2" BEL "G3[2].edge_detect_1/s_0" BEL
+        "G3[2].edge_detect_1/s_1" BEL "G3[2].edge_detect_1/s_2" BEL
+        "G3[1].edge_detect_1/s_0" BEL "G3[1].edge_detect_1/s_1" BEL
+        "G3[1].edge_detect_1/s_2" BEL "G3[0].edge_detect_1/s_0" BEL
+        "G3[0].edge_detect_1/s_1" BEL "G3[0].edge_detect_1/s_2" BEL
+        "mclk_BUFGP/BUFG";
+TS_mclk = PERIOD TIMEGRP "mclk" 10 ns HIGH 50%;
+SCHEMATIC END;
+

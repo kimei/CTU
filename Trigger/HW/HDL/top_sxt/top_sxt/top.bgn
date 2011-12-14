@@ -5,7 +5,7 @@ Loading device for application Rf_Device from file '5vlx50t.nph' in environment
    "top" is an NCD, version 3.2, device xc5vlx50t, package ff1136, speed -1
 Opened constraints file top.pcf.
 
-Thu Oct 20 10:55:13 2011
+Mon Dec 12 13:45:02 2011
 
 /opt/Xilinx/13.1/ISE_DS/ISE/bin/lin64/unwrapped/bitgen -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g ConfigRate:2 -g CclkPin:PullUp -g M0Pin:PullUp -g M1Pin:PullUp -g M2Pin:PullUp -g ProgPin:PullUp -g DonePin:PullUp -g InitPin:Pullup -g CsPin:Pullup -g DinPin:Pullup -g BusyPin:Pullup -g RdWrPin:Pullup -g HswapenPin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g ConfigFallback:Enable -g SelectMAPAbort:Enable -g BPI_page_size:1 -g OverTempPowerDown:Disable -g JTAG_SysMon:Enable -g DCIUpdateMode:AsRequired -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Match_cycle:Auto -g Security:None -g DonePipe:No -g DriveDone:No -g Encrypt:No top.ncd 
 
@@ -125,10 +125,10 @@ There were 0 CONFIG constraint(s) processed from top.pcf.
 
 
 Running DRC.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut6293_57 is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut6291_56 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11653_367 is sourced by
+WARNING:PhysDesignRules:372 - Gated clock. Clock net lut11650_365 is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:367 - The signal <BUTTONS<3>_IBUF> is incomplete. The
@@ -158,6 +158,22 @@ WARNING:PhysDesignRules:1412 - Issue with pin connections and/or configuration
    DATAIN programming the DATAIN input pin is not used and will be ignored.
 DRC detected 0 errors and 13 warnings.  Please see the previously displayed
 individual error or warning messages for more details.
+INFO:Security:67 - XILINXD_LICENSE_FILE is set to
+'/opt/Xilinx/13.1/ISE_DS/ISE/coregen/core_licenses' in /home/kimei/.flexlmrc.
+INFO:Security:51 - The XILINXD_LICENSE_FILE environment variable is not set.
+INFO:Security:52 - The LM_LICENSE_FILE environment variable is set to
+'5370@pordoi.ifi.uio.no'.
+INFO:Security:54 - 'xc5vlx50t' is a WebPack part.
+WARNING:Security:43 - No license file was found in the standard Xilinx license
+directory.
+WARNING:Security:44 - No license file was found.
+       Please run the Xilinx License Configuration Manager
+       (xlcm or "Manage Xilinx Licenses")
+       to assist in obtaining a license.
+WARNING:Security:42 - Your license support version '2011.12' for ISE expires in
+18 days after which you will not qualify for Xilinx software updates or new
+releases.
+
 Creating bit map...
 Saving bit stream in "top.bit".
 Bitstream generation is complete.

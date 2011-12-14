@@ -1,0 +1,8 @@
+
+
+#100MHz Clock
+Net mclk LOC=H17 | IOSTANDARD = LVCMOS25;
+Net mclk TNM_NET = mclk;
+TIMESPEC TS_mclk = PERIOD mclk 10000 ps;
+
+

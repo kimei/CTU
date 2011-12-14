@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator K.39
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o M:\MASTER\COMPET\Trigger\HW\HDL\top\//top -u 0 M:/MASTER/COMPET/Trigger/HW/HDL/top/top/top.bit -x xcf16p -z 
+
+PROM M:\MASTER\COMPET\Trigger\HW\HDL\top\//top.prm map: Wed Apr 06 14:33:16 2011
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          2048K
+PROM start    0000:0000
+PROM end      001f:ffff
+PROM checksum 1fb0abec
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0000:858b     Apr 06 14:18:33 2011 M:/MASTER/COMPET/Trigger/HW/HDL/top/top/top.bit

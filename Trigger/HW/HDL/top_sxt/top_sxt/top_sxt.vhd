@@ -239,6 +239,7 @@ begin
       mclk          => mclk,
       en_or_trigger => en_or_trigger_s,
       module_mask   => module_mask_s,
+      en_delayed_trigger => en_rand_trig,
       trigger_in    => trig_in_se_masked,
       trigger_out   => trig_out_se_sync);
 

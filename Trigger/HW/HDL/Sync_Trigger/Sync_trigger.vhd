@@ -6,7 +6,7 @@
 -- Author     :   <kimei@fyspc-epf02>
 -- Company    : 
 -- Created    : 2011-03-08
--- Last update: 2011-10-04
+-- Last update: 2011-12-12
 -- Platform   : 
 -- Standard   : VHDL'87
 -------------------------------------------------------------------------------
@@ -48,6 +48,7 @@ entity sync_trigger is
     en_or_trigger : in  std_logic;
     module_mask   : in  std_logic_vector(NUMBER_OF_MODULES-1 downto 0);
     trigger_in    : in  std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
+    en_delayed_trigger : in std_logic;
     trigger_out   : out std_logic_vector(NUMBER_OF_ROCS-1 downto 0));
 end sync_trigger;
 
@@ -61,6 +62,10 @@ architecture Behavioral of sync_trigger is
   signal coincidence_or    : std_logic_vector(NUMBER_OF_MODULES-1 downto 0);
   signal coincidence       : std_logic;
 
+
+  signal delayed_trigger_en : std_logic;
+  signal delayed_trigger : std_logic_vector(128 downto 0);
+  
   signal coincidence_and_trigger : std_logic;
   signal coincidence_or_trigger  : std_logic;
 
@@ -70,9 +75,41 @@ architecture Behavioral of sync_trigger is
   signal leading_edge_module          : std_logic_vector(NUMBER_OF_MODULES-1 downto 0);
   signal leading_edge_module_unmasked : std_logic_vector(NUMBER_OF_MODULES-1 downto 0);
   signal edge_det                     : std_logic_vector(NUMBER_OF_ROCS-1 downto 0);
+
+
+
+  
+ 
+ -- component cs_controller
+ --   port (
+ --     CONTROL0 : inout std_logic_vector(35 downto 0));
+ -- end component;
+
+ -- signal CONTROL0 : std_logic_vector(35 downto 0);
+
+ -- component ila_cs
+ --   port (
+ --     CONTROL : inout std_logic_vector(35 downto 0);
+ --     CLK     : in    std_logic;
+ --     TRIG0   : in    std_logic_vector(127 downto 0));
+ -- end component;
+  
+ --signal cs_trig : std_logic_vector(127 downto 0);
   
 begin
--------------------------------------------------------------------------------
+--   your_instance_name : ila_cs
+--    port map (
+--      CONTROL => CONTROL0,
+--      CLK     => mclk,
+--      TRIG0   => cs_trig);
+
+--     cs_contr : cs_controller
+--    port map (
+--      CONTROL0 => CONTROL0);
+
+--   cs_trig(4 downto 0) <= edge_det;
+--   cs_trig(5) <= trig_out_s_d(0);
+---------------------------------------------------------------------------------
 -- Component instantiations
 -------------------------------------------------------------------------------
   G3 : for I in 0 to NUMBER_OF_ROCS -1 generate
@@ -92,7 +129,9 @@ begin
   -- Sets trigger out high after four clk-cycles and holds it for three.
   -- trig_out_s <= '1' when coincidence = '1' or coincidence_hold = '1' else '0';
   trigger_out <= (others => '1') when trig_out_s_d(0) = '1' else (others => '0');
-
+   
+--delayed_trigger_en <= en_delayed_trigger;
+  
   -- Not the slickest solution, but i doubt there will be more than four
   -- modules, and therefore this solution is sufficient..
   -- looks for how many modules is implemented, and makes an OR of all the
@@ -107,11 +146,11 @@ begin
     end generate N2;
 
     N3 : if n = 2 generate
- --     leading_edge_module_unmasked(n) <= '0' when all_zeros(edge_det(ROCS_IN_M1+ROCS_IN_M2+ROCS_IN_M3-1 downto ROCS_IN_M1+ROCS_IN_M2)) = '1' else '1';
+      leading_edge_module_unmasked(n) <= '0' when all_zeros(edge_det(ROCS_IN_M1+ROCS_IN_M2+ROCS_IN_M3-1 downto ROCS_IN_M1+ROCS_IN_M2)) = '1' else '1';
     end generate N3;
 
     N4 : if n = 3 generate
-   --   leading_edge_module_unmasked(n) <= '0' when all_zeros(edge_det(ROCS_IN_M1+ROCS_IN_M2+ROCS_IN_M3+ROCS_IN_M4-1 downto ROCS_IN_M1+ROCS_IN_M2+ROCS_IN_M3)) = '1' else '1';
+      leading_edge_module_unmasked(n) <= '0' when all_zeros(edge_det(ROCS_IN_M1+ROCS_IN_M2+ROCS_IN_M3+ROCS_IN_M4-1 downto ROCS_IN_M1+ROCS_IN_M2+ROCS_IN_M3)) = '1' else '1';
     end generate N4;
   end generate N;
   leading_edge_module <= leading_edge_module_unmasked and module_mask;
@@ -156,6 +195,7 @@ begin
   delay_output : process (mclk, rst_b)
   begin
     if rst_b = '0' then
+    --  delayed_trigger_en <= '0';
       coincidence_hold <= '0';
       trig_out_s_d     <= (others => '0');
     elsif mclk'event and mclk = '1' then
@@ -164,16 +204,39 @@ begin
       trig_out_s_d(2) <= trig_out_s_d(3);
       trig_out_s_d(1) <= trig_out_s_d(2);
       trig_out_s_d(0) <= trig_out_s_d(1);
-      if coincidence = '1' and coincidence_hold = '0' then
+
+      delayed_trigger(128) <= '0';
+      for i in 127 downto 0 loop
+        delayed_trigger(i) <= delayed_trigger(i+1);
+      end loop;  -- i
+
+      
+      if coincidence = '1' and coincidence_hold = '0' and trig_out_s_d(1) = '0' then
+        delayed_trigger(127 downto 125) <= "111";
         coincidence_hold <= '1';
+       
         if zeros_in_last = '1' then
-          trig_out_s_d <= "01110";
+          trig_out_s_d <= "01110";         
+        else
+          trig_out_s_d <= "00111";
+        end if;
+        
+      elsif coincidence = '1' and coincidence_hold = '1' and trig_out_s_d(1) = '0' then
+        delayed_trigger(127 downto 125) <= "111";       
+        coincidence_hold <= '1';               
+        if zeros_in_last = '1' then
+          trig_out_s_d <= "01110";     
         else
           trig_out_s_d <= "00111";
         end if;
       elsif coincidence = '0' and coincidence_hold = '1' then
         coincidence_hold <= '0';
       end if;
+      
+      if delayed_trigger_en = '1' then
+        trig_out_s_d(0) <= delayed_trigger(0);
+      end if;
+      
     end if;
   end process delay_output;
 
@@ -183,13 +246,24 @@ begin
   begin  -- process load_sr_leading_edge
     if rst_b = '0' then
       coincidence_array <= (others => "00");
+      delayed_trigger_en <= '0';
     elsif mclk'event and mclk = '1' then
       
+
       L1 : for I in 0 to NUMBER_OF_MODULES -1 loop
         coincidence_array(I)(0) <= leading_edge_module(I);
         coincidence_array(I)(1) <= coincidence_array(I)(0);
       end loop L1;
+ 
+    
+    if coincidence = '1' then
+      L2 : for I in 0 to NUMBER_OF_MODULES -1 loop
+        coincidence_array(I)(1) <= '0';
+      end loop L2;
     end if;
+
+  end if;
+    
   end process shift_coincidence_array;
-  
+
 end Behavioral;

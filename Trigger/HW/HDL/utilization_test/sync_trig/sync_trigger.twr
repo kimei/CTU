@@ -1,0 +1,614 @@
+--------------------------------------------------------------------------------
+Release 13.1 Trace  (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/13.1/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 1 -n
+3 -fastpaths -xml sync_trigger.twx sync_trigger.ncd -o sync_trigger.twr
+sync_trigger.pcf -ucf MyTemac.ucf
+
+Design file:              sync_trigger.ncd
+Physical constraint file: sync_trigger.pcf
+Device,package,speed:     xc5vlx50t,ff1136,-1 (PRODUCTION 1.72 2011-02-03, STEPPING level 0)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_mclk = PERIOD TIMEGRP "mclk" 10 ns HIGH 50%;
+
+ 2322 paths analyzed, 90 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   6.030ns.
+--------------------------------------------------------------------------------
+
+Paths for end point coincidence_array<3>_1 (SLICE_X18Y73.C1), 162 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     3.970ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               coincidence_array<3>_1 (FF)
+  Destination:          coincidence_array<3>_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      5.995ns (Levels of Logic = 5)
+  Clock Path Skew:      0.000ns
+  Source Clock:         mclk_BUFGP rising at 0.000ns
+  Destination Clock:    mclk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: coincidence_array<3>_1 to coincidence_array<3>_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y73.CQ      Tcko                  0.450   coincidence_array<3><1>
+                                                       coincidence_array<3>_1
+    SLICE_X15Y74.A3      net (fanout=6)        0.794   coincidence_array<3><1>
+    SLICE_X15Y74.CMUX    Topac                 0.684   temp_mux0001<0>
+                                                       Madd_temp_addsub0001_lut<0>
+                                                       Madd_temp_addsub0001_xor<2>
+    SLICE_X12Y74.C1      net (fanout=4)        0.919   temp_addsub0001<2>
+    SLICE_X12Y74.CMUX    Topcc                 0.421   temp_addsub0002<3>
+                                                       temp_mux0002<2>11
+                                                       Madd_temp_addsub0002_xor<3>
+    SLICE_X12Y75.A3      net (fanout=2)        0.618   temp_addsub0002<2>
+    SLICE_X12Y75.COUT    Topcya                0.499   Mcompar_coincidence_and_trigger_cmp_gt0000_cy<3>1
+                                                       Mcompar_coincidence_and_trigger_cmp_gt0000_lut<0>1
+                                                       Mcompar_coincidence_and_trigger_cmp_gt0000_cy<3>_0
+    SLICE_X12Y76.CIN     net (fanout=1)        0.000   Mcompar_coincidence_and_trigger_cmp_gt0000_cy<3>1
+    SLICE_X12Y76.CMUX    Tcinc                 0.358   N17
+                                                       Mcompar_coincidence_and_trigger_cmp_gt0000_cy<6>
+    SLICE_X18Y73.C1      net (fanout=8)        1.223   Mcompar_coincidence_and_trigger_cmp_gt0000_cy<6>
+    SLICE_X18Y73.CLK     Tas                   0.029   coincidence_array<3><1>
+                                                       _mux00051
+                                                       coincidence_array<3>_1
+    -------------------------------------------------  ---------------------------
+    Total                                      5.995ns (2.441ns logic, 3.554ns route)
+                                                       (40.7% logic, 59.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     3.976ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               coincidence_array<2>_1 (FF)
+  Destination:          coincidence_array<3>_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      5.982ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.007ns (0.527 - 0.534)
+  Source Clock:         mclk_BUFGP rising at 0.000ns
+  Destination Clock:    mclk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: coincidence_array<2>_1 to coincidence_array<3>_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X16Y74.CQ      Tcko                  0.471   coincidence_array<2><1>
+                                                       coincidence_array<2>_1
+    SLICE_X15Y74.A2      net (fanout=6)        0.760   coincidence_array<2><1>
+    SLICE_X15Y74.CMUX    Topac                 0.684   temp_mux0001<0>
+                                                       Madd_temp_addsub0001_lut<0>
+                                                       Madd_temp_addsub0001_xor<2>
+    SLICE_X12Y74.C1      net (fanout=4)        0.919   temp_addsub0001<2>
+    SLICE_X12Y74.CMUX    Topcc                 0.421   temp_addsub0002<3>
+                                                       temp_mux0002<2>11
+                                                       Madd_temp_addsub0002_xor<3>
+    SLICE_X12Y75.A3      net (fanout=2)        0.618   temp_addsub0002<2>
+    SLICE_X12Y75.COUT    Topcya                0.499   Mcompar_coincidence_and_trigger_cmp_gt0000_cy<3>1
+                                                       Mcompar_coincidence_and_trigger_cmp_gt0000_lut<0>1
+                                                       Mcompar_coincidence_and_trigger_cmp_gt0000_cy<3>_0
+    SLICE_X12Y76.CIN     net (fanout=1)        0.000   Mcompar_coincidence_and_trigger_cmp_gt0000_cy<3>1
+    SLICE_X12Y76.CMUX    Tcinc                 0.358   N17
+                                                       Mcompar_coincidence_and_trigger_cmp_gt0000_cy<6>
+    SLICE_X18Y73.C1      net (fanout=8)        1.223   Mcompar_coincidence_and_trigger_cmp_gt0000_cy<6>
+    SLICE_X18Y73.CLK     Tas                   0.029   coincidence_array<3><1>
+                                                       _mux00051
+                                                       coincidence_array<3>_1
+    -------------------------------------------------  ---------------------------
+    Total                                      5.982ns (2.462ns logic, 3.520ns route)
+                                                       (41.2% logic, 58.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     3.984ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               coincidence_array<3>_1 (FF)
+  Destination:          coincidence_array<3>_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      5.981ns (Levels of Logic = 5)
+  Clock Path Skew:      0.000ns
+  Source Clock:         mclk_BUFGP rising at 0.000ns
+  Destination Clock:    mclk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: coincidence_array<3>_1 to coincidence_array<3>_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y73.CQ      Tcko                  0.450   coincidence_array<3><1>
+                                                       coincidence_array<3>_1
+    SLICE_X15Y74.B3      net (fanout=6)        0.791   coincidence_array<3><1>
+    SLICE_X15Y74.CMUX    Topbc                 0.673   temp_mux0001<0>
+                                                       temp_mux0001<1>11
+                                                       Madd_temp_addsub0001_xor<2>
+    SLICE_X12Y74.C1      net (fanout=4)        0.919   temp_addsub0001<2>
+    SLICE_X12Y74.CMUX    Topcc                 0.421   temp_addsub0002<3>
+                                                       temp_mux0002<2>11
+                                                       Madd_temp_addsub0002_xor<3>
+    SLICE_X12Y75.A3      net (fanout=2)        0.618   temp_addsub0002<2>
+    SLICE_X12Y75.COUT    Topcya                0.499   Mcompar_coincidence_and_trigger_cmp_gt0000_cy<3>1
+                                                       Mcompar_coincidence_and_trigger_cmp_gt0000_lut<0>1
+                                                       Mcompar_coincidence_and_trigger_cmp_gt0000_cy<3>_0
+    SLICE_X12Y76.CIN     net (fanout=1)        0.000   Mcompar_coincidence_and_trigger_cmp_gt0000_cy<3>1
+    SLICE_X12Y76.CMUX    Tcinc                 0.358   N17
+                                                       Mcompar_coincidence_and_trigger_cmp_gt0000_cy<6>
+    SLICE_X18Y73.C1      net (fanout=8)        1.223   Mcompar_coincidence_and_trigger_cmp_gt0000_cy<6>
+    SLICE_X18Y73.CLK     Tas                   0.029   coincidence_array<3><1>
+                                                       _mux00051
+                                                       coincidence_array<3>_1
+    -------------------------------------------------  ---------------------------
+    Total                                      5.981ns (2.430ns logic, 3.551ns route)
+                                                       (40.6% logic, 59.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point coincidence_array<2>_1 (SLICE_X16Y74.C1), 162 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     4.069ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               coincidence_array<3>_1 (FF)
+  Destination:          coincidence_array<2>_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      5.829ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.067ns (0.498 - 0.565)
+  Source Clock:         mclk_BUFGP rising at 0.000ns
+  Destination Clock:    mclk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: coincidence_array<3>_1 to coincidence_array<2>_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y73.CQ      Tcko                  0.450   coincidence_array<3><1>
+                                                       coincidence_array<3>_1
+    SLICE_X15Y74.A3      net (fanout=6)        0.794   coincidence_array<3><1>
+    SLICE_X15Y74.CMUX    Topac                 0.684   temp_mux0001<0>
+                                                       Madd_temp_addsub0001_lut<0>
+                                                       Madd_temp_addsub0001_xor<2>
+    SLICE_X12Y74.C1      net (fanout=4)        0.919   temp_addsub0001<2>
+    SLICE_X12Y74.CMUX    Topcc                 0.421   temp_addsub0002<3>
+                                                       temp_mux0002<2>11
+                                                       Madd_temp_addsub0002_xor<3>
+    SLICE_X12Y75.A3      net (fanout=2)        0.618   temp_addsub0002<2>
+    SLICE_X12Y75.COUT    Topcya                0.499   Mcompar_coincidence_and_trigger_cmp_gt0000_cy<3>1
+                                                       Mcompar_coincidence_and_trigger_cmp_gt0000_lut<0>1
+                                                       Mcompar_coincidence_and_trigger_cmp_gt0000_cy<3>_0
+    SLICE_X12Y76.CIN     net (fanout=1)        0.000   Mcompar_coincidence_and_trigger_cmp_gt0000_cy<3>1
+    SLICE_X12Y76.CMUX    Tcinc                 0.358   N17
+                                                       Mcompar_coincidence_and_trigger_cmp_gt0000_cy<6>
+    SLICE_X16Y74.C1      net (fanout=8)        1.077   Mcompar_coincidence_and_trigger_cmp_gt0000_cy<6>
+    SLICE_X16Y74.CLK     Tas                   0.009   coincidence_array<2><1>
+                                                       _mux00041
+                                                       coincidence_array<2>_1
+    -------------------------------------------------  ---------------------------
+    Total                                      5.829ns (2.421ns logic, 3.408ns route)
+                                                       (41.5% logic, 58.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     4.083ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               coincidence_array<3>_1 (FF)
+  Destination:          coincidence_array<2>_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      5.815ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.067ns (0.498 - 0.565)
+  Source Clock:         mclk_BUFGP rising at 0.000ns
+  Destination Clock:    mclk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: coincidence_array<3>_1 to coincidence_array<2>_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y73.CQ      Tcko                  0.450   coincidence_array<3><1>
+                                                       coincidence_array<3>_1
+    SLICE_X15Y74.B3      net (fanout=6)        0.791   coincidence_array<3><1>
+    SLICE_X15Y74.CMUX    Topbc                 0.673   temp_mux0001<0>
+                                                       temp_mux0001<1>11
+                                                       Madd_temp_addsub0001_xor<2>
+    SLICE_X12Y74.C1      net (fanout=4)        0.919   temp_addsub0001<2>
+    SLICE_X12Y74.CMUX    Topcc                 0.421   temp_addsub0002<3>
+                                                       temp_mux0002<2>11
+                                                       Madd_temp_addsub0002_xor<3>
+    SLICE_X12Y75.A3      net (fanout=2)        0.618   temp_addsub0002<2>
+    SLICE_X12Y75.COUT    Topcya                0.499   Mcompar_coincidence_and_trigger_cmp_gt0000_cy<3>1
+                                                       Mcompar_coincidence_and_trigger_cmp_gt0000_lut<0>1
+                                                       Mcompar_coincidence_and_trigger_cmp_gt0000_cy<3>_0
+    SLICE_X12Y76.CIN     net (fanout=1)        0.000   Mcompar_coincidence_and_trigger_cmp_gt0000_cy<3>1
+    SLICE_X12Y76.CMUX    Tcinc                 0.358   N17
+                                                       Mcompar_coincidence_and_trigger_cmp_gt0000_cy<6>
+    SLICE_X16Y74.C1      net (fanout=8)        1.077   Mcompar_coincidence_and_trigger_cmp_gt0000_cy<6>
+    SLICE_X16Y74.CLK     Tas                   0.009   coincidence_array<2><1>
+                                                       _mux00041
+                                                       coincidence_array<2>_1
+    -------------------------------------------------  ---------------------------
+    Total                                      5.815ns (2.410ns logic, 3.405ns route)
+                                                       (41.4% logic, 58.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     4.113ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               coincidence_array<3>_1 (FF)
+  Destination:          coincidence_array<2>_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      5.785ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.067ns (0.498 - 0.565)
+  Source Clock:         mclk_BUFGP rising at 0.000ns
+  Destination Clock:    mclk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: coincidence_array<3>_1 to coincidence_array<2>_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y73.CQ      Tcko                  0.450   coincidence_array<3><1>
+                                                       coincidence_array<3>_1
+    SLICE_X15Y74.A3      net (fanout=6)        0.794   coincidence_array<3><1>
+    SLICE_X15Y74.BMUX    Topab                 0.495   temp_mux0001<0>
+                                                       Madd_temp_addsub0001_lut<0>
+                                                       Madd_temp_addsub0001_xor<2>
+    SLICE_X12Y74.B2      net (fanout=4)        0.824   temp_addsub0001<1>
+    SLICE_X12Y74.BMUX    Topbb                 0.375   temp_addsub0002<3>
+                                                       temp_mux0002<1>11
+                                                       Madd_temp_addsub0002_xor<3>
+    SLICE_X12Y75.A1      net (fanout=2)        0.904   temp_addsub0002<1>
+    SLICE_X12Y75.COUT    Topcya                0.499   Mcompar_coincidence_and_trigger_cmp_gt0000_cy<3>1
+                                                       Mcompar_coincidence_and_trigger_cmp_gt0000_lut<0>1
+                                                       Mcompar_coincidence_and_trigger_cmp_gt0000_cy<3>_0
+    SLICE_X12Y76.CIN     net (fanout=1)        0.000   Mcompar_coincidence_and_trigger_cmp_gt0000_cy<3>1
+    SLICE_X12Y76.CMUX    Tcinc                 0.358   N17
+                                                       Mcompar_coincidence_and_trigger_cmp_gt0000_cy<6>
+    SLICE_X16Y74.C1      net (fanout=8)        1.077   Mcompar_coincidence_and_trigger_cmp_gt0000_cy<6>
+    SLICE_X16Y74.CLK     Tas                   0.009   coincidence_array<2><1>
+                                                       _mux00041
+                                                       coincidence_array<2>_1
+    -------------------------------------------------  ---------------------------
+    Total                                      5.785ns (2.186ns logic, 3.599ns route)
+                                                       (37.8% logic, 62.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point trig_out_s_d_2 (SLICE_X11Y75.D1), 116 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     4.206ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               coincidence_array<3>_1 (FF)
+  Destination:          trig_out_s_d_2 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      5.715ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.044ns (0.521 - 0.565)
+  Source Clock:         mclk_BUFGP rising at 0.000ns
+  Destination Clock:    mclk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: coincidence_array<3>_1 to trig_out_s_d_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y73.CQ      Tcko                  0.450   coincidence_array<3><1>
+                                                       coincidence_array<3>_1
+    SLICE_X15Y74.A3      net (fanout=6)        0.794   coincidence_array<3><1>
+    SLICE_X15Y74.CMUX    Topac                 0.684   temp_mux0001<0>
+                                                       Madd_temp_addsub0001_lut<0>
+                                                       Madd_temp_addsub0001_xor<2>
+    SLICE_X12Y74.C1      net (fanout=4)        0.919   temp_addsub0001<2>
+    SLICE_X12Y74.CMUX    Topcc                 0.421   temp_addsub0002<3>
+                                                       temp_mux0002<2>11
+                                                       Madd_temp_addsub0002_xor<3>
+    SLICE_X13Y75.A3      net (fanout=2)        0.595   temp_addsub0002<2>
+    SLICE_X13Y75.COUT    Topcya                0.509   Mcompar_coincidence_and_trigger_cmp_gt0000_cy<3>
+                                                       Mcompar_coincidence_and_trigger_cmp_gt0000_lut<0>2
+                                                       Mcompar_coincidence_and_trigger_cmp_gt0000_cy<3>
+    SLICE_X13Y76.CIN     net (fanout=1)        0.000   Mcompar_coincidence_and_trigger_cmp_gt0000_cy<3>
+    SLICE_X13Y76.BMUX    Tcinb                 0.262   Mcompar_coincidence_and_trigger_cmp_gt0000_cy<5>
+                                                       Mcompar_coincidence_and_trigger_cmp_gt0000_cy<5>
+    SLICE_X11Y75.D1      net (fanout=8)        1.053   Mcompar_coincidence_and_trigger_cmp_gt0000_cy<5>
+    SLICE_X11Y75.CLK     Tas                   0.028   trig_out_s_d<2>
+                                                       trig_out_s_d_2_mux00021
+                                                       trig_out_s_d_2
+    -------------------------------------------------  ---------------------------
+    Total                                      5.715ns (2.354ns logic, 3.361ns route)
+                                                       (41.2% logic, 58.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     4.220ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               coincidence_array<3>_1 (FF)
+  Destination:          trig_out_s_d_2 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      5.701ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.044ns (0.521 - 0.565)
+  Source Clock:         mclk_BUFGP rising at 0.000ns
+  Destination Clock:    mclk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: coincidence_array<3>_1 to trig_out_s_d_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y73.CQ      Tcko                  0.450   coincidence_array<3><1>
+                                                       coincidence_array<3>_1
+    SLICE_X15Y74.B3      net (fanout=6)        0.791   coincidence_array<3><1>
+    SLICE_X15Y74.CMUX    Topbc                 0.673   temp_mux0001<0>
+                                                       temp_mux0001<1>11
+                                                       Madd_temp_addsub0001_xor<2>
+    SLICE_X12Y74.C1      net (fanout=4)        0.919   temp_addsub0001<2>
+    SLICE_X12Y74.CMUX    Topcc                 0.421   temp_addsub0002<3>
+                                                       temp_mux0002<2>11
+                                                       Madd_temp_addsub0002_xor<3>
+    SLICE_X13Y75.A3      net (fanout=2)        0.595   temp_addsub0002<2>
+    SLICE_X13Y75.COUT    Topcya                0.509   Mcompar_coincidence_and_trigger_cmp_gt0000_cy<3>
+                                                       Mcompar_coincidence_and_trigger_cmp_gt0000_lut<0>2
+                                                       Mcompar_coincidence_and_trigger_cmp_gt0000_cy<3>
+    SLICE_X13Y76.CIN     net (fanout=1)        0.000   Mcompar_coincidence_and_trigger_cmp_gt0000_cy<3>
+    SLICE_X13Y76.BMUX    Tcinb                 0.262   Mcompar_coincidence_and_trigger_cmp_gt0000_cy<5>
+                                                       Mcompar_coincidence_and_trigger_cmp_gt0000_cy<5>
+    SLICE_X11Y75.D1      net (fanout=8)        1.053   Mcompar_coincidence_and_trigger_cmp_gt0000_cy<5>
+    SLICE_X11Y75.CLK     Tas                   0.028   trig_out_s_d<2>
+                                                       trig_out_s_d_2_mux00021
+                                                       trig_out_s_d_2
+    -------------------------------------------------  ---------------------------
+    Total                                      5.701ns (2.343ns logic, 3.358ns route)
+                                                       (41.1% logic, 58.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     4.250ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               coincidence_array<2>_1 (FF)
+  Destination:          trig_out_s_d_2 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      5.702ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.013ns (0.521 - 0.534)
+  Source Clock:         mclk_BUFGP rising at 0.000ns
+  Destination Clock:    mclk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: coincidence_array<2>_1 to trig_out_s_d_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X16Y74.CQ      Tcko                  0.471   coincidence_array<2><1>
+                                                       coincidence_array<2>_1
+    SLICE_X15Y74.A2      net (fanout=6)        0.760   coincidence_array<2><1>
+    SLICE_X15Y74.CMUX    Topac                 0.684   temp_mux0001<0>
+                                                       Madd_temp_addsub0001_lut<0>
+                                                       Madd_temp_addsub0001_xor<2>
+    SLICE_X12Y74.C1      net (fanout=4)        0.919   temp_addsub0001<2>
+    SLICE_X12Y74.CMUX    Topcc                 0.421   temp_addsub0002<3>
+                                                       temp_mux0002<2>11
+                                                       Madd_temp_addsub0002_xor<3>
+    SLICE_X13Y75.A3      net (fanout=2)        0.595   temp_addsub0002<2>
+    SLICE_X13Y75.COUT    Topcya                0.509   Mcompar_coincidence_and_trigger_cmp_gt0000_cy<3>
+                                                       Mcompar_coincidence_and_trigger_cmp_gt0000_lut<0>2
+                                                       Mcompar_coincidence_and_trigger_cmp_gt0000_cy<3>
+    SLICE_X13Y76.CIN     net (fanout=1)        0.000   Mcompar_coincidence_and_trigger_cmp_gt0000_cy<3>
+    SLICE_X13Y76.BMUX    Tcinb                 0.262   Mcompar_coincidence_and_trigger_cmp_gt0000_cy<5>
+                                                       Mcompar_coincidence_and_trigger_cmp_gt0000_cy<5>
+    SLICE_X11Y75.D1      net (fanout=8)        1.053   Mcompar_coincidence_and_trigger_cmp_gt0000_cy<5>
+    SLICE_X11Y75.CLK     Tas                   0.028   trig_out_s_d<2>
+                                                       trig_out_s_d_2_mux00021
+                                                       trig_out_s_d_2
+    -------------------------------------------------  ---------------------------
+    Total                                      5.702ns (2.375ns logic, 3.327ns route)
+                                                       (41.7% logic, 58.3% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_mclk = PERIOD TIMEGRP "mclk" 10 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point coincidence_array<1>_0 (SLICE_X19Y75.A6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.439ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               G3[9].edge_detect_1/s_0 (FF)
+  Destination:          coincidence_array<1>_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.502ns (Levels of Logic = 1)
+  Clock Path Skew:      0.063ns (0.549 - 0.486)
+  Source Clock:         mclk_BUFGP rising at 10.000ns
+  Destination Clock:    mclk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: G3[9].edge_detect_1/s_0 to coincidence_array<1>_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X20Y75.AQ      Tcko                  0.433   G3[9].edge_detect_1/s<2>
+                                                       G3[9].edge_detect_1/s_0
+    SLICE_X19Y75.A6      net (fanout=1)        0.266   G3[9].edge_detect_1/s<0>
+    SLICE_X19Y75.CLK     Tah         (-Th)     0.197   coincidence_array<1><1>
+                                                       leading_edge_module<1>
+                                                       coincidence_array<1>_0
+    -------------------------------------------------  ---------------------------
+    Total                                      0.502ns (0.236ns logic, 0.266ns route)
+                                                       (47.0% logic, 53.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point coincidence_array<0>_0 (SLICE_X19Y77.A6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.446ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               G3[3].edge_detect_1/s_0 (FF)
+  Destination:          coincidence_array<0>_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.497ns (Levels of Logic = 1)
+  Clock Path Skew:      0.051ns (0.556 - 0.505)
+  Source Clock:         mclk_BUFGP rising at 10.000ns
+  Destination Clock:    mclk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: G3[3].edge_detect_1/s_0 to coincidence_array<0>_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X16Y77.AQ      Tcko                  0.433   G3[3].edge_detect_1/s<2>
+                                                       G3[3].edge_detect_1/s_0
+    SLICE_X19Y77.A6      net (fanout=1)        0.261   G3[3].edge_detect_1/s<0>
+    SLICE_X19Y77.CLK     Tah         (-Th)     0.197   coincidence_array<0><1>
+                                                       leading_edge_module<0>
+                                                       coincidence_array<0>_0
+    -------------------------------------------------  ---------------------------
+    Total                                      0.497ns (0.236ns logic, 0.261ns route)
+                                                       (47.5% logic, 52.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point G3[19].edge_detect_1/s_0 (SLICE_X19Y72.AX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.470ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               G3[19].edge_detect_1/s_1 (FF)
+  Destination:          G3[19].edge_detect_1/s_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.470ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         mclk_BUFGP rising at 10.000ns
+  Destination Clock:    mclk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: G3[19].edge_detect_1/s_1 to G3[19].edge_detect_1/s_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X19Y72.BQ      Tcko                  0.414   G3[19].edge_detect_1/s<2>
+                                                       G3[19].edge_detect_1/s_1
+    SLICE_X19Y72.AX      net (fanout=2)        0.285   G3[19].edge_detect_1/s<1>
+    SLICE_X19Y72.CLK     Tckdi       (-Th)     0.229   G3[19].edge_detect_1/s<2>
+                                                       G3[19].edge_detect_1/s_0
+    -------------------------------------------------  ---------------------------
+    Total                                      0.470ns (0.185ns logic, 0.285ns route)
+                                                       (39.4% logic, 60.6% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_mclk = PERIOD TIMEGRP "mclk" 10 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 8.334ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 1.666ns (600.240MHz) (Tbgper_I)
+  Physical resource: mclk_BUFGP/BUFG/I0
+  Logical resource: mclk_BUFGP/BUFG/I0
+  Location pin: BUFGCTRL_X0Y31.I0
+  Clock network: mclk_BUFGP/IBUFG
+--------------------------------------------------------------------------------
+Slack: 8.946ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 10.000ns
+  Low pulse: 5.000ns
+  Low pulse limit: 0.527ns (Trpw)
+  Physical resource: trig_out_s_d<2>/SR
+  Logical resource: trig_out_s_d_0/SR
+  Location pin: SLICE_X11Y75.SR
+  Clock network: G3[0].edge_detect_1/rst_b_inv
+--------------------------------------------------------------------------------
+Slack: 8.946ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 0.527ns (Trpw)
+  Physical resource: trig_out_s_d<2>/SR
+  Logical resource: trig_out_s_d_0/SR
+  Location pin: SLICE_X11Y75.SR
+  Clock network: G3[0].edge_detect_1/rst_b_inv
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock mclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+mclk           |    6.030|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 2322 paths, 0 nets, and 215 connections
+
+Design statistics:
+   Minimum period:   6.030ns{1}   (Maximum frequency: 165.837MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Fri Dec  2 16:09:34 2011 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 423 MB
+
+
+

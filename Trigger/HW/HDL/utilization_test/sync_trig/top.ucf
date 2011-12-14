@@ -1,0 +1,85 @@
+net "BUTTONS<0>" LOC=AM32;
+net "BUTTONS<1>" LOC=AN34;
+net "BUTTONS<2>" LOC=AN33;
+net "BUTTONS<3>" LOC=AN32;
+
+
+### dip switches:
+net "DIP_Switch<0>" LOC=U26;
+net "DIP_Switch<1>" LOC=U27;
+net "DIP_Switch<2>" LOC=U28;
+net "DIP_Switch<3>" LOC=T28;
+net "DIP_Switch<4>" LOC=T30;
+net "DIP_Switch<5>" LOC=T29;
+net "DIP_Switch<6>" LOC=R27;
+net "DIP_Switch<7>" LOC=R26;
+
+#
+net 		"LEDs<0>" LOC = H13;
+net 		"LEDs<1>" LOC = J17;
+net 		"LEDs<2>" LOC = H15;
+net 		"LEDs<3>" LOC = G16;
+
+net 		"LEDs<4>" LOC = L18;
+net 		"LEDs<5>" LOC = H18;
+net 		"LEDs<6>" LOC = J19;
+net 		"LEDs<7>" LOC = J21;
+Net "LEDs<0>" TIG;
+Net "LEDs<1>" TIG;
+Net "LEDs<2>" TIG;
+Net "LEDs<3>" TIG;
+Net "LEDs<4>" TIG;
+Net "LEDs<5>" TIG;
+Net "LEDs<6>" TIG;
+Net "LEDs<7>" TIG;
+
+
+
+
+
+#I/O CARD 1
+
+NET RESET_ROC_B(0)     LOC = AB10; #exp2_diff_p0
+NET RESET_ROC_B_b(0)  LOC = AA10; #exp2_diff_n0
+NET SYNC_TRIGGER_OUT(0)     LOC =  AF9;  #EXP2_DIFF_P3
+NET SYNC_TRIGGER_OUT_b(0)    LOC =  AF10; #EXP2_DIFF_N3
+NET SYNC_TRIGGER_IN(0)        LOC =  AC10; #EXP2_DIFF_P1
+NET SYNC_TRIGGER_IN_B(0)      LOC =  AC9;  #EXP2_DIFF_N1
+
+#I/O CARD 2
+
+NET RESET_ROC_B(1)    LOC = AB6; #exp2_diff_p4 (jx2diff)
+NET RESET_ROC_B_b(1)  LOC = AB7; #exp2_diff_n4
+NET SYNC_TRIGGER_OUT(1)     LOC =  AJ9;  #EXP2_DIFF_P7
+NET SYNC_TRIGGER_OUT_b(1)    LOC =  AJ10; #EXP2_DIFF_N7
+NET SYNC_TRIGGER_IN(1)        LOC =  AH9; #EXP2_DIFF_P5
+NET SYNC_TRIGGER_IN_B(1)      LOC =  AH10;  #EXP2_DIFF_N5
+
+
+#I/O CARD 3
+
+NET RESET_ROC_B(2)    LOC = AC8; #exp2_diff_p8 (jx2diff)
+NET RESET_ROC_B_b(2)  LOC = AB8; #exp2_diff_n8
+NET SYNC_TRIGGER_OUT(2)     LOC =  AK11;  #EXP2_DIFF_P11
+NET SYNC_TRIGGER_OUT_b(2)    LOC =  AJ11; #EXP2_DIFF_N11
+NET SYNC_TRIGGER_IN(2)        LOC =  AK8; #EXP2_DIFF_P9
+NET SYNC_TRIGGER_IN_B(2)      LOC =  AK9;  #EXP2_DIFF_N9
+
+
+#I/O CARD 4
+
+NET RESET_ROC_B(3)    LOC = AE8; #exp2_diff_p12 (jx2diff)
+NET RESET_ROC_B_b(3)  LOC = AD9; #exp2_diff_n12
+NET SYNC_TRIGGER_OUT(3)     LOC =  AM12;  #EXP2_DIFF_P15
+NET SYNC_TRIGGER_OUT_b(3)    LOC =  AM11; #EXP2_DIFF_N15
+NET SYNC_TRIGGER_IN(3)        LOC =  AL11; #EXP2_DIFF_P13
+NET SYNC_TRIGGER_IN_B(3)      LOC =  AL10;  #EXP2_DIFF_N13
+
+#I/O CARD 5
+
+NET RESET_ROC_B(4)	LOC = aj7; #exp2_diff_p16 (jx2diff)
+NET RESET_ROC_B_b(4)  	LOC = aj6; #exp2_diff_n16
+NET SYNC_TRIGGER_OUT(4)     LOC =  An13;  #EXP2_DIFF_P19
+NET SYNC_TRIGGER_OUT_b(4)    LOC =  Am13; #EXP2_DIFF_N19
+NET SYNC_TRIGGER_IN(4)        LOC =  AP12; #EXP2_DIFF_P17
+NET SYNC_TRIGGER_IN_B(4)      LOC =  AN12;  #EXP2_DIFF_N17
